@@ -17,6 +17,25 @@ function family(
   };
 }
 
+function species(
+  id: string,
+  nombreCientifico: string,
+  familia: string,
+  descripcion: string,
+  caracteristicas: string,
+  distribucion = "Alrededores de Buenos Aires, según el manual de Cabrera."
+): Especie {
+  return {
+    id,
+    nombreCientifico,
+    nombreVulgar: nombreCientifico,
+    familia,
+    descripcion,
+    caracteristicas,
+    distribucion,
+  };
+}
+
 export const manualFamilyData: Record<string, Especie> = {
   ephedraceae: family(
     "ephedraceae",
@@ -24,17 +43,73 @@ export const manualFamilyData: Record<string, Especie> = {
     "Gimnospermas con óvulos desnudos.",
     "Única familia de gimnospermas espontánea citada para la región en la clave del manual."
   ),
+  ephedra_tweediana: species(
+    "ephedra_tweediana",
+    "Ephedra tweediana",
+    "10. Ephedraceae",
+    "Arbusto trepador dioico, de hasta 6 m de alto.",
+    "Estróbilos femeninos pedunculados, con 3-5 verticilos de brácteas, carnosos rojos a la madurez y generalmente 2 semillas; ramas péndulas o inclinadas.",
+    "Sur del Brasil, Uruguay y Argentina; citada para Campana, Martín García y alrededores."
+  ),
+  ephedra_triandra: species(
+    "ephedra_triandra",
+    "Ephedra triandra",
+    "10. Ephedraceae",
+    "Arbusto o sufrútice dioico, apoyante.",
+    "Estróbilos femeninos sésiles, con 6-10 verticilos de brácteas, carnosos rojos a la madurez; semillas 2 y anteras 3.",
+    "Argentina y Bolivia; citada para barrancas del Paraná, Las Palmas, Campana y San Isidro."
+  ),
   salviniaceae: family(
     "salviniaceae",
     "9. Salviniaceae",
     "Pteridófitas acuáticas flotantes.",
     "Esporangios en esporocarpos; plantas flotantes libres."
   ),
+  salvinia_auriculata: species(
+    "salvinia_auriculata",
+    "Salvinia auriculata",
+    "9. Salviniaceae",
+    "Planta flotante libre.",
+    "Hojas flotantes profundamente hendidas en la base, algo plegadas, más o menos circulares, con papilas cuyos pelos se sueldan en el ápice; esporocarpos muy amontonados.",
+    "América cálida; en arroyos y lagunas."
+  ),
+  salvinia_rotundifolia: species(
+    "salvinia_rotundifolia",
+    "Salvinia rotundifolia",
+    "9. Salviniaceae",
+    "Planta flotante libre.",
+    "Hojas flotantes con escotadura basal poco marcada o nula, redondeadas y plegadas por la nervadura central; papilas con pelitos libres; esporocarpos esparcidos.",
+    "América del Sur cálida, hasta el Delta y la ribera del Plata."
+  ),
+  azolla_filiculoides: species(
+    "azolla_filiculoides",
+    "Azolla filiculoides",
+    "9. Salviniaceae",
+    "Hierba flotante libre, pequeña y ramificada.",
+    "Hojas diminutas, de alrededor de 1 mm, densamente imbricadas sobre tallos muy ramificados; en invierno puede tomar color pardo-rojizo.",
+    "América; muy común en lagunas, zanjas y arroyos."
+  ),
   marsiliaceae: family(
     "marsiliaceae",
     "8. Marsiliaceae",
     "Pteridófitas acuáticas arraigadas.",
     "Esporangios en esporocarpos; hojas flotantes tetrafolioladas o arrosetadas lineales."
+  ),
+  pilularia_mandonii: species(
+    "pilularia_mandonii",
+    "Pilularia mandonii",
+    "8. Marsiliaceae",
+    "Planta diminuta de pantanos o campos inundados.",
+    "Hojas lineales cilíndrico-subuladas, de prefoliación circinada; esporocarpos rojizos y peludos.",
+    "América del Sur; rara en campos inundados al comenzar la primavera."
+  ),
+  marsilia_concinna: species(
+    "marsilia_concinna",
+    "Marsilia concinna",
+    "8. Marsiliaceae",
+    "Planta acuática arraigada, con hojas largamente pecioladas.",
+    "Hojas terminadas en 4 folíolos flotantes glabros, dispuestos en cruz; esporocarpos ovoideos, peludos y rojizos.",
+    "América austral; común en charcas de agua estancada."
   ),
   isoetaceae: family(
     "isoetaceae",
@@ -712,12 +787,12 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Flotante, libre",
       keyStep: "C",
-      especieId: "salviniaceae",
+      nextNodeId: "salviniaceae_a",
     },
     opcionA_prima: {
       label: "Arraigada en el fondo o en suelo pantanoso",
       keyStep: "C'",
-      especieId: "marsiliaceae",
+      nextNodeId: "marsiliaceae_a",
     },
   },
   pteridophyta_d: {
@@ -790,6 +865,51 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "osmundaceae",
     },
   },
+  marsiliaceae_a: {
+    id: "marsiliaceae_a",
+    milestone: "Marsiliaceae",
+    descripcion: "Marsiliaceae - A: ¿cómo son las hojas?",
+    opcionA: {
+      label: "Hojas lineales",
+      keyStep: "A",
+      especieId: "pilularia_mandonii",
+    },
+    opcionA_prima: {
+      label: "Hojas con lámina 4-foliolada",
+      keyStep: "A'",
+      especieId: "marsilia_concinna",
+    },
+  },
+  salviniaceae_a: {
+    id: "salviniaceae_a",
+    milestone: "Salviniaceae",
+    descripcion: "Salviniaceae - A: ¿cómo son las hojas flotantes?",
+    opcionA: {
+      label: "Hojas de más de 5 mm de largo, dispuestas en rosetas o en series",
+      keyStep: "A",
+      nextNodeId: "salvinia_a",
+    },
+    opcionA_prima: {
+      label: "Hojas diminutas, de 1 mm o menos, densamente imbricadas sobre un hilo muy ramificado",
+      keyStep: "A'",
+      especieId: "azolla_filiculoides",
+    },
+  },
+  salvinia_a: {
+    id: "salvinia_a",
+    milestone: "Salvinia",
+    descripcion: "Salvinia - A: ¿cómo es la base de las hojas flotantes y la disposición de los esporocarpos?",
+    opcionA: {
+      label: "Hojas profundamente hendidas en la base, algo plegadas; papilas con pelos soldados en el ápice; esporocarpos muy amontonados",
+      keyStep: "A",
+      especieId: "salvinia_auriculata",
+    },
+    opcionA_prima: {
+      label: "Hojas con escotadura basal poco marcada o nula; papilas con pelitos libres; esporocarpos esparcidos",
+      keyStep: "A'",
+      especieId: "salvinia_rotundifolia",
+    },
+  },
   spermatophyta_a: {
     id: "spermatophyta_a",
     milestone: "Spermatophyta",
@@ -797,12 +917,27 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Óvulos desnudos (Gymnospermae)",
       keyStep: "1",
-      especieId: "ephedraceae",
+      nextNodeId: "ephedraceae_a",
     },
     opcionA_prima: {
       label: "Óvulos encerrados en un ovario (Angiospermae)",
       keyStep: "2",
       nextNodeId: "angiosperm_1",
+    },
+  },
+  ephedraceae_a: {
+    id: "ephedraceae_a",
+    milestone: "Ephedraceae",
+    descripcion: "Ephedraceae - A: ¿cómo son los estróbilos femeninos y las ramas?",
+    opcionA: {
+      label: "Estróbilos femeninos pedunculados, con 3-5 verticilos de brácteas; ramas péndulas o inclinadas; anteras 6-8",
+      keyStep: "A",
+      especieId: "ephedra_tweediana",
+    },
+    opcionA_prima: {
+      label: "Estróbilos femeninos sésiles, con 6-10 verticilos de brácteas; ramas semierectas o péndulas; anteras 3",
+      keyStep: "A'",
+      especieId: "ephedra_triandra",
     },
   },
   dicot_root: {
