@@ -11,6 +11,7 @@ interface QuizProps {
 interface HistoryEntry {
   nodeId: string;
   keyStep?: string;
+  milestone?: string;
 }
 
 export default function Quiz({ onComplete }: QuizProps) {
@@ -22,11 +23,11 @@ export default function Quiz({ onComplete }: QuizProps) {
 
   const currentNode: CladoNode | undefined = cladosTree[currentNodeId];
   const keyPath = history
-    .map((entry) => entry.keyStep)
-    .filter(Boolean)
+    .flatMap((entry) => [entry.keyStep, entry.milestone])
+    .filter((part): part is string => Boolean(part))
     .join(" > ");
   const milestones = history
-    .map((entry) => cladosTree[entry.nodeId]?.milestone)
+    .map((entry) => entry.milestone)
     .filter((milestone, index, allMilestones) => {
       return milestone && allMilestones.indexOf(milestone) === index;
     })
@@ -114,13 +115,19 @@ export default function Quiz({ onComplete }: QuizProps) {
 
   const handleOption = (opcion: "A" | "A_prima") => {
     const nextOption = opcion === "A" ? currentNode.opcionA : currentNode.opcionA_prima;
+    const keyStep = nextOption.keyStep || (opcion === "A" ? "A" : "A'");
+    const nextMilestone = nextOption.nextNodeId
+      ? cladosTree[nextOption.nextNodeId]?.milestone
+      : undefined;
     
     // Si la opción tiene una especie asociada
     if (nextOption.especieId) {
       const especie = especiesData[nextOption.especieId];
       if (especie) {
-        const keyStep = nextOption.keyStep || (opcion === "A" ? "A" : "A'");
-        setHistory([...history, { nodeId: currentNodeId, keyStep }]);
+        setHistory([
+          ...history,
+          { nodeId: currentNodeId, keyStep, milestone: nextMilestone },
+        ]);
         setIdentifiedEspecie(especie);
         return;
       }
@@ -128,12 +135,21 @@ export default function Quiz({ onComplete }: QuizProps) {
     
     // Si tiene un siguiente nodo
     if (nextOption.nextNodeId) {
-      const keyStep = nextOption.keyStep || (opcion === "A" ? "A" : "A'");
       setCurrentNodeId(nextOption.nextNodeId);
-      setHistory([...history, { nodeId: nextOption.nextNodeId, keyStep }]);
+      setHistory([
+        ...history,
+        {
+          nodeId: nextOption.nextNodeId,
+          keyStep,
+          milestone: nextMilestone,
+        },
+      ]);
       setIdentifiedEspecie(null);
     }
   };
+
+  const optionALetter = currentNode.opcionA.keyStep || "A";
+  const optionAPrimaLetter = currentNode.opcionA_prima.keyStep || "A'";
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">
@@ -162,14 +178,14 @@ export default function Quiz({ onComplete }: QuizProps) {
           onClick={() => handleOption("A")}
           className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 text-left"
         >
-          <span className="font-bold">A.</span> {currentNode.opcionA.label}
+          <span className="font-bold">{optionALetter}.</span> {currentNode.opcionA.label}
         </button>
 
         <button
           onClick={() => handleOption("A_prima")}
           className="w-full bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 text-left"
         >
-          <span className="font-bold">A&apos;.</span> {currentNode.opcionA_prima.label}
+          <span className="font-bold">{optionAPrimaLetter}.</span> {currentNode.opcionA_prima.label}
         </button>
       </div>
 

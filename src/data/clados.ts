@@ -19,10 +19,12 @@ export const cladosTree: Record<string, CladoNode> = {
     descripcion: "¿Cuántos cotiledones tiene el embrión?",
     opcionA: {
       label: "1 cotiledón - Hojas paralelinervadas (Monocotiledoneae)",
+      keyStep: "Clase 1",
       nextNodeId: "monocot_root",
     },
     opcionA_prima: {
       label: "2 cotiledones - Hojas retinervadas (Dicotyledoneae)",
+      keyStep: "Clase 2",
       nextNodeId: "dicot_root",
     },
   },

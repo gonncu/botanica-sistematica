@@ -476,10 +476,12 @@ export const manualKeyData: Record<string, CladoNode> = {
     descripcion: "¿La planta tiene flores o semillas?",
     opcionA: {
       label: "No tiene flores ni semillas; se reproduce por esporas (Pteridophyta)",
+      keyStep: "I",
       nextNodeId: "pteridophyta_a",
     },
     opcionA_prima: {
       label: "Tiene flores o semillas (Spermatophyta)",
+      keyStep: "II",
       nextNodeId: "spermatophyta_a",
     },
   },
@@ -489,10 +491,12 @@ export const manualKeyData: Record<string, CladoNode> = {
     descripcion: "Pteridophyta: ¿es una planta acuática o terrestre?",
     opcionA: {
       label: "Acuática, flotante o arraigada; a veces de terrenos pantanosos",
+      keyStep: "A",
       nextNodeId: "pteridophyta_b",
     },
     opcionA_prima: {
       label: "Terrestre; a veces de suelos pantanosos, pero no acuática",
+      keyStep: "A'",
       nextNodeId: "pteridophyta_d",
     },
   },
@@ -501,10 +505,12 @@ export const manualKeyData: Record<string, CladoNode> = {
     descripcion: "¿Dónde están los esporangios?",
     opcionA: {
       label: "En esporocarpos",
+      keyStep: "B",
       nextNodeId: "pteridophyta_c",
     },
     opcionA_prima: {
       label: "En cavidades o foveas en la base de hojas subuladas",
+      keyStep: "B'",
       especieId: "isoetaceae",
     },
   },
@@ -513,10 +519,12 @@ export const manualKeyData: Record<string, CladoNode> = {
     descripcion: "¿Cómo es el hábito de la planta acuática?",
     opcionA: {
       label: "Flotante, libre",
+      keyStep: "C",
       especieId: "salviniaceae",
     },
     opcionA_prima: {
       label: "Arraigada en el fondo o en suelo pantanoso",
+      keyStep: "C'",
       especieId: "marsiliaceae",
     },
   },
@@ -525,10 +533,12 @@ export const manualKeyData: Record<string, CladoNode> = {
     descripcion: "Pteridophyta terrestre: ¿tiene hojas desarrolladas?",
     opcionA: {
       label: "Planta áfila, con hojas reducidas a escamas; ramificación verticilada",
+      keyStep: "D",
       especieId: "equisetaceae",
     },
     opcionA_prima: {
       label: "Planta con hojas; ramificación no verticilada",
+      keyStep: "D'",
       nextNodeId: "pteridophyta_e",
     },
   },
@@ -537,10 +547,12 @@ export const manualKeyData: Record<string, CladoNode> = {
     descripcion: "¿Cómo es la ramificación y el tamaño de las hojas?",
     opcionA: {
       label: "Ramificación dicotómica; hojas muy pequeñas",
+      keyStep: "E",
       especieId: "selaginellaceae",
     },
     opcionA_prima: {
       label: "Ramificación no dicotómica; hojas generalmente grandes",
+      keyStep: "E'",
       nextNodeId: "pteridophyta_f",
     },
   },
@@ -549,10 +561,12 @@ export const manualKeyData: Record<string, CladoNode> = {
     descripcion: "¿Dónde se disponen los esporangios?",
     opcionA: {
       label: "Sobre la cara inferior de las hojas, con anillo vertical",
+      keyStep: "F",
       especieId: "polypodiaceae",
     },
     opcionA_prima: {
       label: "Sobre hojas reducidas a la nervadura, formando espigas o panojas",
+      keyStep: "F'",
       nextNodeId: "pteridophyta_g",
     },
   },
@@ -561,10 +575,12 @@ export const manualKeyData: Record<string, CladoNode> = {
     descripcion: "¿Los esporangios tienen anillo de dehiscencia apical?",
     opcionA: {
       label: "Sí, con anillo apical",
+      keyStep: "G",
       especieId: "schizaeaceae",
     },
     opcionA_prima: {
       label: "No, sin anillo o con anillo transversal incompleto",
+      keyStep: "G'",
       nextNodeId: "pteridophyta_h",
     },
   },
@@ -573,10 +589,12 @@ export const manualKeyData: Record<string, CladoNode> = {
     descripcion: "¿La planta es pigmea o robusta?",
     opcionA: {
       label: "Pigmea; esporangios en espigas densas",
+      keyStep: "H",
       especieId: "ophioglossaceae",
     },
     opcionA_prima: {
       label: "Robusta; esporangios en pínulas superiores reducidas al raquis",
+      keyStep: "H'",
       especieId: "osmundaceae",
     },
   },
@@ -586,10 +604,12 @@ export const manualKeyData: Record<string, CladoNode> = {
     descripcion: "Spermatophyta: ¿los óvulos están desnudos o encerrados en un ovario?",
     opcionA: {
       label: "Óvulos desnudos (Gymnospermae)",
+      keyStep: "1",
       especieId: "ephedraceae",
     },
     opcionA_prima: {
       label: "Óvulos encerrados en un ovario (Angiospermae)",
+      keyStep: "2",
       nextNodeId: "angiosperm_1",
     },
   },
@@ -599,10 +619,12 @@ export const manualKeyData: Record<string, CladoNode> = {
     descripcion: "Dicotyledoneae: ¿cómo son las flores?",
     opcionA: {
       label: "Flores desnudas, sin cáliz ni corola",
+      keyStep: "A",
       nextNodeId: "dicot_group_a_1",
     },
     opcionA_prima: {
       label: "Flores con cáliz, corola o perigonio",
+      keyStep: "A'",
       nextNodeId: "dicot_perianth_1",
     },
   },

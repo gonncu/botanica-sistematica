@@ -9,11 +9,13 @@ export const monocotiledoneaeData = {
     descripcion: "Clase Monocotiledoneae: Embrión con 1 solo cotiledón. Hojas generalmente paralelinervadas. Flores generalmente trimeras.",
     opcionA: {
       label: "Plantas arborescentes, con tronco terminado en una sola yema",
+      keyStep: "A",
       nextNodeId: "palmae",
       familia: "19. Palmae"
     },
     opcionA_prima: {
       label: "Plantas herbáceas, con otros caracteres",
+      keyStep: "A'",
       nextNodeId: "herbaceae"
     }
   },
