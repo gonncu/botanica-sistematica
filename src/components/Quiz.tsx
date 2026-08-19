@@ -14,6 +14,28 @@ interface HistoryEntry {
   milestone?: string;
 }
 
+function inferKeyBase(node: CladoNode) {
+  const match = node.descripcion.match(/\s-\s([^:]+):/);
+  return match?.[1];
+}
+
+function getOptionKeySteps(node: CladoNode) {
+  const inferredBase = inferKeyBase(node);
+  const explicitA = node.opcionA.keyStep;
+  const explicitAPrima = node.opcionA_prima.keyStep;
+  const baseFromExplicitA =
+    explicitA && !explicitA.endsWith("'") ? explicitA : undefined;
+  const baseFromExplicitAPrima = explicitAPrima?.endsWith("'")
+    ? explicitAPrima.slice(0, -1)
+    : undefined;
+  const base = inferredBase || baseFromExplicitA || baseFromExplicitAPrima || "A";
+
+  return {
+    A: explicitA || base,
+    A_prima: explicitAPrima || `${base}'`,
+  };
+}
+
 export default function Quiz({ onComplete }: QuizProps) {
   const [currentNodeId, setCurrentNodeId] = useState<string>("root");
   const [history, setHistory] = useState<HistoryEntry[]>([{ nodeId: "root" }]);
@@ -115,7 +137,8 @@ export default function Quiz({ onComplete }: QuizProps) {
 
   const handleOption = (opcion: "A" | "A_prima") => {
     const nextOption = opcion === "A" ? currentNode.opcionA : currentNode.opcionA_prima;
-    const keyStep = nextOption.keyStep || (opcion === "A" ? "A" : "A'");
+    const optionKeySteps = getOptionKeySteps(currentNode);
+    const keyStep = optionKeySteps[opcion];
     const nextMilestone = nextOption.nextNodeId
       ? cladosTree[nextOption.nextNodeId]?.milestone
       : undefined;
@@ -148,8 +171,9 @@ export default function Quiz({ onComplete }: QuizProps) {
     }
   };
 
-  const optionALetter = currentNode.opcionA.keyStep || "A";
-  const optionAPrimaLetter = currentNode.opcionA_prima.keyStep || "A'";
+  const optionKeySteps = getOptionKeySteps(currentNode);
+  const optionALetter = optionKeySteps.A;
+  const optionAPrimaLetter = optionKeySteps.A_prima;
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">

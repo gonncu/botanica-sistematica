@@ -638,6 +638,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     },
     opcionA_prima: {
       label: "Cáliz y corola, o perigonio coralino",
+      keyStep: "B'",
       nextNodeId: "dicot_corolla_1",
     },
   },
@@ -646,10 +647,12 @@ export const manualKeyData: Record<string, CladoNode> = {
     descripcion: "¿Las piezas de la corola o perigonio son libres o soldadas?",
     opcionA: {
       label: "Libres entre sí",
+      keyStep: "C",
       nextNodeId: "dicot_free_corolla_1",
     },
     opcionA_prima: {
       label: "Más o menos soldadas entre sí (Grupo E)",
+      keyStep: "C'",
       nextNodeId: "dicot_group_pending_e",
     },
   },
@@ -673,10 +676,12 @@ export const manualKeyData: Record<string, CladoNode> = {
     descripcion: "Grupo A: ¿la planta es sumergida con hojas verticiladas divididas dicotómicamente?",
     opcionA: {
       label: "Sí",
+      keyStep: "A",
       especieId: "ceratophyllaceae",
     },
     opcionA_prima: {
       label: "No; terrestre o acuática, pero con hojas no divididas dicotómicamente",
+      keyStep: "A'",
       nextNodeId: "dicot_group_a_2",
     },
   },
@@ -685,10 +690,12 @@ export const manualKeyData: Record<string, CladoNode> = {
     descripcion: "Grupo A: ¿cómo es el ovario?",
     opcionA: {
       label: "Ovario 3-carpelar, 3-locular; por lo común con látex",
+      keyStep: "B",
       especieId: "euphorbiaceae",
     },
     opcionA_prima: {
       label: "Ovario 1-2-carpelar, 1-2-locular o 4-locular",
+      keyStep: "B'",
       nextNodeId: "dicot_group_a_3",
     },
   },
@@ -697,10 +704,12 @@ export const manualKeyData: Record<string, CladoNode> = {
     descripcion: "Grupo A: ¿árbol con hojas alternas o hierba humilde con hojas opuestas?",
     opcionA: {
       label: "Árbol con hojas alternas; ovario unilocular",
+      keyStep: "C",
       especieId: "salicaceae",
     },
     opcionA_prima: {
       label: "Hierba humilde con hojas opuestas",
+      keyStep: "C'",
       nextNodeId: "dicot_group_a_4",
     },
   },
@@ -709,10 +718,12 @@ export const manualKeyData: Record<string, CladoNode> = {
     descripcion: "Grupo A: en hierbas con hojas opuestas, ¿cómo es el ovario y la inflorescencia?",
     opcionA: {
       label: "Ovario 2-4-locular; flores axilares",
+      keyStep: "D",
       especieId: "callitrichaceae",
     },
     opcionA_prima: {
       label: "Ovario unilocular; flores en espigas terminales",
+      keyStep: "D'",
       especieId: "piperaceae",
     },
   },
