@@ -2,25 +2,21 @@
 
 import { useState, useRef } from "react";
 import Image from "next/image";
-import { Especie } from "@/types";
-
-interface FormData {
-  nombreUsuario: string;
-  fecha: string;
-  lugar: string;
-  coordenadas?: string;
-  observaciones?: string;
-  foto?: File | null;
-}
+import { Especie, PlantFormData } from "@/types";
 
 interface FormProps {
   especie: Especie;
-  onSubmit: (formData: FormData) => void;
+  defaultUserName: string;
+  onSubmit: (formData: PlantFormData) => void;
 }
 
-export default function SpeciesForm({ especie, onSubmit }: FormProps) {
-  const [formData, setFormData] = useState<FormData>({
-    nombreUsuario: "",
+export default function SpeciesForm({
+  especie,
+  defaultUserName,
+  onSubmit,
+}: FormProps) {
+  const [formData, setFormData] = useState<PlantFormData>({
+    nombreUsuario: defaultUserName,
     fecha: new Date().toISOString().split("T")[0],
     lugar: "",
     observaciones: "",

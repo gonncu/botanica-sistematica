@@ -44,6 +44,19 @@ The app expects:
 - a `photo_records` table for submitted plant records
 - a `quiz_sessions` table for completed quiz sessions
 
+Run the SQL in `supabase/setup-auth-records.sql` from the Supabase SQL editor to:
+
+- add `user_id` and `plant_number`
+- enable row level security
+- restrict records to signed-in `@agro.uba.ar` users
+- allow photo uploads into each user's storage folder
+
+In Supabase Auth, enable email sign-in and add the production URL to the allowed redirect URLs:
+
+```txt
+https://botanicasis.netlify.app/**
+```
+
 ## Deploy on Netlify
 
 This project includes `netlify.toml`.

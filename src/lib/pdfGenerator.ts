@@ -1,18 +1,9 @@
 import jsPDF from "jspdf";
-import { Especie } from "@/types";
-
-interface FormData {
-  nombreUsuario: string;
-  fecha: string;
-  lugar: string;
-  coordenadas?: string;
-  observaciones?: string;
-  foto?: File | null;
-}
+import { Especie, PlantFormData } from "@/types";
 
 export async function generatePDF(
   especie: Especie,
-  formData: FormData,
+  formData: PlantFormData,
   numeroPlanta: number
 ) {
   const doc = new jsPDF({

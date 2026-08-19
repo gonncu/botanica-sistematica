@@ -25,20 +25,30 @@ export interface Especie {
   imagen?: string;
 }
 
-export interface PhotoRecord {
-  id: string;
-  userId: string;
-  photoUrl: string;
-  especieId: string;
+export interface PlantFormData {
   nombreUsuario: string;
   fecha: string;
   lugar: string;
-  coordenadas?: {
-    lat: number;
-    lng: number;
-  };
+  coordenadas?: string;
   observaciones?: string;
-  createdAt: string;
+  foto?: File | null;
+}
+
+export interface PhotoRecord {
+  id: string;
+  user_id: string;
+  plant_number: number;
+  photo_url: string | null;
+  especie_id: string;
+  nombre_usuario: string;
+  fecha: string;
+  lugar: string;
+  coordenadas?: {
+    latitude: number;
+    longitude: number;
+  } | null;
+  observaciones?: string | null;
+  created_at: string;
 }
 
 export interface QuizSession {
