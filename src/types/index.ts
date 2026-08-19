@@ -1,6 +1,7 @@
 // Tipos para el árbol de clados
 export interface CladoOption {
   label: string;
+  keyStep?: string; // Letra de la clave del manual: A, A', B, B', etc.
   nextNodeId?: string; // ID del siguiente clado, si no es terminal
   especieId?: string; // ID de especie cuando la opción termina el quiz
   familia?: string;

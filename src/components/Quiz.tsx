@@ -8,18 +8,30 @@ interface QuizProps {
   onComplete: (especie: Especie) => void;
 }
 
+interface HistoryEntry {
+  nodeId: string;
+  keyStep?: string;
+}
+
 export default function Quiz({ onComplete }: QuizProps) {
   const [currentNodeId, setCurrentNodeId] = useState<string>("root");
-  const [history, setHistory] = useState<string[]>(["root"]);
+  const [history, setHistory] = useState<HistoryEntry[]>([{ nodeId: "root" }]);
+  const [identifiedEspecie, setIdentifiedEspecie] = useState<Especie | null>(
+    null
+  );
 
   const currentNode: CladoNode | undefined = cladosTree[currentNodeId];
+  const keyPath = history
+    .map((entry) => entry.keyStep)
+    .filter(Boolean)
+    .join(" > ");
 
   if (!currentNode) {
     return <div className="p-4 text-red-600">Error: Clado no encontrado</div>;
   }
 
   // Determinar si es una especie terminal
-  let finalEspecie: Especie | undefined = undefined;
+  let finalEspecie: Especie | undefined = identifiedEspecie || undefined;
   
   if (currentNode.especie) {
     finalEspecie = currentNode.especie;
@@ -41,6 +53,11 @@ export default function Quiz({ onComplete }: QuizProps) {
         <h2 className="text-3xl font-bold text-green-700 mb-4">
           ¡Especie identificada!
         </h2>
+        {keyPath && (
+          <p className="mb-4 text-sm text-gray-700">
+            Recorrido en la clave: <span className="font-semibold">{keyPath}</span>
+          </p>
+        )}
         <div className="space-y-3">
           <p>
             <strong>Nombre Científico:</strong> {finalEspecie.nombreCientifico}
@@ -72,7 +89,8 @@ export default function Quiz({ onComplete }: QuizProps) {
           <button
             onClick={() => {
               setCurrentNodeId("root");
-              setHistory(["root"]);
+              setHistory([{ nodeId: "root" }]);
+              setIdentifiedEspecie(null);
             }}
             className="bg-gray-600 text-white px-6 py-2 rounded-lg hover:bg-gray-700"
           >
@@ -90,15 +108,19 @@ export default function Quiz({ onComplete }: QuizProps) {
     if (nextOption.especieId) {
       const especie = especiesData[nextOption.especieId];
       if (especie) {
-        onComplete(especie);
+        const keyStep = nextOption.keyStep || (opcion === "A" ? "A" : "A'");
+        setHistory([...history, { nodeId: currentNodeId, keyStep }]);
+        setIdentifiedEspecie(especie);
         return;
       }
     }
     
     // Si tiene un siguiente nodo
     if (nextOption.nextNodeId) {
+      const keyStep = nextOption.keyStep || (opcion === "A" ? "A" : "A'");
       setCurrentNodeId(nextOption.nextNodeId);
-      setHistory([...history, nextOption.nextNodeId]);
+      setHistory([...history, { nodeId: nextOption.nextNodeId, keyStep }]);
+      setIdentifiedEspecie(null);
     }
   };
 
@@ -108,6 +130,11 @@ export default function Quiz({ onComplete }: QuizProps) {
         <span className="text-sm text-gray-500">
           Paso {history.length} del quiz
         </span>
+        {keyPath && (
+          <p className="mt-2 text-sm text-gray-700">
+            Recorrido en la clave: <span className="font-semibold">{keyPath}</span>
+          </p>
+        )}
       </div>
 
       <h2 className="text-2xl font-bold text-gray-800 mb-6">
@@ -135,7 +162,8 @@ export default function Quiz({ onComplete }: QuizProps) {
           onClick={() => {
             const newHistory = history.slice(0, -1);
             setHistory(newHistory);
-            setCurrentNodeId(newHistory[newHistory.length - 1]);
+            setCurrentNodeId(newHistory[newHistory.length - 1].nodeId);
+            setIdentifiedEspecie(null);
           }}
           className="mt-4 text-gray-600 hover:text-gray-800 underline"
         >
