@@ -36,6 +36,24 @@ function getOptionKeySteps(node: CladoNode) {
   };
 }
 
+function buildKeyPath(history: HistoryEntry[]) {
+  const seenMilestones = new Set<string>();
+  const path: string[] = [];
+
+  history.forEach((entry) => {
+    if (entry.keyStep) {
+      path.push(entry.keyStep);
+    }
+
+    if (entry.milestone && !seenMilestones.has(entry.milestone)) {
+      seenMilestones.add(entry.milestone);
+      path.push(entry.milestone);
+    }
+  });
+
+  return path.join(" > ");
+}
+
 export default function Quiz({ onComplete }: QuizProps) {
   const [currentNodeId, setCurrentNodeId] = useState<string>("root");
   const [history, setHistory] = useState<HistoryEntry[]>([{ nodeId: "root" }]);
@@ -44,10 +62,7 @@ export default function Quiz({ onComplete }: QuizProps) {
   );
 
   const currentNode: CladoNode | undefined = cladosTree[currentNodeId];
-  const keyPath = history
-    .flatMap((entry) => [entry.keyStep, entry.milestone])
-    .filter((part): part is string => Boolean(part))
-    .join(" > ");
+  const keyPath = buildKeyPath(history);
   const milestones = history
     .map((entry) => entry.milestone)
     .filter((milestone, index, allMilestones) => {
