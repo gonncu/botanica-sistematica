@@ -99,12 +99,12 @@ export default function Quiz({ onComplete }: QuizProps) {
         </h2>
         {keyPath && (
           <p className="mb-4 text-sm text-gray-700">
-            Recorrido en la clave: <span className="font-semibold">{keyPath}</span>
+            Recorrido en la clave: <span className="font-semibold text-gray-900">{keyPath}</span>
           </p>
         )}
         {milestones && (
           <p className="mb-4 text-sm text-gray-700">
-            Hitos: <span className="font-semibold">{milestones}</span>
+            Hitos: <span className="font-semibold text-gray-900">{milestones}</span>
           </p>
         )}
         <div className="space-y-3">
@@ -193,17 +193,17 @@ export default function Quiz({ onComplete }: QuizProps) {
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">
       <div className="mb-4">
-        <span className="text-sm text-gray-500">
+        <span className="text-sm text-gray-700">
           Paso {history.length} del quiz
         </span>
         {keyPath && (
           <p className="mt-2 text-sm text-gray-700">
-            Recorrido en la clave: <span className="font-semibold">{keyPath}</span>
+            Recorrido en la clave: <span className="font-semibold text-gray-900">{keyPath}</span>
           </p>
         )}
         {milestones && (
           <p className="mt-1 text-sm text-gray-700">
-            Hitos: <span className="font-semibold">{milestones}</span>
+            Hitos: <span className="font-semibold text-gray-900">{milestones}</span>
           </p>
         )}
       </div>
@@ -236,7 +236,7 @@ export default function Quiz({ onComplete }: QuizProps) {
             setCurrentNodeId(newHistory[newHistory.length - 1].nodeId);
             setIdentifiedEspecie(null);
           }}
-          className="mt-4 text-gray-600 hover:text-gray-800 underline"
+          className="mt-4 text-gray-700 hover:text-gray-900 underline"
         >
           ← Volver atrás
         </button>

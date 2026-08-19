@@ -98,7 +98,7 @@ export default function AuthPanel({ onSignedIn }: AuthPanelProps) {
   return (
     <section className="mx-auto max-w-md bg-white rounded-lg shadow-lg p-6">
       <h2 className="text-2xl font-bold text-gray-800 mb-3">Ingresar</h2>
-      <p className="text-gray-600 mb-5">
+      <p className="text-gray-700 mb-5">
         Usá tu correo institucional para guardar tus plantas y recuperar tus registros.
       </p>
 

@@ -70,11 +70,11 @@ export default function SpeciesForm({
 
       {/* Información de la especie identificada */}
       <div className="bg-green-50 border border-green-200 rounded p-4 mb-6">
-        <p className="text-sm text-gray-600">Especie identificada:</p>
+        <p className="text-sm text-gray-700">Especie identificada:</p>
         <p className="text-lg font-bold text-green-700">
           {especie.nombreCientifico}
         </p>
-        <p className="text-sm text-gray-600">{especie.nombreVulgar}</p>
+        <p className="text-sm text-gray-700">{especie.nombreVulgar}</p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-4">

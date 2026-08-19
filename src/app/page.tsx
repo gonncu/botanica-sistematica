@@ -108,7 +108,7 @@ export default function Home() {
   if (isAuthLoading) {
     return (
       <main className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 py-8 px-4">
-        <p className="text-center text-gray-600">Cargando...</p>
+        <p className="text-center text-gray-700">Cargando...</p>
       </main>
     );
   }
@@ -120,7 +120,7 @@ export default function Home() {
           <h1 className="text-4xl font-bold text-green-800 mb-2">
             🌿 Identificador de Plantas
           </h1>
-          <p className="text-gray-600">
+          <p className="text-gray-700">
             Facultad de Agronomía - UBA | Botánica Sistemática
           </p>
         </header>
@@ -132,7 +132,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-gray-800 mb-3">
               Mail no habilitado
             </h2>
-            <p className="text-gray-600 mb-5">
+            <p className="text-gray-700 mb-5">
               Esta app usa cuentas institucionales terminadas en {ALLOWED_DOMAIN}.
             </p>
             <button
@@ -148,7 +148,7 @@ export default function Home() {
           <>
             <div className="bg-white rounded-lg shadow-lg p-4 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
               <div>
-                <p className="text-sm text-gray-500">Sesión iniciada</p>
+                <p className="text-sm text-gray-700">Sesión iniciada</p>
                 <p className="font-medium text-gray-800">{userEmail}</p>
               </div>
               <button
@@ -184,7 +184,7 @@ export default function Home() {
                     <h2 className="text-3xl font-bold text-green-700 mb-4">
                       ✅ Registro completado
                     </h2>
-                    <p className="text-gray-600 mb-6">
+                    <p className="text-gray-700 mb-6">
                       Tu ficha se generó correctamente y quedó guardada en tus registros.
                     </p>
                     <div className="bg-green-50 border border-green-200 rounded p-4 mb-6">
@@ -196,7 +196,7 @@ export default function Home() {
                       <p className="text-lg font-bold text-green-700">
                         {selectedEspecie.nombreCientifico}
                       </p>
-                      <p className="text-gray-600">{selectedEspecie.nombreVulgar}</p>
+                      <p className="text-gray-700">{selectedEspecie.nombreVulgar}</p>
                     </div>
                     <button
                       onClick={() => {
