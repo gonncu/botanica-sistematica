@@ -180,6 +180,78 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo B.",
     "Hierbas o sufrútices con hojas alternas o ausentes; fruto nuez indehiscente o flores unisexuales con estambres rectos."
   ),
+  ranunculaceae: family(
+    "ranunculaceae",
+    "54. Ranunculaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Gineceo dialicarpelar, hojas sin estípulas y estambres indefinidos."
+  ),
+  rutaceae: family(
+    "rutaceae",
+    "70. Rutaceae",
+    "Dicotiledóneas del Grupo C.",
+    "En esta rama aparece por flores actinomorfas y caracteres de estambres/hojas u ovario."
+  ),
+  nymphaeaceae: family(
+    "nymphaeaceae",
+    "52. Nymphaeaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Plantas acuáticas con hojas flotantes peltadas y hojas sumergidas finamente laciniadas."
+  ),
+  crassulaceae: family(
+    "crassulaceae",
+    "61. Crassulaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Plantas pigmeas de suelos húmedos, con hojas lineales enteras."
+  ),
+  papaveraceae: family(
+    "papaveraceae",
+    "57. Papaveraceae",
+    "Dicotiledóneas del Grupo C.",
+    "Flores cigomorfas o irregulares; cáliz con 2 sépalos y pétalos 4, o plantas robustas con látex."
+  ),
+  resedaceae: family(
+    "resedaceae",
+    "60. Resedaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Flores cigomorfas con estambres alrededor de 20 o flores actinomorfas con numerosos estambres."
+  ),
+  leguminosae: family(
+    "leguminosae",
+    "64. Leguminosae",
+    "Dicotiledóneas del Grupo C.",
+    "Ovario unicarpelar unilocular; fruto legumbre."
+  ),
+  violaceae: family(
+    "violaceae",
+    "67. Violaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Estambres 5 y estípulas herbáceas."
+  ),
+  capparidaceae: family(
+    "capparidaceae",
+    "58. Capparidaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Estípulas espiniformes o hojas 3-5-folioladas con estípulas espiniformes."
+  ),
+  polygalaceae: family(
+    "polygalaceae",
+    "72. Polygalaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Estambres monadelfos, fruto bilocular, cáliz no espolonado; hierbas."
+  ),
+  tropaeolaceae: family(
+    "tropaeolaceae",
+    "67. Tropaeolaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Estambres libres, fruto trilocular, cáliz espolonado; enredaderas."
+  ),
+  malvaceae: family(
+    "malvaceae",
+    "81. Malvaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Flores actinomorfas con estambres numerosos y monadelfos formando un tubo."
+  ),
 };
 
 export const manualKeyData: Record<string, CladoNode> = {
@@ -197,6 +269,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   },
   pteridophyta_a: {
     id: "pteridophyta_a",
+    milestone: "Pteridophyta",
     descripcion: "Pteridophyta: ¿es una planta acuática o terrestre?",
     opcionA: {
       label: "Acuática, flotante o arraigada; a veces de terrenos pantanosos",
@@ -293,6 +366,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   },
   spermatophyta_a: {
     id: "spermatophyta_a",
+    milestone: "Spermatophyta",
     descripcion: "Spermatophyta: ¿los óvulos están desnudos o encerrados en un ovario?",
     opcionA: {
       label: "Óvulos desnudos (Gymnospermae)",
@@ -305,6 +379,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   },
   dicot_root: {
     id: "dicot_root",
+    milestone: "Dicotyledoneae",
     descripcion: "Dicotyledoneae: ¿cómo son las flores?",
     opcionA: {
       label: "Flores desnudas, sin cáliz ni corola",
@@ -345,6 +420,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     descripcion: "Con piezas libres: ¿dónde está el ovario?",
     opcionA: {
       label: "Ovario súpero (Grupo C)",
+      keyStep: "D",
       nextNodeId: "dicot_group_pending_c",
     },
     opcionA_prima: {
@@ -354,6 +430,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   },
   dicot_group_a_1: {
     id: "dicot_group_a_1",
+    milestone: "Grupo A",
     descripcion: "Grupo A: ¿la planta es sumergida con hojas verticiladas divididas dicotómicamente?",
     opcionA: {
       label: "Sí",
@@ -402,6 +479,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   },
   dicot_group_b_a: {
     id: "dicot_group_b_a",
+    milestone: "Grupo B",
     descripcion: "Grupo B - A: ¿las flores están encerradas en un receptáculo globoso o piriforme (sicono)?",
     opcionA: {
       label: "Sí; árboles con látex",
@@ -654,22 +732,219 @@ export const manualKeyData: Record<string, CladoNode> = {
   },
   dicot_group_pending_c: {
     id: "dicot_group_pending_c",
-    descripcion: "Grupo C: clave de familias con corola libre y ovario súpero.",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - A: ¿el gineceo es dialicarpelar, formado por dos o más ovarios separados?",
     opcionA: {
-      label: "Continuar expansión del Grupo C en una próxima etapa",
+      label: "Sí, gineceo dialicarpelar",
+      keyStep: "A",
+      nextNodeId: "dicot_group_c_b",
     },
     opcionA_prima: {
-      label: "Volver y revisar si corresponde otro grupo",
+      label: "No, gineceo formado por un solo ovario con carpelos soldados",
+      keyStep: "A'",
+      nextNodeId: "dicot_group_c_f",
+    },
+  },
+  dicot_group_c_b: {
+    id: "dicot_group_c_b",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - B: con gineceo dialicarpelar, ¿las hojas tienen estípulas?",
+    opcionA: {
+      label: "Hojas con estípulas",
+      keyStep: "B",
+      especieId: "rosaceae",
+    },
+    opcionA_prima: {
+      label: "Hojas sin estípulas",
+      keyStep: "B'",
+      nextNodeId: "dicot_group_c_c",
+    },
+  },
+  dicot_group_c_c: {
+    id: "dicot_group_c_c",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - C: con hojas sin estípulas, ¿cuántos estambres hay?",
+    opcionA: {
+      label: "Estambres indefinidos",
+      keyStep: "C",
+      especieId: "ranunculaceae",
+    },
+    opcionA_prima: {
+      label: "Estambres 5-6",
+      keyStep: "C'",
+      nextNodeId: "dicot_group_c_d",
+    },
+  },
+  dicot_group_c_d: {
+    id: "dicot_group_c_d",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - D: con estambres 5-6, ¿árboles o hierbas?",
+    opcionA: {
+      label: "Árboles",
+      keyStep: "D",
+      especieId: "rutaceae",
+    },
+    opcionA_prima: {
+      label: "Hierbas",
+      keyStep: "D'",
+      nextNodeId: "dicot_group_c_e",
+    },
+  },
+  dicot_group_c_e: {
+    id: "dicot_group_c_e",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - E: en hierbas, ¿acuáticas con hojas peltadas o pigmeas de suelos húmedos?",
+    opcionA: {
+      label: "Plantas acuáticas, con hojas flotantes peltadas y hojas sumergidas laciniadas",
+      keyStep: "E",
+      especieId: "nymphaeaceae",
+    },
+    opcionA_prima: {
+      label: "Plantas pigmeas de suelos húmedos, con hojas lineales enteras",
+      keyStep: "E'",
+      especieId: "crassulaceae",
+    },
+  },
+  dicot_group_c_f: {
+    id: "dicot_group_c_f",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - F: con un solo ovario, ¿las flores son cigomorfas/irregulares o actinomorfas?",
+    opcionA: {
+      label: "Flores cigomorfas o irregulares",
+      keyStep: "F",
+      nextNodeId: "dicot_group_c_g",
+    },
+    opcionA_prima: {
+      label: "Flores actinomorfas",
+      keyStep: "F'",
+      nextNodeId: "dicot_group_c_m",
+    },
+  },
+  dicot_group_c_g: {
+    id: "dicot_group_c_g",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - G: en flores cigomorfas, ¿cómo es el cáliz?",
+    opcionA: {
+      label: "Cáliz formado por 2 sépalos; pétalos 4; estambres 4",
+      keyStep: "G",
+      especieId: "papaveraceae",
+    },
+    opcionA_prima: {
+      label: "Cáliz con 4-5 sépalos; pétalos 2-5; estambres 5-20",
+      keyStep: "G'",
+      nextNodeId: "dicot_group_c_h",
+    },
+  },
+  dicot_group_c_h: {
+    id: "dicot_group_c_h",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - H: ¿los estambres son alrededor de 20 o 5-10?",
+    opcionA: {
+      label: "Estambres alrededor de 20",
+      keyStep: "H",
+      especieId: "resedaceae",
+    },
+    opcionA_prima: {
+      label: "Estambres 5-10",
+      keyStep: "H'",
+      nextNodeId: "dicot_group_c_i",
+    },
+  },
+  dicot_group_c_i: {
+    id: "dicot_group_c_i",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - I: con estambres 5-10, ¿fruto legumbre u otro fruto?",
+    opcionA: {
+      label: "Estambres 10; ovario unicarpelar unilocular; fruto legumbre",
+      keyStep: "I",
+      especieId: "leguminosae",
+    },
+    opcionA_prima: {
+      label: "Estambres 5-8; ovario 2-3-carpelar; fruto no legumbre",
+      keyStep: "I'",
+      nextNodeId: "dicot_group_c_j",
+    },
+  },
+  dicot_group_c_j: {
+    id: "dicot_group_c_j",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - J: ¿estambres 5-6 con estípulas o estambres 8 sin estípulas?",
+    opcionA: {
+      label: "Estambres 5-6; hojas con estípulas",
+      keyStep: "J",
+      nextNodeId: "dicot_group_c_k",
+    },
+    opcionA_prima: {
+      label: "Estambres 8; hojas sin estípulas",
+      keyStep: "J'",
+      nextNodeId: "dicot_group_c_l",
+    },
+  },
+  dicot_group_c_k: {
+    id: "dicot_group_c_k",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - K: con estípulas, ¿estambres 5 o 6?",
+    opcionA: {
+      label: "Estambres 5; estípulas herbáceas",
+      keyStep: "K",
+      especieId: "violaceae",
+    },
+    opcionA_prima: {
+      label: "Estambres 6; estípulas espiniformes",
+      keyStep: "K'",
+      especieId: "capparidaceae",
+    },
+  },
+  dicot_group_c_l: {
+    id: "dicot_group_c_l",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - L: con estambres 8 sin estípulas, ¿estambres monadelfos o libres?",
+    opcionA: {
+      label: "Estambres monadelfos; fruto bilocular; cáliz no espolonado; hierbas",
+      keyStep: "L",
+      especieId: "polygalaceae",
+    },
+    opcionA_prima: {
+      label: "Estambres libres; fruto trilocular; cáliz espolonado; enredaderas",
+      keyStep: "L'",
+      especieId: "tropaeolaceae",
+    },
+  },
+  dicot_group_c_m: {
+    id: "dicot_group_c_m",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - M: en flores actinomorfas, ¿los estambres son numerosos y monadelfos formando un tubo?",
+    opcionA: {
+      label: "Sí; tubo estaminal atravesado por el estilo",
+      keyStep: "M",
+      especieId: "malvaceae",
+    },
+    opcionA_prima: {
+      label: "No; estambres libres o unidos sólo en la base o en grupos",
+      keyStep: "M'",
+      nextNodeId: "dicot_group_c_pending_second_half",
+    },
+  },
+  dicot_group_c_pending_second_half: {
+    id: "dicot_group_c_pending_second_half",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - N en adelante: falta cargar la segunda mitad del Grupo C.",
+    opcionA: {
+      label: "Esta rama sigue en el manual desde N: árboles/arbustos y hierbas con flores actinomorfas",
+    },
+    opcionA_prima: {
+      label: "Volver y revisar la elección anterior",
     },
     especie: family(
-      "dicot_group_c_pending",
-      "Grupo C de Dicotyledoneae",
-      "Rama identificada hasta grupo de la clave.",
-      "Piezas de la corola libres y ovario súpero. Falta cargar la subclave completa de familias."
+      "dicot_group_c_second_half_pending",
+      "Grupo C desde N en adelante",
+      "Rama identificada hasta el punto N del Grupo C.",
+      "Falta cargar la continuación del Grupo C desde árboles/arbustos o hierbas con flores actinomorfas."
     ),
   },
   dicot_group_pending_d: {
     id: "dicot_group_pending_d",
+    milestone: "Grupo D",
     descripcion: "Grupo D: clave de familias con corola libre y ovario ínfero.",
     opcionA: {
       label: "Continuar expansión del Grupo D en una próxima etapa",
@@ -686,6 +961,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   },
   dicot_group_pending_e: {
     id: "dicot_group_pending_e",
+    milestone: "Grupo E",
     descripcion: "Grupo E: clave de familias con corola o perigonio más o menos soldado.",
     opcionA: {
       label: "Continuar expansión del Grupo E en una próxima etapa",

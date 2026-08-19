@@ -10,6 +10,7 @@ export interface CladoOption {
 export interface CladoNode {
   id: string; // "A", "A'", "B", "b'", etc.
   descripcion: string;
+  milestone?: string; // Hito legible: Spermatophyta, Angiospermae, Grupo C, etc.
   opcionA: CladoOption;
   opcionA_prima: CladoOption;
   especie?: Especie; // Si es un nodo terminal

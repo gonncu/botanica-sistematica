@@ -15,6 +15,7 @@ export const cladosTree: Record<string, CladoNode> = {
   // Rama Angiosperma - Nivel 1
   angiosperm_1: {
     id: "angiosperm_1",
+    milestone: "Angiospermae",
     descripcion: "¿Cuántos cotiledones tiene el embrión?",
     opcionA: {
       label: "1 cotiledón - Hojas paralelinervadas (Monocotiledoneae)",

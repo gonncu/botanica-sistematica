@@ -25,6 +25,12 @@ export default function Quiz({ onComplete }: QuizProps) {
     .map((entry) => entry.keyStep)
     .filter(Boolean)
     .join(" > ");
+  const milestones = history
+    .map((entry) => cladosTree[entry.nodeId]?.milestone)
+    .filter((milestone, index, allMilestones) => {
+      return milestone && allMilestones.indexOf(milestone) === index;
+    })
+    .join(" > ");
 
   if (!currentNode) {
     return <div className="p-4 text-red-600">Error: Clado no encontrado</div>;
@@ -56,6 +62,11 @@ export default function Quiz({ onComplete }: QuizProps) {
         {keyPath && (
           <p className="mb-4 text-sm text-gray-700">
             Recorrido en la clave: <span className="font-semibold">{keyPath}</span>
+          </p>
+        )}
+        {milestones && (
+          <p className="mb-4 text-sm text-gray-700">
+            Hitos: <span className="font-semibold">{milestones}</span>
           </p>
         )}
         <div className="space-y-3">
@@ -133,6 +144,11 @@ export default function Quiz({ onComplete }: QuizProps) {
         {keyPath && (
           <p className="mt-2 text-sm text-gray-700">
             Recorrido en la clave: <span className="font-semibold">{keyPath}</span>
+          </p>
+        )}
+        {milestones && (
+          <p className="mt-1 text-sm text-gray-700">
+            Hitos: <span className="font-semibold">{milestones}</span>
           </p>
         )}
       </div>
