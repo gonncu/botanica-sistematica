@@ -29,6 +29,42 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Supabase
+
+Create a `.env.local` file using `.env.example` as a reference:
+
+```bash
+NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
+```
+
+The app expects:
+
+- a public storage bucket named `plant-photos`
+- a `photo_records` table for submitted plant records
+- a `quiz_sessions` table for completed quiz sessions
+
+## Deploy on Netlify
+
+This project includes `netlify.toml`.
+
+Netlify settings:
+
+```txt
+Build command: npm run build
+Publish directory: .next
+Node version: 22
+```
+
+Add these environment variables in Netlify:
+
+```txt
+NEXT_PUBLIC_SUPABASE_URL
+NEXT_PUBLIC_SUPABASE_ANON_KEY
+```
+
+For Next.js 13.5+ Netlify detects the framework and applies the Next.js adapter automatically.
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.

@@ -126,7 +126,7 @@ export default function Quiz({ onComplete }: QuizProps) {
           onClick={() => handleOption("A_prima")}
           className="w-full bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 text-left"
         >
-          <span className="font-bold">A'.</span> {currentNode.opcionA_prima.label}
+          <span className="font-bold">A&apos;.</span> {currentNode.opcionA_prima.label}
         </button>
       </div>
 

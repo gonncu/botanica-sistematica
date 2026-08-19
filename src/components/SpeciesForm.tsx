@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
+import Image from "next/image";
 import { Especie } from "@/types";
 
 interface FormData {
@@ -156,10 +157,13 @@ export default function SpeciesForm({ especie, onSubmit }: FormProps) {
             className="w-full border border-gray-300 rounded px-3 py-2"
           />
           {preview && (
-            <img
+            <Image
               src={preview}
               alt="Preview"
-              className="mt-2 max-w-xs rounded max-h-48"
+              width={320}
+              height={192}
+              unoptimized
+              className="mt-2 max-w-xs rounded max-h-48 object-contain"
             />
           )}
         </div>

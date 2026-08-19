@@ -1,15 +1,16 @@
 // Tipos para el árbol de clados
+export interface CladoOption {
+  label: string;
+  nextNodeId?: string; // ID del siguiente clado, si no es terminal
+  especieId?: string; // ID de especie cuando la opción termina el quiz
+  familia?: string;
+}
+
 export interface CladoNode {
   id: string; // "A", "A'", "B", "b'", etc.
   descripcion: string;
-  opcionA: {
-    label: string;
-    nextNodeId?: string; // ID del siguiente clado o null si es especie
-  };
-  opcionA_prima: {
-    label: string;
-    nextNodeId?: string;
-  };
+  opcionA: CladoOption;
+  opcionA_prima: CladoOption;
   especie?: Especie; // Si es un nodo terminal
 }
 

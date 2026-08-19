@@ -19,7 +19,7 @@ export async function savePhotoRecord(
     // Subir foto si existe
     if (formData.foto) {
       const fileName = `${Date.now()}-${formData.foto.name}`;
-      const { data: uploadData, error: uploadError } = await supabase.storage
+      const { error: uploadError } = await supabase.storage
         .from("plant-photos")
         .upload(`photos/${fileName}`, formData.foto);
 

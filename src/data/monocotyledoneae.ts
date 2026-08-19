@@ -3,7 +3,7 @@
 
 export const monocotiledoneaeData = {
   // Nivel 0: Raíz de Monocotiledoneae
-  root: {
+  monocot_root: {
     id: "monocot_root",
     descripcion: "Clase Monocotiledoneae: Embrión con 1 solo cotiledón. Hojas generalmente paralelinervadas. Flores generalmente trimeras.",
     opcionA: {
