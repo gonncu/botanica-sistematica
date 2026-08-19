@@ -785,12 +785,12 @@ export const manualKeyData: Record<string, CladoNode> = {
     id: "pteridophyta_c",
     descripcion: "¿Cómo es el hábito de la planta acuática?",
     opcionA: {
-      label: "Flotante, libre",
+      label: "Flotante, libre (Salviniaceae)",
       keyStep: "C",
       nextNodeId: "salviniaceae_a",
     },
     opcionA_prima: {
-      label: "Arraigada en el fondo o en suelo pantanoso",
+      label: "Arraigada en el fondo o en suelo pantanoso (Marsiliaceae)",
       keyStep: "C'",
       nextNodeId: "marsiliaceae_a",
     },
@@ -868,7 +868,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   marsiliaceae_a: {
     id: "marsiliaceae_a",
     milestone: "Marsiliaceae",
-    descripcion: "Marsiliaceae - A: ¿cómo son las hojas?",
+    descripcion: "Marsiliaceae - A: ¿cómo son las hojas? Esta decisión identifica la especie.",
     opcionA: {
       label: "Hojas lineales",
       keyStep: "A",
