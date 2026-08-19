@@ -402,6 +402,72 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Flores azules o violáceas, pétalos planos; plantas no fétidas."
   ),
+  loasaceae: family(
+    "loasaceae",
+    "90. Loasaceae",
+    "Dicotiledóneas del Grupo D.",
+    "Plantas con pelos urticantes."
+  ),
+  cactaceae: family(
+    "cactaceae",
+    "92. Cactaceae",
+    "Dicotiledóneas del Grupo D.",
+    "Plantas crasas, sin hojas, generalmente con espinas; flores espiraladas."
+  ),
+  begoniaceae: family(
+    "begoniaceae",
+    "91. Begoniaceae",
+    "Dicotiledóneas del Grupo D.",
+    "Hierbas con flores unisexuales diclinas."
+  ),
+  myrtaceae: family(
+    "myrtaceae",
+    "96. Myrtaceae",
+    "Dicotiledóneas del Grupo D.",
+    "Árboles con flores hermafroditas."
+  ),
+  loranthaceae: family(
+    "loranthaceae",
+    "41. Loranthaceae",
+    "Dicotiledóneas del Grupo D.",
+    "Plantas parásitas, con flores grandes y vivamente coloreadas."
+  ),
+  combretaceae: family(
+    "combretaceae",
+    "95. Combretaceae",
+    "Dicotiledóneas del Grupo D.",
+    "Plantas no parásitas, con flores pequeñas verdosas."
+  ),
+  umbelliferae: family(
+    "umbelliferae",
+    "100. Umbelliferae",
+    "Dicotiledóneas del Grupo D.",
+    "Flores pequeñas en umbelas o capítulos densos; fruto seco dividido en dos mericarpos."
+  ),
+  haloragaceae: family(
+    "haloragaceae",
+    "99. Haloragaceae",
+    "Dicotiledóneas del Grupo D.",
+    "Plantas acuáticas semisumergidas con hojas verticiladas, pinatisectas, de segmentos lineales."
+  ),
+  saxifragaceae: family(
+    "saxifragaceae",
+    "62. Saxifragaceae",
+    "Dicotiledóneas del Grupo D.",
+    "Plantas terrestres con anteras de dehiscencia longitudinal y estambres 5."
+  ),
+  onagraceae: family(
+    "onagraceae",
+    "98. Onagraceae",
+    "Dicotiledóneas del Grupo D.",
+    "Estambres 4 y tubo del cáliz muy largo, frecuentemente prolongado en hipanto."
+  ),
+  melastomaceae: family(
+    "melastomaceae",
+    "97. Melastomaceae",
+    "Dicotiledóneas del Grupo D.",
+    "Anteras dehiscentes por poros apicales."
+  ),
 };
 
 export const manualKeyData: Record<string, CladoNode> = {
@@ -575,6 +641,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     },
     opcionA_prima: {
       label: "Ovario ínfero (Grupo D)",
+      keyStep: "D'",
       nextNodeId: "dicot_group_pending_d",
     },
   },
@@ -1663,19 +1730,152 @@ export const manualKeyData: Record<string, CladoNode> = {
   dicot_group_pending_d: {
     id: "dicot_group_pending_d",
     milestone: "Grupo D",
-    descripcion: "Grupo D: clave de familias con corola libre y ovario ínfero.",
+    descripcion: "Grupo D - A: ¿la planta tiene pelos urticantes?",
     opcionA: {
-      label: "Continuar expansión del Grupo D en una próxima etapa",
+      label: "Sí",
+      keyStep: "A",
+      especieId: "loasaceae",
     },
     opcionA_prima: {
-      label: "Volver y revisar si corresponde otro grupo",
+      label: "No",
+      keyStep: "A'",
+      nextNodeId: "dicot_group_d_b",
     },
-    especie: family(
-      "dicot_group_d_pending",
-      "Grupo D de Dicotyledoneae",
-      "Rama identificada hasta grupo de la clave.",
-      "Piezas de la corola libres y ovario ínfero. Falta cargar la subclave completa de familias."
-    ),
+  },
+  dicot_group_d_b: {
+    id: "dicot_group_d_b",
+    milestone: "Grupo D",
+    descripcion: "Grupo D - B: sin pelos urticantes, ¿los estambres son indefinidos o menos de 12?",
+    opcionA: {
+      label: "Estambres indefinidos",
+      keyStep: "B",
+      nextNodeId: "dicot_group_d_c",
+    },
+    opcionA_prima: {
+      label: "Estambres menos de 12",
+      keyStep: "B'",
+      nextNodeId: "dicot_group_d_e",
+    },
+  },
+  dicot_group_d_c: {
+    id: "dicot_group_d_c",
+    milestone: "Grupo D",
+    descripcion: "Grupo D - C: con estambres indefinidos, ¿plantas crasas sin hojas y generalmente espinosas?",
+    opcionA: {
+      label: "Sí; flores espiraladas",
+      keyStep: "C",
+      especieId: "cactaceae",
+    },
+    opcionA_prima: {
+      label: "No; plantas con hojas, sin espinas",
+      keyStep: "C'",
+      nextNodeId: "dicot_group_d_d",
+    },
+  },
+  dicot_group_d_d: {
+    id: "dicot_group_d_d",
+    milestone: "Grupo D",
+    descripcion: "Grupo D - D: con hojas y sin espinas, ¿hierbas o árboles?",
+    opcionA: {
+      label: "Hierbas; flores unisexuales diclinas",
+      keyStep: "D",
+      especieId: "begoniaceae",
+    },
+    opcionA_prima: {
+      label: "Árboles; flores hermafroditas",
+      keyStep: "D'",
+      especieId: "myrtaceae",
+    },
+  },
+  dicot_group_d_e: {
+    id: "dicot_group_d_e",
+    milestone: "Grupo D",
+    descripcion: "Grupo D - E: con estambres menos de 12, ¿el ovario es unilocular o 2-∞-locular?",
+    opcionA: {
+      label: "Ovario unilocular",
+      keyStep: "E",
+      nextNodeId: "dicot_group_d_f",
+    },
+    opcionA_prima: {
+      label: "Ovario 2-∞-locular",
+      keyStep: "E'",
+      nextNodeId: "dicot_group_d_g",
+    },
+  },
+  dicot_group_d_f: {
+    id: "dicot_group_d_f",
+    milestone: "Grupo D",
+    descripcion: "Grupo D - F: con ovario unilocular, ¿plantas parásitas con flores grandes coloreadas?",
+    opcionA: {
+      label: "Sí",
+      keyStep: "F",
+      especieId: "loranthaceae",
+    },
+    opcionA_prima: {
+      label: "No; flores pequeñas verdosas",
+      keyStep: "F'",
+      especieId: "combretaceae",
+    },
+  },
+  dicot_group_d_g: {
+    id: "dicot_group_d_g",
+    milestone: "Grupo D",
+    descripcion: "Grupo D - G: con ovario 2-∞-locular, ¿flores pequeñas en umbelas o capítulos densos?",
+    opcionA: {
+      label: "Sí; fruto seco dividido en dos mericarpos",
+      keyStep: "G",
+      especieId: "umbelliferae",
+    },
+    opcionA_prima: {
+      label: "No; flores pequeñas o grandes dispuestas en otra forma",
+      keyStep: "G'",
+      nextNodeId: "dicot_group_d_h",
+    },
+  },
+  dicot_group_d_h: {
+    id: "dicot_group_d_h",
+    milestone: "Grupo D",
+    descripcion: "Grupo D - H: ¿plantas acuáticas semisumergidas con hojas verticiladas pinatisectas?",
+    opcionA: {
+      label: "Sí; segmentos lineales",
+      keyStep: "H",
+      especieId: "haloragaceae",
+    },
+    opcionA_prima: {
+      label: "No; plantas terrestres, rara vez acuáticas con hojas enteras flotantes",
+      keyStep: "H'",
+      nextNodeId: "dicot_group_d_j",
+    },
+  },
+  dicot_group_d_j: {
+    id: "dicot_group_d_j",
+    milestone: "Grupo D",
+    descripcion: "Grupo D - J: ¿cómo es la dehiscencia de las anteras?",
+    opcionA: {
+      label: "Dehiscencia longitudinal",
+      keyStep: "J",
+      nextNodeId: "dicot_group_d_k",
+    },
+    opcionA_prima: {
+      label: "Dehiscencia por poros apicales",
+      keyStep: "J'",
+      especieId: "melastomaceae",
+    },
+  },
+  dicot_group_d_k: {
+    id: "dicot_group_d_k",
+    milestone: "Grupo D",
+    descripcion: "Grupo D - K: con anteras de dehiscencia longitudinal, ¿cuántos estambres hay?",
+    opcionA: {
+      label: "Estambres 5",
+      keyStep: "K",
+      especieId: "saxifragaceae",
+    },
+    opcionA_prima: {
+      label: "Estambres 4; tubo del cáliz muy largo, a veces prolongado en hipanto",
+      keyStep: "K'",
+      especieId: "onagraceae",
+    },
   },
   dicot_group_pending_e: {
     id: "dicot_group_pending_e",
