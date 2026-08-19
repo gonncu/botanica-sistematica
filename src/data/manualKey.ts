@@ -252,6 +252,156 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Flores actinomorfas con estambres numerosos y monadelfos formando un tubo."
   ),
+  sapindaceae: family(
+    "sapindaceae",
+    "77. Sapindaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Árboles, arbustos o plantas volubles; en la clave aparece por hojas/folíolos y ovario 3-5-locular o frutos trialados."
+  ),
+  zygophyllaceae: family(
+    "zygophyllaceae",
+    "69. Zygophyllaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Folíolos pequeños, oblongos y enteros; ovario 3-5-locular, estambres 8-10."
+  ),
+  sterculiaceae: family(
+    "sterculiaceae",
+    "82. Sterculiaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Hojas simples, ovario 5-locular y estambres monadelfos."
+  ),
+  celastraceae: family(
+    "celastraceae",
+    "76. Celastraceae",
+    "Dicotiledóneas del Grupo C.",
+    "Flores unisexuales o estambres 4; en la clave aparece por ovario bilocular o unilocular."
+  ),
+  tiliaceae: family(
+    "tiliaceae",
+    "80. Tiliaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Flores hermafroditas con estambres muy numerosos."
+  ),
+  rhamnaceae: family(
+    "rhamnaceae",
+    "78. Rhamnaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Plantas espinosas, receptáculo floral muy cóncavo a urceolado y frutos no alados."
+  ),
+  berberidaceae: family(
+    "berberidaceae",
+    "55. Berberidaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Ovario unilocular y estambres 6."
+  ),
+  lauraceae: family(
+    "lauraceae",
+    "56. Lauraceae",
+    "Dicotiledóneas del Grupo C.",
+    "Flores con perigonio coralino, estambres 9 y anteras de dehiscencia valvar."
+  ),
+  anacardiaceae: family(
+    "anacardiaceae",
+    "75. Anacardiaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Flores con cáliz y corola, estambres 10 y anteras de dehiscencia longitudinal."
+  ),
+  amaranthaceae: family(
+    "amaranthaceae",
+    "45. Amaranthaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Flores pequeñas en inflorescencias densas, con tépalos escariosos o membranosos."
+  ),
+  malpighiaceae: family(
+    "malpighiaceae",
+    "71. Malpighiaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Plantas volubles con hojas enteras opuestas."
+  ),
+  basellaceae: family(
+    "basellaceae",
+    "50. Basellaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Plantas volubles con hojas enteras alternas."
+  ),
+  passifloraceae: family(
+    "passifloraceae",
+    "89. Passifloraceae",
+    "Dicotiledóneas del Grupo C.",
+    "Flores grandes llamativas con corona de apéndices filamentosos; hojas palmatisectas o bilobadas."
+  ),
+  vitaceae: family(
+    "vitaceae",
+    "79. Vitaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Plantas volubles con estambres 4-5, gineceo bicarpelar y hojas palmaticompuestas."
+  ),
+  cruciferae: family(
+    "cruciferae",
+    "59. Cruciferae",
+    "Dicotiledóneas del Grupo C.",
+    "Estambres tetradínamos, pétalos 4 y fruto silicua o silícula."
+  ),
+  elatinaceae: family(
+    "elatinaceae",
+    "84. Elatinaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Plantas pigmeas sin látex o con hojas opuestas lineales en ramas de la clave."
+  ),
+  portulacaceae: family(
+    "portulacaceae",
+    "49. Portulacaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Fruto cápsula de dehiscencia transversal; plantas sin látex."
+  ),
+  guttiferae: family(
+    "guttiferae",
+    "88. Guttiferae",
+    "Dicotiledóneas del Grupo C.",
+    "Hojas opuestas y estambres generalmente reunidos en tres o más manojos."
+  ),
+  caryophyllaceae: family(
+    "caryophyllaceae",
+    "51. Caryophyllaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Óvulos de placentación central o basilar; hojas opuestas e inflorescencias ramificadas dicotómicamente."
+  ),
+  frankeniaceae: family(
+    "frankeniaceae",
+    "85. Frankeniaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Óvulos de placentación parietal y hojas opuestas."
+  ),
+  turneraceae: family(
+    "turneraceae",
+    "88. Turneraceae",
+    "Dicotiledóneas del Grupo C.",
+    "Óvulos de placentación parietal y hojas alternas."
+  ),
+  lythraceae: family(
+    "lythraceae",
+    "94. Lythraceae",
+    "Dicotiledóneas del Grupo C.",
+    "Receptáculo tubuloso, verde o coloreado, con pétalos insertos en su borde."
+  ),
+  oxalidaceae: family(
+    "oxalidaceae",
+    "65. Oxalidaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Hojas trifolioladas con folíolos acorazonados; estambres 10, ovario 5-locular y 5 estilos."
+  ),
+  linaceae: family(
+    "linaceae",
+    "68. Linaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Hojas lineales enteras, alternas; plantas robustas."
+  ),
+  geraniaceae: family(
+    "geraniaceae",
+    "66. Geraniaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Flores azules o violáceas, pétalos planos; plantas no fétidas."
+  ),
 };
 
 export const manualKeyData: Record<string, CladoNode> = {
@@ -922,25 +1072,593 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "No; estambres libres o unidos sólo en la base o en grupos",
       keyStep: "M'",
-      nextNodeId: "dicot_group_c_pending_second_half",
+      nextNodeId: "dicot_group_c_n",
     },
   },
-  dicot_group_c_pending_second_half: {
-    id: "dicot_group_c_pending_second_half",
+  dicot_group_c_n: {
+    id: "dicot_group_c_n",
     milestone: "Grupo C",
-    descripcion: "Grupo C - N en adelante: falta cargar la segunda mitad del Grupo C.",
+    descripcion: "Grupo C - N: ¿son árboles/arbustos elevados o hierbas/sufrútices/plantas volubles?",
     opcionA: {
-      label: "Esta rama sigue en el manual desde N: árboles/arbustos y hierbas con flores actinomorfas",
+      label: "Árboles o arbustos más o menos elevados",
+      keyStep: "N",
+      nextNodeId: "dicot_group_c_o",
     },
     opcionA_prima: {
-      label: "Volver y revisar la elección anterior",
+      label: "Hierbas, sufrútices o plantas volubles",
+      keyStep: "N'",
+      nextNodeId: "dicot_group_c_a_lower",
     },
-    especie: family(
-      "dicot_group_c_second_half_pending",
-      "Grupo C desde N en adelante",
-      "Rama identificada hasta el punto N del Grupo C.",
-      "Falta cargar la continuación del Grupo C desde árboles/arbustos o hierbas con flores actinomorfas."
-    ),
+  },
+  dicot_group_c_o: {
+    id: "dicot_group_c_o",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - O: en árboles o arbustos, ¿las hojas son compuestas o simples?",
+    opcionA: {
+      label: "Hojas compuestas",
+      keyStep: "O",
+      nextNodeId: "dicot_group_c_p",
+    },
+    opcionA_prima: {
+      label: "Hojas simples",
+      keyStep: "O'",
+      nextNodeId: "dicot_group_c_s",
+    },
+  },
+  dicot_group_c_p: {
+    id: "dicot_group_c_p",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - P: con hojas compuestas, ¿cuántos estambres hay?",
+    opcionA: {
+      label: "Estambres 4-5",
+      keyStep: "P",
+      especieId: "rutaceae",
+    },
+    opcionA_prima: {
+      label: "Estambres 8 a muchos",
+      keyStep: "P'",
+      nextNodeId: "dicot_group_c_q",
+    },
+  },
+  dicot_group_c_q: {
+    id: "dicot_group_c_q",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - Q: con estambres 8 a muchos, ¿cómo es el ovario?",
+    opcionA: {
+      label: "Ovario unilocular; estambres 10-∞; fruto legumbre",
+      keyStep: "Q",
+      especieId: "leguminosae",
+    },
+    opcionA_prima: {
+      label: "Ovario 3-5-locular; estambres 8-10",
+      keyStep: "Q'",
+      nextNodeId: "dicot_group_c_r",
+    },
+  },
+  dicot_group_c_r: {
+    id: "dicot_group_c_r",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - R: ¿cómo son los folíolos?",
+    opcionA: {
+      label: "Folíolos grandes, ovados, aserrados",
+      keyStep: "R",
+      especieId: "sapindaceae",
+    },
+    opcionA_prima: {
+      label: "Folíolos pequeños, oblongos, enteros",
+      keyStep: "R'",
+      especieId: "zygophyllaceae",
+    },
+  },
+  dicot_group_c_s: {
+    id: "dicot_group_c_s",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - S: con hojas simples, ¿el ovario es 2-5-locular o unilocular?",
+    opcionA: {
+      label: "Ovario 2-5-locular",
+      keyStep: "S",
+      nextNodeId: "dicot_group_c_t",
+    },
+    opcionA_prima: {
+      label: "Ovario unilocular",
+      keyStep: "S'",
+      nextNodeId: "dicot_group_c_x_upper",
+    },
+  },
+  dicot_group_c_t: {
+    id: "dicot_group_c_t",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - T: con ovario 2-5-locular, ¿es 5-locular con estambres monadelfos?",
+    opcionA: {
+      label: "Ovario 5-locular; estambres monadelfos",
+      keyStep: "T",
+      especieId: "sterculiaceae",
+    },
+    opcionA_prima: {
+      label: "Ovario 2-4-locular",
+      keyStep: "T'",
+      nextNodeId: "dicot_group_c_u",
+    },
+  },
+  dicot_group_c_u: {
+    id: "dicot_group_c_u",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - U: con ovario 2-4-locular, ¿las flores son unisexuales o hermafroditas?",
+    opcionA: {
+      label: "Flores unisexuales",
+      keyStep: "U",
+      nextNodeId: "dicot_group_c_v",
+    },
+    opcionA_prima: {
+      label: "Flores hermafroditas",
+      keyStep: "U'",
+      nextNodeId: "dicot_group_c_w",
+    },
+  },
+  dicot_group_c_v: {
+    id: "dicot_group_c_v",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - V: con flores unisexuales, ¿plantas monoicas o dioicas?",
+    opcionA: {
+      label: "Plantas monoicas; flores diclinas; ovario trilocular",
+      keyStep: "V",
+      especieId: "euphorbiaceae",
+    },
+    opcionA_prima: {
+      label: "Plantas dioicas; flores tetrámeras; ovario bilocular",
+      keyStep: "V'",
+      especieId: "celastraceae",
+    },
+  },
+  dicot_group_c_w: {
+    id: "dicot_group_c_w",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - W: con flores hermafroditas, ¿cuántos estambres hay?",
+    opcionA: {
+      label: "Estambres muy numerosos",
+      keyStep: "W",
+      especieId: "tiliaceae",
+    },
+    opcionA_prima: {
+      label: "Estambres 4-10",
+      keyStep: "W'",
+      nextNodeId: "dicot_group_c_x_middle",
+    },
+  },
+  dicot_group_c_x_middle: {
+    id: "dicot_group_c_x_middle",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - X: con estambres 4-10, ¿plantas espinosas con receptáculo muy cóncavo?",
+    opcionA: {
+      label: "Plantas espinosas; receptáculo floral muy cóncavo a urceolado; frutos no alados",
+      keyStep: "X",
+      especieId: "rhamnaceae",
+    },
+    opcionA_prima: {
+      label: "Plantas no espinosas; receptáculo casi plano; frutos trialados",
+      keyStep: "X'",
+      especieId: "sapindaceae",
+    },
+  },
+  dicot_group_c_x_upper: {
+    id: "dicot_group_c_x_upper",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - X: con ovario unilocular, ¿cuántos estambres hay?",
+    opcionA: {
+      label: "Estambres 4-6",
+      keyStep: "X",
+      nextNodeId: "dicot_group_c_y",
+    },
+    opcionA_prima: {
+      label: "Estambres 9-10",
+      keyStep: "X'",
+      nextNodeId: "dicot_group_c_z",
+    },
+  },
+  dicot_group_c_y: {
+    id: "dicot_group_c_y",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - Y: con estambres 4-6, ¿son 4 o 6?",
+    opcionA: {
+      label: "Estambres 4",
+      keyStep: "Y",
+      especieId: "celastraceae",
+    },
+    opcionA_prima: {
+      label: "Estambres 6",
+      keyStep: "Y'",
+      especieId: "berberidaceae",
+    },
+  },
+  dicot_group_c_z: {
+    id: "dicot_group_c_z",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - Z: con estambres 9-10, ¿perigonio coralino o cáliz y corola?",
+    opcionA: {
+      label: "Flores con perigonio coralino; estambres 9; anteras de dehiscencia valvar",
+      keyStep: "Z",
+      especieId: "lauraceae",
+    },
+    opcionA_prima: {
+      label: "Flores con cáliz y corola; estambres 10; anteras de dehiscencia longitudinal",
+      keyStep: "Z'",
+      especieId: "anacardiaceae",
+    },
+  },
+  dicot_group_c_a_lower: {
+    id: "dicot_group_c_a_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - a: en hierbas/sufrútices/volubles, ¿perigonio coralino o cáliz y corola?",
+    opcionA: {
+      label: "Flores con perigonio coralino",
+      keyStep: "a",
+      nextNodeId: "dicot_group_c_b_lower",
+    },
+    opcionA_prima: {
+      label: "Flores con cáliz y corola",
+      keyStep: "a'",
+      nextNodeId: "dicot_group_c_e_lower",
+    },
+  },
+  dicot_group_c_b_lower: {
+    id: "dicot_group_c_b_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - b: con perigonio coralino, ¿hojas con ócrea?",
+    opcionA: {
+      label: "Hojas con ócrea",
+      keyStep: "b",
+      especieId: "polygonaceae",
+    },
+    opcionA_prima: {
+      label: "Hojas sin ócrea",
+      keyStep: "b'",
+      nextNodeId: "dicot_group_c_c_lower",
+    },
+  },
+  dicot_group_c_c_lower: {
+    id: "dicot_group_c_c_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - c: sin ócrea, ¿fruto baya o cápsula/utrículo?",
+    opcionA: {
+      label: "Fruto baya; hojas alternas; flores en racimo",
+      keyStep: "c",
+      especieId: "phytolaccaceae",
+    },
+    opcionA_prima: {
+      label: "Fruto cápsula o utrículo; hojas generalmente opuestas",
+      keyStep: "c'",
+      nextNodeId: "dicot_group_c_d_lower",
+    },
+  },
+  dicot_group_c_d_lower: {
+    id: "dicot_group_c_d_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - d: con fruto cápsula/utrículo, ¿flores solitarias grandes o inflorescencias densas pequeñas?",
+    opcionA: {
+      label: "Flores solitarias o subsolitarias, grandes; plantas carnosas",
+      keyStep: "d",
+      especieId: "aizoaceae",
+    },
+    opcionA_prima: {
+      label: "Flores pequeñas en inflorescencias densas; plantas no carnosas",
+      keyStep: "d'",
+      especieId: "amaranthaceae",
+    },
+  },
+  dicot_group_c_e_lower: {
+    id: "dicot_group_c_e_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - e: con cáliz y corola, ¿plantas volubles o no volubles?",
+    opcionA: {
+      label: "Plantas volubles, leñosas o herbáceas",
+      keyStep: "e",
+      nextNodeId: "dicot_group_c_f_lower",
+    },
+    opcionA_prima: {
+      label: "Plantas no volubles",
+      keyStep: "e'",
+      nextNodeId: "dicot_group_c_j_lower",
+    },
+  },
+  dicot_group_c_f_lower: {
+    id: "dicot_group_c_f_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - f: en plantas volubles, ¿hojas enteras o profundamente partidas/compuestas?",
+    opcionA: {
+      label: "Hojas enteras",
+      keyStep: "f",
+      nextNodeId: "dicot_group_c_g_lower",
+    },
+    opcionA_prima: {
+      label: "Hojas profundamente partidas o compuestas",
+      keyStep: "f'",
+      nextNodeId: "dicot_group_c_h_lower",
+    },
+  },
+  dicot_group_c_g_lower: {
+    id: "dicot_group_c_g_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - g: con hojas enteras, ¿opuestas o alternas?",
+    opcionA: {
+      label: "Hojas opuestas",
+      keyStep: "g",
+      especieId: "malpighiaceae",
+    },
+    opcionA_prima: {
+      label: "Hojas alternas",
+      keyStep: "g'",
+      especieId: "basellaceae",
+    },
+  },
+  dicot_group_c_h_lower: {
+    id: "dicot_group_c_h_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - h: con hojas partidas/compuestas, ¿flores grandes con corona filamentosa?",
+    opcionA: {
+      label: "Flores grandes, llamativas, con corona filamentosa",
+      keyStep: "h",
+      especieId: "passifloraceae",
+    },
+    opcionA_prima: {
+      label: "Flores pequeñas, sin apéndices filamentosos en la base de pétalos",
+      keyStep: "h'",
+      nextNodeId: "dicot_group_c_i_lower",
+    },
+  },
+  dicot_group_c_i_lower: {
+    id: "dicot_group_c_i_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - i: en flores pequeñas, ¿estambres 8 o 4-5?",
+    opcionA: {
+      label: "Estambres 8; gineceo tricarpelar trilocular; hojas trifolioladas o bipinaticompuestas",
+      keyStep: "i",
+      especieId: "sapindaceae",
+    },
+    opcionA_prima: {
+      label: "Estambres 4-5; gineceo bicarpelar; hojas palmaticompuestas",
+      keyStep: "i'",
+      especieId: "vitaceae",
+    },
+  },
+  dicot_group_c_j_lower: {
+    id: "dicot_group_c_j_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - j: en plantas no volubles, ¿estambres tetradínamos y fruto silicua/silícula?",
+    opcionA: {
+      label: "Sí; pétalos 4; fruto silicua o silícula",
+      keyStep: "j",
+      especieId: "cruciferae",
+    },
+    opcionA_prima: {
+      label: "No; estambres no tetradínamos y fruto no silicua",
+      keyStep: "j'",
+      nextNodeId: "dicot_group_c_k_lower",
+    },
+  },
+  dicot_group_c_k_lower: {
+    id: "dicot_group_c_k_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - k: con fruto no silicua, ¿cáliz de 2-3 sépalos o 4-5 sépalos?",
+    opcionA: {
+      label: "Cáliz formado por 2-3 sépalos",
+      keyStep: "k",
+      nextNodeId: "dicot_group_c_l_lower",
+    },
+    opcionA_prima: {
+      label: "Cáliz con 4-5 sépalos",
+      keyStep: "k'",
+      nextNodeId: "dicot_group_c_n_lower",
+    },
+  },
+  dicot_group_c_l_lower: {
+    id: "dicot_group_c_l_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - l: con cáliz de 2-3 sépalos, ¿tipo de dehiscencia del fruto?",
+    opcionA: {
+      label: "Fruto cápsula de dehiscencia poricida o longitudinal",
+      keyStep: "l",
+      nextNodeId: "dicot_group_c_m_lower",
+    },
+    opcionA_prima: {
+      label: "Fruto cápsula de dehiscencia transversal; plantas sin látex",
+      keyStep: "l'",
+      especieId: "portulacaceae",
+    },
+  },
+  dicot_group_c_m_lower: {
+    id: "dicot_group_c_m_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - m: con dehiscencia poricida/longitudinal, ¿plantas con látex robustas?",
+    opcionA: {
+      label: "Plantas con látex, robustas",
+      keyStep: "m",
+      especieId: "papaveraceae",
+    },
+    opcionA_prima: {
+      label: "Plantas sin látex, pigmeas",
+      keyStep: "m'",
+      especieId: "elatinaceae",
+    },
+  },
+  dicot_group_c_n_lower: {
+    id: "dicot_group_c_n_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - n: con cáliz de 4-5 sépalos, ¿estambres más de 12?",
+    opcionA: {
+      label: "Estambres más de 12",
+      keyStep: "n",
+      nextNodeId: "dicot_group_c_ene_lower",
+    },
+    opcionA_prima: {
+      label: "Estambres menos de 11",
+      keyStep: "n'",
+      nextNodeId: "dicot_group_c_o_lower",
+    },
+  },
+  dicot_group_c_ene_lower: {
+    id: "dicot_group_c_ene_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - ñ: con estambres más de 12, ¿hojas alternas u opuestas?",
+    opcionA: {
+      label: "Hojas alternas; filamentos libres o unidos en la base",
+      keyStep: "ñ",
+      especieId: "resedaceae",
+    },
+    opcionA_prima: {
+      label: "Hojas opuestas; estambres en tres o más manojos",
+      keyStep: "ñ'",
+      especieId: "guttiferae",
+    },
+  },
+  dicot_group_c_o_lower: {
+    id: "dicot_group_c_o_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - o: con estambres menos de 11, ¿ovario unilocular o 2-∞-locular?",
+    opcionA: {
+      label: "Ovario unilocular",
+      keyStep: "o",
+      nextNodeId: "dicot_group_c_p_lower",
+    },
+    opcionA_prima: {
+      label: "Ovario 2-∞-locular",
+      keyStep: "o'",
+      nextNodeId: "dicot_group_c_s_lower",
+    },
+  },
+  dicot_group_c_p_lower: {
+    id: "dicot_group_c_p_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - p: con ovario unilocular, ¿placentación central/basilar o parietal?",
+    opcionA: {
+      label: "Óvulos de placentación central o basilar; hojas opuestas",
+      keyStep: "p",
+      especieId: "caryophyllaceae",
+    },
+    opcionA_prima: {
+      label: "Óvulos de placentación parietal",
+      keyStep: "p'",
+      nextNodeId: "dicot_group_c_q_lower",
+    },
+  },
+  dicot_group_c_q_lower: {
+    id: "dicot_group_c_q_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - q: con placentación parietal, ¿hojas 3-5-folioladas con estípulas espiniformes?",
+    opcionA: {
+      label: "Sí",
+      keyStep: "q",
+      especieId: "capparidaceae",
+    },
+    opcionA_prima: {
+      label: "No; hojas simples",
+      keyStep: "q'",
+      nextNodeId: "dicot_group_c_r_lower",
+    },
+  },
+  dicot_group_c_r_lower: {
+    id: "dicot_group_c_r_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - r: con hojas simples, ¿opuestas o alternas?",
+    opcionA: {
+      label: "Hojas opuestas",
+      keyStep: "r",
+      especieId: "frankeniaceae",
+    },
+    opcionA_prima: {
+      label: "Hojas alternas",
+      keyStep: "r'",
+      especieId: "turneraceae",
+    },
+  },
+  dicot_group_c_s_lower: {
+    id: "dicot_group_c_s_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - s: con ovario 2-∞-locular, ¿receptáculo tubuloso?",
+    opcionA: {
+      label: "Receptáculo tubuloso, verde o coloreado, con pétalos insertos en el borde",
+      keyStep: "s",
+      especieId: "lythraceae",
+    },
+    opcionA_prima: {
+      label: "Receptáculo a veces algo cóncavo, pero no tubuloso",
+      keyStep: "s'",
+      nextNodeId: "dicot_group_c_t_lower",
+    },
+  },
+  dicot_group_c_t_lower: {
+    id: "dicot_group_c_t_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - t: sin receptáculo tubuloso, ¿hojas trifolioladas con folíolos acorazonados?",
+    opcionA: {
+      label: "Sí; estambres 10, ovario 5-locular, 5 estilos",
+      keyStep: "t",
+      especieId: "oxalidaceae",
+    },
+    opcionA_prima: {
+      label: "No; hojas simples o compuestas, pero no trifolioladas",
+      keyStep: "t'",
+      nextNodeId: "dicot_group_c_u_lower",
+    },
+  },
+  dicot_group_c_u_lower: {
+    id: "dicot_group_c_u_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - u: ¿flores unisexuales diclinas o hermafroditas?",
+    opcionA: {
+      label: "Flores unisexuales, diclinas",
+      keyStep: "u",
+      especieId: "euphorbiaceae",
+    },
+    opcionA_prima: {
+      label: "Flores hermafroditas",
+      keyStep: "u'",
+      nextNodeId: "dicot_group_c_v_lower",
+    },
+  },
+  dicot_group_c_v_lower: {
+    id: "dicot_group_c_v_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - v: con flores hermafroditas, ¿hojas lineales enteras?",
+    opcionA: {
+      label: "Hojas lineales, enteras",
+      keyStep: "v",
+      nextNodeId: "dicot_group_c_w_lower",
+    },
+    opcionA_prima: {
+      label: "Hojas no lineales, aserradas o partidas",
+      keyStep: "v'",
+      nextNodeId: "dicot_group_c_x_lower",
+    },
+  },
+  dicot_group_c_w_lower: {
+    id: "dicot_group_c_w_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - w: con hojas lineales enteras, ¿alternas u opuestas?",
+    opcionA: {
+      label: "Hojas alternas; plantas robustas",
+      keyStep: "w",
+      especieId: "linaceae",
+    },
+    opcionA_prima: {
+      label: "Hojas opuestas; plantas pigmeas",
+      keyStep: "w'",
+      especieId: "elatinaceae",
+    },
+  },
+  dicot_group_c_x_lower: {
+    id: "dicot_group_c_x_lower",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - x: con hojas no lineales, ¿flores amarillas y plantas fétidas?",
+    opcionA: {
+      label: "Flores amarillas; pétalos en forma de cuchara; plantas fétidas",
+      keyStep: "x",
+      especieId: "rutaceae",
+    },
+    opcionA_prima: {
+      label: "Flores azules o violáceas; pétalos planos; plantas no fétidas",
+      keyStep: "x'",
+      especieId: "geraniaceae",
+    },
   },
   dicot_group_pending_d: {
     id: "dicot_group_pending_d",
