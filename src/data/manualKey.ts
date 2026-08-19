@@ -468,6 +468,198 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo D.",
     "Anteras dehiscentes por poros apicales."
   ),
+  lentibulariaceae: family(
+    "lentibulariaceae",
+    "120. Lentibulariaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Plantas acuáticas con hojas sumergidas provistas de ascidias o trampas."
+  ),
+  bignoniaceae: family(
+    "bignoniaceae",
+    "118. Bignoniaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Lianas con hojas compuestas."
+  ),
+  borraginaceae: family(
+    "borraginaceae",
+    "113. Borraginaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Hierbas o arbustos; aparece por fruto drupáceo o por inflorescencias escorpioides."
+  ),
+  scrophulariaceae: family(
+    "scrophulariaceae",
+    "117. Scrophulariaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Fruto cápsula multiseminada o lóculos con muchos óvulos."
+  ),
+  martyniaceae: family(
+    "martyniaceae",
+    "119. Martyniaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Ovario unilocular, fruto cápsula drupácea y placentación parietal."
+  ),
+  acanthaceae: family(
+    "acanthaceae",
+    "121. Acanthaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Ovario bilocular con placentación axilar; lóculos con dos óvulos, raramente más."
+  ),
+  labiatae: family(
+    "labiatae",
+    "115. Labiatae",
+    "Dicotiledóneas del Grupo E.",
+    "Ovario 4-lobulado y estilo ginobásico; corola notablemente bilabiada."
+  ),
+  verbenaceae: family(
+    "verbenaceae",
+    "114. Verbenaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Ovario no 4-lobulado, estilo terminal y flores apenas bilabiadas."
+  ),
+  asclepiadaceae: family(
+    "asclepiadaceae",
+    "110. Asclepiadaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Plantas con látex abundante; androceo y gineceo unidos en ginostemio; polen en polinias."
+  ),
+  nyctaginaceae: family(
+    "nyctaginaceae",
+    "46. Nyctaginaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Hojas opuestas simples; estambres 1-5."
+  ),
+  symplocaceae: family(
+    "symplocaceae",
+    "105. Symplocaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Estambres muy numerosos; también aparece con ovario ínfero y estambres más de 10."
+  ),
+  thymelaeaceae: family(
+    "thymelaeaceae",
+    "93. Thymelaeaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Estambres en número doble a las divisiones del perigonio."
+  ),
+  myrsinaceae: family(
+    "myrsinaceae",
+    "101. Myrsinaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Árboles con ovario unilocular y estambres opuestos a los pétalos."
+  ),
+  sapotaceae: family(
+    "sapotaceae",
+    "104. Sapotaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Árboles con ovario 4-locular y estambres opuestos a los pétalos."
+  ),
+  primulaceae: family(
+    "primulaceae",
+    "102. Primulaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Hierbas con óvulos numerosos."
+  ),
+  plumbaginaceae: family(
+    "plumbaginaceae",
+    "103. Plumbaginaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Hierbas con óvulo solitario."
+  ),
+  oleaceae: family(
+    "oleaceae",
+    "106. Oleaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Estambres 2."
+  ),
+  apocynaceae: family(
+    "apocynaceae",
+    "109. Apocynaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Gineceo formado por dos ovarios separados unidos por el estilo."
+  ),
+  gentianaceae: family(
+    "gentianaceae",
+    "108. Gentianaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Hojas opuestas y ovario unilocular."
+  ),
+  loganiaceae: family(
+    "loganiaceae",
+    "107. Loganiaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Hojas opuestas y ovario 2-4-locular."
+  ),
+  plantaginaceae: family(
+    "plantaginaceae",
+    "122. Plantaginaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Flores tetrámeras, corola membranosa poco llamativa, hojas en roseta y flores en espigas."
+  ),
+  hydrophyllaceae: family(
+    "hydrophyllaceae",
+    "112. Hydrophyllaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Inflorescencias escorpioides y estilo profundamente bífido."
+  ),
+  convolvulaceae: family(
+    "convolvulaceae",
+    "111. Convolvulaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Óvulos generalmente 2 por carpelo, erectos desde la base del lóculo."
+  ),
+  solanaceae: family(
+    "solanaceae",
+    "116. Solanaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Óvulos generalmente más de dos por carpelo sobre placentas axilares."
+  ),
+  aristolochiaceae: family(
+    "aristolochiaceae",
+    "42. Aristolochiaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Ovario ínfero; perigonio corolino tubuloso cigomorfo; estambres y gineceo unidos."
+  ),
+  compositae: family(
+    "compositae",
+    "130. Compositae",
+    "Dicotiledóneas del Grupo E.",
+    "Flores en capítulos; ovario unilocular uniovulado; anteras unidas en tubo y estilo bífido."
+  ),
+  calyceraceae: family(
+    "calyceraceae",
+    "129. Calyceraceae",
+    "Dicotiledóneas del Grupo E.",
+    "Flores en capítulos; ovario unilocular y flores pentámeras actinomorfas."
+  ),
+  dipsacaceae: family(
+    "dipsacaceae",
+    "126. Dipsacaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Flores en capítulos; ovario unilocular y flores cigomorfas."
+  ),
+  cucurbitaceae: family(
+    "cucurbitaceae",
+    "127. Cucurbitaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Ovario ínfero; flores no en capítulos; plantas dioicas."
+  ),
+  valerianaceae: family(
+    "valerianaceae",
+    "125. Valerianaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Cáliz en forma de papus plumoso; estambres 3."
+  ),
+  campanulaceae: family(
+    "campanulaceae",
+    "128. Campanulaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Anteras más o menos unidas formando un tubo."
+  ),
+  caprifoliaceae: family(
+    "caprifoliaceae",
+    "124. Caprifoliaceae",
+    "Dicotiledóneas del Grupo E.",
+    "Corola cigomorfa grande o, con corola actinomorfa, hojas pinaticompuestas."
+  ),
 };
 
 export const manualKeyData: Record<string, CladoNode> = {
@@ -1913,18 +2105,571 @@ export const manualKeyData: Record<string, CladoNode> = {
   dicot_group_pending_e: {
     id: "dicot_group_pending_e",
     milestone: "Grupo E",
-    descripcion: "Grupo E: clave de familias con corola o perigonio más o menos soldado.",
+    descripcion: "Grupo E - A: con corola o perigonio más o menos soldado, ¿cómo es el ovario?",
     opcionA: {
-      label: "Continuar expansión del Grupo E en una próxima etapa",
+      label: "Ovario súpero",
+      keyStep: "A",
+      nextNodeId: "dicot_group_e_b",
     },
     opcionA_prima: {
-      label: "Volver y revisar si corresponde otro grupo",
+      label: "Ovario ínfero",
+      keyStep: "A'",
+      nextNodeId: "dicot_group_e_b_lower",
     },
-    especie: family(
-      "dicot_group_e_pending",
-      "Grupo E de Dicotyledoneae",
-      "Rama identificada hasta grupo de la clave.",
-      "Piezas de la corola o perigonio más o menos soldadas. Falta cargar la subclave completa de familias."
-    ),
+  },
+  dicot_group_e_b: {
+    id: "dicot_group_e_b",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - B: con ovario súpero, ¿cómo son las flores?",
+    opcionA: {
+      label: "Flores cigomorfas",
+      keyStep: "B",
+      nextNodeId: "dicot_group_e_c",
+    },
+    opcionA_prima: {
+      label: "Flores actinomorfas",
+      keyStep: "B'",
+      nextNodeId: "dicot_group_e_k",
+    },
+  },
+  dicot_group_e_c: {
+    id: "dicot_group_e_c",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - C: con flores cigomorfas, ¿la planta es acuática?",
+    opcionA: {
+      label: "Plantas acuáticas; hojas sumergidas provistas de ascidias o trampas",
+      keyStep: "C",
+      especieId: "lentibulariaceae",
+    },
+    opcionA_prima: {
+      label: "Plantas terrestres; hojas sin ascidias ni trampas",
+      keyStep: "C'",
+      nextNodeId: "dicot_group_e_d",
+    },
+  },
+  dicot_group_e_d: {
+    id: "dicot_group_e_d",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - D: en plantas terrestres con flores cigomorfas, ¿qué hábito y hojas presenta?",
+    opcionA: {
+      label: "Lianas con hojas compuestas",
+      keyStep: "D",
+      especieId: "bignoniaceae",
+    },
+    opcionA_prima: {
+      label: "Hierbas, arbustos o árboles, generalmente con hojas simples",
+      keyStep: "D'",
+      nextNodeId: "dicot_group_e_e",
+    },
+  },
+  dicot_group_e_e: {
+    id: "dicot_group_e_e",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - E: ¿cómo se disponen las hojas?",
+    opcionA: {
+      label: "Hojas alternas",
+      keyStep: "E",
+      nextNodeId: "dicot_group_e_f",
+    },
+    opcionA_prima: {
+      label: "Hojas opuestas",
+      keyStep: "E'",
+      nextNodeId: "dicot_group_e_g",
+    },
+  },
+  dicot_group_e_f: {
+    id: "dicot_group_e_f",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - F: con hojas alternas, ¿cómo es el fruto?",
+    opcionA: {
+      label: "Fruto drupáceo, con 4 semillas, o deshaciéndose en 4 coquitos",
+      keyStep: "F",
+      especieId: "borraginaceae",
+    },
+    opcionA_prima: {
+      label: "Fruto cápsula multiseminada",
+      keyStep: "F'",
+      especieId: "scrophulariaceae",
+    },
+  },
+  dicot_group_e_g: {
+    id: "dicot_group_e_g",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - G: con hojas opuestas, ¿cómo es el fruto?",
+    opcionA: {
+      label: "Fruto cápsula",
+      keyStep: "G",
+      nextNodeId: "dicot_group_e_h",
+    },
+    opcionA_prima: {
+      label: "Fruto drupáceo o deshaciéndose en 4 coquitos",
+      keyStep: "G'",
+      nextNodeId: "dicot_group_e_j",
+    },
+  },
+  dicot_group_e_h: {
+    id: "dicot_group_e_h",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - H: con fruto cápsula, ¿cómo es el ovario?",
+    opcionA: {
+      label: "Ovario unilocular; fruto cápsula drupácea; placentación parietal",
+      keyStep: "H",
+      especieId: "martyniaceae",
+    },
+    opcionA_prima: {
+      label: "Ovario bilocular; placentación axilar",
+      keyStep: "H'",
+      nextNodeId: "dicot_group_e_i",
+    },
+  },
+  dicot_group_e_i: {
+    id: "dicot_group_e_i",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - I: con ovario bilocular, ¿cuántos óvulos tiene cada lóculo?",
+    opcionA: {
+      label: "Lóculos del ovario con muchos óvulos",
+      keyStep: "I",
+      especieId: "scrophulariaceae",
+    },
+    opcionA_prima: {
+      label: "Lóculos del ovario con dos óvulos, raramente más",
+      keyStep: "I'",
+      especieId: "acanthaceae",
+    },
+  },
+  dicot_group_e_j: {
+    id: "dicot_group_e_j",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - J: con fruto drupáceo o en coquitos, ¿cómo es el ovario?",
+    opcionA: {
+      label: "Ovario 4-lobulado; estilo naciendo entre los cuatro lóbulos; corola notablemente bilabiada",
+      keyStep: "J",
+      especieId: "labiatae",
+    },
+    opcionA_prima: {
+      label: "Ovario no 4-lobulado, con estilo terminal; flores apenas bilabiadas",
+      keyStep: "J'",
+      especieId: "verbenaceae",
+    },
+  },
+  dicot_group_e_k: {
+    id: "dicot_group_e_k",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - K: con flores actinomorfas y ovario súpero, ¿hay látex abundante y ginostemio?",
+    opcionA: {
+      label: "Plantas con látex abundante; androceo y gineceo unidos formando ginostemio; polen en polinias",
+      keyStep: "K",
+      especieId: "asclepiadaceae",
+    },
+    opcionA_prima: {
+      label: "Plantas sin látex o con látex inconspicuo; androceo y gineceo no unidos en ginostemio; polen no en polinias",
+      keyStep: "K'",
+      nextNodeId: "dicot_group_e_l",
+    },
+  },
+  dicot_group_e_l: {
+    id: "dicot_group_e_l",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - L: ¿los filamentos de los estambres están soldados con la corola o perigonio?",
+    opcionA: {
+      label: "Filamentos no soldados con la corola o perigonio",
+      keyStep: "L",
+      nextNodeId: "dicot_group_e_m",
+    },
+    opcionA_prima: {
+      label: "Filamentos más o menos unidos a la corola",
+      keyStep: "L'",
+      nextNodeId: "dicot_group_e_n",
+    },
+  },
+  dicot_group_e_m: {
+    id: "dicot_group_e_m",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - M: con filamentos no soldados, ¿cómo son las hojas y cuántos estambres hay?",
+    opcionA: {
+      label: "Hojas opuestas, simples; estambres 1-5",
+      keyStep: "M",
+      especieId: "nyctaginaceae",
+    },
+    opcionA_prima: {
+      label: "Hojas alternas, compuestas; estambres 5 a numerosos",
+      keyStep: "M'",
+      especieId: "leguminosae",
+    },
+  },
+  dicot_group_e_n: {
+    id: "dicot_group_e_n",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - N: con filamentos unidos a la corola, ¿cuántos estambres hay?",
+    opcionA: {
+      label: "Estambres muy numerosos",
+      keyStep: "N",
+      especieId: "symplocaceae",
+    },
+    opcionA_prima: {
+      label: "Estambres 2-12",
+      keyStep: "N'",
+      nextNodeId: "dicot_group_e_o",
+    },
+  },
+  dicot_group_e_o: {
+    id: "dicot_group_e_o",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - O: ¿cómo se relaciona el número de estambres con las divisiones del perigonio o corola?",
+    opcionA: {
+      label: "Estambres en número doble a las divisiones del perigonio",
+      keyStep: "O",
+      especieId: "thymelaeaceae",
+    },
+    opcionA_prima: {
+      label: "Estambres en el mismo número que las divisiones de la corola",
+      keyStep: "O'",
+      nextNodeId: "dicot_group_e_p",
+    },
+  },
+  dicot_group_e_p: {
+    id: "dicot_group_e_p",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - P: ¿los estambres están opuestos o alternos con los pétalos?",
+    opcionA: {
+      label: "Estambres opuestos a los pétalos",
+      keyStep: "P",
+      nextNodeId: "dicot_group_e_q",
+    },
+    opcionA_prima: {
+      label: "Estambres alternos con los pétalos",
+      keyStep: "P'",
+      nextNodeId: "dicot_group_e_t",
+    },
+  },
+  dicot_group_e_q: {
+    id: "dicot_group_e_q",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - Q: con estambres opuestos a los pétalos, ¿árboles o hierbas?",
+    opcionA: {
+      label: "Árboles",
+      keyStep: "Q",
+      nextNodeId: "dicot_group_e_r",
+    },
+    opcionA_prima: {
+      label: "Hierbas",
+      keyStep: "Q'",
+      nextNodeId: "dicot_group_e_s",
+    },
+  },
+  dicot_group_e_r: {
+    id: "dicot_group_e_r",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - R: en árboles, ¿cómo es el ovario?",
+    opcionA: {
+      label: "Ovario unilocular",
+      keyStep: "R",
+      especieId: "myrsinaceae",
+    },
+    opcionA_prima: {
+      label: "Ovario 4-locular",
+      keyStep: "R'",
+      especieId: "sapotaceae",
+    },
+  },
+  dicot_group_e_s: {
+    id: "dicot_group_e_s",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - S: en hierbas, ¿cuántos óvulos hay?",
+    opcionA: {
+      label: "Óvulos numerosos",
+      keyStep: "S",
+      especieId: "primulaceae",
+    },
+    opcionA_prima: {
+      label: "Óvulo solitario",
+      keyStep: "S'",
+      especieId: "plumbaginaceae",
+    },
+  },
+  dicot_group_e_t: {
+    id: "dicot_group_e_t",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - T: con estambres alternos con los pétalos, ¿cuántos estambres hay?",
+    opcionA: {
+      label: "Estambres 2",
+      keyStep: "T",
+      especieId: "oleaceae",
+    },
+    opcionA_prima: {
+      label: "Estambres 4-5",
+      keyStep: "T'",
+      nextNodeId: "dicot_group_e_u",
+    },
+  },
+  dicot_group_e_u: {
+    id: "dicot_group_e_u",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - U: con estambres 4-5, ¿cómo se disponen las hojas?",
+    opcionA: {
+      label: "Hojas opuestas",
+      keyStep: "U",
+      nextNodeId: "dicot_group_e_v",
+    },
+    opcionA_prima: {
+      label: "Hojas alternas o en roseta basal",
+      keyStep: "U'",
+      nextNodeId: "dicot_group_e_x",
+    },
+  },
+  dicot_group_e_v: {
+    id: "dicot_group_e_v",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - V: con hojas opuestas, ¿cómo está formado el gineceo?",
+    opcionA: {
+      label: "Gineceo formado por dos ovarios separados, unidos por el estilo",
+      keyStep: "V",
+      especieId: "apocynaceae",
+    },
+    opcionA_prima: {
+      label: "Gineceo constituido por un solo ovario",
+      keyStep: "V'",
+      nextNodeId: "dicot_group_e_w",
+    },
+  },
+  dicot_group_e_w: {
+    id: "dicot_group_e_w",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - W: con un solo ovario, ¿cómo es el ovario?",
+    opcionA: {
+      label: "Ovario unilocular",
+      keyStep: "W",
+      especieId: "gentianaceae",
+    },
+    opcionA_prima: {
+      label: "Ovario 2-4-locular",
+      keyStep: "W'",
+      especieId: "loganiaceae",
+    },
+  },
+  dicot_group_e_x: {
+    id: "dicot_group_e_x",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - X: con hojas alternas o en roseta basal, ¿cómo son las flores?",
+    opcionA: {
+      label: "Flores tetrámeras; corola membranosa, poco llamativa; hojas en roseta; flores en espigas",
+      keyStep: "X",
+      especieId: "plantaginaceae",
+    },
+    opcionA_prima: {
+      label: "Flores pentámeras; corola llamativa; hojas generalmente alternas",
+      keyStep: "X'",
+      nextNodeId: "dicot_group_e_y",
+    },
+  },
+  dicot_group_e_y: {
+    id: "dicot_group_e_y",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - Y: con flores pentámeras, ¿cómo se disponen las flores?",
+    opcionA: {
+      label: "Flores dispuestas en espigas o racimos unilaterales escorpioides",
+      keyStep: "Y",
+      nextNodeId: "dicot_group_e_z",
+    },
+    opcionA_prima: {
+      label: "Flores solitarias o en cimas, nunca en inflorescencias escorpioides",
+      keyStep: "Y'",
+      nextNodeId: "dicot_group_e_a_lowercase",
+    },
+  },
+  dicot_group_e_z: {
+    id: "dicot_group_e_z",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - Z: con inflorescencias escorpioides, ¿cómo es el estilo?",
+    opcionA: {
+      label: "Estilo profundamente bífido",
+      keyStep: "Z",
+      especieId: "hydrophyllaceae",
+    },
+    opcionA_prima: {
+      label: "Estilo indiviso o cortamente bilobado",
+      keyStep: "Z'",
+      especieId: "borraginaceae",
+    },
+  },
+  dicot_group_e_a_lowercase: {
+    id: "dicot_group_e_a_lowercase",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - a: con flores solitarias o en cimas, ¿cómo son los óvulos?",
+    opcionA: {
+      label: "Óvulos generalmente 2, a veces 1-3, en cada carpelo, erectos desde la base del lóculo",
+      keyStep: "a",
+      especieId: "convolvulaceae",
+    },
+    opcionA_prima: {
+      label: "Óvulos generalmente más de dos en cada carpelo, sobre placentas axilares",
+      keyStep: "a'",
+      especieId: "solanaceae",
+    },
+  },
+  dicot_group_e_b_lower: {
+    id: "dicot_group_e_b_lower",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - b: con ovario ínfero, ¿cómo son las flores?",
+    opcionA: {
+      label: "Flores con perigonio corolino tubuloso cigomorfo; estambres y gineceo unidos formando un ginostemio",
+      keyStep: "b",
+      especieId: "aristolochiaceae",
+    },
+    opcionA_prima: {
+      label: "Flores con cáliz y corola o solo con corola; androceo y gineceo no unidos",
+      keyStep: "b'",
+      nextNodeId: "dicot_group_e_c_lower",
+    },
+  },
+  dicot_group_e_c_lower: {
+    id: "dicot_group_e_c_lower",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - c: ¿las flores están dispuestas en capítulos?",
+    opcionA: {
+      label: "Flores dispuestas en capítulos",
+      keyStep: "c",
+      nextNodeId: "dicot_group_e_d_lower",
+    },
+    opcionA_prima: {
+      label: "Flores no dispuestas en capítulos",
+      keyStep: "c'",
+      nextNodeId: "dicot_group_e_g_lower",
+    },
+  },
+  dicot_group_e_d_lower: {
+    id: "dicot_group_e_d_lower",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - d: con flores en capítulos, ¿cómo son ovario, estambres y estilo?",
+    opcionA: {
+      label: "Ovario unilocular, uniovulado; anteras unidas en tubo y filamentos libres; estilo bífido",
+      keyStep: "d",
+      especieId: "compositae",
+    },
+    opcionA_prima: {
+      label: "Ovario 1 a muchos locular; anteras generalmente libres",
+      keyStep: "d'",
+      nextNodeId: "dicot_group_e_e_lower",
+    },
+  },
+  dicot_group_e_e_lower: {
+    id: "dicot_group_e_e_lower",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - e: con anteras generalmente libres, ¿cómo es el ovario?",
+    opcionA: {
+      label: "Ovario unilocular; flores pentámeras",
+      keyStep: "e",
+      nextNodeId: "dicot_group_e_f_lower",
+    },
+    opcionA_prima: {
+      label: "Ovario 2 a muchos locular",
+      keyStep: "e'",
+      especieId: "rubiaceae",
+    },
+  },
+  dicot_group_e_f_lower: {
+    id: "dicot_group_e_f_lower",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - f: con ovario unilocular, ¿cómo son las flores?",
+    opcionA: {
+      label: "Flores actinomorfas",
+      keyStep: "f",
+      especieId: "calyceraceae",
+    },
+    opcionA_prima: {
+      label: "Flores cigomorfas",
+      keyStep: "f'",
+      especieId: "dipsacaceae",
+    },
+  },
+  dicot_group_e_g_lower: {
+    id: "dicot_group_e_g_lower",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - g: con flores no dispuestas en capítulos, ¿la planta es dioica o monoica?",
+    opcionA: {
+      label: "Plantas dioicas",
+      keyStep: "g",
+      especieId: "cucurbitaceae",
+    },
+    opcionA_prima: {
+      label: "Plantas monoicas; flores por lo común hermafroditas",
+      keyStep: "g'",
+      nextNodeId: "dicot_group_e_h_lower",
+    },
+  },
+  dicot_group_e_h_lower: {
+    id: "dicot_group_e_h_lower",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - h: en plantas monoicas, ¿cuántos estambres hay?",
+    opcionA: {
+      label: "Estambres más de 10",
+      keyStep: "h",
+      especieId: "symplocaceae",
+    },
+    opcionA_prima: {
+      label: "Estambres 3-5",
+      keyStep: "h'",
+      nextNodeId: "dicot_group_e_i_lower",
+    },
+  },
+  dicot_group_e_i_lower: {
+    id: "dicot_group_e_i_lower",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - i: con estambres 3-5, ¿cómo es el cáliz?",
+    opcionA: {
+      label: "Cáliz en forma de papus plumoso; estambres 3",
+      keyStep: "i",
+      especieId: "valerianaceae",
+    },
+    opcionA_prima: {
+      label: "Cáliz herbáceo, a veces muy reducido; estambres 4-5",
+      keyStep: "i'",
+      nextNodeId: "dicot_group_e_j_lower",
+    },
+  },
+  dicot_group_e_j_lower: {
+    id: "dicot_group_e_j_lower",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - j: con cáliz herbáceo o reducido, ¿las anteras están unidas?",
+    opcionA: {
+      label: "Anteras más o menos unidas formando un tubo",
+      keyStep: "j",
+      especieId: "campanulaceae",
+    },
+    opcionA_prima: {
+      label: "Anteras separadas",
+      keyStep: "j'",
+      nextNodeId: "dicot_group_e_k_lower",
+    },
+  },
+  dicot_group_e_k_lower: {
+    id: "dicot_group_e_k_lower",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - k: con anteras separadas, ¿cómo es la corola?",
+    opcionA: {
+      label: "Corola cigomorfa, grande",
+      keyStep: "k",
+      especieId: "caprifoliaceae",
+    },
+    opcionA_prima: {
+      label: "Corola actinomorfa",
+      keyStep: "k'",
+      nextNodeId: "dicot_group_e_l_lower",
+    },
+  },
+  dicot_group_e_l_lower: {
+    id: "dicot_group_e_l_lower",
+    milestone: "Grupo E",
+    descripcion: "Grupo E - l: con corola actinomorfa, ¿cómo son las hojas?",
+    opcionA: {
+      label: "Hojas pinaticompuestas",
+      keyStep: "l",
+      especieId: "caprifoliaceae",
+    },
+    opcionA_prima: {
+      label: "Hojas simples",
+      keyStep: "l'",
+      especieId: "rubiaceae",
+    },
   },
 };
