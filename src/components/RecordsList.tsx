@@ -1,5 +1,8 @@
 "use client";
 
+import { useMemo, useState } from "react";
+import { especiesData } from "@/data/clados";
+import { generateLabelsPDF, recordToLabel } from "@/lib/pdfGenerator";
 import { PhotoRecord } from "@/types";
 
 interface RecordsListProps {
@@ -8,6 +11,34 @@ interface RecordsListProps {
 }
 
 export default function RecordsList({ records, isLoading }: RecordsListProps) {
+  const [selectedIds, setSelectedIds] = useState<string[]>([]);
+  const selectedRecords = useMemo(
+    () => records.filter((record) => selectedIds.includes(record.id)),
+    [records, selectedIds]
+  );
+  const allRecordsSelected =
+    records.length > 0 && selectedIds.length === records.length;
+
+  const toggleRecord = (recordId: string) => {
+    setSelectedIds((current) =>
+      current.includes(recordId)
+        ? current.filter((id) => id !== recordId)
+        : [...current, recordId]
+    );
+  };
+
+  const toggleAll = () => {
+    setSelectedIds(allRecordsSelected ? [] : records.map((record) => record.id));
+  };
+
+  const handleGenerateLabels = async () => {
+    await generateLabelsPDF(
+      selectedRecords.map((record) =>
+        recordToLabel(record, especiesData[record.especie_id])
+      )
+    );
+  };
+
   return (
     <section className="bg-white rounded-lg shadow-lg p-6">
       <div className="flex items-center justify-between gap-4 mb-4">
@@ -23,18 +54,59 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
 
       {!isLoading && records.length > 0 && (
         <div className="space-y-3">
+          <div className="flex flex-col gap-2 border-b border-gray-200 pb-3">
+            <div className="flex items-center justify-between gap-3">
+              <label className="flex items-center gap-2 text-sm font-medium text-gray-800">
+                <input
+                  type="checkbox"
+                  checked={allRecordsSelected}
+                  onChange={toggleAll}
+                  className="h-4 w-4 accent-green-700"
+                />
+                Seleccionar todas
+              </label>
+              <button
+                type="button"
+                onClick={() => setSelectedIds([])}
+                disabled={selectedIds.length === 0}
+                className="text-sm text-gray-700 underline disabled:text-gray-400 disabled:no-underline"
+              >
+                Limpiar
+              </button>
+            </div>
+            <button
+              type="button"
+              onClick={handleGenerateLabels}
+              disabled={selectedRecords.length === 0}
+              className="w-full rounded bg-green-700 px-4 py-2 text-sm font-medium text-white hover:bg-green-800 disabled:bg-gray-300"
+            >
+              Generar etiquetas seleccionadas
+            </button>
+            <p className="text-xs text-gray-700">
+              {selectedRecords.length} seleccionadas · Hoja A4 con 12 etiquetas
+            </p>
+          </div>
+
           {records.map((record) => (
             <article
               key={record.id}
               className="border border-gray-200 rounded p-4 flex flex-col gap-2"
             >
               <div className="flex items-start justify-between gap-3">
-                <div>
-                  <p className="font-bold text-green-700">
-                    Planta N° {record.plant_number}
-                  </p>
-                  <p className="text-gray-800">{record.especie_id}</p>
-                </div>
+                <label className="flex items-start gap-2">
+                  <input
+                    type="checkbox"
+                    checked={selectedIds.includes(record.id)}
+                    onChange={() => toggleRecord(record.id)}
+                    className="mt-1 h-4 w-4 accent-green-700"
+                  />
+                  <span>
+                    <span className="block font-bold text-green-700">
+                      Planta N° {record.plant_number}
+                    </span>
+                    <span className="block text-gray-800">{record.especie_id}</span>
+                  </span>
+                </label>
                 <time className="text-sm text-gray-700">{record.fecha}</time>
               </div>
               <p className="text-sm text-gray-700">{record.lugar}</p>

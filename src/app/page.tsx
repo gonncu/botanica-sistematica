@@ -6,7 +6,6 @@ import AuthPanel from "@/components/AuthPanel";
 import Quiz from "@/components/Quiz";
 import RecordsList from "@/components/RecordsList";
 import SpeciesForm from "@/components/SpeciesForm";
-import { generatePDF } from "@/lib/pdfGenerator";
 import {
   getPhotoRecords,
   savePhotoRecord,
@@ -94,7 +93,6 @@ export default function Home() {
       const savedRecord = await savePhotoRecord(selectedEspecie.id, formData, user.id);
       setLastPlantNumber(savedRecord.plantNumber);
 
-      await generatePDF(selectedEspecie, formData, savedRecord.plantNumber);
       await loadRecords();
       setPageState("complete");
     } catch (error) {
@@ -185,7 +183,7 @@ export default function Home() {
                       ✅ Registro completado
                     </h2>
                     <p className="text-gray-700 mb-6">
-                      Tu ficha se generó correctamente y quedó guardada en tus registros.
+                      Tu registro quedó guardado. Podés imprimir la etiqueta desde Mis plantas.
                     </p>
                     <div className="bg-green-50 border border-green-200 rounded p-4 mb-6">
                       {lastPlantNumber && (
