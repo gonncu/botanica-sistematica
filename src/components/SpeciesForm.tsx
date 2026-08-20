@@ -184,7 +184,7 @@ export default function SpeciesForm({
           type="submit"
           className="w-full bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 font-medium"
         >
-          Generar PDF
+          Generar etiqueta PDF
         </button>
       </form>
     </div>
