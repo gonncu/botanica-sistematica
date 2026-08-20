@@ -1874,7 +1874,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Espiguillas de 1-3,5 mm; continuar en una proxima tanda de Panicum",
       keyStep: "B'",
-      especieId: "paniceae"
+      nextNodeId: "panicum_d"
     }
   },
 
@@ -1892,6 +1892,91 @@ export const monocotiledoneaeData = {
       label: "Plantas terrestres, anuales, erectas o ascendentes; panojas por lo comun parcialmente incluidas en la vaina de la hoja superior",
       keyStep: "C'",
       especieId: "panicum_miliaceum"
+    }
+  },
+
+  panicum_d: {
+    id: "panicum_d",
+    milestone: "Panicum",
+    manualPage: 96,
+    descripcion: "Panicum - D: tipo de inflorescencia",
+    opcionA: {
+      label: "Inflorescencia mas o menos contraida, con espiguillas cortamente pediceladas amontonadas en racimos a lo largo de un eje principal",
+      keyStep: "D",
+      nextNodeId: "panicum_e"
+    },
+    opcionA_prima: {
+      label: "Inflorescencia muy laxa, difusa, con espiguillas largamente pediceladas; continuar en una proxima tanda de Panicum",
+      keyStep: "D'",
+      especieId: "paniceae"
+    }
+  },
+
+  panicum_e: {
+    id: "panicum_e",
+    milestone: "Panicum",
+    manualPage: 97,
+    descripcion: "Panicum - E: ancho de hojas y robustez",
+    opcionA: {
+      label: "Hojas de 15-25 mm de ancho, glabras; plantas perennes, rizomatosas, robustas, de 1-2 m; panojas erectas y amplias",
+      keyStep: "E",
+      especieId: "panicum_grumosum"
+    },
+    opcionA_prima: {
+      label: "Hojas de menos de 11 mm de ancho",
+      keyStep: "E'",
+      nextNodeId: "panicum_f"
+    }
+  },
+
+  panicum_f: {
+    id: "panicum_f",
+    milestone: "Panicum",
+    manualPage: 97,
+    descripcion: "Panicum - F: largo de espiguillas",
+    opcionA: {
+      label: "Espiguillas de 1-1,5 mm, ovoideas, semiagudas, glabras; gluma inferior de un tercio de la espiguilla",
+      keyStep: "F",
+      especieId: "panicum_laxum"
+    },
+    opcionA_prima: {
+      label: "Espiguillas de 1,5-3 mm",
+      keyStep: "F'",
+      nextNodeId: "panicum_g"
+    }
+  },
+
+  panicum_g: {
+    id: "panicum_g",
+    milestone: "Panicum",
+    manualPage: 97,
+    descripcion: "Panicum - G: longitud relativa de la gluma inferior",
+    opcionA: {
+      label: "Gluma inferior alcanzando hasta la mitad de la espiguilla; hojas rigidas de 4-8 cm por 5-7 mm; panojas terminales laxas",
+      keyStep: "G",
+      especieId: "panicum_fultum"
+    },
+    opcionA_prima: {
+      label: "Gluma inferior alcanzando a lo mas hasta un tercio de la espiguilla",
+      keyStep: "G'",
+      nextNodeId: "panicum_i"
+    }
+  },
+
+  panicum_i: {
+    id: "panicum_i",
+    milestone: "Panicum",
+    manualPage: 97,
+    descripcion: "Panicum - I: forma de espiguillas y densidad de panojas",
+    opcionA: {
+      label: "Espiguillas de 1,8-2 mm, ovadas, agudas, glabras; panojas contraidas con 10-25 racimos densos",
+      keyStep: "I",
+      especieId: "panicum_milioides"
+    },
+    opcionA_prima: {
+      label: "Espiguillas de 2,5-3 mm, lanceoladas, agudas, glabras, rojizas; panojas muy densas, espiciformes, de 4-10 racimos",
+      keyStep: "I'",
+      especieId: "panicum_decipiens"
     }
   },
 
@@ -3228,6 +3313,61 @@ export const monocotEspecies = {
     descripcion: "Hierba terrestre anual, erecta o ascendente, de 20-100 cm de alto.",
     caracteristicas: "Hojas velludas o glabrescentes, planas; panojas laxas, generalmente parcialmente incluidas en la vaina superior; espiguillas ovado-lanceoladas de 4,5-5 mm.",
     distribucion: "Asia; cultivado por sus granos y a veces subespontaneo en suelos modificados y calles.",
+    imagen: ""
+  },
+
+  panicum_grumosum: {
+    id: "panicum_grumosum",
+    nombreCientifico: "Panicum grumosum",
+    nombreVulgar: "Paja mansa",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, rizomatosa, robusta, de 1-2 m de alto.",
+    caracteristicas: "Hojas glabras de 15-25 mm de ancho; panojas erectas, amplias, con numerosos racimos compuestos densos; espiguillas elipticas de 2,5 mm.",
+    distribucion: "Sur del Brasil, Uruguay, Paraguay y nordeste de la Argentina; muy frecuente en suelos inundados del Delta y ribera del Plata.",
+    imagen: ""
+  },
+
+  panicum_laxum: {
+    id: "panicum_laxum",
+    nombreCientifico: "Panicum laxum",
+    nombreVulgar: "Panicum laxum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne con tallos decumbentes en la base, radicantes y luego erectos, de 20-50 cm de alto.",
+    caracteristicas: "Hojas lineales y glabras; panojas formadas por varios racimos contraidos; espiguillas de 1-1,5 mm, ovoideas, semiagudas y glabras.",
+    distribucion: "Indias occidentales y America calida; hallada en Martin Garcia.",
+    imagen: ""
+  },
+
+  panicum_fultum: {
+    id: "panicum_fultum",
+    nombreCientifico: "Panicum fultum",
+    nombreVulgar: "Panicum fultum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba erecta de 20-30 cm de alto.",
+    caracteristicas: "Hojas lineal-lanceoladas, rigidas, redondeadas en la base; ligula formada por cilias; espiguillas ovoideas, obtusas, pubescentes, de 2,5-3 mm.",
+    distribucion: "Paraguay, Uruguay y nordeste de la Argentina; citada para la isla Martin Garcia.",
+    imagen: ""
+  },
+
+  panicum_milioides: {
+    id: "panicum_milioides",
+    nombreCientifico: "Panicum milioides",
+    nombreVulgar: "Panicum milioides",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne de 30-60 cm de alto.",
+    caracteristicas: "Hojas lineales y planas; panojas contraidas formadas por 10-25 racimos densos; espiguillas ovadas, agudas y glabras, de 1,8-2 mm.",
+    distribucion: "Sur del Brasil, Uruguay y nordeste de la Argentina; comun en campos humedos.",
+    imagen: ""
+  },
+
+  panicum_decipiens: {
+    id: "panicum_decipiens",
+    nombreCientifico: "Panicum decipiens",
+    nombreVulgar: "Panicum decipiens",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba rizomatosa, ascendente, de 20-40 cm de alto.",
+    caracteristicas: "Hojas lineales; panojas muy densas, espiciformes, con 4-10 racimos; espiguillas lanceoladas, agudas, glabras y rojizas, de 2,5-3 mm.",
+    distribucion: "Sur del Brasil, Uruguay y nordeste de la Argentina; en suelos arenosos humedos del Delta y de la ribera platense.",
     imagen: ""
   },
 
