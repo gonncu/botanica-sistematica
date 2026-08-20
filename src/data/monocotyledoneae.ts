@@ -254,7 +254,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Lemma terminada superiormente en 5 o más aristas que simulan un papus",
       keyStep: "A",
-      especieId: "pappophorum"
+      especieId: "pappophorum_mucronulatum"
     },
     opcionA_prima: {
       label: "Lemma mútica o con una sola arista",
@@ -310,7 +310,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Lemma glabra y raquilla velluda",
       keyStep: "D'",
-      especieId: "phragmites"
+      especieId: "phragmites_communis"
     }
   },
 
@@ -356,7 +356,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Espiguillas masculinas y femeninas glabras; plantas rizomatosas de suelos salados",
       keyStep: "G",
-      especieId: "distichlis"
+      nextNodeId: "distichlis_a"
     },
     opcionA_prima: {
       label: "Espiguillas femeninas con largos pelos lanosos",
@@ -373,7 +373,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Espiguillas más o menos globosas, casi tan anchas como largas; lemma con margen membranoso",
       keyStep: "H",
-      especieId: "briza"
+      nextNodeId: "briza_a"
     },
     opcionA_prima: {
       label: "Espiguillas lineales o lanceoladas, más largas que anchas",
@@ -412,7 +412,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Estilos cortos, caducos; lemmas con nervaduras tenues; cariopse no hendido",
       keyStep: "K'",
-      especieId: "puccinellia"
+      especieId: "puccinellia_glaucescens"
     }
   },
 
@@ -492,12 +492,131 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Espiguillas con pedicelos muy gruesos; lemmas múticas o mucronadas",
       keyStep: "P",
-      especieId: "scleropoa"
+      especieId: "scleropoa_rigida"
     },
     opcionA_prima: {
       label: "Espiguillas con pedicelos filiformes; lemmas acuminadas o aristadas",
       keyStep: "P'",
-      especieId: "festuca"
+      nextNodeId: "festuca_a"
+    }
+  },
+
+  briza_a: {
+    id: "briza_a",
+    milestone: "Briza",
+    manualPage: 56,
+    descripcion: "Briza - A: ¿cómo son las espiguillas y la lemma vista de perfil?",
+    opcionA: {
+      label: "Espiguillas comprimidas lateralmente, violáceas; lemma triangular de perfil, con dilataciones marginales anchas y arista de 4-5 mm",
+      keyStep: "A",
+      especieId: "briza_brizoides"
+    },
+    opcionA_prima: {
+      label: "Espiguillas más o menos globosas; lemma cortamente aristada o mútica",
+      keyStep: "A'",
+      nextNodeId: "briza_b"
+    }
+  },
+
+  briza_b: {
+    id: "briza_b",
+    milestone: "Briza",
+    manualPage: 56,
+    descripcion: "Briza - B: ¿la lemma es aguda y aristada?",
+    opcionA: {
+      label: "Lemmas agudas, bidentadas, con arista de 0,5 mm; espiguillas globosas de 5 mm, 5-8-floras",
+      keyStep: "B",
+      especieId: "briza_subaristata"
+    },
+    opcionA_prima: {
+      label: "Lemma obtusa y mútica",
+      keyStep: "B'",
+      nextNodeId: "briza_c"
+    }
+  },
+
+  briza_c: {
+    id: "briza_c",
+    milestone: "Briza",
+    manualPage: 56,
+    descripcion: "Briza - C: ¿la planta es perenne rizomatosa o anual?",
+    opcionA: {
+      label: "Hierbas perennes, rizomatosas, de cerca de 1 m; panojas densas espiciformes ramificadas",
+      keyStep: "C",
+      especieId: "briza_glomerata"
+    },
+    opcionA_prima: {
+      label: "Hierbas anuales; panojas laxas",
+      keyStep: "C'",
+      nextNodeId: "briza_d"
+    }
+  },
+
+  briza_d: {
+    id: "briza_d",
+    milestone: "Briza",
+    manualPage: 56,
+    descripcion: "Briza - D: ¿qué tamaño tienen las espiguillas?",
+    opcionA: {
+      label: "Espiguillas de 2-4 mm, globosas, 4-6-floras; glumas y glumelas redondeadas en el ápice",
+      keyStep: "D",
+      especieId: "briza_minor"
+    },
+    opcionA_prima: {
+      label: "Espiguillas de 15-20 mm, ovoideas, amarillentas, 13-17-floras; glumas y glumelas ovadas obtusas",
+      keyStep: "D'",
+      especieId: "briza_maxima"
+    }
+  },
+
+  distichlis_a: {
+    id: "distichlis_a",
+    milestone: "Distichlis",
+    manualPage: 59,
+    descripcion: "Distichlis - A: ¿la panoja es laxa o muy densa?",
+    opcionA: {
+      label: "Panoja laxa; hojas densas y uniformemente repartidas por el tallo, con lámina convoluta rígida",
+      keyStep: "A",
+      especieId: "distichlis_scoparia"
+    },
+    opcionA_prima: {
+      label: "Panoja muy densa; hojas dísticas, con vainas superpuestas; lámina plana o convoluta",
+      keyStep: "A'",
+      especieId: "distichlis_spicata"
+    }
+  },
+
+  festuca_a: {
+    id: "festuca_a",
+    milestone: "Festuca",
+    manualPage: 61,
+    descripcion: "Festuca - A: ¿las lemmas son ciliadas en la mitad superior?",
+    opcionA: {
+      label: "Lemmas ciliadas en su mitad superior, lineal-lanceoladas y escabrosas; aristas de 8-10 mm",
+      keyStep: "A",
+      especieId: "festuca_megalura"
+    },
+    opcionA_prima: {
+      label: "Lemmas no ciliadas",
+      keyStep: "A'",
+      nextNodeId: "festuca_b"
+    }
+  },
+
+  festuca_b: {
+    id: "festuca_b",
+    milestone: "Festuca",
+    manualPage: 61,
+    descripcion: "Festuca - B: ¿qué tamaño tienen las glumas?",
+    opcionA: {
+      label: "Gluma inferior de unos 4 mm y superior de 6-7 mm; lemma lanceolada escabrosa; arista de 10-13 mm",
+      keyStep: "B",
+      especieId: "festuca_dertonensis"
+    },
+    opcionA_prima: {
+      label: "Gluma inferior de 1-1,5 mm y superior de 4-4,5 mm",
+      keyStep: "B'",
+      especieId: "festuca_myurus"
     }
   },
 
@@ -1526,6 +1645,160 @@ export const monocotEspecies = {
     descripcion: "Hierba perenne robusta, de alrededor de 1,5 m.",
     caracteristicas: "Panojas laxas, espiguillas lanceoladas de 25-30 mm y arista de la mitad de la longitud de la lemma.",
     distribucion: "América austral; rara cerca de Buenos Aires y muy común hacia el oeste de la provincia.",
+    imagen: ""
+  },
+
+  pappophorum_mucronulatum: {
+    id: "pappophorum_mucronulatum",
+    nombreCientifico: "Pappophorum mucronulatum",
+    nombreVulgar: "Pappophorum",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne cespitosa, de 30-80 cm de alto.",
+    caracteristicas: "Panojas de 8-15 cm, espiguillas 2-3-floras y aristas de unos 5 mm.",
+    distribucion: "America templado-calida; se halla en la estepa climax.",
+    imagen: ""
+  },
+
+  phragmites_communis: {
+    id: "phragmites_communis",
+    nombreCientifico: "Phragmites communis",
+    nombreVulgar: "Carrizo",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne rizomatosa, robusta, de 2-4 m de alto.",
+    caracteristicas: "Cañas uniformemente hojosas, hojas planas largas de 1-6 cm de ancho, panojas de 15-40 cm y espiguillas de 12-15 mm.",
+    distribucion: "Regiones calidas; rara en terrenos inundables del Delta y de la ribera del Plata.",
+    imagen: ""
+  },
+
+  briza_brizoides: {
+    id: "briza_brizoides",
+    nombreCientifico: "Briza brizoides",
+    nombreVulgar: "Briza",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne cespitosa, de 20-50 cm de alto.",
+    caracteristicas: "Espiguillas comprimidas lateralmente y violaceas; lemma triangular de perfil con dilataciones marginales muy anchas.",
+    distribucion: "Sur del Brasil, Uruguay y nordeste de Argentina; frecuente en la estepa climax.",
+    imagen: ""
+  },
+
+  briza_subaristata: {
+    id: "briza_subaristata",
+    nombreCientifico: "Briza subaristata",
+    nombreVulgar: "Briza",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne cespitosa, de alrededor de 50 cm de alto.",
+    caracteristicas: "Panojas contraidas; espiguillas globosas de 5 mm, 5-8-floras; lemmas agudas, bidentadas y cortamente aristadas.",
+    distribucion: "America austral; frecuente en la estepa climax.",
+    imagen: ""
+  },
+
+  briza_glomerata: {
+    id: "briza_glomerata",
+    nombreCientifico: "Briza glomerata",
+    nombreVulgar: "Briza",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne rizomatosa, de cerca de 1 m de alto.",
+    caracteristicas: "Panojas densas espiciformes ramificadas, espiguillas verdes aglomeradas y lemmas conchiformes gibosas.",
+    distribucion: "Uruguay y ribera del Plata en la Argentina.",
+    imagen: ""
+  },
+
+  briza_minor: {
+    id: "briza_minor",
+    nombreCientifico: "Briza minor",
+    nombreVulgar: "Briza",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba anual, de 25-40 cm de alto, con panojas laxas.",
+    caracteristicas: "Espiguillas globosas de 2-4 mm, 4-6-floras, con glumas y glumelas redondeadas en el apice.",
+    distribucion: "Ubicua; florece en primavera.",
+    imagen: ""
+  },
+
+  briza_maxima: {
+    id: "briza_maxima",
+    nombreCientifico: "Briza maxima",
+    nombreVulgar: "Briza",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba anual erecta, de 30-60 cm de alto, con panojas laxas.",
+    caracteristicas: "Espiguillas ovoideas amarillentas de 15-20 mm, 13-17-floras, con glumas y glumelas ovadas obtusas.",
+    distribucion: "Europa; cultivada y adventicia en America.",
+    imagen: ""
+  },
+
+  distichlis_scoparia: {
+    id: "distichlis_scoparia",
+    nombreCientifico: "Distichlis scoparia",
+    nombreVulgar: "Pasto salado",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne rizomatosa, baja, con tallos delgados y ramosos en la base.",
+    caracteristicas: "Panoja laxa, hojas densas uniformemente repartidas por el tallo y espiguillas oblongas 5-6-floras.",
+    distribucion: "America austral; en campos humedos y salobres.",
+    imagen: ""
+  },
+
+  distichlis_spicata: {
+    id: "distichlis_spicata",
+    nombreCientifico: "Distichlis spicata",
+    nombreVulgar: "Pasto salado",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne rizomatosa, baja, de tallos erectos de 10-40 cm.",
+    caracteristicas: "Panoja muy densa, hojas disticas con vainas superpuestas y espiguillas oblongas de 6-10 mm, 5-9-floras.",
+    distribucion: "America; comun en suelos bajos salobres.",
+    imagen: ""
+  },
+
+  puccinellia_glaucescens: {
+    id: "puccinellia_glaucescens",
+    nombreCientifico: "Puccinellia glaucescens var. osteniana",
+    nombreVulgar: "Puccinellia",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne cespitosa, de 20-30 cm de alto, de suelos salados.",
+    caracteristicas: "Hojas angostas convolutas, panojas largas y angostas, espiguillas oblongas 7-10-floras y lemmas de 2 mm.",
+    distribucion: "Uruguay y nordeste de Argentina; en suelos salados humedos.",
+    imagen: ""
+  },
+
+  scleropoa_rigida: {
+    id: "scleropoa_rigida",
+    nombreCientifico: "Scleropoa rigida",
+    nombreVulgar: "Scleropoa",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba anual, erecta o ascendente, de 10-20 cm de alto.",
+    caracteristicas: "Panojas estrechas y densas de 5-10 cm; espiguillas lanceoladas, 4-10-floras, de 5-8 mm.",
+    distribucion: "Europa; adventicia en America y comun en suelos modificados.",
+    imagen: ""
+  },
+
+  festuca_megalura: {
+    id: "festuca_megalura",
+    nombreCientifico: "Festuca megalura",
+    nombreVulgar: "Festuca",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba anual, de 20-60 cm de alto.",
+    caracteristicas: "Lemmas ciliadas en su mitad superior, lineal-lanceoladas y escabrosas; aristas de 8-10 mm; panojas estrechas.",
+    distribucion: "America templado-calida; frecuente en la region.",
+    imagen: ""
+  },
+
+  festuca_dertonensis: {
+    id: "festuca_dertonensis",
+    nombreCientifico: "Festuca dertonensis",
+    nombreVulgar: "Festuca",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba anual glabra.",
+    caracteristicas: "Gluma inferior de unos 4 mm, superior de 6-7 mm, lemma lanceolada escabrosa y arista de 10-13 mm.",
+    distribucion: "Europa; adventicia en America y comun en la estepa climax.",
+    imagen: ""
+  },
+
+  festuca_myurus: {
+    id: "festuca_myurus",
+    nombreCientifico: "Festuca myurus",
+    nombreVulgar: "Festuca",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba anual.",
+    caracteristicas: "Lemmas no ciliadas, gluma inferior de 1-1,5 mm y gluma superior de 4-4,5 mm.",
+    distribucion: "Europa; adventicia en America y rara en la region platense.",
     imagen: ""
   },
 
