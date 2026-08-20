@@ -1007,7 +1007,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Lemmas aristadas",
       keyStep: "D'",
-      especieId: "chloris_pendiente"
+      nextNodeId: "chloris_a"
     }
   },
 
@@ -1246,6 +1246,159 @@ export const monocotiledoneaeData = {
       label: "Espigas numerosas, delgadas, dispuestas a lo largo del raquis principal; espiguillas 5-6-floras rojizo-violáceas",
       keyStep: "A'",
       especieId: "leptochloa_virgata"
+    }
+  },
+
+  chloris_a: {
+    id: "chloris_a",
+    milestone: "Chloris",
+    manualPage: 83,
+    descripcion: "Chloris - A: ¿las espigas están adheridas entre sí simulando una sola espiga terminal?",
+    opcionA: {
+      label: "Inflorescencia con 2-7 espigas semihelicoidales estrechamente adheridas, simulando una espiga terminal única",
+      keyStep: "A",
+      especieId: "chloris_berroi"
+    },
+    opcionA_prima: {
+      label: "Inflorescencia formada por varias espigas libres",
+      keyStep: "A'",
+      nextNodeId: "chloris_b"
+    }
+  },
+
+  chloris_b: {
+    id: "chloris_b",
+    milestone: "Chloris",
+    manualPage: 83,
+    descripcion: "Chloris - B: ¿cómo es la gluma superior y la lemma fértil?",
+    opcionA: {
+      label: "Gluma superior bilobada, con corta arista apical; lemma fértil mútica o apenas aristulada",
+      keyStep: "B",
+      nextNodeId: "chloris_c"
+    },
+    opcionA_prima: {
+      label: "Glumas múticas, la superior mucronada; lemma fértil largamente aristada",
+      keyStep: "B'",
+      nextNodeId: "chloris_e"
+    }
+  },
+
+  chloris_c: {
+    id: "chloris_c",
+    milestone: "Chloris",
+    manualPage: 83,
+    descripcion: "Chloris - C: ¿la lemma está ciliada también en el dorso?",
+    opcionA: {
+      label: "Lemma ciliada en el dorso y en el margen, carenada y mútica; espigas 4-14 digitadas",
+      keyStep: "C",
+      especieId: "chloris_capensis_bahiensis"
+    },
+    opcionA_prima: {
+      label: "Lemma ciliada en el margen y glabra en el dorso",
+      keyStep: "C'",
+      nextNodeId: "chloris_d"
+    }
+  },
+
+  chloris_d: {
+    id: "chloris_d",
+    milestone: "Chloris",
+    manualPage: 84,
+    descripcion: "Chloris - D: ¿cómo termina la lemma de la flor estéril?",
+    opcionA: {
+      label: "Lemma de la flor estéril aguda; espigas 12-30, flexuosas, de 8-14 cm",
+      keyStep: "D",
+      especieId: "chloris_distichophylla"
+    },
+    opcionA_prima: {
+      label: "Lemma del antecio estéril truncada en el ápice; espigas 8-15, de 4-10 cm",
+      keyStep: "D'",
+      especieId: "chloris_retusa"
+    }
+  },
+
+  chloris_e: {
+    id: "chloris_e",
+    milestone: "Chloris",
+    manualPage: 84,
+    descripcion: "Chloris - E: ¿cuántos antecios estériles acompañan al fértil?",
+    opcionA: {
+      label: "Espiguillas con un antecio fértil y dos antecios estériles casi iguales, largamente aristados",
+      keyStep: "E",
+      especieId: "chloris_inflata"
+    },
+    opcionA_prima: {
+      label: "Espiguillas con un antecio hermafrodita y un antecio estéril largamente aristado",
+      keyStep: "E'",
+      nextNodeId: "chloris_f"
+    }
+  },
+
+  chloris_f: {
+    id: "chloris_f",
+    milestone: "Chloris",
+    manualPage: 84,
+    descripcion: "Chloris - F: ¿la lemma es glabra o ciliada?",
+    opcionA: {
+      label: "Lemma glabra o casi glabra en el dorso y margen; inflorescencia con 2-3 verticilos de espigas perpendiculares",
+      keyStep: "F",
+      especieId: "chloris_halophila"
+    },
+    opcionA_prima: {
+      label: "Lemma ciliada en el margen y a veces también en la quilla",
+      keyStep: "F'",
+      nextNodeId: "chloris_g"
+    }
+  },
+
+  chloris_g: {
+    id: "chloris_g",
+    milestone: "Chloris",
+    manualPage: 84,
+    descripcion: "Chloris - G: ¿la quilla de la lemma es glabra o ciliada?",
+    opcionA: {
+      label: "Lemma ciliada únicamente en el margen, con quilla glabra; espigas 12-24 de 7-9 cm",
+      keyStep: "G",
+      especieId: "chloris_gayana"
+    },
+    opcionA_prima: {
+      label: "Lemma ciliada en el margen y en la quilla",
+      keyStep: "G'",
+      nextNodeId: "chloris_h"
+    }
+  },
+
+  chloris_h: {
+    id: "chloris_h",
+    milestone: "Chloris",
+    manualPage: 84,
+    descripcion: "Chloris - H: ¿qué tamaño tienen las espigas?",
+    opcionA: {
+      label: "Espigas 3-8, de 3-5 cm, fasciculadas en el ápice; espiguillas de 2-3 mm",
+      keyStep: "H",
+      especieId: "chloris_ciliata"
+    },
+    opcionA_prima: {
+      label: "Espigas de 7-15 cm",
+      keyStep: "H'",
+      nextNodeId: "chloris_j"
+    }
+  },
+
+  chloris_j: {
+    id: "chloris_j",
+    milestone: "Chloris",
+    manualPage: 84,
+    descripcion: "Chloris - J: ¿cuántas espigas y de qué tamaño?",
+    opcionA: {
+      label: "Espigas 3-6, flexuosas e inclinadas hacia abajo, de 7-10 cm",
+      keyStep: "J",
+      especieId: "chloris_canterai"
+    },
+    opcionA_prima: {
+      label: "Espigas 12-25, flexuosas, de 10-15 cm",
+      keyStep: "J'",
+      especieId: "chloris_polydactyla"
     }
   },
 
@@ -3409,6 +3562,116 @@ export const monocotEspecies = {
     descripcion: "Esta rama de Chlorideae corresponde al género Chloris y queda pendiente para una tanda dedicada.",
     caracteristicas: "El género tiene una clave larga de varias especies; se cargará completo por separado para evitar errores.",
     distribucion: "Pendiente de completar.",
+    imagen: ""
+  },
+
+  chloris_berroi: {
+    id: "chloris_berroi",
+    nombreCientifico: "Chloris berroi",
+    nombreVulgar: "Chloris",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne rizomatosa, de 40-100 cm de alto.",
+    caracteristicas: "Hojas planas angostas e inflorescencia con 2-7 espigas semihelicoidales adheridas que simulan una espiga terminal única.",
+    distribucion: "Uruguay y nordeste de Argentina; frecuente en campos bajos algo salinos.",
+    imagen: ""
+  },
+
+  chloris_capensis_bahiensis: {
+    id: "chloris_capensis_bahiensis",
+    nombreCientifico: "Chloris capensis var. bahiensis",
+    nombreVulgar: "Chloris",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne cortamente rizomatosa, de 20-50 cm de alto.",
+    caracteristicas: "Hojas inferiores amontonadas, con lámina corta obtusa; espigas digitadas en el ápice y lemma ciliada en dorso y margen.",
+    distribucion: "América del Sur cálida; en suelos arenosos de Isla Martín García y Dock Sur.",
+    imagen: ""
+  },
+
+  chloris_distichophylla: {
+    id: "chloris_distichophylla",
+    nombreCientifico: "Chloris distichophylla",
+    nombreVulgar: "Chloris",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne cortamente rizomatosa, de 50-100 cm de alto.",
+    caracteristicas: "Espigas 12-30 flexuosas, de 8-14 cm, espiguillas apretadas y lemma estéril aguda.",
+    distribucion: "América del Sur cálida; hallada en Palermo.",
+    imagen: ""
+  },
+
+  chloris_retusa: {
+    id: "chloris_retusa",
+    nombreCientifico: "Chloris retusa",
+    nombreVulgar: "Chloris",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne rizomatosa, de 40-80 cm de alto.",
+    caracteristicas: "Hojas con lámina obtusa plegada; espigas 8-15 de 4-10 cm y antecio estéril truncado.",
+    distribucion: "América del Sur; en la estepa climax.",
+    imagen: ""
+  },
+
+  chloris_inflata: {
+    id: "chloris_inflata",
+    nombreCientifico: "Chloris inflata",
+    nombreVulgar: "Chloris",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne cespitosa, de alrededor de 1 m de alto.",
+    caracteristicas: "Espigas 15-25 de 4-6 cm y espiguillas con un antecio fértil y dos estériles largamente aristados.",
+    distribucion: "América cálida; rara en la Isla Maciel.",
+    imagen: ""
+  },
+
+  chloris_halophila: {
+    id: "chloris_halophila",
+    nombreCientifico: "Chloris halophila",
+    nombreVulgar: "Chloris",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne con tallos rastreros radicantes y cañas floríferas erectas de 40-70 cm.",
+    caracteristicas: "Lemma glabra o casi glabra, lanceolada y largamente aristada; espigas en 2-3 verticilos perpendiculares al tallo.",
+    distribucion: "América austral; en campos salobres de Pergamino y Campana.",
+    imagen: ""
+  },
+
+  chloris_gayana: {
+    id: "chloris_gayana",
+    nombreCientifico: "Chloris gayana",
+    nombreVulgar: "Chloris",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne cortamente rizomatosa, de alrededor de 1 m de alto.",
+    caracteristicas: "Hojas lineales planas, espigas 12-24 de 7-9 cm y lemma ciliada sólo en el margen, con quilla glabra.",
+    distribucion: "Senegal; cultivada como forrajera y a veces subespontánea.",
+    imagen: ""
+  },
+
+  chloris_ciliata: {
+    id: "chloris_ciliata",
+    nombreCientifico: "Chloris ciliata",
+    nombreVulgar: "Chloris",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne cespitosa, de 15-50 cm de alto.",
+    caracteristicas: "Espigas 3-8 de 3-5 cm, espiguillas de 2-3 mm, glumas lanceoladas agudas y lemma ciliada en margen y quilla.",
+    distribucion: "América cálida y templada; en suelos secos.",
+    imagen: ""
+  },
+
+  chloris_canterai: {
+    id: "chloris_canterai",
+    nombreCientifico: "Chloris canterai",
+    nombreVulgar: "Chloris",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne cespitosa con rizomas cortos y tallos de 50-100 cm.",
+    caracteristicas: "Espigas 3-6, flexuosas e inclinadas hacia abajo, de 7-10 cm; espiguillas castañas de unos 3 mm.",
+    distribucion: "Uruguay y norte de Argentina; citada para Campo de Mayo y Palermo.",
+    imagen: ""
+  },
+
+  chloris_polydactyla: {
+    id: "chloris_polydactyla",
+    nombreCientifico: "Chloris polydactyla",
+    nombreVulgar: "Chloris",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne cortamente rizomatosa, de alrededor de 1 m de alto.",
+    caracteristicas: "Espigas 12-25 flexuosas de 10-15 cm, espiguillas de 2-2,5 mm y glumas lineales.",
+    distribucion: "América cálida; accidental en Palermo.",
     imagen: ""
   },
 
