@@ -433,6 +433,142 @@ export const monocotiledoneaeData = {
     }
   },
 
+  aveneae_a: {
+    id: "aveneae_a",
+    milestone: "Aveneae",
+    manualPage: 70,
+    descripcion: "Aveneae - A: ¿las glumas caen junto con las lemmas?",
+    opcionA: {
+      label: "Glumas caducas con las lemmas; flor inferior hermafrodita con lemma mútica y flor superior masculina con lemma aristada",
+      keyStep: "A",
+      especieId: "holcus_lanatus"
+    },
+    opcionA_prima: {
+      label: "Glumas persistentes",
+      keyStep: "A'",
+      nextNodeId: "aveneae_b"
+    }
+  },
+
+  aveneae_b: {
+    id: "aveneae_b",
+    milestone: "Aveneae",
+    manualPage: 70,
+    descripcion: "Aveneae - B: ¿cómo es la lígula y la lemma?",
+    opcionA: {
+      label: "Lígula formada por una línea transversal de pelos; lemma profundamente bífida con dos puntas agudas y arista entre ellas",
+      keyStep: "B",
+      especieId: "danthonia_montevidensis"
+    },
+    opcionA_prima: {
+      label: "Lígula membranosa; lemma entera o bidentada con arista dorsal o subapical",
+      keyStep: "B'",
+      nextNodeId: "aveneae_c"
+    }
+  },
+
+  aveneae_c: {
+    id: "aveneae_c",
+    milestone: "Aveneae",
+    manualPage: 70,
+    descripcion: "Aveneae - C: ¿las panojas son espiciformes o laxas?",
+    opcionA: {
+      label: "Panojas contraídas, espiciformes; arista subapical recta",
+      keyStep: "C",
+      especieId: "koeleria_phleoides"
+    },
+    opcionA_prima: {
+      label: "Panojas laxas; arista dorsal retorcida",
+      keyStep: "C'",
+      nextNodeId: "aveneae_d"
+    }
+  },
+
+  aveneae_d: {
+    id: "aveneae_d",
+    milestone: "Aveneae",
+    manualPage: 70,
+    descripcion: "Aveneae - D: ¿las glumas son menores o mayores que las lemmas?",
+    opcionA: {
+      label: "Glumas menores que las lemmas; plantas perennes",
+      keyStep: "D",
+      especieId: "amphibromus_scabrivalvis"
+    },
+    opcionA_prima: {
+      label: "Glumas mayores que las lemmas; plantas anuales",
+      keyStep: "D'",
+      nextNodeId: "avena_a"
+    }
+  },
+
+  avena_a: {
+    id: "avena_a",
+    milestone: "Avena",
+    manualPage: 71,
+    descripcion: "Avena - A: ¿el segundo flósculo se desprende fácilmente de la raquilla?",
+    opcionA: {
+      label: "El segundo flósculo está soldado a la raquilla y difícilmente se desprende",
+      keyStep: "A",
+      nextNodeId: "avena_b"
+    },
+    opcionA_prima: {
+      label: "El segundo flósculo está articulado sobre la raquilla y se desprende fácilmente",
+      keyStep: "A'",
+      nextNodeId: "avena_c"
+    }
+  },
+
+  avena_b: {
+    id: "avena_b",
+    milestone: "Avena",
+    manualPage: 71,
+    descripcion: "Avena - B: ¿la lemma es glabra o cubierta de pelos en el dorso?",
+    opcionA: {
+      label: "Lemma glabra en su parte dorsal, rodeada de pelos hirsutos en la base; arista retorcida larga",
+      keyStep: "B",
+      especieId: "avena_byzantina"
+    },
+    opcionA_prima: {
+      label: "Lemma cubierta de pelos hirsutos en el dorso; arista retorcida y geniculada",
+      keyStep: "B'",
+      especieId: "avena_sterilis"
+    }
+  },
+
+  avena_c: {
+    id: "avena_c",
+    milestone: "Avena",
+    manualPage: 71,
+    descripcion: "Avena - C: ¿cómo termina el ápice de la lemma?",
+    opcionA: {
+      label: "Lemma con ápice entero o apenas bidentado",
+      keyStep: "C",
+      nextNodeId: "avena_d"
+    },
+    opcionA_prima: {
+      label: "Lemma terminada en dos dientes o lacinias de 4-8 mm; espiguillas bifloras",
+      keyStep: "C'",
+      especieId: "avena_barbata"
+    }
+  },
+
+  avena_d: {
+    id: "avena_d",
+    milestone: "Avena",
+    manualPage: 71,
+    descripcion: "Avena - D: ¿la lemma es hirsuta o glabra?",
+    opcionA: {
+      label: "Lemma hirsuta; arista dorsal retorcida de 35 mm; panojas flojas y abiertas; espiguillas generalmente 3-floras",
+      keyStep: "D",
+      especieId: "avena_fatua"
+    },
+    opcionA_prima: {
+      label: "Lemma glabra; arista sólo en el flósculo inferior, débil y apenas retorcida; espiguillas castañas, generalmente bifloras",
+      keyStep: "D'",
+      especieId: "avena_sativa"
+    }
+  },
+
   gramineae_tribe_f: {
     id: "gramineae_tribe_f",
     milestone: "Gramineae",
@@ -463,7 +599,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Glumelas menores que las glumas, con arista dorsal retorcida",
       keyStep: "G'",
-      especieId: "aveneae"
+      nextNodeId: "aveneae_a"
     }
   },
 
@@ -2230,6 +2366,105 @@ export const monocotEspecies = {
     descripcion: "Hierba anual cultivada.",
     caracteristicas: "Especie de trigo poco cultivada en Argentina, ocasionalmente espontánea.",
     distribucion: "Cultivos y escapes ocasionales.",
+    imagen: ""
+  },
+
+  koeleria_phleoides: {
+    id: "koeleria_phleoides",
+    nombreCientifico: "Koeleria phleoides",
+    nombreVulgar: "Koeleria",
+    familia: "17. Gramineae - Aveneae",
+    descripcion: "Hierba anual erecta, de 15-30 cm de alto.",
+    caracteristicas: "Hojas pilosas, panojas muy densas espiciformes de 2-7 cm, espiguillas de 4 mm y lemmas bidentadas con corta arista subapical.",
+    distribucion: "Europa; adventicia en América, muy común en la estepa climax y ambientes antropógenos.",
+    imagen: ""
+  },
+
+  amphibromus_scabrivalvis: {
+    id: "amphibromus_scabrivalvis",
+    nombreCientifico: "Amphibromus scabrivalvis",
+    nombreVulgar: "Amphibromus",
+    familia: "17. Gramineae - Aveneae",
+    descripcion: "Hierba perenne, de 40-100 cm de alto, con base bulbiforme.",
+    caracteristicas: "Hojas planas y espiguillas de dos tipos: cleistógamas en las vainas y chasmógamas 3-5-floras en panojas laxas.",
+    distribucion: "Uruguay, Argentina y Chile; en suelos inundables y zanjas.",
+    imagen: ""
+  },
+
+  avena_byzantina: {
+    id: "avena_byzantina",
+    nombreCientifico: "Avena byzantina",
+    nombreVulgar: "Avena",
+    familia: "17. Gramineae - Aveneae",
+    descripcion: "Hierba anual de hojas anchas y panojas laxas.",
+    caracteristicas: "Segundo flósculo soldado a la raquilla; lemma glabra dorsalmente, rodeada de pelos hirsutos en la base, con arista retorcida larga.",
+    distribucion: "Especie cultivada y a veces subespontánea.",
+    imagen: ""
+  },
+
+  avena_sterilis: {
+    id: "avena_sterilis",
+    nombreCientifico: "Avena sterilis",
+    nombreVulgar: "Avena",
+    familia: "17. Gramineae - Aveneae",
+    descripcion: "Hierba anual, de alrededor de 1 m de alto, con hojas anchas y panojas laxas.",
+    caracteristicas: "Segundo flósculo soldado a la raquilla; lemma cubierta de pelos hirsutos en el dorso, con arista retorcida y geniculada.",
+    distribucion: "España; adventicia en América, en cultivos y rastrojos.",
+    imagen: ""
+  },
+
+  avena_fatua: {
+    id: "avena_fatua",
+    nombreCientifico: "Avena fatua",
+    nombreVulgar: "Avena guacha",
+    familia: "17. Gramineae - Aveneae",
+    descripcion: "Hierba anual, de 50-100 cm de alto, con hojas anchas.",
+    caracteristicas: "Segundo flósculo fácilmente desprendible; lemma hirsuta, arista dorsal retorcida de 35 mm y panojas flojas abiertas.",
+    distribucion: "Europa; adventicia en América, en rastrojos, vías férreas y ambientes similares.",
+    imagen: ""
+  },
+
+  avena_sativa: {
+    id: "avena_sativa",
+    nombreCientifico: "Avena sativa",
+    nombreVulgar: "Avena",
+    familia: "17. Gramineae - Aveneae",
+    descripcion: "Hierba anual cultivada como forrajera.",
+    caracteristicas: "Lemma glabra, arista débil apenas retorcida sólo en el flósculo inferior y espiguillas castañas generalmente bifloras.",
+    distribucion: "Cultivada y con frecuencia espontánea.",
+    imagen: ""
+  },
+
+  avena_barbata: {
+    id: "avena_barbata",
+    nombreCientifico: "Avena barbata",
+    nombreVulgar: "Avena",
+    familia: "17. Gramineae - Aveneae",
+    descripcion: "Hierba anual de espiguillas bifloras.",
+    caracteristicas: "Lemma terminada en dos dientes o lacinias de 4-8 mm.",
+    distribucion: "Europa; adventicia en América, ubicua.",
+    imagen: ""
+  },
+
+  danthonia_montevidensis: {
+    id: "danthonia_montevidensis",
+    nombreCientifico: "Danthonia montevidensis",
+    nombreVulgar: "Danthonia",
+    familia: "17. Gramineae - Aveneae",
+    descripcion: "Hierba perenne cespitosa, de 40-60 cm de alto.",
+    caracteristicas: "Hojas estrechas planas o convolutas, panojas cortas con pocas espiguillas, y lemma lanceolada largamente velluda y bífida.",
+    distribucion: "Uruguay y nordeste de Argentina; frecuente en la estepa climax.",
+    imagen: ""
+  },
+
+  holcus_lanatus: {
+    id: "holcus_lanatus",
+    nombreCientifico: "Holcus lanatus",
+    nombreVulgar: "Holcus",
+    familia: "17. Gramineae - Aveneae",
+    descripcion: "Hierba perenne, de 30-60 cm de alto.",
+    caracteristicas: "Vainas pubescentes, láminas lineales, panojas densas de 8-15 cm y glumas velludas.",
+    distribucion: "Europa; adventicia en América, muy rara en la región.",
     imagen: ""
   },
 
