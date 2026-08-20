@@ -23,13 +23,25 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [rangeStart, setRangeStart] = useState("");
   const [rangeEnd, setRangeEnd] = useState("");
+  const [activeRange, setActiveRange] = useState<{
+    start: number;
+    end: number;
+  } | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [searchMode, setSearchMode] = useState<SearchMode>("all");
   const filteredRecords = useMemo(() => {
     const normalizedSearch = normalizeSearchText(searchTerm.trim());
-    if (!normalizedSearch) return records;
-
     return records.filter((record) => {
+      if (
+        activeRange &&
+        (record.plant_number < activeRange.start ||
+          record.plant_number > activeRange.end)
+      ) {
+        return false;
+      }
+
+      if (!normalizedSearch) return true;
+
       const especie = especiesData[record.especie_id];
       if (searchMode === "number") {
         return record.plant_number.toString() === normalizedSearch;
@@ -62,7 +74,7 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
 
       return normalizeSearchText(searchableText).includes(normalizedSearch);
     });
-  }, [records, searchMode, searchTerm]);
+  }, [activeRange, records, searchMode, searchTerm]);
   const selectedRecords = useMemo(
     () => records.filter((record) => selectedIds.includes(record.id)),
     [records, selectedIds]
@@ -97,6 +109,7 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
 
     const min = Math.min(start, end);
     const max = Math.max(start, end);
+    setActiveRange({ start: min, end: max });
     setSelectedIds(
       records
         .filter(
@@ -112,6 +125,12 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
         recordToLabel(record, especiesData[record.especie_id])
       )
     );
+  };
+
+  const clearRange = () => {
+    setActiveRange(null);
+    setRangeStart("");
+    setRangeEnd("");
   };
 
   return (
@@ -213,6 +232,20 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
                 Elegir
               </button>
             </div>
+            {activeRange && (
+              <div className="flex items-center justify-between gap-2 rounded bg-green-50 px-3 py-2 text-xs text-green-900">
+                <span>
+                  Mostrando N° {activeRange.start} a {activeRange.end}
+                </span>
+                <button
+                  type="button"
+                  onClick={clearRange}
+                  className="font-medium underline"
+                >
+                  Ver todas
+                </button>
+              </div>
+            )}
             <button
               type="button"
               onClick={handleGenerateLabels}
