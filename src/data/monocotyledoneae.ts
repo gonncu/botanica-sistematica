@@ -1755,7 +1755,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Espiguillas con otros caracteres dentro de Paniceae; continuar en una proxima tanda",
       keyStep: "D'",
-      especieId: "paniceae"
+      nextNodeId: "paniceae_e"
     }
   },
 
@@ -1824,6 +1824,74 @@ export const monocotiledoneaeData = {
       label: "Espiguillas lanceoladas; lemma esteril con espinulas poco desarrolladas y arista de 2-15 mm; panojas oblongo-lanceoladas nutantes",
       keyStep: "D'",
       especieId: "echinochloa_cruspavonis"
+    }
+  },
+
+  paniceae_e: {
+    id: "paniceae_e",
+    milestone: "Paniceae",
+    manualPage: 96,
+    descripcion: "Paniceae - entrada parcial: espiguillas con dilatacion basal o panojas de Panicum",
+    opcionA: {
+      label: "Espiguillas deprimidas, solitarias o geminadas, con una dilatacion claviforme en su base; racimos simples sobre un eje principal",
+      keyStep: "E",
+      especieId: "eriochloa_montevidensis"
+    },
+    opcionA_prima: {
+      label: "Espiguillas mas o menos deprimidas, dispuestas en panojas laxas o densas; caracteres de Panicum",
+      keyStep: "E'",
+      nextNodeId: "panicum_a"
+    }
+  },
+
+  panicum_a: {
+    id: "panicum_a",
+    milestone: "Panicum",
+    manualPage: 96,
+    descripcion: "Panicum - A: tamano y aspecto de las espiguillas",
+    opcionA: {
+      label: "Espiguillas de 6-8 mm, ovoideo-globosas, cubiertas de largos pelos blancos; panojas largas y densas, subnutantes",
+      keyStep: "A",
+      especieId: "panicum_racemosum"
+    },
+    opcionA_prima: {
+      label: "Espiguillas de 1-5 mm",
+      keyStep: "A'",
+      nextNodeId: "panicum_b"
+    }
+  },
+
+  panicum_b: {
+    id: "panicum_b",
+    milestone: "Panicum",
+    manualPage: 96,
+    descripcion: "Panicum - B: espiguillas de 4-5 mm o menores",
+    opcionA: {
+      label: "Espiguillas de 4-5 mm",
+      keyStep: "B",
+      nextNodeId: "panicum_c"
+    },
+    opcionA_prima: {
+      label: "Espiguillas de 1-3,5 mm; continuar en una proxima tanda de Panicum",
+      keyStep: "B'",
+      especieId: "paniceae"
+    }
+  },
+
+  panicum_c: {
+    id: "panicum_c",
+    milestone: "Panicum",
+    manualPage: 96,
+    descripcion: "Panicum - C: plantas flotantes robustas o terrestres anuales",
+    opcionA: {
+      label: "Plantas robustas, flotantes, con tallos gruesos ricos en aerenquima, radicantes en los nudos; panojas grandes y abiertas",
+      keyStep: "C",
+      especieId: "panicum_elephantipes"
+    },
+    opcionA_prima: {
+      label: "Plantas terrestres, anuales, erectas o ascendentes; panojas por lo comun parcialmente incluidas en la vaina de la hoja superior",
+      keyStep: "C'",
+      especieId: "panicum_miliaceum"
     }
   },
 
@@ -3116,6 +3184,50 @@ export const monocotEspecies = {
     descripcion: "Hierba anual de 1-2 m de alto, con hojas planas y anchas.",
     caracteristicas: "Espiguillas lanceoladas de 2,8-3,7 mm por 1-1,4 mm; lemma esteril con espinulas poco desarrolladas y arista de 2-15 mm; panojas oblongo-lanceoladas, nutantes.",
     distribucion: "America calida; muy comun en la ribera platense.",
+    imagen: ""
+  },
+
+  eriochloa_montevidensis: {
+    id: "eriochloa_montevidensis",
+    nombreCientifico: "Eriochloa montevidensis",
+    nombreVulgar: "Eriochloa montevidensis",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, erecta, de 30-50 cm de alto.",
+    caracteristicas: "Hojas amontonadas principalmente en la base, planas; racimos pocos; espiguillas lanceoladas de 3-5 mm; gluma y lemma esteril finamente pubescentes; lemma fertil aristulada.",
+    distribucion: "Uruguay y nordeste de la Argentina; se halla en campos bajos y humedos.",
+    imagen: ""
+  },
+
+  panicum_racemosum: {
+    id: "panicum_racemosum",
+    nombreCientifico: "Panicum racemosum",
+    nombreVulgar: "Panicum racemosum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, rizomatosa, de 70-120 cm de alto.",
+    caracteristicas: "Vainas retrorso-velludas y lamina convoluta; espiguillas de 6-8 mm, ovoideo-globosas, con largos pelos blancos; panojas largas, densas y subnutantes.",
+    distribucion: "Sur del Brasil, Uruguay y nordeste de la Argentina; frecuente en dunas de Samborombon, litoral atlantico e isla Martin Garcia.",
+    imagen: ""
+  },
+
+  panicum_elephantipes: {
+    id: "panicum_elephantipes",
+    nombreCientifico: "Panicum elephantipes",
+    nombreVulgar: "Pasto camalote",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Planta robusta y flotante, con tallos gruesos ricos en aerenquima, radicantes en los nudos.",
+    caracteristicas: "Hojas planas de 15-50 cm por 7-20 mm; panojas grandes y abiertas; espiguillas lanceoladas, acuminadas, de 4-5 mm.",
+    distribucion: "America calida; muy comun en los camalotales del Delta y de la ribera platense.",
+    imagen: ""
+  },
+
+  panicum_miliaceum: {
+    id: "panicum_miliaceum",
+    nombreCientifico: "Panicum miliaceum",
+    nombreVulgar: "Mijo",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba terrestre anual, erecta o ascendente, de 20-100 cm de alto.",
+    caracteristicas: "Hojas velludas o glabrescentes, planas; panojas laxas, generalmente parcialmente incluidas en la vaina superior; espiguillas ovado-lanceoladas de 4,5-5 mm.",
+    distribucion: "Asia; cultivado por sus granos y a veces subespontaneo en suelos modificados y calles.",
     imagen: ""
   },
 
