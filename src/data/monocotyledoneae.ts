@@ -143,7 +143,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Gineceo dialicarpelar con 3-6 carpelos",
       familia: "13. Scheuchzeriaceae",
-      especieId: "scheuchzeriaceae"
+      nextNodeId: "scheuchzeriaceae_a"
     },
     opcionA_prima: {
       label: "Gineceo gamocarpelar",
@@ -294,6 +294,38 @@ export const monocotiledoneaeData = {
     }
   },
 
+  scheuchzeriaceae_a: {
+    id: "scheuchzeriaceae_a",
+    milestone: "Scheuchzeriaceae",
+    descripcion: "Scheuchzeriaceae - A: ¿las flores tienen perigonio y cómo se agrupan?",
+    opcionA: {
+      label: "Flores con perigonio, hermafroditas, en espigas o racimos laxos",
+      keyStep: "A",
+      nextNodeId: "triglochin_a"
+    },
+    opcionA_prima: {
+      label: "Flores desnudas, polígamas, en espigas densas",
+      keyStep: "A'",
+      especieId: "lilaea_scilloides"
+    }
+  },
+
+  triglochin_a: {
+    id: "triglochin_a",
+    milestone: "Triglochin",
+    descripcion: "Triglochin - A: ¿cómo son los frutos y el hábito?",
+    opcionA: {
+      label: "Frutos lineales de 7-8 mm; hierba perenne con rizoma corto y estolones terminados en bulbillos",
+      keyStep: "A",
+      especieId: "triglochin_palustris"
+    },
+    opcionA_prima: {
+      label: "Frutos con carpelos semicirculares comprimidos; hierba perenne rizomatosa",
+      keyStep: "A'",
+      especieId: "triglochin_striata"
+    }
+  },
+
   // C': Flores con cáliz y corola
   herbaceae_c_prima: {
     id: "herbaceae_c_prima",
@@ -387,12 +419,44 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Ovario súpero",
       familia: "15. Butomaceae",
-      especieId: "butomaceae"
+      especieId: "hydrocleis_nymphoides"
     },
     opcionA_prima: {
       label: "Ovario ínfero",
       familia: "16. Hydrocharitaceae",
-      especieId: "hydrocharitaceae"
+      nextNodeId: "hydrocharitaceae_a"
+    }
+  },
+
+  hydrocharitaceae_a: {
+    id: "hydrocharitaceae_a",
+    milestone: "Hydrocharitaceae",
+    descripcion: "Hydrocharitaceae - A: ¿la planta es flotante o sumergida?",
+    opcionA: {
+      label: "Plantas flotantes; hojas pecioladas con lámina elíptico-acorazonada",
+      keyStep: "A",
+      especieId: "hydromystria_stolonifera"
+    },
+    opcionA_prima: {
+      label: "Plantas sumergidas; hojas sésiles, lineales",
+      keyStep: "A'",
+      nextNodeId: "elodea_a"
+    }
+  },
+
+  elodea_a: {
+    id: "elodea_a",
+    milestone: "Elodea",
+    descripcion: "Elodea - A: ¿cómo son las hojas y flores?",
+    opcionA: {
+      label: "Hojas opuestas o en verticilos de 3, lineal-lanceoladas, de 1,5-2,5 mm de ancho; flores pequeñas blanquecinas",
+      keyStep: "A",
+      especieId: "elodea_callitrichoides"
+    },
+    opcionA_prima: {
+      label: "Hojas en verticilos de 4, raramente 6, de más de 2,5 mm de ancho; flores grandes blancas emergidas",
+      keyStep: "A'",
+      especieId: "elodea_densa"
     }
   },
 
@@ -403,11 +467,59 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Gineceo dialicarpelar. Hojas largamente pecioladas, ovadas o sagitadas",
       familia: "14. Alismataceae",
-      especieId: "alismataceae"
+      nextNodeId: "alismataceae_a"
     },
     opcionA_prima: {
       label: "Gineceo gamocarpelar",
       nextNodeId: "herbaceae_c_prima_l_prima_p_prima_s_prima"
+    }
+  },
+
+  alismataceae_a: {
+    id: "alismataceae_a",
+    milestone: "Alismataceae",
+    descripcion: "Alismataceae - A: ¿las flores son hermafroditas o diclinas?",
+    opcionA: {
+      label: "Flores hermafroditas; hojas elípticas o lanceoladas",
+      keyStep: "A",
+      nextNodeId: "echinodorus_a"
+    },
+    opcionA_prima: {
+      label: "Flores diclinas; hojas sagitadas",
+      keyStep: "A'",
+      especieId: "sagittaria_montevidensis"
+    }
+  },
+
+  echinodorus_a: {
+    id: "echinodorus_a",
+    milestone: "Echinodorus",
+    descripcion: "Echinodorus - A: ¿cómo es el porte y las hojas?",
+    opcionA: {
+      label: "Plantas robustas, de 0,5-1,5 m; hojas grandes, largamente pecioladas, anchamente elípticas u ovadas",
+      keyStep: "A",
+      nextNodeId: "echinodorus_b"
+    },
+    opcionA_prima: {
+      label: "Plantas pequeñas; hojas arrosetadas, elíptico-lanceoladas, de 4-7 cm",
+      keyStep: "A'",
+      especieId: "echinodorus_aschersonianus"
+    }
+  },
+
+  echinodorus_b: {
+    id: "echinodorus_b",
+    milestone: "Echinodorus",
+    descripcion: "Echinodorus - B: en plantas robustas, ¿cómo son las hojas e inflorescencias?",
+    opcionA: {
+      label: "Hojas con pequeños puntos y rayitas cortas translúcidas; inflorescencias ramificadas",
+      keyStep: "B",
+      especieId: "echinodorus_grandiflorus"
+    },
+    opcionA_prima: {
+      label: "Hojas con rayitas translúcidas; inflorescencia frecuentemente simple",
+      keyStep: "B'",
+      especieId: "echinodorus_palaefolius"
     }
   },
 
@@ -588,6 +700,39 @@ export const monocotEspecies = {
     descripcion: "Plantas de lugares pantanosos.",
     caracteristicas: "Gineceo dialicarpelar con 3-6 carpelos.",
     distribucion: "Pantanos y áreas húmedas",
+    imagen: ""
+  },
+
+  triglochin_palustris: {
+    id: "triglochin_palustris",
+    nombreCientifico: "Triglochin palustris",
+    nombreVulgar: "Triglochin",
+    familia: "13. Scheuchzeriaceae",
+    descripcion: "Hierba palustre perenne con rizoma corto y estolones terminados en bulbillos.",
+    caracteristicas: "Tallos de 10-30 cm, hojas subuladas mas cortas que el tallo, flores numerosas en racimo terminal y frutos lineales de 7-8 mm.",
+    distribucion: "Cosmopolita; aparece en cespedes inundables de la ribera platense.",
+    imagen: ""
+  },
+
+  triglochin_striata: {
+    id: "triglochin_striata",
+    nombreCientifico: "Triglochin striata",
+    nombreVulgar: "Triglochin",
+    familia: "13. Scheuchzeriaceae",
+    descripcion: "Hierba palustre perenne y rizomatosa.",
+    caracteristicas: "Tallos de 5-35 cm, hojas subulado-filiformes, flores en racimos estrechos y frutos con carpelos semicirculares comprimidos.",
+    distribucion: "Cosmopolita; comun en ambientes inundables, orillas de arroyos y ribera del Plata.",
+    imagen: ""
+  },
+
+  lilaea_scilloides: {
+    id: "lilaea_scilloides",
+    nombreCientifico: "Lilaea scilloides",
+    nombreVulgar: "Lilaea",
+    familia: "13. Scheuchzeriaceae",
+    descripcion: "Hierba palustre junciforme.",
+    caracteristicas: "Hojas subuladas y flores desnudas poligamas en espigas densas.",
+    distribucion: "America; frecuente en lagunas y charcas durante la primavera.",
     imagen: ""
   },
 
@@ -808,6 +953,94 @@ export const monocotEspecies = {
     descripcion: "Planta palustre con gineceo dialicarpelar.",
     caracteristicas: "Hojas ovadas sagitadas largamente pecioladas.",
     distribucion: "Pantanos y ciénegas",
+    imagen: ""
+  },
+
+  hydrocleis_nymphoides: {
+    id: "hydrocleis_nymphoides",
+    nombreCientifico: "Hydrocleis nymphoides",
+    nombreVulgar: "Camalotillo",
+    familia: "15. Butomaceae",
+    descripcion: "Hierba acuatica perenne, flotante.",
+    caracteristicas: "Hojas inferiores sumergidas y lineales, hojas superiores flotantes ovadas a circulares, largamente pecioladas, y flores amarillas grandes.",
+    distribucion: "America tropical y subtropical; comun en arroyos limpios de corriente lenta durante la primavera.",
+    imagen: ""
+  },
+
+  hydromystria_stolonifera: {
+    id: "hydromystria_stolonifera",
+    nombreCientifico: "Hydromystria stolonifera",
+    nombreVulgar: "Hydromystria",
+    familia: "16. Hydrocharitaceae",
+    descripcion: "Planta acuatica flotante libre.",
+    caracteristicas: "Hojas pecioladas con lamina eliptico-acorazonada y habito flotante.",
+    distribucion: "Regiones calidas de America hasta el Rio de la Plata; frecuente en camalotales del Delta y la ribera.",
+    imagen: ""
+  },
+
+  elodea_callitrichoides: {
+    id: "elodea_callitrichoides",
+    nombreCientifico: "Elodea callitrichoides",
+    nombreVulgar: "Elodea",
+    familia: "16. Hydrocharitaceae",
+    descripcion: "Hierba acuatica sumergida.",
+    caracteristicas: "Hojas opuestas o en verticilos de 3, lineal-lanceoladas, agudas y ligeramente denticuladas; flores pequenas blanquecinas.",
+    distribucion: "America del Sur; comun en aguas tranquilas del Delta y la ribera platense.",
+    imagen: ""
+  },
+
+  elodea_densa: {
+    id: "elodea_densa",
+    nombreCientifico: "Elodea densa",
+    nombreVulgar: "Elodea",
+    familia: "16. Hydrocharitaceae",
+    descripcion: "Hierba acuatica sumergida de flores emergentes.",
+    caracteristicas: "Hojas en verticilos de 4, raramente 6, lanceoladas y finamente denticuladas; flores blancas grandes, emergidas.",
+    distribucion: "Endemica de la region platense; comun en charcas y arroyuelos del Delta y la ribera.",
+    imagen: ""
+  },
+
+  echinodorus_grandiflorus: {
+    id: "echinodorus_grandiflorus",
+    nombreCientifico: "Echinodorus grandiflorus",
+    nombreVulgar: "Cucharero",
+    familia: "14. Alismataceae",
+    descripcion: "Planta palustre robusta, de hojas grandes y largamente pecioladas.",
+    caracteristicas: "Hojas elipticas a ovadas, con puntos y rayitas translucidas; flores blancas numerosas en inflorescencias ramificadas.",
+    distribucion: "America austral; muy comun en pajonales, zanjas y lagunas de la ribera y el Delta.",
+    imagen: ""
+  },
+
+  echinodorus_palaefolius: {
+    id: "echinodorus_palaefolius",
+    nombreCientifico: "Echinodorus palaefolius",
+    nombreVulgar: "Cucharero",
+    familia: "14. Alismataceae",
+    descripcion: "Planta palustre robusta, semejante a Echinodorus grandiflorus.",
+    caracteristicas: "Hojas grandes con rayitas translucidas e inflorescencia frecuentemente simple.",
+    distribucion: "America del Sur; mas escasa en la region.",
+    imagen: ""
+  },
+
+  echinodorus_aschersonianus: {
+    id: "echinodorus_aschersonianus",
+    nombreCientifico: "Echinodorus aschersonianus",
+    nombreVulgar: "Echinodorus",
+    familia: "14. Alismataceae",
+    descripcion: "Planta palustre pequena, con hojas arrosetadas.",
+    caracteristicas: "Hojas eliptico-lanceoladas de 4-7 cm por 1,5-2 cm, escapos de 20-25 cm y pocas flores blancas.",
+    distribucion: "Uruguay e Isla Martin Garcia.",
+    imagen: ""
+  },
+
+  sagittaria_montevidensis: {
+    id: "sagittaria_montevidensis",
+    nombreCientifico: "Sagittaria montevidensis",
+    nombreVulgar: "Saeta",
+    familia: "14. Alismataceae",
+    descripcion: "Planta palustre perenne, robusta y rizomatosa.",
+    caracteristicas: "Hojas grandes, largamente pecioladas y sagitadas; flores blancas grandes, diclinas, con las masculinas arriba y las femeninas abajo.",
+    distribucion: "America austral; comun en pajonales, arroyos y ambientes inundables.",
     imagen: ""
   },
 
