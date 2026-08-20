@@ -569,6 +569,312 @@ export const monocotiledoneaeData = {
     }
   },
 
+  agrostideae_a: {
+    id: "agrostideae_a",
+    milestone: "Agrostideae",
+    manualPage: 72,
+    descripcion: "Agrostideae - A: ¿la lemma tiene arista desde el ápice?",
+    opcionA: {
+      label: "Lemma aristada desde el ápice",
+      keyStep: "A",
+      nextNodeId: "agrostideae_b"
+    },
+    opcionA_prima: {
+      label: "Lemma con arista dorsal o subapical, o mútica",
+      keyStep: "A'",
+      nextNodeId: "agrostideae_f"
+    }
+  },
+
+  agrostideae_b: {
+    id: "agrostideae_b",
+    milestone: "Agrostideae",
+    manualPage: 72,
+    descripcion: "Agrostideae - B: ¿las glumas son más cortas o más largas que la lemma?",
+    opcionA: {
+      label: "Glumas más cortas que la lemma",
+      keyStep: "B",
+      nextNodeId: "muhlenbergia_a"
+    },
+    opcionA_prima: {
+      label: "Glumas más largas que la lemma",
+      keyStep: "B'",
+      nextNodeId: "agrostideae_c"
+    }
+  },
+
+  agrostideae_c: {
+    id: "agrostideae_c",
+    milestone: "Agrostideae",
+    manualPage: 72,
+    descripcion: "Agrostideae - C: ¿la arista es trífida o simple?",
+    opcionA: {
+      label: "Arista trífida",
+      keyStep: "C",
+      nextNodeId: "aristida_a"
+    },
+    opcionA_prima: {
+      label: "Arista simple",
+      keyStep: "C'",
+      especieId: "agrostideae_pendiente"
+    }
+  },
+
+  agrostideae_f: {
+    id: "agrostideae_f",
+    milestone: "Agrostideae",
+    manualPage: 72,
+    descripcion: "Agrostideae - F: ¿la raquilla se prolonga más allá de la flor con pelos lanosos largos?",
+    opcionA: {
+      label: "Raquilla prolongada más allá de la flor y provista de pelos lanosos largos; lemma con arista dorsal",
+      keyStep: "F",
+      especieId: "calamagrostis_montevidensis"
+    },
+    opcionA_prima: {
+      label: "Raquilla raramente prolongada, glabra",
+      keyStep: "F'",
+      nextNodeId: "agrostideae_g"
+    }
+  },
+
+  agrostideae_g: {
+    id: "agrostideae_g",
+    milestone: "Agrostideae",
+    manualPage: 72,
+    descripcion: "Agrostideae - G: ¿las glumas son menores o mayores que las lemmas?",
+    opcionA: {
+      label: "Glumas menores que las lemmas, que son múticas",
+      keyStep: "G",
+      especieId: "agrostideae_pendiente"
+    },
+    opcionA_prima: {
+      label: "Glumas mayores que las lemmas, que generalmente son aristadas",
+      keyStep: "G'",
+      nextNodeId: "agrostideae_h"
+    }
+  },
+
+  agrostideae_h: {
+    id: "agrostideae_h",
+    milestone: "Agrostideae",
+    manualPage: 72,
+    descripcion: "Agrostideae - H: ¿las glumas son caducas o persistentes sobre la panoja?",
+    opcionA: {
+      label: "Glumas caducas a la madurez de la espiguilla",
+      keyStep: "H",
+      nextNodeId: "agrostideae_j"
+    },
+    opcionA_prima: {
+      label: "Glumas persistentes sobre la panoja",
+      keyStep: "H'",
+      nextNodeId: "agrostideae_k"
+    }
+  },
+
+  agrostideae_j: {
+    id: "agrostideae_j",
+    milestone: "Agrostideae",
+    manualPage: 72,
+    descripcion: "Agrostideae - J: ¿las glumas son aristadas/acuminadas o múticas?",
+    opcionA: {
+      label: "Glumas aristadas o acuminadas, caducas junto con una parte del pedicelo",
+      keyStep: "J",
+      especieId: "agrostideae_pendiente"
+    },
+    opcionA_prima: {
+      label: "Glumas múticas, articuladas sobre el pedicelo",
+      keyStep: "J'",
+      nextNodeId: "alopecurus_a"
+    }
+  },
+
+  agrostideae_k: {
+    id: "agrostideae_k",
+    milestone: "Agrostideae",
+    manualPage: 72,
+    descripcion: "Agrostideae - K: ¿las glumas son redondeadas con mucrón o atenuadas agudas?",
+    opcionA: {
+      label: "Glumas redondeadas en el ápice, donde llevan un largo mucrón",
+      keyStep: "K",
+      especieId: "agrostideae_pendiente"
+    },
+    opcionA_prima: {
+      label: "Glumas atenuadas y agudas en el ápice",
+      keyStep: "K'",
+      nextNodeId: "agrostis_a"
+    }
+  },
+
+  agrostis_a: {
+    id: "agrostis_a",
+    milestone: "Agrostis",
+    manualPage: 72,
+    descripcion: "Agrostis - A: ¿la panoja es muy laxa y tenue?",
+    opcionA: {
+      label: "Panoja muy laxa y tenue; espiguillas muy largamente pediceladas de 2-2,5 mm; lemma con arista dorsal de 2 mm",
+      keyStep: "A",
+      especieId: "agrostis_montevidensis"
+    },
+    opcionA_prima: {
+      label: "Panoja más o menos contraída",
+      keyStep: "A'",
+      nextNodeId: "agrostis_b"
+    }
+  },
+
+  agrostis_b: {
+    id: "agrostis_b",
+    milestone: "Agrostis",
+    manualPage: 72,
+    descripcion: "Agrostis - B: ¿la glumela tiene arista dorsal?",
+    opcionA: {
+      label: "Glumela sin arista dorsal",
+      keyStep: "B",
+      nextNodeId: "agrostis_c"
+    },
+    opcionA_prima: {
+      label: "Glumela con arista dorsal; espiguillas lanceoladas; glumas carenadas con carena ciliada",
+      keyStep: "B'",
+      nextNodeId: "agrostis_d"
+    }
+  },
+
+  agrostis_c: {
+    id: "agrostis_c",
+    milestone: "Agrostis",
+    manualPage: 72,
+    descripcion: "Agrostis - C: ¿dónde son escabrosas las glumas?",
+    opcionA: {
+      label: "Glumas escabrosas únicamente en la quilla; panojas densas interrumpidas con ramas no verticiladas",
+      keyStep: "C",
+      especieId: "agrostis_palustris"
+    },
+    opcionA_prima: {
+      label: "Glumas escabrosas en la quilla y en el dorso; panojas contraídas con ramificaciones verticiladas",
+      keyStep: "C'",
+      especieId: "agrostis_verticillata"
+    }
+  },
+
+  agrostis_d: {
+    id: "agrostis_d",
+    milestone: "Agrostis",
+    manualPage: 72,
+    descripcion: "Agrostis - D: ¿la panoja es espiciforme continua o alargada interrumpida?",
+    opcionA: {
+      label: "Panoja muy densa, espiciforme, continua, de 3-5 cm; espiguillas de 3-3,5 mm",
+      keyStep: "D",
+      especieId: "agrostis_tandilensis"
+    },
+    opcionA_prima: {
+      label: "Panojas alargadas, densas, no espiciformes, interrumpidas, de 5-25 cm",
+      keyStep: "D'",
+      nextNodeId: "agrostis_e"
+    }
+  },
+
+  agrostis_e: {
+    id: "agrostis_e",
+    milestone: "Agrostis",
+    manualPage: 72,
+    descripcion: "Agrostis - E: ¿qué tamaño tiene la panoja?",
+    opcionA: {
+      label: "Panojas de 5-12 cm; espiguillas de 3 mm; glumas desiguales puntiagudas; lemma con arista dorsal de unos 4 mm",
+      keyStep: "E",
+      especieId: "agrostis_jurgensii"
+    },
+    opcionA_prima: {
+      label: "Panoja de 10-25 cm; espiguillas de 2,5 mm; glumas casi iguales aristadas; arista dorsal de 1-2 mm",
+      keyStep: "E'",
+      especieId: "agrostis_platensis"
+    }
+  },
+
+  alopecurus_a: {
+    id: "alopecurus_a",
+    milestone: "Alopecurus",
+    manualPage: 74,
+    descripcion: "Alopecurus - A: ¿cómo están unidas las glumas?",
+    opcionA: {
+      label: "Glumas soldadas entre sí hasta su mitad; quillas ásperas o cortamente ciliadas; panojas delgadas de 4-10 cm",
+      keyStep: "A",
+      especieId: "alopecurus_agrestis"
+    },
+    opcionA_prima: {
+      label: "Glumas unidas sólo en la base; quillas largamente ciliadas abajo; panoja muy densa de 2-3 cm",
+      keyStep: "A'",
+      especieId: "alopecurus_bonariensis"
+    }
+  },
+
+  aristida_a: {
+    id: "aristida_a",
+    milestone: "Aristida",
+    manualPage: 74,
+    descripcion: "Aristida - A: ¿la gluma inferior es mayor que la superior?",
+    opcionA: {
+      label: "Gluma inferior de 17-18 mm, mayor que la superior; aristas de unos 8 cm",
+      keyStep: "A",
+      especieId: "aristida_spegazzinii"
+    },
+    opcionA_prima: {
+      label: "Gluma inferior más corta que la superior",
+      keyStep: "A'",
+      nextNodeId: "aristida_b"
+    }
+  },
+
+  aristida_b: {
+    id: "aristida_b",
+    milestone: "Aristida",
+    manualPage: 75,
+    descripcion: "Aristida - B: ¿cómo es la inflorescencia?",
+    opcionA: {
+      label: "Inflorescencia alargada, débil",
+      keyStep: "B",
+      nextNodeId: "aristida_c"
+    },
+    opcionA_prima: {
+      label: "Panojas contraídas, densas, semiespiciformes, con eje principal muy corto",
+      keyStep: "B'",
+      especieId: "aristida_murina"
+    }
+  },
+
+  aristida_c: {
+    id: "aristida_c",
+    milestone: "Aristida",
+    manualPage: 75,
+    descripcion: "Aristida - C: ¿la hierba es perenne cespitosa o anual ramificada?",
+    opcionA: {
+      label: "Hierba perenne cespitosa, de 40-50 cm; panojas alargadas laxas; aristas de unos 10 cm",
+      keyStep: "C",
+      especieId: "aristida_pallens"
+    },
+    opcionA_prima: {
+      label: "Hierba anual ramificada en la base, de 10-30 cm; panojas angostas densas; aristas de cerca de 10 mm",
+      keyStep: "C'",
+      especieId: "aristida_adscensionis"
+    }
+  },
+
+  muhlenbergia_a: {
+    id: "muhlenbergia_a",
+    milestone: "Muhlenbergia",
+    manualPage: 76,
+    descripcion: "Muhlenbergia - A: ¿la lemma es cortamente mucronada o largamente aristada?",
+    opcionA: {
+      label: "Lemma cortamente mucronada; perenne rizomatosa de 8-25 cm; espiguillas de 2 mm en panojas laxas",
+      keyStep: "A",
+      especieId: "muhlenbergia_asperifolia"
+    },
+    opcionA_prima: {
+      label: "Lemma largamente aristada; perenne ascendente de 50 cm; panojas angostas flojas",
+      keyStep: "A'",
+      especieId: "muhlenbergia_schreberi"
+    }
+  },
+
   gramineae_tribe_f: {
     id: "gramineae_tribe_f",
     milestone: "Gramineae",
@@ -611,7 +917,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Antecio fértil basal",
       keyStep: "H",
-      especieId: "agrostideae"
+      nextNodeId: "agrostideae_a"
     },
     opcionA_prima: {
       label: "Antecio fértil terminal, con una o dos flores rudimentarias en la base",
@@ -2465,6 +2771,182 @@ export const monocotEspecies = {
     descripcion: "Hierba perenne, de 30-60 cm de alto.",
     caracteristicas: "Vainas pubescentes, láminas lineales, panojas densas de 8-15 cm y glumas velludas.",
     distribucion: "Europa; adventicia en América, muy rara en la región.",
+    imagen: ""
+  },
+
+  agrostideae_pendiente: {
+    id: "agrostideae_pendiente",
+    nombreCientifico: "Agrostideae",
+    nombreVulgar: "Rama pendiente de Agrostideae",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Esta rama de la tribu Agrostideae todavía está pendiente de carga a nivel de género y especie.",
+    caracteristicas: "El recorrido llegó a una parte del manual que se cargará en una tanda siguiente.",
+    distribucion: "Pendiente de completar.",
+    imagen: ""
+  },
+
+  agrostis_montevidensis: {
+    id: "agrostis_montevidensis",
+    nombreCientifico: "Agrostis montevidensis",
+    nombreVulgar: "Pasto ilusión",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne cespitosa, de 20-30 cm de alto.",
+    caracteristicas: "Láminas planas estrechas, panoja muy laxa y tenue, espiguillas largamente pediceladas y lemma con arista dorsal.",
+    distribucion: "Uruguay y nordeste de Argentina; en la estepa climax.",
+    imagen: ""
+  },
+
+  agrostis_palustris: {
+    id: "agrostis_palustris",
+    nombreCientifico: "Agrostis palustris",
+    nombreVulgar: "Agrostis",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne estolonífera, de 30-60 cm de alto.",
+    caracteristicas: "Hojas planas ásperas, glumas escabrosas únicamente en la quilla y panojas densas interrumpidas.",
+    distribucion: "Eurasia; adventicia en América, en bosques de la ribera.",
+    imagen: ""
+  },
+
+  agrostis_verticillata: {
+    id: "agrostis_verticillata",
+    nombreCientifico: "Agrostis verticillata",
+    nombreVulgar: "Agrostis",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne ascendente y estolonífera.",
+    caracteristicas: "Hojas planas cortas, panojas contraídas con ramificaciones cortas verticiladas y espiguillas de 2 mm.",
+    distribucion: "Europa; adventicia en América, en suelos húmedos y jardines.",
+    imagen: ""
+  },
+
+  agrostis_tandilensis: {
+    id: "agrostis_tandilensis",
+    nombreCientifico: "Agrostis tandilensis",
+    nombreVulgar: "Agrostis",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba anual erecta, de 15-20 cm de alto.",
+    caracteristicas: "Hojas estrechas planas, panoja muy densa espiciforme continua y lemma con arista de 3-4 mm.",
+    distribucion: "Uruguay y nordeste de Argentina; en la estepa climax.",
+    imagen: ""
+  },
+
+  agrostis_jurgensii: {
+    id: "agrostis_jurgensii",
+    nombreCientifico: "Agrostis jurgensii",
+    nombreVulgar: "Agrostis",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne, de 20-40 cm de alto.",
+    caracteristicas: "Panojas de 5-12 cm, espiguillas de 3 mm, glumas desiguales puntiagudas y lemma con arista dorsal de unos 4 mm.",
+    distribucion: "Campos húmedos.",
+    imagen: ""
+  },
+
+  agrostis_platensis: {
+    id: "agrostis_platensis",
+    nombreCientifico: "Agrostis platensis",
+    nombreVulgar: "Agrostis",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne estolonífera, con tallos ascendentes plurinodes de 70-150 cm.",
+    caracteristicas: "Panojas de 10-25 cm, espiguillas de 2,5 mm, glumas casi iguales aristadas y lemma con arista dorsal de 1-2 mm.",
+    distribucion: "Argentina: Delta del Paraná.",
+    imagen: ""
+  },
+
+  alopecurus_agrestis: {
+    id: "alopecurus_agrestis",
+    nombreCientifico: "Alopecurus agrestis",
+    nombreVulgar: "Alopecurus",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne cespitosa, de 50-100 cm de alto.",
+    caracteristicas: "Glumas soldadas hasta la mitad, quillas ásperas o cortamente ciliadas, panojas delgadas de 4-10 cm y espiguillas casi glabras.",
+    distribucion: "Europa; adventicia en América, en suelos modificados.",
+    imagen: ""
+  },
+
+  alopecurus_bonariensis: {
+    id: "alopecurus_bonariensis",
+    nombreCientifico: "Alopecurus bonariensis",
+    nombreVulgar: "Alopecurus",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba anual, de 10-30 cm de alto.",
+    caracteristicas: "Vainas algo infladas, láminas lineales, panoja muy densa espiciforme cilíndrica y espiguillas imbricadas.",
+    distribucion: "Suelos salados de Santa Fe y norte de Buenos Aires.",
+    imagen: ""
+  },
+
+  aristida_spegazzinii: {
+    id: "aristida_spegazzinii",
+    nombreCientifico: "Aristida spegazzinii",
+    nombreVulgar: "Aristida",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne cespitosa, de 20-30 cm de alto.",
+    caracteristicas: "Hojas cilíndricas, gluma inferior mayor que la superior, lemma de 10-12 mm y aristas de unos 8 cm.",
+    distribucion: "Uruguay y nordeste de Argentina; en la estepa climax.",
+    imagen: ""
+  },
+
+  aristida_pallens: {
+    id: "aristida_pallens",
+    nombreCientifico: "Aristida pallens",
+    nombreVulgar: "Aristida",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne cespitosa, de 40-50 cm de alto.",
+    caracteristicas: "Panojas alargadas laxas, glumas largas y aristas de unos 10 cm.",
+    distribucion: "América austral; rara en la estepa climax.",
+    imagen: ""
+  },
+
+  aristida_adscensionis: {
+    id: "aristida_adscensionis",
+    nombreCientifico: "Aristida adscensionis",
+    nombreVulgar: "Aristida",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba anual ramificada en la base, de 10-30 cm de alto.",
+    caracteristicas: "Hojas cortas angostas generalmente convolutas, panojas angostas densas y aristas de cerca de 10 mm.",
+    distribucion: "Frecuente en América; rara cerca de Buenos Aires.",
+    imagen: ""
+  },
+
+  aristida_murina: {
+    id: "aristida_murina",
+    nombreCientifico: "Aristida murina",
+    nombreVulgar: "Aristida",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne con tallos de 30-40 cm.",
+    caracteristicas: "Hojas cortas convolutas y estriadas, panojas densas semiespiciformes y aristas de unos 9 cm.",
+    distribucion: "América del Sur; muy común en la estepa climax.",
+    imagen: ""
+  },
+
+  calamagrostis_montevidensis: {
+    id: "calamagrostis_montevidensis",
+    nombreCientifico: "Calamagrostis montevidensis",
+    nombreVulgar: "Calamagrostis",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne cortamente rizomatosa, de 80-130 cm de alto.",
+    caracteristicas: "Hojas planas, panojas densas multiespigadas de 25-35 cm, espiguillas plateadas de 5-6 mm y raquilla con pelos largos.",
+    distribucion: "América austral; en campos húmedos.",
+    imagen: ""
+  },
+
+  muhlenbergia_asperifolia: {
+    id: "muhlenbergia_asperifolia",
+    nombreCientifico: "Muhlenbergia asperifolia",
+    nombreVulgar: "Muhlenbergia",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne rizomatosa, de 8-25 cm de alto.",
+    caracteristicas: "Hojas densas con láminas cortas plegadas, espiguillas unifloras de 2 mm y lemma cortamente mucronada.",
+    distribucion: "Norte de Chile y regiones secas de Argentina; accidental en Capital Federal.",
+    imagen: ""
+  },
+
+  muhlenbergia_schreberi: {
+    id: "muhlenbergia_schreberi",
+    nombreCientifico: "Muhlenbergia schreberi",
+    nombreVulgar: "Muhlenbergia",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne ascendente, de alrededor de 50 cm de alto.",
+    caracteristicas: "Hojas lineales, panojas angostas flojas, glumas muy cortas hialinas y lemma largamente aristada.",
+    distribucion: "América templado-cálida; frecuente en el Delta y la ribera platense.",
     imagen: ""
   },
 
