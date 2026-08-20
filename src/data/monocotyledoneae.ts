@@ -118,7 +118,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Espiguillas unifloras, con glumas rudimentarias o nulas; pálea 3-nervada; androceo 6-1",
       keyStep: "B",
-      especieId: "oryzeae"
+      nextNodeId: "oryzeae_a"
     },
     opcionA_prima: {
       label: "Espiguillas 1-multifloras, con dos glumas o faltando la inferior; pálea bicarenada; androceo 3-1",
@@ -1402,6 +1402,125 @@ export const monocotiledoneaeData = {
     }
   },
 
+  phalarideae_a: {
+    id: "phalarideae_a",
+    milestone: "Phalarideae",
+    manualPage: 89,
+    descripcion: "Phalarideae - A: ¿las flores estériles tienen lemma mútica o aristada?",
+    opcionA: {
+      label: "Flores estériles con lemma mútica; espiguillas muy comprimidas lateralmente",
+      keyStep: "A",
+      nextNodeId: "phalaris_a"
+    },
+    opcionA_prima: {
+      label: "Flores estériles con lemma aristada; espiguillas casi cilíndricas",
+      keyStep: "A'",
+      especieId: "anthoxanthum_odoratum"
+    }
+  },
+
+  phalaris_a: {
+    id: "phalaris_a",
+    milestone: "Phalaris",
+    manualPage: 89,
+    descripcion: "Phalaris - A: ¿la quilla de las glumas es anchamente alada?",
+    opcionA: {
+      label: "Glumas con quilla anchamente alada, ala puntiaguda arriba; panoja cilíndrica de 4-6 cm",
+      keyStep: "A",
+      especieId: "phalaris_paradoxa"
+    },
+    opcionA_prima: {
+      label: "Glumas con quilla estrechamente alada, ala no puntiaguda",
+      keyStep: "A'",
+      nextNodeId: "phalaris_b"
+    }
+  },
+
+  phalaris_b: {
+    id: "phalaris_b",
+    milestone: "Phalaris",
+    manualPage: 89,
+    descripcion: "Phalaris - B: ¿qué tamaño tienen las espiguillas?",
+    opcionA: {
+      label: "Espiguillas de 7-9 mm; panojas ovoides de 3-4 cm; lemma fértil pubescente",
+      keyStep: "B",
+      especieId: "phalaris_canariensis"
+    },
+    opcionA_prima: {
+      label: "Espiguillas de 3-6 mm",
+      keyStep: "B'",
+      nextNodeId: "phalaris_c"
+    }
+  },
+
+  phalaris_c: {
+    id: "phalaris_c",
+    milestone: "Phalaris",
+    manualPage: 89,
+    descripcion: "Phalaris - C: ¿las panojas son cilíndricas largas u ovoides/cortas?",
+    opcionA: {
+      label: "Panojas cilíndricas de 5-15 cm; espiguillas de 3,5-4,5 mm",
+      keyStep: "C",
+      nextNodeId: "phalaris_d"
+    },
+    opcionA_prima: {
+      label: "Panojas ovoides o cortamente cilíndricas, de 2-5(-7) cm; espiguillas de 5-6 mm",
+      keyStep: "C'",
+      especieId: "phalaris_minor"
+    }
+  },
+
+  phalaris_d: {
+    id: "phalaris_d",
+    milestone: "Phalaris",
+    manualPage: 89,
+    descripcion: "Phalaris - D: ¿cómo es la pubescencia de la lemma?",
+    opcionA: {
+      label: "Espiguillas de unos 4,5 mm; lemma pubescente salvo el tercio superior glabro; panojas de 5-10 cm",
+      keyStep: "D",
+      especieId: "phalaris_platensis"
+    },
+    opcionA_prima: {
+      label: "Espiguillas de 3,5-4 mm; lemma uniformemente pubescente; panojas de 8-15 cm",
+      keyStep: "D'",
+      especieId: "phalaris_angusta"
+    }
+  },
+
+  oryzeae_a: {
+    id: "oryzeae_a",
+    milestone: "Oryzeae",
+    manualPage: 91,
+    descripcion: "Oryzeae - A: ¿las flores son hermafroditas o unisexuales?",
+    opcionA: {
+      label: "Flores hermafroditas; espiguillas comprimidas lateralmente; lemma mútica",
+      keyStep: "A",
+      especieId: "leersia_hexandra"
+    },
+    opcionA_prima: {
+      label: "Flores unisexuales, diclino-monoicas; espiguillas cilíndricas",
+      keyStep: "A'",
+      nextNodeId: "oryzeae_b"
+    }
+  },
+
+  oryzeae_b: {
+    id: "oryzeae_b",
+    milestone: "Oryzeae",
+    manualPage: 91,
+    descripcion: "Oryzeae - B: ¿la lemma es mútica o aristada?",
+    opcionA: {
+      label: "Lemma mútica; flores masculinas y femeninas en inflorescencias separadas",
+      keyStep: "B",
+      especieId: "luziola_peruviana"
+    },
+    opcionA_prima: {
+      label: "Lemma aristada; flores masculinas y femeninas en la misma inflorescencia",
+      keyStep: "B'",
+      especieId: "zizaniopsis_bonariensis"
+    }
+  },
+
   gramineae_tribe_f: {
     id: "gramineae_tribe_f",
     milestone: "Gramineae",
@@ -1449,7 +1568,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Antecio fértil terminal, con una o dos flores rudimentarias en la base",
       keyStep: "H'",
-      especieId: "phalarideae"
+      nextNodeId: "phalarideae_a"
     }
   },
 
@@ -3859,6 +3978,105 @@ export const monocotEspecies = {
     descripcion: "Hierba perenne estolonífera, glabra, de 20-30 cm de alto.",
     caracteristicas: "Hojas cortas convolutas, espigas 6-12 de 2-2,5 cm y espiguillas de 4-5 mm.",
     distribucion: "Variedad hallada únicamente en la región de Pipinas, cerca de la bahía de Samborombón.",
+    imagen: ""
+  },
+
+  phalaris_paradoxa: {
+    id: "phalaris_paradoxa",
+    nombreCientifico: "Phalaris paradoxa",
+    nombreVulgar: "Phalaris",
+    familia: "17. Gramineae - Phalarideae",
+    descripcion: "Hierba anual, de unos 20 cm de alto.",
+    caracteristicas: "Glumas con quilla anchamente alada y ala puntiaguda, panoja cilíndrica de 4-6 cm y glumas aristuladas.",
+    distribucion: "Europa; adventicia en América, hallada en el puerto de Eva Perón.",
+    imagen: ""
+  },
+
+  phalaris_canariensis: {
+    id: "phalaris_canariensis",
+    nombreCientifico: "Phalaris canariensis",
+    nombreVulgar: "Alpiste",
+    familia: "17. Gramineae - Phalarideae",
+    descripcion: "Hierba anual, de 30-80 cm de alto.",
+    caracteristicas: "Espiguillas de 7-9 mm, panojas ovoides de 3-4 cm, glumas ovadas 3-nervadas y lemma fértil pubescente.",
+    distribucion: "Islas Canarias y sur de Europa; cultivada para alimentar aves y a veces espontánea.",
+    imagen: ""
+  },
+
+  phalaris_platensis: {
+    id: "phalaris_platensis",
+    nombreCientifico: "Phalaris platensis",
+    nombreVulgar: "Phalaris",
+    familia: "17. Gramineae - Phalarideae",
+    descripcion: "Hierba anual, de 20-80 cm de alto.",
+    caracteristicas: "Panojas cilíndricas de 5-10 cm, espiguillas de unos 4,5 mm y lemma pubescente excepto en el tercio superior.",
+    distribucion: "Uruguay y nordeste de Argentina; en campos húmedos.",
+    imagen: ""
+  },
+
+  phalaris_angusta: {
+    id: "phalaris_angusta",
+    nombreCientifico: "Phalaris angusta",
+    nombreVulgar: "Phalaris",
+    familia: "17. Gramineae - Phalarideae",
+    descripcion: "Hierba anual glabra, de 1-1,5 m de alto.",
+    caracteristicas: "Panojas cilíndricas de 8-15 cm, espiguillas de 3,5-4 mm y lemma uniformemente pubescente.",
+    distribucion: "Sur del Brasil, Uruguay y nordeste de Argentina; común en campos húmedos y bosques de ribera.",
+    imagen: ""
+  },
+
+  phalaris_minor: {
+    id: "phalaris_minor",
+    nombreCientifico: "Phalaris minor",
+    nombreVulgar: "Phalaris",
+    familia: "17. Gramineae - Phalarideae",
+    descripcion: "Hierba anual, de 60-90 cm de alto.",
+    caracteristicas: "Panojas ovoides o cortamente cilíndricas de 2-5(-7) cm, espiguillas de 5-6 mm y lemma pubescente salvo el tercio inferior.",
+    distribucion: "Europa; cultivada como forrajera y adventicia en cultivos y rastrojos.",
+    imagen: ""
+  },
+
+  anthoxanthum_odoratum: {
+    id: "anthoxanthum_odoratum",
+    nombreCientifico: "Anthoxanthum odoratum",
+    nombreVulgar: "Anthoxanthum",
+    familia: "17. Gramineae - Phalarideae",
+    descripcion: "Hierba perenne fragante, de 30-60 cm de alto.",
+    caracteristicas: "Hojas planas, panojas amarillentas de 2-6 cm, espiguillas de 8-10 mm y lemmas estériles cubiertas de pelos dorados.",
+    distribucion: "Europa; cultivada para césped y a veces espontánea en suelos húmedos de la ribera.",
+    imagen: ""
+  },
+
+  leersia_hexandra: {
+    id: "leersia_hexandra",
+    nombreCientifico: "Leersia hexandra",
+    nombreVulgar: "Leersia",
+    familia: "17. Gramineae - Oryzeae",
+    descripcion: "Hierba perenne rizomatosa, de 20-50 cm de alto.",
+    caracteristicas: "Hojas lanceoladas, espiguillas comprimidas de 4-5 mm, glumas ausentes y estambres 6.",
+    distribucion: "Regiones cálidas; frecuente en el Delta, ribera platense y lugares pantanosos del interior.",
+    imagen: ""
+  },
+
+  luziola_peruviana: {
+    id: "luziola_peruviana",
+    nombreCientifico: "Luziola peruviana",
+    nombreVulgar: "Luziola",
+    familia: "17. Gramineae - Oryzeae",
+    descripcion: "Hierba perenne delicada, con tallos ascendentes de 10-40 cm.",
+    caracteristicas: "Flores unisexuales en panojas masculinas terminales y femeninas axilares/terminales; lemma mútica.",
+    distribucion: "América cálida; común en lugares pantanosos.",
+    imagen: ""
+  },
+
+  zizaniopsis_bonariensis: {
+    id: "zizaniopsis_bonariensis",
+    nombreCientifico: "Zizaniopsis bonariensis",
+    nombreVulgar: "Espadaña",
+    familia: "17. Gramineae - Oryzeae",
+    descripcion: "Hierba perenne robusta, palustre, con rizomas horizontales poderosos y tallos de hasta 2 m.",
+    caracteristicas: "Hojas lineales de 1 m o más, panojas erectas de 0,5-1 m, espiguillas lanceoladas de 10 mm y lemma largamente aristada.",
+    distribucion: "Pajonales del norte de Buenos Aires y Uruguay.",
     imagen: ""
   },
 
