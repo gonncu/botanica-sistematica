@@ -1908,7 +1908,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Inflorescencia muy laxa, difusa, con espiguillas largamente pediceladas; continuar en una proxima tanda de Panicum",
       keyStep: "D'",
-      especieId: "paniceae"
+      nextNodeId: "panicum_j"
     }
   },
 
@@ -1977,6 +1977,159 @@ export const monocotiledoneaeData = {
       label: "Espiguillas de 2,5-3 mm, lanceoladas, agudas, glabras, rojizas; panojas muy densas, espiciformes, de 4-10 racimos",
       keyStep: "I'",
       especieId: "panicum_decipiens"
+    }
+  },
+
+  panicum_j: {
+    id: "panicum_j",
+    milestone: "Panicum",
+    manualPage: 97,
+    descripcion: "Panicum - J: cerdas involucrales en la base de la espiguilla",
+    opcionA: {
+      label: "En la base de la espiguilla existen generalmente algunas cerdas involucrales caducas; plantas bambusoides, rizomatosas, de 1-3 m",
+      keyStep: "J",
+      especieId: "panicum_tricholaenoides"
+    },
+    opcionA_prima: {
+      label: "Espiguillas sin cerdas en su base; plantas no bambusoides",
+      keyStep: "J'",
+      nextNodeId: "panicum_k"
+    }
+  },
+
+  panicum_k: {
+    id: "panicum_k",
+    milestone: "Panicum",
+    manualPage: 97,
+    descripcion: "Panicum - K: plantas anuales o perennes",
+    opcionA: {
+      label: "Plantas anuales",
+      keyStep: "K",
+      nextNodeId: "panicum_l"
+    },
+    opcionA_prima: {
+      label: "Plantas perennes",
+      keyStep: "K'",
+      nextNodeId: "panicum_m"
+    }
+  },
+
+  panicum_l: {
+    id: "panicum_l",
+    milestone: "Panicum",
+    manualPage: 97,
+    descripcion: "Panicum - L: pubescencia de plantas anuales",
+    opcionA: {
+      label: "Plantas densamente hirsutas, erectas, de 20-80 cm; panojas amplias y laxas; espiguillas de unos 2 mm",
+      keyStep: "L",
+      especieId: "panicum_capillare"
+    },
+    opcionA_prima: {
+      label: "Plantas laxamente pubescentes o glabras, ascendentes o erectas, de 50-100 cm; espiguillas de 2-3,2 mm",
+      keyStep: "L'",
+      especieId: "panicum_dichotomiflorum"
+    }
+  },
+
+  panicum_m: {
+    id: "panicum_m",
+    milestone: "Panicum",
+    manualPage: 97,
+    descripcion: "Panicum - M: hojas anchas planas o angostas convolutas",
+    opcionA: {
+      label: "Hojas planas, anchas, de 5-15 mm, con base redondeada o auriculada",
+      keyStep: "M",
+      nextNodeId: "panicum_n"
+    },
+    opcionA_prima: {
+      label: "Hojas por lo comun mas o menos convolutas, de 1-5 mm, no redondeadas en la base",
+      keyStep: "M'",
+      nextNodeId: "panicum_r"
+    }
+  },
+
+  panicum_n: {
+    id: "panicum_n",
+    milestone: "Panicum",
+    manualPage: 97,
+    descripcion: "Panicum - N: longitud de la gluma inferior",
+    opcionA: {
+      label: "Gluma inferior obtusa, alcanzando solo de un quinto a un cuarto de la longitud de la espiguilla",
+      keyStep: "N",
+      especieId: "panicum_dichotomiflorum"
+    },
+    opcionA_prima: {
+      label: "Gluma inferior alcanzando de la mitad a tres cuartos de la longitud de la espiguilla",
+      keyStep: "N'",
+      nextNodeId: "panicum_o"
+    }
+  },
+
+  panicum_o: {
+    id: "panicum_o",
+    milestone: "Panicum",
+    manualPage: 98,
+    descripcion: "Panicum - O: ligula pilosa o glabra",
+    opcionA: {
+      label: "Ligula pilosa; hojas de mas de 6 cm, lanceoladas; espiguillas obovadas, obtusas y laxamente pubescentes",
+      keyStep: "O",
+      especieId: "panicum_sabulorum"
+    },
+    opcionA_prima: {
+      label: "Ligula glabra o casi glabra; hojas de 4-5 cm",
+      keyStep: "O'",
+      nextNodeId: "panicum_p"
+    }
+  },
+
+  panicum_p: {
+    id: "panicum_p",
+    milestone: "Panicum",
+    manualPage: 98,
+    descripcion: "Panicum - P: espiguillas obtusas o agudas",
+    opcionA: {
+      label: "Espiguillas obtusas, de unos 2 mm, largamente pediceladas y glaberrimas; panojas difusas muy laxas",
+      keyStep: "P",
+      especieId: "panicum_helobium"
+    },
+    opcionA_prima: {
+      label: "Espiguillas agudas, ovadas, glabras, de unos 2 mm; panojas cortas paucispicadas terminales y axilares",
+      keyStep: "P'",
+      especieId: "panicum_unilineatum"
+    }
+  },
+
+  panicum_r: {
+    id: "panicum_r",
+    milestone: "Panicum",
+    manualPage: 98,
+    descripcion: "Panicum - R: rizomas cundidores o plantas cespitosas",
+    opcionA: {
+      label: "Plantas con rizomas horizontales u oblicuos cundidores; panojas pequenas, densas, algo purpureas",
+      keyStep: "R",
+      especieId: "panicum_gouini"
+    },
+    opcionA_prima: {
+      label: "Plantas cespitosas; gluma inferior de un cuarto a la mitad del largo de la espiguilla",
+      keyStep: "R'",
+      nextNodeId: "panicum_s"
+    }
+  },
+
+  panicum_s: {
+    id: "panicum_s",
+    milestone: "Panicum",
+    manualPage: 98,
+    descripcion: "Panicum - S: ancho de hojas en plantas cespitosas",
+    opcionA: {
+      label: "Hojas de 1-3 mm, lineales, rigidas, pubescentes; plantas de cerca de 50 cm; panojas deltoideas, amplias, muy laxas",
+      keyStep: "S",
+      especieId: "panicum_bergii"
+    },
+    opcionA_prima: {
+      label: "Hojas de cerca de 5 mm; plantas de 50-100 cm, ligeramente hirsutas o glabrescentes; panojas amplias y difusas",
+      keyStep: "S'",
+      especieId: "panicum_pilcomayense"
     }
   },
 
@@ -3368,6 +3521,105 @@ export const monocotEspecies = {
     descripcion: "Hierba rizomatosa, ascendente, de 20-40 cm de alto.",
     caracteristicas: "Hojas lineales; panojas muy densas, espiciformes, con 4-10 racimos; espiguillas lanceoladas, agudas, glabras y rojizas, de 2,5-3 mm.",
     distribucion: "Sur del Brasil, Uruguay y nordeste de la Argentina; en suelos arenosos humedos del Delta y de la ribera platense.",
+    imagen: ""
+  },
+
+  panicum_tricholaenoides: {
+    id: "panicum_tricholaenoides",
+    nombreCientifico: "Panicum tricholaenoides",
+    nombreVulgar: "Panicum tricholaenoides",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Planta bambusoide, rizomatosa, de 1-3 m de alto.",
+    caracteristicas: "Hojas con vainas coriaceas, glabras o pestanosas, y laminas lineales; panojas amplias de 25-30 cm con ramificaciones verticiladas; espiguillas anchamente ovoideas de 2,5 mm.",
+    distribucion: "Uruguay y nordeste de la Argentina; hallada en los arenales de la Isla Santiago.",
+    imagen: ""
+  },
+
+  panicum_capillare: {
+    id: "panicum_capillare",
+    nombreCientifico: "Panicum capillare",
+    nombreVulgar: "Panicum capillare",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba anual, densamente hirsuta, erecta, de 20-80 cm de alto.",
+    caracteristicas: "Hojas planas; panojas amplias y laxas; espiguillas ovoideo-lanceoladas, acuminadas, de unos 2 mm; gluma inferior aguda.",
+    distribucion: "America del Norte; adventicia en la Argentina, en suelos modificados.",
+    imagen: ""
+  },
+
+  panicum_dichotomiflorum: {
+    id: "panicum_dichotomiflorum",
+    nombreCientifico: "Panicum dichotomiflorum",
+    nombreVulgar: "Panicum dichotomiflorum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba anual o perenne segun la rama de la clave, laxamente pubescente o glabra, ascendente o erecta.",
+    caracteristicas: "Hojas planas; panojas terminales y axilares, a menudo parcialmente incluidas en la vaina superior o tardiamente exertas; espiguillas estrechamente ovadas de 2-3,2 mm.",
+    distribucion: "America calida; en lugares humedos.",
+    imagen: ""
+  },
+
+  panicum_sabulorum: {
+    id: "panicum_sabulorum",
+    nombreCientifico: "Panicum sabulorum",
+    nombreVulgar: "Panicum sabulorum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, ascendente, de unos 50 cm de alto.",
+    caracteristicas: "Hojas lanceoladas, ensanchadas en la base, de mas de 6 cm; ligula pilosa; espiguillas obovadas, obtusas, laxamente pubescentes, de 2,5 mm.",
+    distribucion: "Paraguay y nordeste de la Argentina; comun en el Delta y en la ribera del Plata.",
+    imagen: ""
+  },
+
+  panicum_helobium: {
+    id: "panicum_helobium",
+    nombreCientifico: "Panicum helobium",
+    nombreVulgar: "Panicum helobium",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, ascendente, de unos 40 cm de alto.",
+    caracteristicas: "Hojas lanceoladas, redondeadas o auriculadas en la base; espiguillas obtusas, de unos 2 mm, largamente pediceladas y glaberrimas; panojas difusas muy laxas.",
+    distribucion: "America tropical, hasta el Delta del Parana.",
+    imagen: ""
+  },
+
+  panicum_unilineatum: {
+    id: "panicum_unilineatum",
+    nombreCientifico: "Panicum unilineatum",
+    nombreVulgar: "Panicum unilineatum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, tendida o ascendente.",
+    caracteristicas: "Hojas lanceoladas, redondeadas y semiabrazadoras en la base, de 4-5 cm; espiguillas agudas, ovadas y glabras, de unos 2 mm; panojas cortas, paucispicadas, terminales y axilares.",
+    distribucion: "Nordeste de la Argentina, hasta el Delta.",
+    imagen: ""
+  },
+
+  panicum_gouini: {
+    id: "panicum_gouini",
+    nombreCientifico: "Panicum gouini",
+    nombreVulgar: "Panicum gouini",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba con rizomas horizontales u oblicuos cundidores y tallos de unos 30 cm de alto.",
+    caracteristicas: "Hojas angostas, a menudo convolutas; panojas pequenas, densas, algo purpureas; espiguillas de 2,2 mm por 1 mm; primera gluma triangular.",
+    distribucion: "Sur de los Estados Unidos, Mexico, Uruguay y Argentina; frecuente en el cesped de la ribera platense.",
+    imagen: ""
+  },
+
+  panicum_bergii: {
+    id: "panicum_bergii",
+    nombreCientifico: "Panicum bergii",
+    nombreVulgar: "Paja voladora",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba cespitosa de cerca de 50 cm de alto.",
+    caracteristicas: "Hojas de 1-3 mm, lineales, rigidas y pubescentes; panojas deltoideas, amplias y muy laxas; espiguillas ovoideas, acuminadas, glabras, de 2-2,5 mm.",
+    distribucion: "Uruguay y nordeste de la Argentina; frecuente en la estepa climax.",
+    imagen: ""
+  },
+
+  panicum_pilcomayense: {
+    id: "panicum_pilcomayense",
+    nombreCientifico: "Panicum pilcomayense",
+    nombreVulgar: "Panicum pilcomayense",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba cespitosa de 50-100 cm de alto, ligeramente hirsuta o glabrescente.",
+    caracteristicas: "Hojas de cerca de 5 mm de ancho; panojas amplias y difusas; espiguillas ovoideas, acuminadas, glabras, de 2,5 mm.",
+    distribucion: "Paraguay y nordeste de la Argentina; hallada en Palermo.",
     imagen: ""
   },
 
