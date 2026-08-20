@@ -169,12 +169,267 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Espiguillas dispuestas a ambos lados del raquis",
       keyStep: "E",
-      especieId: "hordeae"
+      nextNodeId: "hordeae_a"
     },
     opcionA_prima: {
       label: "Espiguillas dispuestas a un solo lado del raquis",
       keyStep: "E'",
       especieId: "chlorideae"
+    }
+  },
+
+  hordeae_a: {
+    id: "hordeae_a",
+    milestone: "Hordeae",
+    manualPage: 66,
+    descripcion: "Hordeae - A: ¿cuántas espiguillas hay en cada articulación del raquis?",
+    opcionA: {
+      label: "Una sola espiguilla en cada articulación del raquis",
+      keyStep: "A",
+      nextNodeId: "hordeae_b"
+    },
+    opcionA_prima: {
+      label: "Tres espiguillas unifloras en cada soporte del raquis; las marginales a veces reducidas",
+      keyStep: "A'",
+      nextNodeId: "hordeum_a"
+    }
+  },
+
+  hordeae_b: {
+    id: "hordeae_b",
+    milestone: "Hordeae",
+    manualPage: 66,
+    descripcion: "Hordeae - B: ¿las espiguillas están incrustadas en un raquis engrosado?",
+    opcionA: {
+      label: "Espiguillas unifloras, incrustadas en excavaciones de un raquis engrosado que se desarticula a la madurez",
+      keyStep: "B",
+      nextNodeId: "hordeae_c"
+    },
+    opcionA_prima: {
+      label: "Espiguillas 2-multifloras, no incrustadas en el raquis",
+      keyStep: "B'",
+      nextNodeId: "hordeae_d"
+    }
+  },
+
+  hordeae_c: {
+    id: "hordeae_c",
+    milestone: "Hordeae",
+    manualPage: 66,
+    descripcion: "Hordeae - C: ¿cuántas glumas tienen las espiguillas laterales?",
+    opcionA: {
+      label: "Espiguillas laterales con una sola gluma",
+      keyStep: "C",
+      especieId: "lepturus_cylindricus"
+    },
+    opcionA_prima: {
+      label: "Espiguillas laterales con dos glumas",
+      keyStep: "C'",
+      especieId: "pholiurus_incurvus"
+    }
+  },
+
+  hordeae_d: {
+    id: "hordeae_d",
+    milestone: "Hordeae",
+    manualPage: 66,
+    descripcion: "Hordeae - D: ¿cómo están colocadas las espiguillas respecto del raquis?",
+    opcionA: {
+      label: "Espiguillas colocadas en el mismo plano que el raquis; las laterales con una sola gluma y la terminal con dos",
+      keyStep: "D",
+      nextNodeId: "lolium_a"
+    },
+    opcionA_prima: {
+      label: "Espiguillas transversales al raquis, todas con dos glumas",
+      keyStep: "D'",
+      nextNodeId: "hordeae_e"
+    }
+  },
+
+  hordeae_e: {
+    id: "hordeae_e",
+    milestone: "Hordeae",
+    manualPage: 66,
+    descripcion: "Hordeae - E: ¿cómo son las glumas y cuántas flores tiene la espiguilla?",
+    opcionA: {
+      label: "Glumas lineales, uninervadas; espiguillas 2-3-floras",
+      keyStep: "E",
+      especieId: "secale_cereale"
+    },
+    opcionA_prima: {
+      label: "Glumas cóncavas o carenadas, con 3 o más nervaduras; espiguillas con 3 o más flores",
+      keyStep: "E'",
+      nextNodeId: "hordeae_f"
+    }
+  },
+
+  hordeae_f: {
+    id: "hordeae_f",
+    milestone: "Hordeae",
+    manualPage: 66,
+    descripcion: "Hordeae - F: ¿las plantas son perennes o anuales?",
+    opcionA: {
+      label: "Plantas perennes; glumas plano-cóncavas",
+      keyStep: "F",
+      nextNodeId: "agropyron_a"
+    },
+    opcionA_prima: {
+      label: "Plantas anuales; glumas ventradas o carenadas",
+      keyStep: "F'",
+      nextNodeId: "triticum_a"
+    }
+  },
+
+  agropyron_a: {
+    id: "agropyron_a",
+    milestone: "Agropyron",
+    manualPage: 66,
+    descripcion: "Agropyron - A: ¿las plantas tienen rizomas horizontales cundidores?",
+    opcionA: {
+      label: "Plantas con rizomas horizontales cundidores",
+      keyStep: "A",
+      nextNodeId: "agropyron_b"
+    },
+    opcionA_prima: {
+      label: "Plantas cespitosas, sin rizomas, de cerca de 50 cm",
+      keyStep: "A'",
+      especieId: "agropyron_attenuatum"
+    }
+  },
+
+  agropyron_b: {
+    id: "agropyron_b",
+    milestone: "Agropyron",
+    manualPage: 66,
+    descripcion: "Agropyron - B: ¿cómo son las láminas foliares?",
+    opcionA: {
+      label: "Láminas foliares convolutas, rígidas y punzantes, con nervaduras muy marcadas",
+      keyStep: "B",
+      especieId: "agropyron_pungens"
+    },
+    opcionA_prima: {
+      label: "Láminas foliares más o menos planas, flojas, con nervaduras poco marcadas",
+      keyStep: "B'",
+      nextNodeId: "agropyron_c"
+    }
+  },
+
+  agropyron_c: {
+    id: "agropyron_c",
+    milestone: "Agropyron",
+    manualPage: 66,
+    descripcion: "Agropyron - C: ¿qué tamaño tienen las espiguillas?",
+    opcionA: {
+      label: "Espiguillas de 12-15 mm, 6-8-floras; tallos hasta de 1 m y espigas de 10-18 cm",
+      keyStep: "C",
+      especieId: "agropyron_repens"
+    },
+    opcionA_prima: {
+      label: "Espiguillas de 20-35 mm, 8-10-floras; tallos hasta de 2 m y espigas dísticas de 15-25 cm",
+      keyStep: "C'",
+      especieId: "agropyron_scabrifolium"
+    }
+  },
+
+  hordeum_a: {
+    id: "hordeum_a",
+    milestone: "Hordeum",
+    manualPage: 67,
+    descripcion: "Hordeum - A: ¿cómo son las flores laterales de la tríada?",
+    opcionA: {
+      label: "Flores laterales más grandes que la central, con gluma interior semejante a la central y aristas muy largas",
+      keyStep: "A",
+      especieId: "hordeum_leporinum"
+    },
+    opcionA_prima: {
+      label: "Flores laterales abortivas o mucho menos desarrolladas que la central",
+      keyStep: "A'",
+      nextNodeId: "hordeum_b"
+    }
+  },
+
+  hordeum_b: {
+    id: "hordeum_b",
+    milestone: "Hordeum",
+    manualPage: 67,
+    descripcion: "Hordeum - B: ¿qué longitud alcanzan las aristas de las glumas?",
+    opcionA: {
+      label: "Glumas capilares con arista larga de 4-6 cm",
+      keyStep: "B",
+      especieId: "hordeum_jubatum"
+    },
+    opcionA_prima: {
+      label: "Glumas con arista de menos de 2 cm",
+      keyStep: "B'",
+      nextNodeId: "hordeum_c"
+    }
+  },
+
+  hordeum_c: {
+    id: "hordeum_c",
+    milestone: "Hordeum",
+    manualPage: 67,
+    descripcion: "Hordeum - C: ¿cómo son las glumas interiores?",
+    opcionA: {
+      label: "Gluma interior de las flores laterales lanceolada; glumas centrales lineales o subuladas",
+      keyStep: "C",
+      nextNodeId: "hordeum_d"
+    },
+    opcionA_prima: {
+      label: "Glumas interiores laterales y glumas centrales netamente lanceoladas; espigas oblongas angostas",
+      keyStep: "C'",
+      especieId: "hordeum_pusillum"
+    }
+  },
+
+  hordeum_d: {
+    id: "hordeum_d",
+    milestone: "Hordeum",
+    manualPage: 67,
+    descripcion: "Hordeum - D: ¿las espigas son muy comprimidas o algo comprimidas?",
+    opcionA: {
+      label: "Espigas comprimidas, de unos 8 cm por 2-4 mm; glumas alcanzan el ápice de las flores laterales",
+      keyStep: "D",
+      especieId: "hordeum_compressum"
+    },
+    opcionA_prima: {
+      label: "Espigas algo comprimidas, de 4-8 cm por cerca de 5 mm; glumas sobrepasan el ápice de las flores laterales",
+      keyStep: "D'",
+      especieId: "hordeum_stenostachys"
+    }
+  },
+
+  lolium_a: {
+    id: "lolium_a",
+    milestone: "Lolium",
+    manualPage: 69,
+    descripcion: "Lolium - A: ¿la planta es perenne o anual?",
+    opcionA: {
+      label: "Hierba perenne; gluma más corta que la espiguilla; 10-20 flores por espiguilla; lemmas aristadas o múticas",
+      keyStep: "A",
+      especieId: "lolium_multiflorum"
+    },
+    opcionA_prima: {
+      label: "Hierba anual; gluma igual o mayor que la espiguilla, con 5-7 flores; lemmas aristadas",
+      keyStep: "A'",
+      especieId: "lolium_temulentum"
+    }
+  },
+
+  triticum_a: {
+    id: "triticum_a",
+    milestone: "Triticum",
+    manualPage: 70,
+    descripcion: "Triticum - A: ¿qué trigo corresponde?",
+    opcionA: {
+      label: "Tallos de cerca de 1 m; espiguillas 3-5-floras; especie cultivada para pan",
+      keyStep: "1",
+      especieId: "triticum_aestivum"
+    },
+    opcionA_prima: {
+      label: "Especie poco cultivada en Argentina, a veces espontánea",
+      keyStep: "2",
+      especieId: "triticum_durum"
     }
   },
 
@@ -1799,6 +2054,182 @@ export const monocotEspecies = {
     descripcion: "Hierba anual.",
     caracteristicas: "Lemmas no ciliadas, gluma inferior de 1-1,5 mm y gluma superior de 4-4,5 mm.",
     distribucion: "Europa; adventicia en America y rara en la region platense.",
+    imagen: ""
+  },
+
+  agropyron_pungens: {
+    id: "agropyron_pungens",
+    nombreCientifico: "Agropyron pungens",
+    nombreVulgar: "Agropiro",
+    familia: "17. Gramineae - Hordeae",
+    descripcion: "Hierba perenne con rizomas horizontales cundidores.",
+    caracteristicas: "Láminas foliares convolutas, rígidas y punzantes, con nervaduras muy marcadas; tallos de 50-80 cm y espiguillas 5-6-floras.",
+    distribucion: "Europa; adventicia en Argentina, en suelos salados de la Ensenada de Samborombón.",
+    imagen: ""
+  },
+
+  agropyron_repens: {
+    id: "agropyron_repens",
+    nombreCientifico: "Agropyron repens",
+    nombreVulgar: "Agropiro",
+    familia: "17. Gramineae - Hordeae",
+    descripcion: "Hierba perenne rizomatosa, con hojas planas y flojas.",
+    caracteristicas: "Espiguillas de 12-15 mm, 6-8-floras; glumas lanceoladas acuminadas de 5-7 nervaduras; espigas de 10-18 cm.",
+    distribucion: "Europa; adventicia en América, hallada en Buenos Aires y Punta Lara.",
+    imagen: ""
+  },
+
+  agropyron_scabrifolium: {
+    id: "agropyron_scabrifolium",
+    nombreCientifico: "Agropyron scabrifolium",
+    nombreVulgar: "Agropiro",
+    familia: "17. Gramineae - Hordeae",
+    descripcion: "Hierba perenne rizomatosa, robusta, con tallos de hasta 2 m.",
+    caracteristicas: "Espiguillas de 20-35 mm, 8-10-floras; hojas planas o subconvolutas retrorso-escabrosas y espigas dísticas de 15-25 cm.",
+    distribucion: "Uruguay y norte y centro de Argentina; hallada en el Delta y región de Samborombón.",
+    imagen: ""
+  },
+
+  agropyron_attenuatum: {
+    id: "agropyron_attenuatum",
+    nombreCientifico: "Agropyron attenuatum var. platense",
+    nombreVulgar: "Agropiro",
+    familia: "17. Gramineae - Hordeae",
+    descripcion: "Hierba perenne cespitosa, sin rizomas, de cerca de 50 cm de alto.",
+    caracteristicas: "Hojas planas o subconvolutas, espigas de 6-8 cm y espiguillas lanceoladas estrechas 4-5-floras.",
+    distribucion: "Bosques de talas de la región de Samborombón.",
+    imagen: ""
+  },
+
+  hordeum_leporinum: {
+    id: "hordeum_leporinum",
+    nombreCientifico: "Hordeum leporinum",
+    nombreVulgar: "Cola de zorro",
+    familia: "17. Gramineae - Hordeae",
+    descripcion: "Hierba anual ascendente, de 30-50 cm de alto.",
+    caracteristicas: "Hojas planas pubescentes; flores laterales de la tríada más grandes que la central y espiga comprimida ancha de 6-7 cm.",
+    distribucion: "Europa; adventicia en Argentina, común en suelos modificados.",
+    imagen: ""
+  },
+
+  hordeum_jubatum: {
+    id: "hordeum_jubatum",
+    nombreCientifico: "Hordeum jubatum var. pampeanum",
+    nombreVulgar: "Hordeum",
+    familia: "17. Gramineae - Hordeae",
+    descripcion: "Hierba anual erecta, de alrededor de 50 cm de alto.",
+    caracteristicas: "Hojas planas, glumas capilares con aristas de 4-6 cm y espigas anchas de 8-10 cm.",
+    distribucion: "Uruguay y este de Argentina; en suelos húmedos algo salados.",
+    imagen: ""
+  },
+
+  hordeum_compressum: {
+    id: "hordeum_compressum",
+    nombreCientifico: "Hordeum compressum",
+    nombreVulgar: "Hordeum",
+    familia: "17. Gramineae - Hordeae",
+    descripcion: "Hierba anual, de 20-40 cm de alto.",
+    caracteristicas: "Espigas comprimidas de unos 8 cm por 2-4 mm, con espiguillas laterales adosadas contra la flor central.",
+    distribucion: "Centro de Argentina; raro en la región platense.",
+    imagen: ""
+  },
+
+  hordeum_stenostachys: {
+    id: "hordeum_stenostachys",
+    nombreCientifico: "Hordeum stenostachys",
+    nombreVulgar: "Hordeum",
+    familia: "17. Gramineae - Hordeae",
+    descripcion: "Hierba perenne, de 30-80 cm de alto.",
+    caracteristicas: "Hojas rígidas algo enroscadas y espigas algo comprimidas de 4-8 cm por cerca de 5 mm.",
+    distribucion: "América austral; en la estepa climax.",
+    imagen: ""
+  },
+
+  hordeum_pusillum: {
+    id: "hordeum_pusillum",
+    nombreCientifico: "Hordeum pusillum",
+    nombreVulgar: "Hordeum",
+    familia: "17. Gramineae - Hordeae",
+    descripcion: "Hierba anual, de 10-40 cm de alto.",
+    caracteristicas: "Glumas laterales y centrales netamente lanceoladas, espigas oblongas angostas subcuadrangulares y aristas largas.",
+    distribucion: "América; común en campos bajos.",
+    imagen: ""
+  },
+
+  lepturus_cylindricus: {
+    id: "lepturus_cylindricus",
+    nombreCientifico: "Lepturus cylindricus",
+    nombreVulgar: "Lepturus",
+    familia: "17. Gramineae - Hordeae",
+    descripcion: "Hierba anual ascendente o erecta, de 20-30 cm de alto.",
+    caracteristicas: "Espiga lineal algo curvada y espiguillas de 5 mm incrustadas en excavaciones del raquis.",
+    distribucion: "Europa; adventicia en América, común en suelos salados.",
+    imagen: ""
+  },
+
+  lolium_multiflorum: {
+    id: "lolium_multiflorum",
+    nombreCientifico: "Lolium multiflorum",
+    nombreVulgar: "Rye grass, ballico",
+    familia: "17. Gramineae - Hordeae",
+    descripcion: "Hierba perenne con tallos de 50-100 cm de alto.",
+    caracteristicas: "Gluma más corta que la espiguilla, 10-20 flores por espiguilla y lemmas aristadas o múticas.",
+    distribucion: "Europa; adventicia en América, muy común en campos húmedos.",
+    imagen: ""
+  },
+
+  lolium_temulentum: {
+    id: "lolium_temulentum",
+    nombreCientifico: "Lolium temulentum",
+    nombreVulgar: "Trigollo",
+    familia: "17. Gramineae - Hordeae",
+    descripcion: "Hierba anual con tallos de 60-90 cm de alto.",
+    caracteristicas: "Gluma igual o mayor que la espiguilla, 5-7 flores por espiguilla y lemmas aristadas.",
+    distribucion: "Europa; maleza en Argentina. Tóxica.",
+    imagen: ""
+  },
+
+  pholiurus_incurvus: {
+    id: "pholiurus_incurvus",
+    nombreCientifico: "Pholiurus incurvus",
+    nombreVulgar: "Pholiurus",
+    familia: "17. Gramineae - Hordeae",
+    descripcion: "Hierba anual baja, con tallos tendidos o ascendentes de 10-20 cm.",
+    caracteristicas: "Espigas lineales curvas de 7-10 cm y espiguillas de 5-7 mm incrustadas en el raquis.",
+    distribucion: "Europa; adventicia en América, en campos húmedos y salados.",
+    imagen: ""
+  },
+
+  secale_cereale: {
+    id: "secale_cereale",
+    nombreCientifico: "Secale cereale",
+    nombreVulgar: "Centeno",
+    familia: "17. Gramineae - Hordeae",
+    descripcion: "Hierba anual con tallos de 1-1,5 m de alto.",
+    caracteristicas: "Espiguillas solitarias en las articulaciones del raquis, generalmente con dos flores hermafroditas y una rudimentaria.",
+    distribucion: "Europa; cultivado en Argentina y a veces espontáneo.",
+    imagen: ""
+  },
+
+  triticum_aestivum: {
+    id: "triticum_aestivum",
+    nombreCientifico: "Triticum aestivum",
+    nombreVulgar: "Trigo",
+    familia: "17. Gramineae - Hordeae",
+    descripcion: "Hierba anual cultivada para la elaboración de pan.",
+    caracteristicas: "Tallos de cerca de 1 m y espiguillas 3-5-floras, con raquilla articulada por encima de las glumas.",
+    distribucion: "Cultivada; a veces escapada de cultivos.",
+    imagen: ""
+  },
+
+  triticum_durum: {
+    id: "triticum_durum",
+    nombreCientifico: "Triticum durum",
+    nombreVulgar: "Trigo duro",
+    familia: "17. Gramineae - Hordeae",
+    descripcion: "Hierba anual cultivada.",
+    caracteristicas: "Especie de trigo poco cultivada en Argentina, ocasionalmente espontánea.",
+    distribucion: "Cultivos y escapes ocasionales.",
     imagen: ""
   },
 
