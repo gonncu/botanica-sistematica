@@ -1636,7 +1636,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Espiguillas con otros caracteres dentro de Paniceae; continuar en una proxima tanda",
       keyStep: "C'",
-      especieId: "paniceae"
+      nextNodeId: "paniceae_d"
     }
   },
 
@@ -1739,6 +1739,91 @@ export const monocotiledoneaeData = {
       label: "Espiguillas de menos de 3 mm; espigas 8 a muchas, debiles, de 7-11 cm, alternas y amontonadas en el apice",
       keyStep: "D'",
       especieId: "digitaria_lanuginosa"
+    }
+  },
+
+  paniceae_d: {
+    id: "paniceae_d",
+    milestone: "Paniceae",
+    manualPage: 94,
+    descripcion: "Paniceae - entrada parcial: espiguillas deprimidas en panojas compactas",
+    opcionA: {
+      label: "Espiguillas deprimidas, plano-convexas, solitarias o en glomerulos irregulares sobre un lado de las ramificaciones de la panoja",
+      keyStep: "D",
+      nextNodeId: "echinochloa_a"
+    },
+    opcionA_prima: {
+      label: "Espiguillas con otros caracteres dentro de Paniceae; continuar en una proxima tanda",
+      keyStep: "D'",
+      especieId: "paniceae"
+    }
+  },
+
+  echinochloa_a: {
+    id: "echinochloa_a",
+    milestone: "Echinochloa",
+    manualPage: 94,
+    descripcion: "Echinochloa - A: plantas perennes o anuales",
+    opcionA: {
+      label: "Plantas perennes; hojas con ligula formada por una hilera de pelos",
+      keyStep: "A",
+      nextNodeId: "echinochloa_b"
+    },
+    opcionA_prima: {
+      label: "Plantas anuales; hojas sin ligula o a lo mas algo pubescentes en la region ligular",
+      keyStep: "A'",
+      nextNodeId: "echinochloa_c"
+    }
+  },
+
+  echinochloa_b: {
+    id: "echinochloa_b",
+    milestone: "Echinochloa",
+    manualPage: 94,
+    descripcion: "Echinochloa - B: ancho de hojas y densidad de panojas",
+    opcionA: {
+      label: "Hojas de 10-25 mm de ancho; panojas densas; espiguillas ovoideas de 4,5-7 mm por 2-3 mm",
+      keyStep: "B",
+      especieId: "echinochloa_polystachya"
+    },
+    opcionA_prima: {
+      label: "Hojas de 6-10 mm de ancho; panojas laxas, nutantes y paucifloras; espiguillas lanceoladas de 6-7 mm",
+      keyStep: "B'",
+      especieId: "echinochloa_helodes"
+    }
+  },
+
+  echinochloa_c: {
+    id: "echinochloa_c",
+    milestone: "Echinochloa",
+    manualPage: 94,
+    descripcion: "Echinochloa - C: tamano y forma de las espiguillas",
+    opcionA: {
+      label: "Espiguillas de 2-2,6 mm, ovoides, obtusas, rojizas o verdosas, muticas; panoja erecta lineal",
+      keyStep: "C",
+      especieId: "echinochloa_colonum"
+    },
+    opcionA_prima: {
+      label: "Espiguillas de 3 mm o mas, acuminadas, generalmente aristadas",
+      keyStep: "C'",
+      nextNodeId: "echinochloa_d"
+    }
+  },
+
+  echinochloa_d: {
+    id: "echinochloa_d",
+    milestone: "Echinochloa",
+    manualPage: 94,
+    descripcion: "Echinochloa - D: forma de espiguillas y panojas",
+    opcionA: {
+      label: "Espiguillas ovoides, ensanchadas, espinulosas; lemma esteril con arista de 3-30 mm; panojas piramidales densas",
+      keyStep: "D",
+      especieId: "echinochloa_crusgalli"
+    },
+    opcionA_prima: {
+      label: "Espiguillas lanceoladas; lemma esteril con espinulas poco desarrolladas y arista de 2-15 mm; panojas oblongo-lanceoladas nutantes",
+      keyStep: "D'",
+      especieId: "echinochloa_cruspavonis"
     }
   },
 
@@ -2976,6 +3061,61 @@ export const monocotEspecies = {
     descripcion: "Hierba perenne de 40-80 cm de alto.",
     caracteristicas: "Hojas planas y velludas; espiguillas de menos de 3 mm; espigas 8 a muchas, debiles, de 7-11 cm, alternas y amontonadas en el apice.",
     distribucion: "America tropical; hallada unicamente en Puerto Nuevo.",
+    imagen: ""
+  },
+
+  echinochloa_polystachya: {
+    id: "echinochloa_polystachya",
+    nombreCientifico: "Echinochloa polystachya",
+    nombreVulgar: "Echinochloa polystachya",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne con tallos gruesos, ascendentes, estriados y glabros.",
+    caracteristicas: "Hojas planas de 10-25 mm de ancho; panojas densas, verdosas o purpureas; espiguillas ovoideas de 4,5-7 mm. El manual menciona tambien la var. spectabilis, con nudos engrosados y setoso-hirsutos.",
+    distribucion: "America tropical y subtropical; especie acuatica flotante, frecuente en los camalotales del Delta y de la ribera platense.",
+    imagen: ""
+  },
+
+  echinochloa_helodes: {
+    id: "echinochloa_helodes",
+    nombreCientifico: "Echinochloa helodes",
+    nombreVulgar: "Echinochloa helodes",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne con rizomas tuberculiformes y tallos ascendentes.",
+    caracteristicas: "Nudos hirsutos; hojas planas de 6-10 mm de ancho; panojas laxas, nutantes y paucifloras; espiguillas lanceoladas de 6-7 mm.",
+    distribucion: "Uruguay y nordeste de la Argentina; frecuente en suelos inundables.",
+    imagen: ""
+  },
+
+  echinochloa_colonum: {
+    id: "echinochloa_colonum",
+    nombreCientifico: "Echinochloa colonum",
+    nombreVulgar: "Echinochloa colonum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba anual de 10-50 cm de alto, con hojas lineales y planas.",
+    caracteristicas: "Espiguillas de 2-2,6 mm, ovoides, obtusas, rojizas o verdosas y muticas; panoja erecta, lineal, con ramas apretadas contra el raquis.",
+    distribucion: "Viejo Mundo; adventicia en todo el globo. Comun en suelos modificados.",
+    imagen: ""
+  },
+
+  echinochloa_crusgalli: {
+    id: "echinochloa_crusgalli",
+    nombreCientifico: "Echinochloa crusgalli",
+    nombreVulgar: "Echinochloa crusgalli",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba anual de 30-100 cm de alto, con hojas planas y glabras.",
+    caracteristicas: "Espiguillas ovoides, ensanchadas, espinulosas, de 2,8-3,7 mm por 1,7-2 mm; lemma esteril con arista de 3-30 mm; panojas piramidales densas.",
+    distribucion: "Europa; adventicia en America. Comun en suelos modificados.",
+    imagen: ""
+  },
+
+  echinochloa_cruspavonis: {
+    id: "echinochloa_cruspavonis",
+    nombreCientifico: "Echinochloa cruspavonis",
+    nombreVulgar: "Echinochloa cruspavonis",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba anual de 1-2 m de alto, con hojas planas y anchas.",
+    caracteristicas: "Espiguillas lanceoladas de 2,8-3,7 mm por 1-1,4 mm; lemma esteril con espinulas poco desarrolladas y arista de 2-15 mm; panojas oblongo-lanceoladas, nutantes.",
+    distribucion: "America calida; muy comun en la ribera platense.",
     imagen: ""
   },
 
