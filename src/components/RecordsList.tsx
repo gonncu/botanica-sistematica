@@ -10,6 +10,8 @@ interface RecordsListProps {
   isLoading: boolean;
 }
 
+type SearchMode = "all" | "number" | "name" | "family" | "place" | "date" | "notes";
+
 function normalizeSearchText(value: string) {
   return value
     .normalize("NFD")
@@ -22,29 +24,45 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
   const [rangeStart, setRangeStart] = useState("");
   const [rangeEnd, setRangeEnd] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
+  const [searchMode, setSearchMode] = useState<SearchMode>("all");
   const filteredRecords = useMemo(() => {
     const normalizedSearch = normalizeSearchText(searchTerm.trim());
     if (!normalizedSearch) return records;
 
     return records.filter((record) => {
       const especie = especiesData[record.especie_id];
-      const searchableText = [
-        record.plant_number.toString(),
-        record.especie_id,
-        especie?.nombreCientifico,
-        especie?.nombreVulgar,
-        especie?.familia,
-        record.nombre_usuario,
-        record.fecha,
-        record.lugar,
-        record.observaciones,
-      ]
-        .filter(Boolean)
-        .join(" ");
+      if (searchMode === "number") {
+        return record.plant_number.toString() === normalizedSearch;
+      }
+
+      const fieldsByMode: Record<SearchMode, string[]> = {
+        all: [
+          record.plant_number.toString(),
+          record.especie_id,
+          especie?.nombreCientifico || "",
+          especie?.nombreVulgar || "",
+          especie?.familia || "",
+          record.nombre_usuario,
+          record.fecha,
+          record.lugar,
+          record.observaciones || "",
+        ],
+        number: [],
+        name: [
+          record.especie_id,
+          especie?.nombreCientifico || "",
+          especie?.nombreVulgar || "",
+        ],
+        family: [especie?.familia || "", record.especie_id],
+        place: [record.lugar],
+        date: [record.fecha],
+        notes: [record.observaciones || ""],
+      };
+      const searchableText = fieldsByMode[searchMode].filter(Boolean).join(" ");
 
       return normalizeSearchText(searchableText).includes(normalizedSearch);
     });
-  }, [records, searchTerm]);
+  }, [records, searchMode, searchTerm]);
   const selectedRecords = useMemo(
     () => records.filter((record) => selectedIds.includes(record.id)),
     [records, selectedIds]
@@ -112,16 +130,40 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
       {!isLoading && records.length > 0 && (
         <div className="space-y-3">
           <div className="flex flex-col gap-2 border-b border-gray-200 pb-3">
-            <label className="text-sm font-medium text-gray-800">
-              Buscar
-              <input
-                type="search"
-                value={searchTerm}
-                onChange={(event) => setSearchTerm(event.target.value)}
-                placeholder="Nombre, familia, lugar o N°"
-                className="mt-1 w-full rounded border border-gray-300 px-3 py-2 text-sm"
-              />
-            </label>
+            <div className="grid gap-2 sm:grid-cols-[120px_1fr]">
+              <label className="text-sm font-medium text-gray-800">
+                Buscar por
+                <select
+                  value={searchMode}
+                  onChange={(event) =>
+                    setSearchMode(event.target.value as SearchMode)
+                  }
+                  className="mt-1 w-full rounded border border-gray-300 px-2 py-2 text-sm"
+                >
+                  <option value="all">Todo</option>
+                  <option value="number">N°</option>
+                  <option value="name">Nombre</option>
+                  <option value="family">Familia</option>
+                  <option value="place">Lugar</option>
+                  <option value="date">Fecha</option>
+                  <option value="notes">Observación</option>
+                </select>
+              </label>
+              <label className="text-sm font-medium text-gray-800">
+                Búsqueda
+                <input
+                  type="search"
+                  value={searchTerm}
+                  onChange={(event) => setSearchTerm(event.target.value)}
+                  placeholder={
+                    searchMode === "number"
+                      ? "Ej: 2"
+                      : "Nombre, familia, lugar, fecha..."
+                  }
+                  className="mt-1 w-full rounded border border-gray-300 px-3 py-2 text-sm"
+                />
+              </label>
+            </div>
             <div className="flex items-center justify-between gap-3">
               <label className="flex items-center gap-2 text-sm font-medium text-gray-800">
                 <input
