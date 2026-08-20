@@ -159,7 +159,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Plantas robustas, erectas, con hojas en forma de sable. Flores en espigas muy densas",
       familia: "11. Typhaceae",
-      especieId: "typhaceae"
+      nextNodeId: "typhaceae_a"
     },
     opcionA_prima: {
       label: "Plantas acuáticas, flotantes o sumergidas",
@@ -178,7 +178,119 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Hojas herbáceas a lo largo de tallos alargados",
       familia: "12. Potamogetonaceae",
-      especieId: "potamogetonaceae"
+      nextNodeId: "potamogetonaceae_a"
+    }
+  },
+
+  typhaceae_a: {
+    id: "typhaceae_a",
+    milestone: "Typhaceae",
+    descripcion: "Typhaceae - A: ¿las flores femeninas tienen brácteas y cómo es el polen?",
+    opcionA: {
+      label: "Flores femeninas sin brácteas; polen en tétradas",
+      keyStep: "A",
+      especieId: "typha_latifolia"
+    },
+    opcionA_prima: {
+      label: "Flores femeninas con brácteas; polen pulverulento",
+      keyStep: "A'",
+      especieId: "typha_angustifolia"
+    }
+  },
+
+  potamogetonaceae_a: {
+    id: "potamogetonaceae_a",
+    milestone: "Potamogetonaceae",
+    descripcion: "Potamogetonaceae - A: ¿cómo son las flores?",
+    opcionA: {
+      label: "Flores hermafroditas, agrupadas en espigas",
+      keyStep: "A",
+      nextNodeId: "potamogeton_a"
+    },
+    opcionA_prima: {
+      label: "Flores diclinas, monoicas, solitarias o en cimas",
+      keyStep: "A'",
+      especieId: "zannichellia_palustris"
+    }
+  },
+
+  potamogeton_a: {
+    id: "potamogeton_a",
+    milestone: "Potamogeton",
+    descripcion: "Potamogeton - A: ¿cómo son las hojas?",
+    opcionA: {
+      label: "Hojas, al menos las superiores, elípticas y anchas",
+      keyStep: "A",
+      nextNodeId: "potamogeton_b"
+    },
+    opcionA_prima: {
+      label: "Todas las hojas estrechamente lineales",
+      keyStep: "A'",
+      nextNodeId: "potamogeton_c"
+    }
+  },
+
+  potamogeton_b: {
+    id: "potamogeton_b",
+    milestone: "Potamogeton",
+    descripcion: "Potamogeton - B: con hojas elípticas, ¿cómo son las hojas y espigas?",
+    opcionA: {
+      label: "Hojas nadantes obovadas, redondeadas en el ápice; hojas sumergidas lineales; espigas cortas de 4-6 flores",
+      keyStep: "B",
+      especieId: "potamogeton_spirilliformis"
+    },
+    opcionA_prima: {
+      label: "Todas las hojas elípticas, plurinervadas, atenuadas en largo pecíolo; espigas densas plurifloras",
+      keyStep: "B'",
+      especieId: "potamogeton_ferrugineus"
+    }
+  },
+
+  potamogeton_c: {
+    id: "potamogeton_c",
+    milestone: "Potamogeton",
+    descripcion: "Potamogeton - C: con hojas lineales, ¿son envainadoras?",
+    opcionA: {
+      label: "Hojas no envainadoras, sin lígula",
+      keyStep: "C",
+      nextNodeId: "potamogeton_d"
+    },
+    opcionA_prima: {
+      label: "Hojas envainadoras, con lígula tenue en la unión de la vaina con la hoja",
+      keyStep: "C'",
+      especieId: "potamogeton_striatus"
+    }
+  },
+
+  potamogeton_d: {
+    id: "potamogeton_d",
+    milestone: "Potamogeton",
+    descripcion: "Potamogeton - D: con hojas no envainadoras, ¿cuál es el ancho de la hoja?",
+    opcionA: {
+      label: "Hojas de más de 2,5 mm de ancho",
+      keyStep: "D",
+      nextNodeId: "potamogeton_e"
+    },
+    opcionA_prima: {
+      label: "Hojas lineales muy estrechas, de menos de 2 mm de ancho",
+      keyStep: "D'",
+      especieId: "potamogeton_pusillus"
+    }
+  },
+
+  potamogeton_e: {
+    id: "potamogeton_e",
+    milestone: "Potamogeton",
+    descripcion: "Potamogeton - E: con hojas de más de 2,5 mm, ¿cómo son hojas, estípulas y espigas?",
+    opcionA: {
+      label: "Hojas de 5-11 cm por 3-10 mm, agudas; estípulas de 1,8-2,4 cm; espigas paucifloras de 12-15 mm",
+      keyStep: "E",
+      especieId: "potamogeton_gayii"
+    },
+    opcionA_prima: {
+      label: "Hojas de 4-6 cm por 3-4 mm; estípulas de 1 cm; espigas 4-floras de 7 mm",
+      keyStep: "E'",
+      especieId: "potamogeton_uruguayensis"
     }
   },
 
@@ -490,14 +602,25 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  typhaceae: {
-    id: "typhaceae",
-    nombreCientifico: "Typha latifolia L.",
+  typha_latifolia: {
+    id: "typha_latifolia",
+    nombreCientifico: "Typha latifolia",
     nombreVulgar: "Totora",
     familia: "11. Typhaceae",
-    descripcion: "Planta robusta de terrenos pantanosos.",
-    caracteristicas: "Hojas en forma de sable, flores agrupadas en espigas muy densas marrones.",
-    distribucion: "Pantanos, ciénegas, márgenes de lagunas",
+    descripcion: "Hierba palustre robusta, de 1,5-2,5 m de alto.",
+    caracteristicas: "Flores femeninas sin brácteas y polen en tétradas; hojas de alrededor de 1 m, torcidas en la parte superior.",
+    distribucion: "Cosmopolita; común en pajonales.",
+    imagen: ""
+  },
+
+  typha_angustifolia: {
+    id: "typha_angustifolia",
+    nombreCientifico: "Typha angustifolia",
+    nombreVulgar: "Totora",
+    familia: "11. Typhaceae",
+    descripcion: "Hierba palustre parecida a Typha latifolia.",
+    caracteristicas: "Flores femeninas con brácteas, polen pulverulento y pelos del ginecóforo agudos.",
+    distribucion: "Cosmopolita; común en zanjas y pajonales.",
     imagen: ""
   },
 
@@ -512,14 +635,80 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  potamogetonaceae: {
-    id: "potamogetonaceae",
-    nombreCientifico: "Potamogeton sp.",
+  potamogeton_spirilliformis: {
+    id: "potamogeton_spirilliformis",
+    nombreCientifico: "Potamogeton spirilliformis",
     nombreVulgar: "Potamogeton",
     familia: "12. Potamogetonaceae",
-    descripcion: "Planta acuática sumergida.",
-    caracteristicas: "Hojas alternas herbáceas, flores pequeñas en espigas.",
-    distribucion: "Aguas dulces, lagunas y esteros",
+    descripcion: "Hierba acuática con tallos redondeados y ramosos.",
+    caracteristicas: "Hojas nadantes obovadas, hojas sumergidas lineales, espigas cortas de 4-6 flores y frutos pequeños con 3 quillas.",
+    distribucion: "Aguas dulces del sur del Brasil, Uruguay y NE de Argentina; rara en la región.",
+    imagen: ""
+  },
+
+  potamogeton_ferrugineus: {
+    id: "potamogeton_ferrugineus",
+    nombreCientifico: "Potamogeton ferrugineus",
+    nombreVulgar: "Potamogeton",
+    familia: "12. Potamogetonaceae",
+    descripcion: "Hierba acuática de tallos redondeados.",
+    caracteristicas: "Todas las hojas elípticas, plurinervadas, atenuadas en largo pecíolo; espigas densas y frutos con una quilla media y dos laterales.",
+    distribucion: "Centro de la Argentina y Uruguay; común en arroyos.",
+    imagen: ""
+  },
+
+  potamogeton_gayii: {
+    id: "potamogeton_gayii",
+    nombreCientifico: "Potamogeton gayii",
+    nombreVulgar: "Potamogeton",
+    familia: "12. Potamogetonaceae",
+    descripcion: "Hierba acuática de tallos algo comprimidos.",
+    caracteristicas: "Hojas lineales no envainadoras, de 5-11 cm por 3-10 mm, agudas, con 3-5 nervaduras; espigas paucifloras.",
+    distribucion: "América austral; frecuente en charcas y arroyos.",
+    imagen: ""
+  },
+
+  potamogeton_uruguayensis: {
+    id: "potamogeton_uruguayensis",
+    nombreCientifico: "Potamogeton uruguayensis",
+    nombreVulgar: "Potamogeton",
+    familia: "12. Potamogetonaceae",
+    descripcion: "Hierba acuática de hojas lineales no envainadoras.",
+    caracteristicas: "Hojas de 4-6 cm por 3-4 mm, con 3-5 nervaduras; estípulas de 1 cm y espigas 4-floras de 7 mm.",
+    distribucion: "Uruguay y provincia de Buenos Aires; común en arroyos.",
+    imagen: ""
+  },
+
+  potamogeton_pusillus: {
+    id: "potamogeton_pusillus",
+    nombreCientifico: "Potamogeton pusillus",
+    nombreVulgar: "Potamogeton",
+    familia: "12. Potamogetonaceae",
+    descripcion: "Hierba acuática de tallos delgados y difusos.",
+    caracteristicas: "Hojas lineales muy estrechas, de 1,5-5 cm y menos de 2 mm de ancho; espigas paucifloras muy cortas.",
+    distribucion: "Cosmopolita; en zanjas y arroyos.",
+    imagen: ""
+  },
+
+  potamogeton_striatus: {
+    id: "potamogeton_striatus",
+    nombreCientifico: "Potamogeton striatus",
+    nombreVulgar: "Potamogeton",
+    familia: "12. Potamogetonaceae",
+    descripcion: "Hierba acuática sumergida, con tallos ligeramente comprimidos y entrenudos largos.",
+    caracteristicas: "Hojas envainadoras, con lígula tenue; lámina trinervada de 6-14 cm; espigas de 8-10 flores y frutos oblicuamente elípticos.",
+    distribucion: "Sudamérica; común en tanques australianos, arroyos y ambientes similares.",
+    imagen: ""
+  },
+
+  zannichellia_palustris: {
+    id: "zannichellia_palustris",
+    nombreCientifico: "Zannichellia palustris",
+    nombreVulgar: "Zannichellia",
+    familia: "12. Potamogetonaceae",
+    descripcion: "Hierba acuática sumergida y rizomatosa.",
+    caracteristicas: "Flores diclinas monoicas; hojas filiformes, estípulas grandes y flores axilares; carpelos casi sésiles, semilunares.",
+    distribucion: "Cosmopolita; en charcas.",
     imagen: ""
   },
 
