@@ -12,6 +12,8 @@ interface RecordsListProps {
 
 export default function RecordsList({ records, isLoading }: RecordsListProps) {
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
+  const [rangeStart, setRangeStart] = useState("");
+  const [rangeEnd, setRangeEnd] = useState("");
   const selectedRecords = useMemo(
     () => records.filter((record) => selectedIds.includes(record.id)),
     [records, selectedIds]
@@ -29,6 +31,23 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
 
   const toggleAll = () => {
     setSelectedIds(allRecordsSelected ? [] : records.map((record) => record.id));
+  };
+
+  const selectRange = () => {
+    const start = Number(rangeStart);
+    const end = Number(rangeEnd);
+
+    if (!Number.isInteger(start) || !Number.isInteger(end)) return;
+
+    const min = Math.min(start, end);
+    const max = Math.max(start, end);
+    setSelectedIds(
+      records
+        .filter(
+          (record) => record.plant_number >= min && record.plant_number <= max
+        )
+        .map((record) => record.id)
+    );
   };
 
   const handleGenerateLabels = async () => {
@@ -72,6 +91,36 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
                 className="text-sm text-gray-700 underline disabled:text-gray-400 disabled:no-underline"
               >
                 Limpiar
+              </button>
+            </div>
+            <div className="grid grid-cols-[1fr_1fr_auto] items-end gap-2">
+              <label className="text-xs font-medium text-gray-800">
+                Desde N°
+                <input
+                  type="number"
+                  min="1"
+                  value={rangeStart}
+                  onChange={(event) => setRangeStart(event.target.value)}
+                  className="mt-1 w-full rounded border border-gray-300 px-2 py-1 text-sm"
+                />
+              </label>
+              <label className="text-xs font-medium text-gray-800">
+                Hasta N°
+                <input
+                  type="number"
+                  min="1"
+                  value={rangeEnd}
+                  onChange={(event) => setRangeEnd(event.target.value)}
+                  className="mt-1 w-full rounded border border-gray-300 px-2 py-1 text-sm"
+                />
+              </label>
+              <button
+                type="button"
+                onClick={selectRange}
+                disabled={!rangeStart || !rangeEnd}
+                className="rounded border border-gray-300 px-3 py-1.5 text-sm font-medium text-gray-800 hover:bg-gray-50 disabled:text-gray-400"
+              >
+                Elegir
               </button>
             </div>
             <button
