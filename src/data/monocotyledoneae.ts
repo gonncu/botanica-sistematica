@@ -174,7 +174,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Espiguillas dispuestas a un solo lado del raquis",
       keyStep: "E'",
-      especieId: "chlorideae"
+      nextNodeId: "chlorideae_a"
     }
   },
 
@@ -940,6 +940,312 @@ export const monocotiledoneaeData = {
       label: "Espiguillas de 6-7 mm, lanceoladas, muy comprimidas, claras; panoja contraída de 10-25 cm",
       keyStep: "B'",
       especieId: "sporobolus_platensis"
+    }
+  },
+
+  chlorideae_a: {
+    id: "chlorideae_a",
+    milestone: "Chlorideae",
+    manualPage: 83,
+    descripcion: "Chlorideae - A: ¿cómo se disponen las espigas?",
+    opcionA: {
+      label: "Espigas fasciculadas en el extremo de las cañas floríferas",
+      keyStep: "A",
+      nextNodeId: "chlorideae_b"
+    },
+    opcionA_prima: {
+      label: "Espigas dispuestas a lo largo de un eje principal, raramente solitarias",
+      keyStep: "A'",
+      nextNodeId: "chlorideae_f"
+    }
+  },
+
+  chlorideae_b: {
+    id: "chlorideae_b",
+    milestone: "Chlorideae",
+    manualPage: 83,
+    descripcion: "Chlorideae - B: ¿la lemma termina en tres aristas largas?",
+    opcionA: {
+      label: "Lemma terminada en 3 aristas largas",
+      keyStep: "B",
+      especieId: "trichloris_crinita"
+    },
+    opcionA_prima: {
+      label: "Lemma mútica o con una sola arista",
+      keyStep: "B'",
+      nextNodeId: "chlorideae_c"
+    }
+  },
+
+  chlorideae_c: {
+    id: "chlorideae_c",
+    milestone: "Chlorideae",
+    manualPage: 83,
+    descripcion: "Chlorideae - C: ¿cuántas flores hermafroditas tienen las espiguillas?",
+    opcionA: {
+      label: "Espiguillas con una sola flor hermafrodita, rara vez dos en Chloris",
+      keyStep: "C",
+      nextNodeId: "chlorideae_d"
+    },
+    opcionA_prima: {
+      label: "Espiguillas con 3 o más flores",
+      keyStep: "C'",
+      nextNodeId: "chlorideae_e"
+    }
+  },
+
+  chlorideae_d: {
+    id: "chlorideae_d",
+    milestone: "Chlorideae",
+    manualPage: 83,
+    descripcion: "Chlorideae - D: ¿las lemmas son múticas o aristadas?",
+    opcionA: {
+      label: "Lemmas múticas",
+      keyStep: "D",
+      nextNodeId: "cynodon_a"
+    },
+    opcionA_prima: {
+      label: "Lemmas aristadas",
+      keyStep: "D'",
+      especieId: "chloris_pendiente"
+    }
+  },
+
+  chlorideae_e: {
+    id: "chlorideae_e",
+    milestone: "Chlorideae",
+    manualPage: 83,
+    descripcion: "Chlorideae - E: ¿la lemma es aguda o bilobada/bidentada?",
+    opcionA: {
+      label: "Lemma aguda, mútica",
+      keyStep: "E",
+      nextNodeId: "eleusine_a"
+    },
+    opcionA_prima: {
+      label: "Lemma bilobada o bidentada, con mucrón o arista entre los dos dientes",
+      keyStep: "E'",
+      nextNodeId: "leptochloa_a"
+    }
+  },
+
+  chlorideae_f: {
+    id: "chlorideae_f",
+    milestone: "Chlorideae",
+    manualPage: 83,
+    descripcion: "Chlorideae - F: ¿la lemma es tri-aristada?",
+    opcionA: {
+      label: "Lemma tri-aristada",
+      keyStep: "F",
+      especieId: "bouteloua_megapotamica"
+    },
+    opcionA_prima: {
+      label: "Lemma mútica o con una sola arista",
+      keyStep: "F'",
+      nextNodeId: "chlorideae_g"
+    }
+  },
+
+  chlorideae_g: {
+    id: "chlorideae_g",
+    milestone: "Chlorideae",
+    manualPage: 83,
+    descripcion: "Chlorideae - G: ¿las glumas caen con la espiguilla?",
+    opcionA: {
+      label: "Glumas caducas con la espiguilla",
+      keyStep: "G",
+      nextNodeId: "spartina_a"
+    },
+    opcionA_prima: {
+      label: "Glumas persistentes sobre el raquis",
+      keyStep: "G'",
+      nextNodeId: "chlorideae_h"
+    }
+  },
+
+  chlorideae_h: {
+    id: "chlorideae_h",
+    milestone: "Chlorideae",
+    manualPage: 83,
+    descripcion: "Chlorideae - H: ¿cuántas flores hermafroditas tienen las espiguillas?",
+    opcionA: {
+      label: "Espiguillas con dos o más flores hermafroditas; lemma bilobada o bidentada con mucrón",
+      keyStep: "H",
+      nextNodeId: "chlorideae_j"
+    },
+    opcionA_prima: {
+      label: "Espiguillas con una sola flor hermafrodita; lemma aguda",
+      keyStep: "H'",
+      nextNodeId: "chlorideae_k"
+    }
+  },
+
+  chlorideae_j: {
+    id: "chlorideae_j",
+    milestone: "Chlorideae",
+    manualPage: 83,
+    descripcion: "Chlorideae - J: ¿las espiguillas son violáceas/rojizas o verdes?",
+    opcionA: {
+      label: "Espiguillas violáceas o rojizas, comprimidas lateralmente",
+      keyStep: "J",
+      nextNodeId: "leptochloa_a"
+    },
+    opcionA_prima: {
+      label: "Espiguillas verdes, cilíndricas",
+      keyStep: "J'",
+      nextNodeId: "diplachne_a"
+    }
+  },
+
+  chlorideae_k: {
+    id: "chlorideae_k",
+    milestone: "Chlorideae",
+    manualPage: 83,
+    descripcion: "Chlorideae - K: ¿el raquis de las espigas es articulado o continuo?",
+    opcionA: {
+      label: "Espigas divergentes, con raquis articulado",
+      keyStep: "K",
+      especieId: "schedonnardus_paniculatus"
+    },
+    opcionA_prima: {
+      label: "Espigas aproximadas al eje principal, con raquis continuo",
+      keyStep: "K'",
+      especieId: "willkommia_texana_stolonifera"
+    }
+  },
+
+  cynodon_a: {
+    id: "cynodon_a",
+    milestone: "Cynodon",
+    manualPage: 85,
+    descripcion: "Cynodon - A: ¿la raquilla se prolonga al lado de la pálea?",
+    opcionA: {
+      label: "Raquilla prolongada al lado de la pálea; lemma con quilla pestañosa no alada; planta con rizomas y estolones",
+      keyStep: "A",
+      especieId: "cynodon_dactylon"
+    },
+    opcionA_prima: {
+      label: "Raquilla no prolongada; lemma con quilla brevemente pestañosa y angostamente alada; sólo estolones superficiales",
+      keyStep: "A'",
+      especieId: "cynodon_hirsutus"
+    }
+  },
+
+  diplachne_a: {
+    id: "diplachne_a",
+    milestone: "Diplachne",
+    manualPage: 86,
+    descripcion: "Diplachne - A: ¿la lemma es bilobulada o bidentada?",
+    opcionA: {
+      label: "Lemma bilobulada en el ápice, 3-nervada, con nervadura central terminada en corto diente",
+      keyStep: "A",
+      especieId: "diplachne_dubia"
+    },
+    opcionA_prima: {
+      label: "Lemma bidentada en el ápice",
+      keyStep: "A'",
+      nextNodeId: "diplachne_b"
+    }
+  },
+
+  diplachne_b: {
+    id: "diplachne_b",
+    milestone: "Diplachne",
+    manualPage: 86,
+    descripcion: "Diplachne - B: ¿qué tamaño tienen las anteras?",
+    opcionA: {
+      label: "Anteras de 1-1,5 mm; lemma no aristada; inflorescencia con 15-20 racimos flexuosos",
+      keyStep: "B",
+      especieId: "diplachne_fusca"
+    },
+    opcionA_prima: {
+      label: "Anteras de 0,5 mm; lemma generalmente aristada",
+      keyStep: "B'",
+      nextNodeId: "diplachne_c"
+    }
+  },
+
+  diplachne_c: {
+    id: "diplachne_c",
+    milestone: "Diplachne",
+    manualPage: 86,
+    descripcion: "Diplachne - C: ¿la lemma es acuminada o obtusa/truncada?",
+    opcionA: {
+      label: "Lemma acuminada en el ápice, con dos dientes agudos y arista de 1 mm",
+      keyStep: "C",
+      especieId: "diplachne_fascicularis"
+    },
+    opcionA_prima: {
+      label: "Lemma obtusa o truncada en el ápice, con 3 dientes cortos",
+      keyStep: "C'",
+      especieId: "diplachne_uninervia"
+    }
+  },
+
+  eleusine_a: {
+    id: "eleusine_a",
+    milestone: "Eleusine",
+    manualPage: 87,
+    descripcion: "Eleusine - A: ¿cuántas espigas tiene la inflorescencia?",
+    opcionA: {
+      label: "Espigas 5-12, de 5-7 cm; espiguillas ovadas agudas, de unos 5 mm, 6-10-floras",
+      keyStep: "A",
+      especieId: "eleusine_indica"
+    },
+    opcionA_prima: {
+      label: "Espigas 2-4, gruesas, de 1-4 cm; espiguillas ovado-lanceoladas de 6-9 mm",
+      keyStep: "A'",
+      especieId: "eleusine_tristachya"
+    }
+  },
+
+  spartina_a: {
+    id: "spartina_a",
+    milestone: "Spartina",
+    manualPage: 87,
+    descripcion: "Spartina - A: ¿qué tamaño y disposición tienen las espigas?",
+    opcionA: {
+      label: "Espigas de 3-7 cm, pocas, completamente adosadas al eje principal; espiguillas de 9-12 mm",
+      keyStep: "A",
+      especieId: "spartina_montevidensis"
+    },
+    opcionA_prima: {
+      label: "Espigas de 10-16 cm; espiguillas de 12-18 mm",
+      keyStep: "A'",
+      nextNodeId: "spartina_b"
+    }
+  },
+
+  spartina_b: {
+    id: "spartina_b",
+    milestone: "Spartina",
+    manualPage: 87,
+    descripcion: "Spartina - B: ¿las espigas divergen o se aproximan al raquis principal?",
+    opcionA: {
+      label: "Espigas 12-20, de unos 10 cm, algo divergentes; glumas glabras o ligeramente cilioladas",
+      keyStep: "B",
+      especieId: "spartina_brasiliensis"
+    },
+    opcionA_prima: {
+      label: "Espigas 7-11, de 11-16 cm, aproximadas al raquis principal; glumas escabrosas en la quilla",
+      keyStep: "B'",
+      especieId: "spartina_longispica"
+    }
+  },
+
+  leptochloa_a: {
+    id: "leptochloa_a",
+    milestone: "Leptochloa",
+    manualPage: 88,
+    descripcion: "Leptochloa - A: ¿las espigas están fasciculadas en el ápice o a lo largo del raquis?",
+    opcionA: {
+      label: "Espigas 5-10, fasciculadas en el ápice de las cañas, de 10-15 cm; espiguillas 3-4-floras",
+      keyStep: "A",
+      especieId: "leptochloa_chloridiformis"
+    },
+    opcionA_prima: {
+      label: "Espigas numerosas, delgadas, dispuestas a lo largo del raquis principal; espiguillas 5-6-floras rojizo-violáceas",
+      keyStep: "A'",
+      especieId: "leptochloa_virgata"
     }
   },
 
@@ -3092,6 +3398,204 @@ export const monocotEspecies = {
     descripcion: "Hierba perenne, de 50-150 cm de alto.",
     caracteristicas: "Panojas cilíndricas de 5-10 cm, glumas de 3-5 mm truncadas con arista gruesa y quilla largamente ciliada.",
     distribucion: "Europa; cultivada como forrajera y a veces espontánea en suelos modificados.",
+    imagen: ""
+  },
+
+  chloris_pendiente: {
+    id: "chloris_pendiente",
+    nombreCientifico: "Chloris",
+    nombreVulgar: "Rama pendiente de Chloris",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Esta rama de Chlorideae corresponde al género Chloris y queda pendiente para una tanda dedicada.",
+    caracteristicas: "El género tiene una clave larga de varias especies; se cargará completo por separado para evitar errores.",
+    distribucion: "Pendiente de completar.",
+    imagen: ""
+  },
+
+  bouteloua_megapotamica: {
+    id: "bouteloua_megapotamica",
+    nombreCientifico: "Bouteloua megapotamica",
+    nombreVulgar: "Bouteloua",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne estolonífera, de 15-20 cm de alto.",
+    caracteristicas: "Hojas cortas agudas con pelos sedosos; inflorescencia con 3-6 espigas rojizas cortas y lemmas 3-aristadas.",
+    distribucion: "Sur del Brasil, Uruguay y norte y centro de Argentina; en la estepa climax.",
+    imagen: ""
+  },
+
+  cynodon_dactylon: {
+    id: "cynodon_dactylon",
+    nombreCientifico: "Cynodon dactylon",
+    nombreVulgar: "Gramilla blanca, pata de perdiz, Bermuda grass",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne con rizomas horizontales poderosos y estolones superficiales.",
+    caracteristicas: "Hojas casi glabras, espigas 4-8 de 2-5 cm, espiguillas de 2-3 mm y lemma con quilla pestañosa no alada.",
+    distribucion: "Cosmopolita; común en suelos arenosos o sueltos. Invasora y tóxica para el ganado por glucósidos cianogenéticos.",
+    imagen: ""
+  },
+
+  cynodon_hirsutus: {
+    id: "cynodon_hirsutus",
+    nombreCientifico: "Cynodon hirsutus",
+    nombreVulgar: "Cynodon",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne con estolones superficiales.",
+    caracteristicas: "Hojas densamente hirsutas, espigas 3-6 de 4-5 cm, espiguillas de 2 mm y lemma con quilla brevemente pestañosa y angostamente alada.",
+    distribucion: "África del Sur; adventicia en Argentina, en suelos sueltos. Tóxica.",
+    imagen: ""
+  },
+
+  diplachne_dubia: {
+    id: "diplachne_dubia",
+    nombreCientifico: "Diplachne dubia",
+    nombreVulgar: "Diplachne",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne cespitosa, de hasta 80 cm de alto.",
+    caracteristicas: "Hojas planas glabras, lemma bilobulada y espiguillas con 8-17 flores en racimos abiertos.",
+    distribucion: "América cálida; accidental en Palermo.",
+    imagen: ""
+  },
+
+  diplachne_fusca: {
+    id: "diplachne_fusca",
+    nombreCientifico: "Diplachne fusca",
+    nombreVulgar: "Diplachne",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne, de hasta 80 cm de alto.",
+    caracteristicas: "Hojas planas, anteras de 1-1,5 mm, lemma no aristada e inflorescencia de racimos flexuosos.",
+    distribucion: "Norte de África; accidental en Dock Sur.",
+    imagen: ""
+  },
+
+  diplachne_fascicularis: {
+    id: "diplachne_fascicularis",
+    nombreCientifico: "Diplachne fascicularis",
+    nombreVulgar: "Diplachne",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba anual, de 70-80 cm de alto.",
+    caracteristicas: "Hojas subconvolutas, lemma acuminada con dos dientes agudos y arista de 1 mm; racimos numerosos.",
+    distribucion: "América cálida; rara en la región, citada para Dock Sud.",
+    imagen: ""
+  },
+
+  diplachne_uninervia: {
+    id: "diplachne_uninervia",
+    nombreCientifico: "Diplachne uninervia",
+    nombreVulgar: "Diplachne",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba anual erecta, de 30-90 cm de alto.",
+    caracteristicas: "Espiguillas 6-10-floras y lemma con tres dientes cortos en el ápice, a veces con el central aristulado.",
+    distribucion: "América cálida; común en suelos salobres.",
+    imagen: ""
+  },
+
+  eleusine_indica: {
+    id: "eleusine_indica",
+    nombreCientifico: "Eleusine indica",
+    nombreVulgar: "Eleusine",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba anual con tallos ascendentes radicantes en los nudos, de 30-50 cm de alto.",
+    caracteristicas: "Hojas planas o plegadas, espigas 5-12 de 5-7 cm y espiguillas ovadas agudas 6-10-floras.",
+    distribucion: "Asia; adventicia en regiones cálidas, en suelos modificados.",
+    imagen: ""
+  },
+
+  eleusine_tristachya: {
+    id: "eleusine_tristachya",
+    nombreCientifico: "Eleusine tristachya",
+    nombreVulgar: "Eleusine",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne, de 10-30 cm de alto.",
+    caracteristicas: "Hojas lineales, espigas 2-4 gruesas de 1-4 cm y espiguillas ovado-lanceoladas de 6-9 mm.",
+    distribucion: "África y América tropicales; muy frecuente en suelos modificados.",
+    imagen: ""
+  },
+
+  spartina_montevidensis: {
+    id: "spartina_montevidensis",
+    nombreCientifico: "Spartina montevidensis",
+    nombreVulgar: "Espartillo",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne rizomatosa, formando matas robustas de 1-1,5 m.",
+    caracteristicas: "Hojas convolutas, pocas espigas de 3-7 cm adosadas al eje principal y espiguillas rígidas de 9-12 mm.",
+    distribucion: "Uruguay y centro y este de Argentina; en campos salados inundables.",
+    imagen: ""
+  },
+
+  spartina_brasiliensis: {
+    id: "spartina_brasiliensis",
+    nombreCientifico: "Spartina brasiliensis",
+    nombreVulgar: "Espartillo",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne rizomatosa, de cerca de 1 m de alto.",
+    caracteristicas: "Hojas convolutas muy largas, espigas 12-20 de unos 10 cm algo divergentes y espiguillas de 14-16 mm.",
+    distribucion: "América del Sur; arenales y cangrejales de Punta del Indio y Pipinas.",
+    imagen: ""
+  },
+
+  spartina_longispica: {
+    id: "spartina_longispica",
+    nombreCientifico: "Spartina longispica",
+    nombreVulgar: "Espartillo",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba robusta rizomatosa, de alrededor de 1,5 m de alto.",
+    caracteristicas: "Hojas convolutas, espigas 7-11 de 11-16 cm aproximadas al raquis principal y glumas escabrosas en la quilla.",
+    distribucion: "Cangrejales de la región de Pipinas.",
+    imagen: ""
+  },
+
+  trichloris_crinita: {
+    id: "trichloris_crinita",
+    nombreCientifico: "Trichloris crinita",
+    nombreVulgar: "Trichloris",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne cespitosa con rizomas cortos y tallos de 50-100 cm.",
+    caracteristicas: "Hojas planas escabrosas, espigas 7-15 aproximadas, espiguillas con una flor hermafrodita y una estéril, lemma con tres aristas.",
+    distribucion: "Sur de Estados Unidos, norte de México y norte y centro de Argentina; rara en la región.",
+    imagen: ""
+  },
+
+  leptochloa_chloridiformis: {
+    id: "leptochloa_chloridiformis",
+    nombreCientifico: "Leptochloa chloridiformis",
+    nombreVulgar: "Leptochloa",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne cespitosa, de 60-80 cm de alto.",
+    caracteristicas: "Espigas 5-10 fasciculadas en el ápice, espiguillas 3-4-floras y lemma bilobulada cortamente aristada.",
+    distribucion: "Norte de Argentina y Paraguay; hallada en Campana y Palermo.",
+    imagen: ""
+  },
+
+  leptochloa_virgata: {
+    id: "leptochloa_virgata",
+    nombreCientifico: "Leptochloa virgata",
+    nombreVulgar: "Leptochloa",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne cespitosa.",
+    caracteristicas: "Espigas numerosas y delgadas a lo largo del raquis principal, espiguillas rojizo-violáceas 5-6-floras y lemmas largamente aristadas.",
+    distribucion: "América cálida; citada para Palermo.",
+    imagen: ""
+  },
+
+  schedonnardus_paniculatus: {
+    id: "schedonnardus_paniculatus",
+    nombreCientifico: "Schedonnardus paniculatus",
+    nombreVulgar: "Schedonnardus",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne glauca y tenue, de 20-40 cm de alto.",
+    caracteristicas: "Hojas basales planas y estrechas, espigas de 2-10 cm y espiguillas adosadas al raquis de 4 mm.",
+    distribucion: "Sur de Estados Unidos y centro de Argentina; muy rara en Palermo.",
+    imagen: ""
+  },
+
+  willkommia_texana_stolonifera: {
+    id: "willkommia_texana_stolonifera",
+    nombreCientifico: "Willkommia texana var. stolonifera",
+    nombreVulgar: "Willkommia",
+    familia: "17. Gramineae - Chlorideae",
+    descripcion: "Hierba perenne estolonífera, glabra, de 20-30 cm de alto.",
+    caracteristicas: "Hojas cortas convolutas, espigas 6-12 de 2-2,5 cm y espiguillas de 4-5 mm.",
+    distribucion: "Variedad hallada únicamente en la región de Pipinas, cerca de la bahía de Samborombón.",
     imagen: ""
   },
 
