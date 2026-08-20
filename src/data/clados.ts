@@ -16,6 +16,7 @@ export const cladosTree: Record<string, CladoNode> = {
   angiosperm_1: {
     id: "angiosperm_1",
     milestone: "Angiospermae",
+    manualPage: 39,
     descripcion: "¿Cuántos cotiledones tiene el embrión?",
     opcionA: {
       label: "1 cotiledón - Hojas paralelinervadas (Monocotiledoneae)",

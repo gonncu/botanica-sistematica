@@ -995,6 +995,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   pteridophyta_a: {
     id: "pteridophyta_a",
     milestone: "Pteridophyta",
+    manualPage: 10,
     descripcion: "Pteridophyta: ¿es una planta acuática o terrestre?",
     opcionA: {
       label: "Acuática, flotante o arraigada; a veces de terrenos pantanosos",
@@ -1108,6 +1109,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   isoetaceae_terminal: {
     id: "isoetaceae_terminal",
     milestone: "Isoetaceae",
+    manualPage: 19,
     descripcion: "Isoetaceae: única especie citada por el manual para la región.",
     opcionA: {
       label: "Identificar como Isoetes ekmanii",
@@ -1124,6 +1126,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   equisetaceae_terminal: {
     id: "equisetaceae_terminal",
     milestone: "Equisetaceae",
+    manualPage: 20,
     descripcion: "Equisetaceae: única especie citada por el manual para la región.",
     opcionA: {
       label: "Identificar como Equisetum giganteum",
@@ -1140,6 +1143,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   selaginellaceae_a: {
     id: "selaginellaceae_a",
     milestone: "Selaginellaceae",
+    manualPage: 21,
     descripcion: "Selaginellaceae - A: ¿las hojas son auriculadas y cómo son los tallos?",
     opcionA: {
       label: "Hojas no auriculadas; tallos filiformes no articulados; rizóforos ventrales",
@@ -1155,6 +1159,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   schizaeaceae_terminal: {
     id: "schizaeaceae_terminal",
     milestone: "Schizaeaceae",
+    manualPage: 23,
     descripcion: "Schizaeaceae: única especie citada por el manual para la región.",
     opcionA: {
       label: "Identificar como Aneimia tweediana",
@@ -1171,6 +1176,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   ophioglossaceae_terminal: {
     id: "ophioglossaceae_terminal",
     milestone: "Ophioglossaceae",
+    manualPage: 24,
     descripcion: "Ophioglossaceae: única especie citada por el manual para la región.",
     opcionA: {
       label: "Identificar como Ophioglossum crotalophoroides",
@@ -1187,6 +1193,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   osmundaceae_terminal: {
     id: "osmundaceae_terminal",
     milestone: "Osmundaceae",
+    manualPage: 25,
     descripcion: "Osmundaceae: única especie citada por el manual para la región.",
     opcionA: {
       label: "Identificar como Osmunda palustris",
@@ -1203,6 +1210,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   polypodiaceae_a: {
     id: "polypodiaceae_a",
     milestone: "Polypodiaceae",
+    manualPage: 26,
     descripcion: "Polypodiaceae - A: ¿los soros están descubiertos o cubiertos por indusio?",
     opcionA: {
       label: "Soros descubiertos, sin indusio o con indusio rudimentario no apreciable",
@@ -1218,6 +1226,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   polypodiaceae_b: {
     id: "polypodiaceae_b",
     milestone: "Polypodiaceae",
+    manualPage: 26,
     descripcion: "Polypodiaceae - B: con soros descubiertos, ¿cómo se disponen las hojas?",
     opcionA: {
       label: "Hojas distantes entre sí, articuladas sobre tallo rastrero o rizoma",
@@ -1233,6 +1242,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   polypodiaceae_c: {
     id: "polypodiaceae_c",
     milestone: "Polypodiaceae",
+    manualPage: 26,
     descripcion: "Polypodiaceae - C: ¿cómo son los soros?",
     opcionA: {
       label: "Soros alargados, extendiéndose a lo largo de las nervaduras; hojas gráciles muy divididas",
@@ -1248,6 +1258,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   polypodiaceae_d: {
     id: "polypodiaceae_d",
     milestone: "Polypodiaceae",
+    manualPage: 26,
     descripcion: "Polypodiaceae - D: con soros circulares, ¿cómo son las pinas?",
     opcionA: {
       label: "Pinas divididas en tres segmentos oblongo-lanceolados, enteros",
@@ -1263,6 +1274,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   polypodiaceae_e: {
     id: "polypodiaceae_e",
     milestone: "Polypodiaceae",
+    manualPage: 26,
     descripcion: "Polypodiaceae - E: ¿el indusio está formado por el borde revoluto de la hoja?",
     opcionA: {
       label: "Indusio formado por el borde revoluto de la hoja",
@@ -1278,6 +1290,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   polypodiaceae_f: {
     id: "polypodiaceae_f",
     milestone: "Polypodiaceae",
+    manualPage: 26,
     descripcion: "Polypodiaceae - F: con borde revoluto, ¿cómo son los soros?",
     opcionA: {
       label: "Soros muy alargados, continuos a lo largo del borde de las divisiones de la hoja",
@@ -1293,6 +1306,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   polypodiaceae_g: {
     id: "polypodiaceae_g",
     milestone: "Polypodiaceae",
+    manualPage: 26,
     descripcion: "Polypodiaceae - G: con soros muy alargados, ¿hay indusio inferior?",
     opcionA: {
       label: "Soros entre el borde revoluto y un indusio inferior; frondas tri- o tetrapinatisectas",
@@ -1308,6 +1322,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   polypodiaceae_h: {
     id: "polypodiaceae_h",
     milestone: "Polypodiaceae",
+    manualPage: 26,
     descripcion: "Polypodiaceae - H: ¿cómo son las pínulas?",
     opcionA: {
       label: "Pínulas cuneiformes o flabeladas, palmatilobadas",
@@ -1323,6 +1338,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   polypodiaceae_j: {
     id: "polypodiaceae_j",
     milestone: "Polypodiaceae",
+    manualPage: 26,
     descripcion: "Polypodiaceae - J: con indusio membranoso, ¿cómo se disponen los soros?",
     opcionA: {
       label: "Soros alargados, paralelos a la nervadura central",
@@ -1338,6 +1354,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   polypodiaceae_k: {
     id: "polypodiaceae_k",
     milestone: "Polypodiaceae",
+    manualPage: 26,
     descripcion: "Polypodiaceae - K: ¿los soros son muy alargados o redondeados?",
     opcionA: {
       label: "Soros muy alargados",
@@ -1353,6 +1370,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   polypodiaceae_l: {
     id: "polypodiaceae_l",
     milestone: "Polypodiaceae",
+    manualPage: 26,
     descripcion: "Polypodiaceae - L: ¿las nervaduras llegan hasta el borde de la hoja?",
     opcionA: {
       label: "Las nervaduras no llegan hasta el borde de la hoja y algunas terminan en un soro",
@@ -1368,6 +1386,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   polypodiaceae_m: {
     id: "polypodiaceae_m",
     milestone: "Polypodiaceae",
+    manualPage: 26,
     descripcion: "Polypodiaceae - M: ¿dónde se ubican los soros respecto del margen?",
     opcionA: {
       label: "Soros muy próximos al margen, insertos lateralmente respecto de la nervadura",
@@ -1383,6 +1402,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   polypodiaceae_n: {
     id: "polypodiaceae_n",
     milestone: "Polypodiaceae",
+    manualPage: 26,
     descripcion: "Polypodiaceae - N: ¿cómo se inserta el indusio?",
     opcionA: {
       label: "Indusio peltado, inserto por su centro",
@@ -1398,6 +1418,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   polypodiaceae_o: {
     id: "polypodiaceae_o",
     milestone: "Polypodiaceae",
+    manualPage: 26,
     descripcion: "Polypodiaceae - O: con indusio peltado, ¿las nervaduras son anastomosadas?",
     opcionA: {
       label: "Nervaduras no anastomosadas; frondas bi- o tripinatisectas",
@@ -1413,6 +1434,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   polypodiaceae_p: {
     id: "polypodiaceae_p",
     milestone: "Polypodiaceae",
+    manualPage: 26,
     descripcion: "Polypodiaceae - P: con indusio reniforme o cordiforme, ¿cómo se inserta?",
     opcionA: {
       label: "Indusio reniforme, inserto por la escotadura",
@@ -1428,6 +1450,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   polypodium_a: {
     id: "polypodium_a",
     milestone: "Polypodium",
+    manualPage: 27,
     descripcion: "Polypodium - A: ¿cómo son las hojas?",
     opcionA: {
       label: "Hojas enteras, dimorfas y glabras; hojas fértiles lanceoladas",
@@ -1443,6 +1466,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   dryopteris_a: {
     id: "dryopteris_a",
     milestone: "Dryopteris",
+    manualPage: 29,
     descripcion: "Dryopteris - A: ¿cómo son las pinas?",
     opcionA: {
       label: "Pinas profundamente partidas, con segmentos oblongos angostos",
@@ -1458,6 +1482,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   dryopteris_b: {
     id: "dryopteris_b",
     milestone: "Dryopteris",
+    manualPage: 29,
     descripcion: "Dryopteris - B: con pinas profundamente partidas, ¿cómo son hojas, pecíolo y raquis?",
     opcionA: {
       label: "Hojas de 60-80 cm; base del pecíolo con mechón de escamas rojizas; raquis con pelos escamosos",
@@ -1473,6 +1498,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   dryopteris_c: {
     id: "dryopteris_c",
     milestone: "Dryopteris",
+    manualPage: 29,
     descripcion: "Dryopteris - C: con pinas crenadas o lobadas, ¿cómo son las hojas y nervaduras?",
     opcionA: {
       label: "Hojas de 20-50 cm, glabras; pinas crenadas; nervaduras ramificadas y anastomosadas",
@@ -1488,6 +1514,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   pteris_a: {
     id: "pteris_a",
     milestone: "Pteris",
+    manualPage: 31,
     descripcion: "Pteris - A: ¿cómo están divididas las hojas?",
     opcionA: {
       label: "Hojas simplemente pinadas; rizoma horizontal rastrero",
@@ -1503,6 +1530,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   pteris_b: {
     id: "pteris_b",
     milestone: "Pteris",
+    manualPage: 31,
     descripcion: "Pteris - B: con hojas simplemente pinadas, ¿cómo son las pinas y el raquis?",
     opcionA: {
       label: "Pinas numerosas, enteras, lineales; raquis con pelos escamosos lineales",
@@ -1518,6 +1546,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   pteris_c: {
     id: "pteris_c",
     milestone: "Pteris",
+    manualPage: 31,
     descripcion: "Pteris - C: con raquis glabro, ¿el raquis foliar es alado entre las pinas?",
     opcionA: {
       label: "Raquis foliar alado entre las pinas; pinas lineales, agudas y decurrentes",
@@ -1533,6 +1562,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   asplenium_a: {
     id: "asplenium_a",
     milestone: "Asplenium",
+    manualPage: 32,
     descripcion: "Asplenium - A: ¿cómo son las hojas y pinas?",
     opcionA: {
       label: "Hojas lanceoladas de 25-60 cm; pinas oblongo-falcadas, asimétricas y aserrado-dentadas",
@@ -1548,6 +1578,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   marsiliaceae_a: {
     id: "marsiliaceae_a",
     milestone: "Marsiliaceae",
+    manualPage: 33,
     descripcion: "Marsiliaceae - A: ¿cómo son las hojas? Esta decisión identifica la especie.",
     opcionA: {
       label: "Hojas lineales",
@@ -1563,6 +1594,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   salviniaceae_a: {
     id: "salviniaceae_a",
     milestone: "Salviniaceae",
+    manualPage: 35,
     descripcion: "Salviniaceae - A: ¿cómo son las hojas flotantes?",
     opcionA: {
       label: "Hojas de más de 5 mm de largo, dispuestas en rosetas o en series",
@@ -1578,6 +1610,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   salvinia_a: {
     id: "salvinia_a",
     milestone: "Salvinia",
+    manualPage: 35,
     descripcion: "Salvinia - A: ¿cómo es la base de las hojas flotantes y la disposición de los esporocarpos?",
     opcionA: {
       label: "Hojas profundamente hendidas en la base, algo plegadas; papilas con pelos soldados en el ápice; esporocarpos muy amontonados",
@@ -1593,6 +1626,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   spermatophyta_a: {
     id: "spermatophyta_a",
     milestone: "Spermatophyta",
+    manualPage: 37,
     descripcion: "Spermatophyta: ¿los óvulos están desnudos o encerrados en un ovario?",
     opcionA: {
       label: "Óvulos desnudos (Gymnospermae)",
@@ -1608,6 +1642,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   ephedraceae_a: {
     id: "ephedraceae_a",
     milestone: "Ephedraceae",
+    manualPage: 37,
     descripcion: "Ephedraceae - A: ¿cómo son los estróbilos femeninos y las ramas?",
     opcionA: {
       label: "Estróbilos femeninos pedunculados, con 3-5 verticilos de brácteas; ramas péndulas o inclinadas; anteras 6-8",
@@ -1623,6 +1658,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   dicot_root: {
     id: "dicot_root",
     milestone: "Dicotyledoneae",
+    manualPage: 12,
     descripcion: "Dicotyledoneae: ¿cómo son las flores?",
     opcionA: {
       label: "Flores desnudas, sin cáliz ni corola",
@@ -1680,6 +1716,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   dicot_group_a_1: {
     id: "dicot_group_a_1",
     milestone: "Grupo A",
+    manualPage: 12,
     descripcion: "Grupo A: ¿la planta es sumergida con hojas verticiladas divididas dicotómicamente?",
     opcionA: {
       label: "Sí",
@@ -1737,6 +1774,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   dicot_group_b_a: {
     id: "dicot_group_b_a",
     milestone: "Grupo B",
+    manualPage: 13,
     descripcion: "Grupo B - A: ¿las flores están encerradas en un receptáculo globoso o piriforme (sicono)?",
     opcionA: {
       label: "Sí; árboles con látex",
@@ -2770,6 +2808,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   dicot_group_pending_d: {
     id: "dicot_group_pending_d",
     milestone: "Grupo D",
+    manualPage: 16,
     descripcion: "Grupo D - A: ¿la planta tiene pelos urticantes?",
     opcionA: {
       label: "Sí",
@@ -2920,6 +2959,7 @@ export const manualKeyData: Record<string, CladoNode> = {
   dicot_group_pending_e: {
     id: "dicot_group_pending_e",
     milestone: "Grupo E",
+    manualPage: 17,
     descripcion: "Grupo E - A: con corola o perigonio más o menos soldado, ¿cómo es el ovario?",
     opcionA: {
       label: "Ovario súpero",

@@ -12,6 +12,13 @@ interface HistoryEntry {
   nodeId: string;
   keyStep?: string;
   milestone?: string;
+  manualPage?: number;
+}
+
+function formatMilestone(entry: HistoryEntry) {
+  return entry.manualPage
+    ? `${entry.milestone} (p. ${entry.manualPage})`
+    : entry.milestone;
 }
 
 function inferKeyBase(node: CladoNode) {
@@ -47,7 +54,7 @@ function buildKeyPath(history: HistoryEntry[]) {
 
     if (entry.milestone && !seenMilestones.has(entry.milestone)) {
       seenMilestones.add(entry.milestone);
-      path.push(entry.milestone);
+      path.push(formatMilestone(entry) || entry.milestone);
     }
   });
 
@@ -64,10 +71,14 @@ export default function Quiz({ onComplete }: QuizProps) {
   const currentNode: CladoNode | undefined = cladosTree[currentNodeId];
   const keyPath = buildKeyPath(history);
   const milestones = history
-    .map((entry) => entry.milestone)
-    .filter((milestone, index, allMilestones) => {
-      return milestone && allMilestones.indexOf(milestone) === index;
+    .filter((entry, index, allEntries) => {
+      return (
+        entry.milestone &&
+        allEntries.findIndex((item) => item.milestone === entry.milestone) ===
+          index
+      );
     })
+    .map((entry) => formatMilestone(entry))
     .join(" > ");
 
   if (!currentNode) {
@@ -146,6 +157,9 @@ export default function Quiz({ onComplete }: QuizProps) {
     const nextMilestone = nextOption.nextNodeId
       ? cladosTree[nextOption.nextNodeId]?.milestone
       : undefined;
+    const nextManualPage = nextOption.nextNodeId
+      ? cladosTree[nextOption.nextNodeId]?.manualPage
+      : undefined;
     
     // Si la opción tiene una especie asociada
     if (nextOption.especieId) {
@@ -153,7 +167,12 @@ export default function Quiz({ onComplete }: QuizProps) {
       if (especie) {
         setHistory([
           ...history,
-          { nodeId: currentNodeId, keyStep, milestone: nextMilestone },
+          {
+            nodeId: currentNodeId,
+            keyStep,
+            milestone: nextMilestone,
+            manualPage: nextManualPage,
+          },
         ]);
         setIdentifiedEspecie(especie);
         return;
@@ -169,6 +188,7 @@ export default function Quiz({ onComplete }: QuizProps) {
           nodeId: nextOption.nextNodeId,
           keyStep,
           milestone: nextMilestone,
+          manualPage: nextManualPage,
         },
       ]);
       setIdentifiedEspecie(null);

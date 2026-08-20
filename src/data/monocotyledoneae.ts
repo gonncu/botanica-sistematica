@@ -6,6 +6,7 @@ export const monocotiledoneaeData = {
   monocot_root: {
     id: "monocot_root",
     milestone: "Monocotiledoneae",
+    manualPage: 39,
     descripcion: "Clase Monocotiledoneae: Embrión con 1 solo cotiledón. Hojas generalmente paralelinervadas. Flores generalmente trimeras.",
     opcionA: {
       label: "Plantas arborescentes, con tronco terminado en una sola yema",
@@ -95,6 +96,7 @@ export const monocotiledoneaeData = {
   gramineae_tribe_a: {
     id: "gramineae_tribe_a",
     milestone: "Gramineae",
+    manualPage: 49,
     descripcion: "Gramineae - A: ¿las cañas son leñosas y la floración ocurre cada varios años?",
     opcionA: {
       label: "Plantas perennes, con cañas leñosas elevadas, de floración espaciada por varios años",
@@ -111,6 +113,7 @@ export const monocotiledoneaeData = {
   gramineae_tribe_b: {
     id: "gramineae_tribe_b",
     milestone: "Gramineae",
+    manualPage: 49,
     descripcion: "Gramineae - B: ¿cómo son las espiguillas, glumas, pálea y androceo?",
     opcionA: {
       label: "Espiguillas unifloras, con glumas rudimentarias o nulas; pálea 3-nervada; androceo 6-1",
@@ -127,6 +130,7 @@ export const monocotiledoneaeData = {
   gramineae_tribe_c: {
     id: "gramineae_tribe_c",
     milestone: "Gramineae",
+    manualPage: 49,
     descripcion: "Gramineae - C: ¿cómo se comprimen las espiguillas y dónde articula la raquilla?",
     opcionA: {
       label: "Espiguillas más o menos comprimidas lateralmente; raquilla articulada por encima de las glumas",
@@ -143,6 +147,7 @@ export const monocotiledoneaeData = {
   gramineae_tribe_d: {
     id: "gramineae_tribe_d",
     milestone: "Gramineae",
+    manualPage: 49,
     descripcion: "Gramineae - D: ¿la inflorescencia es espiga o panoja?",
     opcionA: {
       label: "Inflorescencia en espiga dística o unilateral",
@@ -159,6 +164,7 @@ export const monocotiledoneaeData = {
   gramineae_tribe_e: {
     id: "gramineae_tribe_e",
     milestone: "Gramineae",
+    manualPage: 49,
     descripcion: "Gramineae - E: ¿cómo se disponen las espiguillas sobre el raquis?",
     opcionA: {
       label: "Espiguillas dispuestas a ambos lados del raquis",
@@ -175,6 +181,7 @@ export const monocotiledoneaeData = {
   gramineae_tribe_f: {
     id: "gramineae_tribe_f",
     milestone: "Gramineae",
+    manualPage: 49,
     descripcion: "Gramineae - F: ¿cuántas flores tienen las espiguillas?",
     opcionA: {
       label: "Espiguillas 2-multifloras",
@@ -191,6 +198,7 @@ export const monocotiledoneaeData = {
   gramineae_tribe_g: {
     id: "gramineae_tribe_g",
     milestone: "Gramineae",
+    manualPage: 49,
     descripcion: "Gramineae - G: ¿cómo son las glumelas respecto de las glumas?",
     opcionA: {
       label: "Glumelas generalmente mayores que las glumas, múticas o aristadas desde el ápice",
@@ -207,6 +215,7 @@ export const monocotiledoneaeData = {
   gramineae_tribe_h: {
     id: "gramineae_tribe_h",
     milestone: "Gramineae",
+    manualPage: 49,
     descripcion: "Gramineae - H: ¿dónde está el antecio fértil?",
     opcionA: {
       label: "Antecio fértil basal",
@@ -223,6 +232,7 @@ export const monocotiledoneaeData = {
   gramineae_tribe_j: {
     id: "gramineae_tribe_j",
     milestone: "Gramineae",
+    manualPage: 49,
     descripcion: "Gramineae - J: ¿cómo es la lemma fértil?",
     opcionA: {
       label: "Lemma fértil papirácea o cartilaginosa, más consistente que las glumas",
@@ -239,6 +249,7 @@ export const monocotiledoneaeData = {
   festuceae_a: {
     id: "festuceae_a",
     milestone: "Festuceae",
+    manualPage: 51,
     descripcion: "Festuceae - A: ¿la lemma termina en varias aristas que simulan un papus?",
     opcionA: {
       label: "Lemma terminada superiormente en 5 o más aristas que simulan un papus",
@@ -255,6 +266,7 @@ export const monocotiledoneaeData = {
   festuceae_b: {
     id: "festuceae_b",
     milestone: "Festuceae",
+    manualPage: 51,
     descripcion: "Festuceae - B: ¿el porte es muy robusto?",
     opcionA: {
       label: "Plantas muy robustas, de más de 1,5 m, con inflorescencia en penacho y pelos plateados",
@@ -271,6 +283,7 @@ export const monocotiledoneaeData = {
   festuceae_c: {
     id: "festuceae_c",
     milestone: "Festuceae",
+    manualPage: 51,
     descripcion: "Festuceae - C: ¿cómo se distribuyen las hojas y cómo son las flores?",
     opcionA: {
       label: "Hojas muy largas, amontonadas en la base de las cañas; flores dioicas",
@@ -287,6 +300,7 @@ export const monocotiledoneaeData = {
   festuceae_d: {
     id: "festuceae_d",
     milestone: "Festuceae",
+    manualPage: 51,
     descripcion: "Festuceae - D: ¿dónde están los pelos largos?",
     opcionA: {
       label: "Lemma velluda y raquilla glabra",
@@ -303,6 +317,7 @@ export const monocotiledoneaeData = {
   festuceae_e: {
     id: "festuceae_e",
     milestone: "Festuceae",
+    manualPage: 51,
     descripcion: "Festuceae - E: ¿cómo son glumas, color y porte de las espiguillas?",
     opcionA: {
       label: "Glumas membranosas anchas, iguales o mayores que la espiguilla; espiguillas péndulas no verdes; lemma mútica",
@@ -319,6 +334,7 @@ export const monocotiledoneaeData = {
   festuceae_f: {
     id: "festuceae_f",
     milestone: "Festuceae",
+    manualPage: 51,
     descripcion: "Festuceae - F: ¿las espiguillas son dioicas o hermafroditas?",
     opcionA: {
       label: "Espiguillas dioicas",
@@ -335,6 +351,7 @@ export const monocotiledoneaeData = {
   festuceae_g: {
     id: "festuceae_g",
     milestone: "Festuceae",
+    manualPage: 51,
     descripcion: "Festuceae - G: ¿las espiguillas femeninas tienen pelos lanosos?",
     opcionA: {
       label: "Espiguillas masculinas y femeninas glabras; plantas rizomatosas de suelos salados",
@@ -351,6 +368,7 @@ export const monocotiledoneaeData = {
   festuceae_h: {
     id: "festuceae_h",
     milestone: "Festuceae",
+    manualPage: 51,
     descripcion: "Festuceae - H: ¿la espiguilla es globosa o alargada?",
     opcionA: {
       label: "Espiguillas más o menos globosas, casi tan anchas como largas; lemma con margen membranoso",
@@ -367,6 +385,7 @@ export const monocotiledoneaeData = {
   festuceae_j: {
     id: "festuceae_j",
     milestone: "Festuceae",
+    manualPage: 51,
     descripcion: "Festuceae - J: ¿las espiguillas son lineales cilíndricas o lanceoladas?",
     opcionA: {
       label: "Espiguillas lineales, más o menos cilíndricas; lemmas obtusas y múticas",
@@ -383,6 +402,7 @@ export const monocotiledoneaeData = {
   festuceae_k: {
     id: "festuceae_k",
     milestone: "Festuceae",
+    manualPage: 51,
     descripcion: "Festuceae - K: ¿los estilos son persistentes y el cariopse hendido?",
     opcionA: {
       label: "Estilos alargados, persistentes; lemmas con nervaduras prominentes; cariopse con hendidura longitudinal",
@@ -399,6 +419,7 @@ export const monocotiledoneaeData = {
   festuceae_l: {
     id: "festuceae_l",
     milestone: "Festuceae",
+    manualPage: 51,
     descripcion: "Festuceae - L: ¿cuántas nervaduras tiene la lemma?",
     opcionA: {
       label: "Lemma trinervada",
@@ -415,6 +436,7 @@ export const monocotiledoneaeData = {
   festuceae_m: {
     id: "festuceae_m",
     milestone: "Festuceae",
+    manualPage: 51,
     descripcion: "Festuceae - M: ¿qué tamaño tienen las espiguillas?",
     opcionA: {
       label: "Espiguillas grandes, de 15-35 mm; lemma mucronada o aristada",
@@ -431,6 +453,7 @@ export const monocotiledoneaeData = {
   festuceae_n: {
     id: "festuceae_n",
     milestone: "Festuceae",
+    manualPage: 51,
     descripcion: "Festuceae - N: ¿la lemma es carenada en el dorso?",
     opcionA: {
       label: "Lemma carenada en el dorso",
@@ -447,6 +470,7 @@ export const monocotiledoneaeData = {
   festuceae_o: {
     id: "festuceae_o",
     milestone: "Festuceae",
+    manualPage: 51,
     descripcion: "Festuceae - O: ¿la lemma es mútica o mucronada/aristada?",
     opcionA: {
       label: "Lemmas múticas",
@@ -463,6 +487,7 @@ export const monocotiledoneaeData = {
   festuceae_p: {
     id: "festuceae_p",
     milestone: "Festuceae",
+    manualPage: 51,
     descripcion: "Festuceae - P: ¿cómo son los pedicelos y las lemmas?",
     opcionA: {
       label: "Espiguillas con pedicelos muy gruesos; lemmas múticas o mucronadas",
@@ -479,6 +504,7 @@ export const monocotiledoneaeData = {
   bromus_a: {
     id: "bromus_a",
     milestone: "Bromus",
+    manualPage: 56,
     descripcion: "Bromus - A: ¿qué longitud tienen las aristas de las lemmas?",
     opcionA: {
       label: "Lemmas con aristas de 0,5 mm; espiguillas de 15-18 mm, lanceoladas y comprimidas",
@@ -495,6 +521,7 @@ export const monocotiledoneaeData = {
   bromus_b: {
     id: "bromus_b",
     milestone: "Bromus",
+    manualPage: 56,
     descripcion: "Bromus - B: ¿las lemmas son glabras o pubescentes?",
     opcionA: {
       label: "Lemmas glabras, escabrosas",
@@ -511,6 +538,7 @@ export const monocotiledoneaeData = {
   bromus_c: {
     id: "bromus_c",
     milestone: "Bromus",
+    manualPage: 56,
     descripcion: "Bromus - C: ¿cómo son las espiguillas y la carena de las lemmas?",
     opcionA: {
       label: "Espiguillas muy comprimidas, lanceoladas, 7-10-floras, de 25-30 mm; lemmas carenadas y arista de unos 2 mm",
@@ -527,6 +555,7 @@ export const monocotiledoneaeData = {
   bromus_d: {
     id: "bromus_d",
     milestone: "Bromus",
+    manualPage: 56,
     descripcion: "Bromus - D: ¿cómo son glumas, lemmas y espiguillas?",
     opcionA: {
       label: "Glumas acuminadas o subuladas; lemmas acuminadas con arista de 20-25 mm; espiguillas flojas muy alargadas",
@@ -543,6 +572,7 @@ export const monocotiledoneaeData = {
   bromus_e: {
     id: "bromus_e",
     milestone: "Bromus",
+    manualPage: 56,
     descripcion: "Bromus - E: ¿la panoja es densa o laxa?",
     opcionA: {
       label: "Panojas densas, casi espiciformes y erectas; lemmas anchamente ovadas, bidentadas y largamente aristadas",
@@ -559,6 +589,7 @@ export const monocotiledoneaeData = {
   bromus_f: {
     id: "bromus_f",
     milestone: "Bromus",
+    manualPage: 56,
     descripcion: "Bromus - F: ¿la panoja es contraída o laxa?",
     opcionA: {
       label: "Panojas contraídas y densas; espiguillas lanceoladas gruesas; hierba anual pubescente",
@@ -575,6 +606,7 @@ export const monocotiledoneaeData = {
   bromus_g: {
     id: "bromus_g",
     milestone: "Bromus",
+    manualPage: 56,
     descripcion: "Bromus - G: ¿qué longitud tiene la arista respecto de la lemma?",
     opcionA: {
       label: "Arista de la misma longitud que la lemma; panojas laxas inclinadas; espiguillas de 15-20 mm",
@@ -681,6 +713,7 @@ export const monocotiledoneaeData = {
   typhaceae_a: {
     id: "typhaceae_a",
     milestone: "Typhaceae",
+    manualPage: 39,
     descripcion: "Typhaceae - A: ¿las flores femeninas tienen brácteas y cómo es el polen?",
     opcionA: {
       label: "Flores femeninas sin brácteas; polen en tétradas",
@@ -697,6 +730,7 @@ export const monocotiledoneaeData = {
   potamogetonaceae_a: {
     id: "potamogetonaceae_a",
     milestone: "Potamogetonaceae",
+    manualPage: 39,
     descripcion: "Potamogetonaceae - A: ¿cómo son las flores?",
     opcionA: {
       label: "Flores hermafroditas, agrupadas en espigas",
@@ -713,6 +747,7 @@ export const monocotiledoneaeData = {
   potamogeton_a: {
     id: "potamogeton_a",
     milestone: "Potamogeton",
+    manualPage: 41,
     descripcion: "Potamogeton - A: ¿cómo son las hojas?",
     opcionA: {
       label: "Hojas, al menos las superiores, elípticas y anchas",
@@ -729,6 +764,7 @@ export const monocotiledoneaeData = {
   potamogeton_b: {
     id: "potamogeton_b",
     milestone: "Potamogeton",
+    manualPage: 41,
     descripcion: "Potamogeton - B: con hojas elípticas, ¿cómo son las hojas y espigas?",
     opcionA: {
       label: "Hojas nadantes obovadas, redondeadas en el ápice; hojas sumergidas lineales; espigas cortas de 4-6 flores",
@@ -745,6 +781,7 @@ export const monocotiledoneaeData = {
   potamogeton_c: {
     id: "potamogeton_c",
     milestone: "Potamogeton",
+    manualPage: 41,
     descripcion: "Potamogeton - C: con hojas lineales, ¿son envainadoras?",
     opcionA: {
       label: "Hojas no envainadoras, sin lígula",
@@ -761,6 +798,7 @@ export const monocotiledoneaeData = {
   potamogeton_d: {
     id: "potamogeton_d",
     milestone: "Potamogeton",
+    manualPage: 41,
     descripcion: "Potamogeton - D: con hojas no envainadoras, ¿cuál es el ancho de la hoja?",
     opcionA: {
       label: "Hojas de más de 2,5 mm de ancho",
@@ -777,6 +815,7 @@ export const monocotiledoneaeData = {
   potamogeton_e: {
     id: "potamogeton_e",
     milestone: "Potamogeton",
+    manualPage: 41,
     descripcion: "Potamogeton - E: con hojas de más de 2,5 mm, ¿cómo son hojas, estípulas y espigas?",
     opcionA: {
       label: "Hojas de 5-11 cm por 3-10 mm, agudas; estípulas de 1,8-2,4 cm; espigas paucifloras de 12-15 mm",
@@ -793,6 +832,7 @@ export const monocotiledoneaeData = {
   scheuchzeriaceae_a: {
     id: "scheuchzeriaceae_a",
     milestone: "Scheuchzeriaceae",
+    manualPage: 43,
     descripcion: "Scheuchzeriaceae - A: ¿las flores tienen perigonio y cómo se agrupan?",
     opcionA: {
       label: "Flores con perigonio, hermafroditas, en espigas o racimos laxos",
@@ -809,6 +849,7 @@ export const monocotiledoneaeData = {
   triglochin_a: {
     id: "triglochin_a",
     milestone: "Triglochin",
+    manualPage: 43,
     descripcion: "Triglochin - A: ¿cómo son los frutos y el hábito?",
     opcionA: {
       label: "Frutos lineales de 7-8 mm; hierba perenne con rizoma corto y estolones terminados en bulbillos",
@@ -927,6 +968,7 @@ export const monocotiledoneaeData = {
   hydrocharitaceae_a: {
     id: "hydrocharitaceae_a",
     milestone: "Hydrocharitaceae",
+    manualPage: 47,
     descripcion: "Hydrocharitaceae - A: ¿la planta es flotante o sumergida?",
     opcionA: {
       label: "Plantas flotantes; hojas pecioladas con lámina elíptico-acorazonada",
@@ -943,6 +985,7 @@ export const monocotiledoneaeData = {
   elodea_a: {
     id: "elodea_a",
     milestone: "Elodea",
+    manualPage: 48,
     descripcion: "Elodea - A: ¿cómo son las hojas y flores?",
     opcionA: {
       label: "Hojas opuestas o en verticilos de 3, lineal-lanceoladas, de 1,5-2,5 mm de ancho; flores pequeñas blanquecinas",
@@ -974,6 +1017,7 @@ export const monocotiledoneaeData = {
   alismataceae_a: {
     id: "alismataceae_a",
     milestone: "Alismataceae",
+    manualPage: 45,
     descripcion: "Alismataceae - A: ¿las flores son hermafroditas o diclinas?",
     opcionA: {
       label: "Flores hermafroditas; hojas elípticas o lanceoladas",
@@ -990,6 +1034,7 @@ export const monocotiledoneaeData = {
   echinodorus_a: {
     id: "echinodorus_a",
     milestone: "Echinodorus",
+    manualPage: 45,
     descripcion: "Echinodorus - A: ¿cómo es el porte y las hojas?",
     opcionA: {
       label: "Plantas robustas, de 0,5-1,5 m; hojas grandes, largamente pecioladas, anchamente elípticas u ovadas",
@@ -1006,6 +1051,7 @@ export const monocotiledoneaeData = {
   echinodorus_b: {
     id: "echinodorus_b",
     milestone: "Echinodorus",
+    manualPage: 45,
     descripcion: "Echinodorus - B: en plantas robustas, ¿cómo son las hojas e inflorescencias?",
     opcionA: {
       label: "Hojas con pequeños puntos y rayitas cortas translúcidas; inflorescencias ramificadas",
