@@ -10,16 +10,48 @@ interface RecordsListProps {
   isLoading: boolean;
 }
 
+function normalizeSearchText(value: string) {
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+}
+
 export default function RecordsList({ records, isLoading }: RecordsListProps) {
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [rangeStart, setRangeStart] = useState("");
   const [rangeEnd, setRangeEnd] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
+  const filteredRecords = useMemo(() => {
+    const normalizedSearch = normalizeSearchText(searchTerm.trim());
+    if (!normalizedSearch) return records;
+
+    return records.filter((record) => {
+      const especie = especiesData[record.especie_id];
+      const searchableText = [
+        record.plant_number.toString(),
+        record.especie_id,
+        especie?.nombreCientifico,
+        especie?.nombreVulgar,
+        especie?.familia,
+        record.nombre_usuario,
+        record.fecha,
+        record.lugar,
+        record.observaciones,
+      ]
+        .filter(Boolean)
+        .join(" ");
+
+      return normalizeSearchText(searchableText).includes(normalizedSearch);
+    });
+  }, [records, searchTerm]);
   const selectedRecords = useMemo(
     () => records.filter((record) => selectedIds.includes(record.id)),
     [records, selectedIds]
   );
   const allRecordsSelected =
-    records.length > 0 && selectedIds.length === records.length;
+    filteredRecords.length > 0 &&
+    filteredRecords.every((record) => selectedIds.includes(record.id));
 
   const toggleRecord = (recordId: string) => {
     setSelectedIds((current) =>
@@ -30,7 +62,13 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
   };
 
   const toggleAll = () => {
-    setSelectedIds(allRecordsSelected ? [] : records.map((record) => record.id));
+    const filteredIds = filteredRecords.map((record) => record.id);
+
+    setSelectedIds((current) =>
+      allRecordsSelected
+        ? current.filter((id) => !filteredIds.includes(id))
+        : [...new Set([...current, ...filteredIds])]
+    );
   };
 
   const selectRange = () => {
@@ -74,6 +112,16 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
       {!isLoading && records.length > 0 && (
         <div className="space-y-3">
           <div className="flex flex-col gap-2 border-b border-gray-200 pb-3">
+            <label className="text-sm font-medium text-gray-800">
+              Buscar
+              <input
+                type="search"
+                value={searchTerm}
+                onChange={(event) => setSearchTerm(event.target.value)}
+                placeholder="Nombre, familia, lugar o N°"
+                className="mt-1 w-full rounded border border-gray-300 px-3 py-2 text-sm"
+              />
+            </label>
             <div className="flex items-center justify-between gap-3">
               <label className="flex items-center gap-2 text-sm font-medium text-gray-800">
                 <input
@@ -132,11 +180,11 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
               Generar etiquetas seleccionadas
             </button>
             <p className="text-xs text-gray-700">
-              {selectedRecords.length} seleccionadas · Hoja A4 con 12 etiquetas
+              {selectedRecords.length} seleccionadas · {filteredRecords.length} visibles · Hoja A4 con 12 etiquetas
             </p>
           </div>
 
-          {records.map((record) => (
+          {filteredRecords.map((record) => (
             <article
               key={record.id}
               className="border border-gray-200 rounded p-4 flex flex-col gap-2"
@@ -171,6 +219,12 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
               )}
             </article>
           ))}
+
+          {filteredRecords.length === 0 && (
+            <p className="text-sm text-gray-700">
+              No hay registros que coincidan con la búsqueda.
+            </p>
+          )}
         </div>
       )}
     </section>
