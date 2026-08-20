@@ -1619,6 +1619,23 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Espiguillas sin ese involucro espinoso; continuar en la proxima tanda de Paniceae",
       keyStep: "B'",
+      nextNodeId: "paniceae_c"
+    }
+  },
+
+  paniceae_c: {
+    id: "paniceae_c",
+    milestone: "Paniceae",
+    manualPage: 93,
+    descripcion: "Paniceae - entrada parcial: espiguillas en grupos de 2-3 sobre un raquis triangular",
+    opcionA: {
+      label: "Espiguillas en grupos de 2-3, sesiles o cortamente pediceladas, dispuestas en dos hileras sobre uno de los lados de un raquis triangular",
+      keyStep: "C",
+      nextNodeId: "digitaria_a"
+    },
+    opcionA_prima: {
+      label: "Espiguillas con otros caracteres dentro de Paniceae; continuar en una proxima tanda",
+      keyStep: "C'",
       especieId: "paniceae"
     }
   },
@@ -1654,6 +1671,74 @@ export const monocotiledoneaeData = {
       label: "Involucro formado unicamente por espinas muy anchas en la base, abiertas, sin pelos retrorsos; espiguillas 2 por involucro",
       keyStep: "B'",
       especieId: "cenchrus_pauciflorus"
+    }
+  },
+
+  digitaria_a: {
+    id: "digitaria_a",
+    milestone: "Digitaria",
+    manualPage: 93,
+    descripcion: "Digitaria - A: disposicion de los racimos",
+    opcionA: {
+      label: "Racimos distribuidos a lo largo de un eje principal, no amontonados en el apice de la cana",
+      keyStep: "A",
+      nextNodeId: "digitaria_b"
+    },
+    opcionA_prima: {
+      label: "Racimos amontonados y mas o menos fasciculados en el apice de la cana florifera",
+      keyStep: "A'",
+      nextNodeId: "digitaria_c"
+    }
+  },
+
+  digitaria_b: {
+    id: "digitaria_b",
+    milestone: "Digitaria",
+    manualPage: 93,
+    descripcion: "Digitaria - B: relacion entre segunda gluma y lemma esteril",
+    opcionA: {
+      label: "Segunda gluma mucho mas corta que la tercera o lemma esteril; panoja de 3-6 racimos; espiguillas lanceoladas, velludas, de 4-5 mm",
+      keyStep: "B",
+      especieId: "digitaria_sellowii"
+    },
+    opcionA_prima: {
+      label: "Segunda gluma casi igual a la tercera o lemma esteril; panoja de 10 a muchos racimos; espiguillas lanceoladas, velludas, de 5-6 mm",
+      keyStep: "B'",
+      especieId: "digitaria_insularis"
+    }
+  },
+
+  digitaria_c: {
+    id: "digitaria_c",
+    milestone: "Digitaria",
+    manualPage: 93,
+    descripcion: "Digitaria - C: relacion entre segunda gluma y lemma esteril",
+    opcionA: {
+      label: "Segunda gluma mucho mas corta que la lemma esteril; espiguillas lanceoladas de unos 3 mm; racimos digitados de 5-15 cm",
+      keyStep: "C",
+      especieId: "digitaria_sanguinalis"
+    },
+    opcionA_prima: {
+      label: "Segunda gluma casi igual a la lemma esteril",
+      keyStep: "C'",
+      nextNodeId: "digitaria_d"
+    }
+  },
+
+  digitaria_d: {
+    id: "digitaria_d",
+    milestone: "Digitaria",
+    manualPage: 93,
+    descripcion: "Digitaria - D: tamano de las espiguillas",
+    opcionA: {
+      label: "Espiguillas de 3,5 mm o mas; gluma superior y lemma esteril iguales, acuminadas y velludas; racimos 3-5 de 3-7 cm",
+      keyStep: "D",
+      especieId: "digitaria_aequiglumis"
+    },
+    opcionA_prima: {
+      label: "Espiguillas de menos de 3 mm; espigas 8 a muchas, debiles, de 7-11 cm, alternas y amontonadas en el apice",
+      keyStep: "D'",
+      especieId: "digitaria_lanuginosa"
     }
   },
 
@@ -2836,6 +2921,61 @@ export const monocotEspecies = {
     descripcion: "Hierba anual, ascendente, de 20-90 cm de alto.",
     caracteristicas: "Involucro formado por espinas muy anchas en la base, abiertas, sin pelos retrorsos; racimos de 3-8 cm; espiguillas 2 en cada involucro.",
     distribucion: "America calida; muy comun en suelos arenosos.",
+    imagen: ""
+  },
+
+  digitaria_sellowii: {
+    id: "digitaria_sellowii",
+    nombreCientifico: "Digitaria sellowii",
+    nombreVulgar: "Digitaria sellowii",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, cespitosa, de unos 50 cm de alto.",
+    caracteristicas: "Hojas lineales, planas y pubescentes; panoja de 3-6 racimos espiciformes; espiguillas lanceoladas, velludas, de 4-5 mm.",
+    distribucion: "Norte y centro de la Argentina y Uruguay; hallada en Campana y San Isidro.",
+    imagen: ""
+  },
+
+  digitaria_insularis: {
+    id: "digitaria_insularis",
+    nombreCientifico: "Digitaria insularis",
+    nombreVulgar: "Digitaria insularis",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, cortamente rizomatosa, de alrededor de 1 m de alto.",
+    caracteristicas: "Hojas planas; panoja formada por 10 a muchos racimos espiciformes; espiguillas lanceoladas, velludas, de 5-6 mm.",
+    distribucion: "America tropical; rara en la region.",
+    imagen: ""
+  },
+
+  digitaria_sanguinalis: {
+    id: "digitaria_sanguinalis",
+    nombreCientifico: "Digitaria sanguinalis",
+    nombreVulgar: "Pasto de cuaresma; pata de gallina",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba anual, ascendente, con hojas planas.",
+    caracteristicas: "Racimos espiciformes en numero variable, digitados en el apice de la cana, de 5-15 cm; espiguillas lanceoladas de unos 3 mm.",
+    distribucion: "Europa; adventicia en America. Comun en jardines y rastrojos.",
+    imagen: ""
+  },
+
+  digitaria_aequiglumis: {
+    id: "digitaria_aequiglumis",
+    nombreCientifico: "Digitaria aequiglumis",
+    nombreVulgar: "Digitaria aequiglumis",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba anual con canas debiles de 30-60 cm de alto.",
+    caracteristicas: "Hojas planas, estrechas; espiguillas de 3,5 mm o mas; gluma superior y lemma esteril iguales, acuminadas y velludas.",
+    distribucion: "Uruguay y nordeste de la Argentina; en suelos humedos del Delta y de la ribera platense.",
+    imagen: ""
+  },
+
+  digitaria_lanuginosa: {
+    id: "digitaria_lanuginosa",
+    nombreCientifico: "Digitaria lanuginosa var. cuyabensis",
+    nombreVulgar: "Digitaria lanuginosa",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne de 40-80 cm de alto.",
+    caracteristicas: "Hojas planas y velludas; espiguillas de menos de 3 mm; espigas 8 a muchas, debiles, de 7-11 cm, alternas y amontonadas en el apice.",
+    distribucion: "America tropical; hallada unicamente en Puerto Nuevo.",
     imagen: ""
   },
 
