@@ -167,6 +167,190 @@ export const manualFamilyData: Record<string, Especie> = {
     "Helechos con esporangios en la cara inferior de las hojas.",
     "Esporangios con anillo de dehiscencia vertical."
   ),
+  polypodium_vaccinifolium: species(
+    "polypodium_vaccinifolium",
+    "Polypodium vaccinifolium",
+    "7. Polypodiaceae",
+    "Hierba perenne epífita, con tallos rastreros cubiertos de escamas membranosas.",
+    "Hojas enteras, dimorfas y glabras; hojas fértiles lanceoladas, con una serie de soros a cada lado.",
+    "América tropical, desde las Antillas hasta el Río de la Plata; común en el Delta y ribera del Plata."
+  ),
+  polypodium_polypodioides_minus: species(
+    "polypodium_polypodioides_minus",
+    "Polypodium polypodioides var. minus",
+    "7. Polypodiaceae",
+    "Epífita con largos tallos tendidos, cubiertos de escamas rojizas lanceoladas.",
+    "Hojas pinatisectas, con segmentos opuestos en 9-11 pares y un segmento terminal; soros circulares.",
+    "Sur del Brasil, Uruguay y NE de Argentina; hallada en bosques indígenas del Delta."
+  ),
+  anogramma_chaerophylla: species(
+    "anogramma_chaerophylla",
+    "Anogramma chaerophylla",
+    "7. Polypodiaceae",
+    "Hierba perenne delicada, glabra, de rizoma corto.",
+    "Hojas en manojo, ovadas, largamente pecioladas y profundamente divididas cuatro o más veces.",
+    "América tropical y Antillas; común en el Delta y selva marginal de la ribera del Plata."
+  ),
+  trismeria_trifoliata: species(
+    "trismeria_trifoliata",
+    "Trismeria trifoliata",
+    "7. Polypodiaceae",
+    "Hierba de cerca de 1 m de alto, con rizoma erecto corto.",
+    "Hojas erectas, rígidas y bipinadas; cada pina dividida en 3 segmentos; pínulas fértiles lineales.",
+    "América cálida, hasta el Delta del Paraná."
+  ),
+  dryopteris_submarginalis: species(
+    "dryopteris_submarginalis",
+    "Dryopteris submarginalis",
+    "7. Polypodiaceae",
+    "Helecho de cerca de 1 m de alto.",
+    "Pinas profundamente partidas; hojas de 60-80 cm, con mechón de escamas rojizas en la base del pecíolo.",
+    "América cálida, hasta el Delta del Paraná y la ribera del Plata."
+  ),
+  dryopteris_argentina: species(
+    "dryopteris_argentina",
+    "Dryopteris argentina",
+    "7. Polypodiaceae",
+    "Helecho con rizoma horizontal rojizo y escamoso.",
+    "Hojas lanceoladas de 30-50 cm; segmentos oblongos enteros, pubescentes; indusio inconspicuo.",
+    "Norte y centro de la Argentina, hasta el Delta del Paraná."
+  ),
+  dryopteris_riograndensis: species(
+    "dryopteris_riograndensis",
+    "Dryopteris riograndensis",
+    "7. Polypodiaceae",
+    "Helecho con hojas glabras de 20-50 cm.",
+    "Pinas crenadas, con nervaduras ramificadas y anastomosadas.",
+    "Sur del Brasil, Paraguay, Uruguay y NE de Argentina, hasta la ribera del Plata."
+  ),
+  dryopteris_gongylodes: species(
+    "dryopteris_gongylodes",
+    "Dryopteris gongylodes",
+    "7. Polypodiaceae",
+    "Helecho con rizoma horizontal fuerte y rojizo.",
+    "Hojas de cerca de 1 m; pinas 20-30-yugas, lanceolado-lineales, con lóbulos redondeados.",
+    "Regiones cálidas; hallada en el Delta del Paraná."
+  ),
+  pteridium_aquilinum_arachnoideum: species(
+    "pteridium_aquilinum_arachnoideum",
+    "Pteridium aquilinum var. arachnoideum",
+    "7. Polypodiaceae",
+    "Hierba perenne con rizoma rastrero ramificado.",
+    "Frondas de un metro o más, ovado-triangulares, 3-4 pinadas, con segmentos oblongo-lineales.",
+    "América cálida; hallada en islas arenosas del Delta del Paraná."
+  ),
+  pteris_longifolia: species(
+    "pteris_longifolia",
+    "Pteris longifolia",
+    "7. Polypodiaceae",
+    "Helecho con hojas simplemente pinadas de 30-50 cm.",
+    "Pinas numerosas, enteras y lineales; soros ocupando todo el borde; raquis con pelos escamosos lineales.",
+    "Regiones cálidas; se halla en muros viejos."
+  ),
+  pteris_multifida: species(
+    "pteris_multifida",
+    "Pteris multifida",
+    "7. Polypodiaceae",
+    "Helecho con hojas de 20-40 cm.",
+    "Raquis foliar alado entre las pinas; pinas lineales, enteras o las inferiores trilobadas.",
+    "Europa; adventicia en la Argentina, en muros de ladrillo y pozos."
+  ),
+  pteris_cretica: species(
+    "pteris_cretica",
+    "Pteris cretica",
+    "7. Polypodiaceae",
+    "Helecho de frondas de 15-30 cm.",
+    "Raquis foliar no alado; hojas ternadas o pinadas con 2-5 pares de pinas sésiles.",
+    "Europa; cultivada como ornamental y subespontánea."
+  ),
+  pteris_tremula: species(
+    "pteris_tremula",
+    "Pteris tremula",
+    "7. Polypodiaceae",
+    "Helecho con rizoma erecto corto.",
+    "Hojas 2-3 pinadas, de 60-100 cm; pinas superiores pinadas e inferiores divididas dos o tres veces.",
+    "Australia y Nueva Zelandia; cultivada como ornamental y a veces subespontánea."
+  ),
+  adiantum_cuneatum: species(
+    "adiantum_cuneatum",
+    "Adiantum cuneatum",
+    "7. Polypodiaceae",
+    "Hierba perenne de rizoma corto, conocida como culantrillo.",
+    "Hojas glabras, delicadas, tripinadas, con pinas irregularmente flabeladas y palmatilobadas.",
+    "América del Sur; común en el norte de la Argentina hasta el Río de la Plata."
+  ),
+  adiantopsis_chlorophylla: species(
+    "adiantopsis_chlorophylla",
+    "Adiantopsis chlorophylla",
+    "7. Polypodiaceae",
+    "Helecho con frondas de unos 70 cm.",
+    "Lámina tripinada, raquis castaño y pínulas pequeñas triangular-oblongas; soros redondeados.",
+    "América tropical y subtropical, hasta el Delta del Paraná y San Fernando."
+  ),
+  blechnum_auriculatum: species(
+    "blechnum_auriculatum",
+    "Blechnum auriculatum",
+    "7. Polypodiaceae",
+    "Helecho perenne de rizoma corto.",
+    "Hojas pinadas de 20-40 cm; pinas lanceoladas, enteras o denticuladas, ensanchadas y auriculadas en la base.",
+    "América del Sur templada; en bosques del Delta y ribera platense."
+  ),
+  asplenium_argentinum: species(
+    "asplenium_argentinum",
+    "Asplenium argentinum",
+    "7. Polypodiaceae",
+    "Helecho de rizoma corto, erecto o ascendente.",
+    "Hojas lanceoladas de 25-60 cm, pinadas; pinas oblongo-falcadas y aserrado-dentadas.",
+    "Norte y centro de la Argentina; común en bosques del Delta y ribera platense."
+  ),
+  asplenium_ulbrichtii: species(
+    "asplenium_ulbrichtii",
+    "Asplenium ulbrichtii",
+    "7. Polypodiaceae",
+    "Helecho de rizoma corto y erecto.",
+    "Hojas de 15-20 cm, pinadas; pinas rómbico-trapezoidales, profundamente aserradas; soros pocos.",
+    "Brasil, Uruguay y NE de Argentina; en bosques húmedos del Delta y ribera del Plata."
+  ),
+  nephrolepis_cordifolia: species(
+    "nephrolepis_cordifolia",
+    "Nephrolepis cordifolia",
+    "7. Polypodiaceae",
+    "Helecho rizomatoso, con tubérculos elipsoideos.",
+    "Hojas oblongas, pinadas, de 50-80 cm; pinas auriculadas en la base y aserradas.",
+    "Regiones tropicales; cultivada como ornamental y subespontánea en lugares húmedos y sombríos."
+  ),
+  athyrium_decurtatum_platense: species(
+    "athyrium_decurtatum_platense",
+    "Athyrium decurtatum var. platense",
+    "7. Polypodiaceae",
+    "Hierba robusta, rizomatosa, formando grandes matas.",
+    "Hojas ovadas, de 50-90 cm, pinadas; pinas numerosas, profundamente partidas.",
+    "América del Sur cálida; frecuente en selvas marginales del Delta y ribera del Plata."
+  ),
+  polystichum_adiantiforme: species(
+    "polystichum_adiantiforme",
+    "Polystichum adiantiforme",
+    "7. Polypodiaceae",
+    "Hierba perenne con rizomas horizontales gruesos.",
+    "Hojas ovado-deltoideas, bi- o tripinadas; pínulas lanceoladas y aserrado-dentadas.",
+    "Cosmopolita; cultivada como ornamental, dudosa como espontánea en el Delta."
+  ),
+  phanerophlebia_falcata: species(
+    "phanerophlebia_falcata",
+    "Phanerophlebia falcata",
+    "7. Polypodiaceae",
+    "Helecho terrestre con rizoma erecto y escamoso.",
+    "Hojas coriáceas, pinadas, con pinas ovado-falcadas, acuminadas y aserrado-dentadas.",
+    "Sudeste de Asia; cultivada como ornamental y a veces subespontánea."
+  ),
+  cystopteris_fragilis: species(
+    "cystopteris_fragilis",
+    "Cystopteris fragilis",
+    "7. Polypodiaceae",
+    "Hierba débil, de 15-25 cm de alto.",
+    "Hojas ovado-lanceoladas, 2-3 pinadas, tenues y glabras; soros 4-12 por pínula.",
+    "Cosmopolita; parece haber existido cerca de Buenos Aires."
+  ),
   schizaeaceae: family(
     "schizaeaceae",
     "6. Schizaeaceae",
@@ -885,7 +1069,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Sobre la cara inferior de las hojas, con anillo vertical",
       keyStep: "F",
-      especieId: "polypodiaceae",
+      nextNodeId: "polypodiaceae_a",
     },
     opcionA_prima: {
       label: "Sobre hojas reducidas a la nervadura, formando espigas o panojas",
@@ -1015,6 +1199,351 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "osmunda_palustris",
     },
     especie: manualFamilyData.osmunda_palustris,
+  },
+  polypodiaceae_a: {
+    id: "polypodiaceae_a",
+    milestone: "Polypodiaceae",
+    descripcion: "Polypodiaceae - A: ¿los soros están descubiertos o cubiertos por indusio?",
+    opcionA: {
+      label: "Soros descubiertos, sin indusio o con indusio rudimentario no apreciable",
+      keyStep: "A",
+      nextNodeId: "polypodiaceae_b",
+    },
+    opcionA_prima: {
+      label: "Soros cubiertos por un indusio",
+      keyStep: "A'",
+      nextNodeId: "polypodiaceae_e",
+    },
+  },
+  polypodiaceae_b: {
+    id: "polypodiaceae_b",
+    milestone: "Polypodiaceae",
+    descripcion: "Polypodiaceae - B: con soros descubiertos, ¿cómo se disponen las hojas?",
+    opcionA: {
+      label: "Hojas distantes entre sí, articuladas sobre tallo rastrero o rizoma",
+      keyStep: "B",
+      nextNodeId: "polypodium_a",
+    },
+    opcionA_prima: {
+      label: "Hojas amontonadas hacia el extremo de un rizoma, generalmente pinatisectas o pinaticompuestas",
+      keyStep: "B'",
+      nextNodeId: "polypodiaceae_c",
+    },
+  },
+  polypodiaceae_c: {
+    id: "polypodiaceae_c",
+    milestone: "Polypodiaceae",
+    descripcion: "Polypodiaceae - C: ¿cómo son los soros?",
+    opcionA: {
+      label: "Soros alargados, extendiéndose a lo largo de las nervaduras; hojas gráciles muy divididas",
+      keyStep: "C",
+      especieId: "anogramma_chaerophylla",
+    },
+    opcionA_prima: {
+      label: "Soros circulares; hojas por lo común bipinatisectas",
+      keyStep: "C'",
+      nextNodeId: "polypodiaceae_d",
+    },
+  },
+  polypodiaceae_d: {
+    id: "polypodiaceae_d",
+    milestone: "Polypodiaceae",
+    descripcion: "Polypodiaceae - D: con soros circulares, ¿cómo son las pinas?",
+    opcionA: {
+      label: "Pinas divididas en tres segmentos oblongo-lanceolados, enteros",
+      keyStep: "D",
+      especieId: "trismeria_trifoliata",
+    },
+    opcionA_prima: {
+      label: "Pinas lanceoladas, crenadas, lobadas o pinatisectas, con numerosos segmentos",
+      keyStep: "D'",
+      nextNodeId: "dryopteris_a",
+    },
+  },
+  polypodiaceae_e: {
+    id: "polypodiaceae_e",
+    milestone: "Polypodiaceae",
+    descripcion: "Polypodiaceae - E: ¿el indusio está formado por el borde revoluto de la hoja?",
+    opcionA: {
+      label: "Indusio formado por el borde revoluto de la hoja",
+      keyStep: "E",
+      nextNodeId: "polypodiaceae_f",
+    },
+    opcionA_prima: {
+      label: "Indusio membranoso, no formado por el borde revoluto de la hoja",
+      keyStep: "E'",
+      nextNodeId: "polypodiaceae_j",
+    },
+  },
+  polypodiaceae_f: {
+    id: "polypodiaceae_f",
+    milestone: "Polypodiaceae",
+    descripcion: "Polypodiaceae - F: con borde revoluto, ¿cómo son los soros?",
+    opcionA: {
+      label: "Soros muy alargados, continuos a lo largo del borde de las divisiones de la hoja",
+      keyStep: "F",
+      nextNodeId: "polypodiaceae_g",
+    },
+    opcionA_prima: {
+      label: "Soros reniformes o circulares en el extremo o borde de los lóbulos de las pinas",
+      keyStep: "F'",
+      nextNodeId: "polypodiaceae_h",
+    },
+  },
+  polypodiaceae_g: {
+    id: "polypodiaceae_g",
+    milestone: "Polypodiaceae",
+    descripcion: "Polypodiaceae - G: con soros muy alargados, ¿hay indusio inferior?",
+    opcionA: {
+      label: "Soros entre el borde revoluto y un indusio inferior; frondas tri- o tetrapinatisectas",
+      keyStep: "G",
+      especieId: "pteridium_aquilinum_arachnoideum",
+    },
+    opcionA_prima: {
+      label: "Soros bajo el borde revoluto, sin indusio inferior; hojas generalmente pinadas o bipinadas",
+      keyStep: "G'",
+      nextNodeId: "pteris_a",
+    },
+  },
+  polypodiaceae_h: {
+    id: "polypodiaceae_h",
+    milestone: "Polypodiaceae",
+    descripcion: "Polypodiaceae - H: ¿cómo son las pínulas?",
+    opcionA: {
+      label: "Pínulas cuneiformes o flabeladas, palmatilobadas",
+      keyStep: "H",
+      especieId: "adiantum_cuneatum",
+    },
+    opcionA_prima: {
+      label: "Pínulas oblongas",
+      keyStep: "H'",
+      especieId: "adiantopsis_chlorophylla",
+    },
+  },
+  polypodiaceae_j: {
+    id: "polypodiaceae_j",
+    milestone: "Polypodiaceae",
+    descripcion: "Polypodiaceae - J: con indusio membranoso, ¿cómo se disponen los soros?",
+    opcionA: {
+      label: "Soros alargados, paralelos a la nervadura central",
+      keyStep: "J",
+      especieId: "blechnum_auriculatum",
+    },
+    opcionA_prima: {
+      label: "Soros alargados o no, paralelos a nervaduras secundarias o insertos sobre ellas",
+      keyStep: "J'",
+      nextNodeId: "polypodiaceae_k",
+    },
+  },
+  polypodiaceae_k: {
+    id: "polypodiaceae_k",
+    milestone: "Polypodiaceae",
+    descripcion: "Polypodiaceae - K: ¿los soros son muy alargados o redondeados?",
+    opcionA: {
+      label: "Soros muy alargados",
+      keyStep: "K",
+      nextNodeId: "asplenium_a",
+    },
+    opcionA_prima: {
+      label: "Soros redondeados, semicirculares o arriñonados",
+      keyStep: "K'",
+      nextNodeId: "polypodiaceae_l",
+    },
+  },
+  polypodiaceae_l: {
+    id: "polypodiaceae_l",
+    milestone: "Polypodiaceae",
+    descripcion: "Polypodiaceae - L: ¿las nervaduras llegan hasta el borde de la hoja?",
+    opcionA: {
+      label: "Las nervaduras no llegan hasta el borde de la hoja y algunas terminan en un soro",
+      keyStep: "L",
+      especieId: "nephrolepis_cordifolia",
+    },
+    opcionA_prima: {
+      label: "Las nervaduras llegan hasta el borde de la hoja; soros insertos lateralmente o sobre la nervadura",
+      keyStep: "L'",
+      nextNodeId: "polypodiaceae_m",
+    },
+  },
+  polypodiaceae_m: {
+    id: "polypodiaceae_m",
+    milestone: "Polypodiaceae",
+    descripcion: "Polypodiaceae - M: ¿dónde se ubican los soros respecto del margen?",
+    opcionA: {
+      label: "Soros muy próximos al margen, insertos lateralmente respecto de la nervadura",
+      keyStep: "M",
+      especieId: "athyrium_decurtatum_platense",
+    },
+    opcionA_prima: {
+      label: "Soros no próximos al margen, insertos sobre la nervadura",
+      keyStep: "M'",
+      nextNodeId: "polypodiaceae_n",
+    },
+  },
+  polypodiaceae_n: {
+    id: "polypodiaceae_n",
+    milestone: "Polypodiaceae",
+    descripcion: "Polypodiaceae - N: ¿cómo se inserta el indusio?",
+    opcionA: {
+      label: "Indusio peltado, inserto por su centro",
+      keyStep: "N",
+      nextNodeId: "polypodiaceae_o",
+    },
+    opcionA_prima: {
+      label: "Indusio reniforme o cordiforme, inserto por su borde o por una escotadura",
+      keyStep: "N'",
+      nextNodeId: "polypodiaceae_p",
+    },
+  },
+  polypodiaceae_o: {
+    id: "polypodiaceae_o",
+    milestone: "Polypodiaceae",
+    descripcion: "Polypodiaceae - O: con indusio peltado, ¿las nervaduras son anastomosadas?",
+    opcionA: {
+      label: "Nervaduras no anastomosadas; frondas bi- o tripinatisectas",
+      keyStep: "O",
+      especieId: "polystichum_adiantiforme",
+    },
+    opcionA_prima: {
+      label: "Nervaduras anastomosadas; frondas simplemente pinadas",
+      keyStep: "O'",
+      especieId: "phanerophlebia_falcata",
+    },
+  },
+  polypodiaceae_p: {
+    id: "polypodiaceae_p",
+    milestone: "Polypodiaceae",
+    descripcion: "Polypodiaceae - P: con indusio reniforme o cordiforme, ¿cómo se inserta?",
+    opcionA: {
+      label: "Indusio reniforme, inserto por la escotadura",
+      keyStep: "P",
+      nextNodeId: "dryopteris_a",
+    },
+    opcionA_prima: {
+      label: "Indusio ovado, inserto por uno de sus bordes",
+      keyStep: "P'",
+      especieId: "cystopteris_fragilis",
+    },
+  },
+  polypodium_a: {
+    id: "polypodium_a",
+    milestone: "Polypodium",
+    descripcion: "Polypodium - A: ¿cómo son las hojas?",
+    opcionA: {
+      label: "Hojas enteras, dimorfas y glabras; hojas fértiles lanceoladas",
+      keyStep: "A",
+      especieId: "polypodium_vaccinifolium",
+    },
+    opcionA_prima: {
+      label: "Hojas pinatisectas, con segmentos opuestos en 9-11 pares y segmento terminal",
+      keyStep: "A'",
+      especieId: "polypodium_polypodioides_minus",
+    },
+  },
+  dryopteris_a: {
+    id: "dryopteris_a",
+    milestone: "Dryopteris",
+    descripcion: "Dryopteris - A: ¿cómo son las pinas?",
+    opcionA: {
+      label: "Pinas profundamente partidas, con segmentos oblongos angostos",
+      keyStep: "A",
+      nextNodeId: "dryopteris_b",
+    },
+    opcionA_prima: {
+      label: "Pinas crenadas o lobadas, con lóbulos redondeados anchos",
+      keyStep: "A'",
+      nextNodeId: "dryopteris_c",
+    },
+  },
+  dryopteris_b: {
+    id: "dryopteris_b",
+    milestone: "Dryopteris",
+    descripcion: "Dryopteris - B: con pinas profundamente partidas, ¿cómo son hojas, pecíolo y raquis?",
+    opcionA: {
+      label: "Hojas de 60-80 cm; base del pecíolo con mechón de escamas rojizas; raquis con pelos escamosos",
+      keyStep: "B",
+      especieId: "dryopteris_submarginalis",
+    },
+    opcionA_prima: {
+      label: "Hojas de 30-50 cm; pecíolo con escamas rojizas esparcidas; raquis sin pelos escamosos",
+      keyStep: "B'",
+      especieId: "dryopteris_argentina",
+    },
+  },
+  dryopteris_c: {
+    id: "dryopteris_c",
+    milestone: "Dryopteris",
+    descripcion: "Dryopteris - C: con pinas crenadas o lobadas, ¿cómo son las hojas y nervaduras?",
+    opcionA: {
+      label: "Hojas de 20-50 cm, glabras; pinas crenadas; nervaduras ramificadas y anastomosadas",
+      keyStep: "C",
+      especieId: "dryopteris_riograndensis",
+    },
+    opcionA_prima: {
+      label: "Hojas de cerca de 1 m; pinas 20-30-yugas, lanceolado-lineales, con lóbulos redondeados",
+      keyStep: "C'",
+      especieId: "dryopteris_gongylodes",
+    },
+  },
+  pteris_a: {
+    id: "pteris_a",
+    milestone: "Pteris",
+    descripcion: "Pteris - A: ¿cómo están divididas las hojas?",
+    opcionA: {
+      label: "Hojas simplemente pinadas; rizoma horizontal rastrero",
+      keyStep: "A",
+      nextNodeId: "pteris_b",
+    },
+    opcionA_prima: {
+      label: "Hojas 2-3-pinadas; rizoma erecto corto",
+      keyStep: "A'",
+      especieId: "pteris_tremula",
+    },
+  },
+  pteris_b: {
+    id: "pteris_b",
+    milestone: "Pteris",
+    descripcion: "Pteris - B: con hojas simplemente pinadas, ¿cómo son las pinas y el raquis?",
+    opcionA: {
+      label: "Pinas numerosas, enteras, lineales; raquis con pelos escamosos lineales",
+      keyStep: "B",
+      especieId: "pteris_longifolia",
+    },
+    opcionA_prima: {
+      label: "Pinas inferiores bífidas o trífidas; raquis glabro",
+      keyStep: "B'",
+      nextNodeId: "pteris_c",
+    },
+  },
+  pteris_c: {
+    id: "pteris_c",
+    milestone: "Pteris",
+    descripcion: "Pteris - C: con raquis glabro, ¿el raquis foliar es alado entre las pinas?",
+    opcionA: {
+      label: "Raquis foliar alado entre las pinas; pinas lineales, agudas y decurrentes",
+      keyStep: "C",
+      especieId: "pteris_multifida",
+    },
+    opcionA_prima: {
+      label: "Raquis foliar no alado entre las pinas; hojas ternadas o pinadas con 2-5 pares de pinas",
+      keyStep: "C'",
+      especieId: "pteris_cretica",
+    },
+  },
+  asplenium_a: {
+    id: "asplenium_a",
+    milestone: "Asplenium",
+    descripcion: "Asplenium - A: ¿cómo son las hojas y pinas?",
+    opcionA: {
+      label: "Hojas lanceoladas de 25-60 cm; pinas oblongo-falcadas, asimétricas y aserrado-dentadas",
+      keyStep: "A",
+      especieId: "asplenium_argentinum",
+    },
+    opcionA_prima: {
+      label: "Hojas de 15-20 cm; pinas rómbico-trapezoidales profundamente aserradas; soros pocos",
+      keyStep: "A'",
+      especieId: "asplenium_ulbrichtii",
+    },
   },
   marsiliaceae_a: {
     id: "marsiliaceae_a",
