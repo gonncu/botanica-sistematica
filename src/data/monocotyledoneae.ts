@@ -645,7 +645,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Glumas menores que las lemmas, que son múticas",
       keyStep: "G",
-      especieId: "agrostideae_pendiente"
+      nextNodeId: "sporobolus_a"
     },
     opcionA_prima: {
       label: "Glumas mayores que las lemmas, que generalmente son aristadas",
@@ -679,7 +679,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Glumas aristadas o acuminadas, caducas junto con una parte del pedicelo",
       keyStep: "J",
-      especieId: "agrostideae_pendiente"
+      nextNodeId: "polypogon_a"
     },
     opcionA_prima: {
       label: "Glumas múticas, articuladas sobre el pedicelo",
@@ -696,7 +696,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Glumas redondeadas en el ápice, donde llevan un largo mucrón",
       keyStep: "K",
-      especieId: "agrostideae_pendiente"
+      especieId: "phleum_pratense"
     },
     opcionA_prima: {
       label: "Glumas atenuadas y agudas en el ápice",
@@ -872,6 +872,74 @@ export const monocotiledoneaeData = {
       label: "Lemma largamente aristada; perenne ascendente de 50 cm; panojas angostas flojas",
       keyStep: "A'",
       especieId: "muhlenbergia_schreberi"
+    }
+  },
+
+  polypogon_a: {
+    id: "polypogon_a",
+    milestone: "Polypogon",
+    manualPage: 78,
+    descripcion: "Polypogon - A: ¿las glumas son casi múticas o largamente aristadas?",
+    opcionA: {
+      label: "Glumas agudas, casi múticas, ciliado-espinulosas en el dorso; panojas interrumpidas densas",
+      keyStep: "A",
+      especieId: "polypogon_chilensis"
+    },
+    opcionA_prima: {
+      label: "Glumas largamente aristadas",
+      keyStep: "A'",
+      nextNodeId: "polypogon_b"
+    }
+  },
+
+  polypogon_b: {
+    id: "polypogon_b",
+    milestone: "Polypogon",
+    manualPage: 78,
+    descripcion: "Polypogon - B: ¿la arista es apical o subapical?",
+    opcionA: {
+      label: "Arista apical; panoja interrumpida; hierba perenne de 50-100 cm",
+      keyStep: "B",
+      especieId: "polypogon_elongatus"
+    },
+    opcionA_prima: {
+      label: "Arista subapical; panoja compacta espiciforme elíptica; hierba anual de 15-50 cm",
+      keyStep: "B'",
+      especieId: "polypogon_monspeliensis"
+    }
+  },
+
+  sporobolus_a: {
+    id: "sporobolus_a",
+    milestone: "Sporobolus",
+    manualPage: 79,
+    descripcion: "Sporobolus - A: ¿la inflorescencia es densa o laxa?",
+    opcionA: {
+      label: "Inflorescencia densa, más o menos espiciforme; ramas laterales alternas",
+      keyStep: "A",
+      nextNodeId: "sporobolus_b"
+    },
+    opcionA_prima: {
+      label: "Inflorescencia laxa, piramidal; espiguillas lanceoladas glabras de 1,5-1,7 mm",
+      keyStep: "A'",
+      especieId: "sporobolus_pyramidatus"
+    }
+  },
+
+  sporobolus_b: {
+    id: "sporobolus_b",
+    milestone: "Sporobolus",
+    manualPage: 79,
+    descripcion: "Sporobolus - B: ¿qué tamaño tienen las espiguillas?",
+    opcionA: {
+      label: "Espiguillas de 2 mm, glabras, verdosas; panojas muy largas y angostas",
+      keyStep: "B",
+      especieId: "sporobolus_poiretii"
+    },
+    opcionA_prima: {
+      label: "Espiguillas de 6-7 mm, lanceoladas, muy comprimidas, claras; panoja contraída de 10-25 cm",
+      keyStep: "B'",
+      especieId: "sporobolus_platensis"
     }
   },
 
@@ -2947,6 +3015,83 @@ export const monocotEspecies = {
     descripcion: "Hierba perenne ascendente, de alrededor de 50 cm de alto.",
     caracteristicas: "Hojas lineales, panojas angostas flojas, glumas muy cortas hialinas y lemma largamente aristada.",
     distribucion: "América templado-cálida; frecuente en el Delta y la ribera platense.",
+    imagen: ""
+  },
+
+  polypogon_chilensis: {
+    id: "polypogon_chilensis",
+    nombreCientifico: "Polypogon chilensis",
+    nombreVulgar: "Polypogon",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne, de alrededor de 50 cm de alto.",
+    caracteristicas: "Glumas agudas casi múticas, ciliado-espinulosas en el dorso; panojas interrumpidas densas de 10-30 cm.",
+    distribucion: "América austral; rara en la región platense.",
+    imagen: ""
+  },
+
+  polypogon_elongatus: {
+    id: "polypogon_elongatus",
+    nombreCientifico: "Polypogon elongatus",
+    nombreVulgar: "Polypogon",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne, de 50-100 cm de alto.",
+    caracteristicas: "Glumas largamente aristadas con arista apical, panojas interrumpidas de 20-30 cm y espiguillas de 2,5 mm.",
+    distribucion: "América del Sur; muy común en suelos húmedos, especialmente en el Delta y la ribera.",
+    imagen: ""
+  },
+
+  polypogon_monspeliensis: {
+    id: "polypogon_monspeliensis",
+    nombreCientifico: "Polypogon monspeliensis",
+    nombreVulgar: "Polypogon",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba anual, de 15-50 cm de alto.",
+    caracteristicas: "Glumas largamente aristadas con arista subapical, panoja compacta espiciforme elíptica de 4-10 cm y espiguillas de 2 mm.",
+    distribucion: "Europa; adventicia en América, común en campos bajos y salados.",
+    imagen: ""
+  },
+
+  sporobolus_poiretii: {
+    id: "sporobolus_poiretii",
+    nombreCientifico: "Sporobolus poiretii",
+    nombreVulgar: "Sporobolus",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne cespitosa, de 30-100 cm de alto.",
+    caracteristicas: "Inflorescencia densa más o menos espiciforme, panojas muy largas y angostas, espiguillas glabras verdosas de 2 mm.",
+    distribucion: "Cosmopolita; muy común en la región platense.",
+    imagen: ""
+  },
+
+  sporobolus_platensis: {
+    id: "sporobolus_platensis",
+    nombreCientifico: "Sporobolus platensis",
+    nombreVulgar: "Sporobolus",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne, de 50-100 cm de alto.",
+    caracteristicas: "Espiguillas lanceoladas muy comprimidas de 6-7 mm, claras, con glumas acuminadas rígidas y panoja contraída.",
+    distribucion: "Provincia de Buenos Aires y Uruguay; hallada en San Vicente y Pipinas.",
+    imagen: ""
+  },
+
+  sporobolus_pyramidatus: {
+    id: "sporobolus_pyramidatus",
+    nombreCientifico: "Sporobolus pyramidatus",
+    nombreVulgar: "Sporobolus",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne cespitosa, de 20-50 cm de alto.",
+    caracteristicas: "Inflorescencia laxa piramidal y espiguillas lanceoladas glabras de 1,5-1,7 mm.",
+    distribucion: "América templado-cálida; común en campos salobres.",
+    imagen: ""
+  },
+
+  phleum_pratense: {
+    id: "phleum_pratense",
+    nombreCientifico: "Phleum pratense",
+    nombreVulgar: "Phleum",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne, de 50-150 cm de alto.",
+    caracteristicas: "Panojas cilíndricas de 5-10 cm, glumas de 3-5 mm truncadas con arista gruesa y quilla largamente ciliada.",
+    distribucion: "Europa; cultivada como forrajera y a veces espontánea en suelos modificados.",
     imagen: ""
   },
 
