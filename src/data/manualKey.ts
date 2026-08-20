@@ -117,17 +117,49 @@ export const manualFamilyData: Record<string, Especie> = {
     "Pteridófitas acuáticas o palustres.",
     "Esporangios alojados en foveas en la base de hojas subuladas dispuestas en rosetas."
   ),
+  isoetes_ekmanii: species(
+    "isoetes_ekmanii",
+    "Isoetes ekmanii",
+    "3. Isoetaceae",
+    "Planta palustre perenne, de aspecto junciforme.",
+    "Rizoma de 10-12 cm y hojas arrosetadas, subuladas, de 5-15 cm, con cámaras aéreas; esporangios ovalados.",
+    "Nordeste de la Argentina, hasta el Delta y la isla Martín García."
+  ),
   equisetaceae: family(
     "equisetaceae",
     "1. Equisetaceae",
     "Pteridófitas terrestres áfilas.",
     "Hojas reducidas a escamas membranosas, ramificación verticilada y estróbilo terminal."
   ),
+  equisetum_giganteum: species(
+    "equisetum_giganteum",
+    "Equisetum giganteum",
+    "1. Equisetaceae",
+    "Planta perenne con tallos erectos, fistulosos y muy ramificados.",
+    "Tallos de 1-2 m, surcados; vainas dentadas; espigas ovoideas de alrededor de 1 cm.",
+    "América cálida; común en los bosques del Delta y de la ribera del Plata."
+  ),
   selaginellaceae: family(
     "selaginellaceae",
     "2. Selaginellaceae",
     "Pteridófitas con ramificación dicotómica.",
     "Hojas muy pequeñas; esporangios solitarios en axilas de hojas superiores."
+  ),
+  selaginella_muscosa: species(
+    "selaginella_muscosa",
+    "Selaginella muscosa",
+    "2. Selaginellaceae",
+    "Hierba perenne pigmea, aplicada contra el suelo.",
+    "Hojas no auriculadas, dimorfas, en 4 series; las marginales más grandes y las dorsales lanceoladas; tallos filiformes no articulados.",
+    "Sur del Brasil, Paraguay, Uruguay y NE de Argentina; citada para islas del Delta y Punta Lara."
+  ),
+  selaginella_marginata: species(
+    "selaginella_marginata",
+    "Selaginella marginata",
+    "2. Selaginellaceae",
+    "Hierba perenne pigmea.",
+    "Hojas auriculadas, dimorfas, en 4 series, ovadas, agudas y con margen blanquecino; tallos articulados y delgados.",
+    "América cálida; frecuente en el Delta, Isla Martín García y ribera del Plata."
   ),
   polypodiaceae: family(
     "polypodiaceae",
@@ -141,17 +173,41 @@ export const manualFamilyData: Record<string, Especie> = {
     "Helechos con esporangios sobre hojas reducidas o pínulas.",
     "Esporangios con anillo de dehiscencia apical."
   ),
+  aneimia_tweediana: species(
+    "aneimia_tweediana",
+    "Aneimia tweediana",
+    "6. Schizaeaceae",
+    "Helecho con rizoma ascendente y frondas glabras.",
+    "Frondas pinaticompuestas, con 3-4 pares de segmentos y un segmento terminal; esporangios en panojas cortas.",
+    "América austral cálida; rara en la región, citada para Isla Martín García."
+  ),
   ophioglossaceae: family(
     "ophioglossaceae",
     "4. Ophioglossaceae",
     "Pteridófitas pigmeas.",
     "Esporangios en espigas densas, dehiscentes por ranura transversal."
   ),
+  ophioglossum_crotalophoroides: species(
+    "ophioglossum_crotalophoroides",
+    "Ophioglossum crotalophoroides",
+    "4. Ophioglossaceae",
+    "Hierba pequeña, de 3-15 cm de alto, con rizoma esférico.",
+    "Frondas dos o más; lámina ovado-acorazonada, aguda y entera; segmento fértil con espiga de esporangios.",
+    "América; escasa en campos húmedos a fines del invierno."
+  ),
   osmundaceae: family(
     "osmundaceae",
     "5. Osmundaceae",
     "Pteridófitas robustas.",
     "Esporangios en pínulas superiores reducidas al raquis."
+  ),
+  osmunda_palustris: species(
+    "osmunda_palustris",
+    "Osmunda palustris",
+    "5. Osmundaceae",
+    "Hierba rizomatosa con frondas de 10-40 cm.",
+    "Raquis primario redondeado, glabro y canaliculado; folíolos en 10-18 pares; pínulas superiores reducidas y cargadas de esporangios.",
+    "América tropical, hasta el Delta del Paraná."
   ),
   ceratophyllaceae: family(
     "ceratophyllaceae",
@@ -778,7 +834,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "En cavidades o foveas en la base de hojas subuladas",
       keyStep: "B'",
-      especieId: "isoetaceae",
+      nextNodeId: "isoetaceae_terminal",
     },
   },
   pteridophyta_c: {
@@ -801,7 +857,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Planta áfila, con hojas reducidas a escamas; ramificación verticilada",
       keyStep: "D",
-      especieId: "equisetaceae",
+      nextNodeId: "equisetaceae_terminal",
     },
     opcionA_prima: {
       label: "Planta con hojas; ramificación no verticilada",
@@ -815,7 +871,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Ramificación dicotómica; hojas muy pequeñas",
       keyStep: "E",
-      especieId: "selaginellaceae",
+      nextNodeId: "selaginellaceae_a",
     },
     opcionA_prima: {
       label: "Ramificación no dicotómica; hojas generalmente grandes",
@@ -843,7 +899,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Sí, con anillo apical",
       keyStep: "G",
-      especieId: "schizaeaceae",
+      nextNodeId: "schizaeaceae_terminal",
     },
     opcionA_prima: {
       label: "No, sin anillo o con anillo transversal incompleto",
@@ -857,13 +913,108 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Pigmea; esporangios en espigas densas",
       keyStep: "H",
-      especieId: "ophioglossaceae",
+      nextNodeId: "ophioglossaceae_terminal",
     },
     opcionA_prima: {
       label: "Robusta; esporangios en pínulas superiores reducidas al raquis",
       keyStep: "H'",
-      especieId: "osmundaceae",
+      nextNodeId: "osmundaceae_terminal",
     },
+  },
+  isoetaceae_terminal: {
+    id: "isoetaceae_terminal",
+    milestone: "Isoetaceae",
+    descripcion: "Isoetaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Isoetes ekmanii",
+      keyStep: "1",
+      especieId: "isoetes_ekmanii",
+    },
+    opcionA_prima: {
+      label: "Identificar como Isoetes ekmanii",
+      keyStep: "1",
+      especieId: "isoetes_ekmanii",
+    },
+    especie: manualFamilyData.isoetes_ekmanii,
+  },
+  equisetaceae_terminal: {
+    id: "equisetaceae_terminal",
+    milestone: "Equisetaceae",
+    descripcion: "Equisetaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Equisetum giganteum",
+      keyStep: "1",
+      especieId: "equisetum_giganteum",
+    },
+    opcionA_prima: {
+      label: "Identificar como Equisetum giganteum",
+      keyStep: "1",
+      especieId: "equisetum_giganteum",
+    },
+    especie: manualFamilyData.equisetum_giganteum,
+  },
+  selaginellaceae_a: {
+    id: "selaginellaceae_a",
+    milestone: "Selaginellaceae",
+    descripcion: "Selaginellaceae - A: ¿las hojas son auriculadas y cómo son los tallos?",
+    opcionA: {
+      label: "Hojas no auriculadas; tallos filiformes no articulados; rizóforos ventrales",
+      keyStep: "A",
+      especieId: "selaginella_muscosa",
+    },
+    opcionA_prima: {
+      label: "Hojas auriculadas, con margen blanquecino; tallos articulados; rizóforos dorsales extraaxilares",
+      keyStep: "A'",
+      especieId: "selaginella_marginata",
+    },
+  },
+  schizaeaceae_terminal: {
+    id: "schizaeaceae_terminal",
+    milestone: "Schizaeaceae",
+    descripcion: "Schizaeaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Aneimia tweediana",
+      keyStep: "1",
+      especieId: "aneimia_tweediana",
+    },
+    opcionA_prima: {
+      label: "Identificar como Aneimia tweediana",
+      keyStep: "1",
+      especieId: "aneimia_tweediana",
+    },
+    especie: manualFamilyData.aneimia_tweediana,
+  },
+  ophioglossaceae_terminal: {
+    id: "ophioglossaceae_terminal",
+    milestone: "Ophioglossaceae",
+    descripcion: "Ophioglossaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Ophioglossum crotalophoroides",
+      keyStep: "1",
+      especieId: "ophioglossum_crotalophoroides",
+    },
+    opcionA_prima: {
+      label: "Identificar como Ophioglossum crotalophoroides",
+      keyStep: "1",
+      especieId: "ophioglossum_crotalophoroides",
+    },
+    especie: manualFamilyData.ophioglossum_crotalophoroides,
+  },
+  osmundaceae_terminal: {
+    id: "osmundaceae_terminal",
+    milestone: "Osmundaceae",
+    descripcion: "Osmundaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Osmunda palustris",
+      keyStep: "1",
+      especieId: "osmunda_palustris",
+    },
+    opcionA_prima: {
+      label: "Identificar como Osmunda palustris",
+      keyStep: "1",
+      especieId: "osmunda_palustris",
+    },
+    especie: manualFamilyData.osmunda_palustris,
   },
   marsiliaceae_a: {
     id: "marsiliaceae_a",
