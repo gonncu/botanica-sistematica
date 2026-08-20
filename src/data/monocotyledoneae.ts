@@ -1580,12 +1580,80 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Lemma fértil papirácea o cartilaginosa, más consistente que las glumas",
       keyStep: "J",
-      especieId: "paniceae"
+      nextNodeId: "paniceae_a"
     },
     opcionA_prima: {
       label: "Lemma fértil tenue, hialina; glumas cartilaginosas o coriáceas",
       keyStep: "J'",
       especieId: "andropogoneae"
+    }
+  },
+
+  paniceae_a: {
+    id: "paniceae_a",
+    milestone: "Paniceae",
+    manualPage: 92,
+    descripcion: "Paniceae - entrada parcial: espiguillas en dos filas sobre un lado de un raquis triangular",
+    opcionA: {
+      label: "Espiguillas unifloras, deprimidas, biconvexas, dispuestas en dos filas sobre un lado de un raquis triangular; espigas delgadas",
+      keyStep: "A",
+      especieId: "axonopus_compressus"
+    },
+    opcionA_prima: {
+      label: "Espiguillas con otros caracteres dentro de Paniceae",
+      keyStep: "A'",
+      nextNodeId: "paniceae_b"
+    }
+  },
+
+  paniceae_b: {
+    id: "paniceae_b",
+    milestone: "Paniceae",
+    manualPage: 92,
+    descripcion: "Paniceae - entrada parcial: espiguillas rodeadas por un involucro espinoso",
+    opcionA: {
+      label: "Espiguillas rodeadas por un involucro espinoso formado por numerosas cerdas soldadas entre si",
+      keyStep: "B",
+      nextNodeId: "cenchrus_a"
+    },
+    opcionA_prima: {
+      label: "Espiguillas sin ese involucro espinoso; continuar en la proxima tanda de Paniceae",
+      keyStep: "B'",
+      especieId: "paniceae"
+    }
+  },
+
+  cenchrus_a: {
+    id: "cenchrus_a",
+    milestone: "Cenchrus",
+    manualPage: 92,
+    descripcion: "Cenchrus - A: cerdas involucrales delgadas o muy ensanchadas",
+    opcionA: {
+      label: "Cerdas involucrales delgadas, unidas unicamente en su base, cubiertas de pelitos retrorsos; racimos densos de 10-25 cm",
+      keyStep: "A",
+      especieId: "cenchrus_myosuroides"
+    },
+    opcionA_prima: {
+      label: "Cerdas involucrales muy ensanchadas y unidas por encima de la base",
+      keyStep: "A'",
+      nextNodeId: "cenchrus_b"
+    }
+  },
+
+  cenchrus_b: {
+    id: "cenchrus_b",
+    milestone: "Cenchrus",
+    manualPage: 92,
+    descripcion: "Cenchrus - B: forma del involucro",
+    opcionA: {
+      label: "Involucro con numerosas cerdas; las internas ensanchadas en la base y soldadas casi hasta la mitad, con pelos retrorsos; espiguillas de a 4",
+      keyStep: "B",
+      especieId: "cenchrus_echinatus"
+    },
+    opcionA_prima: {
+      label: "Involucro formado unicamente por espinas muy anchas en la base, abiertas, sin pelos retrorsos; espiguillas 2 por involucro",
+      keyStep: "B'",
+      especieId: "cenchrus_pauciflorus"
     }
   },
 
@@ -2724,6 +2792,50 @@ export const monocotEspecies = {
     descripcion: "Gramíneas con antecio fértil terminal y flores rudimentarias en la base.",
     caracteristicas: "Rama que en el manual conduce a Phalaris y Anthoxanthum.",
     distribucion: "Grupo pendiente de carga a nivel de géneros y especies.",
+    imagen: ""
+  },
+
+  axonopus_compressus: {
+    id: "axonopus_compressus",
+    nombreCientifico: "Axonopus compressus",
+    nombreVulgar: "Axonopus compressus",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne con tallos rastreros, estoloniferos, radicantes en los nudos.",
+    caracteristicas: "Canas floriferas erectas de 23-63 cm; espigas generalmente 3, lineales, dos terminales y una algo mas baja; espiguillas eliptico-lanceoladas de 2 mm.",
+    distribucion: "America calida; comun en el Delta y en la ribera platense. Forrajera.",
+    imagen: ""
+  },
+
+  cenchrus_myosuroides: {
+    id: "cenchrus_myosuroides",
+    nombreCientifico: "Cenchrus myosuroides",
+    nombreVulgar: "Cadillo",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, robusta, de 80-150 cm de alto.",
+    caracteristicas: "Cerdas involucrales delgadas, unidas solo en la base y cubiertas de pelitos retrorsos; racimos densos, espiciformes, de 10-25 cm.",
+    distribucion: "America calida; citada para Campana y San Fernando.",
+    imagen: ""
+  },
+
+  cenchrus_echinatus: {
+    id: "cenchrus_echinatus",
+    nombreCientifico: "Cenchrus echinatus",
+    nombreVulgar: "Cenchrus echinatus",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba anual de 25-60 cm de alto.",
+    caracteristicas: "Involucro con numerosas cerdas; las externas delgadas y las internas ensanchadas en la base, soldadas casi hasta la mitad, con pelos retrorsos; espiguillas agrupadas de a 4.",
+    distribucion: "America calida; accidental en Palermo.",
+    imagen: ""
+  },
+
+  cenchrus_pauciflorus: {
+    id: "cenchrus_pauciflorus",
+    nombreCientifico: "Cenchrus pauciflorus",
+    nombreVulgar: "Roseta",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba anual, ascendente, de 20-90 cm de alto.",
+    caracteristicas: "Involucro formado por espinas muy anchas en la base, abiertas, sin pelos retrorsos; racimos de 3-8 cm; espiguillas 2 en cada involucro.",
+    distribucion: "America calida; muy comun en suelos arenosos.",
     imagen: ""
   },
 
