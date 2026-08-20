@@ -83,12 +83,508 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Tallos huecos con nudos bien marcados. Vainas abiertas. Fruto cariopse",
       familia: "17. Gramineae",
-      especieId: "gramineae"
+      nextNodeId: "gramineae_tribe_a"
     },
     opcionA_prima: {
       label: "Tallos macizos, triangulares. Vainas cerradas. Fruto aquenio",
       familia: "18. Cyperaceae",
       especieId: "cyperaceae"
+    }
+  },
+
+  gramineae_tribe_a: {
+    id: "gramineae_tribe_a",
+    milestone: "Gramineae",
+    descripcion: "Gramineae - A: ¿las cañas son leñosas y la floración ocurre cada varios años?",
+    opcionA: {
+      label: "Plantas perennes, con cañas leñosas elevadas, de floración espaciada por varios años",
+      keyStep: "A",
+      especieId: "guadua"
+    },
+    opcionA_prima: {
+      label: "Plantas anuales o perennes, con cañas herbáceas o sólo subleñosas, de floración anual",
+      keyStep: "A'",
+      nextNodeId: "gramineae_tribe_b"
+    }
+  },
+
+  gramineae_tribe_b: {
+    id: "gramineae_tribe_b",
+    milestone: "Gramineae",
+    descripcion: "Gramineae - B: ¿cómo son las espiguillas, glumas, pálea y androceo?",
+    opcionA: {
+      label: "Espiguillas unifloras, con glumas rudimentarias o nulas; pálea 3-nervada; androceo 6-1",
+      keyStep: "B",
+      especieId: "oryzeae"
+    },
+    opcionA_prima: {
+      label: "Espiguillas 1-multifloras, con dos glumas o faltando la inferior; pálea bicarenada; androceo 3-1",
+      keyStep: "B'",
+      nextNodeId: "gramineae_tribe_c"
+    }
+  },
+
+  gramineae_tribe_c: {
+    id: "gramineae_tribe_c",
+    milestone: "Gramineae",
+    descripcion: "Gramineae - C: ¿cómo se comprimen las espiguillas y dónde articula la raquilla?",
+    opcionA: {
+      label: "Espiguillas más o menos comprimidas lateralmente; raquilla articulada por encima de las glumas",
+      keyStep: "C",
+      nextNodeId: "gramineae_tribe_d"
+    },
+    opcionA_prima: {
+      label: "Espiguillas con una sola flor hermafrodita, generalmente deprimidas dorsiventralmente; raquilla articulada debajo de las glumas",
+      keyStep: "C'",
+      nextNodeId: "gramineae_tribe_j"
+    }
+  },
+
+  gramineae_tribe_d: {
+    id: "gramineae_tribe_d",
+    milestone: "Gramineae",
+    descripcion: "Gramineae - D: ¿la inflorescencia es espiga o panoja?",
+    opcionA: {
+      label: "Inflorescencia en espiga dística o unilateral",
+      keyStep: "D",
+      nextNodeId: "gramineae_tribe_e"
+    },
+    opcionA_prima: {
+      label: "Inflorescencia en panoja laxa o densa, a veces espiciforme",
+      keyStep: "D'",
+      nextNodeId: "gramineae_tribe_f"
+    }
+  },
+
+  gramineae_tribe_e: {
+    id: "gramineae_tribe_e",
+    milestone: "Gramineae",
+    descripcion: "Gramineae - E: ¿cómo se disponen las espiguillas sobre el raquis?",
+    opcionA: {
+      label: "Espiguillas dispuestas a ambos lados del raquis",
+      keyStep: "E",
+      especieId: "hordeae"
+    },
+    opcionA_prima: {
+      label: "Espiguillas dispuestas a un solo lado del raquis",
+      keyStep: "E'",
+      especieId: "chlorideae"
+    }
+  },
+
+  gramineae_tribe_f: {
+    id: "gramineae_tribe_f",
+    milestone: "Gramineae",
+    descripcion: "Gramineae - F: ¿cuántas flores tienen las espiguillas?",
+    opcionA: {
+      label: "Espiguillas 2-multifloras",
+      keyStep: "F",
+      nextNodeId: "gramineae_tribe_g"
+    },
+    opcionA_prima: {
+      label: "Espiguillas unifloras",
+      keyStep: "F'",
+      nextNodeId: "gramineae_tribe_h"
+    }
+  },
+
+  gramineae_tribe_g: {
+    id: "gramineae_tribe_g",
+    milestone: "Gramineae",
+    descripcion: "Gramineae - G: ¿cómo son las glumelas respecto de las glumas?",
+    opcionA: {
+      label: "Glumelas generalmente mayores que las glumas, múticas o aristadas desde el ápice",
+      keyStep: "G",
+      nextNodeId: "festuceae_a"
+    },
+    opcionA_prima: {
+      label: "Glumelas menores que las glumas, con arista dorsal retorcida",
+      keyStep: "G'",
+      especieId: "aveneae"
+    }
+  },
+
+  gramineae_tribe_h: {
+    id: "gramineae_tribe_h",
+    milestone: "Gramineae",
+    descripcion: "Gramineae - H: ¿dónde está el antecio fértil?",
+    opcionA: {
+      label: "Antecio fértil basal",
+      keyStep: "H",
+      especieId: "agrostideae"
+    },
+    opcionA_prima: {
+      label: "Antecio fértil terminal, con una o dos flores rudimentarias en la base",
+      keyStep: "H'",
+      especieId: "phalarideae"
+    }
+  },
+
+  gramineae_tribe_j: {
+    id: "gramineae_tribe_j",
+    milestone: "Gramineae",
+    descripcion: "Gramineae - J: ¿cómo es la lemma fértil?",
+    opcionA: {
+      label: "Lemma fértil papirácea o cartilaginosa, más consistente que las glumas",
+      keyStep: "J",
+      especieId: "paniceae"
+    },
+    opcionA_prima: {
+      label: "Lemma fértil tenue, hialina; glumas cartilaginosas o coriáceas",
+      keyStep: "J'",
+      especieId: "andropogoneae"
+    }
+  },
+
+  festuceae_a: {
+    id: "festuceae_a",
+    milestone: "Festuceae",
+    descripcion: "Festuceae - A: ¿la lemma termina en varias aristas que simulan un papus?",
+    opcionA: {
+      label: "Lemma terminada superiormente en 5 o más aristas que simulan un papus",
+      keyStep: "A",
+      especieId: "pappophorum"
+    },
+    opcionA_prima: {
+      label: "Lemma mútica o con una sola arista",
+      keyStep: "A'",
+      nextNodeId: "festuceae_b"
+    }
+  },
+
+  festuceae_b: {
+    id: "festuceae_b",
+    milestone: "Festuceae",
+    descripcion: "Festuceae - B: ¿el porte es muy robusto?",
+    opcionA: {
+      label: "Plantas muy robustas, de más de 1,5 m, con inflorescencia en penacho y pelos plateados",
+      keyStep: "B",
+      nextNodeId: "festuceae_c"
+    },
+    opcionA_prima: {
+      label: "Plantas gráciles, generalmente de menos de 1,5 m, sin largos pelos plateados",
+      keyStep: "B'",
+      nextNodeId: "festuceae_e"
+    }
+  },
+
+  festuceae_c: {
+    id: "festuceae_c",
+    milestone: "Festuceae",
+    descripcion: "Festuceae - C: ¿cómo se distribuyen las hojas y cómo son las flores?",
+    opcionA: {
+      label: "Hojas muy largas, amontonadas en la base de las cañas; flores dioicas",
+      keyStep: "C",
+      especieId: "cortaderia_selloana"
+    },
+    opcionA_prima: {
+      label: "Hojas repartidas uniformemente por el tallo; flores hermafroditas",
+      keyStep: "C'",
+      nextNodeId: "festuceae_d"
+    }
+  },
+
+  festuceae_d: {
+    id: "festuceae_d",
+    milestone: "Festuceae",
+    descripcion: "Festuceae - D: ¿dónde están los pelos largos?",
+    opcionA: {
+      label: "Lemma velluda y raquilla glabra",
+      keyStep: "D",
+      especieId: "arundo"
+    },
+    opcionA_prima: {
+      label: "Lemma glabra y raquilla velluda",
+      keyStep: "D'",
+      especieId: "phragmites"
+    }
+  },
+
+  festuceae_e: {
+    id: "festuceae_e",
+    milestone: "Festuceae",
+    descripcion: "Festuceae - E: ¿cómo son glumas, color y porte de las espiguillas?",
+    opcionA: {
+      label: "Glumas membranosas anchas, iguales o mayores que la espiguilla; espiguillas péndulas no verdes; lemma mútica",
+      keyStep: "E",
+      especieId: "melica"
+    },
+    opcionA_prima: {
+      label: "Glumas lanceoladas, menores que la espiguilla, generalmente verde",
+      keyStep: "E'",
+      nextNodeId: "festuceae_f"
+    }
+  },
+
+  festuceae_f: {
+    id: "festuceae_f",
+    milestone: "Festuceae",
+    descripcion: "Festuceae - F: ¿las espiguillas son dioicas o hermafroditas?",
+    opcionA: {
+      label: "Espiguillas dioicas",
+      keyStep: "F",
+      nextNodeId: "festuceae_g"
+    },
+    opcionA_prima: {
+      label: "Espiguillas hermafroditas",
+      keyStep: "F'",
+      nextNodeId: "festuceae_h"
+    }
+  },
+
+  festuceae_g: {
+    id: "festuceae_g",
+    milestone: "Festuceae",
+    descripcion: "Festuceae - G: ¿las espiguillas femeninas tienen pelos lanosos?",
+    opcionA: {
+      label: "Espiguillas masculinas y femeninas glabras; plantas rizomatosas de suelos salados",
+      keyStep: "G",
+      especieId: "distichlis"
+    },
+    opcionA_prima: {
+      label: "Espiguillas femeninas con largos pelos lanosos",
+      keyStep: "G'",
+      especieId: "poa"
+    }
+  },
+
+  festuceae_h: {
+    id: "festuceae_h",
+    milestone: "Festuceae",
+    descripcion: "Festuceae - H: ¿la espiguilla es globosa o alargada?",
+    opcionA: {
+      label: "Espiguillas más o menos globosas, casi tan anchas como largas; lemma con margen membranoso",
+      keyStep: "H",
+      especieId: "briza"
+    },
+    opcionA_prima: {
+      label: "Espiguillas lineales o lanceoladas, más largas que anchas",
+      keyStep: "H'",
+      nextNodeId: "festuceae_j"
+    }
+  },
+
+  festuceae_j: {
+    id: "festuceae_j",
+    milestone: "Festuceae",
+    descripcion: "Festuceae - J: ¿las espiguillas son lineales cilíndricas o lanceoladas?",
+    opcionA: {
+      label: "Espiguillas lineales, más o menos cilíndricas; lemmas obtusas y múticas",
+      keyStep: "J",
+      nextNodeId: "festuceae_k"
+    },
+    opcionA_prima: {
+      label: "Espiguillas lanceoladas o lanceolado-lineales; lemmas con nervaduras convergentes hacia el ápice",
+      keyStep: "J'",
+      nextNodeId: "festuceae_l"
+    }
+  },
+
+  festuceae_k: {
+    id: "festuceae_k",
+    milestone: "Festuceae",
+    descripcion: "Festuceae - K: ¿los estilos son persistentes y el cariopse hendido?",
+    opcionA: {
+      label: "Estilos alargados, persistentes; lemmas con nervaduras prominentes; cariopse con hendidura longitudinal",
+      keyStep: "K",
+      especieId: "glyceria_multiflora"
+    },
+    opcionA_prima: {
+      label: "Estilos cortos, caducos; lemmas con nervaduras tenues; cariopse no hendido",
+      keyStep: "K'",
+      especieId: "puccinellia"
+    }
+  },
+
+  festuceae_l: {
+    id: "festuceae_l",
+    milestone: "Festuceae",
+    descripcion: "Festuceae - L: ¿cuántas nervaduras tiene la lemma?",
+    opcionA: {
+      label: "Lemma trinervada",
+      keyStep: "L",
+      especieId: "eragrostis"
+    },
+    opcionA_prima: {
+      label: "Lemma con 5 o más nervaduras",
+      keyStep: "L'",
+      nextNodeId: "festuceae_m"
+    }
+  },
+
+  festuceae_m: {
+    id: "festuceae_m",
+    milestone: "Festuceae",
+    descripcion: "Festuceae - M: ¿qué tamaño tienen las espiguillas?",
+    opcionA: {
+      label: "Espiguillas grandes, de 15-35 mm; lemma mucronada o aristada",
+      keyStep: "M",
+      nextNodeId: "bromus_a"
+    },
+    opcionA_prima: {
+      label: "Espiguillas, sin contar las aristas, de menos de 12 mm",
+      keyStep: "M'",
+      nextNodeId: "festuceae_n"
+    }
+  },
+
+  festuceae_n: {
+    id: "festuceae_n",
+    milestone: "Festuceae",
+    descripcion: "Festuceae - N: ¿la lemma es carenada en el dorso?",
+    opcionA: {
+      label: "Lemma carenada en el dorso",
+      keyStep: "N",
+      nextNodeId: "festuceae_o"
+    },
+    opcionA_prima: {
+      label: "Lemma redondeada en el dorso",
+      keyStep: "N'",
+      nextNodeId: "festuceae_p"
+    }
+  },
+
+  festuceae_o: {
+    id: "festuceae_o",
+    milestone: "Festuceae",
+    descripcion: "Festuceae - O: ¿la lemma es mútica o mucronada/aristada?",
+    opcionA: {
+      label: "Lemmas múticas",
+      keyStep: "O",
+      especieId: "poa"
+    },
+    opcionA_prima: {
+      label: "Lemmas mucronadas o aristadas",
+      keyStep: "O'",
+      especieId: "dactylis_glomerata"
+    }
+  },
+
+  festuceae_p: {
+    id: "festuceae_p",
+    milestone: "Festuceae",
+    descripcion: "Festuceae - P: ¿cómo son los pedicelos y las lemmas?",
+    opcionA: {
+      label: "Espiguillas con pedicelos muy gruesos; lemmas múticas o mucronadas",
+      keyStep: "P",
+      especieId: "scleropoa"
+    },
+    opcionA_prima: {
+      label: "Espiguillas con pedicelos filiformes; lemmas acuminadas o aristadas",
+      keyStep: "P'",
+      especieId: "festuca"
+    }
+  },
+
+  bromus_a: {
+    id: "bromus_a",
+    milestone: "Bromus",
+    descripcion: "Bromus - A: ¿qué longitud tienen las aristas de las lemmas?",
+    opcionA: {
+      label: "Lemmas con aristas de 0,5 mm; espiguillas de 15-18 mm, lanceoladas y comprimidas",
+      keyStep: "A",
+      especieId: "bromus_brevis"
+    },
+    opcionA_prima: {
+      label: "Lemmas con aristas de más de 1 mm",
+      keyStep: "A'",
+      nextNodeId: "bromus_b"
+    }
+  },
+
+  bromus_b: {
+    id: "bromus_b",
+    milestone: "Bromus",
+    descripcion: "Bromus - B: ¿las lemmas son glabras o pubescentes?",
+    opcionA: {
+      label: "Lemmas glabras, escabrosas",
+      keyStep: "B",
+      nextNodeId: "bromus_c"
+    },
+    opcionA_prima: {
+      label: "Lemmas pubescentes",
+      keyStep: "B'",
+      nextNodeId: "bromus_f"
+    }
+  },
+
+  bromus_c: {
+    id: "bromus_c",
+    milestone: "Bromus",
+    descripcion: "Bromus - C: ¿cómo son las espiguillas y la carena de las lemmas?",
+    opcionA: {
+      label: "Espiguillas muy comprimidas, lanceoladas, 7-10-floras, de 25-30 mm; lemmas carenadas y arista de unos 2 mm",
+      keyStep: "C",
+      especieId: "bromus_catharticus"
+    },
+    opcionA_prima: {
+      label: "Espiguillas más o menos redondeadas; lemmas no carenadas",
+      keyStep: "C'",
+      nextNodeId: "bromus_d"
+    }
+  },
+
+  bromus_d: {
+    id: "bromus_d",
+    milestone: "Bromus",
+    descripcion: "Bromus - D: ¿cómo son glumas, lemmas y espiguillas?",
+    opcionA: {
+      label: "Glumas acuminadas o subuladas; lemmas acuminadas con arista de 20-25 mm; espiguillas flojas muy alargadas",
+      keyStep: "D",
+      especieId: "bromus_madritensis"
+    },
+    opcionA_prima: {
+      label: "Glumas agudas; espiguillas cortas y compactas",
+      keyStep: "D'",
+      nextNodeId: "bromus_e"
+    }
+  },
+
+  bromus_e: {
+    id: "bromus_e",
+    milestone: "Bromus",
+    descripcion: "Bromus - E: ¿la panoja es densa o laxa?",
+    opcionA: {
+      label: "Panojas densas, casi espiciformes y erectas; lemmas anchamente ovadas, bidentadas y largamente aristadas",
+      keyStep: "E",
+      especieId: "bromus_racemosus"
+    },
+    opcionA_prima: {
+      label: "Panojas laxas, péndulas; espiguillas fusiformes con antecios apretados",
+      keyStep: "E'",
+      especieId: "bromus_japonicus"
+    }
+  },
+
+  bromus_f: {
+    id: "bromus_f",
+    milestone: "Bromus",
+    descripcion: "Bromus - F: ¿la panoja es contraída o laxa?",
+    opcionA: {
+      label: "Panojas contraídas y densas; espiguillas lanceoladas gruesas; hierba anual pubescente",
+      keyStep: "F",
+      especieId: "bromus_mollis"
+    },
+    opcionA_prima: {
+      label: "Panojas laxas; plantas perennes",
+      keyStep: "F'",
+      nextNodeId: "bromus_g"
+    }
+  },
+
+  bromus_g: {
+    id: "bromus_g",
+    milestone: "Bromus",
+    descripcion: "Bromus - G: ¿qué longitud tiene la arista respecto de la lemma?",
+    opcionA: {
+      label: "Arista de la misma longitud que la lemma; panojas laxas inclinadas; espiguillas de 15-20 mm",
+      keyStep: "G",
+      especieId: "bromus_uruguayensis"
+    },
+    opcionA_prima: {
+      label: "Arista de la mitad de la longitud de la lemma; espiguillas de 25-30 mm, 7-10-floras",
+      keyStep: "G'",
+      especieId: "bromus_auleticus"
     }
   },
 
@@ -643,6 +1139,347 @@ export const monocotEspecies = {
     descripcion: "Gramínea perenne con tallos huecos y espiguillas.",
     caracteristicas: "Tallos huecos con nudos, vainas abiertas, inflorescencias en espigas.",
     distribucion: "Praderas de Buenos Aires y alrededores",
+    imagen: ""
+  },
+
+  guadua: {
+    id: "guadua",
+    nombreCientifico: "Guadua sp.",
+    nombreVulgar: "Tacuara",
+    familia: "17. Gramineae - Bambuseae",
+    descripcion: "Gramínea perenne con cañas leñosas elevadas.",
+    caracteristicas: "Cañas robustas y floración espaciada por varios años, carácter típico de Bambuseae en la clave.",
+    distribucion: "Ambientes ribereños y boscosos de la región.",
+    imagen: ""
+  },
+
+  oryzeae: {
+    id: "oryzeae",
+    nombreCientifico: "Tribu Oryzeae",
+    nombreVulgar: "Gramínea de Oryzeae",
+    familia: "17. Gramineae",
+    descripcion: "Rama de la clave de gramíneas con espiguillas unifloras y glumas rudimentarias o nulas.",
+    caracteristicas: "Pálea 3-nervada, con una sola quilla, y androceo de 6 a 1 estambres.",
+    distribucion: "Grupo pendiente de carga a nivel de géneros y especies.",
+    imagen: ""
+  },
+
+  hordeae: {
+    id: "hordeae",
+    nombreCientifico: "Tribu Hordeae",
+    nombreVulgar: "Gramínea de Hordeae",
+    familia: "17. Gramineae",
+    descripcion: "Gramíneas con inflorescencia en espiga dística y espiguillas a ambos lados del raquis.",
+    caracteristicas: "Rama que en el manual conduce a géneros como Lolium, Hordeum, Secale y Triticum.",
+    distribucion: "Grupo pendiente de carga a nivel de géneros y especies.",
+    imagen: ""
+  },
+
+  chlorideae: {
+    id: "chlorideae",
+    nombreCientifico: "Tribu Chlorideae",
+    nombreVulgar: "Gramínea de Chlorideae",
+    familia: "17. Gramineae",
+    descripcion: "Gramíneas con espigas unilaterales o dispuestas a lo largo de un eje principal.",
+    caracteristicas: "Rama que en el manual conduce a géneros como Cynodon, Chloris, Eleusine y Spartina.",
+    distribucion: "Grupo pendiente de carga a nivel de géneros y especies.",
+    imagen: ""
+  },
+
+  aveneae: {
+    id: "aveneae",
+    nombreCientifico: "Tribu Aveneae",
+    nombreVulgar: "Gramínea de Aveneae",
+    familia: "17. Gramineae",
+    descripcion: "Gramíneas con glumelas menores que las glumas y arista dorsal retorcida.",
+    caracteristicas: "Rama que en el manual conduce a géneros como Avena, Danthonia, Koeleria y Holcus.",
+    distribucion: "Grupo pendiente de carga a nivel de géneros y especies.",
+    imagen: ""
+  },
+
+  agrostideae: {
+    id: "agrostideae",
+    nombreCientifico: "Tribu Agrostideae",
+    nombreVulgar: "Gramínea de Agrostideae",
+    familia: "17. Gramineae",
+    descripcion: "Gramíneas de espiguillas unifloras con antecio fértil basal.",
+    caracteristicas: "Rama que en el manual conduce a géneros como Agrostis, Polypogon, Stipa, Aristida y Sporobolus.",
+    distribucion: "Grupo pendiente de carga a nivel de géneros y especies.",
+    imagen: ""
+  },
+
+  phalarideae: {
+    id: "phalarideae",
+    nombreCientifico: "Tribu Phalarideae",
+    nombreVulgar: "Gramínea de Phalarideae",
+    familia: "17. Gramineae",
+    descripcion: "Gramíneas con antecio fértil terminal y flores rudimentarias en la base.",
+    caracteristicas: "Rama que en el manual conduce a Phalaris y Anthoxanthum.",
+    distribucion: "Grupo pendiente de carga a nivel de géneros y especies.",
+    imagen: ""
+  },
+
+  paniceae: {
+    id: "paniceae",
+    nombreCientifico: "Tribu Paniceae",
+    nombreVulgar: "Gramínea de Paniceae",
+    familia: "17. Gramineae",
+    descripcion: "Gramíneas con lemma fértil papirácea o cartilaginosa, más consistente que las glumas.",
+    caracteristicas: "Rama que en el manual conduce a géneros como Paspalum, Digitaria, Setaria, Panicum y Echinochloa.",
+    distribucion: "Grupo pendiente de carga a nivel de géneros y especies.",
+    imagen: ""
+  },
+
+  andropogoneae: {
+    id: "andropogoneae",
+    nombreCientifico: "Tribu Andropogoneae",
+    nombreVulgar: "Gramínea de Andropogoneae",
+    familia: "17. Gramineae",
+    descripcion: "Gramíneas con lemma fértil tenue e hialina y glumas cartilaginosas o coriáceas.",
+    caracteristicas: "Rama que en el manual conduce a géneros como Imperata, Sorghum, Andropogon y Bothriochloa.",
+    distribucion: "Grupo pendiente de carga a nivel de géneros y especies.",
+    imagen: ""
+  },
+
+  pappophorum: {
+    id: "pappophorum",
+    nombreCientifico: "Pappophorum sp.",
+    nombreVulgar: "Pappophorum",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Gramínea de Festuceae con lemmas divididas en numerosas aristas.",
+    caracteristicas: "Las aristas abiertas forman una estructura semejante a un papus.",
+    distribucion: "Grupo pendiente de carga a nivel de especies.",
+    imagen: ""
+  },
+
+  cortaderia_selloana: {
+    id: "cortaderia_selloana",
+    nombreCientifico: "Cortaderia selloana",
+    nombreVulgar: "Cortadera",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne muy robusta, con tallos floríferos cercanos a 2 m.",
+    caracteristicas: "Hojas muy largas y ásperas en los bordes, panojas grandes en penacho y espiguillas unisexuales.",
+    distribucion: "América austral; frecuente en terrenos húmedos del Delta y de la ribera del Plata.",
+    imagen: ""
+  },
+
+  arundo: {
+    id: "arundo",
+    nombreCientifico: "Arundo sp.",
+    nombreVulgar: "Caña",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Gramínea robusta con hojas repartidas por el tallo y flores hermafroditas.",
+    caracteristicas: "En la clave se separa por lemma velluda y raquilla glabra.",
+    distribucion: "Grupo pendiente de carga a nivel de especies.",
+    imagen: ""
+  },
+
+  phragmites: {
+    id: "phragmites",
+    nombreCientifico: "Phragmites sp.",
+    nombreVulgar: "Carrizo",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Gramínea robusta de ambientes húmedos.",
+    caracteristicas: "En la clave se separa por lemma glabra y raquilla velluda.",
+    distribucion: "Grupo pendiente de carga a nivel de especies.",
+    imagen: ""
+  },
+
+  melica: {
+    id: "melica",
+    nombreCientifico: "Melica sp.",
+    nombreVulgar: "Melica",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Gramínea con glumas membranosas anchas y espiguillas péndulas.",
+    caracteristicas: "Espiguillas amarillentas, violáceas o plateadas, no verdes, y lemma mútica.",
+    distribucion: "Grupo pendiente de carga a nivel de especies.",
+    imagen: ""
+  },
+
+  distichlis: {
+    id: "distichlis",
+    nombreCientifico: "Distichlis sp.",
+    nombreVulgar: "Pasto salado",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Gramínea dioica y rizomatosa de suelos salados.",
+    caracteristicas: "Espiguillas masculinas y femeninas glabras.",
+    distribucion: "Campos húmedos y salobres.",
+    imagen: ""
+  },
+
+  poa: {
+    id: "poa",
+    nombreCientifico: "Poa sp.",
+    nombreVulgar: "Poa",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Gramínea de Festuceae separada en esta clave por caracteres de espiguilla y lemma.",
+    caracteristicas: "Puede aparecer en ramas dioicas con pelos lanosos o en ramas de lemmas carenadas múticas.",
+    distribucion: "Grupo pendiente de carga a nivel de especies.",
+    imagen: ""
+  },
+
+  briza: {
+    id: "briza",
+    nombreCientifico: "Briza sp.",
+    nombreVulgar: "Tembladerilla",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Gramínea con espiguillas más o menos globosas.",
+    caracteristicas: "Espiguillas casi tan anchas como largas y lemma con margen membranoso.",
+    distribucion: "Grupo pendiente de carga a nivel de especies.",
+    imagen: ""
+  },
+
+  glyceria_multiflora: {
+    id: "glyceria_multiflora",
+    nombreCientifico: "Glyceria multiflora",
+    nombreVulgar: "Glyceria",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne, generalmente palustre y con frecuencia rizomatosa.",
+    caracteristicas: "Espiguillas lineales de 15-20 mm, 12-15-floras; lemmas pergamináceas con nervaduras paralelas.",
+    distribucion: "América del Sur cálida y templada; común en suelos inundables y zanjas.",
+    imagen: ""
+  },
+
+  puccinellia: {
+    id: "puccinellia",
+    nombreCientifico: "Puccinellia sp.",
+    nombreVulgar: "Puccinellia",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Gramínea de espiguillas lineales con lemmas obtusas y múticas.",
+    caracteristicas: "Estilos cortos y caducos, lemmas con nervaduras tenues y cariopse no hendido.",
+    distribucion: "Grupo pendiente de carga a nivel de especies.",
+    imagen: ""
+  },
+
+  eragrostis: {
+    id: "eragrostis",
+    nombreCientifico: "Eragrostis sp.",
+    nombreVulgar: "Eragrostis",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Gramínea de espiguillas lanceoladas o lineales con lemmas trinervadas.",
+    caracteristicas: "El manual separa varias especies por porte, tipo de panoja, pilosidad y tamaño de espiguilla.",
+    distribucion: "Grupo pendiente de carga a nivel de especies.",
+    imagen: ""
+  },
+
+  dactylis_glomerata: {
+    id: "dactylis_glomerata",
+    nombreCientifico: "Dactylis glomerata",
+    nombreVulgar: "Pasto ovillo",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne, erecta, de 60-120 cm.",
+    caracteristicas: "Espiguillas paucifloras, comprimidas, casi sésiles, en fascículos unilaterales densos.",
+    distribucion: "Viejo Mundo; adventicia en América, en suelos fértiles.",
+    imagen: ""
+  },
+
+  scleropoa: {
+    id: "scleropoa",
+    nombreCientifico: "Scleropoa sp.",
+    nombreVulgar: "Scleropoa",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Gramínea de Festuceae con espiguillas de pedicelos muy gruesos.",
+    caracteristicas: "Lemmas múticas o mucronadas.",
+    distribucion: "Grupo pendiente de carga a nivel de especies.",
+    imagen: ""
+  },
+
+  festuca: {
+    id: "festuca",
+    nombreCientifico: "Festuca sp.",
+    nombreVulgar: "Festuca",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Gramínea de espiguillas lanceoladas y lemmas acuminadas o aristadas.",
+    caracteristicas: "El manual separa especies por ciliosidad de lemmas, tamaño de glumas y longitud de aristas.",
+    distribucion: "Grupo pendiente de carga a nivel de especies.",
+    imagen: ""
+  },
+
+  bromus_brevis: {
+    id: "bromus_brevis",
+    nombreCientifico: "Bromus brevis",
+    nombreVulgar: "Bromus",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne, de más de medio metro de alto, con panojas laxas.",
+    caracteristicas: "Lemmas con aristas de 0,5 mm y espiguillas lanceoladas comprimidas de 15-18 mm.",
+    distribucion: "Centro de la Argentina; rara en campos altos.",
+    imagen: ""
+  },
+
+  bromus_catharticus: {
+    id: "bromus_catharticus",
+    nombreCientifico: "Bromus catharticus Vahl",
+    nombreVulgar: "Cebadilla criolla",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne, de 1 m o más de alto.",
+    caracteristicas: "Hojas anchas y planas, panojas laxas, espiguillas muy comprimidas y lemmas carenadas con arista corta.",
+    distribucion: "América; forrajera y común en la región.",
+    imagen: ""
+  },
+
+  bromus_madritensis: {
+    id: "bromus_madritensis",
+    nombreCientifico: "Bromus madritensis",
+    nombreVulgar: "Bromus",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba anual, de alrededor de 0,5 m.",
+    caracteristicas: "Glumas acuminadas o subuladas, lemmas acuminadas escabrosas y aristas de 20-25 mm.",
+    distribucion: "Europa; rara cerca de La Plata.",
+    imagen: ""
+  },
+
+  bromus_racemosus: {
+    id: "bromus_racemosus",
+    nombreCientifico: "Bromus racemosus",
+    nombreVulgar: "Bromus",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba anual, de 30-70 cm.",
+    caracteristicas: "Panojas densas casi espiciformes, glumas anchas y lemmas anchamente ovadas, bidentadas y largamente aristadas.",
+    distribucion: "Europa; adventicia en América y rara cerca de Buenos Aires.",
+    imagen: ""
+  },
+
+  bromus_japonicus: {
+    id: "bromus_japonicus",
+    nombreCientifico: "Bromus japonicus",
+    nombreVulgar: "Bromus",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba anual, de 30-70 cm, pubescente lanosa.",
+    caracteristicas: "Panojas laxas y péndulas, espiguillas fusiformes y antecios apretados.",
+    distribucion: "Japón; adventicia en Europa y América, rara en La Plata.",
+    imagen: ""
+  },
+
+  bromus_mollis: {
+    id: "bromus_mollis",
+    nombreCientifico: "Bromus mollis",
+    nombreVulgar: "Bromus",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba anual pubescente.",
+    caracteristicas: "Panojas contraídas y densas, espiguillas lanceoladas gruesas de 12-17 mm y lemmas pubescentes con larga arista.",
+    distribucion: "Europa; común en la región como adventicia.",
+    imagen: ""
+  },
+
+  bromus_uruguayensis: {
+    id: "bromus_uruguayensis",
+    nombreCientifico: "Bromus uruguayensis",
+    nombreVulgar: "Bromus",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne cespitosa, de 30-60 cm.",
+    caracteristicas: "Panojas laxas inclinadas, espiguillas gruesas de 15-20 mm y arista de la misma longitud que la lemma.",
+    distribucion: "Uruguay y nordeste de Argentina; vive en la ribera del Plata y la Isla Martín García.",
+    imagen: ""
+  },
+
+  bromus_auleticus: {
+    id: "bromus_auleticus",
+    nombreCientifico: "Bromus auleticus",
+    nombreVulgar: "Bromus",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne robusta, de alrededor de 1,5 m.",
+    caracteristicas: "Panojas laxas, espiguillas lanceoladas de 25-30 mm y arista de la mitad de la longitud de la lemma.",
+    distribucion: "América austral; rara cerca de Buenos Aires y muy común hacia el oeste de la provincia.",
     imagen: ""
   },
 
