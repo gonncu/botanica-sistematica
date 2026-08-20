@@ -74,21 +74,10 @@ export default function Quiz({ onComplete }: QuizProps) {
     return <div className="p-4 text-red-600">Error: Clado no encontrado</div>;
   }
 
-  // Determinar si es una especie terminal
   let finalEspecie: Especie | undefined = identifiedEspecie || undefined;
   
   if (currentNode.especie) {
     finalEspecie = currentNode.especie;
-  }
-
-  // Si no tiene especie en el nodo, buscar en las opciones
-  if (!finalEspecie && (!currentNode.opcionA.nextNodeId && !currentNode.opcionA_prima.nextNodeId)) {
-    // Es nodo terminal, buscar la especie
-    if (currentNode.opcionA.especieId) {
-      finalEspecie = especiesData[currentNode.opcionA.especieId];
-    } else if (currentNode.opcionA_prima.especieId) {
-      finalEspecie = especiesData[currentNode.opcionA_prima.especieId];
-    }
   }
 
   if (finalEspecie) {
