@@ -89,7 +89,126 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Tallos macizos, triangulares. Vainas cerradas. Fruto aquenio",
       familia: "18. Cyperaceae",
+      nextNodeId: "cyperaceae_a"
+    }
+  },
+
+  cyperaceae_a: {
+    id: "cyperaceae_a",
+    milestone: "Cyperaceae",
+    manualPage: 112,
+    descripcion: "Cyperaceae - A: flores fructiferas unisexuales o hermafroditas",
+    opcionA: {
+      label: "Flores fructiferas unisexuales; caracteres de Carex",
+      keyStep: "A",
+      nextNodeId: "carex_a"
+    },
+    opcionA_prima: {
+      label: "Flores fructiferas hermafroditas; continuar en proximas tandas de Cyperaceae",
+      keyStep: "A'",
       especieId: "cyperaceae"
+    }
+  },
+
+  carex_a: {
+    id: "carex_a",
+    milestone: "Carex",
+    manualPage: 112,
+    descripcion: "Carex - A: espiguilla solitaria o numerosas",
+    opcionA: {
+      label: "Espiguilla androgina, solitaria en el apice del tallo, lanceolada, de 1,5-2 cm; utriculos elipsoideos de 6-7 mm",
+      keyStep: "A",
+      especieId: "carex_sellowiana"
+    },
+    opcionA_prima: {
+      label: "Espiguillas mas o menos numerosas",
+      keyStep: "A'",
+      nextNodeId: "carex_b"
+    }
+  },
+
+  carex_b: {
+    id: "carex_b",
+    milestone: "Carex",
+    manualPage: 112,
+    descripcion: "Carex - B: espiguillas androginas o unisexuales",
+    opcionA: {
+      label: "Todas las espiguillas androginas, con flores femeninas en la base y masculinas en el apice",
+      keyStep: "B",
+      nextNodeId: "carex_c"
+    },
+    opcionA_prima: {
+      label: "Espiguillas unisexuales, masculinas en la parte superior del tallo y femeninas mas abajo; continuar en proxima tanda de Carex",
+      keyStep: "B'",
+      especieId: "carex"
+    }
+  },
+
+  carex_c: {
+    id: "carex_c",
+    milestone: "Carex",
+    manualPage: 112,
+    descripcion: "Carex - C: espiguillas pedunculadas o sesiles",
+    opcionA: {
+      label: "Espiguillas 4-6, de 7-10 mm, largamente pedunculadas, cada una en axila de una bractea foliacea",
+      keyStep: "C",
+      especieId: "carex_phalaroides"
+    },
+    opcionA_prima: {
+      label: "Espiguillas siempre sesiles, formando una espiga terminal",
+      keyStep: "C'",
+      nextNodeId: "carex_d"
+    }
+  },
+
+  carex_d: {
+    id: "carex_d",
+    milestone: "Carex",
+    manualPage: 112,
+    descripcion: "Carex - D: espiga sin bractea o con bracteas largas",
+    opcionA: {
+      label: "Espiga sin bractea o con una bractea mas corta que ella",
+      keyStep: "D",
+      nextNodeId: "carex_e"
+    },
+    opcionA_prima: {
+      label: "Espiga con 2-3 bracteas foliaceas varias veces mas largas que ella; continuar en proxima tanda de Carex",
+      keyStep: "D'",
+      especieId: "carex"
+    }
+  },
+
+  carex_e: {
+    id: "carex_e",
+    milestone: "Carex",
+    manualPage: 112,
+    descripcion: "Carex - E: rizomas largos o cortos",
+    opcionA: {
+      label: "Rizomas muy largos, tendidos; espiguillas 6-10 en espiga terminal oblonga ebracteada de 2 cm",
+      keyStep: "E",
+      especieId: "carex_marcida"
+    },
+    opcionA_prima: {
+      label: "Rizomas muy cortos, formando matas cespitosas",
+      keyStep: "E'",
+      nextNodeId: "carex_f"
+    }
+  },
+
+  carex_f: {
+    id: "carex_f",
+    milestone: "Carex",
+    manualPage: 113,
+    descripcion: "Carex - F: espiga interrumpida o densa",
+    opcionA: {
+      label: "Espiga interrumpida, de 5-8 cm, con bractea muy corta; espiguillas 6-8; utriculos lanceolado-ovados de 3-4 mm",
+      keyStep: "F",
+      especieId: "carex_divulsa"
+    },
+    opcionA_prima: {
+      label: "Espiga densa, cilindrica, de 4-6 cm, con bractea setacea basal; espiguillas en glomerulos compactos",
+      keyStep: "F'",
+      especieId: "carex_brongniartii"
     }
   },
 
@@ -6343,6 +6462,72 @@ export const monocotEspecies = {
   },
 
   // Cyperaceae
+  carex_sellowiana: {
+    id: "carex_sellowiana",
+    nombreCientifico: "Carex sellowiana",
+    nombreVulgar: "Carex sellowiana",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne de unos 30 cm de alto.",
+    caracteristicas: "Hojas lineales, mas largas que el tallo; espiguilla androgina solitaria, lanceolada, de 1,5-2 cm; utriculos elipsoideos, trigonales, de 6-7 mm.",
+    distribucion: "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina; hallada en Isla Martin Garcia y selva marginal de Punta Lara.",
+    imagen: ""
+  },
+
+  carex_phalaroides: {
+    id: "carex_phalaroides",
+    nombreCientifico: "Carex phalaroides",
+    nombreVulgar: "Carex phalaroides",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne, baja, rizomatosa, de 4-15 cm de alto.",
+    caracteristicas: "Hojas mas largas que los tallos, lineales y carenadas; espiguillas 4-6, de 7-10 mm, largamente pedunculadas; utriculos obovoideos de 3-4 mm.",
+    distribucion: "America austral hasta el norte de la Argentina; en campos humedos. El manual menciona tambien la var. capitellata.",
+    imagen: ""
+  },
+
+  carex_marcida: {
+    id: "carex_marcida",
+    nombreCientifico: "Carex marcida",
+    nombreVulgar: "Carex marcida",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne con rizoma horizontal largo y tallos erectos de 25-60 cm de alto.",
+    caracteristicas: "Hojas lineales; espiguillas 6-10 agrupadas en espiga terminal oblonga ebracteada; utriculos plano-convexos, ovados, largamente rostrados, de 3-3,5 mm.",
+    distribucion: "America del Norte; rara en Uruguay y Argentina, en suelos humedos.",
+    imagen: ""
+  },
+
+  carex_divulsa: {
+    id: "carex_divulsa",
+    nombreCientifico: "Carex divulsa",
+    nombreVulgar: "Carex divulsa",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne con rizoma corto y tallos numerosos de 30-100 cm de alto.",
+    caracteristicas: "Hojas mas cortas que los tallos, lineales; espiga interrumpida de 5-8 cm con bractea muy corta; espiguillas 6-8; utriculos lanceolado-ovados de 3-4 mm.",
+    distribucion: "Viejo Mundo; adventicia en la Argentina.",
+    imagen: ""
+  },
+
+  carex_brongniartii: {
+    id: "carex_brongniartii",
+    nombreCientifico: "Carex brongniartii",
+    nombreVulgar: "Carex brongniartii",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne con rizomas cortos y tallos de 40-90 cm de alto.",
+    caracteristicas: "Hojas cortas y rigidas; espiga densa, cilindrica, de 4-6 cm, con bractea setacea basal; utriculos ovoideos, coriaceos, plano-convexos, pardos, con rostro hendido.",
+    distribucion: "America austral; hallada en lugares humedos de San Isidro y Belgrano.",
+    imagen: ""
+  },
+
+  carex: {
+    id: "carex",
+    nombreCientifico: "Carex sp.",
+    nombreVulgar: "Carex",
+    familia: "18. Cyperaceae",
+    descripcion: "Genero de Cyperaceae con flores unisexuales y flores femeninas encerradas en utriculo.",
+    caracteristicas: "Rama parcialmente cargada; faltan continuar las opciones desde Carex D' y B'.",
+    distribucion: "Genero representado en la flora de los alrededores de Buenos Aires.",
+    imagen: ""
+  },
+
   cyperaceae: {
     id: "cyperaceae",
     nombreCientifico: "Cyperus sp.",
