@@ -2180,7 +2180,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Inflorescencia formada por 1 a muchas espigas nunca geminadas; continuar en proxima tanda de Paspalum",
       keyStep: "B'",
-      especieId: "paspalum"
+      nextNodeId: "paspalum_f"
     }
   },
 
@@ -2232,6 +2232,108 @@ export const monocotiledoneaeData = {
       label: "Gluma y lemma esteril glabras; espigas con pedicelos casi iguales",
       keyStep: "E'",
       especieId: "paspalum_vaginatum"
+    }
+  },
+
+  paspalum_f: {
+    id: "paspalum_f",
+    milestone: "Paspalum",
+    manualPage: 100,
+    descripcion: "Paspalum - F: color y forma de la lemma",
+    opcionA: {
+      label: "Lemma castana, lustrosa, pronunciadamente convexa",
+      keyStep: "F",
+      nextNodeId: "paspalum_g"
+    },
+    opcionA_prima: {
+      label: "Lemma blanca o pajiza, suavemente convexa o navicular",
+      keyStep: "F'",
+      nextNodeId: "paspalum_h"
+    }
+  },
+
+  paspalum_g: {
+    id: "paspalum_g",
+    milestone: "Paspalum",
+    manualPage: 100,
+    descripcion: "Paspalum - G: plantas cespitosas o con rizomas largos",
+    opcionA: {
+      label: "Plantas cespitosas de 30-90 cm; espigas 3-6 alternadas; espiguillas ovado-elipticas de 2,8-3 mm",
+      keyStep: "G",
+      especieId: "paspalum_plicatulum"
+    },
+    opcionA_prima: {
+      label: "Plantas con largos rizomas horizontales de 30-40 cm; espigas 3-6; espiguillas castano claro, elipticas, de unos 3 mm",
+      keyStep: "G'",
+      especieId: "paspalum_nicorae"
+    }
+  },
+
+  paspalum_h: {
+    id: "paspalum_h",
+    milestone: "Paspalum",
+    manualPage: 101,
+    descripcion: "Paspalum - H: cantidad de espigas",
+    opcionA: {
+      label: "Inflorescencia formada por 3-10 espigas",
+      keyStep: "H",
+      nextNodeId: "paspalum_j"
+    },
+    opcionA_prima: {
+      label: "Inflorescencia formada por 12-80 espigas; continuar en proxima tanda de Paspalum",
+      keyStep: "H'",
+      especieId: "paspalum"
+    }
+  },
+
+  paspalum_j: {
+    id: "paspalum_j",
+    milestone: "Paspalum",
+    manualPage: 101,
+    descripcion: "Paspalum - J: largo de las espigas",
+    opcionA: {
+      label: "Espigas de 1,5-3 cm; plantas cespitosas con estolones; canas floriferas de cerca de 50 cm con 6-8 espigas",
+      keyStep: "J",
+      especieId: "paspalum_proliferum"
+    },
+    opcionA_prima: {
+      label: "Espigas de 3-9 cm; plantas sin estolones",
+      keyStep: "J'",
+      nextNodeId: "paspalum_k"
+    }
+  },
+
+  paspalum_k: {
+    id: "paspalum_k",
+    milestone: "Paspalum",
+    manualPage: 101,
+    descripcion: "Paspalum - K: largo de espiguillas",
+    opcionA: {
+      label: "Espiguillas de 1,5 mm, verdosas, ovadas; hierba erecta perenne de 50-100 cm; espigas 4-6 delgadas",
+      keyStep: "K",
+      especieId: "paspalum_malacophyllum"
+    },
+    opcionA_prima: {
+      label: "Espiguillas de 3-3,5 mm",
+      keyStep: "K'",
+      nextNodeId: "paspalum_l"
+    }
+  },
+
+  paspalum_l: {
+    id: "paspalum_l",
+    milestone: "Paspalum",
+    manualPage: 101,
+    descripcion: "Paspalum - L: color y pubescencia de espiguillas",
+    opcionA: {
+      label: "Espiguillas castano claro, obovadas, corta y flojamente pubescentes; espigas 3-7 de 3-5 cm",
+      keyStep: "L",
+      especieId: "paspalum_alcalinum"
+    },
+    opcionA_prima: {
+      label: "Espiguillas verdosas, en pares, ovadas, agudas, de 3-3,5 mm por 2-2,5 mm; espigas 3-6 inclinadas",
+      keyStep: "L'",
+      especieId: "paspalum_dilatatum"
     }
   },
 
@@ -3777,6 +3879,72 @@ export const monocotEspecies = {
     descripcion: "Hierba perenne terrestre, de menos de 25 cm de alto, con rizomas largos y profundos.",
     caracteristicas: "Espiguillas lanceoladas de 2,5-3,5 mm; gluma y lemma esteril glabras; espigas con pedicelos casi iguales.",
     distribucion: "America calida y templada; muy comun en suelos humedos.",
+    imagen: ""
+  },
+
+  paspalum_plicatulum: {
+    id: "paspalum_plicatulum",
+    nombreCientifico: "Paspalum plicatulum",
+    nombreVulgar: "Paspalum plicatulum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba cespitosa de 30-90 cm de alto.",
+    caracteristicas: "Espigas 3-6, alternadas, de 3-7 cm; espiguillas en dos series, ovado-elipticas, de 2,8-3 mm; gluma y lemma esteril glabras, membranaceas, castanas u olivaceas.",
+    distribucion: "America calida; en la estepa climax.",
+    imagen: ""
+  },
+
+  paspalum_nicorae: {
+    id: "paspalum_nicorae",
+    nombreCientifico: "Paspalum nicorae",
+    nombreVulgar: "Paspalum nicorae",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba con largos rizomas horizontales, de 30-40 cm de alto.",
+    caracteristicas: "Espigas 3-6, de 2,5-6 cm; espiguillas de color castano claro, elipticas, de unos 3 mm.",
+    distribucion: "Uruguay y nordeste de la Argentina; en suelos arenosos del Dock Sur.",
+    imagen: ""
+  },
+
+  paspalum_proliferum: {
+    id: "paspalum_proliferum",
+    nombreCientifico: "Paspalum proliferum",
+    nombreVulgar: "Paspalum proliferum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba cespitosa con estolones y canas floriferas de cerca de 50 cm de alto.",
+    caracteristicas: "Inflorescencia con 6-8 espigas de 1,5-3 cm; espiguillas glabras, ovado-elipticas, de 2-2,5 mm.",
+    distribucion: "Uruguay y nordeste de la Argentina; se halla en el Delta y en la ribera del Plata.",
+    imagen: ""
+  },
+
+  paspalum_malacophyllum: {
+    id: "paspalum_malacophyllum",
+    nombreCientifico: "Paspalum malacophyllum var. linearifolium",
+    nombreVulgar: "Paspalum malacophyllum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba erecta, perenne, de 50-100 cm de alto.",
+    caracteristicas: "Inflorescencia con 4-6 espigas delgadas de 4-5 cm; espiguillas verdosas, ovadas, de 1,5 mm.",
+    distribucion: "Paraguay y nordeste de la Argentina; hallado en Palermo.",
+    imagen: ""
+  },
+
+  paspalum_alcalinum: {
+    id: "paspalum_alcalinum",
+    nombreCientifico: "Paspalum alcalinum",
+    nombreVulgar: "Paspalum alcalinum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba cespitosa de 50 cm o mas de alto.",
+    caracteristicas: "Espigas 3-7 de 3-5 cm; espiguillas de color castano claro, obovadas, corta y flojamente pubescentes, de 3-3,5 mm.",
+    distribucion: "America calida; accidental en Palermo.",
+    imagen: ""
+  },
+
+  paspalum_dilatatum: {
+    id: "paspalum_dilatatum",
+    nombreCientifico: "Paspalum dilatatum",
+    nombreVulgar: "Pasto miel",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne de alrededor de 50 cm de alto.",
+    caracteristicas: "Espigas 3-6, de 5-9 cm, inclinadas; espiguillas verdosas, en pares, ovadas, agudas, de 3-3,5 mm por 2-2,5 mm; gluma y lemma esteril pubescentes y pestanosas en el borde.",
+    distribucion: "Region platense; comun en campos fertiles.",
     imagen: ""
   },
 
