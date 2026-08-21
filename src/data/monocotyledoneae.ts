@@ -5579,7 +5579,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Espatas 2, libres hasta su base; flores 2-muchas ligeramente cigomorfas; continuar en proximas tandas",
       keyStep: "B'",
-      especieId: "amaryllidaceae"
+      nextNodeId: "amaryllidaceae_d"
     }
   },
 
@@ -5596,7 +5596,58 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Espata bifida; flores algo inclinadas y ligeramente cigomorfas; estambres declinados; continuar con Habranthus en proximas tandas",
       keyStep: "C'",
-      especieId: "amaryllidaceae"
+      nextNodeId: "habranthus_a"
+    }
+  },
+
+  amaryllidaceae_d: {
+    id: "amaryllidaceae_d",
+    milestone: "Amaryllidaceae",
+    manualPage: 145,
+    descripcion: "Amaryllidaceae - D: ancho de hojas en plantas con dos espatas",
+    opcionA: {
+      label: "Hojas lineal-ensiformes, de mas de 1 cm de ancho; caracteres de Amaryllis",
+      keyStep: "D",
+      especieId: "amaryllis_rutila"
+    },
+    opcionA_prima: {
+      label: "Hojas estrechamente lineales, de menos de 1 cm de ancho; caracteres de Rhodophiala",
+      keyStep: "D'",
+      especieId: "rhodophiala_bifida"
+    }
+  },
+
+  habranthus_a: {
+    id: "habranthus_a",
+    milestone: "Habranthus",
+    manualPage: 147,
+    descripcion: "Habranthus - A: color de flores",
+    opcionA: {
+      label: "Flores amarillas o anaranjadas; perigonio de 2-3 cm; bulbo ovoideo de unos 2 cm; hojas cortas, escasas, posteriores a la flor",
+      keyStep: "A",
+      especieId: "habranthus_andersonii"
+    },
+    opcionA_prima: {
+      label: "Flores rosadas o blancas; tepalos de 3,5-7,5 cm",
+      keyStep: "A'",
+      nextNodeId: "habranthus_b"
+    }
+  },
+
+  habranthus_b: {
+    id: "habranthus_b",
+    milestone: "Habranthus",
+    manualPage: 147,
+    descripcion: "Habranthus - B: hojas macizas o con cavidades",
+    opcionA: {
+      label: "Hojas estrechamente lineales, macizas; escapos de 15-20 cm; flores 1-2, rosadas, de 3,5-5 cm",
+      keyStep: "B",
+      especieId: "habranthus_gracilifolius"
+    },
+    opcionA_prima: {
+      label: "Hojas lineales, de cerca de 4 mm de ancho, con cavidades longitudinales; escapos de 20-30 cm; flores generalmente 2, rosadas, de 4,5-7 cm",
+      keyStep: "B'",
+      especieId: "habranthus_robustus"
     }
   },
 
@@ -9515,14 +9566,58 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  amaryllidaceae: {
-    id: "amaryllidaceae",
-    nombreCientifico: "Hippeastrum hybridum Herb.",
-    nombreVulgar: "Amarilis",
+  habranthus_andersonii: {
+    id: "habranthus_andersonii",
+    nombreCientifico: "Habranthus andersonii",
+    nombreVulgar: "Habranthus andersonii",
     familia: "27. Amaryllidaceae",
-    descripcion: "Planta con 6 estambres.",
-    caracteristicas: "Flores grandes vistosas, 6 estambres.",
-    distribucion: "Cultivos ornamentales",
+    descripcion: "Hierba bulbifera con flores amarillas o anaranjadas.",
+    caracteristicas: "Espata bifida; flores algo inclinadas, ligeramente cigomorfas; estambres declinados; perigonio de 2-3 cm; bulbo ovoideo de unos 2 cm; hojas cortas, escasas, posteriores a la flor; escapo delgado, unifloro, de 6-18 cm.",
+    distribucion: "Uruguay y nordeste de la Argentina; comun en la estepa climax, en verano.",
+    imagen: ""
+  },
+
+  habranthus_gracilifolius: {
+    id: "habranthus_gracilifolius",
+    nombreCientifico: "Habranthus gracilifolius",
+    nombreVulgar: "Habranthus gracilifolius",
+    familia: "27. Amaryllidaceae",
+    descripcion: "Hierba bulbifera con flores rosadas o blancas.",
+    caracteristicas: "Tepalos de 3,5-5 cm; hojas estrechamente lineales, macizas; escapos de 15-20 cm; flores 1-2, rosadas.",
+    distribucion: "Uruguay y nordeste de la Argentina; frecuente en la estepa climax, a fines del verano.",
+    imagen: ""
+  },
+
+  habranthus_robustus: {
+    id: "habranthus_robustus",
+    nombreCientifico: "Habranthus robustus",
+    nombreVulgar: "Habranthus robustus",
+    familia: "27. Amaryllidaceae",
+    descripcion: "Hierba bulbifera con flores rosadas.",
+    caracteristicas: "Hojas lineales, de cerca de 4 mm de ancho, con cavidades longitudinales; escapos de 20-30 cm; flores generalmente 2, raramente solitarias, de 4,5-7 cm.",
+    distribucion: "America austral; hallado en Las Palmas.",
+    imagen: ""
+  },
+
+  amaryllis_rutila: {
+    id: "amaryllis_rutila",
+    nombreCientifico: "Amaryllis rutila",
+    nombreVulgar: "Amaryllis rutila",
+    familia: "27. Amaryllidaceae",
+    descripcion: "Hierba bulbifera con bulbos grandes, globosos, de 5-8 cm de diametro.",
+    caracteristicas: "Hojas 6-8, lineal-ensiformes, anchas, de 30 cm por 2,5-5 cm; escapo de 30-50 cm; flores 2-4, carmesi, con tubo de 2 cm y segmentos de 4-10 cm, sin apendices escamiformes; estambres mas cortos que el perigonio; estigma trifido.",
+    distribucion: "Sur del Brasil y nordeste de la Argentina, hasta el Delta y la Isla Martin Garcia; a veces cultivada.",
+    imagen: ""
+  },
+
+  rhodophiala_bifida: {
+    id: "rhodophiala_bifida",
+    nombreCientifico: "Rhodophiala bifida",
+    nombreVulgar: "Rhodophiala bifida",
+    familia: "27. Amaryllidaceae",
+    descripcion: "Hierba bulbifera con bulbo esferico de 2,5-4 cm de diametro.",
+    caracteristicas: "Hojas lineales, carnosas, de hasta 30 cm; escapo grueso de 30-40 cm; espata de 5-7 cm; flores 3-7 en umbela; perigonio de unos 5 cm, rosa fuerte o bermellon.",
+    distribucion: "Campos del Uruguay y nordeste de la Argentina; comun en suelos fertiles, en otono.",
     imagen: ""
   },
 
