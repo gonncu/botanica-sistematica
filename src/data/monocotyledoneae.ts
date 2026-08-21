@@ -140,7 +140,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Espiguillas unisexuales, masculinas en la parte superior del tallo y femeninas mas abajo; continuar en proxima tanda de Carex",
       keyStep: "B'",
-      especieId: "carex"
+      nextNodeId: "carex_i"
     }
   },
 
@@ -174,7 +174,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Espiga con 2-3 bracteas foliaceas varias veces mas largas que ella; continuar en proxima tanda de Carex",
       keyStep: "D'",
-      especieId: "carex"
+      nextNodeId: "carex_g"
     }
   },
 
@@ -209,6 +209,91 @@ export const monocotiledoneaeData = {
       label: "Espiga densa, cilindrica, de 4-6 cm, con bractea setacea basal; espiguillas en glomerulos compactos",
       keyStep: "F'",
       especieId: "carex_brongniartii"
+    }
+  },
+
+  carex_g: {
+    id: "carex_g",
+    milestone: "Carex",
+    manualPage: 113,
+    descripcion: "Carex - G: utriculos papilosos/verrugosos o lisos",
+    opcionA: {
+      label: "Utriculos papilosos o verrugosos, ovado-lanceolados, de 3-4,5 mm, pajizos, con rostro corto bidentado",
+      keyStep: "G",
+      especieId: "carex_bonariensis"
+    },
+    opcionA_prima: {
+      label: "Utriculos lisos",
+      keyStep: "G'",
+      nextNodeId: "carex_h"
+    }
+  },
+
+  carex_h: {
+    id: "carex_h",
+    milestone: "Carex",
+    manualPage: 113,
+    descripcion: "Carex - H: forma y color de utriculos lisos",
+    opcionA: {
+      label: "Utriculos lanceolados, pajizos, largamente rostrados, glabros, de 2,5-3 mm; espiga interrumpida de 2-3 cm",
+      keyStep: "H",
+      especieId: "carex_uruguensis"
+    },
+    opcionA_prima: {
+      label: "Utriculos anchamente elipticos, castanos, de 4-5 mm, contraidos en rostro hendido; espiga ovada de 15-18 mm",
+      keyStep: "H'",
+      especieId: "carex_sororia"
+    }
+  },
+
+  carex_i: {
+    id: "carex_i",
+    milestone: "Carex",
+    manualPage: 113,
+    descripcion: "Carex - I: cantidad de espiguillas masculinas",
+    opcionA: {
+      label: "Una sola espiguilla masculina",
+      keyStep: "I",
+      nextNodeId: "carex_j"
+    },
+    opcionA_prima: {
+      label: "Dos o mas espiguillas masculinas",
+      keyStep: "I'",
+      nextNodeId: "carex_k"
+    }
+  },
+
+  carex_j: {
+    id: "carex_j",
+    milestone: "Carex",
+    manualPage: 113,
+    descripcion: "Carex - J: espiguillas pedunculadas o casi sesiles",
+    opcionA: {
+      label: "Espiguillas pedunculadas, nutantes, 5-6; terminal masculina cilindrica de 3-6 cm y laterales femeninas densifloras",
+      keyStep: "J",
+      especieId: "carex_pseudocyperus"
+    },
+    opcionA_prima: {
+      label: "Espiguillas casi todas sesiles, erectas, 3-5; superior masculina y otras femeninas cilindricas de 1-2,5 cm",
+      keyStep: "J'",
+      especieId: "carex_extensa"
+    }
+  },
+
+  carex_k: {
+    id: "carex_k",
+    milestone: "Carex",
+    manualPage: 113,
+    descripcion: "Carex - K: utriculos lisos o hispidos",
+    opcionA: {
+      label: "Utriculos lisos, ovoideo-lanceolados, de 6-7 mm, castanos, con rostro corto",
+      keyStep: "K",
+      especieId: "carex_riparia"
+    },
+    opcionA_prima: {
+      label: "Utriculos hispidos, suberosos, orbiculado-ovales, trigonales, de 4-5 mm",
+      keyStep: "K'",
+      especieId: "carex_tweediana"
     }
   },
 
@@ -6514,6 +6599,83 @@ export const monocotEspecies = {
     descripcion: "Hierba perenne con rizomas cortos y tallos de 40-90 cm de alto.",
     caracteristicas: "Hojas cortas y rigidas; espiga densa, cilindrica, de 4-6 cm, con bractea setacea basal; utriculos ovoideos, coriaceos, plano-convexos, pardos, con rostro hendido.",
     distribucion: "America austral; hallada en lugares humedos de San Isidro y Belgrano.",
+    imagen: ""
+  },
+
+  carex_bonariensis: {
+    id: "carex_bonariensis",
+    nombreCientifico: "Carex bonariensis",
+    nombreVulgar: "Carex bonariensis",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne con rizoma corto y tallos de 10-40 cm de alto.",
+    caracteristicas: "Espiga parda, densa o interrumpida, piramidal, de 1-4 cm; utriculos papilosos o verrugosos, ovado-lanceolados, pajizos, con rostro corto bidentado. El manual menciona var. achalensis y var. trachycystis.",
+    distribucion: "America austral; comun en la estepa climax y en campos humedos.",
+    imagen: ""
+  },
+
+  carex_uruguensis: {
+    id: "carex_uruguensis",
+    nombreCientifico: "Carex uruguensis",
+    nombreVulgar: "Carex uruguensis",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne con rizomas cortos y tallos de unos 30 cm de alto.",
+    caracteristicas: "Hojas tan largas como el tallo; utriculos lisos, lanceolados, pajizos, largamente rostrados, glabros, de 2,5-3 mm; espiga interrumpida de 2-3 cm. El manual menciona var. pseudoechinata.",
+    distribucion: "Sur del Brasil, Uruguay y norte de la Argentina; en suelos humedos.",
+    imagen: ""
+  },
+
+  carex_sororia: {
+    id: "carex_sororia",
+    nombreCientifico: "Carex sororia",
+    nombreVulgar: "Carex sororia",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba con tallos de 25-60 cm de alto.",
+    caracteristicas: "Utriculos lisos, anchamente elipticos, castanos, de 4-5 mm, contraidos en rostro hendido; espiga ovada de 15-18 mm.",
+    distribucion: "Brasil, Paraguay, Uruguay y norte y centro de la Argentina; en terrenos humedos.",
+    imagen: ""
+  },
+
+  carex_pseudocyperus: {
+    id: "carex_pseudocyperus",
+    nombreCientifico: "Carex pseudocyperus var. polysticha",
+    nombreVulgar: "Carex pseudocyperus",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba con tallos de 30-75 cm de alto, escabrosos en los angulos y foliados.",
+    caracteristicas: "Hojas largas y planas; espiguillas pedunculadas, nutantes, 5-6; terminal masculina cilindrica de 3-6 cm y laterales femeninas densifloras; utriculos elipsoideos de unos 5 mm.",
+    distribucion: "America del Sur; lugares pantanosos.",
+    imagen: ""
+  },
+
+  carex_extensa: {
+    id: "carex_extensa",
+    nombreCientifico: "Carex extensa var. vixdentata",
+    nombreVulgar: "Carex extensa",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba cespitosa de 15-35 cm de alto.",
+    caracteristicas: "Hojas largas; espiguillas casi todas sesiles y erectas, 3-5; superior masculina, otras femeninas cilindricas de 1-2,5 cm; utriculos obovoideos, pajizos, con rostro corto tridentado.",
+    distribucion: "Uruguay y nordeste de la Argentina; en suelos humedos.",
+    imagen: ""
+  },
+
+  carex_riparia: {
+    id: "carex_riparia",
+    nombreCientifico: "Carex riparia var. chilensis",
+    nombreVulgar: "Carex riparia",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne con rizomas cundidores y tallos de 1 m de alto.",
+    caracteristicas: "Hojas largas y planas; espiguillas masculinas 3-5, cilindricas, de 2-6 cm; femeninas 2-5, de 3-9 cm; utriculos lisos, ovoideo-lanceolados, de 6-7 mm.",
+    distribucion: "America austral; comun en los pajonales del Delta y de la ribera platense.",
+    imagen: ""
+  },
+
+  carex_tweediana: {
+    id: "carex_tweediana",
+    nombreCientifico: "Carex tweediana",
+    nombreVulgar: "Carex tweediana",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne con rizoma horizontal, tallos de 15-60 cm y hojas mas largas que el tallo.",
+    caracteristicas: "Espiguillas masculinas 1-3, cilindricas, de 1,5-3,5 cm; femeninas 2-5, cilindricas, de 2-5 cm; utriculos hispidos, suberosos, orbiculado-ovales, trigonales, de 4-5 mm.",
+    distribucion: "Sur del Brasil, Uruguay y nordeste de la Argentina; en bosques del Delta y de la ribera del Plata.",
     imagen: ""
   },
 
