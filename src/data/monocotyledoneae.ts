@@ -5545,7 +5545,92 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Estambres 6",
       familia: "27. Amaryllidaceae",
+      nextNodeId: "amaryllidaceae_a"
+    }
+  },
+
+  amaryllidaceae_a: {
+    id: "amaryllidaceae_a",
+    milestone: "Amaryllidaceae",
+    manualPage: 145,
+    descripcion: "Amaryllidaceae - A: plantas rizomatosas o bulbiferas",
+    opcionA: {
+      label: "Plantas rizomatosas; caracteres de Hypoxis",
+      keyStep: "A",
+      especieId: "hypoxis_decumbens"
+    },
+    opcionA_prima: {
+      label: "Plantas bulbiferas",
+      keyStep: "A'",
+      nextNodeId: "amaryllidaceae_b"
+    }
+  },
+
+  amaryllidaceae_b: {
+    id: "amaryllidaceae_b",
+    milestone: "Amaryllidaceae",
+    manualPage: 145,
+    descripcion: "Amaryllidaceae - B: espata unica o dos espatas",
+    opcionA: {
+      label: "Espata unica, entera o bifida; flores solitarias, raramente 2",
+      keyStep: "B",
+      nextNodeId: "amaryllidaceae_c"
+    },
+    opcionA_prima: {
+      label: "Espatas 2, libres hasta su base; flores 2-muchas ligeramente cigomorfas; continuar en proximas tandas",
+      keyStep: "B'",
       especieId: "amaryllidaceae"
+    }
+  },
+
+  amaryllidaceae_c: {
+    id: "amaryllidaceae_c",
+    milestone: "Amaryllidaceae",
+    manualPage: 145,
+    descripcion: "Amaryllidaceae - C: espata entera o bifida",
+    opcionA: {
+      label: "Espata entera; flores erectas; estambres erectos; tepalos sin apendices escamiformes; caracteres de Zephyranthes",
+      keyStep: "C",
+      nextNodeId: "zephyranthes_a"
+    },
+    opcionA_prima: {
+      label: "Espata bifida; flores algo inclinadas y ligeramente cigomorfas; estambres declinados; continuar con Habranthus en proximas tandas",
+      keyStep: "C'",
+      especieId: "amaryllidaceae"
+    }
+  },
+
+  zephyranthes_a: {
+    id: "zephyranthes_a",
+    milestone: "Zephyranthes",
+    manualPage: 147,
+    descripcion: "Zephyranthes - A: tamano de flor y cantidad de estambres",
+    opcionA: {
+      label: "Flor pequena; tepalos blancos, algo violaceos exteriormente, de 5-10 mm; estambres 3 y estaminodios 3; bulbos de 1-1,5 cm",
+      keyStep: "A",
+      especieId: "zephyranthes_minima"
+    },
+    opcionA_prima: {
+      label: "Flor grande; tepalos de mas de 15 mm; estambres 6",
+      keyStep: "A'",
+      nextNodeId: "zephyranthes_b"
+    }
+  },
+
+  zephyranthes_b: {
+    id: "zephyranthes_b",
+    milestone: "Zephyranthes",
+    manualPage: 147,
+    descripcion: "Zephyranthes - B: estigma trilobado o trifido",
+    opcionA: {
+      label: "Estigma trilobado; bulbos esfericos de unos 2 cm; escapos de 20-40 cm; espata de 2-2,5 cm; tepalos de 3-5 cm",
+      keyStep: "B",
+      especieId: "zephyranthes_candida"
+    },
+    opcionA_prima: {
+      label: "Estigma trifido; bulbo ovoideo de unos 2 cm; escapo de 10-20 cm; tepalos de 3-5 cm",
+      keyStep: "B'",
+      especieId: "zephyranthes_mesochloa"
     }
   },
 
@@ -9438,6 +9523,50 @@ export const monocotEspecies = {
     descripcion: "Planta con 6 estambres.",
     caracteristicas: "Flores grandes vistosas, 6 estambres.",
     distribucion: "Cultivos ornamentales",
+    imagen: ""
+  },
+
+  hypoxis_decumbens: {
+    id: "hypoxis_decumbens",
+    nombreCientifico: "Hypoxis decumbens",
+    nombreVulgar: "Hypoxis",
+    familia: "27. Amaryllidaceae",
+    descripcion: "Hierba rizomatosa, con rizoma corto tuberiforme y hojas radicales lineales.",
+    caracteristicas: "Hojas glabras o con pelos laxos, de 8-20 cm; escapos cortos y debiles, terminados en 1-2 flores; tepalos amarillos, lanceolados, de 5-7 mm; capsulas cilindricas; semillas asperas, negras. El manual menciona la var. major, mas robusta, con hojas de 20-40 cm y 3-6 flores.",
+    distribucion: "America calida; comun en el Delta y en el cesped de la ribera platense.",
+    imagen: ""
+  },
+
+  zephyranthes_minima: {
+    id: "zephyranthes_minima",
+    nombreCientifico: "Zephyranthes minima",
+    nombreVulgar: "Zephyranthes minima",
+    familia: "27. Amaryllidaceae",
+    descripcion: "Hierba bulbifera con escapos fistulosos terminados en una sola flor pequena.",
+    caracteristicas: "Tepalos blancos, algo violaceos exteriormente, de 5-10 mm; estambres 3 y estaminodios 3; bulbos de 1-1,5 cm; hojas estrechas; escapos de 5-25 cm; espata membranacea de 18-25 mm.",
+    distribucion: "Nordeste y centro de la Argentina; comun en campos humedos, en otono.",
+    imagen: ""
+  },
+
+  zephyranthes_candida: {
+    id: "zephyranthes_candida",
+    nombreCientifico: "Zephyranthes candida",
+    nombreVulgar: "Azucenita",
+    familia: "27. Amaryllidaceae",
+    descripcion: "Hierba bulbifera de flor grande, con tepalos de mas de 15 mm y 6 estambres.",
+    caracteristicas: "Estigma trilobado; bulbos esfericos de unos 2 cm; escapos de 20-40 cm; espata de 2-2,5 cm; tepalos de 3-5 cm.",
+    distribucion: "Sur del Brasil, Uruguay y nordeste de la Argentina; comun en el Delta y en la ribera platense, a fines del verano.",
+    imagen: ""
+  },
+
+  zephyranthes_mesochloa: {
+    id: "zephyranthes_mesochloa",
+    nombreCientifico: "Zephyranthes mesochloa",
+    nombreVulgar: "Zephyranthes mesochloa",
+    familia: "27. Amaryllidaceae",
+    descripcion: "Hierba bulbifera de flor grande, con tepalos de mas de 15 mm y 6 estambres.",
+    caracteristicas: "Estigma trifido; bulbo ovoideo de unos 2 cm; escapo de 10-20 cm; tepalos de 3-5 cm.",
+    distribucion: "Centro de la Argentina; raro en la region, citado para Punta Lara.",
     imagen: ""
   },
 
