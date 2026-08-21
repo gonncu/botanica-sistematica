@@ -5233,12 +5233,63 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Cáliz y corola diferenciados",
       familia: "23. Commelinaceae",
-      especieId: "commelinaceae"
+      nextNodeId: "commelinaceae_a"
     },
     opcionA_prima: {
       label: "Cáliz y corola iguales, formando perigonio coralino",
       familia: "26. Liliaceae",
       especieId: "liliaceae_2"
+    }
+  },
+
+  commelinaceae_a: {
+    id: "commelinaceae_a",
+    milestone: "Commelinaceae",
+    manualPage: 134,
+    descripcion: "Commelinaceae - A: estambres fertiles y simetria floral",
+    opcionA: {
+      label: "Estambres fertiles 3; estaminodios 3; flores cigomorfas; caracteres de Commelina",
+      keyStep: "A",
+      nextNodeId: "commelina_a"
+    },
+    opcionA_prima: {
+      label: "Estambres fertiles 6; flores actinomorfas",
+      keyStep: "A'",
+      nextNodeId: "commelinaceae_b"
+    }
+  },
+
+  commelinaceae_b: {
+    id: "commelinaceae_b",
+    milestone: "Commelinaceae",
+    manualPage: 134,
+    descripcion: "Commelinaceae - B: longitud de los estambres",
+    opcionA: {
+      label: "Todos los estambres de igual longitud; caracteres de Tradescantia",
+      keyStep: "B",
+      especieId: "tradescantia_fluminensis"
+    },
+    opcionA_prima: {
+      label: "Tres estambres con filamentos largos y tres con filamentos cortos; caracteres de Descantaria",
+      keyStep: "B'",
+      especieId: "descantaria_elongata"
+    }
+  },
+
+  commelina_a: {
+    id: "commelina_a",
+    milestone: "Commelina",
+    manualPage: 135,
+    descripcion: "Commelina - A: ovulos y tipo de espata",
+    opcionA: {
+      label: "Ovario con loculos ventrales biovulados; capsulas con 5 semillas; espata plegada, con bordes no soldados; flores azules grandes",
+      keyStep: "A",
+      especieId: "commelina_nudiflora"
+    },
+    opcionA_prima: {
+      label: "Ovario con todos los loculos uniovulados; capsula con 3 semillas; espata cuculada, con bordes parcialmente soldados; flores azules",
+      keyStep: "A'",
+      especieId: "commelina_virginica"
     }
   }
 };
@@ -8880,14 +8931,47 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  commelinaceae: {
-    id: "commelinaceae",
-    nombreCientifico: "Commelina erecta L.",
-    nombreVulgar: "Trapo viejo",
+  commelina_nudiflora: {
+    id: "commelina_nudiflora",
+    nombreCientifico: "Commelina nudiflora",
+    nombreVulgar: "Commelina nudiflora",
     familia: "23. Commelinaceae",
-    descripcion: "Planta con cáliz y corola diferenciados.",
-    caracteristicas: "Flores azules con 3 pétalos, ovario súpero.",
-    distribucion: "Pastizales y lugares perturbados",
+    descripcion: "Hierba perenne, ascendente, casi glabra, con hojas lanceoladas y flores azules grandes.",
+    caracteristicas: "Ovario con loculos ventrales biovulados; capsulas con 5 semillas; espata plegada, con los bordes no soldados entre si.",
+    distribucion: "Cosmopolita; comun en el Delta y en la ribera.",
+    imagen: ""
+  },
+
+  commelina_virginica: {
+    id: "commelina_virginica",
+    nombreCientifico: "Commelina virginica",
+    nombreVulgar: "Flor de Santa Lucia",
+    familia: "23. Commelinaceae",
+    descripcion: "Hierba perenne, ascendente, con hojas lanceoladas laxamente puberulas o glabras y flores azules.",
+    caracteristicas: "Ovario con todos los loculos uniovulados; capsula con 3 semillas; espata cuculada, con los bordes parcialmente soldados.",
+    distribucion: "En suelos sueltos.",
+    imagen: ""
+  },
+
+  tradescantia_fluminensis: {
+    id: "tradescantia_fluminensis",
+    nombreCientifico: "Tradescantia fluminensis",
+    nombreVulgar: "Tradescantia",
+    familia: "23. Commelinaceae",
+    descripcion: "Hierba ascendente, glabra o algo pubescente, con hojas ovadas, agudas y enteras.",
+    caracteristicas: "Flores actinomorfas, blancas, en umbelas multifloras; estambres fertiles 6 de longitud semejante; filamentos estaminales barbelados.",
+    distribucion: "Brasil austral, Paraguay, Uruguay y norte de la Argentina hasta Buenos Aires; comun en lugares humedos y sombrios.",
+    imagen: ""
+  },
+
+  descantaria_elongata: {
+    id: "descantaria_elongata",
+    nombreCientifico: "Descantaria elongata",
+    nombreVulgar: "Descantaria",
+    familia: "23. Commelinaceae",
+    descripcion: "Hierba ascendente, radicante en los nudos, glabra o algo pubescente.",
+    caracteristicas: "Hojas lanceoladas, enteras, de unos 8 cm por 2 cm; umbelas densas; flores rosadas; tres estambres con filamentos largos y tres con filamentos cortos.",
+    distribucion: "America calida; comun en los bosques del Delta y de la ribera platense.",
     imagen: ""
   }
 };
