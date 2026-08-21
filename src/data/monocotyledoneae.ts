@@ -5252,7 +5252,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Cavidades del ovario con un solo óvulo",
       familia: "32. Marantaceae",
-      especieId: "marantaceae"
+      nextNodeId: "marantaceae_a"
     }
   },
 
@@ -5270,6 +5270,23 @@ export const monocotiledoneaeData = {
       label: "Hojas elipticas, verdes, de hasta 50 cm por 20-25 cm; racimos simples; flores grandes, rojas",
       keyStep: "A'",
       especieId: "canna_indica"
+    }
+  },
+
+  marantaceae_a: {
+    id: "marantaceae_a",
+    milestone: "Marantaceae",
+    manualPage: 156,
+    descripcion: "Thalia - A: tipo de panoja y hojas",
+    opcionA: {
+      label: "Flores en panojas laxas, azules; hierba de hasta 2 m; hojas largamente pecioladas, las basales ovado-oblongas de hasta 40 cm o mas",
+      keyStep: "A",
+      especieId: "thalia_geniculata"
+    },
+    opcionA_prima: {
+      label: "Flores en panojas contraidas, espiciformes; hierbas de 1,5-2 m; hojas ovado-oblongas de cerca de 50 cm",
+      keyStep: "A'",
+      especieId: "thalia_multiflora"
     }
   },
 
@@ -9532,14 +9549,25 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  marantaceae: {
-    id: "marantaceae",
-    nombreCientifico: "Maranta arundinacea L.",
-    nombreVulgar: "Maranta",
+  thalia_geniculata: {
+    id: "thalia_geniculata",
+    nombreCientifico: "Thalia geniculata L.",
+    nombreVulgar: "Thalia",
     familia: "32. Marantaceae",
-    descripcion: "Planta con un óvulo por cavidad.",
-    caracteristicas: "Hojas variegadas, flores blancas pequeñas.",
-    distribucion: "Bosques tropicales",
+    descripcion: "Hierba palustre alta, de hasta 2 m.",
+    caracteristicas: "Flores en panojas laxas, azules; hojas largamente pecioladas, las basales con lamina ovado-oblonga de hasta 40 cm o mas.",
+    distribucion: "America calida. Rara en la region; aparece en zanjas.",
+    imagen: ""
+  },
+
+  thalia_multiflora: {
+    id: "thalia_multiflora",
+    nombreCientifico: "Thalia multiflora Horkel",
+    nombreVulgar: "Thalia",
+    familia: "32. Marantaceae",
+    descripcion: "Hierba palustre alta, de 1,5-2 m.",
+    caracteristicas: "Flores en panojas contraidas, espiciformes; hojas ovado-oblongas de cerca de 50 cm.",
+    distribucion: "Brasil, Uruguay y norte de la Argentina. Comun en zanjas junto a la via ferrea al norte de la Capital Federal.",
     imagen: ""
   },
 
