@@ -752,6 +752,23 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Estilo engrosado en la base; continuar en proximas tandas de Cyperaceae",
       keyStep: "D'",
+      nextNodeId: "cyperaceae_e"
+    }
+  },
+
+  cyperaceae_e: {
+    id: "cyperaceae_e",
+    milestone: "Cyperaceae",
+    manualPage: 112,
+    descripcion: "Cyperaceae - E: parte basal dilatada del estilo",
+    opcionA: {
+      label: "La parte basal dilatada del estilo se desprende con este a la madurez del fruto; caracteres de Fimbristylis",
+      keyStep: "E",
+      nextNodeId: "fimbristylis_a"
+    },
+    opcionA_prima: {
+      label: "La parte dilatada del estilo persiste sobre el fruto formando un estilopodio; continuar en proximas tandas",
+      keyStep: "E'",
       especieId: "cyperaceae"
     }
   },
@@ -872,6 +889,23 @@ export const monocotiledoneaeData = {
       label: "Cerdas del perianto retrorso-hispidas; tallos afilos de 1,5-2,5 m; antela compuesta laxa lateral",
       keyStep: "G'",
       especieId: "scirpus_validus"
+    }
+  },
+
+  fimbristylis_a: {
+    id: "fimbristylis_a",
+    milestone: "Fimbristylis",
+    manualPage: 124,
+    descripcion: "Fimbristylis - A: estilo bifido o trifido",
+    opcionA: {
+      label: "Estilo bifido; antelas compuestas; espiguillas cilindrico-conicas; aquenio blanco reticulado",
+      keyStep: "A",
+      especieId: "fimbristylis_squarrosa"
+    },
+    opcionA_prima: {
+      label: "Estilo trifido; antela compuesta; espiguillas lanceoladas, agudas, de 4-8 mm",
+      keyStep: "A'",
+      especieId: "fimbristylis_autumnalis"
     }
   },
 
@@ -7628,6 +7662,28 @@ export const monocotEspecies = {
     descripcion: "Hierba con rizomas gruesos y tallos afilos de 1,5-2,5 m de alto.",
     caracteristicas: "Antela compuesta, laxa, lateral, con bractea aguda de 1-6 cm; espiguillas ovoideas castanas de 4-7 mm; cerdas del perianto retrorso-hispidas.",
     distribucion: "America; raro en la region.",
+    imagen: ""
+  },
+
+  fimbristylis_squarrosa: {
+    id: "fimbristylis_squarrosa",
+    nombreCientifico: "Fimbristylis squarrosa",
+    nombreVulgar: "Fimbristylis squarrosa",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne, cespitosa, de 10-20 cm de alto.",
+    caracteristicas: "Tallos filiformes; hojas estrechamente lineales; estilo bifido; antelas compuestas; espiguillas cilindrico-conicas; aquenio blanco, reticulado.",
+    distribucion: "America tropical, Africa y Asia; rara en la region, citada para Puerto Nuevo.",
+    imagen: ""
+  },
+
+  fimbristylis_autumnalis: {
+    id: "fimbristylis_autumnalis",
+    nombreCientifico: "Fimbristylis autumnalis",
+    nombreVulgar: "Fimbristylis autumnalis",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne con rizoma corto y tallos de 25-35 cm de alto.",
+    caracteristicas: "Estilo trifido; antela compuesta; espiguillas solitarias en el extremo de los radios, lanceoladas, agudas, de 4-8 mm; glumas rojizas y mucronadas.",
+    distribucion: "Regiones tropicales; se halla en la ribera del Plata.",
     imagen: ""
   },
 
