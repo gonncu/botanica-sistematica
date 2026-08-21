@@ -1874,7 +1874,24 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Espiguillas solitarias o en grupos de 2-3, rodeadas por un involucro de cerdas libres que se desprende con la espiguilla; caracteres de Pennisetum",
       keyStep: "G'",
+      nextNodeId: "paniceae_h"
+    }
+  },
+
+  paniceae_h: {
+    id: "paniceae_h",
+    milestone: "Paniceae",
+    manualPage: 102,
+    descripcion: "Paniceae - entrada parcial: Pennisetum o Setaria",
+    opcionA: {
+      label: "Espiguillas rodeadas por un involucro de cerdas libres que se desprende con la espiguilla; caracteres de Pennisetum",
+      keyStep: "H",
       nextNodeId: "pennisetum_a"
+    },
+    opcionA_prima: {
+      label: "Espiguillas rodeadas por una o mas cerdas involucrales que persisten sobre el raquis despues de caer las espiguillas; caracteres de Setaria",
+      keyStep: "H'",
+      nextNodeId: "setaria_a"
     }
   },
 
@@ -2436,6 +2453,108 @@ export const monocotiledoneaeData = {
       label: "Cerdas involucrales simples, 8-12, de menos de 20 mm; panojas gruesas de 3-5 cm, inclinadas",
       keyStep: "A'",
       especieId: "pennisetum_latifolium"
+    }
+  },
+
+  setaria_a: {
+    id: "setaria_a",
+    milestone: "Setaria",
+    manualPage: 103,
+    descripcion: "Setaria - A: cantidad de cerdas involucrales",
+    opcionA: {
+      label: "Cerdas involucrales mas de cinco; perenne, cespitosa, con tallos ascendentes de 30-40 cm",
+      keyStep: "A",
+      especieId: "setaria_geniculata"
+    },
+    opcionA_prima: {
+      label: "Cerdas involucrales 1, raramente 2-3",
+      keyStep: "A'",
+      nextNodeId: "setaria_b"
+    }
+  },
+
+  setaria_b: {
+    id: "setaria_b",
+    milestone: "Setaria",
+    manualPage: 103,
+    descripcion: "Setaria - B: direccion de los pelos de las cerdas",
+    opcionA: {
+      label: "Cerdas con pelos retrorsos que las hacen adherentes a la ropa; anual de 40-100 cm",
+      keyStep: "B",
+      especieId: "setaria_verticillata"
+    },
+    opcionA_prima: {
+      label: "Cerdas involucrales con pelos antrorsos, no adherentes",
+      keyStep: "B'",
+      nextNodeId: "setaria_c"
+    }
+  },
+
+  setaria_c: {
+    id: "setaria_c",
+    milestone: "Setaria",
+    manualPage: 103,
+    descripcion: "Setaria - C: plantas anuales o perennes",
+    opcionA: {
+      label: "Plantas anuales de 20-40 cm; panojas espiciformes cortas y gruesas; eje de la panoja velludo",
+      keyStep: "C",
+      especieId: "setaria_viridis"
+    },
+    opcionA_prima: {
+      label: "Plantas perennes; panojas lineales u oblongas",
+      keyStep: "C'",
+      nextNodeId: "setaria_d"
+    }
+  },
+
+  setaria_d: {
+    id: "setaria_d",
+    milestone: "Setaria",
+    manualPage: 103,
+    descripcion: "Setaria - D: plantas robustas o menores",
+    opcionA: {
+      label: "Plantas robustas de 60-100 cm; hojas de hasta 16 cm por 12-15 mm; panojas densas de 10-18 cm",
+      keyStep: "D",
+      especieId: "setaria_argentina"
+    },
+    opcionA_prima: {
+      label: "Plantas generalmente menores; hojas de menos de 10 mm de ancho; espigas de 5-10 cm",
+      keyStep: "D'",
+      nextNodeId: "setaria_e"
+    }
+  },
+
+  setaria_e: {
+    id: "setaria_e",
+    milestone: "Setaria",
+    manualPage: 103,
+    descripcion: "Setaria - E: forma de espiguillas",
+    opcionA: {
+      label: "Espiguillas globosas, de 1,8 mm, glabras; gluma inferior hasta la mitad de la espiguilla; eje escabroso",
+      keyStep: "E",
+      especieId: "setaria_fiebrigii"
+    },
+    opcionA_prima: {
+      label: "Espiguillas ovoideas, de 2-2,5 mm; gluma superior casi hasta el apice de la espiguilla",
+      keyStep: "E'",
+      nextNodeId: "setaria_f"
+    }
+  },
+
+  setaria_f: {
+    id: "setaria_f",
+    milestone: "Setaria",
+    manualPage: 103,
+    descripcion: "Setaria - F: eje de la inflorescencia",
+    opcionA: {
+      label: "Eje de la inflorescencia glabro o aspero; perenne cespitosa de 30-50 cm; panoja densa, espiciforme",
+      keyStep: "F",
+      especieId: "setaria_caespitosa"
+    },
+    opcionA_prima: {
+      label: "Eje de la inflorescencia pubescente; perenne cespitosa de 50-70 cm; panojas no muy densas, algo interrumpidas abajo",
+      keyStep: "F'",
+      especieId: "setaria_vaginata"
     }
   },
 
@@ -4135,6 +4254,83 @@ export const monocotEspecies = {
     descripcion: "Hierba perenne, erecta, de 1,5-3 m de alto, con canas ramificadas.",
     caracteristicas: "Hojas lanceoladas y planas; cerdas involucrales simples, 8-12, de menos de 20 mm; panojas gruesas de 3-5 cm, inclinadas; espiguillas lanceoladas de 4-5 mm.",
     distribucion: "America austral; en matorrales de la ribera platense.",
+    imagen: ""
+  },
+
+  setaria_geniculata: {
+    id: "setaria_geniculata",
+    nombreCientifico: "Setaria geniculata",
+    nombreVulgar: "Setaria geniculata",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, cespitosa, con tallos ascendentes de 30-40 cm de alto.",
+    caracteristicas: "Cerdas involucrales mas de cinco; hojas escabrosas en el margen; panojas espiciformes; espiguillas de unos 2,5 mm.",
+    distribucion: "America templado-calida; ubicua, principalmente en rastrojos y jardines.",
+    imagen: ""
+  },
+
+  setaria_verticillata: {
+    id: "setaria_verticillata",
+    nombreCientifico: "Setaria verticillata",
+    nombreVulgar: "Setaria verticillata",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba anual de 40-100 cm de alto.",
+    caracteristicas: "Cerdas con pelos retrorsos, adherentes a la ropa; panoja densa, espiciforme, interrumpida en la base; espiguillas de 2 mm.",
+    distribucion: "Europa; adventicia en America. Ubicua.",
+    imagen: ""
+  },
+
+  setaria_viridis: {
+    id: "setaria_viridis",
+    nombreCientifico: "Setaria viridis",
+    nombreVulgar: "Setaria viridis",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba anual de 20-40 cm de alto.",
+    caracteristicas: "Panojas espiciformes cortas y gruesas, de 4-6 cm por 1-1,5 cm; eje de la panoja velludo; cerdas involucrales 1-3, largas; espiguillas de 2-2,5 mm.",
+    distribucion: "Europa; adventicia en America. En ambientes diversos.",
+    imagen: ""
+  },
+
+  setaria_argentina: {
+    id: "setaria_argentina",
+    nombreCientifico: "Setaria argentina",
+    nombreVulgar: "Setaria argentina",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne robusta, de 60-100 cm de alto.",
+    caracteristicas: "Hojas de hasta 16 cm por 12-15 mm; panojas espiciformes densas de 10-18 cm por 15-20 mm; espiguillas ovoides, verdosas y glabras, de 1,5-2 mm.",
+    distribucion: "Bolivia, Paraguay y norte de la Argentina; frecuente a lo largo de las vias ferreas al norte de la Capital Federal.",
+    imagen: ""
+  },
+
+  setaria_fiebrigii: {
+    id: "setaria_fiebrigii",
+    nombreCientifico: "Setaria fiebrigii",
+    nombreVulgar: "Setaria fiebrigii",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, cespitosa, de 50-150 cm de alto.",
+    caracteristicas: "Hojas de unos 30 cm por 7 mm; panojas densas, espiciformes, de 8-10(-18) cm; eje escabroso; espiguillas globosas, glabras, de 1,8 mm.",
+    distribucion: "Paraguay y nordeste de la Argentina; se halla al norte de la Capital Federal, hasta Palermo.",
+    imagen: ""
+  },
+
+  setaria_caespitosa: {
+    id: "setaria_caespitosa",
+    nombreCientifico: "Setaria caespitosa",
+    nombreVulgar: "Setaria caespitosa",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, cespitosa, de 30-50 cm de alto.",
+    caracteristicas: "Eje de la inflorescencia glabro o aspero; panoja densa, espiciforme; espiguillas ovoideas de 2 mm.",
+    distribucion: "Uruguay y nordeste de la Argentina; se halla en la estepa climax y en las praderas de la ribera.",
+    imagen: ""
+  },
+
+  setaria_vaginata: {
+    id: "setaria_vaginata",
+    nombreCientifico: "Setaria vaginata",
+    nombreVulgar: "Cola de zorro",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, cespitosa, de 50-70 cm de alto.",
+    caracteristicas: "Eje de la inflorescencia pubescente; panojas espiciformes no muy densas, algo interrumpidas en la parte inferior, de 7-11 cm; espiguillas de unos 2 mm.",
+    distribucion: "Sur del Brasil, Uruguay y nordeste de la Argentina; comun en la region.",
     imagen: ""
   },
 
