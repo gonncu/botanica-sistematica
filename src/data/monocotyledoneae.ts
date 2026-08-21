@@ -4608,12 +4608,39 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Hojas anchas, crasas, en rosetas. Plantas flotantes sin tallo",
       familia: "20. Araceae",
-      especieId: "araceae"
+      nextNodeId: "araceae"
     },
     opcionA_prima: {
       label: "Hojas herbáceas a lo largo de tallos alargados",
       familia: "12. Potamogetonaceae",
       nextNodeId: "potamogetonaceae_a"
+    }
+  },
+
+  araceae: {
+    id: "araceae",
+    milestone: "Araceae",
+    manualPage: 128,
+    descripcion: "Araceae: flores en espadices simples, protegidos por una espata; en el manual se trata Pistia como genero flotante.",
+    opcionA: {
+      label: "Genero Pistia; especie unica tratada en el manual",
+      keyStep: "1",
+      especieId: "pistia_stratiotes"
+    },
+    opcionA_prima: {
+      label: "Genero Pistia; especie unica tratada en el manual",
+      keyStep: "1",
+      especieId: "pistia_stratiotes"
+    },
+    especie: {
+      id: "pistia_stratiotes",
+      nombreCientifico: "Pistia stratiotes",
+      nombreVulgar: "Repollito de agua",
+      familia: "20. Araceae",
+      descripcion: "Plantita flotante, estolonifera, con hojas en roseta, sesiles, crasas y acanaladas longitudinalmente.",
+      caracteristicas: "Flores desnudas unisexuales en un espadice corto, parcialmente soldado a la espata; hojas anchamente espatuladas de unos 5 cm por 3 cm, con abundante aerenquima; estolones horizontales con pequenas plantitas terminales.",
+      distribucion: "Regiones calidas del globo; muy comun en arroyos de corriente suave del Delta y de la ribera platense.",
+      imagen: ""
     }
   },
 
@@ -8265,14 +8292,14 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  araceae: {
-    id: "araceae",
-    nombreCientifico: "Caladium bicolor Vent.",
-    nombreVulgar: "Taro, malanga",
+  pistia_stratiotes: {
+    id: "pistia_stratiotes",
+    nombreCientifico: "Pistia stratiotes",
+    nombreVulgar: "Repollito de agua",
     familia: "20. Araceae",
-    descripcion: "Planta acuática flotante con hojas grandes.",
-    caracteristicas: "Hojas anchas crasas en roseta, flores en espádice protegido por espata.",
-    distribucion: "Ambientes acuáticos tropicales",
+    descripcion: "Plantita flotante, estolonifera, con hojas en roseta, sesiles, crasas y acanaladas longitudinalmente.",
+    caracteristicas: "Flores desnudas unisexuales en un espadice corto, parcialmente soldado a la espata; hojas anchamente espatuladas de unos 5 cm por 3 cm, con abundante aerenquima; estolones horizontales con pequenas plantitas terminales.",
+    distribucion: "Regiones calidas del globo; muy comun en arroyos de corriente suave del Delta y de la ribera platense.",
     imagen: ""
   },
 
