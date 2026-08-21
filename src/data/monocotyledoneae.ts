@@ -24,14 +24,28 @@ export const monocotiledoneaeData = {
   // RAMA A: Palmae
   palmae: {
     id: "palmae",
-    descripcion: "Palmae: Plantas con tronco único coronado de hojas grandes pinnadas o flabeladas. Flores en panojas protegidas por espata.",
+    milestone: "Palmae",
+    manualPage: 128,
+    descripcion: "Palmae: plantas con tallo simple, una sola yema terminal, hojas generalmente pinatisectas o palmatisectas e inflorescencia protegida por espata lenosa.",
     opcionA: {
-      label: "Hojas pinnadas",
-      especieId: "cocos_nucifera"
+      label: "Genero Arecastrum; especie unica tratada en el manual",
+      keyStep: "1",
+      especieId: "arecastrum_romanzoffianum"
     },
     opcionA_prima: {
-      label: "Hojas flabeladas",
-      especieId: "palm_flabelada"
+      label: "Genero Arecastrum; especie unica tratada en el manual",
+      keyStep: "1",
+      especieId: "arecastrum_romanzoffianum"
+    },
+    especie: {
+      id: "arecastrum_romanzoffianum",
+      nombreCientifico: "Arecastrum romanzoffianum",
+      nombreVulgar: "Pindo; datil",
+      familia: "19. Palmae",
+      descripcion: "Palma de unos 10 m de alto, con estipe desnudo y anillado.",
+      caracteristicas: "Hojas pinadas de unos 2,5 m; segmentos lineales, plegados y flaccidos, dispuestos en grupos de 2-5 a cada lado del raquis; ramas de la inflorescencia sinuosas; flores amarillo-crema; fruto globoso-ovoideo de 2 cm.",
+      distribucion: "America austral calida; individuos aislados en el Delta del Parana y cultivada como ornamental.",
+      imagen: ""
     }
   },
 
@@ -5035,25 +5049,14 @@ export const monocotiledoneaeData = {
 // Especies de Monocotiledoneae
 export const monocotEspecies = {
   // Palmae
-  cocos_nucifera: {
-    id: "cocos_nucifera",
-    nombreCientifico: "Cocos nucifera L.",
-    nombreVulgar: "Coco",
-    familia: "Palmae (Arecaceae)",
-    descripcion: "Palma tropical con tronco único terminado en una yema.",
-    caracteristicas: "Hojas pinnadas muy grandes, flores amarillas pequeñas en panojas, fruto drupa grande.",
-    distribucion: "Regiones tropicales de Argentina, cultivos ocasionales.",
-    imagen: ""
-  },
-
-  palm_flabelada: {
-    id: "palm_flabelada",
-    nombreCientifico: "Chamaerops sp.",
-    nombreVulgar: "Palma abanico",
-    familia: "Palmae",
-    descripcion: "Palma con hojas en forma de abanico.",
-    caracteristicas: "Hojas flabeladas, tallos múltiples.",
-    distribucion: "Áreas cultivadas",
+  arecastrum_romanzoffianum: {
+    id: "arecastrum_romanzoffianum",
+    nombreCientifico: "Arecastrum romanzoffianum",
+    nombreVulgar: "Pindo; datil",
+    familia: "19. Palmae",
+    descripcion: "Palma de unos 10 m de alto, con estipe desnudo y anillado.",
+    caracteristicas: "Hojas pinadas de unos 2,5 m; segmentos lineales, plegados y flaccidos, dispuestos en grupos de 2-5 a cada lado del raquis; ramas de la inflorescencia sinuosas; flores amarillo-crema; fruto globoso-ovoideo de 2 cm.",
+    distribucion: "America austral calida; individuos aislados en el Delta del Parana y cultivada como ornamental.",
     imagen: ""
   },
 
