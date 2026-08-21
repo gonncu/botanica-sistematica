@@ -453,6 +453,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo B.",
     "Árboles con látex; flores encerradas en sicono o incrustadas en receptáculo."
   ),
+  ficus_monckii_sanmartinianus: species(
+    "ficus_monckii_sanmartinianus",
+    "Ficus monckii var. sanmartinianus",
+    "37. Moraceae",
+    "Árbol epífito o terrestre de unos 10-15 m de altura.",
+    "Hojas pecioladas, elípticas, subcoriáceas, enteras, de 6-10 cm; receptáculos globosos de unos 8 mm, cortamente pedunculados; flores masculinas, agallas y femeninas entremezcladas.",
+    "Paraguay y nordeste de la Argentina; común en el Delta y en Martín García, generalmente epífito sobre seibos. N. v.: higuerón, agarrapalo."
+  ),
+  dorstenia_brasiliensis: species(
+    "dorstenia_brasiliensis",
+    "Dorstenia brasiliensis",
+    "37. Moraceae",
+    "Hierba perenne, acaule y rizomatosa.",
+    "Hojas en roseta, ovado-cordadas, pecioladas y crenadas; receptáculo circular algo cóncavo; flores amontonadas sobre un receptáculo plano andrógino.",
+    "Brasil, Paraguay, Uruguay y NE de la Argentina; hallada cerca de Buenos Aires en la Isla Maciel."
+  ),
   rubiaceae: family(
     "rubiaceae",
     "123. Rubiaceae",
@@ -1852,7 +1868,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Sí; árboles con látex",
       keyStep: "A",
-      especieId: "moraceae",
+      nextNodeId: "moraceae_a",
     },
     opcionA_prima: {
       label: "No; flores con inflorescencias de otros tipos",
@@ -1866,12 +1882,28 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Sí; perigonio soldado al receptáculo",
       keyStep: "B",
-      especieId: "moraceae",
+      nextNodeId: "moraceae_a",
     },
     opcionA_prima: {
       label: "No; flores en inflorescencias de otros tipos",
       keyStep: "B'",
       nextNodeId: "dicot_group_b_c",
+    },
+  },
+  moraceae_a: {
+    id: "moraceae_a",
+    milestone: "Moraceae",
+    manualPage: 167,
+    descripcion: "Moraceae - A: porte e inflorescencia",
+    opcionA: {
+      label: "Árboles; inflorescencia en sicono",
+      keyStep: "A",
+      especieId: "ficus_monckii_sanmartinianus",
+    },
+    opcionA_prima: {
+      label: "Hierbas; inflorescencia en capítulo",
+      keyStep: "A'",
+      especieId: "dorstenia_brasiliensis",
     },
   },
   dicot_group_b_c: {
