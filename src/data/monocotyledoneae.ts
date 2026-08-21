@@ -344,7 +344,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Estilo trifido; continuar en proxima tanda de Cyperus",
       keyStep: "A'",
-      especieId: "cyperus"
+      nextNodeId: "cyperus_g"
     }
   },
 
@@ -430,6 +430,159 @@ export const monocotiledoneaeData = {
       label: "Glumas blanquecinas, carenado-naviculares, obtusas; estambres 2; espiguillas 15-25 lineal-lanceoladas",
       keyStep: "F'",
       especieId: "cyperus_tener"
+    }
+  },
+
+  cyperus_g: {
+    id: "cyperus_g",
+    milestone: "Cyperus",
+    manualPage: 116,
+    descripcion: "Cyperus - G: espiguillas cilindricas con raquis articulado",
+    opcionA: {
+      label: "Espiguillas cilindricas, con raquis articulado al nivel de las glumas, dividiendose a la madurez en fragmentos uninucigenos",
+      keyStep: "G",
+      especieId: "cyperus_ferax"
+    },
+    opcionA_prima: {
+      label: "Espiguillas mas o menos comprimidas lateralmente",
+      keyStep: "G'",
+      nextNodeId: "cyperus_h"
+    }
+  },
+
+  cyperus_h: {
+    id: "cyperus_h",
+    milestone: "Cyperus",
+    manualPage: 116,
+    descripcion: "Cyperus - H: espiguillas digitadas/fasciculadas o agrupadas en espigas",
+    opcionA: {
+      label: "Espiguillas digitadas o fasciculadas",
+      keyStep: "H",
+      nextNodeId: "cyperus_i"
+    },
+    opcionA_prima: {
+      label: "Espiguillas agrupadas en espigas; continuar en proxima tanda de Cyperus",
+      keyStep: "H'",
+      especieId: "cyperus"
+    }
+  },
+
+  cyperus_i: {
+    id: "cyperus_i",
+    milestone: "Cyperus",
+    manualPage: 116,
+    descripcion: "Cyperus - I: tallo escabroso/espinuloso o liso",
+    opcionA: {
+      label: "Tallo escabroso o espinuloso",
+      keyStep: "I",
+      nextNodeId: "cyperus_j"
+    },
+    opcionA_prima: {
+      label: "Tallo liso",
+      keyStep: "I'",
+      nextNodeId: "cyperus_k"
+    }
+  },
+
+  cyperus_j: {
+    id: "cyperus_j",
+    milestone: "Cyperus",
+    manualPage: 116,
+    descripcion: "Cyperus - J: tipo de tallo escabroso",
+    opcionA: {
+      label: "Tallo triquetro, semialado, escabroso en los angulos, hojoso en la base, de cerca de 1 m",
+      keyStep: "J",
+      especieId: "cyperus_virens"
+    },
+    opcionA_prima: {
+      label: "Tallo trigono, con espinitas dirigidas hacia abajo, de 15-40 cm",
+      keyStep: "J'",
+      especieId: "cyperus_surinamensis"
+    }
+  },
+
+  cyperus_k: {
+    id: "cyperus_k",
+    milestone: "Cyperus",
+    manualPage: 117,
+    descripcion: "Cyperus - K: color del aquenio",
+    opcionA: {
+      label: "Aquenio blanco o vitreo; inflorescencia en umbela compuesta laxa",
+      keyStep: "K",
+      especieId: "cyperus_haspan"
+    },
+    opcionA_prima: {
+      label: "Aquenio pardo, castano o gris",
+      keyStep: "K'",
+      nextNodeId: "cyperus_l"
+    }
+  },
+
+  cyperus_l: {
+    id: "cyperus_l",
+    milestone: "Cyperus",
+    manualPage: 117,
+    descripcion: "Cyperus - L: glumas persistentes o caducas",
+    opcionA: {
+      label: "Glumas persistentes sobre la raquilla, que es caduca; inflorescencia con 4-8 espigas simples cilindricas",
+      keyStep: "L",
+      especieId: "cyperus_cayennensis"
+    },
+    opcionA_prima: {
+      label: "Glumas caducas",
+      keyStep: "L'",
+      nextNodeId: "cyperus_m"
+    }
+  },
+
+  cyperus_m: {
+    id: "cyperus_m",
+    milestone: "Cyperus",
+    manualPage: 117,
+    descripcion: "Cyperus - M: forma de aquenios",
+    opcionA: {
+      label: "Aquenios obovoideos; inflorescencia en umbela compuesta, a veces contraida y capituliforme",
+      keyStep: "M",
+      especieId: "cyperus_eragrostis"
+    },
+    opcionA_prima: {
+      label: "Aquenios elipticos; espiguillas castanas o amarillentas",
+      keyStep: "M'",
+      nextNodeId: "cyperus_n"
+    }
+  },
+
+  cyperus_n: {
+    id: "cyperus_n",
+    milestone: "Cyperus",
+    manualPage: 117,
+    descripcion: "Cyperus - N: inflorescencia laxa o densa",
+    opcionA: {
+      label: "Inflorescencia en antela laxa, con muchos fasciculos globosos; espiguillas ovadas, agudas, muy comprimidas",
+      keyStep: "N",
+      especieId: "cyperus_luzulae"
+    },
+    opcionA_prima: {
+      label: "Inflorescencia densa, capituliforme, raramente en antela de pocos fasciculos",
+      keyStep: "N'",
+      nextNodeId: "cyperus_o"
+    }
+  },
+
+  cyperus_o: {
+    id: "cyperus_o",
+    milestone: "Cyperus",
+    manualPage: 117,
+    descripcion: "Cyperus - O: color de cabezuelas",
+    opcionA: {
+      label: "Cabezuelas de color castano rojizo, rodeadas por 3 bracteas foliaceas",
+      keyStep: "O",
+      especieId: "cyperus_reflexus"
+    },
+    opcionA_prima: {
+      label: "Cabezuelas de color pajizo; espiguillas 8-30, fasciculadas, lanceolado-lineales",
+      keyStep: "O'",
+      especieId: "cyperus_incomptus"
     }
   },
 
@@ -6889,6 +7042,105 @@ export const monocotEspecies = {
     descripcion: "Planta perenne con rizoma delgado y tallos lisos de 8-10 cm de alto.",
     caracteristicas: "Con 1-2 hojas cortas; glumas blanquecinas, carenado-naviculares, obtusas; inflorescencia en capitulo seudolateral; espiguillas 15-25, lineal-lanceoladas, 16-30-floras, de 15-18 mm.",
     distribucion: "America austral; hallado en San Isidro, Vicente Lopez, etc.",
+    imagen: ""
+  },
+
+  cyperus_ferax: {
+    id: "cyperus_ferax",
+    nombreCientifico: "Cyperus ferax",
+    nombreVulgar: "Cyperus ferax",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta cespitosa, de 20-80 cm de alto.",
+    caracteristicas: "Hojas en la parte inferior del tallo, planas y lineales; espiguillas cilindricas con raquis articulado al nivel de las glumas, dividiendose a la madurez en fragmentos uninucigenos.",
+    distribucion: "Regiones calidas; comun en los pajonales del Delta y de la ribera.",
+    imagen: ""
+  },
+
+  cyperus_virens: {
+    id: "cyperus_virens",
+    nombreCientifico: "Cyperus virens",
+    nombreVulgar: "Cyperus virens",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta perenne, cespitosa, con tallos triquetros semialados, hojosos en la base, de cerca de 1 m de alto.",
+    caracteristicas: "Hojas lineales, asperas en el borde; inflorescencia umbeliforme laxa o contraida, con cabezuelas amarillentas; espiguillas ovadas, comprimidas, 14-28-floras, de 5-8 mm.",
+    distribucion: "America calida; comun en el Delta y en la ribera del Plata.",
+    imagen: ""
+  },
+
+  cyperus_surinamensis: {
+    id: "cyperus_surinamensis",
+    nombreCientifico: "Cyperus surinamensis",
+    nombreVulgar: "Cyperus surinamensis",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta perenne, rizomatosa, con tallos trigonales de 15-40 cm, cubiertos de espinitas retrorsas.",
+    caracteristicas: "Hojas largas, rigidas y carenadas; inflorescencia en antela compuesta; cabezuelas esfericas o trilobadas; espiguillas ovado-lanceoladas, 14-18-floras, de 3-5 mm.",
+    distribucion: "America tropical y subtropical; en los pajonales del Delta.",
+    imagen: ""
+  },
+
+  cyperus_haspan: {
+    id: "cyperus_haspan",
+    nombreCientifico: "Cyperus haspan subsp. juncoides var. riparius",
+    nombreVulgar: "Cyperus haspan",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta perenne, cespitosa, de 50 cm de alto.",
+    caracteristicas: "Hojas basales lineales; tallo liso; aquenio blanco o vitreo; inflorescencia en umbela compuesta laxa, con fasciculos de 1-3 espiguillas lineal-lanceoladas, 15-25-floras, de 5-8 mm.",
+    distribucion: "Paraguay y nordeste de la Argentina; comun en la ribera.",
+    imagen: ""
+  },
+
+  cyperus_cayennensis: {
+    id: "cyperus_cayennensis",
+    nombreCientifico: "Cyperus cayennensis",
+    nombreVulgar: "Cyperus cayennensis",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta perenne, rizomatosa, con tallos triquetros, lisos, hojosos en la base, de 15-45 cm de alto.",
+    caracteristicas: "Glumas persistentes sobre la raquilla caduca; inflorescencia con 4-8 espigas simples, cilindricas, obtusas; espiguillas oblongo-lanceoladas, 2-5-floras.",
+    distribucion: "America calida; comun en suelos humedos.",
+    imagen: ""
+  },
+
+  cyperus_eragrostis: {
+    id: "cyperus_eragrostis",
+    nombreCientifico: "Cyperus eragrostis",
+    nombreVulgar: "Cyperus eragrostis",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta perenne con rizoma corto y tallos lisos de hasta 50 cm de alto.",
+    caracteristicas: "Hojas planas y carenadas; aquenios obovoideos; inflorescencia en umbela compuesta, a veces contraida y capituliforme; espiguillas verde claro, 18-32-floras, de 11-15 mm.",
+    distribucion: "America calida; comun en lugares muy humedos.",
+    imagen: ""
+  },
+
+  cyperus_luzulae: {
+    id: "cyperus_luzulae",
+    nombreCientifico: "Cyperus luzulae var. entrerianus",
+    nombreVulgar: "Cyperus luzulae",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta perenne, cespitosa, de 20-60 cm de alto.",
+    caracteristicas: "Hojas tan largas o mas que el tallo; inflorescencia en antela laxa con muchos fasciculos globosos; espiguillas ovadas, agudas, muy comprimidas, de 4-5 mm, con 15-25 flores.",
+    distribucion: "America tropical; raro en Puerto Nuevo.",
+    imagen: ""
+  },
+
+  cyperus_reflexus: {
+    id: "cyperus_reflexus",
+    nombreCientifico: "Cyperus reflexus",
+    nombreVulgar: "Cyperus reflexus",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta perenne, rizomatosa, de unos 50 cm de alto, con tallos hojosos en la base.",
+    caracteristicas: "Inflorescencia densa capituliforme; cabezuelas castano rojizas con 3 bracteas foliaceas; espiguillas fasciculadas, lanceoladas, 15-30-floras, de 6-12 mm. El manual menciona var. fraternus.",
+    distribucion: "America calida; muy comun en campos humedos.",
+    imagen: ""
+  },
+
+  cyperus_incomptus: {
+    id: "cyperus_incomptus",
+    nombreCientifico: "Cyperus incomptus",
+    nombreVulgar: "Cyperus incomptus",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta perenne, cespitosa, de 40-75 cm de alto.",
+    caracteristicas: "Hojas asperas en los bordes; cabezuelas pajizas; espiguillas 8-30, fasciculadas, lanceolado-lineales, poco comprimidas, 20-30-floras, de 15-22 mm.",
+    distribucion: "America del Sur; citada para la Isla Martin Garcia.",
     imagen: ""
   },
 
