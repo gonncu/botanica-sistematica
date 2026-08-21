@@ -1838,9 +1838,26 @@ export const monocotiledoneaeData = {
       especieId: "eriochloa_montevidensis"
     },
     opcionA_prima: {
-      label: "Espiguillas mas o menos deprimidas, dispuestas en panojas laxas o densas; caracteres de Panicum",
+      label: "Espiguillas con otros caracteres dentro de Paniceae",
       keyStep: "E'",
+      nextNodeId: "paniceae_f"
+    }
+  },
+
+  paniceae_f: {
+    id: "paniceae_f",
+    milestone: "Paniceae",
+    manualPage: 96,
+    descripcion: "Paniceae - entrada parcial: Panicum o Paspalum",
+    opcionA: {
+      label: "Espiguillas mas o menos deprimidas, dispuestas en panojas laxas o densas; caracteres de Panicum",
+      keyStep: "F",
       nextNodeId: "panicum_a"
+    },
+    opcionA_prima: {
+      label: "Espiguillas solitarias o en pares, dispuestas en dos o mas filas sobre un lado de un raquis angosto o dilatado; caracteres de Paspalum",
+      keyStep: "F'",
+      nextNodeId: "paspalum_a"
     }
   },
 
@@ -2130,6 +2147,91 @@ export const monocotiledoneaeData = {
       label: "Hojas de cerca de 5 mm; plantas de 50-100 cm, ligeramente hirsutas o glabrescentes; panojas amplias y difusas",
       keyStep: "S'",
       especieId: "panicum_pilcomayense"
+    }
+  },
+
+  paspalum_a: {
+    id: "paspalum_a",
+    milestone: "Paspalum",
+    manualPage: 100,
+    descripcion: "Paspalum - A: plantas flotantes o terrestres",
+    opcionA: {
+      label: "Plantas perennes, flotantes, con vainas dilatadas y esponjosas; tallos tendidos sobre el agua, radicantes en los nudos",
+      keyStep: "A",
+      especieId: "paspalum_repens"
+    },
+    opcionA_prima: {
+      label: "Plantas terrestres, con vainas no dilatadas; raquis generalmente triquetro, igual o mas angosto que las espiguillas",
+      keyStep: "A'",
+      nextNodeId: "paspalum_b"
+    }
+  },
+
+  paspalum_b: {
+    id: "paspalum_b",
+    milestone: "Paspalum",
+    manualPage: 100,
+    descripcion: "Paspalum - B: tipo de inflorescencia",
+    opcionA: {
+      label: "Inflorescencia formada por dos espigas geminadas en V en la extremidad de las canas floriferas, raramente con una tercera cercana",
+      keyStep: "B",
+      nextNodeId: "paspalum_c"
+    },
+    opcionA_prima: {
+      label: "Inflorescencia formada por 1 a muchas espigas nunca geminadas; continuar en proxima tanda de Paspalum",
+      keyStep: "B'",
+      especieId: "paspalum"
+    }
+  },
+
+  paspalum_c: {
+    id: "paspalum_c",
+    milestone: "Paspalum",
+    manualPage: 100,
+    descripcion: "Paspalum - C: rizomas cortos o largos",
+    opcionA: {
+      label: "Plantas con rizomas cortos y fuertes, que dan lugar a matas compactas",
+      keyStep: "C",
+      nextNodeId: "paspalum_d"
+    },
+    opcionA_prima: {
+      label: "Plantas con rizomas largos y profundos; espiguillas lanceoladas de 2,5-3,5 mm",
+      keyStep: "C'",
+      nextNodeId: "paspalum_e"
+    }
+  },
+
+  paspalum_d: {
+    id: "paspalum_d",
+    milestone: "Paspalum",
+    manualPage: 100,
+    descripcion: "Paspalum - D: tamano y disposicion de espiguillas",
+    opcionA: {
+      label: "Espiguillas de 1,8-2,3 mm por 1,1-1,3 mm, elipticas u obovadas, en una sola serie; espigas de 4-7 cm",
+      keyStep: "D",
+      especieId: "paspalum_pumilum"
+    },
+    opcionA_prima: {
+      label: "Espiguillas de 2,8-4 mm, elipticas u obovadas, verde-violaceas, en dos hileras; espigas generalmente 2, a veces 3-4",
+      keyStep: "D'",
+      especieId: "paspalum_notatum"
+    }
+  },
+
+  paspalum_e: {
+    id: "paspalum_e",
+    milestone: "Paspalum",
+    manualPage: 100,
+    descripcion: "Paspalum - E: pubescencia de gluma y lemma esteril",
+    opcionA: {
+      label: "Gluma finamente pubescente; lemma esteril glabra; espigas desigualmente pedunculadas de 2-6 cm",
+      keyStep: "E",
+      especieId: "paspalum_distichum"
+    },
+    opcionA_prima: {
+      label: "Gluma y lemma esteril glabras; espigas con pedicelos casi iguales",
+      keyStep: "E'",
+      especieId: "paspalum_vaginatum"
     }
   },
 
@@ -3620,6 +3722,72 @@ export const monocotEspecies = {
     descripcion: "Hierba cespitosa de 50-100 cm de alto, ligeramente hirsuta o glabrescente.",
     caracteristicas: "Hojas de cerca de 5 mm de ancho; panojas amplias y difusas; espiguillas ovoideas, acuminadas, glabras, de 2,5 mm.",
     distribucion: "Paraguay y nordeste de la Argentina; hallada en Palermo.",
+    imagen: ""
+  },
+
+  paspalum_repens: {
+    id: "paspalum_repens",
+    nombreCientifico: "Paspalum repens",
+    nombreVulgar: "Paspalum repens",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, flotante, con vainas dilatadas y esponjosas.",
+    caracteristicas: "Tallos tendidos sobre el agua, radicantes en los nudos; inflorescencias con mas de 20 espigas; raquis membranaceo ancho terminado en punta delgada; espiguillas ovado-lanceoladas de unos 2 mm.",
+    distribucion: "America calida; muy comun en los camalotales del Delta y de la ribera platense.",
+    imagen: ""
+  },
+
+  paspalum_pumilum: {
+    id: "paspalum_pumilum",
+    nombreCientifico: "Paspalum pumilum",
+    nombreVulgar: "Paspalum pumilum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba terrestre de 15-40 cm de alto, con rizomas cortos y fuertes que forman matas compactas.",
+    caracteristicas: "Inflorescencia con dos espigas geminadas en V; espiguillas elipticas u obovadas, de 1,8-2,3 mm por 1,1-1,3 mm, dispuestas en una sola serie; espigas de 4-7 cm.",
+    distribucion: "America tropical y subtropical; comun en el cesped de la ribera.",
+    imagen: ""
+  },
+
+  paspalum_notatum: {
+    id: "paspalum_notatum",
+    nombreCientifico: "Paspalum notatum var. latiflorum",
+    nombreVulgar: "Paspalum notatum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba terrestre de 30-100 cm de alto, con rizomas cortos y fuertes que forman matas compactas.",
+    caracteristicas: "Espiguillas elipticas u obovadas, verde-violaceas, de 2,8-4 mm, dispuestas en dos hileras; espigas generalmente 2, a veces 3-4, de hasta 16 cm. El manual menciona tambien la var. saurae, con espiguillas menores.",
+    distribucion: "America tropical y subtropical; comun en campos altos.",
+    imagen: ""
+  },
+
+  paspalum_distichum: {
+    id: "paspalum_distichum",
+    nombreCientifico: "Paspalum distichum",
+    nombreVulgar: "Gramilla dulce",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne terrestre, de menos de 25 cm de alto, con rizomas largos y profundos.",
+    caracteristicas: "Espiguillas lanceoladas de 3-3,5 mm; gluma finamente pubescente y lemma esteril glabra; espigas desigualmente pedunculadas de 2-6 cm.",
+    distribucion: "America tropical y subtropical; adventicia en otras regiones del globo. Comun en praderas humedas.",
+    imagen: ""
+  },
+
+  paspalum_vaginatum: {
+    id: "paspalum_vaginatum",
+    nombreCientifico: "Paspalum vaginatum",
+    nombreVulgar: "Paspalum vaginatum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne terrestre, de menos de 25 cm de alto, con rizomas largos y profundos.",
+    caracteristicas: "Espiguillas lanceoladas de 2,5-3,5 mm; gluma y lemma esteril glabras; espigas con pedicelos casi iguales.",
+    distribucion: "America calida y templada; muy comun en suelos humedos.",
+    imagen: ""
+  },
+
+  paspalum: {
+    id: "paspalum",
+    nombreCientifico: "Paspalum sp.",
+    nombreVulgar: "Paspalum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Genero de Paniceae con espiguillas deprimidas, generalmente obtusas, solitarias o en pares, dispuestas en filas sobre un lado del raquis.",
+    caracteristicas: "Rama parcialmente cargada; quedan pendientes las especies de inflorescencias no geminadas y otros grupos internos del genero.",
+    distribucion: "Genero representado en la flora de los alrededores de Buenos Aires.",
     imagen: ""
   },
 
