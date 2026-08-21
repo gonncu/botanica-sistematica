@@ -4702,7 +4702,126 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Gineceo gamocarpelar",
       familia: "25. Juncaceae",
-      especieId: "juncaceae"
+      nextNodeId: "juncus_a"
+    }
+  },
+
+  juncus_a: {
+    id: "juncus_a",
+    milestone: "Juncaceae",
+    manualPage: 138,
+    descripcion: "Juncus - A: bracteas cortas en la base de cada flor",
+    opcionA: {
+      label: "Cada flor lleva dos bracteas cortas en su base",
+      keyStep: "A",
+      nextNodeId: "juncus_b"
+    },
+    opcionA_prima: {
+      label: "Flores sin bracteas en la base; plantas perennes",
+      keyStep: "A'",
+      nextNodeId: "juncus_f"
+    }
+  },
+
+  juncus_b: {
+    id: "juncus_b",
+    milestone: "Juncus",
+    manualPage: 139,
+    descripcion: "Juncus - B: plantas anuales o perennes",
+    opcionA: {
+      label: "Plantas anuales, tenues, con tallos de unos 20 cm; hojas numerosas estrechamente lineales; flores en antela; perigonio de 5-7 mm",
+      keyStep: "B",
+      especieId: "juncus_bufonius"
+    },
+    opcionA_prima: {
+      label: "Plantas perennes",
+      keyStep: "B'",
+      nextNodeId: "juncus_c"
+    }
+  },
+
+  juncus_c: {
+    id: "juncus_c",
+    milestone: "Juncus",
+    manualPage: 139,
+    descripcion: "Juncus - C: hojas capilares o lineales",
+    opcionA: {
+      label: "Hojas capilares, surcadas, de solo 0,2-0,3 mm de diametro; tallos filiformes de 15-25 cm; inflorescencia seudolateral pauciflora",
+      keyStep: "C",
+      especieId: "juncus_capillaceus"
+    },
+    opcionA_prima: {
+      label: "Hojas lineales, de 0,5 mm o mas de anchura",
+      keyStep: "C'",
+      nextNodeId: "juncus_d"
+    }
+  },
+
+  juncus_d: {
+    id: "juncus_d",
+    milestone: "Juncus",
+    manualPage: 139,
+    descripcion: "Juncus - D: longitud y color del perigonio",
+    opcionA: {
+      label: "Perigonio castano de 5-6 mm; fruto algo mas largo que los tepalos; hierba cespitosa de 10-40 cm; hojas lineales canaliculadas",
+      keyStep: "D",
+      especieId: "juncus_imbricatus"
+    },
+    opcionA_prima: {
+      label: "Perigonio de 3-4 mm; fruto del mismo largo",
+      keyStep: "D'",
+      nextNodeId: "juncus_e"
+    }
+  },
+
+  juncus_e: {
+    id: "juncus_e",
+    milestone: "Juncus",
+    manualPage: 139,
+    descripcion: "Juncus - E: antela laxa o densa",
+    opcionA: {
+      label: "Antela laxa, con bractea mas larga o mas corta que ella; perigonio parduzco de 3-4 mm; hierba cespitosa de 20-80 cm",
+      keyStep: "E",
+      especieId: "juncus_dichotomus"
+    },
+    opcionA_prima: {
+      label: "Antela muy densa; perigonio castano de 3-4 mm; estambres solo 3; hierba cespitosa de 20-45 cm",
+      keyStep: "E'",
+      especieId: "juncus_uruguensis"
+    }
+  },
+
+  juncus_f: {
+    id: "juncus_f",
+    milestone: "Juncus",
+    manualPage: 139,
+    descripcion: "Juncus - F: plantas robustas punzantes o menores",
+    opcionA: {
+      label: "Plantas muy robustas, con hojas cilindricas rigidas y punzantes, formando matas densas de 1-1,5 m; flores numerosas en grupos de 4-6 ordenados en antelas",
+      keyStep: "F",
+      especieId: "juncus_acutus"
+    },
+    opcionA_prima: {
+      label: "Plantas menores, con tallos y hojas no punzantes; flores en capitulos",
+      keyStep: "F'",
+      nextNodeId: "juncus_g"
+    }
+  },
+
+  juncus_g: {
+    id: "juncus_g",
+    milestone: "Juncus",
+    manualPage: 139,
+    descripcion: "Juncus - G: forma y tamano de las cabezuelas",
+    opcionA: {
+      label: "Cabezuelas esfericas, globosas, multifloras, de 7-10 mm, agrupadas en antela terminal; hojas cilindricas huecas con tabiques transversales",
+      keyStep: "G",
+      especieId: "juncus_densiflorus"
+    },
+    opcionA_prima: {
+      label: "Cabezuelas hemisfericas, paucifloras, de 3-5 mm, agrupadas en antelas; hojas tubulosas, comprimidas, septadas",
+      keyStep: "G'",
+      especieId: "juncus_microcephalus"
     }
   },
 
@@ -8625,14 +8744,91 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  juncaceae: {
-    id: "juncaceae",
-    nombreCientifico: "Juncus sp.",
-    nombreVulgar: "Junco",
+  juncus_bufonius: {
+    id: "juncus_bufonius",
+    nombreCientifico: "Juncus bufonius",
+    nombreVulgar: "Juncus bufonius",
     familia: "25. Juncaceae",
-    descripcion: "Plantas tipo junco con gineceo gamocarpelar.",
-    caracteristicas: "Tallos cilíndricos, flores en fascículos o panojas.",
-    distribucion: "Áreas húmedas y pantanosas",
+    descripcion: "Planta anual, tenue, con tallos de unos 20 cm de alto.",
+    caracteristicas: "Cada flor lleva dos bracteas cortas en su base; hojas numerosas, estrechamente lineales; flores en antela; perigonio de 5-7 mm, con tepalos lanceolados y agudos.",
+    distribucion: "Cosmopolita; en lugares pantanosos.",
+    imagen: ""
+  },
+
+  juncus_capillaceus: {
+    id: "juncus_capillaceus",
+    nombreCientifico: "Juncus capillaceus",
+    nombreVulgar: "Juncus capillaceus",
+    familia: "25. Juncaceae",
+    descripcion: "Planta perenne con tallos filiformes de 15-25 cm de alto.",
+    caracteristicas: "Hojas capilares, surcadas, de solo 0,2-0,3 mm de diametro; inflorescencia seudolateral, pauciflora, con larga bractea subulada; flores parduzcas de 2-3,5 mm.",
+    distribucion: "Uruguay y nordeste de la Argentina; en suelos humedos.",
+    imagen: ""
+  },
+
+  juncus_imbricatus: {
+    id: "juncus_imbricatus",
+    nombreCientifico: "Juncus imbricatus var. chamissonis",
+    nombreVulgar: "Junquito",
+    familia: "25. Juncaceae",
+    descripcion: "Hierba perenne, cespitosa, de 10-40 cm de alto.",
+    caracteristicas: "Perigonio castano de 5-6 mm; fruto algo mas largo que los tepalos; hojas inferiores catafilares y las siguientes lineales, canaliculadas, de 0,5-1 mm de ancho, con auriculas obtusas; antela terminal con bractea corta.",
+    distribucion: "America del Sur; muy frecuente en campos humedos, en primavera.",
+    imagen: ""
+  },
+
+  juncus_dichotomus: {
+    id: "juncus_dichotomus",
+    nombreCientifico: "Juncus dichotomus",
+    nombreVulgar: "Juncus dichotomus",
+    familia: "25. Juncaceae",
+    descripcion: "Hierba cespitosa, de 20-80 cm de alto.",
+    caracteristicas: "Perigonio parduzco de 3-4 mm; fruto del mismo largo; antela laxa, con bractea mas larga o mas corta que ella; hojas inferiores catafilares y las normales estrechamente lineales, semicilindricas y canaliculadas.",
+    distribucion: "America; comun en suelos pantanosos.",
+    imagen: ""
+  },
+
+  juncus_uruguensis: {
+    id: "juncus_uruguensis",
+    nombreCientifico: "Juncus uruguensis",
+    nombreVulgar: "Juncus uruguensis",
+    familia: "25. Juncaceae",
+    descripcion: "Hierba cespitosa, de 20-45 cm de alto.",
+    caracteristicas: "Antela muy densa; perigonio castano de 3-4 mm; estambres solo 3; hojas lineales de cerca de 1 mm de ancho.",
+    distribucion: "Uruguay y nordeste de la Argentina; raro en la region, citado para Abasto.",
+    imagen: ""
+  },
+
+  juncus_acutus: {
+    id: "juncus_acutus",
+    nombreCientifico: "Juncus acutus var. leopoldii",
+    nombreVulgar: "Junco; hunco",
+    familia: "25. Juncaceae",
+    descripcion: "Planta perenne muy robusta, formando matas densas de 1-1,5 m de alto.",
+    caracteristicas: "Flores sin bracteas en la base; hojas cilindricas rigidas y punzantes; flores numerosas en grupos de 4-6 ordenados en antelas; bractea de la inflorescencia generalmente mas larga que esta; perigonio castano de 3-4 mm; estambres 6; frutos castanos globosos de unos 3 mm.",
+    distribucion: "Cosmopolita; en suelos salinos humedos, en verano.",
+    imagen: ""
+  },
+
+  juncus_densiflorus: {
+    id: "juncus_densiflorus",
+    nombreCientifico: "Juncus densiflorus var. pohlii",
+    nombreVulgar: "Juncus densiflorus",
+    familia: "25. Juncaceae",
+    descripcion: "Hierba rizomatosa, de cerca de 1 m de alto.",
+    caracteristicas: "Planta menor, no punzante; flores en capitulos; cabezuelas esfericas, globosas, multifloras, de 7-10 mm, agrupadas en antela terminal; perigonio verdoso-rojizo de unos 4 mm; fruto mas corto que los tepalos; hojas cilindricas huecas con tabiques transversales.",
+    distribucion: "America del Sur; en los pajonales del Delta y de la ribera del Plata.",
+    imagen: ""
+  },
+
+  juncus_microcephalus: {
+    id: "juncus_microcephalus",
+    nombreCientifico: "Juncus microcephalus var. floribundus",
+    nombreVulgar: "Juncus microcephalus",
+    familia: "25. Juncaceae",
+    descripcion: "Hierba cortamente rizomatosa, de 20-80 cm de alto.",
+    caracteristicas: "Planta menor, no punzante; flores en capitulos; cabezuelas hemisfericas, paucifloras, de 3-5 mm, agrupadas en antelas; perigonio de unos 3 mm; hojas tubulosas, comprimidas y septadas.",
+    distribucion: "America del Sur y America Central; comun en terrenos pantanosos.",
     imagen: ""
   },
 
