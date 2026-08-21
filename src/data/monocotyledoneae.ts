@@ -5138,11 +5138,62 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Plantas epífitas con hojas subuladas en roseta",
       familia: "22. Bromeliaceae",
-      especieId: "bromeliaceae"
+      nextNodeId: "bromeliaceae_a"
     },
     opcionA_prima: {
       label: "Plantas terrícolas",
       nextNodeId: "herbaceae_c_prima_l_prima_p_prima_s_prima_t_prima_u_prima"
+    }
+  },
+
+  bromeliaceae_a: {
+    id: "bromeliaceae_a",
+    milestone: "Bromeliaceae",
+    manualPage: 132,
+    descripcion: "Tillandsia - A: plantas con raices o sin raices",
+    opcionA: {
+      label: "Plantas sin raices; tallos largos, filiformes, colgantes, con hojas esparcidas de hasta 2 cm; flores solitarias cortamente pedunculadas",
+      keyStep: "A",
+      especieId: "tillandsia_usneoides"
+    },
+    opcionA_prima: {
+      label: "Plantas con raices; tallos muy cortos; hojas en roseta",
+      keyStep: "A'",
+      nextNodeId: "bromeliaceae_b"
+    }
+  },
+
+  bromeliaceae_b: {
+    id: "bromeliaceae_b",
+    milestone: "Tillandsia",
+    manualPage: 133,
+    descripcion: "Tillandsia - B: color y longitud del caliz",
+    opcionA: {
+      label: "Caliz rojo de unos 17 mm; petalos violeta de unos 28 mm; capsulas de 25 mm; hojas grisaceas acanaladas de cerca de 6 cm",
+      keyStep: "B",
+      especieId: "tillandsia_aeranthos"
+    },
+    opcionA_prima: {
+      label: "Caliz amarillento o verdoso",
+      keyStep: "B'",
+      nextNodeId: "bromeliaceae_c"
+    }
+  },
+
+  bromeliaceae_c: {
+    id: "bromeliaceae_c",
+    milestone: "Tillandsia",
+    manualPage: 133,
+    descripcion: "Tillandsia - C: petalos y escapo",
+    opcionA: {
+      label: "Petalos de 15-16 mm, con limbo eliptico de 6 mm, azules o violaceos; sepalos verdosos abajo y purpureos-amarillos arriba; escapos delgados con 1-3 flores subsesiles",
+      keyStep: "C",
+      especieId: "tillandsia_bandensis"
+    },
+    opcionA_prima: {
+      label: "Petalos liguliformes de unos 7 mm por 1,5 mm, blancos o azules; sepalos verdosos o violaceos; escapo con 1-2 flores",
+      keyStep: "C'",
+      especieId: "tillandsia_recurvata"
     }
   },
 
@@ -8763,14 +8814,47 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  bromeliaceae: {
-    id: "bromeliaceae",
-    nombreCientifico: "Tillandsia usneoides L.",
+  tillandsia_usneoides: {
+    id: "tillandsia_usneoides",
+    nombreCientifico: "Tillandsia usneoides f. ferruginea",
+    nombreVulgar: "Barba del monte",
+    familia: "22. Bromeliaceae",
+    descripcion: "Bromeliacea epifita, sin raices, de tallos largos, filiformes y colgantes.",
+    caracteristicas: "Hojas esparcidas de hasta 2 cm; flores solitarias cortamente pedunculadas; bracteas floriferas glabras en los bordes y con pelos escamosos en el dorso; sepalos de 7 mm; petalos amarillentos.",
+    distribucion: "America calida; en los bosques del Delta.",
+    imagen: ""
+  },
+
+  tillandsia_aeranthos: {
+    id: "tillandsia_aeranthos",
+    nombreCientifico: "Tillandsia aeranthos",
     nombreVulgar: "Clavel del aire",
     familia: "22. Bromeliaceae",
-    descripcion: "Bromeliácea epífita.",
-    caracteristicas: "Hojas subuladas en roseta, sin raíces terrestres.",
-    distribucion: "Bosques como epífita, muy común",
+    descripcion: "Bromeliacea epifita con raices, tallos muy cortos y hojas en roseta.",
+    caracteristicas: "Caliz rojo de unos 17 mm; petalos violeta de unos 28 mm; capsulas de 25 mm; hojas grisaceas, acanaladas, de cerca de 6 cm; flores con espigas polisticas.",
+    distribucion: "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina; epifita en bosques del Delta y de la ribera del Plata.",
+    imagen: ""
+  },
+
+  tillandsia_bandensis: {
+    id: "tillandsia_bandensis",
+    nombreCientifico: "Tillandsia bandensis",
+    nombreVulgar: "Tillandsia bandensis",
+    familia: "22. Bromeliaceae",
+    descripcion: "Bromeliacea epifita con raices, tallos muy cortos y hojas en roseta.",
+    caracteristicas: "Caliz amarillento o verdoso; petalos de 15-16 mm con limbo eliptico de 6 mm, azules o violaceos; sepalos verdosos inferiormente y purpureos-amarillos arriba; capsulas cilindricas de 30 mm; hojas subuladas de unos 5 cm.",
+    distribucion: "America austral calida; frecuente en seibales y bosques higrofilos del Delta.",
+    imagen: ""
+  },
+
+  tillandsia_recurvata: {
+    id: "tillandsia_recurvata",
+    nombreCientifico: "Tillandsia recurvata",
+    nombreVulgar: "Tillandsia recurvata",
+    familia: "22. Bromeliaceae",
+    descripcion: "Bromeliacea epifita con raices, tallos muy cortos y hojas en roseta.",
+    caracteristicas: "Petalos liguliformes de unos 7 mm por 1,5 mm, blancos o azules; sepalos verdosos o violaceos, papiraceos en el margen, de unos 6 mm; capsulas cilindricas de 20-25 mm; hojas disticas subuladas de 3,5-5 cm; escapo con 1-2 flores.",
+    distribucion: "America calida; epifita en los bosques del Delta y de la ribera del Plata.",
     imagen: ""
   },
 
