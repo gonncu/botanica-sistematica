@@ -5567,12 +5567,80 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Estambres 3",
       familia: "29. Iridaceae",
-      especieId: "iridaceae"
+      nextNodeId: "iridaceae_a"
     },
     opcionA_prima: {
       label: "Estambres 6",
       familia: "27. Amaryllidaceae",
       nextNodeId: "amaryllidaceae_a"
+    }
+  },
+
+  iridaceae_a: {
+    id: "iridaceae_a",
+    milestone: "Iridaceae",
+    manualPage: 149,
+    descripcion: "Iridaceae - A: presencia de bulbo o rizoma",
+    opcionA: {
+      label: "Planta con bulbo o rizoma; ramas del estilo opuestas a las anteras",
+      keyStep: "A",
+      nextNodeId: "iridaceae_b"
+    },
+    opcionA_prima: {
+      label: "Plantas sin bulbo ni rizoma, con raices fasciculadas; ramas del estilo alternando con las anteras; continuar con Sisyrinchium en proximas tandas",
+      keyStep: "A'",
+      especieId: "iridaceae"
+    }
+  },
+
+  iridaceae_b: {
+    id: "iridaceae_b",
+    milestone: "Iridaceae",
+    manualPage: 150,
+    descripcion: "Iridaceae - B: plantas con bulbo o rizoma",
+    opcionA: {
+      label: "Plantas con bulbo",
+      keyStep: "B",
+      nextNodeId: "iridaceae_c"
+    },
+    opcionA_prima: {
+      label: "Plantas con rizoma; caracteres de Iris",
+      keyStep: "B'",
+      especieId: "iris_pseudacorus"
+    }
+  },
+
+  iridaceae_c: {
+    id: "iridaceae_c",
+    milestone: "Iridaceae",
+    manualPage: 150,
+    descripcion: "Iridaceae - C: forma del estilo y filamentos",
+    opcionA: {
+      label: "Estilo delgado abajo, engrosado arriba y dividido en 3 ramas cortas ramificadas; estambres mas cortos que los estigmas, con filamentos libres; caracteres de Cypella",
+      keyStep: "C",
+      nextNodeId: "cypella_a"
+    },
+    opcionA_prima: {
+      label: "Estilo delgado, con 3 ramas filiformes bifidas o trifidas; estambres generalmente superando a los estigmas, con filamentos unidos formando un tubo; caracteres de Alophia",
+      keyStep: "C'",
+      especieId: "alophia_amoena"
+    }
+  },
+
+  cypella_a: {
+    id: "cypella_a",
+    milestone: "Cypella",
+    manualPage: 150,
+    descripcion: "Cypella - A: color y tamano de tepalos",
+    opcionA: {
+      label: "Tepalos amarillo-anaranjados; exteriores obovados de 2,5-4 cm; capsulas claviformes de 12-20 mm; bulbo esferico de 12-15 mm",
+      keyStep: "A",
+      especieId: "cypella_herbertii"
+    },
+    opcionA_prima: {
+      label: "Tepalos azul-plomizos; exteriores de 3,5-5 cm; capsulas de unos 5 cm; bulbo esferico de 2-2,5 cm",
+      keyStep: "A'",
+      especieId: "cypella_plumbea"
     }
   },
 
@@ -9590,6 +9658,50 @@ export const monocotEspecies = {
     descripcion: "Planta terrestre con ovario ínfero y 3 estambres.",
     caracteristicas: "Hojas lineales, flores con 3 estambres.",
     distribucion: "Cultivadas en jardines",
+    imagen: ""
+  },
+
+  cypella_herbertii: {
+    id: "cypella_herbertii",
+    nombreCientifico: "Cypella herbertii",
+    nombreVulgar: "Cypella herbertii",
+    familia: "29. Iridaceae",
+    descripcion: "Hierba bulbifera con bulbo esferico de 12-15 mm y tallos de 20-60 cm.",
+    caracteristicas: "Tepalos amarillo-anaranjados, los exteriores obovados de 2,5-4 cm y los interiores mucho mas cortos y convolutos; capsulas claviformes de 12-20 mm; hojas casi todas basales, lineales, de hasta 40 cm por 5 mm; flores pocas, efimeras, en cimas.",
+    distribucion: "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina; comun en la estepa climax y en praderas de la ribera platense, en primavera.",
+    imagen: ""
+  },
+
+  cypella_plumbea: {
+    id: "cypella_plumbea",
+    nombreCientifico: "Cypella plumbea",
+    nombreVulgar: "Cypella plumbea",
+    familia: "29. Iridaceae",
+    descripcion: "Hierba bulbifera con bulbo esferico de 2-2,5 cm y tallos de hasta 1 m.",
+    caracteristicas: "Tepalos azul-plomizos, los exteriores obovados de 3,5-5 cm y los interiores menores; capsulas de unos 5 cm; hojas lineales de 30-60 cm por unos 2 cm, con nervaduras paralelas gruesas y otras mas tenues; espatas de 4-5 cm; flores pocas y muy efimeras.",
+    distribucion: "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina; se halla en el Delta y en la ribera platense.",
+    imagen: ""
+  },
+
+  alophia_amoena: {
+    id: "alophia_amoena",
+    nombreCientifico: "Alophia amoena",
+    nombreVulgar: "Alophia amoena",
+    familia: "29. Iridaceae",
+    descripcion: "Geofita con bulbo esferico castano, de 1,5-2 cm de diametro.",
+    caracteristicas: "Tallos delgados de hasta 20 cm; hojas lineales de 9-15 cm por 3-10 mm; espata formada por dos valvas desiguales, con una o dos flores; perigonio azul-plomo; tubo estaminal de unos 4 mm; anteras de 6 mm; capsula de unos 12 mm.",
+    distribucion: "Uruguay y nordeste de la Argentina; comun en la estepa climax, en primavera.",
+    imagen: ""
+  },
+
+  iris_pseudacorus: {
+    id: "iris_pseudacorus",
+    nombreCientifico: "Iris pseudacorus",
+    nombreVulgar: "Iris pseudacorus",
+    familia: "29. Iridaceae",
+    descripcion: "Hierba perenne robusta, con rizoma corto y grueso.",
+    caracteristicas: "Hojas ensiformes, glaucas, de 45-60 cm; tallos floriferos de 60-90 cm, con varias hojas y espatas con 2-3 flores cada una; pedunculos mas cortos que las espatas; hipanto de unos 12 mm; tepalos amarillos de 5-7 cm.",
+    distribucion: "Europa; adventicia en America; en suelos inundables del Delta y de la ribera del Plata.",
     imagen: ""
   },
 
