@@ -786,7 +786,24 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Plantas generalmente hojosas, con inflorescencias capitadas o fasciculadas; continuar en proximas tandas",
       keyStep: "F'",
-      especieId: "cyperaceae"
+      nextNodeId: "cyperaceae_g"
+    }
+  },
+
+  cyperaceae_g: {
+    id: "cyperaceae_g",
+    milestone: "Cyperaceae",
+    manualPage: 112,
+    descripcion: "Cyperaceae - G: espiguillas paucifloras o plurifloras",
+    opcionA: {
+      label: "Espiguillas paucifloras, generalmente 1-2-floras, con 3 o mas glumas esteriles en la base; caracteres de Rhynchospora",
+      keyStep: "G",
+      nextNodeId: "rhynchospora_a"
+    },
+    opcionA_prima: {
+      label: "Espiguillas plurifloras, con 1-2 glumas basales esteriles o sin ellas; caracteres de Bulbostylis",
+      keyStep: "G'",
+      especieId: "bulbostylis_capillaris"
     }
   },
 
@@ -1093,6 +1110,57 @@ export const monocotiledoneaeData = {
       label: "Espiguillas lanceoladas, plurifloras, de 15-25 mm; aquenios lisos; vainas ligeramente oblicuas",
       keyStep: "J'",
       especieId: "heleocharis_haumaniana"
+    }
+  },
+
+  rhynchospora_a: {
+    id: "rhynchospora_a",
+    milestone: "Rhynchospora",
+    manualPage: 127,
+    descripcion: "Rhynchospora - A: estilo profundamente bifido o indiviso",
+    opcionA: {
+      label: "Estilo profundamente bifido; espiguillas de 3-3,5 mm, agrupadas en panojas contraidas",
+      keyStep: "A",
+      especieId: "rhynchospora_luzuliformis"
+    },
+    opcionA_prima: {
+      label: "Estilo indiviso; espiguillas mayores",
+      keyStep: "A'",
+      nextNodeId: "rhynchospora_b"
+    }
+  },
+
+  rhynchospora_b: {
+    id: "rhynchospora_b",
+    milestone: "Rhynchospora",
+    manualPage: 127,
+    descripcion: "Rhynchospora - B: panoja corimbiforme laxa o panojas contraidas",
+    opcionA: {
+      label: "Inflorescencia en panoja corimbiforme muy laxa; fasciculos de 3-5 espiguillas largamente pedunculados; rostro casi tan largo como el aquenio",
+      keyStep: "B",
+      especieId: "rhynchospora_corymbosa"
+    },
+    opcionA_prima: {
+      label: "Inflorescencia en panojas contraidas; fasciculos de mas de 8 espiguillas cortamente pedunculados; rostro mas largo que el aquenio",
+      keyStep: "B'",
+      nextNodeId: "rhynchospora_c"
+    }
+  },
+
+  rhynchospora_c: {
+    id: "rhynchospora_c",
+    milestone: "Rhynchospora",
+    manualPage: 127,
+    descripcion: "Rhynchospora - C: densidad y posicion de los fasciculos",
+    opcionA: {
+      label: "Fasciculos muy densos, amontonados principalmente en el apice del tallo; espiguillas gruesas castanas de 8-10 mm",
+      keyStep: "C",
+      especieId: "rhynchospora_legrandii"
+    },
+    opcionA_prima: {
+      label: "Fasciculos agrupados en panojas contraidas terminales y laterales; espiguillas angostas de 7-8 mm",
+      keyStep: "C'",
+      especieId: "rhynchospora_rostrata"
     }
   },
 
@@ -7992,6 +8060,61 @@ export const monocotEspecies = {
     descripcion: "Hierba con rizoma horizontal robusto y tallos de 25-60 cm de alto.",
     caracteristicas: "Tallos no pentagonales; espiguillas lanceoladas, plurifloras, de 15-25 mm; glumas lanceoladas, agudas; aquenios lisos; vainas ligeramente oblicuas.",
     distribucion: "Uruguay y nordeste de la Argentina; en charcas.",
+    imagen: ""
+  },
+
+  rhynchospora_luzuliformis: {
+    id: "rhynchospora_luzuliformis",
+    nombreCientifico: "Rhynchospora luzuliformis",
+    nombreVulgar: "Rhynchospora luzuliformis",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne, rizomatosa, con estolones largos cubiertos de bracteas; tallos hojosos de 20-30 cm de alto.",
+    caracteristicas: "Estilo profundamente bifido; espiguillas de 3-3,5 mm, agrupadas en panojas contraidas; hojas lineales.",
+    distribucion: "America austral; hallada en los campos de Abasto.",
+    imagen: ""
+  },
+
+  rhynchospora_corymbosa: {
+    id: "rhynchospora_corymbosa",
+    nombreCientifico: "Rhynchospora corymbosa var. bonariensis",
+    nombreVulgar: "Rhynchospora corymbosa",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne, rizomatosa, de aproximadamente 1 m de alto, con hojas planas de 10-15 mm de ancho.",
+    caracteristicas: "Estilo indiviso; inflorescencia en panoja corimbiforme muy laxa; espiguillas agrupadas en fasciculos de 3-5, largamente pedunculados; rostro casi tan largo como el aquenio.",
+    distribucion: "Region platense; muy comun en pajonales del Delta y de la ribera.",
+    imagen: ""
+  },
+
+  rhynchospora_legrandii: {
+    id: "rhynchospora_legrandii",
+    nombreCientifico: "Rhynchospora legrandii",
+    nombreVulgar: "Rhynchospora legrandii",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne, de unos 60 cm de alto, con hojas planas de 10 mm de ancho.",
+    caracteristicas: "Estilo indiviso; panojas contraidas; fasciculos muy densos, amontonados principalmente en el apice del tallo; espiguillas gruesas, castanas, de 8-10 mm.",
+    distribucion: "Uruguay y riberas del Plata; en pajonales.",
+    imagen: ""
+  },
+
+  rhynchospora_rostrata: {
+    id: "rhynchospora_rostrata",
+    nombreCientifico: "Rhynchospora rostrata",
+    nombreVulgar: "Rhynchospora rostrata",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne, de 1 m o mas de alto, con hojas planas de 15 mm de ancho.",
+    caracteristicas: "Estilo indiviso; fasciculos agrupados en panojas contraidas terminales y laterales; espiguillas angostas de 7-8 mm; rostro mas largo que el aquenio.",
+    distribucion: "Brasil y nordeste de la Argentina; comun en pajonales del Delta y de la ribera del Plata.",
+    imagen: ""
+  },
+
+  bulbostylis_capillaris: {
+    id: "bulbostylis_capillaris",
+    nombreCientifico: "Bulbostylis capillaris",
+    nombreVulgar: "Bulbostylis capillaris",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba anual cespitosa, con tallos cuadrangulares de 10-35 cm de alto.",
+    caracteristicas: "Hojas acanaladas y filiformes; vainas ciliadas; antelas con involucro bifilo; espiguillas ovoides, agudas, de 4-6 mm, con 6-15 flores; estilo trifido.",
+    distribucion: "America austral; rara en la region, citada para Dock Sur.",
     imagen: ""
   },
 
