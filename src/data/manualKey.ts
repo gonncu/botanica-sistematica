@@ -411,6 +411,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo A.",
     "Árboles con hojas alternas y ovario unilocular."
   ),
+  salix_humboldtiana: species(
+    "salix_humboldtiana",
+    "Salix humboldtiana",
+    "35. Salicaceae",
+    "Árbol de 10-15 m de alto.",
+    "Hojas lineal-lanceoladas, cortamente pecioladas, aserradas y verde claras; amentos masculinos con brácteas y filamentos lanuginosos; frutos piriformes de 2,5 mm.",
+    "Frecuente en islas y riberas arenosas de los ríos de la América cálida; común en el Delta del Paraná y en la ribera platense. N. v.: sauce colorado, sauce criollo."
+  ),
   callitrichaceae: family(
     "callitrichaceae",
     "74. Callitrichaceae",
@@ -422,6 +430,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "34. Piperaceae",
     "Dicotiledóneas del Grupo A.",
     "Hierbas humildes con hojas opuestas, flores en espigas terminales y ovario unilocular."
+  ),
+  peperomia_catharinae: species(
+    "peperomia_catharinae",
+    "Peperomia catharinae",
+    "34. Piperaceae",
+    "Hierba epífita, decumbente, de unos 15 cm de largo.",
+    "Hojas opuestas o ternadas, obovado-circulares, enteras, obtusas y cortamente pecioladas; espigas terminales solitarias de 10-25 mm; flores incrustadas en el raquis; fruto viscoso de menos de 1 mm.",
+    "Sur del Brasil; hallada en el Delta, sobre seibos del río Paraná Miní."
+  ),
+  peperomia_comarapana: species(
+    "peperomia_comarapana",
+    "Peperomia comarapana",
+    "34. Piperaceae",
+    "Hierba terrícola, erecta o ascendente, rizomatosa, de 10-30 cm de alto.",
+    "Hojas verticiladas, cortamente pecioladas, carnosas, obovadas u oblanceoladas; espigas axilares y terminales largas, delgadas y laxas; flores no incrustadas en el raquis; drupa con papilas viscosas.",
+    "Sur de Bolivia, Chaco y norte de Buenos Aires; abundante en talares de las barrancas del Paraná al norte de Zárate."
   ),
   moraceae: family(
     "moraceae",
@@ -1749,7 +1773,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Árbol con hojas alternas; ovario unilocular",
       keyStep: "C",
-      especieId: "salicaceae",
+      nextNodeId: "salicaceae_terminal",
     },
     opcionA_prima: {
       label: "Hierba humilde con hojas opuestas",
@@ -1768,7 +1792,40 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Ovario unilocular; flores en espigas terminales",
       keyStep: "D'",
-      especieId: "piperaceae",
+      nextNodeId: "piperaceae_a",
+    },
+  },
+  salicaceae_terminal: {
+    id: "salicaceae_terminal",
+    milestone: "Salicaceae",
+    manualPage: 165,
+    descripcion: "Salicaceae: única especie espontánea citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Salix humboldtiana",
+      keyStep: "1",
+      especieId: "salix_humboldtiana",
+    },
+    opcionA_prima: {
+      label: "Identificar como Salix humboldtiana",
+      keyStep: "1",
+      especieId: "salix_humboldtiana",
+    },
+    especie: manualFamilyData.salix_humboldtiana,
+  },
+  piperaceae_a: {
+    id: "piperaceae_a",
+    milestone: "Piperaceae",
+    manualPage: 164,
+    descripcion: "Peperomia - A: hábito de la planta, hojas e inflorescencias",
+    opcionA: {
+      label: "Plantas epífitas, decumbentes, de unos 15 cm; hojas opuestas o ternadas, obovado-circulares; espigas terminales solitarias; flores incrustadas en el raquis",
+      keyStep: "A",
+      especieId: "peperomia_catharinae",
+    },
+    opcionA_prima: {
+      label: "Plantas terrícolas, erectas o ascendentes, rizomatosas, de 10-30 cm; hojas verticiladas; espigas axilares y terminales largas, delgadas y laxas; flores no incrustadas en el raquis",
+      keyStep: "A'",
+      especieId: "peperomia_comarapana",
     },
   },
   dicot_group_b_a: {
