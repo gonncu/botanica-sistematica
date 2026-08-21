@@ -5233,7 +5233,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Estambre con antera bilocular",
       familia: "30. Zingiberaceae",
-      especieId: "zingiberaceae"
+      especieId: "hedychium_coronarium"
     },
     opcionA_prima: {
       label: "Estambre con antera unilocular",
@@ -5247,12 +5247,29 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Cavidades del ovario con muchos óvulos",
       familia: "31. Cannaceae",
-      especieId: "cannaceae"
+      nextNodeId: "cannaceae_a"
     },
     opcionA_prima: {
       label: "Cavidades del ovario con un solo óvulo",
       familia: "32. Marantaceae",
       especieId: "marantaceae"
+    }
+  },
+
+  cannaceae_a: {
+    id: "cannaceae_a",
+    milestone: "Cannaceae",
+    manualPage: 155,
+    descripcion: "Canna - A: forma y color de las hojas",
+    opcionA: {
+      label: "Hojas largamente lanceoladas, glaucas, de hasta 50 cm por 10-15 cm; racimos simples; flores amarillas o rojas",
+      keyStep: "A",
+      especieId: "canna_glauca"
+    },
+    opcionA_prima: {
+      label: "Hojas elipticas, verdes, de hasta 50 cm por 20-25 cm; racimos simples; flores grandes, rojas",
+      keyStep: "A'",
+      especieId: "canna_indica"
     }
   },
 
@@ -9482,25 +9499,36 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  zingiberaceae: {
-    id: "zingiberaceae",
-    nombreCientifico: "Zingiber officinale Rosc.",
-    nombreVulgar: "Jengibre",
+  hedychium_coronarium: {
+    id: "hedychium_coronarium",
+    nombreCientifico: "Hedychium coronarium Koenig",
+    nombreVulgar: "Sultana; caña de ámbar; mariposa de ámbar",
     familia: "30. Zingiberaceae",
-    descripcion: "Planta con antera bilocular.",
-    caracteristicas: "Rizoma aromático, flores con antera bilocular.",
-    distribucion: "Cultivos tropicales",
+    descripcion: "Hierba perenne rizomatosa, alta, con tallos de un metro o mas.",
+    caracteristicas: "Hojas sesiles, lanceoladas, de 8-60 cm por 3-11 cm; espigas elipsoidales densas de 10-20 cm; flores grandes con petalos y estaminodios blancos.",
+    distribucion: "Originaria de Asia; cultivada por sus flores y naturalizada en America calida. En pajonales del Delta y de la ribera del Plata.",
     imagen: ""
   },
 
-  cannaceae: {
-    id: "cannaceae",
-    nombreCientifico: "Canna edulis Ker.",
-    nombreVulgar: "Caña de Indias",
+  canna_glauca: {
+    id: "canna_glauca",
+    nombreCientifico: "Canna glauca L.",
+    nombreVulgar: "Achira",
     familia: "31. Cannaceae",
-    descripcion: "Planta con muchos óvulos.",
-    caracteristicas: "Hojas anchas lanceoladas, flores vistosas rojas o amarillas.",
-    distribucion: "Cultivos y ornamentales",
+    descripcion: "Hierba perenne con rizomas largos y tallos de hasta 2 m de alto.",
+    caracteristicas: "Hojas largamente lanceoladas y glaucas; racimos simples; flores amarillas o rojas. El manual cita tambien la var. rubrolutea con flores rojas.",
+    distribucion: "America calida. Cultivada como ornamental y frecuente en bosques del Delta y de la ribera; florece en verano.",
+    imagen: ""
+  },
+
+  canna_indica: {
+    id: "canna_indica",
+    nombreCientifico: "Canna indica L.",
+    nombreVulgar: "Achira roja",
+    familia: "31. Cannaceae",
+    descripcion: "Hierba perenne con rizomas gruesos y tallos de 50-150 cm de alto.",
+    caracteristicas: "Hojas elipticas, verdes, de hasta 50 cm por 20-25 cm; racimos simples; flores grandes, rojas.",
+    distribucion: "America tropical. Cultivada como ornamental; se halla en el Delta y en la ribera del Plata.",
     imagen: ""
   },
 
