@@ -5589,7 +5589,92 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Plantas sin bulbo ni rizoma, con raices fasciculadas; ramas del estilo alternando con las anteras; continuar con Sisyrinchium en proximas tandas",
       keyStep: "A'",
-      especieId: "iridaceae"
+      nextNodeId: "sisyrinchium_a"
+    }
+  },
+
+  sisyrinchium_a: {
+    id: "sisyrinchium_a",
+    milestone: "Sisyrinchium",
+    manualPage: 151,
+    descripcion: "Sisyrinchium - A: color del perigonio",
+    opcionA: {
+      label: "Perigonio amarillo",
+      keyStep: "A",
+      nextNodeId: "sisyrinchium_b"
+    },
+    opcionA_prima: {
+      label: "Perigonio azul, violaceo o blanco, a veces con estrias amarillas",
+      keyStep: "A'",
+      nextNodeId: "sisyrinchium_c"
+    }
+  },
+
+  sisyrinchium_b: {
+    id: "sisyrinchium_b",
+    milestone: "Sisyrinchium",
+    manualPage: 151,
+    descripcion: "Sisyrinchium - B: pelos o glandulas del tubo estaminal",
+    opcionA: {
+      label: "Tubo estaminal sin pelos ni glandulas; espatas laxas a lo largo de la parte superior del tallo; perigonio de 7-8 mm",
+      keyStep: "B",
+      especieId: "sisyrinchium_megapotamicum"
+    },
+    opcionA_prima: {
+      label: "Tubo estaminal con glandulas o pelos, especialmente en la base; inflorescencias laxas; perigonio de 6-9 mm",
+      keyStep: "B'",
+      especieId: "sisyrinchium_pachyrhizum"
+    }
+  },
+
+  sisyrinchium_c: {
+    id: "sisyrinchium_c",
+    milestone: "Sisyrinchium",
+    manualPage: 153,
+    descripcion: "Sisyrinchium - C: plantas perennes robustas o anuales debiles",
+    opcionA: {
+      label: "Plantas perennes, robustas; flores numerosas; perigonio azul-violaceo de 10 mm; filamentos estaminales totalmente unidos",
+      keyStep: "C",
+      especieId: "sisyrinchium_platense"
+    },
+    opcionA_prima: {
+      label: "Plantas anuales, debiles",
+      keyStep: "C'",
+      nextNodeId: "sisyrinchium_d"
+    }
+  },
+
+  sisyrinchium_d: {
+    id: "sisyrinchium_d",
+    milestone: "Sisyrinchium",
+    manualPage: 153,
+    descripcion: "Sisyrinchium - D: longitud de union de los filamentos",
+    opcionA: {
+      label: "Filamentos de los estambres unidos solo en 1/4 a 1/3 de su longitud",
+      keyStep: "D",
+      nextNodeId: "sisyrinchium_e"
+    },
+    opcionA_prima: {
+      label: "Filamentos de los estambres unidos en toda su longitud; espatas con 3-7 flores; perigonio violaceo o blanco de 5-6 mm",
+      keyStep: "D'",
+      especieId: "sisyrinchium_minus"
+    }
+  },
+
+  sisyrinchium_e: {
+    id: "sisyrinchium_e",
+    milestone: "Sisyrinchium",
+    manualPage: 153,
+    descripcion: "Sisyrinchium - E: longitud del perigonio en plantas anuales",
+    opcionA: {
+      label: "Perigonio violaceo de 5-6 mm; flores pocas; capsulas de 3 mm",
+      keyStep: "E",
+      especieId: "sisyrinchium_micranthum"
+    },
+    opcionA_prima: {
+      label: "Perigonio violaceo de 10-15 mm; espata terminal con 5-7 flores; capsulas de 3 mm",
+      keyStep: "E'",
+      especieId: "sisyrinchium_laxum"
     }
   },
 
@@ -9650,14 +9735,69 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  iridaceae: {
-    id: "iridaceae",
-    nombreCientifico: "Iris sibirica L.",
-    nombreVulgar: "Lirio asiático",
+  sisyrinchium_megapotamicum: {
+    id: "sisyrinchium_megapotamicum",
+    nombreCientifico: "Sisyrinchium megapotamicum",
+    nombreVulgar: "Sisyrinchium megapotamicum",
     familia: "29. Iridaceae",
-    descripcion: "Planta terrestre con ovario ínfero y 3 estambres.",
-    caracteristicas: "Hojas lineales, flores con 3 estambres.",
-    distribucion: "Cultivadas en jardines",
+    descripcion: "Hierba perenne con raices fasciculadas y tallos comprimidos, estrechamente bialados, glabros, de 15-20 cm.",
+    caracteristicas: "Perigonio amarillo de 7-8 mm; tubo estaminal sin pelos ni glandulas; espatas laxas a lo largo de la parte superior del tallo, de 12-15 mm; hojas de 0,5-1 mm de ancho.",
+    distribucion: "Sur del Brasil y nordeste de la Argentina; en la estepa climax.",
+    imagen: ""
+  },
+
+  sisyrinchium_pachyrhizum: {
+    id: "sisyrinchium_pachyrhizum",
+    nombreCientifico: "Sisyrinchium pachyrhizum",
+    nombreVulgar: "Sisyrinchium pachyrhizum",
+    familia: "29. Iridaceae",
+    descripcion: "Hierba perenne de 30-60 cm de alto, con raices algo carnosas.",
+    caracteristicas: "Perigonio amarillo de 6-9 mm; tubo estaminal con glandulas o pelos, especialmente en la base; inflorescencias laxas; tallos comprimidos; hojas de 1-2 mm de ancho.",
+    distribucion: "Sur del Brasil, Paraguay y norte y centro de la Argentina; se halla en la estepa climax, en primavera.",
+    imagen: ""
+  },
+
+  sisyrinchium_platense: {
+    id: "sisyrinchium_platense",
+    nombreCientifico: "Sisyrinchium platense",
+    nombreVulgar: "Sisyrinchium platense",
+    familia: "29. Iridaceae",
+    descripcion: "Hierba perenne, robusta, de unos 40 cm, con raices fasciculadas carnosas.",
+    caracteristicas: "Perigonio azul-violaceo de 10 mm; flores numerosas; filamentos estaminales totalmente unidos entre si y glanduliferos; capsulas globosas de 4-5 mm; tallos comprimidos, estrechamente bialados; hojas de 1-3 mm de ancho.",
+    distribucion: "Uruguay y provincia de Buenos Aires; muy comun en la estepa climax y especialmente en comunidades halofilas priserales, en primavera.",
+    imagen: ""
+  },
+
+  sisyrinchium_micranthum: {
+    id: "sisyrinchium_micranthum",
+    nombreCientifico: "Sisyrinchium micranthum",
+    nombreVulgar: "Sisyrinchium micranthum",
+    familia: "29. Iridaceae",
+    descripcion: "Hierba anual, debil, con tallos comprimidos de unos 20 cm.",
+    caracteristicas: "Perigonio violaceo de 5-6 mm; flores pocas; capsulas de 3 mm; filamentos unidos solo en parte de su longitud; hojas de 1 mm de ancho.",
+    distribucion: "America del Sur; en suelos humedos del Delta y de la ribera platense.",
+    imagen: ""
+  },
+
+  sisyrinchium_laxum: {
+    id: "sisyrinchium_laxum",
+    nombreCientifico: "Sisyrinchium laxum",
+    nombreVulgar: "Sisyrinchium laxum",
+    familia: "29. Iridaceae",
+    descripcion: "Hierba anual, debil, de 10-15 cm de alto.",
+    caracteristicas: "Perigonio violaceo de 10-15 mm; espata terminal con 5-7 flores; capsulas de 3 mm; filamentos unidos solo en parte de su longitud; hojas de 1,5-3 mm de ancho.",
+    distribucion: "America austral; comun en suelos humedos, en primavera.",
+    imagen: ""
+  },
+
+  sisyrinchium_minus: {
+    id: "sisyrinchium_minus",
+    nombreCientifico: "Sisyrinchium minus",
+    nombreVulgar: "Sisyrinchium minus",
+    familia: "29. Iridaceae",
+    descripcion: "Hierba anual, debil, de 10-20 cm de alto.",
+    caracteristicas: "Filamentos de los estambres unidos en toda su longitud; espatas con 3-7 flores; perigonio violaceo o blanco de 5-6 mm; capsulas de 3 mm; hojas de 1 mm de ancho.",
+    distribucion: "America templado-calida; en el Delta y en la ribera platense.",
     imagen: ""
   },
 
