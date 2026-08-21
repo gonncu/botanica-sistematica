@@ -539,6 +539,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo B.",
     "Enredaderas dioicas con hojas opuestas."
   ),
+  humulus_lupulus: species(
+    "humulus_lupulus",
+    "Humulus lupulus",
+    "38. Cannabinaceae",
+    "Planta voluble perenne, dioica, con hojas anchas y pecioladas.",
+    "Hojas opuestas, palminervadas, aserradas o lobadas, con estípulas; flores femeninas por pares en las axilas de las brácteas del amento; aquenios comprimidos acompañados por brácteas.",
+    "Originaria del Viejo Mundo y cultivada en América; a veces espontánea en baldíos y escombros. N. v.: lúpulo."
+  ),
   caryophyllaceae_b: family(
     "caryophyllaceae_b",
     "59. Caryophyllaceae",
@@ -2082,13 +2090,30 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Plantas dioicas; enredaderas",
       keyStep: "N",
-      especieId: "cannabinaceae",
+      nextNodeId: "cannabinaceae_terminal",
     },
     opcionA_prima: {
       label: "Plantas monoicas; herbáceas",
       keyStep: "N'",
       nextNodeId: "dicot_group_b_o",
     },
+  },
+  cannabinaceae_terminal: {
+    id: "cannabinaceae_terminal",
+    milestone: "Cannabinaceae",
+    manualPage: 169,
+    descripcion: "Cannabinaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Humulus lupulus",
+      keyStep: "1",
+      especieId: "humulus_lupulus",
+    },
+    opcionA_prima: {
+      label: "Identificar como Humulus lupulus",
+      keyStep: "1",
+      especieId: "humulus_lupulus",
+    },
+    especie: manualFamilyData.humulus_lupulus,
   },
   dicot_group_b_o: {
     id: "dicot_group_b_o",
