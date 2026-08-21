@@ -2282,7 +2282,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Inflorescencia formada por 12-80 espigas; continuar en proxima tanda de Paspalum",
       keyStep: "H'",
-      especieId: "paspalum"
+      nextNodeId: "paspalum_m"
     }
   },
 
@@ -2334,6 +2334,74 @@ export const monocotiledoneaeData = {
       label: "Espiguillas verdosas, en pares, ovadas, agudas, de 3-3,5 mm por 2-2,5 mm; espigas 3-6 inclinadas",
       keyStep: "L'",
       especieId: "paspalum_dilatatum"
+    }
+  },
+
+  paspalum_m: {
+    id: "paspalum_m",
+    milestone: "Paspalum",
+    manualPage: 101,
+    descripcion: "Paspalum - M: color de espiguillas en inflorescencias con 12-80 espigas",
+    opcionA: {
+      label: "Espiguillas verdosas, obovadas, agudas, de 2,3-2,6 mm; hierba perenne de 1,5-2 m; espigas 10-25",
+      keyStep: "M",
+      especieId: "paspalum_urvillei"
+    },
+    opcionA_prima: {
+      label: "Espiguillas ferrugineas o rojizas",
+      keyStep: "M'",
+      nextNodeId: "paspalum_n"
+    }
+  },
+
+  paspalum_n: {
+    id: "paspalum_n",
+    milestone: "Paspalum",
+    manualPage: 101,
+    descripcion: "Paspalum - N: vainas foliares carenadas o cilindricas",
+    opcionA: {
+      label: "Vainas foliares notablemente carenadas; espiguillas glabras, ovadas, de 2,5-2,8 mm por 1,5 mm",
+      keyStep: "N",
+      especieId: "paspalum_intermedium"
+    },
+    opcionA_prima: {
+      label: "Vainas foliares cilindricas o apenas carenadas; espiguillas pubescentes al menos en el borde de las glumas",
+      keyStep: "N'",
+      nextNodeId: "paspalum_o"
+    }
+  },
+
+  paspalum_o: {
+    id: "paspalum_o",
+    milestone: "Paspalum",
+    manualPage: 101,
+    descripcion: "Paspalum - O: tamano y disposicion de espiguillas",
+    opcionA: {
+      label: "Espiguillas de 2-2,5 mm, ovado-lanceoladas, en 4 hileras; gluma pubescente; lemma esteril plana, casi glabra",
+      keyStep: "O",
+      especieId: "paspalum_quadrifarium"
+    },
+    opcionA_prima: {
+      label: "Espiguillas de 3-4 mm",
+      keyStep: "O'",
+      nextNodeId: "paspalum_p"
+    }
+  },
+
+  paspalum_p: {
+    id: "paspalum_p",
+    milestone: "Paspalum",
+    manualPage: 101,
+    descripcion: "Paspalum - P: cantidad de espigas",
+    opcionA: {
+      label: "Inflorescencia formada por 12-30 espigas; espiguillas ovadas, agudas, de 3,3-3,7 mm",
+      keyStep: "P",
+      especieId: "paspalum_exaltatum"
+    },
+    opcionA_prima: {
+      label: "Inflorescencia con 40-80 espigas, piramidal, de cerca de 50 cm; espiguillas lanceoladas, ferrugineas, de 3,5-4 mm",
+      keyStep: "P'",
+      especieId: "paspalum_haumanii"
     }
   },
 
@@ -3945,6 +4013,61 @@ export const monocotEspecies = {
     descripcion: "Hierba perenne de alrededor de 50 cm de alto.",
     caracteristicas: "Espigas 3-6, de 5-9 cm, inclinadas; espiguillas verdosas, en pares, ovadas, agudas, de 3-3,5 mm por 2-2,5 mm; gluma y lemma esteril pubescentes y pestanosas en el borde.",
     distribucion: "Region platense; comun en campos fertiles.",
+    imagen: ""
+  },
+
+  paspalum_urvillei: {
+    id: "paspalum_urvillei",
+    nombreCientifico: "Paspalum urvillei",
+    nombreVulgar: "Paspalum urvillei",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne de 1,5-2 m de alto.",
+    caracteristicas: "Inflorescencia con 10-25 espigas; espiguillas verdosas, obovadas, agudas, de 2,3-2,6 mm.",
+    distribucion: "America calida; muy frecuente en la ribera platense.",
+    imagen: ""
+  },
+
+  paspalum_intermedium: {
+    id: "paspalum_intermedium",
+    nombreCientifico: "Paspalum intermedium",
+    nombreVulgar: "Paspalum intermedium",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba cespitosa de 1 m o mas de alto.",
+    caracteristicas: "Vainas foliares notablemente carenadas; espigas numerosas; espiguillas glabras, ovadas, de 2,5-2,8 mm por 1,5 mm.",
+    distribucion: "Nordeste de la Argentina; accidental en Palermo.",
+    imagen: ""
+  },
+
+  paspalum_quadrifarium: {
+    id: "paspalum_quadrifarium",
+    nombreCientifico: "Paspalum quadrifarium",
+    nombreVulgar: "Paja colorada",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba cespitosa de 1-1,8 m de alto, con hojas largas y glabras.",
+    caracteristicas: "Espigas ferruginosas, 15-25, de cerca de 7 cm; espiguillas ovado-lanceoladas, de 2-2,5 mm, en 4 hileras; gluma pubescente y lemma esteril casi glabra.",
+    distribucion: "Uruguay y nordeste de la Argentina; en campos bajos.",
+    imagen: ""
+  },
+
+  paspalum_exaltatum: {
+    id: "paspalum_exaltatum",
+    nombreCientifico: "Paspalum exaltatum",
+    nombreVulgar: "Paspalum exaltatum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, densamente cespitosa, de 1,5-2 m de alto.",
+    caracteristicas: "Inflorescencia con 12-30 espigas; espiguillas ovadas, agudas, de 3,3-3,7 mm; gluma lanceolada, apiculada, con pubescencia rala en el margen; hojas muy largas, de 1 cm de ancho.",
+    distribucion: "Region platense; en suelos bajos inundables, Delta y ribera platense.",
+    imagen: ""
+  },
+
+  paspalum_haumanii: {
+    id: "paspalum_haumanii",
+    nombreCientifico: "Paspalum haumanii",
+    nombreVulgar: "Paspalum haumanii",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Planta densamente cespitosa, de 2-3 m de alto.",
+    caracteristicas: "Inflorescencia piramidal con 40-80 espigas, de cerca de 50 cm; espiguillas lanceoladas, ferrugineas, de 3,5-4 mm por 1,5 mm; hojas de 1-1,5 m por 12-14 mm.",
+    distribucion: "Uruguay y nordeste de la Argentina; frecuente en el Delta y en la ribera del Plata.",
     imagen: ""
   },
 
