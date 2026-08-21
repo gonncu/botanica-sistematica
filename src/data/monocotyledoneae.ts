@@ -106,7 +106,41 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Flores fructiferas hermafroditas; continuar en proximas tandas de Cyperaceae",
       keyStep: "A'",
+      nextNodeId: "cyperaceae_b"
+    }
+  },
+
+  cyperaceae_b: {
+    id: "cyperaceae_b",
+    milestone: "Cyperaceae",
+    manualPage: 112,
+    descripcion: "Cyperaceae - B: disposicion de las glumas",
+    opcionA: {
+      label: "Glumas disticas",
+      keyStep: "B",
+      nextNodeId: "cyperaceae_c"
+    },
+    opcionA_prima: {
+      label: "Glumas espiraladas; continuar en proximas tandas de Cyperaceae",
+      keyStep: "B'",
       especieId: "cyperaceae"
+    }
+  },
+
+  cyperaceae_c: {
+    id: "cyperaceae_c",
+    milestone: "Cyperaceae",
+    manualPage: 112,
+    descripcion: "Cyperaceae - C: plantas afilas o con hojas",
+    opcionA: {
+      label: "Plantas afilas; estambres acrescentes despues de la antesis; caracteres de Androtrichum",
+      keyStep: "C",
+      especieId: "androtrichum_trigynum"
+    },
+    opcionA_prima: {
+      label: "Plantas generalmente con hojas; estambres no acrescentes; caracteres de Cyperus",
+      keyStep: "C'",
+      nextNodeId: "cyperus_a"
     }
   },
 
@@ -294,6 +328,108 @@ export const monocotiledoneaeData = {
       label: "Utriculos hispidos, suberosos, orbiculado-ovales, trigonales, de 4-5 mm",
       keyStep: "K'",
       especieId: "carex_tweediana"
+    }
+  },
+
+  cyperus_a: {
+    id: "cyperus_a",
+    milestone: "Cyperus",
+    manualPage: 116,
+    descripcion: "Cyperus - A: estilo bifido o trifido",
+    opcionA: {
+      label: "Estilo bifido",
+      keyStep: "A",
+      nextNodeId: "cyperus_b"
+    },
+    opcionA_prima: {
+      label: "Estilo trifido; continuar en proxima tanda de Cyperus",
+      keyStep: "A'",
+      especieId: "cyperus"
+    }
+  },
+
+  cyperus_b: {
+    id: "cyperus_b",
+    milestone: "Cyperus",
+    manualPage: 116,
+    descripcion: "Cyperus - B: espiguillas 1-2-floras o plurifloras",
+    opcionA: {
+      label: "Espiguillas 1-2-floras",
+      keyStep: "B",
+      nextNodeId: "cyperus_c"
+    },
+    opcionA_prima: {
+      label: "Espiguillas plurifloras",
+      keyStep: "B'",
+      nextNodeId: "cyperus_e"
+    }
+  },
+
+  cyperus_c: {
+    id: "cyperus_c",
+    milestone: "Cyperus",
+    manualPage: 116,
+    descripcion: "Cyperus - C: plantas cespitosas o rizomatosas",
+    opcionA: {
+      label: "Plantas cespitosas con rizoma muy corto; tallos triquetros lisos de 5-20 cm; inflorescencia en capitulo",
+      keyStep: "C",
+      especieId: "cyperus_sesquiflorus"
+    },
+    opcionA_prima: {
+      label: "Plantas rizomatosas",
+      keyStep: "C'",
+      nextNodeId: "cyperus_d"
+    }
+  },
+
+  cyperus_d: {
+    id: "cyperus_d",
+    milestone: "Cyperus",
+    manualPage: 116,
+    descripcion: "Cyperus - D: espiguillas bifloras o unifloras",
+    opcionA: {
+      label: "Espiguillas bifloras, ovado-lanceoladas, con 5 glumas de carena lisa, en capitulo eliptico de 6-10 mm",
+      keyStep: "D",
+      especieId: "cyperus_obtusatus"
+    },
+    opcionA_prima: {
+      label: "Espiguillas unifloras, lanceoladas, de 2,5-3 mm, con glumas blancas de carena espinulosa",
+      keyStep: "D'",
+      especieId: "cyperus_brevifolius"
+    }
+  },
+
+  cyperus_e: {
+    id: "cyperus_e",
+    milestone: "Cyperus",
+    manualPage: 116,
+    descripcion: "Cyperus - E: espiguillas deprimidas dorsiventralmente o comprimidas lateralmente",
+    opcionA: {
+      label: "Espiguillas deprimidas dorsiventralmente, lanceoladas, de 7-12 mm, con 10-15 flores; inflorescencia seudolateral capituliforme",
+      keyStep: "E",
+      especieId: "cyperus_laevigatus"
+    },
+    opcionA_prima: {
+      label: "Espiguillas comprimidas lateralmente",
+      keyStep: "E'",
+      nextNodeId: "cyperus_f"
+    }
+  },
+
+  cyperus_f: {
+    id: "cyperus_f",
+    milestone: "Cyperus",
+    manualPage: 116,
+    descripcion: "Cyperus - F: color de glumas",
+    opcionA: {
+      label: "Glumas castanas, obtusas; espiguillas ovado-lanceoladas, obtusas, 6-14-floras, de 5-10 mm",
+      keyStep: "F",
+      especieId: "cyperus_megapotamicus"
+    },
+    opcionA_prima: {
+      label: "Glumas blanquecinas, carenado-naviculares, obtusas; estambres 2; espiguillas 15-25 lineal-lanceoladas",
+      keyStep: "F'",
+      especieId: "cyperus_tener"
     }
   },
 
@@ -6676,6 +6812,94 @@ export const monocotEspecies = {
     descripcion: "Hierba perenne con rizoma horizontal, tallos de 15-60 cm y hojas mas largas que el tallo.",
     caracteristicas: "Espiguillas masculinas 1-3, cilindricas, de 1,5-3,5 cm; femeninas 2-5, cilindricas, de 2-5 cm; utriculos hispidos, suberosos, orbiculado-ovales, trigonales, de 4-5 mm.",
     distribucion: "Sur del Brasil, Uruguay y nordeste de la Argentina; en bosques del Delta y de la ribera del Plata.",
+    imagen: ""
+  },
+
+  androtrichum_trigynum: {
+    id: "androtrichum_trigynum",
+    nombreCientifico: "Androtrichum trigynum",
+    nombreVulgar: "Androtrichum trigynum",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta rizomatosa, afila, con espiguillas fasciculadas e involucro de 4-5 bracteas rigidas.",
+    caracteristicas: "Tallos de 50 cm; fasciculos de espiguillas amontonados en cabezuelas esfericas; estambres acrescentes despues de la antesis, dando aspecto lanoso.",
+    distribucion: "Dunas del sur del Brasil, Uruguay y este de la Republica Argentina; muy comun en dunas litorales de Pipinas y San Clemente del Tuyu.",
+    imagen: ""
+  },
+
+  cyperus_sesquiflorus: {
+    id: "cyperus_sesquiflorus",
+    nombreCientifico: "Cyperus sesquiflorus",
+    nombreVulgar: "Cyperus sesquiflorus",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta cespitosa con rizoma corto y tallos lisos de 5-20 cm de alto.",
+    caracteristicas: "Hojas 4-6 mas cortas que el tallo; inflorescencia de 1-3 espigas en capitulo; espiguillas unifloras ovado-lanceoladas de 2,5-3,4 mm; estambres 2.",
+    distribucion: "Africa y America; hallada en suelos humedos de la Isla Martin Garcia.",
+    imagen: ""
+  },
+
+  cyperus_obtusatus: {
+    id: "cyperus_obtusatus",
+    nombreCientifico: "Cyperus obtusatus",
+    nombreVulgar: "Cyperus obtusatus",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta rizomatosa de 15-45 cm de alto.",
+    caracteristicas: "Hojas planas y lineales; espiguillas bifloras, ovado-lanceoladas, con 5 glumas de carena lisa, amontonadas en un capitulo eliptico de 6-10 mm.",
+    distribucion: "America calida, Africa y Asia; se halla en el Delta y en el cesped de la ribera platense.",
+    imagen: ""
+  },
+
+  cyperus_brevifolius: {
+    id: "cyperus_brevifolius",
+    nombreCientifico: "Cyperus brevifolius",
+    nombreVulgar: "Cyperus brevifolius",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta perenne con rizoma rastrero largo y tallos lisos de 12-30 cm de alto.",
+    caracteristicas: "Con 1-2 hojas cortas y planas; espiguillas unifloras, lanceoladas, de 2,5-3 mm, con glumas blancas de carena espinulosa; estambre 1.",
+    distribucion: "Regiones tropicales; hallada en el Delta.",
+    imagen: ""
+  },
+
+  cyperus_laevigatus: {
+    id: "cyperus_laevigatus",
+    nombreCientifico: "Cyperus laevigatus",
+    nombreVulgar: "Cyperus laevigatus",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta perenne, rizomatosa, de 5-25 cm de alto.",
+    caracteristicas: "Hojas reducidas a las vainas, salvo la superior corta; espiguillas deprimidas dorsiventralmente, lanceoladas, de 7-12 mm, con 10-15 flores.",
+    distribucion: "Cosmopolita; hallada en Mercedes.",
+    imagen: ""
+  },
+
+  cyperus_megapotamicus: {
+    id: "cyperus_megapotamicus",
+    nombreCientifico: "Cyperus megapotamicus var. jaeggi",
+    nombreVulgar: "Cyperus megapotamicus",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta perenne, rizomatosa, laxamente hojosa, de 25-60 cm de alto.",
+    caracteristicas: "Hojas 3-5, lineales; glumas castanas y obtusas; espiguillas ovado-lanceoladas, obtusas, 6-14-floras, de 5-10 mm.",
+    distribucion: "Sur del Brasil, Uruguay y nordeste de la Argentina; Delta y cesped de la ribera platense.",
+    imagen: ""
+  },
+
+  cyperus_tener: {
+    id: "cyperus_tener",
+    nombreCientifico: "Cyperus tener",
+    nombreVulgar: "Cyperus tener",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta perenne con rizoma delgado y tallos lisos de 8-10 cm de alto.",
+    caracteristicas: "Con 1-2 hojas cortas; glumas blanquecinas, carenado-naviculares, obtusas; inflorescencia en capitulo seudolateral; espiguillas 15-25, lineal-lanceoladas, 16-30-floras, de 15-18 mm.",
+    distribucion: "America austral; hallado en San Isidro, Vicente Lopez, etc.",
+    imagen: ""
+  },
+
+  cyperus: {
+    id: "cyperus",
+    nombreCientifico: "Cyperus sp.",
+    nombreVulgar: "Cyperus",
+    familia: "18. Cyperaceae",
+    descripcion: "Genero de Cyperaceae con espiguillas 1-multifloras y glumas disticas.",
+    caracteristicas: "Rama parcialmente cargada; falta continuar la clave desde estilo trifido.",
+    distribucion: "Genero representado en la flora de los alrededores de Buenos Aires.",
     imagen: ""
   },
 
