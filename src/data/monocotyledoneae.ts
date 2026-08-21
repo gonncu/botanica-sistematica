@@ -123,7 +123,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Glumas espiraladas; continuar en proximas tandas de Cyperaceae",
       keyStep: "B'",
-      especieId: "cyperaceae"
+      nextNodeId: "cyperaceae_d"
     }
   },
 
@@ -736,6 +736,142 @@ export const monocotiledoneaeData = {
       label: "Antela con radios de primer y segundo orden solamente",
       keyStep: "X'",
       especieId: "cyperus_pohlii"
+    }
+  },
+
+  cyperaceae_d: {
+    id: "cyperaceae_d",
+    milestone: "Cyperaceae",
+    manualPage: 112,
+    descripcion: "Cyperaceae - D: estilo engrosado o no en la base",
+    opcionA: {
+      label: "Estilo no engrosado en su base; caracteres de Scirpus",
+      keyStep: "D",
+      nextNodeId: "scirpus_a"
+    },
+    opcionA_prima: {
+      label: "Estilo engrosado en la base; continuar en proximas tandas de Cyperaceae",
+      keyStep: "D'",
+      especieId: "cyperaceae"
+    }
+  },
+
+  scirpus_a: {
+    id: "scirpus_a",
+    milestone: "Scirpus",
+    manualPage: 121,
+    descripcion: "Scirpus - A: flores con o sin sedas hipoginas",
+    opcionA: {
+      label: "Flores sin sedas hipoginas",
+      keyStep: "A",
+      nextNodeId: "scirpus_b"
+    },
+    opcionA_prima: {
+      label: "Flores con sedas hipoginas",
+      keyStep: "A'",
+      nextNodeId: "scirpus_d"
+    }
+  },
+
+  scirpus_b: {
+    id: "scirpus_b",
+    milestone: "Scirpus",
+    manualPage: 121,
+    descripcion: "Scirpus - B: estilo bifido o trifido",
+    opcionA: {
+      label: "Estilo bifido; inflorescencia en capitulo solitario globoso; aquenio lenticular pajizo",
+      keyStep: "B",
+      especieId: "scirpus_cubensis"
+    },
+    opcionA_prima: {
+      label: "Estilo trifido",
+      keyStep: "B'",
+      nextNodeId: "scirpus_c"
+    }
+  },
+
+  scirpus_c: {
+    id: "scirpus_c",
+    milestone: "Scirpus",
+    manualPage: 121,
+    descripcion: "Scirpus - C: inflorescencia capituliforme o umbeliforme",
+    opcionA: {
+      label: "Inflorescencia capituliforme, con 1-3 espiguillas sesiles en el apice del tallo",
+      keyStep: "C",
+      especieId: "scirpus_cernuus"
+    },
+    opcionA_prima: {
+      label: "Inflorescencia umbeliforme compuesta, rodeada de bracteas foliaceas; planta robusta de 1,5-1,8 m",
+      keyStep: "C'",
+      especieId: "scirpus_giganteus"
+    }
+  },
+
+  scirpus_d: {
+    id: "scirpus_d",
+    milestone: "Scirpus",
+    manualPage: 122,
+    descripcion: "Scirpus - D: inflorescencia capituliforme o en antela",
+    opcionA: {
+      label: "Inflorescencia capituliforme",
+      keyStep: "D",
+      nextNodeId: "scirpus_e"
+    },
+    opcionA_prima: {
+      label: "Inflorescencia en antela",
+      keyStep: "D'",
+      nextNodeId: "scirpus_f"
+    }
+  },
+
+  scirpus_e: {
+    id: "scirpus_e",
+    milestone: "Scirpus",
+    manualPage: 122,
+    descripcion: "Scirpus - E: tallos triquetros o trigonales",
+    opcionA: {
+      label: "Tallos triquetros, con angulos muy agudos, de hasta 1 m; inflorescencia seudolateral con 1-6 espigas sesiles",
+      keyStep: "E",
+      especieId: "scirpus_chilensis"
+    },
+    opcionA_prima: {
+      label: "Tallos trigonales, con angulos redondeados, de 10-100 cm; inflorescencia con 1-5 espiguillas sesiles",
+      keyStep: "E'",
+      especieId: "scirpus_americanus"
+    }
+  },
+
+  scirpus_f: {
+    id: "scirpus_f",
+    milestone: "Scirpus",
+    manualPage: 122,
+    descripcion: "Scirpus - F: plantas con hojas lineales o afilas",
+    opcionA: {
+      label: "Plantas con hojas lineales de 30-50 cm; antela simple o compuesta; espiguillas ovoideas de 10-25 mm",
+      keyStep: "F",
+      especieId: "scirpus_paludosus"
+    },
+    opcionA_prima: {
+      label: "Plantas afilas",
+      keyStep: "F'",
+      nextNodeId: "scirpus_g"
+    }
+  },
+
+  scirpus_g: {
+    id: "scirpus_g",
+    milestone: "Scirpus",
+    manualPage: 122,
+    descripcion: "Scirpus - G: cerdas del perianto",
+    opcionA: {
+      label: "Cerdas del perianto ciliado-plumosas; tallos afilos de 1-2 m; antela compuesta nutante",
+      keyStep: "G",
+      especieId: "scirpus_californicus"
+    },
+    opcionA_prima: {
+      label: "Cerdas del perianto retrorso-hispidas; tallos afilos de 1,5-2,5 m; antela compuesta laxa lateral",
+      keyStep: "G'",
+      especieId: "scirpus_validus"
     }
   },
 
@@ -7404,6 +7540,94 @@ export const monocotEspecies = {
     descripcion: "Planta rizomatosa de cerca de 1 m de alto.",
     caracteristicas: "Tallos angulosos y lisos; hojas lustrosas, largas; ocreas largamente bifidas; antela con radios de primer y segundo orden solamente.",
     distribucion: "Brasil y region del Plata; comun en los pajonales del Delta y de la ribera.",
+    imagen: ""
+  },
+
+  scirpus_cubensis: {
+    id: "scirpus_cubensis",
+    nombreCientifico: "Scirpus cubensis var. paraguayensis",
+    nombreVulgar: "Scirpus cubensis",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta perenne, rizomatosa, de 20-75 cm de alto.",
+    caracteristicas: "Hojas basales lineales, escabrosas en el borde; flores sin sedas hipoginas; estilo bifido; inflorescencia en capitulo solitario globoso; aquenio lenticular pajizo.",
+    distribucion: "America del Sur; en suelos humedos.",
+    imagen: ""
+  },
+
+  scirpus_cernuus: {
+    id: "scirpus_cernuus",
+    nombreCientifico: "Scirpus cernuus",
+    nombreVulgar: "Scirpus cernuus",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba anual, cespitosa, de 3-20 cm de alto.",
+    caracteristicas: "Hojas pocas, filiformes; flores sin sedas hipoginas; estilo trifido; inflorescencia capituliforme con 1-3 espiguillas sesiles apicales, de 2-10 mm.",
+    distribucion: "Cosmopolita; en suelos humedos.",
+    imagen: ""
+  },
+
+  scirpus_giganteus: {
+    id: "scirpus_giganteus",
+    nombreCientifico: "Scirpus giganteus",
+    nombreVulgar: "Cortadera; paja brava",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne, robusta, rizomatosa, de 1,5-1,8 m de alto.",
+    caracteristicas: "Hojas muy largas, con bordes cortantes; inflorescencia umbeliforme compuesta; espiguillas ovoideas de 5-7 mm, en fasciculos hemisfericos.",
+    distribucion: "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina; muy comun en los pajonales del Delta y de la ribera platense.",
+    imagen: ""
+  },
+
+  scirpus_chilensis: {
+    id: "scirpus_chilensis",
+    nombreCientifico: "Scirpus chilensis",
+    nombreVulgar: "Scirpus chilensis",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne, rizomatosa.",
+    caracteristicas: "Tallos triquetros con angulos muy agudos, de hasta 1 m; hojas basales con lamina lineal corta; inflorescencia seudolateral con 1-6 espigas sesiles; cerdas del perianto con pelos retrorsos.",
+    distribucion: "America del Sur; muy frecuente en charcas y arroyos.",
+    imagen: ""
+  },
+
+  scirpus_americanus: {
+    id: "scirpus_americanus",
+    nombreCientifico: "Scirpus americanus var. polyphyllus",
+    nombreVulgar: "Scirpus americanus",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne, rizomatosa.",
+    caracteristicas: "Tallos trigonales con angulos redondeados, de 10-100 cm; hojas basales lineales cortas; inflorescencia con 1-5 espiguillas sesiles; cerdas del perianto con pelos retrorsos.",
+    distribucion: "Cosmopolita; comun en lugares pantanosos.",
+    imagen: ""
+  },
+
+  scirpus_paludosus: {
+    id: "scirpus_paludosus",
+    nombreCientifico: "Scirpus paludosus",
+    nombreVulgar: "Scirpus paludosus",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne, rizomatosa, con tallos trigonales de 50-150 cm de alto.",
+    caracteristicas: "Plantas con hojas lineales de 30-50 cm; antela simple o compuesta; espiguillas ovoideas de 10-25 mm. El manual menciona la especie parecida Scirpus robustus.",
+    distribucion: "America; raro en la region platense.",
+    imagen: ""
+  },
+
+  scirpus_californicus: {
+    id: "scirpus_californicus",
+    nombreCientifico: "Scirpus californicus",
+    nombreVulgar: "Junco",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba con gruesos rizomas y tallos afilos de 1-2 m de alto.",
+    caracteristicas: "Antela compuesta, nutante, con bractea rigida punzante; espiguillas numerosas, ovoideas, de 8-18 mm; cerdas del perianto ciliado-plumosas.",
+    distribucion: "America; muy comun en arroyos, zanjas y playas arenosas, formando juncales. Utilizado para fabricar esteras y cortinas.",
+    imagen: ""
+  },
+
+  scirpus_validus: {
+    id: "scirpus_validus",
+    nombreCientifico: "Scirpus validus",
+    nombreVulgar: "Scirpus validus",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba con rizomas gruesos y tallos afilos de 1,5-2,5 m de alto.",
+    caracteristicas: "Antela compuesta, laxa, lateral, con bractea aguda de 1-6 cm; espiguillas ovoideas castanas de 4-7 mm; cerdas del perianto retrorso-hispidas.",
+    distribucion: "America; raro en la region.",
     imagen: ""
   },
 
