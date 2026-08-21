@@ -2724,7 +2724,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Racimos solitarios, geminados, fasciculados o con otros caracteres dentro de Andropogoneae; continuar en proxima tanda",
       keyStep: "A'",
-      especieId: "andropogoneae"
+      nextNodeId: "andropogoneae_b"
     }
   },
 
@@ -2793,6 +2793,91 @@ export const monocotiledoneaeData = {
       label: "Gluma inferior con una excavacion puntiforme en el dorso",
       keyStep: "D'",
       especieId: "bothriochloa_perforata"
+    }
+  },
+
+  andropogoneae_b: {
+    id: "andropogoneae_b",
+    milestone: "Andropogoneae",
+    manualPage: 109,
+    descripcion: "Andropogoneae - entrada parcial: Andropogon o generos con raquis articulado",
+    opcionA: {
+      label: "Racimos solitarios en axilas de hojas reducidas formando seudopanoja; caracteres de Andropogon",
+      keyStep: "B",
+      nextNodeId: "andropogon_a"
+    },
+    opcionA_prima: {
+      label: "Racimos espiciformes cilindricos o panojas terminales con otros caracteres",
+      keyStep: "B'",
+      nextNodeId: "andropogoneae_c"
+    }
+  },
+
+  andropogon_a: {
+    id: "andropogon_a",
+    milestone: "Andropogon",
+    manualPage: 109,
+    descripcion: "Andropogon - A: largo de espiguillas",
+    opcionA: {
+      label: "Espiguillas de 4-5 mm; hierbas perennes, cespitosas, con tallos rojizos de 50-100 cm",
+      keyStep: "A",
+      especieId: "andropogon_paniculatus"
+    },
+    opcionA_prima: {
+      label: "Espiguillas de 6-9 mm; hierbas perennes, cespitosas, rojizas, de 30-40 cm",
+      keyStep: "A'",
+      especieId: "andropogon_consanguineus"
+    }
+  },
+
+  andropogoneae_c: {
+    id: "andropogoneae_c",
+    milestone: "Andropogoneae",
+    manualPage: 109,
+    descripcion: "Andropogoneae - generos simples: Hemarthria o continuar",
+    opcionA: {
+      label: "Raquis tenaz; espiguilla esteril con pedicelo adherido al raquis; glumas muticas, coriaceas, carenadas, con quilla alada",
+      keyStep: "C",
+      especieId: "hemarthria_altissima"
+    },
+    opcionA_prima: {
+      label: "Raquis que se desarticula facilmente o panojas terminales con otros caracteres",
+      keyStep: "C'",
+      nextNodeId: "andropogoneae_d"
+    }
+  },
+
+  andropogoneae_d: {
+    id: "andropogoneae_d",
+    milestone: "Andropogoneae",
+    manualPage: 109,
+    descripcion: "Andropogoneae - generos simples: Rottboellia o continuar",
+    opcionA: {
+      label: "Raquis engrosado que se desarticula facilmente; espiguilla fertil apretada contra la parte concava del raquis",
+      keyStep: "D",
+      especieId: "rottboellia_selloana"
+    },
+    opcionA_prima: {
+      label: "Panojas terminales laxas o estrechas, no con ese raquis engrosado",
+      keyStep: "D'",
+      nextNodeId: "andropogoneae_e"
+    }
+  },
+
+  andropogoneae_e: {
+    id: "andropogoneae_e",
+    milestone: "Andropogoneae",
+    manualPage: 109,
+    descripcion: "Andropogoneae - generos simples: Sorghum o Imperata",
+    opcionA: {
+      label: "Espiguillas en pares, una sesil y otra pedicelada esteril pero bien desarrollada; panojas terminales mas o menos laxas",
+      keyStep: "E",
+      especieId: "sorghum_halepense"
+    },
+    opcionA_prima: {
+      label: "Espiguillas iguales entre si, muticas, en pares sobre un raquis continuo alargado y envueltas por largos pelos plateados",
+      keyStep: "E'",
+      especieId: "imperata_brasiliensis"
     }
   },
 
@@ -4734,6 +4819,72 @@ export const monocotEspecies = {
     descripcion: "Hierba de tallos altos, de 1,5-2 m.",
     caracteristicas: "Panojas verdosas de 10-20 cm; gluma inferior con una excavacion puntiforme en el dorso; otros caracteres semejantes a B. saccharoides.",
     distribucion: "America calida; citada para Palermo.",
+    imagen: ""
+  },
+
+  andropogon_paniculatus: {
+    id: "andropogon_paniculatus",
+    nombreCientifico: "Andropogon paniculatus",
+    nombreVulgar: "Andropogon paniculatus",
+    familia: "17. Gramineae - Andropogoneae",
+    descripcion: "Hierba perenne, cespitosa, con tallos rojizos de 50-100 cm de alto.",
+    caracteristicas: "Hojas con nervaduras muy marcadas; inflorescencia con numerosos racimos solitarios de hasta 2,5 cm, nacidos en axilas de hojas reducidas, formando una seudopanoja densa; espiguillas de 4-5 mm.",
+    distribucion: "America calida; en la estepa climax, principalmente al norte de la Capital Federal.",
+    imagen: ""
+  },
+
+  andropogon_consanguineus: {
+    id: "andropogon_consanguineus",
+    nombreCientifico: "Andropogon consanguineus",
+    nombreVulgar: "Te pampa",
+    familia: "17. Gramineae - Andropogoneae",
+    descripcion: "Hierba perenne, cespitosa, rojiza, de 30-40 cm de alto.",
+    caracteristicas: "Hojas planas; racimos numerosos de 4-7 cm, solitarios en las axilas de las hojas formando una seudopanoja angosta; espiguillas de 6-9 mm.",
+    distribucion: "Sur del Brasil, Uruguay y nordeste de la Argentina; comun en la estepa climax.",
+    imagen: ""
+  },
+
+  hemarthria_altissima: {
+    id: "hemarthria_altissima",
+    nombreCientifico: "Hemarthria altissima",
+    nombreVulgar: "Hemarthria altissima",
+    familia: "17. Gramineae - Andropogoneae",
+    descripcion: "Hierba perenne con canas ramosas, ascendentes, glabras, de 40-60 cm de alto.",
+    caracteristicas: "Hojas lineales; espigas terminales en el extremo de las ramas, subcilindricas, comprimidas, a veces semifasciculadas; raquis articulado con excavaciones donde se ajustan dos espiguillas.",
+    distribucion: "Regiones calidas del globo; comun en los bosques del Delta y de la ribera del Plata.",
+    imagen: ""
+  },
+
+  rottboellia_selloana: {
+    id: "rottboellia_selloana",
+    nombreCientifico: "Rottboellia selloana",
+    nombreVulgar: "Rottboellia selloana",
+    familia: "17. Gramineae - Andropogoneae",
+    descripcion: "Hierba perenne, rizomatosa, glabra, con tallos erectos de 30-50 cm de alto.",
+    caracteristicas: "Hojas lineales; espigas cilindricas, rectas o algo arqueadas, articuladas, de 6-15 cm, pocas; raquis engrosado que se desarticula facilmente.",
+    distribucion: "Uruguay y nordeste de la Argentina; en campos humedos proximos a Abasto.",
+    imagen: ""
+  },
+
+  sorghum_halepense: {
+    id: "sorghum_halepense",
+    nombreCientifico: "Sorghum halepense",
+    nombreVulgar: "Sorgo de Halepo",
+    familia: "17. Gramineae - Andropogoneae",
+    descripcion: "Hierba perenne, rizomatosa, de 1-1,5 m de alto.",
+    caracteristicas: "Panojas abiertas; lemma con larga arista retorcida; espiguillas en pares, una sesil y otra pedicelada esteril pero bien desarrollada.",
+    distribucion: "Africa; adventicia en America. Maleza invasora.",
+    imagen: ""
+  },
+
+  imperata_brasiliensis: {
+    id: "imperata_brasiliensis",
+    nombreCientifico: "Imperata brasiliensis",
+    nombreVulgar: "Imperata brasiliensis",
+    familia: "17. Gramineae - Andropogoneae",
+    descripcion: "Hierba perenne, rizomatosa, con tallos erectos de 50-100 cm de alto.",
+    caracteristicas: "Hojas inferiores amontonadas, planas o convolutas, glabras, con dos auriculas en la base de la lamina; panojas lanceoladas, densas y plateadas de 10-12 cm; espiguillas de 4-5 mm.",
+    distribucion: "America tropical; comun en dunas humedas de Pipinas y San Clemente del Tuyu.",
     imagen: ""
   },
 
