@@ -4995,7 +4995,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Flores zigomorfas, azules o rosadas. Ovario súpero, trilocular",
       familia: "21. Pontederiaceae",
-      especieId: "pontederiaceae"
+      nextNodeId: "pontederiaceae_a"
     },
     opcionA_prima: {
       label: "Flores actinomorfas, blancas o amarillas",
@@ -5032,6 +5032,74 @@ export const monocotiledoneaeData = {
       label: "Plantas sumergidas; hojas sésiles, lineales",
       keyStep: "A'",
       nextNodeId: "elodea_a"
+    }
+  },
+
+  pontederiaceae_a: {
+    id: "pontederiaceae_a",
+    milestone: "Pontederiaceae",
+    manualPage: 136,
+    descripcion: "Pontederiaceae - A: numero de estambres y ovario",
+    opcionA: {
+      label: "Estambres 6",
+      keyStep: "A",
+      nextNodeId: "pontederiaceae_b"
+    },
+    opcionA_prima: {
+      label: "Estambres 3; ovario 3-locular; caracteres de Heteranthera",
+      keyStep: "A'",
+      especieId: "heteranthera_peduncularis"
+    }
+  },
+
+  pontederiaceae_b: {
+    id: "pontederiaceae_b",
+    milestone: "Pontederiaceae",
+    manualPage: 136,
+    descripcion: "Pontederiaceae - B: ovario y fruto",
+    opcionA: {
+      label: "Ovario 3-locular; fruto capsula dehiscente polisperma; caracteres de Eichhornia",
+      keyStep: "B",
+      nextNodeId: "eichhornia_a"
+    },
+    opcionA_prima: {
+      label: "Ovario unilocular; fruto utriculo uniseminado; caracteres de Pontederia",
+      keyStep: "B'",
+      nextNodeId: "pontederia_a"
+    }
+  },
+
+  eichhornia_a: {
+    id: "eichhornia_a",
+    milestone: "Eichhornia",
+    manualPage: 136,
+    descripcion: "Eichhornia - A: peciolos y tipo de tallo",
+    opcionA: {
+      label: "Hojas con peciolos muy gruesos, casi globosos, llenos de aerenquima; lamina anchamente eliptica o reniforme; plantas en rosetas que emiten estolones",
+      keyStep: "A",
+      especieId: "eichhornia_crassipes"
+    },
+    opcionA_prima: {
+      label: "Hojas con peciolos alargados, poco engrosados; lamina orbicular de 8-10 cm; plantas con tallos largos flotantes",
+      keyStep: "A'",
+      especieId: "eichhornia_azurea"
+    }
+  },
+
+  pontederia_a: {
+    id: "pontederia_a",
+    milestone: "Pontederia",
+    manualPage: 138,
+    descripcion: "Pontederia - A: plantas palustres erectas o flotantes",
+    opcionA: {
+      label: "Plantas palustres, erectas, con rizomas gruesos; hojas largamente pecioladas; espigas de 10-25 cm; utriculos con 6 costillas rugosas",
+      keyStep: "A",
+      especieId: "pontederia_cordata"
+    },
+    opcionA_prima: {
+      label: "Plantas flotantes, con tallos tendidos; hojas con lamina orbicular; espiga densa de 5 cm con 30-70 flores; utriculo con 12 aristas espinulosas",
+      keyStep: "A'",
+      especieId: "pontederia_rotundifolia"
     }
   },
 
@@ -5124,7 +5192,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Plantas de lugares pantanosos o inundados, con flores cigomorfas, azules o violáceas",
       familia: "24. Pontederiaceae",
-      especieId: "pontederiaceae_2"
+      nextNodeId: "pontederiaceae_a"
     },
     opcionA_prima: {
       label: "Plantas terrestres o epífitas",
@@ -8722,25 +8790,58 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  pontederiaceae: {
-    id: "pontederiaceae",
-    nombreCientifico: "Eichhornia crassipes Solms",
-    nombreVulgar: "Jacinto de agua",
-    familia: "21. Pontederiaceae",
-    descripcion: "Planta acuática con flores zigomorfas.",
-    caracteristicas: "Hojas pecioladas hinchadas, flores lila en espiga.",
-    distribucion: "Lagunas y esteros, muy invasora",
+  eichhornia_crassipes: {
+    id: "eichhornia_crassipes",
+    nombreCientifico: "Eichhornia crassipes",
+    nombreVulgar: "Camalote; aguapey",
+    familia: "24. Pontederiaceae",
+    descripcion: "Hierba acuatica flotante, en rosetas que emiten estolones.",
+    caracteristicas: "Hojas con peciolos muy gruesos, casi globosos, llenos de aerenquima; lamina anchamente eliptica o reniforme; espigas paucifloras de 10-20 cm; perigonio azul o liliaceo de 4-5 cm; estambres exertos; capsula alargada glabra.",
+    distribucion: "America calida; comun en los camalotales del Delta y de la ribera del Plata.",
     imagen: ""
   },
 
-  pontederiaceae_2: {
-    id: "pontederiaceae_2",
-    nombreCientifico: "Pontederia cordata L.",
+  eichhornia_azurea: {
+    id: "eichhornia_azurea",
+    nombreCientifico: "Eichhornia azurea",
+    nombreVulgar: "Camalote",
+    familia: "24. Pontederiaceae",
+    descripcion: "Hierba acuatica flotante, con tallos largos de los que nacen hojas e inflorescencias.",
+    caracteristicas: "Hojas con peciolos alargados y poco engrosados; lamina orbicular de 8-10 cm; espigas con 18-40 flores; perigonio infundibuliforme azul de 4-5 cm, con tubo velludo-glanduloso; fruto capsula apiculada.",
+    distribucion: "America calida; comun en el Delta y en la ribera.",
+    imagen: ""
+  },
+
+  pontederia_cordata: {
+    id: "pontederia_cordata",
+    nombreCientifico: "Pontederia cordata",
     nombreVulgar: "Pontederia",
     familia: "24. Pontederiaceae",
-    descripcion: "Pontederia terrestre de ambientes pantanosos.",
-    caracteristicas: "Flores cigomorfas azules o violáceas.",
-    distribucion: "Lugares pantanosos inundados",
+    descripcion: "Planta palustre, erecta, con rizomas gruesos y escapo largo.",
+    caracteristicas: "Hojas largamente pecioladas, con lamina eliptica, ovada o lanceolada, atenuada o cordada en la base; espigas de 10-25 cm; flores numerosas; perigonio azul de 1 cm; utriculos con 6 costillas rugosas.",
+    distribucion: "America calida; muy comun en los pajonales del Delta y de la ribera platense.",
+    imagen: ""
+  },
+
+  pontederia_rotundifolia: {
+    id: "pontederia_rotundifolia",
+    nombreCientifico: "Pontederia rotundifolia",
+    nombreVulgar: "Camalote",
+    familia: "24. Pontederiaceae",
+    descripcion: "Planta flotante, con tallos tendidos y hojas largamente pecioladas.",
+    caracteristicas: "Lamina orbicular de unos 8 cm por 10 cm; escapos de 10-20 cm; espata transparente; espiga densa de 5 cm con 30-70 flores azules o liliaceas; perigonio velludo de 15 mm; utriculo con 12 aristas espinulosas.",
+    distribucion: "America tropical, hasta el Rio de la Plata.",
+    imagen: ""
+  },
+
+  heteranthera_peduncularis: {
+    id: "heteranthera_peduncularis",
+    nombreCientifico: "Heteranthera peduncularis",
+    nombreVulgar: "Heteranthera",
+    familia: "24. Pontederiaceae",
+    descripcion: "Hierba acuatica de tallos flotantes, con hojas de limbo acorazonado.",
+    caracteristicas: "Estambres 3; ovario 3-locular; espigas con 9-16 flores lilaceas de 16 mm; estambres laterales mas cortos y barbudos, estambre central mas largo y no barbudo; capsulas de unos 13 mm.",
+    distribucion: "America calida; rara en la region, citada para Pergamino.",
     imagen: ""
   },
 
