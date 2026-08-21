@@ -5219,7 +5219,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Estambre soldado con el pistilo (ginostemio). Polen en polinias",
       familia: "33. Orchidaceae",
-      especieId: "orchidaceae"
+      nextNodeId: "orchidaceae_a"
     },
     opcionA_prima: {
       label: "Estambre no soldado con el pistilo. Polen no en polinias",
@@ -5287,6 +5287,142 @@ export const monocotiledoneaeData = {
       label: "Flores en panojas contraidas, espiciformes; hierbas de 1,5-2 m; hojas ovado-oblongas de cerca de 50 cm",
       keyStep: "A'",
       especieId: "thalia_multiflora"
+    }
+  },
+
+  orchidaceae_a: {
+    id: "orchidaceae_a",
+    milestone: "Orchidaceae",
+    manualPage: 157,
+    descripcion: "Orchidaceae - A: habito de la planta",
+    opcionA: {
+      label: "Plantas terrestres, con tallos normales",
+      keyStep: "A",
+      nextNodeId: "orchidaceae_b"
+    },
+    opcionA_prima: {
+      label: "Plantas epifitas, con tallos engrosados, bulbiformes",
+      keyStep: "A'",
+      especieId: "oncidium_bifolium"
+    }
+  },
+
+  orchidaceae_b: {
+    id: "orchidaceae_b",
+    milestone: "Orchidaceae",
+    manualPage: 157,
+    descripcion: "Orchidaceae - B: espolon o menton del labelo",
+    opcionA: {
+      label: "Flores con un espolon hueco en la base del labelo, o con un menton prominente formado por la base de los sepalos",
+      keyStep: "B",
+      nextNodeId: "orchidaceae_c"
+    },
+    opcionA_prima: {
+      label: "Flores sin espolon ni menton conspicuo",
+      keyStep: "B'",
+      nextNodeId: "orchidaceae_e"
+    }
+  },
+
+  orchidaceae_c: {
+    id: "orchidaceae_c",
+    milestone: "Orchidaceae",
+    manualPage: 157,
+    descripcion: "Orchidaceae - C: longitud del espolon o menton",
+    opcionA: {
+      label: "Flores con espolon de varios centimetros",
+      keyStep: "C",
+      nextNodeId: "habenaria_a"
+    },
+    opcionA_prima: {
+      label: "Flores con espolon o menton de menos de 1 cm",
+      keyStep: "C'",
+      nextNodeId: "orchidaceae_d"
+    }
+  },
+
+  orchidaceae_d: {
+    id: "orchidaceae_d",
+    milestone: "Orchidaceae",
+    manualPage: 157,
+    descripcion: "Orchidaceae - D: origen de las raices",
+    opcionA: {
+      label: "Raices fasciculadas en la base del tallo; flores con menton",
+      keyStep: "D",
+      especieId: "pelexia_bonariensis"
+    },
+    opcionA_prima: {
+      label: "Raices emergiendo de las articulaciones inferiores del tallo; flores con espolon corto",
+      keyStep: "D'",
+      especieId: "physurus_platensis"
+    }
+  },
+
+  orchidaceae_e: {
+    id: "orchidaceae_e",
+    milestone: "Orchidaceae",
+    manualPage: 157,
+    descripcion: "Orchidaceae - E: sepalos laterales",
+    opcionA: {
+      label: "Sepalos laterales multifidos o fimbriados",
+      keyStep: "E",
+      especieId: "bipinnula_biplumata"
+    },
+    opcionA_prima: {
+      label: "Sepalos laterales enteros",
+      keyStep: "E'",
+      nextNodeId: "orchidaceae_f"
+    }
+  },
+
+  orchidaceae_f: {
+    id: "orchidaceae_f",
+    milestone: "Orchidaceae",
+    manualPage: 157,
+    descripcion: "Orchidaceae - F: tamano de las flores",
+    opcionA: {
+      label: "Flores grandes, de mas de 1,5 cm de largo",
+      keyStep: "F",
+      especieId: "chloraea_membranacea"
+    },
+    opcionA_prima: {
+      label: "Flores pequenas, de menos de 1 cm de largo",
+      keyStep: "F'",
+      nextNodeId: "orchidaceae_g"
+    }
+  },
+
+  orchidaceae_g: {
+    id: "orchidaceae_g",
+    milestone: "Orchidaceae",
+    manualPage: 157,
+    descripcion: "Orchidaceae - G: hojas basales durante la floracion",
+    opcionA: {
+      label: "Plantas sin hojas basales al llegar a la floracion; tallos cubiertos de vainas foliares herbaceas o membranaceas",
+      keyStep: "G",
+      especieId: "brachystele_dilatata"
+    },
+    opcionA_prima: {
+      label: "Plantas con hojas en roseta basal y tallos escapiformes",
+      keyStep: "G'",
+      especieId: "cyclopogon_elatus"
+    }
+  },
+
+  habenaria_a: {
+    id: "habenaria_a",
+    milestone: "Habenaria",
+    manualPage: 157,
+    descripcion: "Habenaria - A: petalos y labelo",
+    opcionA: {
+      label: "Petalos 2-3-partidos; segmento anterior apenas mas largo que el posterior; labelo trifido, con el segmento central poco mas corto que los laterales; espolon de 5-7 cm",
+      keyStep: "A",
+      especieId: "habenaria_bractescens"
+    },
+    opcionA_prima: {
+      label: "Petalos bifidos; segmento anterior por lo menos dos veces tan largo como el posterior; segmentos laterales del labelo filiformes, dos veces mas largos que el central; espolon de 13 cm",
+      keyStep: "A'",
+      especieId: "habenaria_gourlieana"
     }
   },
 
@@ -9505,14 +9641,102 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  orchidaceae: {
-    id: "orchidaceae",
-    nombreCientifico: "Oncidium sp.",
-    nombreVulgar: "Orquídea",
+  habenaria_bractescens: {
+    id: "habenaria_bractescens",
+    nombreCientifico: "Habenaria bractescens Lindl.",
+    nombreVulgar: "Habenaria",
     familia: "33. Orchidaceae",
-    descripcion: "Orquídea con ginostemio característico.",
-    caracteristicas: "Un estambre fértil soldado con pistilo, polen en polinias.",
-    distribucion: "Ambientes selváticos y cultivadas",
+    descripcion: "Orquidea terrestre perenne, de 30-75 cm de alto.",
+    caracteristicas: "Tuberculo elipsoideo; tallos hojosos; hojas lanceolado-oblongas, agudas y envainadoras; flores grandes blanco-verdosas con espolon de 5-7 cm.",
+    distribucion: "Sur del Brasil, Uruguay y norte de la Argentina. Comun en bosques del Delta y de la ribera del Plata; florece en verano.",
+    imagen: ""
+  },
+
+  habenaria_gourlieana: {
+    id: "habenaria_gourlieana",
+    nombreCientifico: "Habenaria gourlieana Gill. ex Lindl.",
+    nombreVulgar: "Habenaria",
+    familia: "33. Orchidaceae",
+    descripcion: "Orquidea terrestre perenne, de hasta 50 cm de alto.",
+    caracteristicas: "Tuberculo elipsoideo; tallos densamente hojosos; hojas lineal-lanceoladas; flores grandes albo-verdosas con espolon muy largo.",
+    distribucion: "Uruguay y norte de la Argentina, hasta las dunas de San Clemente del Tuyu.",
+    imagen: ""
+  },
+
+  pelexia_bonariensis: {
+    id: "pelexia_bonariensis",
+    nombreCientifico: "Pelexia bonariensis (Lindl.) Schlechter",
+    nombreVulgar: "Pelexia",
+    familia: "33. Orchidaceae",
+    descripcion: "Hierba terrestre perenne, de 50-70 cm de alto.",
+    caracteristicas: "Raices fusiformes fasciculadas; hojas inferiores lanceoladas de 15-35 cm; espiga densa, multiflora; flores verdosas con menton conspicuo.",
+    distribucion: "Sur del Brasil, Paraguay, Uruguay y NE de la Argentina. En bosques del Delta y de la ribera del Plata; primavera.",
+    imagen: ""
+  },
+
+  physurus_platensis: {
+    id: "physurus_platensis",
+    nombreCientifico: "Physurus platensis Hauman",
+    nombreVulgar: "Physurus",
+    familia: "33. Orchidaceae",
+    descripcion: "Orquidea terrestre perenne, delicada, de 15-25 cm de alto.",
+    caracteristicas: "Tallo ascendente con raices cortas y crasas emergiendo de los nudos inferiores; hojas elipsoideas; espiga corta, multiflora y densa; flores pequenas blancas con espolon de 3-4 mm.",
+    distribucion: "Region platense y Paraguay. En bosques del Delta y de la ribera platense; primavera.",
+    imagen: ""
+  },
+
+  bipinnula_biplumata: {
+    id: "bipinnula_biplumata",
+    nombreCientifico: "Bipinnula biplumata (L.) Reichb. fil.",
+    nombreVulgar: "Bipinnula",
+    familia: "33. Orchidaceae",
+    descripcion: "Hierba terrestre perenne, de 10-15 cm de alto.",
+    caracteristicas: "Raices claviformes; hojas basales pocas, oblongas y agudas; flor apical solitaria; sepalos laterales lineales, pectinado-pinatífidos; labelo negro con lobulo piloso.",
+    distribucion: "Rio Grande do Sul, Uruguay y NE de la Argentina. Rara en la region, citada para la estepa climax de Elizalde.",
+    imagen: ""
+  },
+
+  chloraea_membranacea: {
+    id: "chloraea_membranacea",
+    nombreCientifico: "Chloraea membranacea Lindl.",
+    nombreVulgar: "Chloraea",
+    familia: "33. Orchidaceae",
+    descripcion: "Hierba terrestre perenne, de 40-70 cm de alto.",
+    caracteristicas: "Raices fasciculadas y carnosas; hojas inferiores lanceoladas; racimos pauci- o multifloros; flores grandes blanco-verdosas; labelo casi orbicular con papilas claviformes.",
+    distribucion: "Sur del Brasil, Uruguay y NE de la Argentina. Frecuente en la region platense: Delta, ribera del Plata y talares; primavera.",
+    imagen: ""
+  },
+
+  brachystele_dilatata: {
+    id: "brachystele_dilatata",
+    nombreCientifico: "Brachystele dilatata (Lindl.) Schlechter",
+    nombreVulgar: "Brachystele",
+    familia: "33. Orchidaceae",
+    descripcion: "Hierba terrestre perenne, de 20-30 cm de alto.",
+    caracteristicas: "Raices fusiformes; tallos simples cubiertos de vainas membranosas agudas; espigas densas; flores pequenas verdosas; labelo terminado en un lobulo reniforme.",
+    distribucion: "Uruguay y NE de Buenos Aires. Hallada cerca de Eva Peron.",
+    imagen: ""
+  },
+
+  cyclopogon_elatus: {
+    id: "cyclopogon_elatus",
+    nombreCientifico: "Cyclopogon elatus (Sw.) Schltr.",
+    nombreVulgar: "Cyclopogon",
+    familia: "33. Orchidaceae",
+    descripcion: "Orquidea terrestre perenne con hojas arrosetadas.",
+    caracteristicas: "Raices pilosas; hojas oblanceoladas de 9-13 cm por 2-2,5 cm; escapos de 20-30 cm; espigas densas; petalos blancos o rosados; labelo blanco con dos lineas verdes.",
+    distribucion: "Sur del Brasil, Uruguay y NE de la Argentina. Frecuente en bosques de talas.",
+    imagen: ""
+  },
+
+  oncidium_bifolium: {
+    id: "oncidium_bifolium",
+    nombreCientifico: "Oncidium bifolium Sims",
+    nombreVulgar: "Flor de patito",
+    familia: "33. Orchidaceae",
+    descripcion: "Orquidea epifita con seudobulbos y numerosas raices.",
+    caracteristicas: "Seudobulbos de 3-4 cm por 1-2 cm; dos hojas apicales coriaceas, lanceoladas, de 6-12 cm; pedunculos largos inclinados con 7-12 flores amarillas grandes.",
+    distribucion: "Norte de la Argentina y Uruguay. En bosques del Delta; tambien cultivada al aire libre como ornamental.",
     imagen: ""
   },
 
