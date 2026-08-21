@@ -2877,7 +2877,75 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Espiguillas iguales entre si, muticas, en pares sobre un raquis continuo alargado y envueltas por largos pelos plateados",
       keyStep: "E'",
+      nextNodeId: "andropogoneae_f"
+    }
+  },
+
+  andropogoneae_f: {
+    id: "andropogoneae_f",
+    milestone: "Andropogoneae",
+    manualPage: 110,
+    descripcion: "Andropogoneae - generos finales: Imperata o continuar",
+    opcionA: {
+      label: "Espiguillas iguales entre si, muticas, en pares sobre un raquis continuo alargado, envueltas por largos pelos plateados; panojas estrechas, plateadas",
+      keyStep: "F",
       especieId: "imperata_brasiliensis"
+    },
+    opcionA_prima: {
+      label: "Espiguillas no envueltas por largos pelos plateados de Imperata; continuar con generos finales",
+      keyStep: "F'",
+      nextNodeId: "andropogoneae_g"
+    }
+  },
+
+  andropogoneae_g: {
+    id: "andropogoneae_g",
+    milestone: "Andropogoneae",
+    manualPage: 110,
+    descripcion: "Andropogoneae - generos finales: Ischaemum o continuar",
+    opcionA: {
+      label: "Espiguillas en pares en racimos espiciformes solitarios, geminados o fasciculados; una casi sesil con pedicelo oculto por la gluma decurrente",
+      keyStep: "G",
+      especieId: "ischaemum_urvilleanum"
+    },
+    opcionA_prima: {
+      label: "Espiguillas gruesas sesiles con pedicelo velludo ausente, o pares con una sesil masculina y otra pedicelada hermafrodita",
+      keyStep: "G'",
+      nextNodeId: "andropogoneae_h"
+    }
+  },
+
+  andropogoneae_h: {
+    id: "andropogoneae_h",
+    milestone: "Andropogoneae",
+    manualPage: 111,
+    descripcion: "Andropogoneae - generos finales: Sorghastrum o Trachypogon",
+    opcionA: {
+      label: "Espiguillas gruesas, sesiles, hermafroditas, acompanadas por el pedicelo velludo de una segunda espiguilla que falta; caracteres de Sorghastrum",
+      keyStep: "H",
+      nextNodeId: "sorghastrum_a"
+    },
+    opcionA_prima: {
+      label: "Espiguillas en pares sobre raquis delgado y continuo; una sesil masculina sin arista y otra pedicelada hermafrodita largamente aristada",
+      keyStep: "H'",
+      especieId: "trachypogon_canescens"
+    }
+  },
+
+  sorghastrum_a: {
+    id: "sorghastrum_a",
+    milestone: "Sorghastrum",
+    manualPage: 111,
+    descripcion: "Sorghastrum - A: largo de la arista",
+    opcionA: {
+      label: "Arista de 10-15 mm; plantas cespitosas de 1-1,5 m; hojas planas, enroscables; panojas densas plateado-ocraceas",
+      keyStep: "A",
+      especieId: "sorghastrum_pellitum"
+    },
+    opcionA_prima: {
+      label: "Arista de 5 mm; plantas de 1,5-2 m; panojas laxas; espiguillas velludas",
+      keyStep: "A'",
+      especieId: "sorghastrum_agrostoides"
     }
   },
 
@@ -4885,6 +4953,50 @@ export const monocotEspecies = {
     descripcion: "Hierba perenne, rizomatosa, con tallos erectos de 50-100 cm de alto.",
     caracteristicas: "Hojas inferiores amontonadas, planas o convolutas, glabras, con dos auriculas en la base de la lamina; panojas lanceoladas, densas y plateadas de 10-12 cm; espiguillas de 4-5 mm.",
     distribucion: "America tropical; comun en dunas humedas de Pipinas y San Clemente del Tuyu.",
+    imagen: ""
+  },
+
+  ischaemum_urvilleanum: {
+    id: "ischaemum_urvilleanum",
+    nombreCientifico: "Ischaemum urvilleanum",
+    nombreVulgar: "Ischaemum urvilleanum",
+    familia: "17. Gramineae - Andropogoneae",
+    descripcion: "Hierba perenne, rizomatosa, con tallos bajos y ascendentes.",
+    caracteristicas: "Hojas amontonadas en la parte inferior del tallo, planas y lineal-lanceoladas; racimos espiciformes geminados, uno sesil y otro cortamente pedunculado; espiguillas de 6-7 mm, cortamente aristadas.",
+    distribucion: "Sur del Brasil, Uruguay y nordeste de la Argentina; hallada en la Isla Martin Garcia y en la ribera platense.",
+    imagen: ""
+  },
+
+  sorghastrum_pellitum: {
+    id: "sorghastrum_pellitum",
+    nombreCientifico: "Sorghastrum pellitum",
+    nombreVulgar: "Sorghastrum pellitum",
+    familia: "17. Gramineae - Andropogoneae",
+    descripcion: "Hierba perenne, cespitosa, de 1-1,5 m de alto.",
+    caracteristicas: "Hojas planas, enroscables; panojas densas, plateado-ocraceas; espiguillas velludas; arista de 10-15 mm.",
+    distribucion: "America austral; frecuente en la estepa climax del norte y este de la provincia de Buenos Aires.",
+    imagen: ""
+  },
+
+  sorghastrum_agrostoides: {
+    id: "sorghastrum_agrostoides",
+    nombreCientifico: "Sorghastrum agrostoides",
+    nombreVulgar: "Sorghastrum agrostoides",
+    familia: "17. Gramineae - Andropogoneae",
+    descripcion: "Hierba perenne robusta de 1,5-2 m de alto.",
+    caracteristicas: "Panojas laxas; espiguillas velludas; arista de unos 5 mm.",
+    distribucion: "America calida; accidental en Palermo.",
+    imagen: ""
+  },
+
+  trachypogon_canescens: {
+    id: "trachypogon_canescens",
+    nombreCientifico: "Trachypogon canescens",
+    nombreVulgar: "Trachypogon canescens",
+    familia: "17. Gramineae - Andropogoneae",
+    descripcion: "Hierba perenne, cespitosa, de cerca de 1 m de alto.",
+    caracteristicas: "Hojas largas y velludas; racimos solitarios de 8-10 cm; espiguillas fusiformes, velludas, de 6-7 mm; arista de 4-6 cm, largamente velluda.",
+    distribucion: "Sur del Brasil y nordeste de la Argentina; se halla en el norte de la provincia de Buenos Aires, en la estepa climax.",
     imagen: ""
   },
 
