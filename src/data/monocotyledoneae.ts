@@ -1889,9 +1889,26 @@ export const monocotiledoneaeData = {
       nextNodeId: "pennisetum_a"
     },
     opcionA_prima: {
-      label: "Espiguillas rodeadas por una o mas cerdas involucrales que persisten sobre el raquis despues de caer las espiguillas; caracteres de Setaria",
+      label: "Espiguillas con otros caracteres dentro de Paniceae",
       keyStep: "H'",
+      nextNodeId: "paniceae_i"
+    }
+  },
+
+  paniceae_i: {
+    id: "paniceae_i",
+    milestone: "Paniceae",
+    manualPage: 103,
+    descripcion: "Paniceae - entrada parcial: Setaria u otros generos finales",
+    opcionA: {
+      label: "Espiguillas rodeadas por una o mas cerdas involucrales que persisten sobre el raquis despues de caer las espiguillas; caracteres de Setaria",
+      keyStep: "I",
       nextNodeId: "setaria_a"
+    },
+    opcionA_prima: {
+      label: "Espiguillas sin cerdas involucrales persistentes de Setaria; continuar con otros generos de Paniceae",
+      keyStep: "I'",
+      nextNodeId: "paniceae_j"
     }
   },
 
@@ -2555,6 +2572,142 @@ export const monocotiledoneaeData = {
       label: "Eje de la inflorescencia pubescente; perenne cespitosa de 50-70 cm; panojas no muy densas, algo interrumpidas abajo",
       keyStep: "F'",
       especieId: "setaria_vaginata"
+    }
+  },
+
+  paniceae_j: {
+    id: "paniceae_j",
+    milestone: "Paniceae",
+    manualPage: 104,
+    descripcion: "Paniceae - generos finales: Stenotaphrum o continuar",
+    opcionA: {
+      label: "Espiguillas incrustadas sobre un lado de un raquis grueso y plano que se desarticula tardiamente",
+      keyStep: "J",
+      especieId: "stenotaphrum_secundatum"
+    },
+    opcionA_prima: {
+      label: "Espiguillas no incrustadas en un raquis grueso y plano",
+      keyStep: "J'",
+      nextNodeId: "paniceae_k"
+    }
+  },
+
+  paniceae_k: {
+    id: "paniceae_k",
+    milestone: "Paniceae",
+    manualPage: 104,
+    descripcion: "Paniceae - generos finales: Leptocoryphium o continuar",
+    opcionA: {
+      label: "Gluma inferior ausente; segunda gluma y lemma esteril velludas; lemma fertil y palea pardas con apice blanquecino",
+      keyStep: "K",
+      especieId: "leptocoryphium_lanatum"
+    },
+    opcionA_prima: {
+      label: "Gluma inferior presente o con otros caracteres",
+      keyStep: "K'",
+      nextNodeId: "paniceae_l"
+    }
+  },
+
+  paniceae_l: {
+    id: "paniceae_l",
+    milestone: "Paniceae",
+    manualPage: 105,
+    descripcion: "Paniceae - generos finales: Ichnanthus o continuar",
+    opcionA: {
+      label: "Gluma inferior casi tan larga como la superior; lemma de la flor hermafrodita con dos excavaciones laterales en la base",
+      keyStep: "L",
+      especieId: "ichnanthus_pallens"
+    },
+    opcionA_prima: {
+      label: "Lemma fertil sin dos excavaciones laterales en la base",
+      keyStep: "L'",
+      nextNodeId: "paniceae_m"
+    }
+  },
+
+  paniceae_m: {
+    id: "paniceae_m",
+    milestone: "Paniceae",
+    manualPage: 105,
+    descripcion: "Paniceae - generos finales: Hymenachne o continuar",
+    opcionA: {
+      label: "Espiguillas con dos glumas y lemma esteril glumiforme; lemma fertil y palea poco endurecidas; panoja espiciforme",
+      keyStep: "M",
+      especieId: "hymenachne_amplexicaulis"
+    },
+    opcionA_prima: {
+      label: "Lemma fertil mas endurecida o con otros caracteres",
+      keyStep: "M'",
+      nextNodeId: "paniceae_n"
+    }
+  },
+
+  paniceae_n: {
+    id: "paniceae_n",
+    milestone: "Paniceae",
+    manualPage: 105,
+    descripcion: "Paniceae - generos finales: Pseudechinolaena o continuar",
+    opcionA: {
+      label: "Primera y segunda glumas casi de la misma longitud; segunda gluma ventricosa y con pelos ganchudos a la madurez",
+      keyStep: "N",
+      especieId: "pseudechinolaena_polystachya"
+    },
+    opcionA_prima: {
+      label: "Segunda gluma sin pelos ganchudos ventricosos a la madurez",
+      keyStep: "N'",
+      nextNodeId: "paniceae_o"
+    }
+  },
+
+  paniceae_o: {
+    id: "paniceae_o",
+    milestone: "Paniceae",
+    manualPage: 105,
+    descripcion: "Paniceae - generos finales: Brachiaria o continuar",
+    opcionA: {
+      label: "Gluma inferior orientada hacia el raquis; espiguillas en dos hileras sobre un raquis triquetro formando espigas unilaterales",
+      keyStep: "O",
+      especieId: "brachiaria_extensa"
+    },
+    opcionA_prima: {
+      label: "Gluma inferior orientada hacia afuera o glumas aristadas; continuar",
+      keyStep: "O'",
+      nextNodeId: "paniceae_p"
+    }
+  },
+
+  paniceae_p: {
+    id: "paniceae_p",
+    milestone: "Paniceae",
+    manualPage: 105,
+    descripcion: "Paniceae - generos finales: Paspalidium u Oplismenopsis/Oplismenus",
+    opcionA: {
+      label: "Espiguillas con dos glumas, la inferior hacia afuera y la superior hacia el raquis; lemma esteril mutica",
+      keyStep: "P",
+      especieId: "paspalidium_paludivagum"
+    },
+    opcionA_prima: {
+      label: "Glumas aristadas o espiguillas bifloras con gluma inferior aristada",
+      keyStep: "P'",
+      nextNodeId: "paniceae_q"
+    }
+  },
+
+  paniceae_q: {
+    id: "paniceae_q",
+    milestone: "Paniceae",
+    manualPage: 106,
+    descripcion: "Paniceae - generos finales: Oplismenopsis u Oplismenus",
+    opcionA: {
+      label: "Espiguillas bifloras; gluma inferior corta, aristada, con el dorso dirigido hacia el raquis; hojas lanceoladas planas",
+      keyStep: "Q",
+      especieId: "oplismenopsis_najada"
+    },
+    opcionA_prima: {
+      label: "Espiguillas gruesas o algo comprimidas lateralmente, subsesiles, ordenadas en dos hileras; glumas casi iguales, aristadas",
+      keyStep: "Q'",
+      especieId: "oplismenus_setarius"
     }
   },
 
@@ -4331,6 +4484,105 @@ export const monocotEspecies = {
     descripcion: "Hierba perenne, cespitosa, de 50-70 cm de alto.",
     caracteristicas: "Eje de la inflorescencia pubescente; panojas espiciformes no muy densas, algo interrumpidas en la parte inferior, de 7-11 cm; espiguillas de unos 2 mm.",
     distribucion: "Sur del Brasil, Uruguay y nordeste de la Argentina; comun en la region.",
+    imagen: ""
+  },
+
+  stenotaphrum_secundatum: {
+    id: "stenotaphrum_secundatum",
+    nombreCientifico: "Stenotaphrum secundatum",
+    nombreVulgar: "Gramillon",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, rastrera, con tallos comprimidos, ramosos y radicantes.",
+    caracteristicas: "Espiguillas incrustadas sobre un lado de un raquis grueso y plano; espiguillas de 4-5 mm; hojas cortas y obtusas; espigas terminales y axilares.",
+    distribucion: "America calida; comun en suelos bajos y humedos. Se utiliza para formar cesped.",
+    imagen: ""
+  },
+
+  leptocoryphium_lanatum: {
+    id: "leptocoryphium_lanatum",
+    nombreCientifico: "Leptocoryphium lanatum",
+    nombreVulgar: "Leptocoryphium lanatum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, erecta, de 50-100 cm de alto.",
+    caracteristicas: "Hojas estrechas, a menudo involutas; panojas flojas y angostas; espiguillas lanceoladas, velludas, de unos 4 mm; gluma inferior ausente.",
+    distribucion: "America calida; norte de la provincia de Buenos Aires.",
+    imagen: ""
+  },
+
+  ichnanthus_pallens: {
+    id: "ichnanthus_pallens",
+    nombreCientifico: "Ichnanthus pallens",
+    nombreVulgar: "Ichnanthus pallens",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, rastrera o ascendente.",
+    caracteristicas: "Hojas anchamente lanceoladas y glabras; espiguillas lanceoladas de 3,5-4 mm; gluma inferior casi tan larga como la superior; lemma fertil con dos excavaciones laterales basales.",
+    distribucion: "America tropical; rara en la region, citada para la Isla Martin Garcia.",
+    imagen: ""
+  },
+
+  hymenachne_amplexicaulis: {
+    id: "hymenachne_amplexicaulis",
+    nombreCientifico: "Hymenachne amplexicaulis",
+    nombreVulgar: "Hymenachne amplexicaulis",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, glabra, acuatica, con tallos ramosos y crasos.",
+    caracteristicas: "Hojas anchamente lineales, acorazonadas y semiabrazadoras en la base; panojas espiciformes de 20-50 cm.",
+    distribucion: "America tropical; hallada en Retiro.",
+    imagen: ""
+  },
+
+  pseudechinolaena_polystachya: {
+    id: "pseudechinolaena_polystachya",
+    nombreCientifico: "Pseudechinolaena polystachya",
+    nombreVulgar: "Pseudechinolaena polystachya",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, rastrera, con tallos radicantes.",
+    caracteristicas: "Hojas cortas, anchamente lanceoladas, de 3-6 cm por 1-1,5 cm; panojas laxas; espiguillas de 3-4 mm; segunda gluma ventricosa y con pelos ganchudos a la madurez.",
+    distribucion: "America tropical; hallada en los bosques de la Isla Martin Garcia.",
+    imagen: ""
+  },
+
+  brachiaria_extensa: {
+    id: "brachiaria_extensa",
+    nombreCientifico: "Brachiaria extensa",
+    nombreVulgar: "Brachiaria extensa",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba anual con tallos decumbentes, radicantes en los nudos.",
+    caracteristicas: "Hojas anchas; panojas con 3-6 espigas distantes de 3-8 cm; raquis alado; espiguillas ovadas de 4-4,5 mm.",
+    distribucion: "Sur de los Estados Unidos; hallada en Palermo.",
+    imagen: ""
+  },
+
+  paspalidium_paludivagum: {
+    id: "paspalidium_paludivagum",
+    nombreCientifico: "Paspalidium paludivagum",
+    nombreVulgar: "Paspalidium paludivagum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, palustre, de hasta 2 m de alto.",
+    caracteristicas: "Espiguillas en racimos espiciformes mas o menos adosados al eje principal; gluma inferior muy corta y obtusa; lemma esteril de 2,8-3 mm, aguda.",
+    distribucion: "Sur de los Estados Unidos, Mexico y Guatemala; hallada en Campana y San Isidro.",
+    imagen: ""
+  },
+
+  oplismenopsis_najada: {
+    id: "oplismenopsis_najada",
+    nombreCientifico: "Oplismenopsis najada",
+    nombreVulgar: "Oplismenopsis najada",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Planta perenne, acuatica, rizomatosa, con tallos nadantes ramificados y canas floriferas erectas.",
+    caracteristicas: "Panojas con varios racimos espiciformes; espiguillas lanceoladas, violaceas, de 7-8 mm; gluma inferior corta y aristada.",
+    distribucion: "Uruguay y nordeste de la Argentina; en banados del Delta y de la ribera del Plata.",
+    imagen: ""
+  },
+
+  oplismenus_setarius: {
+    id: "oplismenus_setarius",
+    nombreCientifico: "Oplismenus setarius",
+    nombreVulgar: "Oplismenus setarius",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, debil, tendida o ascendente, radicante en los nudos, de 10-20 cm de alto.",
+    caracteristicas: "Hojas anchamente lanceoladas y cortas; panojas de 3-6 racimos cortos y densos, casi globosos; espiguillas gruesas de 3 mm; gluma inferior largamente aristada.",
+    distribucion: "America calida; bosques higrofilos del Delta y de la Isla Martin Garcia.",
     imagen: ""
   },
 
