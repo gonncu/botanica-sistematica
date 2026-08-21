@@ -4681,12 +4681,39 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Ovario ínfero. Hojas retinervadas",
       familia: "28. Dioscoreaceae",
-      especieId: "dioscoreaceae"
+      nextNodeId: "dioscoreaceae_a"
     },
     opcionA_prima: {
       label: "Ovario súpero. Hojas paralelinervadas",
       familia: "26. Liliaceae",
       nextNodeId: "liliaceae_a"
+    }
+  },
+
+  dioscoreaceae_a: {
+    id: "dioscoreaceae_a",
+    milestone: "Dioscoreaceae",
+    manualPage: 148,
+    descripcion: "Dioscoreaceae: enredaderas con flores actinomorfas generalmente unisexuales y fruto capsula trialada o triquetra.",
+    opcionA: {
+      label: "Genero Dioscorea; especie unica tratada en el manual",
+      keyStep: "1",
+      especieId: "dioscorea_sinuata"
+    },
+    opcionA_prima: {
+      label: "Genero Dioscorea; especie unica tratada en el manual",
+      keyStep: "1",
+      especieId: "dioscorea_sinuata"
+    },
+    especie: {
+      id: "dioscorea_sinuata",
+      nombreCientifico: "Dioscorea sinuata",
+      nombreVulgar: "Carape",
+      familia: "28. Dioscoreaceae",
+      descripcion: "Enredadera perenne herbacea, con tuberculo discoideo y tallos volubles de 2-4 m, glabros.",
+      caracteristicas: "Hojas alternas, delgadas, pecioladas, ovado-acorazonadas, acuminadas, trilobadas o sinuadas, de 5-12 cm por 3-9 cm; flores en racimos; capsulas membranosas trialadas de 15 mm por 12 mm; semillas aladas.",
+      distribucion: "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina; frecuente en bosques del Delta y de la ribera platense; tuberculos comestibles.",
+      imagen: ""
     }
   },
 
@@ -8939,14 +8966,14 @@ export const monocotEspecies = {
   },
 
   // Otras familias
-  dioscoreaceae: {
-    id: "dioscoreaceae",
-    nombreCientifico: "Dioscorea sp.",
-    nombreVulgar: "Ñame",
+  dioscorea_sinuata: {
+    id: "dioscorea_sinuata",
+    nombreCientifico: "Dioscorea sinuata",
+    nombreVulgar: "Carape",
     familia: "28. Dioscoreaceae",
-    descripcion: "Hierba trepadora con ovario ínfero.",
-    caracteristicas: "Hojas retinervadas, tallos volubles, flores pequeñas verdosas.",
-    distribucion: "Bosques y zonas cultivadas",
+    descripcion: "Enredadera perenne herbacea, con tuberculo discoideo y tallos volubles de 2-4 m, glabros.",
+    caracteristicas: "Hojas alternas, delgadas, pecioladas, ovado-acorazonadas, acuminadas, trilobadas o sinuadas, de 5-12 cm por 3-9 cm; flores en racimos; capsulas membranosas trialadas de 15 mm por 12 mm; semillas aladas.",
+    distribucion: "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina; frecuente en bosques del Delta y de la ribera platense; tuberculos comestibles.",
     imagen: ""
   },
 
