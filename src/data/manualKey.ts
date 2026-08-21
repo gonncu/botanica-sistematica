@@ -483,6 +483,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo B.",
     "Árboles espinosos, flores monoicas y gineceo bicarpelar unilocular."
   ),
+  celtis_spinosa: species(
+    "celtis_spinosa",
+    "Celtis spinosa",
+    "36. Ulmaceae",
+    "Árbol erecto de 4-8 m de altura, con espinas rectas.",
+    "Hojas cortamente pecioladas, ovadas, aserradas, glabras o apenas pilosas, de 8-35 mm; drupas rojas o negruzcas de 6-9 mm.",
+    "Común en sabanas y bosques xerófilos de América del Sur; frecuente en el este de Buenos Aires formando talares. N. v.: tala."
+  ),
+  celtis_iguanea: species(
+    "celtis_iguanea",
+    "Celtis iguanea",
+    "36. Ulmaceae",
+    "Arbusto apoyante de 4-10 m de altura.",
+    "Ramas flexuosas con espinas cortas y curvas; hojas ovadas, aserrado-crenadas, glabras o apenas pubescentes, de 4-10 cm; frutos amarillos de 4-6 mm.",
+    "América cálida; común en los bosques primitivos del Delta y de la ribera platense. N. v.: tala gateador."
+  ),
   phytolaccaceae: family(
     "phytolaccaceae",
     "47. Phytolaccaceae",
@@ -1948,12 +1964,28 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Árboles espinosos; flores monoicas; gineceo bicarpelar unilocular",
       keyStep: "I",
-      especieId: "ulmaceae",
+      nextNodeId: "ulmaceae_a",
     },
     opcionA_prima: {
       label: "Árboles o arbustos no espinosos; flores dioicas; gineceo 5-∞-carpelar",
       keyStep: "I'",
       especieId: "phytolaccaceae",
+    },
+  },
+  ulmaceae_a: {
+    id: "ulmaceae_a",
+    milestone: "Ulmaceae",
+    manualPage: 166,
+    descripcion: "Celtis - A: porte, espinas, hojas y frutos",
+    opcionA: {
+      label: "Árbol erecto de 4-8 m, con espinas rectas; hojas cortamente pecioladas, ovadas, aserradas, de 8-35 mm; drupas rojas o negruzcas de 6-9 mm",
+      keyStep: "A",
+      especieId: "celtis_spinosa",
+    },
+    opcionA_prima: {
+      label: "Arbusto apoyante de 4-10 m, con ramas flexuosas y espinas cortas y curvas; hojas ovadas de 4-10 cm; frutos amarillos de 4-6 mm",
+      keyStep: "A'",
+      especieId: "celtis_iguanea",
     },
   },
   dicot_group_b_j: {
