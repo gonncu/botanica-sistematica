@@ -55,11 +55,130 @@ export const monocotiledoneaeData = {
     descripcion: "¿Qué tipo de plantas son?",
     opcionA: {
       label: "Plantas acuáticas, reducidas a un pequeño cuerpo taliforme",
-      especieId: "lemna"
+      nextNodeId: "lemnaceae_a"
     },
     opcionA_prima: {
       label: "Plantas acuáticas o terrestres con tallos y hojas bien diferenciados",
       nextNodeId: "herbaceae_b"
+    }
+  },
+
+  lemnaceae_a: {
+    id: "lemnaceae_a",
+    milestone: "Lemnaceae",
+    manualPage: 129,
+    descripcion: "Lemnaceae - A: frondas con raices o sin raices",
+    opcionA: {
+      label: "Frondas con raices; bolsas proliferas 2",
+      keyStep: "A",
+      nextNodeId: "lemnaceae_b"
+    },
+    opcionA_prima: {
+      label: "Frondas sin raices; bolsa prolifera una sola",
+      keyStep: "A'",
+      nextNodeId: "lemnaceae_c"
+    }
+  },
+
+  lemnaceae_b: {
+    id: "lemnaceae_b",
+    milestone: "Lemnaceae",
+    manualPage: 130,
+    descripcion: "Lemnaceae - B: cantidad de raices",
+    opcionA: {
+      label: "Raices varias, fasciculadas; caracteres de Spirodella",
+      keyStep: "B",
+      especieId: "spirodella_intermedia"
+    },
+    opcionA_prima: {
+      label: "Raiz solitaria; caracteres de Lemna",
+      keyStep: "B'",
+      nextNodeId: "lemna_a"
+    }
+  },
+
+  lemnaceae_c: {
+    id: "lemnaceae_c",
+    milestone: "Lemnaceae",
+    manualPage: 130,
+    descripcion: "Lemnaceae - C: forma y espesor de las frondas sin raices",
+    opcionA: {
+      label: "Frondas delgadas, oblongas; caracteres de Wolffiella",
+      keyStep: "C",
+      especieId: "wolffiella_oblonga"
+    },
+    opcionA_prima: {
+      label: "Frondas gruesas, globulares; caracteres de Wolffia",
+      keyStep: "C'",
+      nextNodeId: "wolffia_a"
+    }
+  },
+
+  lemna_a: {
+    id: "lemna_a",
+    milestone: "Lemna",
+    manualPage: 130,
+    descripcion: "Lemna - A: frondas planas o convexas",
+    opcionA: {
+      label: "Frondas planas o apenas convexas en la cara inferior, oblongas, de 2,5-3,5 mm por 1,5-2 mm, agrupadas de 2-3",
+      keyStep: "A",
+      especieId: "lemna_valdiviana"
+    },
+    opcionA_prima: {
+      label: "Frondas fuertemente convexas o gibosas en la cara inferior",
+      keyStep: "A'",
+      nextNodeId: "lemna_b"
+    }
+  },
+
+  lemna_b: {
+    id: "lemna_b",
+    milestone: "Lemna",
+    manualPage: 130,
+    descripcion: "Lemna - B: frondas ovoideas alargadas o anchas",
+    opcionA: {
+      label: "Frondas ovoideas, alargadas, de 1,7-2,5 mm por 0,9-1,6 mm, gruesas y ligeramente gibosas; ovario con 1-2 ovulos",
+      keyStep: "B",
+      especieId: "lemna_disperma"
+    },
+    opcionA_prima: {
+      label: "Frondas anchas, de 2-5 mm por 1,7-4 mm, gibosas",
+      keyStep: "B'",
+      nextNodeId: "lemna_c"
+    }
+  },
+
+  lemna_c: {
+    id: "lemna_c",
+    milestone: "Lemna",
+    manualPage: 130,
+    descripcion: "Lemna - C: manchas rojizas y forma de las frondas anchas",
+    opcionA: {
+      label: "Frondas ovado-circulares de 2-3 mm por 1,7-2,3 mm, con manchitas rojizas en la cara superior; generalmente agrupadas de 3-4",
+      keyStep: "C",
+      especieId: "lemna_parodiana"
+    },
+    opcionA_prima: {
+      label: "Frondas ovadas u orbiculares de 3-5 mm por 2-4 mm, sin manchas rojizas, con 3-5 nervaduras, agrupadas de a dos",
+      keyStep: "C'",
+      especieId: "lemna_gibba"
+    }
+  },
+
+  wolffia_a: {
+    id: "wolffia_a",
+    milestone: "Wolffia",
+    manualPage: 132,
+    descripcion: "Wolffia - A: cara superior de la fronda",
+    opcionA: {
+      label: "Cara superior convexa, no punteada; fronda de 0,5-1 mm por 0,5-0,8 mm, sin celulas epidermicas pigmentadas",
+      keyStep: "A",
+      especieId: "wolffia_columbiana"
+    },
+    opcionA_prima: {
+      label: "Cara superior aplanada en el margen y con una papila en el centro; frondas de 0,8-1,5 mm por 0,7-1 mm, con celulas epidermicas pigmentadas",
+      keyStep: "A'",
+      especieId: "wolffia_papulifera"
     }
   },
 
@@ -5087,15 +5206,92 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  // Plantas acuáticas simples
-  lemna: {
-    id: "lemna",
-    nombreCientifico: "Lemna sp.",
+  // Lemnaceae
+  spirodella_intermedia: {
+    id: "spirodella_intermedia",
+    nombreCientifico: "Spirodella intermedia",
+    nombreVulgar: "Spirodella",
+    familia: "21. Lemnaceae",
+    descripcion: "Planta acuatica diminuta, flotante, reducida a frondas asimetricas ovado-circulares.",
+    caracteristicas: "Frondas de 4-7,5 mm por 3-6 mm y 2-3 mm de espesor, con 7-10 nervaduras; raices numerosas, fasciculadas, de 2-3 cm; inflorescencia en la bolsa reproductiva del lado menos desarrollado de la fronda.",
+    distribucion: "Uruguay y norte y centro de la Argentina; comun en riachos del Delta y de la ribera del Plata.",
+    imagen: ""
+  },
+
+  lemna_valdiviana: {
+    id: "lemna_valdiviana",
+    nombreCientifico: "Lemna valdiviana",
     nombreVulgar: "Lenteja de agua",
     familia: "21. Lemnaceae",
-    descripcion: "Planta acuática muy pequeña, reducida a un cuerpo taliforme flotante.",
-    caracteristicas: "Sin tallo ni raíces verdaderas, solo filoides redondos flotantes.",
-    distribucion: "Aguas dulces estancadas, muy común en lagunas.",
+    descripcion: "Planta acuatica diminuta, flotante, con frondas planas o apenas convexas en la cara inferior.",
+    caracteristicas: "Frondas oblongas de 2,5-3,5 mm por 1,5-2 mm, generalmente agrupadas de 2-3; raiz solitaria.",
+    distribucion: "America; en aguas tranquilas, camalotales y pajonales del Delta y de la ribera.",
+    imagen: ""
+  },
+
+  lemna_disperma: {
+    id: "lemna_disperma",
+    nombreCientifico: "Lemna disperma",
+    nombreVulgar: "Lenteja de agua",
+    familia: "21. Lemnaceae",
+    descripcion: "Planta acuatica diminuta, flotante, de frondas fuertemente convexas o gibosas.",
+    caracteristicas: "Frondas ovoideas alargadas de 1,7-2,5 mm por 0,9-1,6 mm, gruesas, ligeramente gibosas, con lagunas de aerenquima amplias y 3 nervaduras poco visibles; ovario con 1-2 ovulos; fruto monospermo.",
+    distribucion: "Australia y Argentina; en aguas estancadas.",
+    imagen: ""
+  },
+
+  lemna_parodiana: {
+    id: "lemna_parodiana",
+    nombreCientifico: "Lemna parodiana",
+    nombreVulgar: "Lenteja de agua",
+    familia: "21. Lemnaceae",
+    descripcion: "Planta acuatica diminuta, flotante, de frondas anchas y gibosas.",
+    caracteristicas: "Frondas ovado-circulares de 2-3 mm por 1,7-2,3 mm, con manchitas rojizas en la cara superior; cara inferior con grandes lagunas de aerenquima; generalmente agrupadas de 3-4; fruto monospermo.",
+    distribucion: "Hallada hasta ahora en Sarandi, cerca de Buenos Aires.",
+    imagen: ""
+  },
+
+  lemna_gibba: {
+    id: "lemna_gibba",
+    nombreCientifico: "Lemna gibba",
+    nombreVulgar: "Lenteja de agua",
+    familia: "21. Lemnaceae",
+    descripcion: "Planta acuatica diminuta, flotante, de frondas ovadas u orbiculares.",
+    caracteristicas: "Frondas de 3-5 mm por 2-4 mm, algo convexas arriba y muy gibosas abajo, sin manchas rojizas, con 3-5 nervaduras, agrupadas de a dos; raiz corta; ovario con 2-7 ovulos.",
+    distribucion: "Cosmopolita; comun en aguas estancadas.",
+    imagen: ""
+  },
+
+  wolffiella_oblonga: {
+    id: "wolffiella_oblonga",
+    nombreCientifico: "Wolffiella oblonga",
+    nombreVulgar: "Wolffiella",
+    familia: "21. Lemnaceae",
+    descripcion: "Planta acuatica flotante, diminuta, sin raices, con frondas planas, delgadas, asimetricas y algo curvadas.",
+    caracteristicas: "Frondas solitarias o en pares, largamente oblongas, de 1,7-4,5 mm por 0,5-1 mm, muy delgadas; bolsa prolifera solitaria en el extremo de la fronda; inflorescencia sin espata.",
+    distribucion: "Aguas dulces tranquilas de America, desde Mexico a la Argentina y Chile.",
+    imagen: ""
+  },
+
+  wolffia_columbiana: {
+    id: "wolffia_columbiana",
+    nombreCientifico: "Wolffia columbiana",
+    nombreVulgar: "Wolffia",
+    familia: "21. Lemnaceae",
+    descripcion: "Planta acuatica diminuta, flotante, sin raices, con frondas gruesas mas o menos globulares.",
+    caracteristicas: "Cara superior convexa y no punteada; fronda de 0,5-1 mm por 0,5-0,8 mm, sin celulas epidermicas pigmentadas; una sola bolsa prolifera infundibuliforme.",
+    distribucion: "America; en charcas, estanques y ambientes semejantes.",
+    imagen: ""
+  },
+
+  wolffia_papulifera: {
+    id: "wolffia_papulifera",
+    nombreCientifico: "Wolffia papulifera",
+    nombreVulgar: "Wolffia",
+    familia: "21. Lemnaceae",
+    descripcion: "Planta acuatica diminuta, flotante, sin raices, con frondas gruesas y globulares.",
+    caracteristicas: "Cara superior aplanada en el margen y con una papila central; frondas de 0,8-1,5 mm por 0,7-1 mm, con celulas epidermicas pigmentadas.",
+    distribucion: "America calida; hallada en la ribera de Hudson, cerca de Buenos Aires.",
     imagen: ""
   },
 
