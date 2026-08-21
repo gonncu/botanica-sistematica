@@ -769,6 +769,23 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "La parte dilatada del estilo persiste sobre el fruto formando un estilopodio; continuar en proximas tandas",
       keyStep: "E'",
+      nextNodeId: "cyperaceae_f"
+    }
+  },
+
+  cyperaceae_f: {
+    id: "cyperaceae_f",
+    milestone: "Cyperaceae",
+    manualPage: 124,
+    descripcion: "Cyperaceae - F: plantas afilas o generalmente hojosas",
+    opcionA: {
+      label: "Plantas afilas; espiguilla solitaria terminal; caracteres de Heleocharis",
+      keyStep: "F",
+      nextNodeId: "heleocharis_a"
+    },
+    opcionA_prima: {
+      label: "Plantas generalmente hojosas, con inflorescencias capitadas o fasciculadas; continuar en proximas tandas",
+      keyStep: "F'",
       especieId: "cyperaceae"
     }
   },
@@ -906,6 +923,176 @@ export const monocotiledoneaeData = {
       label: "Estilo trifido; antela compuesta; espiguillas lanceoladas, agudas, de 4-8 mm",
       keyStep: "A'",
       especieId: "fimbristylis_autumnalis"
+    }
+  },
+
+  heleocharis_a: {
+    id: "heleocharis_a",
+    milestone: "Heleocharis",
+    manualPage: 124,
+    descripcion: "Heleocharis - A: vaina con diente desarrollado",
+    opcionA: {
+      label: "Vaina provista de un diente bien desarrollado",
+      keyStep: "A",
+      nextNodeId: "heleocharis_b"
+    },
+    opcionA_prima: {
+      label: "Vaina sin diente marcado, a veces aguda y algo engrosada en el apice",
+      keyStep: "A'",
+      nextNodeId: "heleocharis_c"
+    }
+  },
+
+  heleocharis_b: {
+    id: "heleocharis_b",
+    milestone: "Heleocharis",
+    manualPage: 124,
+    descripcion: "Heleocharis - B: tallos huecos o macizos",
+    opcionA: {
+      label: "Tallos huecos, con tabiques horizontales; espiguilla oblongo-lanceolada de 8-15 mm",
+      keyStep: "B",
+      especieId: "heleocharis_nodulosa"
+    },
+    opcionA_prima: {
+      label: "Tallos macizos, no tabicados; espiguilla cilindrica de 2-3 cm por 3-4 mm",
+      keyStep: "B'",
+      especieId: "heleocharis_parodii"
+    }
+  },
+
+  heleocharis_c: {
+    id: "heleocharis_c",
+    milestone: "Heleocharis",
+    manualPage: 124,
+    descripcion: "Heleocharis - C: estilo bifido o trifido",
+    opcionA: {
+      label: "Estilo bifido",
+      keyStep: "C",
+      nextNodeId: "heleocharis_d"
+    },
+    opcionA_prima: {
+      label: "Estilo trifido",
+      keyStep: "C'",
+      nextNodeId: "heleocharis_f"
+    }
+  },
+
+  heleocharis_d: {
+    id: "heleocharis_d",
+    milestone: "Heleocharis",
+    manualPage: 124,
+    descripcion: "Heleocharis - D: apice de las vainas",
+    opcionA: {
+      label: "Vainas con apice membranaceo, blanco, transparente; espiguilla ovada de 2-6 mm",
+      keyStep: "D",
+      especieId: "heleocharis_flavescens"
+    },
+    opcionA_prima: {
+      label: "Vainas con borde herbaceo, verde",
+      keyStep: "D'",
+      nextNodeId: "heleocharis_e"
+    }
+  },
+
+  heleocharis_e: {
+    id: "heleocharis_e",
+    milestone: "Heleocharis",
+    manualPage: 124,
+    descripcion: "Heleocharis - E: forma de la espiguilla en especies de estilo bifido",
+    opcionA: {
+      label: "Espiguilla lanceolada, aguda, de 15-25 mm; glumas agudas; vainas truncadas",
+      keyStep: "E",
+      especieId: "heleocharis_macrostachya"
+    },
+    opcionA_prima: {
+      label: "Espiguilla ovoidea, obtusa, de 2-13 mm; glumas obtusas; vaina oblicua",
+      keyStep: "E'",
+      especieId: "heleocharis_obtusa"
+    }
+  },
+
+  heleocharis_f: {
+    id: "heleocharis_f",
+    milestone: "Heleocharis",
+    manualPage: 124,
+    descripcion: "Heleocharis - F: costillas y estrias del fruto",
+    opcionA: {
+      label: "Fruto con 12-14 costillas longitudinales y estrias horizontales entre ellas",
+      keyStep: "F",
+      nextNodeId: "heleocharis_g"
+    },
+    opcionA_prima: {
+      label: "Frutos sin costillas ni estrias",
+      keyStep: "F'",
+      nextNodeId: "heleocharis_h"
+    }
+  },
+
+  heleocharis_g: {
+    id: "heleocharis_g",
+    milestone: "Heleocharis",
+    manualPage: 124,
+    descripcion: "Heleocharis - G: vaina superior en frutos costillados",
+    opcionA: {
+      label: "Vaina superior oblicua, con borde herbaceo; espiguillas lanceoladas de 4-8 mm",
+      keyStep: "G",
+      especieId: "heleocharis_bonariensis"
+    },
+    opcionA_prima: {
+      label: "Vaina superior truncada oblicuamente, escarioso-hialina; espiguilla lanceolada de 3-5 mm",
+      keyStep: "G'",
+      especieId: "heleocharis_radicans"
+    }
+  },
+
+  heleocharis_h: {
+    id: "heleocharis_h",
+    milestone: "Heleocharis",
+    manualPage: 125,
+    descripcion: "Heleocharis - H: tallos cuadrangulares o no",
+    opcionA: {
+      label: "Tallos cuadrangulares, capilares; espiguilla ovada, aguda, multiflora, a menudo prolifera",
+      keyStep: "H",
+      especieId: "heleocharis_viridans"
+    },
+    opcionA_prima: {
+      label: "Tallos no cuadrangulares; espiguillas nunca proliferadas",
+      keyStep: "H'",
+      nextNodeId: "heleocharis_i"
+    }
+  },
+
+  heleocharis_i: {
+    id: "heleocharis_i",
+    milestone: "Heleocharis",
+    manualPage: 125,
+    descripcion: "Heleocharis - I: tallos pentagonales o no",
+    opcionA: {
+      label: "Tallos pentagonales, de seccion estrellada, capilares; espiguilla oblonga de 5-9 mm",
+      keyStep: "I",
+      especieId: "heleocharis_dunensis"
+    },
+    opcionA_prima: {
+      label: "Tallos no pentagonales, graciles o robustos",
+      keyStep: "I'",
+      nextNodeId: "heleocharis_j"
+    }
+  },
+
+  heleocharis_j: {
+    id: "heleocharis_j",
+    milestone: "Heleocharis",
+    manualPage: 125,
+    descripcion: "Heleocharis - J: espiguillas ovoideas u lanceoladas",
+    opcionA: {
+      label: "Espiguillas ovoideas, obtusas, de 4-13 mm; aquenio finamente punteado; vainas truncadas",
+      keyStep: "J",
+      especieId: "heleocharis_montevidensis"
+    },
+    opcionA_prima: {
+      label: "Espiguillas lanceoladas, plurifloras, de 15-25 mm; aquenios lisos; vainas ligeramente oblicuas",
+      keyStep: "J'",
+      especieId: "heleocharis_haumaniana"
     }
   },
 
@@ -7684,6 +7871,127 @@ export const monocotEspecies = {
     descripcion: "Hierba perenne con rizoma corto y tallos de 25-35 cm de alto.",
     caracteristicas: "Estilo trifido; antela compuesta; espiguillas solitarias en el extremo de los radios, lanceoladas, agudas, de 4-8 mm; glumas rojizas y mucronadas.",
     distribucion: "Regiones tropicales; se halla en la ribera del Plata.",
+    imagen: ""
+  },
+
+  heleocharis_nodulosa: {
+    id: "heleocharis_nodulosa",
+    nombreCientifico: "Heleocharis nodulosa",
+    nombreVulgar: "Heleocharis nodulosa",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne, con rizoma horizontal y tallos de 30-80 cm de alto.",
+    caracteristicas: "Vaina con diente desarrollado; tallos huecos con tabiques horizontales; espiguilla pluriflora oblongo-lanceolada de 8-15 mm; estilo 2-3-fido.",
+    distribucion: "America; comun en charcas y arroyos.",
+    imagen: ""
+  },
+
+  heleocharis_parodii: {
+    id: "heleocharis_parodii",
+    nombreCientifico: "Heleocharis parodii",
+    nombreVulgar: "Heleocharis parodii",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba perenne, cespitosa, cortamente rizomatosa, con tallos robustos de 30-50 cm de alto.",
+    caracteristicas: "Vaina con diente desarrollado; tallos macizos, no tabicados; espiguilla cilindrica de 2-3 cm por 3-4 mm; glumas numerosas, espatuladas y acuminadas; estilo trifido.",
+    distribucion: "Nordeste de la Argentina; rara en la region, mas frecuente en pantanos del norte bonaerense.",
+    imagen: ""
+  },
+
+  heleocharis_flavescens: {
+    id: "heleocharis_flavescens",
+    nombreCientifico: "Heleocharis flavescens",
+    nombreVulgar: "Heleocharis flavescens",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba con rizomas filiformes largos y tallos muy delgados de 5-40 cm de alto.",
+    caracteristicas: "Vainas con apice membranaceo blanco y transparente; estilo bifido; espiguilla ovada de 2-6 mm; glumas obtusas.",
+    distribucion: "America calida; en suelos humedos.",
+    imagen: ""
+  },
+
+  heleocharis_macrostachya: {
+    id: "heleocharis_macrostachya",
+    nombreCientifico: "Heleocharis macrostachya",
+    nombreVulgar: "Heleocharis macrostachya",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba con rizoma fuerte horizontal y tallos de 10-60 cm de alto.",
+    caracteristicas: "Vainas truncadas en el apice, con borde herbaceo verde; estilo bifido; espiguilla lanceolada, aguda, de 15-25 mm; glumas agudas.",
+    distribucion: "America; frecuente en la orilla de zanjas y arroyos.",
+    imagen: ""
+  },
+
+  heleocharis_obtusa: {
+    id: "heleocharis_obtusa",
+    nombreCientifico: "Heleocharis obtusa",
+    nombreVulgar: "Heleocharis obtusa",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba anual, erecta, de 3-30 cm de alto, con tallos capilares.",
+    caracteristicas: "Vainas oblicuas en el apice, con borde herbaceo verde; estilo bifido; espiguilla ovoidea, obtusa, de 2-13 mm; glumas obtusas.",
+    distribucion: "America; rara en la region, citada para La Plata.",
+    imagen: ""
+  },
+
+  heleocharis_bonariensis: {
+    id: "heleocharis_bonariensis",
+    nombreCientifico: "Heleocharis bonariensis",
+    nombreVulgar: "Heleocharis bonariensis",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba con rizomas horizontales muy largos y tallos de 5-40 cm de alto.",
+    caracteristicas: "Estilo trifido; fruto con 12-14 costillas longitudinales y estrias horizontales; vaina superior oblicua con borde herbaceo; espiguillas lanceoladas de 4-8 mm.",
+    distribucion: "America del Sur y Central; muy comun en pantanos, arroyos y cesped de la ribera del Plata.",
+    imagen: ""
+  },
+
+  heleocharis_radicans: {
+    id: "heleocharis_radicans",
+    nombreCientifico: "Heleocharis radicans",
+    nombreVulgar: "Heleocharis radicans",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba con rizoma largo y delgado, y tallos estriados de 3-10 cm de alto.",
+    caracteristicas: "Estilo trifido; fruto costillado; vaina superior truncada oblicuamente, escarioso-hialina; espiguilla lanceolada de 3-5 mm, con glumas ovado-lanceoladas.",
+    distribucion: "America templado-calida; rara en la region, citada para Puerto Nuevo.",
+    imagen: ""
+  },
+
+  heleocharis_viridans: {
+    id: "heleocharis_viridans",
+    nombreCientifico: "Heleocharis viridans",
+    nombreVulgar: "Heleocharis viridans",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba cespitosa, de 15-40 cm de alto.",
+    caracteristicas: "Tallos cuadrangulares y capilares; vaina superior algo oblicua, aguda; espiguilla ovada, aguda, multiflora, a menudo prolifera; glumas ovadas obtusas con margen hialino.",
+    distribucion: "America del Sur; rara en Avellaneda y Vicente Lopez.",
+    imagen: ""
+  },
+
+  heleocharis_dunensis: {
+    id: "heleocharis_dunensis",
+    nombreCientifico: "Heleocharis dunensis",
+    nombreVulgar: "Heleocharis dunensis",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba con rizomas horizontales largos y tallos fasciculados debiles de 10-50 cm de alto.",
+    caracteristicas: "Tallos pentagonales, de seccion estrellada, capilares; vaina superior oblicua con borde rojizo; espiguilla oblonga, obtusa, de 5-9 mm; glumas anchamente ovales.",
+    distribucion: "Uruguay y nordeste de la Argentina; hallada en banados de la provincia de Buenos Aires.",
+    imagen: ""
+  },
+
+  heleocharis_montevidensis: {
+    id: "heleocharis_montevidensis",
+    nombreCientifico: "Heleocharis montevidensis",
+    nombreVulgar: "Heleocharis montevidensis",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba con rizomas horizontales y tallos de 5-45 cm de alto.",
+    caracteristicas: "Tallos no cuadrangulares ni pentagonales; espiguillas ovoideas, obtusas, de 4-13 mm; glumas obtusas; aquenio finamente punteado; vainas truncadas.",
+    distribucion: "America templado-calida; rara en la region.",
+    imagen: ""
+  },
+
+  heleocharis_haumaniana: {
+    id: "heleocharis_haumaniana",
+    nombreCientifico: "Heleocharis haumaniana",
+    nombreVulgar: "Heleocharis haumaniana",
+    familia: "18. Cyperaceae",
+    descripcion: "Hierba con rizoma horizontal robusto y tallos de 25-60 cm de alto.",
+    caracteristicas: "Tallos no pentagonales; espiguillas lanceoladas, plurifloras, de 15-25 mm; glumas lanceoladas, agudas; aquenios lisos; vainas ligeramente oblicuas.",
+    distribucion: "Uruguay y nordeste de la Argentina; en charcas.",
     imagen: ""
   },
 
