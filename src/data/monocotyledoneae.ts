@@ -463,7 +463,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Espiguillas agrupadas en espigas; continuar en proxima tanda de Cyperus",
       keyStep: "H'",
-      especieId: "cyperus"
+      nextNodeId: "cyperus_p"
     }
   },
 
@@ -583,6 +583,159 @@ export const monocotiledoneaeData = {
       label: "Cabezuelas de color pajizo; espiguillas 8-30, fasciculadas, lanceolado-lineales",
       keyStep: "O'",
       especieId: "cyperus_incomptus"
+    }
+  },
+
+  cyperus_p: {
+    id: "cyperus_p",
+    milestone: "Cyperus",
+    manualPage: 117,
+    descripcion: "Cyperus - P: rizomas largos o plantas cespitosas/cortamente rizomatosas",
+    opcionA: {
+      label: "Plantas con rizomas horizontales largos; tallos debiles de 20-80 cm",
+      keyStep: "P",
+      nextNodeId: "cyperus_q"
+    },
+    opcionA_prima: {
+      label: "Plantas cespitosas o con rizomas muy cortos; tallos robustos de cerca de 1 m",
+      keyStep: "P'",
+      nextNodeId: "cyperus_s"
+    }
+  },
+
+  cyperus_q: {
+    id: "cyperus_q",
+    milestone: "Cyperus",
+    manualPage: 117,
+    descripcion: "Cyperus - Q: color de espiguillas y nervaduras de glumas",
+    opcionA: {
+      label: "Espiguillas pardo-amarillentas, en antelas de espigas, lineales, de 15-40 mm por 1,5 mm; aquenios grises",
+      keyStep: "Q",
+      especieId: "cyperus_esculentus"
+    },
+    opcionA_prima: {
+      label: "Espiguillas castano-rojizas; glumas con nervaduras solamente en el dorso",
+      keyStep: "Q'",
+      nextNodeId: "cyperus_r"
+    }
+  },
+
+  cyperus_r: {
+    id: "cyperus_r",
+    milestone: "Cyperus",
+    manualPage: 117,
+    descripcion: "Cyperus - R: forma del tallo",
+    opcionA: {
+      label: "Tallo redondeado en la parte inferior, irregularmente nudoso cuando seco; inflorescencia seudolateral",
+      keyStep: "R",
+      especieId: "cyperus_corymbosus"
+    },
+    opcionA_prima: {
+      label: "Tallo trigono, liso; inflorescencia terminal en umbela simple o poco ramificada",
+      keyStep: "R'",
+      especieId: "cyperus_rotundus"
+    }
+  },
+
+  cyperus_s: {
+    id: "cyperus_s",
+    milestone: "Cyperus",
+    manualPage: 118,
+    descripcion: "Cyperus - S: raquilla articulada o no",
+    opcionA: {
+      label: "Raquilla no articulada por encima de las dos glumas inferiores esteriles",
+      keyStep: "S",
+      nextNodeId: "cyperus_t"
+    },
+    opcionA_prima: {
+      label: "Raquilla articulada por encima de las dos glumas inferiores esteriles",
+      keyStep: "S'",
+      nextNodeId: "cyperus_v"
+    }
+  },
+
+  cyperus_t: {
+    id: "cyperus_t",
+    milestone: "Cyperus",
+    manualPage: 118,
+    descripcion: "Cyperus - T: raquilla alada o no",
+    opcionA: {
+      label: "Raquilla no alada; glumas no decurrentes, orbiculares, mucronadas; aquenios blancos",
+      keyStep: "T",
+      especieId: "cyperus_imbricatus"
+    },
+    opcionA_prima: {
+      label: "Raquilla alada; glumas decurrentes",
+      keyStep: "T'",
+      nextNodeId: "cyperus_u"
+    }
+  },
+
+  cyperus_u: {
+    id: "cyperus_u",
+    milestone: "Cyperus",
+    manualPage: 118,
+    descripcion: "Cyperus - U: angulo de espiguillas con el eje",
+    opcionA: {
+      label: "Espiguillas en angulo muy agudo con el eje de la espiga; fruto ovoide, amarillento",
+      keyStep: "U",
+      especieId: "cyperus_exaltatus"
+    },
+    opcionA_prima: {
+      label: "Espiguillas casi en angulo recto con el eje de la espiga; fruto eliptico, gris",
+      keyStep: "U'",
+      especieId: "cyperus_digitatus"
+    }
+  },
+
+  cyperus_v: {
+    id: "cyperus_v",
+    milestone: "Cyperus",
+    manualPage: 118,
+    descripcion: "Cyperus - V: forma de las espigas",
+    opcionA: {
+      label: "Espiguillas dispuestas en espigas ovoideas, densas; antela con 5-7 radios",
+      keyStep: "V",
+      especieId: "cyperus_laetus"
+    },
+    opcionA_prima: {
+      label: "Espiguillas dispuestas en espigas cilindricas",
+      keyStep: "V'",
+      nextNodeId: "cyperus_w"
+    }
+  },
+
+  cyperus_w: {
+    id: "cyperus_w",
+    milestone: "Cyperus",
+    manualPage: 118,
+    descripcion: "Cyperus - W: forma de las ocreas",
+    opcionA: {
+      label: "Ocreas de boca oblicua, aguda; espiguillas muy abiertas respecto al raquis, laxas y redondeadas",
+      keyStep: "W",
+      especieId: "cyperus_giganteus"
+    },
+    opcionA_prima: {
+      label: "Ocreas largamente bifidas; espiguillas en angulo muy agudo respecto al raquis",
+      keyStep: "W'",
+      nextNodeId: "cyperus_x"
+    }
+  },
+
+  cyperus_x: {
+    id: "cyperus_x",
+    milestone: "Cyperus",
+    manualPage: 118,
+    descripcion: "Cyperus - X: orden de radios de la antela",
+    opcionA: {
+      label: "Antela compuesta con radios de primer, segundo y tercer orden, a veces tambien cuarto",
+      keyStep: "X",
+      especieId: "cyperus_prolixus"
+    },
+    opcionA_prima: {
+      label: "Antela con radios de primer y segundo orden solamente",
+      keyStep: "X'",
+      especieId: "cyperus_pohlii"
     }
   },
 
@@ -7141,6 +7294,116 @@ export const monocotEspecies = {
     descripcion: "Planta perenne, cespitosa, de 40-75 cm de alto.",
     caracteristicas: "Hojas asperas en los bordes; cabezuelas pajizas; espiguillas 8-30, fasciculadas, lanceolado-lineales, poco comprimidas, 20-30-floras, de 15-22 mm.",
     distribucion: "America del Sur; citada para la Isla Martin Garcia.",
+    imagen: ""
+  },
+
+  cyperus_esculentus: {
+    id: "cyperus_esculentus",
+    nombreCientifico: "Cyperus esculentus var. leptostachys",
+    nombreVulgar: "Cyperus esculentus",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta perenne, largamente rizomatosa, con rizomas terminados en tuberculos ovoideos rojizos.",
+    caracteristicas: "Tallos triquetros lisos de 30-50 cm; hojas planas; espiguillas pardo-amarillentas lineales de 15-40 mm por 1,5 mm; el manual menciona tambien var. macrostachys.",
+    distribucion: "America; comun en suelos humedos.",
+    imagen: ""
+  },
+
+  cyperus_corymbosus: {
+    id: "cyperus_corymbosus",
+    nombreCientifico: "Cyperus corymbosus var. subnodosus",
+    nombreVulgar: "Cyperus corymbosus",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta perenne, estolonifera, con estolones de 10-15 cm cubiertos de bracteas rojizas.",
+    caracteristicas: "Tallos de 40-80 cm; tallo redondeado en la parte inferior, irregularmente nudoso cuando seco; inflorescencia seudolateral en umbela simple o algo ramificada.",
+    distribucion: "America calida; en suelos inundables.",
+    imagen: ""
+  },
+
+  cyperus_rotundus: {
+    id: "cyperus_rotundus",
+    nombreCientifico: "Cyperus rotundus",
+    nombreVulgar: "Cipero; cebollin",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta perenne, estolonifera, con estolones terminados en tuberculos.",
+    caracteristicas: "Tallos lisos de 20-30 cm, con pocas hojas basales; espiguillas castano-rojizas lineal-lanceoladas de 1-3 cm, con 15-30 flores; glumas obtusas y decurrentes.",
+    distribucion: "Regiones calidas; muy comun en suelos humedos modificados. Plaga de viveros.",
+    imagen: ""
+  },
+
+  cyperus_imbricatus: {
+    id: "cyperus_imbricatus",
+    nombreCientifico: "Cyperus imbricatus",
+    nombreVulgar: "Cyperus imbricatus",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta perenne, cespitosa, de 20-80 cm de alto.",
+    caracteristicas: "Hojas pocas; raquilla no alada y no articulada sobre las glumas inferiores esteriles; glumas orbiculares, mucronadas; aquenios blancos.",
+    distribucion: "Regiones calidas; en lugares muy humedos.",
+    imagen: ""
+  },
+
+  cyperus_exaltatus: {
+    id: "cyperus_exaltatus",
+    nombreCientifico: "Cyperus exaltatus",
+    nombreVulgar: "Cyperus exaltatus",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta cortamente rizomatosa, con tallos lisos de unos 75 cm de alto.",
+    caracteristicas: "Hojas pocas, largas; raquilla alada; espiguillas en angulo muy agudo con el eje de la espiga; fruto ovoide, amarillento.",
+    distribucion: "Regiones tropicales; hallada en Puerto Nuevo.",
+    imagen: ""
+  },
+
+  cyperus_digitatus: {
+    id: "cyperus_digitatus",
+    nombreCientifico: "Cyperus digitatus var. obtusifructus",
+    nombreVulgar: "Cyperus digitatus",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta cespitosa, cortamente rizomatosa, con tallos de hasta 1 m de alto, hojosos en la base y lisos.",
+    caracteristicas: "Espiguillas casi en angulo recto con el eje de la espiga; fruto eliptico, gris; inflorescencia en umbela compuesta con espigas densas de espiguillas lanceolado-lineales.",
+    distribucion: "Norte y centro de la Argentina; comun en los pajonales del Delta y de la ribera del Plata.",
+    imagen: ""
+  },
+
+  cyperus_laetus: {
+    id: "cyperus_laetus",
+    nombreCientifico: "Cyperus laetus subsp. oostachyus",
+    nombreVulgar: "Cyperus laetus",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta rizomatosa, con tallos de 50-100 cm de alto.",
+    caracteristicas: "Hojas lustrosas tan largas como el tallo; raquilla articulada sobre las dos glumas inferiores esteriles; espiguillas en espigas ovoideas densas; antela con 5-7 radios.",
+    distribucion: "America del Sur calida; en suelos humedos.",
+    imagen: ""
+  },
+
+  cyperus_giganteus: {
+    id: "cyperus_giganteus",
+    nombreCientifico: "Cyperus giganteus",
+    nombreVulgar: "Cyperus giganteus",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta rizomatosa, con rizomas gruesos y tallos lisos de 1-2 m de alto.",
+    caracteristicas: "Con pocas hojas cortas; ocreas de boca oblicua y aguda; espiguillas muy abiertas respecto al raquis, laxas, redondeadas, de 11-13 mm.",
+    distribucion: "America calida; frecuente en los pajonales del Delta.",
+    imagen: ""
+  },
+
+  cyperus_prolixus: {
+    id: "cyperus_prolixus",
+    nombreCientifico: "Cyperus prolixus",
+    nombreVulgar: "Cyperus prolixus",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta rizomatosa de cerca de 1 m de alto.",
+    caracteristicas: "Tallos lisos, hojosos en la base; hojas escabrosas en los bordes; ocreas largamente bifidas; antela compuesta con radios de primer, segundo y tercer orden, a veces cuarto.",
+    distribucion: "America calida; en pajonales del Delta y de la ribera, orillas de arroyos, etc.",
+    imagen: ""
+  },
+
+  cyperus_pohlii: {
+    id: "cyperus_pohlii",
+    nombreCientifico: "Cyperus pohlii",
+    nombreVulgar: "Cyperus pohlii",
+    familia: "18. Cyperaceae",
+    descripcion: "Planta rizomatosa de cerca de 1 m de alto.",
+    caracteristicas: "Tallos angulosos y lisos; hojas lustrosas, largas; ocreas largamente bifidas; antela con radios de primer y segundo orden solamente.",
+    distribucion: "Brasil y region del Plata; comun en los pajonales del Delta y de la ribera.",
     imagen: ""
   },
 
