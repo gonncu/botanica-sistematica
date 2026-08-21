@@ -1585,7 +1585,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Lemma fértil tenue, hialina; glumas cartilaginosas o coriáceas",
       keyStep: "J'",
-      especieId: "andropogoneae"
+      nextNodeId: "andropogoneae_a"
     }
   },
 
@@ -2708,6 +2708,91 @@ export const monocotiledoneaeData = {
       label: "Espiguillas gruesas o algo comprimidas lateralmente, subsesiles, ordenadas en dos hileras; glumas casi iguales, aristadas",
       keyStep: "Q'",
       especieId: "oplismenus_setarius"
+    }
+  },
+
+  andropogoneae_a: {
+    id: "andropogoneae_a",
+    milestone: "Andropogoneae",
+    manualPage: 106,
+    descripcion: "Andropogoneae - entrada parcial: Bothriochloa o continuar",
+    opcionA: {
+      label: "Racimos amontonados en la parte superior de las canas floriferas formando panojas plateadas densas; caracteres de Bothriochloa",
+      keyStep: "A",
+      nextNodeId: "bothriochloa_a"
+    },
+    opcionA_prima: {
+      label: "Racimos solitarios, geminados, fasciculados o con otros caracteres dentro de Andropogoneae; continuar en proxima tanda",
+      keyStep: "A'",
+      especieId: "andropogoneae"
+    }
+  },
+
+  bothriochloa_a: {
+    id: "bothriochloa_a",
+    milestone: "Bothriochloa",
+    manualPage: 107,
+    descripcion: "Bothriochloa - A: espiguillas muticas o aristadas",
+    opcionA: {
+      label: "Espiguillas muticas; hierba perenne, cespitosa, de 1-2 m; tallos glabros; racimos muy numerosos",
+      keyStep: "A",
+      especieId: "bothriochloa_hassleri"
+    },
+    opcionA_prima: {
+      label: "Espiguillas aristadas",
+      keyStep: "A'",
+      nextNodeId: "bothriochloa_b"
+    }
+  },
+
+  bothriochloa_b: {
+    id: "bothriochloa_b",
+    milestone: "Bothriochloa",
+    manualPage: 107,
+    descripcion: "Bothriochloa - B: pelos en los nudos de las canas",
+    opcionA: {
+      label: "Canas glabras en los nudos; plantas cespitosas, cortamente rizomatosas, de cerca de 50 cm; panoja fusiforme plateada",
+      keyStep: "B",
+      especieId: "bothriochloa_lagurioides"
+    },
+    opcionA_prima: {
+      label: "Canas con una coronita de pelos en los nudos",
+      keyStep: "B'",
+      nextNodeId: "bothriochloa_c"
+    }
+  },
+
+  bothriochloa_c: {
+    id: "bothriochloa_c",
+    milestone: "Bothriochloa",
+    manualPage: 107,
+    descripcion: "Bothriochloa - C: largo y color de panojas",
+    opcionA: {
+      label: "Panojas de menos de 10 cm, plateadas; tallos de menos de 1 m",
+      keyStep: "C",
+      nextNodeId: "bothriochloa_d"
+    },
+    opcionA_prima: {
+      label: "Panojas de 10-20 cm, verdosas; tallos de 1,5-2 m; gluma inferior con excavacion puntiforme dorsal",
+      keyStep: "C'",
+      especieId: "bothriochloa_alta"
+    }
+  },
+
+  bothriochloa_d: {
+    id: "bothriochloa_d",
+    milestone: "Bothriochloa",
+    manualPage: 107,
+    descripcion: "Bothriochloa - D: excavacion puntiforme en gluma inferior",
+    opcionA: {
+      label: "Gluma inferior sin excavaciones puntiformes en el dorso; panoja oblonga plateada; espiguillas fertiles de unos 4 mm",
+      keyStep: "D",
+      especieId: "bothriochloa_saccharoides"
+    },
+    opcionA_prima: {
+      label: "Gluma inferior con una excavacion puntiforme en el dorso",
+      keyStep: "D'",
+      especieId: "bothriochloa_perforata"
     }
   },
 
@@ -4594,6 +4679,61 @@ export const monocotEspecies = {
     descripcion: "Gramíneas con lemma fértil papirácea o cartilaginosa, más consistente que las glumas.",
     caracteristicas: "Rama que en el manual conduce a géneros como Paspalum, Digitaria, Setaria, Panicum y Echinochloa.",
     distribucion: "Grupo pendiente de carga a nivel de géneros y especies.",
+    imagen: ""
+  },
+
+  bothriochloa_hassleri: {
+    id: "bothriochloa_hassleri",
+    nombreCientifico: "Bothriochloa hassleri",
+    nombreVulgar: "Bothriochloa hassleri",
+    familia: "17. Gramineae - Andropogoneae",
+    descripcion: "Hierba perenne, cespitosa, de 1-2 m de alto.",
+    caracteristicas: "Tallos glabros; racimos muy numerosos; espiguillas muticas.",
+    distribucion: "Paraguay; hallada en Palermo.",
+    imagen: ""
+  },
+
+  bothriochloa_lagurioides: {
+    id: "bothriochloa_lagurioides",
+    nombreCientifico: "Bothriochloa lagurioides",
+    nombreVulgar: "Bothriochloa lagurioides",
+    familia: "17. Gramineae - Andropogoneae",
+    descripcion: "Hierba cespitosa, cortamente rizomatosa, de cerca de 50 cm de alto.",
+    caracteristicas: "Canas glabras en los nudos; hojas planas y lineales; racimos numerosos formando una panoja fusiforme plateada; espiguillas fertiles de 3 mm con lemma largamente aristada.",
+    distribucion: "America calida; muy comun en la estepa climax.",
+    imagen: ""
+  },
+
+  bothriochloa_saccharoides: {
+    id: "bothriochloa_saccharoides",
+    nombreCientifico: "Bothriochloa saccharoides",
+    nombreVulgar: "Bothriochloa saccharoides",
+    familia: "17. Gramineae - Andropogoneae",
+    descripcion: "Hierba perenne de cerca de 1 m de alto.",
+    caracteristicas: "Canas con coronita de pelos en los nudos; racimos muy numerosos formando una panoja oblonga plateada; espiguillas fertiles de unos 4 mm; gluma inferior sin excavaciones puntiformes dorsales.",
+    distribucion: "America templado-calida; en la estepa climax.",
+    imagen: ""
+  },
+
+  bothriochloa_perforata: {
+    id: "bothriochloa_perforata",
+    nombreCientifico: "Bothriochloa perforata",
+    nombreVulgar: "Bothriochloa perforata",
+    familia: "17. Gramineae - Andropogoneae",
+    descripcion: "Hierba de Bothriochloa con canas provistas de una coronita de pelos en los nudos.",
+    caracteristicas: "Panojas plateadas de menos de 10 cm; gluma inferior con una excavacion puntiforme en el dorso; caracteres restantes semejantes a B. saccharoides.",
+    distribucion: "America calida; se halla en las barrancas de San Isidro y Campana.",
+    imagen: ""
+  },
+
+  bothriochloa_alta: {
+    id: "bothriochloa_alta",
+    nombreCientifico: "Bothriochloa alta",
+    nombreVulgar: "Bothriochloa alta",
+    familia: "17. Gramineae - Andropogoneae",
+    descripcion: "Hierba de tallos altos, de 1,5-2 m.",
+    caracteristicas: "Panojas verdosas de 10-20 cm; gluma inferior con una excavacion puntiforme en el dorso; otros caracteres semejantes a B. saccharoides.",
+    distribucion: "America calida; citada para Palermo.",
     imagen: ""
   },
 
