@@ -4686,7 +4686,143 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Ovario súpero. Hojas paralelinervadas",
       familia: "26. Liliaceae",
-      especieId: "liliaceae"
+      nextNodeId: "liliaceae_a"
+    }
+  },
+
+  liliaceae_a: {
+    id: "liliaceae_a",
+    milestone: "Liliaceae",
+    manualPage: 141,
+    descripcion: "Liliaceae - A: enredaderas o hierbas bulbiferas",
+    opcionA: {
+      label: "Enredaderas",
+      keyStep: "A",
+      nextNodeId: "liliaceae_b"
+    },
+    opcionA_prima: {
+      label: "Hierbas perennes, con bulbos; hojas lineales",
+      keyStep: "A'",
+      nextNodeId: "liliaceae_c"
+    }
+  },
+
+  liliaceae_b: {
+    id: "liliaceae_b",
+    milestone: "Liliaceae",
+    manualPage: 141,
+    descripcion: "Liliaceae - B: aguijones y forma de hojas en enredaderas",
+    opcionA: {
+      label: "Plantas con aguijones y hojas ovadas, trinervadas; caracteres de Smilax",
+      keyStep: "B",
+      especieId: "smilax_campestris"
+    },
+    opcionA_prima: {
+      label: "Plantas sin aguijones; hojas lineal-lanceoladas; caracteres de Herreria",
+      keyStep: "B'",
+      especieId: "herreria_bonplandii"
+    }
+  },
+
+  liliaceae_c: {
+    id: "liliaceae_c",
+    milestone: "Liliaceae",
+    manualPage: 141,
+    descripcion: "Liliaceae - C: tepalos libres o soldados",
+    opcionA: {
+      label: "Tepalos libres casi hasta su base; flores en umbelas; caracteres de Nothoscordum",
+      keyStep: "C",
+      nextNodeId: "nothoscordum_a"
+    },
+    opcionA_prima: {
+      label: "Tepalos soldados, al menos en su parte inferior, formando un tubo; flores solitarias; caracteres de Beauverdia",
+      keyStep: "C'",
+      nextNodeId: "beauverdia_a"
+    }
+  },
+
+  nothoscordum_a: {
+    id: "nothoscordum_a",
+    milestone: "Nothoscordum",
+    manualPage: 142,
+    descripcion: "Nothoscordum - A: color de flores",
+    opcionA: {
+      label: "Flores amarillas; umbelas 2-7-floras; tepalos de 8-10 mm",
+      keyStep: "A",
+      especieId: "nothoscordum_montevidense"
+    },
+    opcionA_prima: {
+      label: "Flores blancas, con tintes liliaceos",
+      keyStep: "A'",
+      nextNodeId: "nothoscordum_b"
+    }
+  },
+
+  nothoscordum_b: {
+    id: "nothoscordum_b",
+    milestone: "Nothoscordum",
+    manualPage: 142,
+    descripcion: "Nothoscordum - B: ancho de hojas, bulbo y filamentos",
+    opcionA: {
+      label: "Hojas de 20-30 cm por 4-10 mm; bulbo ovoideo rodeado por numerosos bulbillos; raices gruesas y carnosas; umbela 8-12-flora",
+      keyStep: "B",
+      especieId: "nothoscordum_inodorum"
+    },
+    opcionA_prima: {
+      label: "Hojas mas estrechas, de 0,3-3 mm; bulbos no proliferos o con solo 2-3 bulbillos laterales; filamentos estaminales mas angostos",
+      keyStep: "B'",
+      nextNodeId: "nothoscordum_c"
+    }
+  },
+
+  nothoscordum_c: {
+    id: "nothoscordum_c",
+    milestone: "Nothoscordum",
+    manualPage: 144,
+    descripcion: "Nothoscordum - C: hojas muy estrechas o de 1-3 mm",
+    opcionA: {
+      label: "Hojas de 0,3-1 mm de ancho y 8-15 cm; bulbo esferico no prolifero de 1 cm; umbela 3-6-flora",
+      keyStep: "C",
+      especieId: "nothoscordum_gaudichaudianum"
+    },
+    opcionA_prima: {
+      label: "Hojas de 1-3 mm de ancho; umbelas 6-10-floras; plantas de 15-40 cm",
+      keyStep: "C'",
+      nextNodeId: "nothoscordum_d"
+    }
+  },
+
+  nothoscordum_d: {
+    id: "nothoscordum_d",
+    milestone: "Nothoscordum",
+    manualPage: 144,
+    descripcion: "Nothoscordum - D: forma del bulbo y bulbillos",
+    opcionA: {
+      label: "Bulbos esfericos de 10-12 mm, frecuentemente con rizomas laterales cortos o 1-3 bulbillos hijos; pedicelos de diferentes longitudes",
+      keyStep: "D",
+      especieId: "nothoscordum_bonariense"
+    },
+    opcionA_prima: {
+      label: "Bulbos fusiformes o conicos de 2-2,5 cm por 1-1,5 cm, sin bulbillos laterales; umbelas 7-14-floras",
+      keyStep: "D'",
+      especieId: "nothoscordum_arenarium"
+    }
+  },
+
+  beauverdia_a: {
+    id: "beauverdia_a",
+    milestone: "Beauverdia",
+    manualPage: 144,
+    descripcion: "Beauverdia - A: color de flores y longitud del tubo",
+    opcionA: {
+      label: "Flores blancas con nervaduras azuladas o rosadas; tubo del perigonio de la misma longitud o mas largo que los segmentos",
+      keyStep: "A",
+      especieId: "beauverdia_uniflora"
+    },
+    opcionA_prima: {
+      label: "Flores amarillas; tubo del perigonio mas corto que los segmentos",
+      keyStep: "A'",
+      especieId: "beauverdia_sellowiana"
     }
   },
 
@@ -5425,7 +5561,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Cáliz y corola iguales, formando perigonio coralino",
       familia: "26. Liliaceae",
-      especieId: "liliaceae_2"
+      nextNodeId: "liliaceae_a"
     }
   },
 
@@ -8678,25 +8814,102 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  liliaceae: {
-    id: "liliaceae",
-    nombreCientifico: "Lilium sp.",
-    nombreVulgar: "Lirio",
+  smilax_campestris: {
+    id: "smilax_campestris",
+    nombreCientifico: "Smilax campestris",
+    nombreVulgar: "Zarzaparrilla blanca",
     familia: "26. Liliaceae",
-    descripcion: "Planta con flores vistosas de perigonio.",
-    caracteristicas: "Hojas paralelinervadas, flores grandes con 6 tépalos de colores.",
-    distribucion: "Cultivadas en jardines",
+    descripcion: "Enredadera sublenosa, con tallos estriados provistos de aguijones curvos.",
+    caracteristicas: "Hojas ovado-lanceoladas, obtusas, lustrosas, de 4-7 cm; peciolos con un largo zarcillo a cada lado; flores pequenas blanquecinas; bayas negras globosas de unos 5 mm.",
+    distribucion: "Bosques del sur del Brasil, Bolivia, Paraguay, Uruguay y norte de la Argentina; en bosques del Delta y de la ribera platense.",
     imagen: ""
   },
 
-  liliaceae_2: {
-    id: "liliaceae_2",
-    nombreCientifico: "Lilium sp.",
-    nombreVulgar: "Lirio (terrícola)",
+  herreria_bonplandii: {
+    id: "herreria_bonplandii",
+    nombreCientifico: "Herreria bonplandii",
+    nombreVulgar: "Herreria",
     familia: "26. Liliaceae",
-    descripcion: "Planta terrícola con perigonio coralino.",
-    caracteristicas: "Cáliz y corola iguales formando perigonio, ovario súpero.",
-    distribucion: "Cultivos y jardines",
+    descripcion: "Enredadera voluble, glabra, sin aguijones.",
+    caracteristicas: "Hojas estrechamente lineales de 3-7 cm, multinervadas; flores en racimos flojos en el apice de las ramitas; perigonio blanquecino de 5 mm; frutos triquetros amarillentos de unos 15 mm por 10 mm.",
+    distribucion: "Bosques del nordeste de la Argentina; hallada en la Isla Martin Garcia.",
+    imagen: ""
+  },
+
+  nothoscordum_montevidense: {
+    id: "nothoscordum_montevidense",
+    nombreCientifico: "Nothoscordum montevidense",
+    nombreVulgar: "Nothoscordum montevidense",
+    familia: "26. Liliaceae",
+    descripcion: "Hierba bulbifera con flores amarillas en umbelas 2-7-floras.",
+    caracteristicas: "Tepalos de 8-10 mm; bulbo de 8-12 mm de diametro; hojas de 8-10 cm por 0,5 mm; escapos de 4-10 cm.",
+    distribucion: "Uruguay y nordeste de la Argentina; comun en la estepa climax, en primavera y otono.",
+    imagen: ""
+  },
+
+  nothoscordum_inodorum: {
+    id: "nothoscordum_inodorum",
+    nombreCientifico: "Nothoscordum inodorum",
+    nombreVulgar: "Lagrima de la Virgen",
+    familia: "26. Liliaceae",
+    descripcion: "Hierba bulbifera de flores blancas con tintes liliaceos.",
+    caracteristicas: "Hojas de 20-30 cm por 4-10 mm; bulbo ovoideo de 12-20 mm, generalmente rodeado por numerosos bulbillos; raices gruesas y carnosas; escapo de 30-40 cm; umbela 8-12-flora; tepalos blancos con linea rosada o violacea.",
+    distribucion: "Originaria de America; adventicia en casi todo el globo; invasora de huertas y jardines.",
+    imagen: ""
+  },
+
+  nothoscordum_gaudichaudianum: {
+    id: "nothoscordum_gaudichaudianum",
+    nombreCientifico: "Nothoscordum gaudichaudianum",
+    nombreVulgar: "Nothoscordum gaudichaudianum",
+    familia: "26. Liliaceae",
+    descripcion: "Hierba bulbifera de flores blancas con tintes liliaceos.",
+    caracteristicas: "Hojas de 0,3-1 mm de ancho y 8-15 cm de largo; bulbo esferico no prolifero, de 1 cm; escapos de 8-20 cm; umbela 3-6-flora; tepalos blancos de 8-10 mm.",
+    distribucion: "Uruguay y nordeste de la Argentina; frecuente en campos humedos.",
+    imagen: ""
+  },
+
+  nothoscordum_bonariense: {
+    id: "nothoscordum_bonariense",
+    nombreCientifico: "Nothoscordum bonariense",
+    nombreVulgar: "Nothoscordum bonariense",
+    familia: "26. Liliaceae",
+    descripcion: "Hierba bulbifera de flores blancas con tintes liliaceos.",
+    caracteristicas: "Hojas de 20-30 cm por 1-2 mm; bulbos esfericos de 10-12 mm, frecuentemente con rizomas laterales cortos o 1-3 bulbillos hijos; escapos de 20-30 cm; umbela 6-10-flora con pedicelos de diferentes longitudes.",
+    distribucion: "Provincia de Buenos Aires; comun en la region, en suelos humedos.",
+    imagen: ""
+  },
+
+  nothoscordum_arenarium: {
+    id: "nothoscordum_arenarium",
+    nombreCientifico: "Nothoscordum arenarium",
+    nombreVulgar: "Nothoscordum arenarium",
+    familia: "26. Liliaceae",
+    descripcion: "Hierba bulbifera de flores blancas con tintes liliaceos.",
+    caracteristicas: "Bulbos fusiformes o conicos de 2-2,5 cm por 1-1,5 cm, sin bulbillos laterales; hojas de 0,5-2 mm de ancho; umbelas 7-14-floras; tepalos de 8-10 mm.",
+    distribucion: "Suelos arenosos de la ribera del Plata; hallada en las dunas de la Isla Martin Garcia.",
+    imagen: ""
+  },
+
+  beauverdia_uniflora: {
+    id: "beauverdia_uniflora",
+    nombreCientifico: "Beauverdia uniflora",
+    nombreVulgar: "Beauverdia uniflora",
+    familia: "26. Liliaceae",
+    descripcion: "Geofita bulbifera, con bulbo esferico generalmente acompanado por bulbillos menores.",
+    caracteristicas: "Flores blancas con nervaduras azuladas o rosadas; tubo del perigonio de la misma longitud o mas largo que los segmentos; hojas lineales algo carnosas, obtusas, de 2-7 mm de ancho; escapos de 10-20 cm; perigonio de 20-25 mm.",
+    distribucion: "Uruguay y nordeste de la Argentina; rara en la region platense; cultivada como ornamental.",
+    imagen: ""
+  },
+
+  beauverdia_sellowiana: {
+    id: "beauverdia_sellowiana",
+    nombreCientifico: "Beauverdia sellowiana",
+    nombreVulgar: "Beauverdia sellowiana",
+    familia: "26. Liliaceae",
+    descripcion: "Hierba bulbifera de flores amarillas.",
+    caracteristicas: "Tubo del perigonio mas corto que los segmentos; bulbo de 1 cm de diametro; hojas lineales de 3-10 cm por 1-25 mm; perigonio con 6 u 8 tepalos de 15-20 mm; escapo mas corto que las hojas, glabro.",
+    distribucion: "Uruguay y provincia de Buenos Aires; comun en la estepa climax al comienzo de la primavera.",
     imagen: ""
   },
 
