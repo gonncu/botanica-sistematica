@@ -1857,7 +1857,24 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Espiguillas solitarias o en pares, dispuestas en dos o mas filas sobre un lado de un raquis angosto o dilatado; caracteres de Paspalum",
       keyStep: "F'",
+      nextNodeId: "paniceae_g"
+    }
+  },
+
+  paniceae_g: {
+    id: "paniceae_g",
+    milestone: "Paniceae",
+    manualPage: 100,
+    descripcion: "Paniceae - entrada parcial: Paspalum o Pennisetum",
+    opcionA: {
+      label: "Espiguillas solitarias o en pares, dispuestas en dos o mas filas sobre uno de los lados de un raquis; caracteres de Paspalum",
+      keyStep: "G",
       nextNodeId: "paspalum_a"
+    },
+    opcionA_prima: {
+      label: "Espiguillas solitarias o en grupos de 2-3, rodeadas por un involucro de cerdas libres que se desprende con la espiguilla; caracteres de Pennisetum",
+      keyStep: "G'",
+      nextNodeId: "pennisetum_a"
     }
   },
 
@@ -2402,6 +2419,23 @@ export const monocotiledoneaeData = {
       label: "Inflorescencia con 40-80 espigas, piramidal, de cerca de 50 cm; espiguillas lanceoladas, ferrugineas, de 3,5-4 mm",
       keyStep: "P'",
       especieId: "paspalum_haumanii"
+    }
+  },
+
+  pennisetum_a: {
+    id: "pennisetum_a",
+    milestone: "Pennisetum",
+    manualPage: 102,
+    descripcion: "Pennisetum - A: cerdas involucrales plumosas o simples",
+    opcionA: {
+      label: "Cerdas involucrales numerosas, plumosas, de hasta 25 mm; panojas cilíndricas, densas, de 5-10 cm",
+      keyStep: "A",
+      especieId: "pennisetum_villosum"
+    },
+    opcionA_prima: {
+      label: "Cerdas involucrales simples, 8-12, de menos de 20 mm; panojas gruesas de 3-5 cm, inclinadas",
+      keyStep: "A'",
+      especieId: "pennisetum_latifolium"
     }
   },
 
@@ -4079,6 +4113,28 @@ export const monocotEspecies = {
     descripcion: "Genero de Paniceae con espiguillas deprimidas, generalmente obtusas, solitarias o en pares, dispuestas en filas sobre un lado del raquis.",
     caracteristicas: "Rama parcialmente cargada; quedan pendientes las especies de inflorescencias no geminadas y otros grupos internos del genero.",
     distribucion: "Genero representado en la flora de los alrededores de Buenos Aires.",
+    imagen: ""
+  },
+
+  pennisetum_villosum: {
+    id: "pennisetum_villosum",
+    nombreCientifico: "Pennisetum villosum",
+    nombreVulgar: "Pennisetum villosum",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, rizomatosa, baja.",
+    caracteristicas: "Hojas lineales, plegadas y escabrosas; cerdas involucrales numerosas y plumosas, de hasta 25 mm; panojas cilindricas, densas, de 5-10 cm.",
+    distribucion: "Africa; adventicia en America. En suelos modificados.",
+    imagen: ""
+  },
+
+  pennisetum_latifolium: {
+    id: "pennisetum_latifolium",
+    nombreCientifico: "Pennisetum latifolium",
+    nombreVulgar: "Pennisetum latifolium",
+    familia: "17. Gramineae - Paniceae",
+    descripcion: "Hierba perenne, erecta, de 1,5-3 m de alto, con canas ramificadas.",
+    caracteristicas: "Hojas lanceoladas y planas; cerdas involucrales simples, 8-12, de menos de 20 mm; panojas gruesas de 3-5 cm, inclinadas; espiguillas lanceoladas de 4-5 mm.",
+    distribucion: "America austral; en matorrales de la ribera platense.",
     imagen: ""
   },
 
