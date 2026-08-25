@@ -30,14 +30,13 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `45. Amaranthaceae`, en progreso desde pagina 187 del manual.
-- Tandas cargadas: clave principal parcial, `Amaranthus`, `Pfaffia` y `Alternanthera`.
-- Ultimo commit subido antes de esta tanda: `d09425f Add Pfaffia Amaranthaceae keys`.
+- `45. Amaranthaceae`, pagina 187-193 del manual.
+- Tandas cargadas: clave principal, `Amaranthus`, `Pfaffia`, `Alternanthera`, `Gomphrena`, `Iresine` y `Philoxerus`.
+- Ultimo commit subido antes de esta tanda: `ea5f141 Add Alternanthera Amaranthaceae keys`.
 
 ## Proxima familia consecutiva
 
-- `45. Amaranthaceae`, en progreso desde pagina 187 del manual (`PDF_PAGE=194`).
-- Falta completar: `Gomphrena`, `Iresine` y `Philoxerus`.
+- `46. Nyctaginaceae`, desde pagina 193 del manual (`PDF_PAGE=200`).
 
 ## Regla de trabajo
 

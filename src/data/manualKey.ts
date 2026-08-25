@@ -1195,6 +1195,46 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas elípticas u obovadas, velludas, de 1-3 cm por 4-12 mm; flores tetrámeras en espigas capituliformes axilares de 7 mm; tépalos de 1,5 mm.",
     "Sur de Brasil y nordeste de la Argentina. Delta."
   ),
+  gomphrena_pulchella: species(
+    "gomphrena_pulchella",
+    "Gomphrena pulchella",
+    "45. Amaranthaceae",
+    "Hierba perenne, ascendente o erecta.",
+    "Hojas lanceoladas, cortamente pecioladas, enteras, de 3-6 cm por 1-2 cm; capítulos de 2-3 cm de diámetro; flores de 9-12 mm.",
+    "Sur de Brasil, Paraguay, Uruguay y nordeste de la Argentina. Rara en la región."
+  ),
+  gomphrena_elegans: species(
+    "gomphrena_elegans",
+    "Gomphrena elegans",
+    "45. Amaranthaceae",
+    "Hierba perenne, velluda y apoyante.",
+    "Hojas ovado-lanceoladas, agudas, de 2-7 cm, con pecíolo de 0,5-1 cm; capítulos de 1 cm de diámetro; flores de 5 mm; bracteolas sin crestas; espigas capituliformes largamente pedunculadas.",
+    "Sur de Brasil hasta el norte de la Argentina. Delta y ribera del Plata."
+  ),
+  gomphrena_perennis: species(
+    "gomphrena_perennis",
+    "Gomphrena perennis",
+    "45. Amaranthaceae",
+    "Hierba perenne ascendente o erecta, pubescente.",
+    "Hojas elíptico-lanceoladas, cortamente pecioladas, de 2,5-5 cm por 1-2 cm; capítulos de 1,5-2 cm de diámetro; flores de 6-7 mm; bracteolas con una cresta cerca del ápice.",
+    "Sur de Brasil y nordeste de la Argentina. Suelos secos."
+  ),
+  iresine_celosia: species(
+    "iresine_celosia",
+    "Iresine celosia",
+    "45. Amaranthaceae",
+    "Hierba perenne, erecta y glabra.",
+    "Hojas ovadas, opuestas, de 4-8 cm por 1-3 cm; flores dioicas, pentámeras, en amplias panojas; tépalos de 1 mm; estigma bífido o trífido.",
+    "América cálida y templada. Común en la ribera platense."
+  ),
+  philoxerus_portulacoides_commersonii: species(
+    "philoxerus_portulacoides_commersonii",
+    "Philoxerus portulacoides var. commersonii",
+    "45. Amaranthaceae",
+    "Hierba perenne, glabra, con tallos rastreros radicantes.",
+    "Hojas opuestas, sésiles, carnosas, obovado-espatuladas y enteras, de 2-3 cm por cerca de 1 cm; capítulos terminales; brácteas anchamente ovadas; tépalos de 4 mm.",
+    "Dunas marítimas del sur de Brasil, Uruguay y este de Buenos Aires: San Clemente del Tuyú."
+  ),
   malpighiaceae: family(
     "malpighiaceae",
     "71. Malpighiaceae",
@@ -3919,9 +3959,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "amaranthaceae_c",
     },
     opcionA_prima: {
-      label: "Estigma bífido; Gomphrena, Iresine y Philoxerus quedan para la próxima tanda",
+      label: "Estigma bífido",
       keyStep: "B'",
-      especieId: "amaranthaceae",
+      nextNodeId: "amaranthaceae_d",
     },
   },
   amaranthaceae_c: {
@@ -4018,6 +4058,70 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Tépalos de 3-5 mm; hierba perenne con tallos tendidos radicantes, pubescentes; hojas espatuladas, obtusas; espigas axilares cortas",
       keyStep: "D'",
       especieId: "alternanthera_repens",
+    },
+  },
+  amaranthaceae_d: {
+    id: "amaranthaceae_d",
+    milestone: "Amaranthaceae",
+    manualPage: 187,
+    descripcion: "Amaranthaceae - D: forma de los filamentos",
+    opcionA: {
+      label: "Filamentos de los estambres dilatados, con el ápice trilobado",
+      keyStep: "D",
+      nextNodeId: "gomphrena_a",
+    },
+    opcionA_prima: {
+      label: "Filamentos simples",
+      keyStep: "D'",
+      nextNodeId: "amaranthaceae_e",
+    },
+  },
+  amaranthaceae_e: {
+    id: "amaranthaceae_e",
+    milestone: "Amaranthaceae",
+    manualPage: 187,
+    descripcion: "Amaranthaceae - E: tipo de inflorescencia",
+    opcionA: {
+      label: "Inflorescencia en panojas; flores dioicas",
+      keyStep: "E",
+      especieId: "iresine_celosia",
+    },
+    opcionA_prima: {
+      label: "Inflorescencias en espigas capituliformes",
+      keyStep: "E'",
+      especieId: "philoxerus_portulacoides_commersonii",
+    },
+  },
+  gomphrena_a: {
+    id: "gomphrena_a",
+    milestone: "Gomphrena",
+    manualPage: 192,
+    descripcion: "Gomphrena - A: forma de hojas y tamaño de capítulos",
+    opcionA: {
+      label: "Hojas lanceoladas; capítulos de 2-3 cm de diámetro; flores de 9-12 mm; hierba perenne, ascendente o erecta",
+      keyStep: "A",
+      especieId: "gomphrena_pulchella",
+    },
+    opcionA_prima: {
+      label: "Hojas ovadas u ovado-lanceoladas; capítulos de 1-2 cm de diámetro; flores de 5-7 mm",
+      keyStep: "A'",
+      nextNodeId: "gomphrena_b",
+    },
+  },
+  gomphrena_b: {
+    id: "gomphrena_b",
+    milestone: "Gomphrena",
+    manualPage: 192,
+    descripcion: "Gomphrena - B: tamaño de capítulos y crestas en bracteolas",
+    opcionA: {
+      label: "Capítulos de 1 cm de diámetro; flores de 5 mm; bracteolas sin crestas; hierba perenne, velluda, apoyante; hojas ovado-lanceoladas, agudas",
+      keyStep: "B",
+      especieId: "gomphrena_elegans",
+    },
+    opcionA_prima: {
+      label: "Capítulos de 1,5-2 cm de diámetro; flores de 6-7 mm; bracteolas con una cresta cerca del ápice; hierba perenne ascendente o erecta, pubescente; hojas elíptico-lanceoladas",
+      keyStep: "B'",
+      especieId: "gomphrena_perennis",
     },
   },
   amaranthus_a: {
