@@ -1467,6 +1467,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Hojas opuestas simples; estambres 1-5."
   ),
+  boerhavia_paniculata_leiocarpa: species(
+    "boerhavia_paniculata_leiocarpa",
+    "Boerhavia paniculata var. leiocarpa",
+    "46. Nyctaginaceae",
+    "Hierba perenne con tallos rastreros, glanduloso-pubescentes.",
+    "Hojas opuestas, pecioladas, ovadas, obtusas, onduladas en el borde y discolores, de 15-20 mm por 12-15 mm; flores diminutas sin involucro calicoide, en cimas laxas y difusas; perigonio purpúreo de 2 mm.",
+    "América cálida. Hallada en Pergamino y en Eva Perón."
+  ),
+  mirabilis_jalapa: species(
+    "mirabilis_jalapa",
+    "Mirabilis jalapa",
+    "46. Nyctaginaceae",
+    "Hierba perenne con raíz napiforme carnosa y tallos erectos de 1-1,5 m de alto, glabros o tenuemente pubescentes.",
+    "Hojas opuestas, pecioladas, ovadas, agudas y enteras; flores grandes con involucro caliciforme; perigonio purpúreo, amarillo o blanco, de 4 cm.",
+    "América tropical. Cultivada como ornamental y frecuente en suelos modificados. Nombre vulgar: Don Diego de noche."
+  ),
   symplocaceae: family(
     "symplocaceae",
     "105. Symplocaceae",
@@ -4922,12 +4938,28 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Hojas opuestas, simples; estambres 1-5",
       keyStep: "M",
-      especieId: "nyctaginaceae",
+      nextNodeId: "nyctaginaceae_a",
     },
     opcionA_prima: {
       label: "Hojas alternas, compuestas; estambres 5 a numerosos",
       keyStep: "M'",
       especieId: "leguminosae",
+    },
+  },
+  nyctaginaceae_a: {
+    id: "nyctaginaceae_a",
+    milestone: "Nyctaginaceae",
+    manualPage: 194,
+    descripcion: "Nyctaginaceae - A: porte de la planta, tamaño de flores e involucro",
+    opcionA: {
+      label: "Plantas rastreras con flores diminutas; flores sin involucro calicoide",
+      keyStep: "A",
+      especieId: "boerhavia_paniculata_leiocarpa",
+    },
+    opcionA_prima: {
+      label: "Plantas erectas, con flores grandes; existe un involucro caliciforme",
+      keyStep: "A'",
+      especieId: "mirabilis_jalapa",
     },
   },
   dicot_group_e_n: {
