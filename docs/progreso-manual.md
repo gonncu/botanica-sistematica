@@ -30,12 +30,13 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `50. Basellaceae`, pagina 201-202 del manual.
-- Ultimo commit subido antes de esta tanda: `ddf9c0a Add Portulacaceae species keys`.
+- `51. Caryophyllaceae`, en progreso desde pagina 202 del manual.
+- Tanda cargada: clave familiar parcial + `Silene`.
+- Ultimo commit subido antes de esta tanda: `5fb9360 Add Basellaceae species key`.
 
 ## Proxima familia consecutiva
 
-- `51. Caryophyllaceae`, desde pagina 202 del manual (`PDF_PAGE=209`).
+- `51. Caryophyllaceae`, continuar desde `Saponaria`, pagina 204 del manual (`PDF_PAGE=211`).
 
 ## Regla de trabajo
 

@@ -1401,6 +1401,30 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Óvulos de placentación central o basilar; hojas opuestas e inflorescencias ramificadas dicotómicamente."
   ),
+  silene_antirrhina: species(
+    "silene_antirrhina",
+    "Silene antirrhina",
+    "51. Caryophyllaceae",
+    "Hierba anual, puberulenta o glabra.",
+    "Hojas lineal-lanceoladas; flores en cimas; cáliz inflado de unos 8 mm; pétalos rosados; estilos 3; cápsula dehiscente por dientes apicales.",
+    "América del Norte. Común en suelos arenosos del centro de la Argentina."
+  ),
+  silene_gallica: species(
+    "silene_gallica",
+    "Silene gallica",
+    "51. Caryophyllaceae",
+    "Hierba anual, hirsuta.",
+    "Hojas espatuladas; flores en espigas unilaterales definidas; cáliz hirsuto de 10 mm; pétalos rosados o blancos; estilos 3; cápsula dehiscente por dientes apicales.",
+    "Europa. Adventicia en América. Ubicua."
+  ),
+  silene_inflata: species(
+    "silene_inflata",
+    "Silene inflata",
+    "51. Caryophyllaceae",
+    "Hierba perenne, glabra, glauca, de 10-60 cm de alto.",
+    "Hojas lanceoladas, cilioladas en el margen; flores dioicas por aborto, en cimas dicotómicas; cáliz ovoideo, con 20 nervaduras; pétalos blancos o rosados.",
+    "Viejo continente. Adventicia en América; citada para Pergamino."
+  ),
   frankeniaceae: family(
     "frankeniaceae",
     "85. Frankeniaceae",
@@ -4648,12 +4672,92 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Óvulos de placentación central o basilar; hojas opuestas",
       keyStep: "p",
-      especieId: "caryophyllaceae",
+      nextNodeId: "caryophyllaceae_a",
     },
     opcionA_prima: {
       label: "Óvulos de placentación parietal",
       keyStep: "p'",
       nextNodeId: "dicot_group_c_q_lower",
+    },
+  },
+  caryophyllaceae_a: {
+    id: "caryophyllaceae_a",
+    milestone: "Caryophyllaceae",
+    manualPage: 203,
+    descripcion: "Caryophyllaceae - A: unión de los sépalos",
+    opcionA: {
+      label: "Cáliz con los sépalos soldados formando un tubo, por lo menos hasta su mitad",
+      keyStep: "A",
+      nextNodeId: "caryophyllaceae_b_tube",
+    },
+    opcionA_prima: {
+      label: "Cáliz con los sépalos libres o apenas unidos en su base; Arenaria, Sagina, Stellaria, Cerastium, Cardionema, Paronychia, Spergularia, Spergula y Polycarpon quedan para próximas tandas",
+      keyStep: "A'",
+      especieId: "caryophyllaceae",
+    },
+  },
+  caryophyllaceae_b_tube: {
+    id: "caryophyllaceae_b_tube",
+    milestone: "Caryophyllaceae",
+    manualPage: 203,
+    descripcion: "Caryophyllaceae - B: número de estilos en cáliz tubular",
+    opcionA: {
+      label: "Estilos 2-3",
+      keyStep: "B",
+      nextNodeId: "caryophyllaceae_c",
+    },
+    opcionA_prima: {
+      label: "Estilos 5; Agrostemma y Melandryum quedan para próximas tandas",
+      keyStep: "B'",
+      especieId: "caryophyllaceae",
+    },
+  },
+  caryophyllaceae_c: {
+    id: "caryophyllaceae_c",
+    milestone: "Caryophyllaceae",
+    manualPage: 203,
+    descripcion: "Caryophyllaceae - C: estilos 3 o 2",
+    opcionA: {
+      label: "Estilos 3",
+      keyStep: "C",
+      nextNodeId: "silene_a",
+    },
+    opcionA_prima: {
+      label: "Estilos 2; Saponaria y Vaccaria quedan para próximas tandas",
+      keyStep: "C'",
+      especieId: "caryophyllaceae",
+    },
+  },
+  silene_a: {
+    id: "silene_a",
+    milestone: "Silene",
+    manualPage: 203,
+    descripcion: "Silene - A: ciclo de vida",
+    opcionA: {
+      label: "Plantas anuales",
+      keyStep: "A",
+      nextNodeId: "silene_b",
+    },
+    opcionA_prima: {
+      label: "Plantas perennes, glabras, glaucas, de 10-60 cm; hojas lanceoladas cilioladas en el margen; flores dioicas por aborto, en cimas dicotómicas; cáliz ovoideo con 20 nervaduras; pétalos blancos o rosados",
+      keyStep: "A'",
+      especieId: "silene_inflata",
+    },
+  },
+  silene_b: {
+    id: "silene_b",
+    milestone: "Silene",
+    manualPage: 203,
+    descripcion: "Silene - B: disposición de las flores en plantas anuales",
+    opcionA: {
+      label: "Flores en cimas; hierba puberulenta o glabra; hojas lineal-lanceoladas; cáliz inflado de unos 8 mm; pétalos rosados",
+      keyStep: "B",
+      especieId: "silene_antirrhina",
+    },
+    opcionA_prima: {
+      label: "Flores en espigas unilaterales definidas; hierba hirsuta; hojas espatuladas; cáliz hirsuto de 10 mm; pétalos rosados o blancos",
+      keyStep: "B'",
+      especieId: "silene_gallica",
     },
   },
   dicot_group_c_q_lower: {
