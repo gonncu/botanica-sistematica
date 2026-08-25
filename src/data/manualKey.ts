@@ -713,6 +713,38 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo B.",
     "Árboles, arbustos o hierbas; en esta clave aparece por gineceo pluricarpelar o fruto baya carnosa."
   ),
+  phytolacca_americana: species(
+    "phytolacca_americana",
+    "Phytolacca americana",
+    "47. Phytolaccaceae",
+    "Sufrútice de alrededor de 1,5 m de alto.",
+    "Hojas pecioladas, ovado-elípticas y acuminadas, de unos 14 cm por 6 cm; flores hermafroditas en racimos erectos; tépalos ovados de 2,5 mm; estambres 10; ovario 10-carpelar; bayas negras de 8 mm.",
+    "América del Norte. Adventicia en la Argentina."
+  ),
+  phytolacca_dioica: species(
+    "phytolacca_dioica",
+    "Phytolacca dioica",
+    "47. Phytolaccaceae",
+    "Árbol dioico, de tronco muy grueso y flojo, de 8-10 m de alto.",
+    "Hojas pecioladas, anchamente elípticas, glabras, de 10-12 cm por 6-7 cm; flores en racimos péndulos; perigonio pentámero; estambres 20-30; carpelos 8-14; bayas deprimidas y lobadas.",
+    "América cálida. Cultivada como ornamental y común en bosques de Celtis spinosa. Nombre vulgar: ombú."
+  ),
+  phytolacca_tetramera: species(
+    "phytolacca_tetramera",
+    "Phytolacca tetramera",
+    "47. Phytolaccaceae",
+    "Hierba perenne dioica.",
+    "Hojas crasas, glabras, oblanceoladas y obtusas, de unos 20 cm por 3-4 cm; racimos erectos; perigonio tetrámero; estambres 20; carpelos 6-10; bayas oscuras deprimidas.",
+    "Endémica del nordeste de Buenos Aires: Ignacio Correas, Magdalena y Punta del Indio. Nombre vulgar: ombusillo."
+  ),
+  rivina_humilis_glabra: species(
+    "rivina_humilis_glabra",
+    "Rivina humilis var. glabra",
+    "47. Phytolaccaceae",
+    "Sufrútice erecto, glabro, de cerca de 1 m de alto.",
+    "Hojas alternas, pecioladas, ovadas y enteras, de 7-8 cm por 4 cm; flores hermafroditas con perigonio corolino 4-partido en racimos largos, erectos, axilares y seudoterminales; tépalos blancos o rosados de 2 mm; bayas rojas de 4 mm.",
+    "América cálida hasta Buenos Aires: Delta y ribera del Plata."
+  ),
   aizoaceae: family(
     "aizoaceae",
     "48. Aizoaceae",
@@ -2969,7 +3001,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Árboles o arbustos no espinosos; flores dioicas; gineceo 5-∞-carpelar",
       keyStep: "I'",
-      especieId: "phytolaccaceae",
+      nextNodeId: "phytolaccaceae_a",
     },
   },
   ulmaceae_a: {
@@ -3109,7 +3141,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Fruto baya carnosa",
       keyStep: "Q",
-      especieId: "phytolaccaceae",
+      nextNodeId: "phytolaccaceae_a",
     },
     opcionA_prima: {
       label: "Fruto nuez indehiscente",
@@ -3925,7 +3957,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Fruto baya; hojas alternas; flores en racimo",
       keyStep: "c",
-      especieId: "phytolaccaceae",
+      nextNodeId: "phytolaccaceae_a",
     },
     opcionA_prima: {
       label: "Fruto cápsula o utrículo; hojas generalmente opuestas",
@@ -4960,6 +4992,54 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Plantas erectas, con flores grandes; existe un involucro caliciforme",
       keyStep: "A'",
       especieId: "mirabilis_jalapa",
+    },
+  },
+  phytolaccaceae_a: {
+    id: "phytolaccaceae_a",
+    milestone: "Phytolaccaceae",
+    manualPage: 195,
+    descripcion: "Phytolaccaceae - A: tipo de ovario",
+    opcionA: {
+      label: "Ovario multicarpelar",
+      keyStep: "A",
+      nextNodeId: "phytolacca_a",
+    },
+    opcionA_prima: {
+      label: "Ovario unicarpelar, uniovulado",
+      keyStep: "A'",
+      especieId: "rivina_humilis_glabra",
+    },
+  },
+  phytolacca_a: {
+    id: "phytolacca_a",
+    milestone: "Phytolacca",
+    manualPage: 195,
+    descripcion: "Phytolacca - A: sexualidad de las flores y unión de los carpelos",
+    opcionA: {
+      label: "Flores hermafroditas; carpelos completamente soldados durante la floración; sufrútices de 1,5 m; racimos erectos; estambres 10; ovario 10-carpelar",
+      keyStep: "A",
+      especieId: "phytolacca_americana",
+    },
+    opcionA_prima: {
+      label: "Flores dioicas; carpelos libres en la parte superior durante la floración",
+      keyStep: "A'",
+      nextNodeId: "phytolacca_b",
+    },
+  },
+  phytolacca_b: {
+    id: "phytolacca_b",
+    milestone: "Phytolacca",
+    manualPage: 195,
+    descripcion: "Phytolacca - B: número de piezas del perigonio y hábito",
+    opcionA: {
+      label: "Perigonio pentámero; árboles; hojas pecioladas, anchamente elípticas y glabras; flores en racimos péndulos; estambres 20-30",
+      keyStep: "B",
+      especieId: "phytolacca_dioica",
+    },
+    opcionA_prima: {
+      label: "Perigonio tetrámero; hierba perenne dioica; hojas crasas, glabras, oblanceoladas y obtusas; estambres 20",
+      keyStep: "B'",
+      especieId: "phytolacca_tetramera",
     },
   },
   dicot_group_e_n: {
