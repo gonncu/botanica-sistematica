@@ -1457,6 +1457,62 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas inferiores pecioladas, oblongas y obtusas; hojas superiores ovado-lanceoladas y agudas; flores numerosas en cimas dicotómicas; cáliz con dientes más cortos que los pétalos; pétalos rosados o rojos, bipartidos; estilos 3-5.",
     "Europa; adventicia en América. Rara en la región."
   ),
+  arenaria_serpyllifolia: species(
+    "arenaria_serpyllifolia",
+    "Arenaria serpyllifolia",
+    "51. Caryophyllaceae",
+    "Hierba anual, ascendente o tendida, difusa y pubescente.",
+    "Hojas opuestas, casi sésiles, ovadas, de 4-8 mm; flores pequeñas, blancas, en panojas definidas; cáliz de 2 mm; pétalos enteros, más cortos que los sépalos; estilos en número menor que los sépalos.",
+    "Europa; adventicia en América. En suelos modificados."
+  ),
+  sagina_apetala: species(
+    "sagina_apetala",
+    "Sagina apetala",
+    "51. Caryophyllaceae",
+    "Hierba anual, pigmea, tendida y laxamente pubescente.",
+    "Hojas estrechamente lineales; flores tetrámeras, numerosas, diminutas, en cimas laxas; sépalos ovados de 1,5-2 mm; pétalos nulos; estambres 4; cápsula 4-valva.",
+    "Europa; adventicia en América. En suelos húmedos."
+  ),
+  sagina_chilensis: species(
+    "sagina_chilensis",
+    "Sagina chilensis",
+    "51. Caryophyllaceae",
+    "Hierba anual, pigmea, con tallos filiformes.",
+    "Hojas estrechamente lineales; flores pentámeras, diminutas y pediceladas; ovario unilocular con tantos estilos como sépalos; cápsula dehiscente hasta su base.",
+    "América austral. En suelos fértiles."
+  ),
+  stellaria_media: species(
+    "stellaria_media",
+    "Stellaria media",
+    "51. Caryophyllaceae",
+    "Hierba anual, glabra o laxamente pilosa, ascendente y difusa.",
+    "Hojas opuestas, ovadas y pecioladas; flores pequeñas, blancas, largamente pedunculadas, en cimas terminales; pétalos bífidos; cápsula ovoide que se abre en valvas hasta su base.",
+    "Europa; adventicia en América. Suelos modificados. Nombre vulgar: capiquí."
+  ),
+  cerastium_humifusum: species(
+    "cerastium_humifusum",
+    "Cerastium humifusum",
+    "51. Caryophyllaceae",
+    "Hierba anual, rastrera y glabra.",
+    "Hojas oblongo-lanceoladas, agudas y enteras, de 1-3 cm por 0,3-0,9 cm; flores solitarias, largamente pedunculadas; corola blanca; cápsula cilíndrica dehiscente por dientes apicales.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina hasta Buenos Aires."
+  ),
+  cerastium_viscosum: species(
+    "cerastium_viscosum",
+    "Cerastium viscosum",
+    "51. Caryophyllaceae",
+    "Hierba anual, erecta, hirsuto-glandulosa.",
+    "Hojas espatuladas y obtusas; flores en cimas muy densas; pétalos blancos, de la misma longitud que los sépalos o apenas más largos; cápsula cilíndrica dehiscente por dientes apicales.",
+    "Europa; adventicia en América. Común en suelos modificados."
+  ),
+  cerastium_rivulare: species(
+    "cerastium_rivulare",
+    "Cerastium rivulare",
+    "51. Caryophyllaceae",
+    "Hierba anual, ascendente, híspido-glandulosa.",
+    "Hojas obovado-espatuladas, cortamente acuminadas en el ápice; flores en cimas muy laxas; pétalos blancos, de doble longitud que los sépalos; cápsula cilíndrica dehiscente por dientes apicales.",
+    "Sur de Brasil, Paraguay, Uruguay y nordeste de la Argentina hasta Buenos Aires: Delta y ribera platense."
+  ),
   frankeniaceae: family(
     "frankeniaceae",
     "85. Frankeniaceae",
@@ -4723,9 +4779,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "caryophyllaceae_b_tube",
     },
     opcionA_prima: {
-      label: "Cáliz con los sépalos libres o apenas unidos en su base; Arenaria, Sagina, Stellaria, Cerastium, Cardionema, Paronychia, Spergularia, Spergula y Polycarpon quedan para próximas tandas",
+      label: "Cáliz con los sépalos libres o apenas unidos en su base",
       keyStep: "A'",
-      especieId: "caryophyllaceae",
+      nextNodeId: "caryophyllaceae_f",
     },
   },
   caryophyllaceae_b_tube: {
@@ -4822,6 +4878,118 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Flores en espigas unilaterales definidas; hierba hirsuta; hojas espatuladas; cáliz hirsuto de 10 mm; pétalos rosados o blancos",
       keyStep: "B'",
       especieId: "silene_gallica",
+    },
+  },
+  caryophyllaceae_f: {
+    id: "caryophyllaceae_f",
+    milestone: "Caryophyllaceae",
+    manualPage: 203,
+    descripcion: "Caryophyllaceae - F: presencia de estípulas",
+    opcionA: {
+      label: "Hojas sin estípulas",
+      keyStep: "F",
+      nextNodeId: "caryophyllaceae_g",
+    },
+    opcionA_prima: {
+      label: "Hojas con estípulas membranosas; Cardionema, Paronychia, Spergularia, Spergula y Polycarpon quedan para próximas tandas",
+      keyStep: "F'",
+      especieId: "caryophyllaceae",
+    },
+  },
+  caryophyllaceae_g: {
+    id: "caryophyllaceae_g",
+    milestone: "Caryophyllaceae",
+    manualPage: 203,
+    descripcion: "Caryophyllaceae - G: forma de los pétalos",
+    opcionA: {
+      label: "Pétalos enteros o casi enteros, a veces ausentes",
+      keyStep: "G",
+      nextNodeId: "caryophyllaceae_h",
+    },
+    opcionA_prima: {
+      label: "Pétalos bilobados o bífidos",
+      keyStep: "G'",
+      nextNodeId: "caryophyllaceae_i",
+    },
+  },
+  caryophyllaceae_h: {
+    id: "caryophyllaceae_h",
+    milestone: "Caryophyllaceae",
+    manualPage: 203,
+    descripcion: "Caryophyllaceae - H: relación entre estilos y sépalos",
+    opcionA: {
+      label: "Estilos en número menor que los sépalos",
+      keyStep: "H",
+      especieId: "arenaria_serpyllifolia",
+    },
+    opcionA_prima: {
+      label: "Estilos en número igual a los sépalos",
+      keyStep: "H'",
+      nextNodeId: "sagina_a",
+    },
+  },
+  sagina_a: {
+    id: "sagina_a",
+    milestone: "Sagina",
+    manualPage: 206,
+    descripcion: "Sagina - A: número de piezas florales",
+    opcionA: {
+      label: "Flores tetrámeras; anual, pigmea, tendida, laxamente pubescente; hojas estrechamente lineales; flores numerosas en cimas laxas; pétalos nulos; estambres 4",
+      keyStep: "A",
+      especieId: "sagina_apetala",
+    },
+    opcionA_prima: {
+      label: "Flores pentámeras; anual, pigmea, con tallos filiformes y hojas estrechamente lineales",
+      keyStep: "A'",
+      especieId: "sagina_chilensis",
+    },
+  },
+  caryophyllaceae_i: {
+    id: "caryophyllaceae_i",
+    milestone: "Caryophyllaceae",
+    manualPage: 203,
+    descripcion: "Caryophyllaceae - I: forma y dehiscencia de la cápsula",
+    opcionA: {
+      label: "Cápsula ovoide, abriéndose en valvas hasta su base",
+      keyStep: "I",
+      especieId: "stellaria_media",
+    },
+    opcionA_prima: {
+      label: "Cápsula cilíndrica, dehiscente por dientes apicales",
+      keyStep: "I'",
+      nextNodeId: "cerastium_a",
+    },
+  },
+  cerastium_a: {
+    id: "cerastium_a",
+    milestone: "Cerastium",
+    manualPage: 206,
+    descripcion: "Cerastium - A: disposición de las flores",
+    opcionA: {
+      label: "Flores solitarias; anual, rastrero, glabro; hojas oblongo-lanceoladas, agudas, enteras; flores largamente pedunculadas; corola blanca",
+      keyStep: "A",
+      especieId: "cerastium_humifusum",
+    },
+    opcionA_prima: {
+      label: "Flores en cimas racemiformes o corimbiformes",
+      keyStep: "A'",
+      nextNodeId: "cerastium_b",
+    },
+  },
+  cerastium_b: {
+    id: "cerastium_b",
+    milestone: "Cerastium",
+    manualPage: 206,
+    descripcion: "Cerastium - B: densidad de las cimas",
+    opcionA: {
+      label: "Cimas muy densas; pétalos de la misma longitud que los sépalos o apenas más largos; anual, erecto, hirsuto-glanduloso; hojas espatuladas, obtusas; corola blanca",
+      keyStep: "B",
+      especieId: "cerastium_viscosum",
+    },
+    opcionA_prima: {
+      label: "Cimas muy laxas; pétalos de doble longitud que los sépalos; anual, ascendente, híspido-glanduloso; hojas obovado-espatuladas, cortamente acuminadas; corola blanca",
+      keyStep: "B'",
+      especieId: "cerastium_rivulare",
     },
   },
   dicot_group_c_q_lower: {
