@@ -1425,6 +1425,38 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas lanceoladas, cilioladas en el margen; flores dioicas por aborto, en cimas dicotómicas; cáliz ovoideo, con 20 nervaduras; pétalos blancos o rosados.",
     "Viejo continente. Adventicia en América; citada para Pergamino."
   ),
+  saponaria_officinalis: species(
+    "saponaria_officinalis",
+    "Saponaria officinalis",
+    "51. Caryophyllaceae",
+    "Hierba perenne, glabra, erecta, de 30-60 cm de alto.",
+    "Hojas ovadas, agudas y enteras; flores en cimas terminales densas; cáliz tubuloso de 15-20 mm, sin costillas aladas; pétalos rosados, con una escamita en la base del limbo; estilos 2; cápsulas cilíndricas, más cortas que el cáliz.",
+    "Europa; adventicia en América. Rara en la región: Tigre."
+  ),
+  vaccaria_segetalis: species(
+    "vaccaria_segetalis",
+    "Vaccaria segetalis",
+    "51. Caryophyllaceae",
+    "Hierba anual, glabra, glauca, ramificada dicotómicamente, de 30-90 cm de alto.",
+    "Hojas lanceoladas, agudas, enteras, connatas en la base; flores rojo pálidas o blancas en cimas terminales; cáliz con 5 costillas aladas, de 10-15 mm; estilos 2; cápsula dehiscente por 4 dientes apicales.",
+    "Europa; adventicia en América. Citada para Pergamino."
+  ),
+  agrostemma_githago: species(
+    "agrostemma_githago",
+    "Agrostemma githago",
+    "51. Caryophyllaceae",
+    "Hierba anual, pubescente, de 20-50 cm de alto.",
+    "Hojas opuestas, sésiles, lineal-lanceoladas, de 7-12 cm; flores grandes, solitarias, en el extremo de largos pedúnculos axilares; cáliz con 5 segmentos foliáceos más largos que los pétalos; pétalos rojizos; estilos 5.",
+    "Europa; adventicia en América. En suelos modificados. Nombre vulgar: yetón."
+  ),
+  melandryum_silvestre: species(
+    "melandryum_silvestre",
+    "Melandryum silvestre",
+    "51. Caryophyllaceae",
+    "Hierba bienal, glanduloso-pubescente, de 30-60 cm de alto.",
+    "Hojas inferiores pecioladas, oblongas y obtusas; hojas superiores ovado-lanceoladas y agudas; flores numerosas en cimas dicotómicas; cáliz con dientes más cortos que los pétalos; pétalos rosados o rojos, bipartidos; estilos 3-5.",
+    "Europa; adventicia en América. Rara en la región."
+  ),
   frankeniaceae: family(
     "frankeniaceae",
     "85. Frankeniaceae",
@@ -4707,9 +4739,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "caryophyllaceae_c",
     },
     opcionA_prima: {
-      label: "Estilos 5; Agrostemma y Melandryum quedan para próximas tandas",
+      label: "Estilos 5",
       keyStep: "B'",
-      especieId: "caryophyllaceae",
+      nextNodeId: "caryophyllaceae_e",
     },
   },
   caryophyllaceae_c: {
@@ -4723,9 +4755,41 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "silene_a",
     },
     opcionA_prima: {
-      label: "Estilos 2; Saponaria y Vaccaria quedan para próximas tandas",
+      label: "Estilos 2",
       keyStep: "C'",
-      especieId: "caryophyllaceae",
+      nextNodeId: "caryophyllaceae_d",
+    },
+  },
+  caryophyllaceae_d: {
+    id: "caryophyllaceae_d",
+    milestone: "Caryophyllaceae",
+    manualPage: 203,
+    descripcion: "Caryophyllaceae - D: costillas del cáliz en estilos 2",
+    opcionA: {
+      label: "Cáliz sin costillas aladas",
+      keyStep: "D",
+      especieId: "saponaria_officinalis",
+    },
+    opcionA_prima: {
+      label: "Cáliz con 5 costillas aladas",
+      keyStep: "D'",
+      especieId: "vaccaria_segetalis",
+    },
+  },
+  caryophyllaceae_e: {
+    id: "caryophyllaceae_e",
+    milestone: "Caryophyllaceae",
+    manualPage: 203,
+    descripcion: "Caryophyllaceae - E: segmentos del cáliz en estilos 5",
+    opcionA: {
+      label: "Cáliz con 5 segmentos foliáceos más largos que los pétalos y alternando con los estilos",
+      keyStep: "E",
+      especieId: "agrostemma_githago",
+    },
+    opcionA_prima: {
+      label: "Cáliz con 5 dientes más cortos que los pétalos",
+      keyStep: "E'",
+      especieId: "melandryum_silvestre",
     },
   },
   silene_a: {
