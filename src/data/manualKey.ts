@@ -1093,6 +1093,38 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Ovario ínfero; perigonio corolino tubuloso cigomorfo; estambres y gineceo unidos."
   ),
+  aristolochia_macroura: species(
+    "aristolochia_macroura",
+    "Aristolochia macroura",
+    "42. Aristolochiaceae",
+    "Planta voluble robusta.",
+    "Hojas profundamente trilobadas, glabras en el haz y cortamente pubescentes en el envés; perigonio de 9-10 cm, con limbo ovado-acorazonado terminado en un larguísimo apéndice lineal.",
+    "Sur del Brasil y NE de la Argentina, hasta el Delta del Paraná."
+  ),
+  aristolochia_fimbriata: species(
+    "aristolochia_fimbriata",
+    "Aristolochia fimbriata",
+    "42. Aristolochiaceae",
+    "Hemicriptófita con raíces muy gruesas y tallos ascendentes de 30-40 cm.",
+    "Hojas reniformes y glabras; limbo del perigonio reniforme, fimbriado en el margen, con manchas purpúreas; cápsulas oblongas.",
+    "Sur del Brasil, Paraguay, Uruguay y NE de la Argentina; cerca de Buenos Aires en bosques prístinos. N. v.: patito."
+  ),
+  aristolochia_stuckertii: species(
+    "aristolochia_stuckertii",
+    "Aristolochia stuckertii",
+    "42. Aristolochiaceae",
+    "Hierba pequeña, rizomatosa, con raíces napiformes y tallos rastreros.",
+    "Hojas ovado-triangulares, cordadas y enteras; limbo del perigonio lanceolado; flores axilares solitarias, amarillentas, pubescentes, de 2 cm; cápsulas obovoideas.",
+    "Centro de la Argentina; rara cerca de Buenos Aires, citada para Pergamino y Campana."
+  ),
+  aristolochia_triangularis: species(
+    "aristolochia_triangularis",
+    "Aristolochia triangularis",
+    "42. Aristolochiaceae",
+    "Planta voluble robusta.",
+    "Hojas triangulares; limbo del perigonio redondeado, con manchas pardas; flores solitarias, axilares, rosadas, de unos 4 cm; cápsulas elipsoideas.",
+    "Brasil meridional, Paraguay, Uruguay y NE de la Argentina, hasta la Isla Martín García."
+  ),
   compositae: family(
     "compositae",
     "130. Compositae",
@@ -3755,12 +3787,60 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Flores con perigonio corolino tubuloso cigomorfo; estambres y gineceo unidos formando un ginostemio",
       keyStep: "b",
-      especieId: "aristolochiaceae",
+      nextNodeId: "aristolochiaceae_a",
     },
     opcionA_prima: {
       label: "Flores con cáliz y corola o solo con corola; androceo y gineceo no unidos",
       keyStep: "b'",
       nextNodeId: "dicot_group_e_c_lower",
+    },
+  },
+  aristolochiaceae_a: {
+    id: "aristolochiaceae_a",
+    milestone: "Aristolochiaceae",
+    manualPage: 175,
+    descripcion: "Aristolochia - A: hojas y apéndice del perigonio",
+    opcionA: {
+      label: "Hojas profundamente trilobadas, glabras en el haz y cortamente pubescentes en el envés; plantas volubles robustas; perigonio de 9-10 cm con larguísimo apéndice lineal",
+      keyStep: "A",
+      especieId: "aristolochia_macroura",
+    },
+    opcionA_prima: {
+      label: "Hojas enteras; limbo del perigonio sin largo apéndice lineal",
+      keyStep: "A'",
+      nextNodeId: "aristolochiaceae_b",
+    },
+  },
+  aristolochiaceae_b: {
+    id: "aristolochiaceae_b",
+    milestone: "Aristolochiaceae",
+    manualPage: 175,
+    descripcion: "Aristolochia - B: forma de hojas y limbo del perigonio",
+    opcionA: {
+      label: "Hojas reniformes, glabras; hemicriptófitas con raíces muy gruesas; tallos ascendentes de 30-40 cm; limbo del perigonio reniforme y fimbriado",
+      keyStep: "B",
+      especieId: "aristolochia_fimbriata",
+    },
+    opcionA_prima: {
+      label: "Hojas ovado-triangulares; limbo del perigonio no fimbriado",
+      keyStep: "B'",
+      nextNodeId: "aristolochiaceae_c",
+    },
+  },
+  aristolochiaceae_c: {
+    id: "aristolochiaceae_c",
+    milestone: "Aristolochiaceae",
+    manualPage: 175,
+    descripcion: "Aristolochia - C: forma del limbo del perigonio",
+    opcionA: {
+      label: "Limbo del perigonio lanceolado; hierba pequeña rizomatosa, con raíces napiformes; tallos rastreros; flores amarillentas de 2 cm",
+      keyStep: "C",
+      especieId: "aristolochia_stuckertii",
+    },
+    opcionA_prima: {
+      label: "Limbo del perigonio redondeado, con manchas pardas; planta voluble robusta; flores axilares rosadas de unos 4 cm",
+      keyStep: "C'",
+      especieId: "aristolochia_triangularis",
     },
   },
   dicot_group_e_c_lower: {
