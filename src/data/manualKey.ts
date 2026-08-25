@@ -1139,6 +1139,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas obovadas, atenuadas en la base, de 3,5-5 cm por 1-2 cm, con ápice bilobado; flores en espiga corta terminal y glomérulos axilares; tépalos 2-3, lanceolados o espatulados; fruto casi globoso, poco rugoso.",
     "Maleza originaria probablemente de América."
   ),
+  pfaffia_stenophylla: species(
+    "pfaffia_stenophylla",
+    "Pfaffia stenophylla",
+    "45. Amaranthaceae",
+    "Hierba perenne, de hasta 2 m de alto, con tallos erectos o apoyantes.",
+    "Hojas lanceoladas, pubescentes, de 5-15 cm por 1-2 cm; capítulos numerosos, en cimas dicotómicas, de menos de 8 mm de diámetro; flores de 2-3 mm.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina. Delta y ribera platense."
+  ),
+  pfaffia_lanata: species(
+    "pfaffia_lanata",
+    "Pfaffia lanata",
+    "45. Amaranthaceae",
+    "Hemicriptófita con raíz gruesa y tallos tomentosos ascendentes o erectos, de 20-30 cm de alto.",
+    "Hojas ovadas, densamente albo-tomentosas, de 2-5 cm por 1,5-3 cm; capítulos solitarios de 10-15 mm de diámetro, sobre pedúnculos largos; flores de 4-6 mm.",
+    "Centro y este de la Argentina; Uruguay. Estepa clímax."
+  ),
   malpighiaceae: family(
     "malpighiaceae",
     "71. Malpighiaceae",
@@ -3847,9 +3863,57 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "amaranthus_a",
     },
     opcionA_prima: {
-      label: "Anteras con una teca; hojas opuestas; Pfaffia, Alternanthera, Gomphrena, Iresine y Philoxerus quedan para la próxima tanda",
+      label: "Anteras con una teca; hojas opuestas",
       keyStep: "A'",
+      nextNodeId: "amaranthaceae_b",
+    },
+  },
+  amaranthaceae_b: {
+    id: "amaranthaceae_b",
+    milestone: "Amaranthaceae",
+    manualPage: 190,
+    descripcion: "Amaranthaceae - B: forma del estigma",
+    opcionA: {
+      label: "Estigma capitado o bilobado",
+      keyStep: "B",
+      nextNodeId: "amaranthaceae_c",
+    },
+    opcionA_prima: {
+      label: "Estigma bífido; Gomphrena, Iresine y Philoxerus quedan para la próxima tanda",
+      keyStep: "B'",
       especieId: "amaranthaceae",
+    },
+  },
+  amaranthaceae_c: {
+    id: "amaranthaceae_c",
+    milestone: "Amaranthaceae",
+    manualPage: 190,
+    descripcion: "Amaranthaceae - C: seudoestaminodios y filamentos",
+    opcionA: {
+      label: "Sin seudoestaminodios; filamentos dilatados y trilobados en el ápice; estigma capitado o semilobado",
+      keyStep: "C",
+      nextNodeId: "pfaffia_a",
+    },
+    opcionA_prima: {
+      label: "Con seudoestaminodios entre los estambres; Alternanthera queda para la próxima tanda",
+      keyStep: "C'",
+      especieId: "amaranthaceae",
+    },
+  },
+  pfaffia_a: {
+    id: "pfaffia_a",
+    milestone: "Pfaffia",
+    manualPage: 190,
+    descripcion: "Pfaffia - A: disposición y tamaño de los capítulos",
+    opcionA: {
+      label: "Capítulos numerosos, en cimas dicotómicas, de menos de 8 mm de diámetro; hierbas perennes con tallos erectos o apoyantes; hojas lanceoladas, pubescentes; flores de 2-3 mm",
+      keyStep: "A",
+      especieId: "pfaffia_stenophylla",
+    },
+    opcionA_prima: {
+      label: "Capítulos solitarios de 10-15 mm de diámetro; hemicriptófita con raíz gruesa; tallos tomentosos ascendentes o erectos; hojas ovadas, densamente albo-tomentosas; flores de 4-6 mm",
+      keyStep: "A'",
+      especieId: "pfaffia_lanata",
     },
   },
   amaranthus_a: {
