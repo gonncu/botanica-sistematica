@@ -751,6 +751,38 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo B.",
     "Hierbas o sufrútices con ovario tricarpelar; hojas verticiladas en esta rama."
   ),
+  aptenia_cordifolia: species(
+    "aptenia_cordifolia",
+    "Aptenia cordifolia",
+    "48. Aizoaceae",
+    "Hierba suculenta perenne, con ramas tendidas.",
+    "Hojas pecioladas, ovado-cordadas, enteras, crasas y menudamente papilosas; flores solitarias en las bifurcaciones de las ramas; ovario ínfero; estaminodios petaliformes numerosos, purpúreos.",
+    "África. Cultivada como ornamental; crece escapada de cultivo en las barrancas de San Nicolás."
+  ),
+  glinus_radiatus: species(
+    "glinus_radiatus",
+    "Glinus radiatus",
+    "48. Aizoaceae",
+    "Hierba anual, rastrera, tomentosa o glabrescente.",
+    "Hojas seudoverticiladas, ovado-espatuladas, agudas y enteras; flores en glomérulos; sépalos tomentosos, con lóbulos del cáliz cuculado-mucronados; estaminodios ausentes; estambres 3-5; semillas glabras.",
+    "América. Rara en la región; citada para el Puerto de Buenos Aires."
+  ),
+  mollugo_verticillata: species(
+    "mollugo_verticillata",
+    "Mollugo verticillata",
+    "48. Aizoaceae",
+    "Hierba anual, baja, glabra y ramificada dicotómicamente.",
+    "Hojas verticiladas, planas, lineales o lineal-espatuladas, enteras, obtusas, de 15-25 mm; flores pequeñas en dicasios compuestos; sépalos glabros; semillas reniformes lisas.",
+    "América cálida. Rara en los alrededores de Buenos Aires."
+  ),
+  sesuvium_portulacastrum: species(
+    "sesuvium_portulacastrum",
+    "Sesuvium portulacastrum",
+    "48. Aizoaceae",
+    "Hierba o sufrútice tendido, carnoso y glabro.",
+    "Hojas opuestas, lineales, enteras, unidas en la base por una membrana estipuliforme; flores axilares, sésiles o cortamente pedunculadas; cáliz de 5-10 mm, verdoso por fuera y rosado por dentro; estambres 10-15; cápsulas oblongas.",
+    "Cosmopolita, en litorales marítimos y suelos salados."
+  ),
   urticaceae: family(
     "urticaceae",
     "39. Urticaceae",
@@ -3040,7 +3072,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Hojas verticiladas",
       keyStep: "K",
-      especieId: "aizoaceae",
+      nextNodeId: "aizoaceae_a",
     },
     opcionA_prima: {
       label: "Hojas no verticiladas",
@@ -3972,7 +4004,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Flores solitarias o subsolitarias, grandes; plantas carnosas",
       keyStep: "d",
-      especieId: "aizoaceae",
+      nextNodeId: "aizoaceae_a",
     },
     opcionA_prima: {
       label: "Flores pequeñas en inflorescencias densas; plantas no carnosas",
@@ -5040,6 +5072,54 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Perigonio tetrámero; hierba perenne dioica; hojas crasas, glabras, oblanceoladas y obtusas; estambres 20",
       keyStep: "B'",
       especieId: "phytolacca_tetramera",
+    },
+  },
+  aizoaceae_a: {
+    id: "aizoaceae_a",
+    milestone: "Aizoaceae",
+    manualPage: 197,
+    descripcion: "Aizoaceae - A: posición del ovario y estaminodios",
+    opcionA: {
+      label: "Ovario ínfero; estaminodios petaliformes numerosos y llamativos",
+      keyStep: "A",
+      especieId: "aptenia_cordifolia",
+    },
+    opcionA_prima: {
+      label: "Ovario súpero; estaminodios petaliformes ausentes",
+      keyStep: "A'",
+      nextNodeId: "aizoaceae_b",
+    },
+  },
+  aizoaceae_b: {
+    id: "aizoaceae_b",
+    milestone: "Aizoaceae",
+    manualPage: 197,
+    descripcion: "Aizoaceae - B: pubescencia de los sépalos",
+    opcionA: {
+      label: "Sépalos tomentosos",
+      keyStep: "B",
+      especieId: "glinus_radiatus",
+    },
+    opcionA_prima: {
+      label: "Sépalos glabros",
+      keyStep: "B'",
+      nextNodeId: "aizoaceae_c",
+    },
+  },
+  aizoaceae_c: {
+    id: "aizoaceae_c",
+    milestone: "Aizoaceae",
+    manualPage: 197,
+    descripcion: "Aizoaceae - C: disposición de las hojas",
+    opcionA: {
+      label: "Hojas verticiladas",
+      keyStep: "C",
+      especieId: "mollugo_verticillata",
+    },
+    opcionA_prima: {
+      label: "Hojas opuestas",
+      keyStep: "C'",
+      especieId: "sesuvium_portulacastrum",
     },
   },
   dicot_group_e_n: {
