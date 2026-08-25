@@ -533,6 +533,62 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo B.",
     "Plantas con pelos urticantes o flores unisexuales en algunas ramas de la clave."
   ),
+  urtica_dioica: species(
+    "urtica_dioica",
+    "Urtica dioica",
+    "39. Urticaceae",
+    "Hierba perenne, dioica, de 0,5-1 m de altura.",
+    "Planta verde oscura, densamente híspida; hojas ovadas, acuminadas, con grandes dientes; flores en racimos de glomérulos más largos que los pecíolos; perianto pubescente.",
+    "Originaria de Europa y adventicia en América; rara en la región."
+  ),
+  urtica_chamaedryoides_circularis: species(
+    "urtica_chamaedryoides_circularis",
+    "Urtica chamaedryoides var. circularis",
+    "39. Urticaceae",
+    "Hierba anual, monoica, con tallos ascendentes o erectos de 20-40 cm.",
+    "Cistolitos epidérmicos alargados, bacilares; hojas flabelado-circulares, profundamente dentadas, de 7-15 mm por 10-23 mm; flores amontonadas en las axilas; perianto pubescente sin pelos urticantes.",
+    "La especie es de América del Norte; la variedad del norte de la Argentina. Frecuente en suelos húmedos del Delta y de la ribera del Plata."
+  ),
+  urtica_urens: species(
+    "urtica_urens",
+    "Urtica urens",
+    "39. Urticaceae",
+    "Hierba anual, monoica, con tallos erectos de 20-60 cm.",
+    "Planta verde clara, erizada; hojas ovadas o elípticas, profundamente dentadas o lobuladas, de 5-10 cm por 3-4 cm; flores en racimos cortos; perianto femenino con algún pelo urticante.",
+    "Originaria de Europa y adventicia en todo el globo; común en suelos modificados al comienzo de la primavera. N. v.: ortiga."
+  ),
+  urtica_spathulata: species(
+    "urtica_spathulata",
+    "Urtica spathulata",
+    "39. Urticaceae",
+    "Hierba anual, monoica, con hojas flabeladas y dentadas.",
+    "Cistolitos epidérmicos puntiformes; flores en glomérulos axilares; perianto de las flores femeninas sin pelos urticantes.",
+    "América austral; rara en la región."
+  ),
+  parietaria_debilis: species(
+    "parietaria_debilis",
+    "Parietaria debilis",
+    "39. Urticaceae",
+    "Hierba anual, pubescente, de 10-20 cm de altura, con tallos tendidos o ascendentes muy débiles.",
+    "Hojas de 15-30 mm por 8-15 mm; perianto de las flores femeninas con pelos ganchudos.",
+    "Cosmopolita; frecuente en suelos modificados al comienzo de la primavera."
+  ),
+  parietaria_officinalis: species(
+    "parietaria_officinalis",
+    "Parietaria officinalis",
+    "39. Urticaceae",
+    "Hierba perenne, con tallos ascendentes de 30-40 cm.",
+    "Hojas de 40-60 mm por 20-35 mm; perianto de las flores femeninas acrescente y pubescente.",
+    "Cosmopolita; común en jardines y muros viejos, primaveral."
+  ),
+  boehmeria_cylindrica: species(
+    "boehmeria_cylindrica",
+    "Boehmeria cylindrica",
+    "39. Urticaceae",
+    "Hierba perenne, erecta, de 0,5-1 m de altura.",
+    "Hojas opuestas, pecioladas, ovado-lanceoladas, uniformemente aserradas, de 3-10 cm por 1,5-4 cm; flores dioicas o andróginas en glomérulos a lo largo de las ramas, formando falsas espigas; aquenios comprimidos con pelos ganchudos.",
+    "América; frecuente en los bosques del Delta y de la ribera platense."
+  ),
   cannabinaceae: family(
     "cannabinaceae",
     "38. Cannabinaceae",
@@ -2062,7 +2118,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Sí",
       keyStep: "L",
-      especieId: "urticaceae",
+      nextNodeId: "urticaceae_a",
     },
     opcionA_prima: {
       label: "No",
@@ -2126,7 +2182,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Flores unisexuales",
       keyStep: "O'",
-      especieId: "urticaceae",
+      nextNodeId: "urticaceae_a",
     },
   },
   dicot_group_b_p: {
@@ -2163,12 +2219,108 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Estambres curvos; flores polígamas",
       keyStep: "R",
-      especieId: "urticaceae",
+      nextNodeId: "urticaceae_a",
     },
     opcionA_prima: {
       label: "Estambres rectos; flores unisexuales",
       keyStep: "R'",
       especieId: "chenopodiaceae",
+    },
+  },
+  urticaceae_a: {
+    id: "urticaceae_a",
+    milestone: "Urticaceae",
+    manualPage: 170,
+    descripcion: "Urticaceae - A: presencia de pelos urticantes",
+    opcionA: {
+      label: "Plantas con pelos urticantes",
+      keyStep: "A",
+      nextNodeId: "urtica_a",
+    },
+    opcionA_prima: {
+      label: "Plantas sin pelos urticantes",
+      keyStep: "A'",
+      nextNodeId: "urticaceae_b",
+    },
+  },
+  urticaceae_b: {
+    id: "urticaceae_b",
+    milestone: "Urticaceae",
+    manualPage: 170,
+    descripcion: "Urticaceae - B: hojas e inflorescencia",
+    opcionA: {
+      label: "Hojas alternas, o alternas y opuestas, enteras",
+      keyStep: "B",
+      nextNodeId: "parietaria_a",
+    },
+    opcionA_prima: {
+      label: "Hojas opuestas, dentadas",
+      keyStep: "B'",
+      especieId: "boehmeria_cylindrica",
+    },
+  },
+  urtica_a: {
+    id: "urtica_a",
+    milestone: "Urtica",
+    manualPage: 171,
+    descripcion: "Urtica - A: duración, sexualidad y racimos",
+    opcionA: {
+      label: "Plantas perennes, dioicas, con hojas ovadas, acuminadas y con grandes dientes; flores en racimos de glomérulos más largos que los pecíolos; perianto pubescente",
+      keyStep: "A",
+      especieId: "urtica_dioica",
+    },
+    opcionA_prima: {
+      label: "Plantas anuales, monoicas",
+      keyStep: "A'",
+      nextNodeId: "urtica_b",
+    },
+  },
+  urtica_b: {
+    id: "urtica_b",
+    milestone: "Urtica",
+    manualPage: 171,
+    descripcion: "Urtica - B: tipo de cistolitos epidérmicos",
+    opcionA: {
+      label: "Cistolitos epidérmicos alargados, bacilares; hojas flabelado-circulares, profundamente dentadas; flores amontonadas en las axilas; perianto pubescente sin pelos urticantes",
+      keyStep: "B",
+      especieId: "urtica_chamaedryoides_circularis",
+    },
+    opcionA_prima: {
+      label: "Cistolitos epidérmicos puntiformes",
+      keyStep: "B'",
+      nextNodeId: "urtica_c",
+    },
+  },
+  urtica_c: {
+    id: "urtica_c",
+    milestone: "Urtica",
+    manualPage: 171,
+    descripcion: "Urtica - C: forma de hojas e inflorescencia",
+    opcionA: {
+      label: "Hojas ovadas o elípticas, profundamente dentadas o lobuladas; flores dispuestas en racimos cortos; perianto femenino con algún pelo urticante",
+      keyStep: "C",
+      especieId: "urtica_urens",
+    },
+    opcionA_prima: {
+      label: "Hojas flabeladas, dentadas; flores en glomérulos axilares; perianto de las flores femeninas sin pelos urticantes",
+      keyStep: "C'",
+      especieId: "urtica_spathulata",
+    },
+  },
+  parietaria_a: {
+    id: "parietaria_a",
+    milestone: "Parietaria",
+    manualPage: 171,
+    descripcion: "Parietaria - A: duración, tamaño y perianto femenino",
+    opcionA: {
+      label: "Plantas anuales, pubescentes, de 10-20 cm; hojas de 15-30 mm por 8-15 mm; perianto de las flores femeninas con pelos ganchudos",
+      keyStep: "A",
+      especieId: "parietaria_debilis",
+    },
+    opcionA_prima: {
+      label: "Plantas perennes, con tallos ascendentes de 30-40 cm; hojas de 40-60 mm por 20-35 mm; perianto femenino acrescente y pubescente",
+      keyStep: "A'",
+      especieId: "parietaria_officinalis",
     },
   },
   dicot_group_pending_c: {
