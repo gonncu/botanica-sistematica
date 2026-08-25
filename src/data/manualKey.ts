@@ -487,6 +487,30 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo B.",
     "Árboles con hojas sin estípulas y ovario ínfero o semiínfero."
   ),
+  arjona_tuberosa_tandilensis: species(
+    "arjona_tuberosa_tandilensis",
+    "Arjona tuberosa var. tandilensis",
+    "40. Santalaceae",
+    "Hierba hemiparásita de 7-20 cm de alto, densamente pubescente.",
+    "Perianto tubuloso; hojas densas y apiculadas; flores blancas o violáceas, con perigonio de 15-20 mm.",
+    "Centro de la Argentina y Uruguay; rara cerca de la Capital Federal, citada para Santos Lugares. N. v.: mata trigo, macachín del trigo."
+  ),
+  acanthosyris_spinescens: species(
+    "acanthosyris_spinescens",
+    "Acanthosyris spinescens",
+    "40. Santalaceae",
+    "Arbusto o arbolito de 2-3 m de alto, con espinas axilares rectas.",
+    "Hojas oblanceoladas, obtusas; flores amarillentas; drupas globosas, amarillentas, de 13-20 mm de diámetro.",
+    "Sur del Brasil, Uruguay y NE de la Argentina; rara en bosques xerófilos próximos a la ribera del Plata."
+  ),
+  jodina_rhombifolia: species(
+    "jodina_rhombifolia",
+    "Jodina rhombifolia",
+    "40. Santalaceae",
+    "Arbolito hemiparásito con hojas alternas, coriáceas y espinosas en los ángulos.",
+    "Hojas rómbicas; flores reunidas en glomérulos axilares; fruto globoso, rojo y rugoso.",
+    "Sur del Brasil, Bolivia, Paraguay, Uruguay y norte y centro de la Argentina; frecuente en los bosques de tala de los alrededores de Buenos Aires. N. v.: sombra de toro, quebracho flojo."
+  ),
   polygonaceae: family(
     "polygonaceae",
     "43. Polygonaceae",
@@ -2009,7 +2033,39 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Árboles; hojas sin estípulas",
       keyStep: "E'",
-      especieId: "santalaceae",
+      nextNodeId: "santalaceae_a",
+    },
+  },
+  santalaceae_a: {
+    id: "santalaceae_a",
+    milestone: "Santalaceae",
+    manualPage: 172,
+    descripcion: "Santalaceae - A: porte y tipo de perianto",
+    opcionA: {
+      label: "Hierbas; perianto tubuloso",
+      keyStep: "A",
+      especieId: "arjona_tuberosa_tandilensis",
+    },
+    opcionA_prima: {
+      label: "Árboles; perianto no tubuloso",
+      keyStep: "A'",
+      nextNodeId: "santalaceae_b",
+    },
+  },
+  santalaceae_b: {
+    id: "santalaceae_b",
+    milestone: "Santalaceae",
+    manualPage: 172,
+    descripcion: "Santalaceae - B: hojas, flores y fruto",
+    opcionA: {
+      label: "Hojas oblanceoladas; flores en racimos paucifloros; fruto liso",
+      keyStep: "B",
+      especieId: "acanthosyris_spinescens",
+    },
+    opcionA_prima: {
+      label: "Hojas rómbicas, espinosas; flores en glomérulos axilares; fruto rugoso",
+      keyStep: "B'",
+      especieId: "jodina_rhombifolia",
     },
   },
   dicot_group_b_f: {
