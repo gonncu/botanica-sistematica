@@ -597,6 +597,94 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas obovadas o panduriformes, algo crespas; flores en panojas de glomérulos; valvas del fruto menores, de unos 3 mm por 2 mm, con callo liso y dientes cortos.",
     "Paraguay y norte de la Argentina; adventicia en Europa. Rara en las cercanías de Buenos Aires."
   ),
+  polygonum_convolvulus: species(
+    "polygonum_convolvulus",
+    "Polygonum convolvulus",
+    "43. Polygonaceae",
+    "Hierba anual voluble.",
+    "Hojas acorazonadas, glabras, de 3-7 cm por 2-4 cm; flores pequeñas verdosas en fascículos axilares, las superiores formando un seudo-racimo laxo; frutos triquetros.",
+    "Europa; maleza de los cultivos en casi todo el mundo. N. v.: enredadera."
+  ),
+  polygonum_aviculare: species(
+    "polygonum_aviculare",
+    "Polygonum aviculare",
+    "43. Polygonaceae",
+    "Hierba anual, glauca, con tallos rastreros o ascendentes, glabros.",
+    "Hojas lanceoladas u ovado-lanceoladas de 1,5-4 cm; ocreas plateadas, rasgadas; flores en glomérulos axilares; perianto verdoso.",
+    "Europa; adventicia en todo el mundo. Común en rastrojos, calles, etc."
+  ),
+  polygonum_camporum_australe: species(
+    "polygonum_camporum_australe",
+    "Polygonum camporum var. australe",
+    "43. Polygonaceae",
+    "Hierba perenne, sufruticosa, con raíz gruesa y profunda.",
+    "Tallos tendidos o ascendentes, finamente estriados; hojas lineal-lanceoladas, enteras, de 1-3 cm; ocreas cortas, laciniadas; flores 1-3 en las axilas, con perianto verdoso de unos 3 mm.",
+    "América del Sur, en suelos salados. Común cerca de Buenos Aires. N. v.: sanguinaria."
+  ),
+  polygonum_stelligerum: species(
+    "polygonum_stelligerum",
+    "Polygonum stelligerum",
+    "43. Polygonaceae",
+    "Hierba perenne palustre, de cerca de 1 m, cubierta de aguijones retrorsos.",
+    "Hojas hastadas, enteras, con pelos estrellados, de 12-20 cm por 3-10 cm; ocreas muy largas con pubescencia estrellada rojiza; flores en espigas cortas y densas; perianto blanco.",
+    "Sur del Brasil, Uruguay y NE de la Argentina. Común en pajonales del Delta y de la ribera platense."
+  ),
+  polygonum_acuminatum_microstemon: species(
+    "polygonum_acuminatum_microstemon",
+    "Polygonum acuminatum var. microstemon",
+    "43. Polygonaceae",
+    "Hierba perenne con tallos ascendentes de cerca de medio metro.",
+    "Hojas lanceoladas, de 7-20 cm, cubiertas de pubescencia tendida más o menos densa; ocreas superiores largamente ciliadas; flores blancas en espigas terminales densas; frutos biconvexos.",
+    "América tropical oriental. Común en pajonales y arroyos."
+  ),
+  polygonum_punctatum: species(
+    "polygonum_punctatum",
+    "Polygonum punctatum",
+    "43. Polygonaceae",
+    "Hierba perenne, glabra, de cerca de medio metro de alto.",
+    "Hojas lanceoladas, acuminadas, enteras, de 5-15 cm; ocreas cilíndricas, truncadas, largamente ciliadas; flores blanquecinas o rosadas en espigas laxas; sépalos con puntos glandulares negros o rojizos.",
+    "América. Frecuente en lugares húmedos o inundados."
+  ),
+  polygonum_spectabile: species(
+    "polygonum_spectabile",
+    "Polygonum spectabile",
+    "43. Polygonaceae",
+    "Planta muy robusta, con tallos crasos, flotantes, tendidos o ascendentes, de medio metro o más.",
+    "Hojas lanceoladas, acuminadas, glabras, de 12-30 cm; ocreas cilíndricas, truncadas, generalmente sin pestañas; flores blanquecinas en espigas ramificadas densas; frutos biconvexos.",
+    "América templado-cálida. Común en pajonales y camalotes del Delta y de la ribera del Plata."
+  ),
+  polygonum_hydropiperoides: species(
+    "polygonum_hydropiperoides",
+    "Polygonum hydropiperoides",
+    "43. Polygonaceae",
+    "Hierba perenne, generalmente glabra, con tallos erectos o ascendentes de cerca de medio metro.",
+    "Hojas lanceoladas de 5-10 cm; ocreas con cilias largas en el borde; espigas laxas; flores blanquecinas.",
+    "América templado-cálida. Común en zanjas y arroyos."
+  ),
+  polygonum_lapathifolium: species(
+    "polygonum_lapathifolium",
+    "Polygonum lapathifolium",
+    "43. Polygonaceae",
+    "Hierba anual de 30-90 cm de alto.",
+    "Hojas lanceoladas, ligeramente pubescentes en el margen y nervaduras, de 10-20 cm por 2-4 cm; ocreas sin cilias; flores en racimos espiciformes muy densos, más o menos péndulos; perianto rosado o blanco.",
+    "Europa; adventicia en América. En suelos inundables."
+  ),
+  polygonum_orientale: species(
+    "polygonum_orientale",
+    "Polygonum orientale",
+    "43. Polygonaceae",
+    "Hierba anual, erecta, híspida, de 0,5-1 m de alto.",
+    "Hojas anchamente ovadas, de 7-25 cm por 4-15 cm, más o menos pubescentes; ocreas cortas, pubescentes, ciliadas; flores en panojas de racimos espiciformes densos, péndulos; perianto rosa fuerte.",
+    "India. Cultivada como ornamental y con frecuencia espontánea en suelos húmedos."
+  ),
+  muehlenbeckia_sagittifolia: species(
+    "muehlenbeckia_sagittifolia",
+    "Muehlenbeckia sagittifolia",
+    "43. Polygonaceae",
+    "Liana glabra, con tallos rojizos.",
+    "Hojas sagitadas, agudas, enteras, de 5-8 cm; flores pequeñas verdosas en racimos axilares de fascículos; nuez incluida en el perianto carnoso; semilla trisurcada.",
+    "Sur del Brasil, Paraguay, Uruguay y norte de la Argentina, hasta Buenos Aires. Común en bosques del Delta y de la ribera. N. v.: zarzaparrilla colorada."
+  ),
   ulmaceae: family(
     "ulmaceae",
     "36. Ulmaceae",
@@ -2237,9 +2325,25 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "rumex_a",
     },
     opcionA_prima: {
-      label: "Perianto formado por 5 piezas iguales, o las tres exteriores algo mayores; estambres 8; estigmas generalmente capitados; Polygonum/Muehlenbeckia queda para la próxima tanda",
+      label: "Perianto formado por 5 piezas iguales, o las tres exteriores algo mayores; estambres 8; estigmas generalmente capitados",
       keyStep: "B'",
-      especieId: "polygonaceae",
+      nextNodeId: "polygonaceae_c",
+    },
+  },
+  polygonaceae_c: {
+    id: "polygonaceae_c",
+    milestone: "Polygonaceae",
+    manualPage: 177,
+    descripcion: "Polygonaceae - C: sexualidad de las flores y porte",
+    opcionA: {
+      label: "Flores hermafroditas; hierbas",
+      keyStep: "C",
+      nextNodeId: "polygonum_a",
+    },
+    opcionA_prima: {
+      label: "Flores polígamas o dioicas; arbustos o lianas",
+      keyStep: "C'",
+      especieId: "muehlenbeckia_sagittifolia",
     },
   },
   rumex_a: {
@@ -2368,6 +2472,150 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Valvas menores, de unos 3 mm por 2 mm, con callo liso; tallos erectos de hasta 70 cm; hojas obovadas o panduriformes, algo crespas",
       keyStep: "H'",
       especieId: "rumex_paraguayensis",
+    },
+  },
+  polygonum_a: {
+    id: "polygonum_a",
+    milestone: "Polygonum",
+    manualPage: 180,
+    descripcion: "Polygonum - A: hábito voluble",
+    opcionA: {
+      label: "Plantas volubles, con hojas acorazonadas glabras; flores pequeñas verdosas en fascículos axilares, las superiores formando un seudo-racimo laxo",
+      keyStep: "A",
+      especieId: "polygonum_convolvulus",
+    },
+    opcionA_prima: {
+      label: "Plantas no volubles; hojas lanceoladas o hastadas",
+      keyStep: "A'",
+      nextNodeId: "polygonum_b",
+    },
+  },
+  polygonum_b: {
+    id: "polygonum_b",
+    milestone: "Polygonum",
+    manualPage: 180,
+    descripcion: "Polygonum - B: posición de las flores",
+    opcionA: {
+      label: "Flores dispuestas en las axilas de las hojas",
+      keyStep: "B",
+      nextNodeId: "polygonum_c",
+    },
+    opcionA_prima: {
+      label: "Flores dispuestas en espigas o en glomérulos terminales",
+      keyStep: "B'",
+      nextNodeId: "polygonum_d",
+    },
+  },
+  polygonum_c: {
+    id: "polygonum_c",
+    milestone: "Polygonum",
+    manualPage: 180,
+    descripcion: "Polygonum - C: duración y porte",
+    opcionA: {
+      label: "Plantas anuales, glaucas, con tallos rastreros o ascendentes, glabros; hojas lanceoladas u ovado-lanceoladas de 1,5-4 cm; ocreas plateadas, rasgadas",
+      keyStep: "C",
+      especieId: "polygonum_aviculare",
+    },
+    opcionA_prima: {
+      label: "Plantas perennes, sufruticosas, con raíz gruesa y profunda; tallos tendidos o ascendentes; hojas lineal-lanceoladas de 1-3 cm; ocreas cortas, laciniadas",
+      keyStep: "C'",
+      especieId: "polygonum_camporum_australe",
+    },
+  },
+  polygonum_d: {
+    id: "polygonum_d",
+    milestone: "Polygonum",
+    manualPage: 180,
+    descripcion: "Polygonum - D: hojas hastadas o lanceoladas/ovadas",
+    opcionA: {
+      label: "Hojas hastadas; hierbas perennes palustres, de cerca de 1 m, cubiertas de aguijones retrorsos; flores en espigas cortas y densas",
+      keyStep: "D",
+      especieId: "polygonum_stelligerum",
+    },
+    opcionA_prima: {
+      label: "Hojas lanceoladas u ovadas; plantas sin espinas; espigas alargadas",
+      keyStep: "D'",
+      nextNodeId: "polygonum_e",
+    },
+  },
+  polygonum_e: {
+    id: "polygonum_e",
+    milestone: "Polygonum",
+    manualPage: 180,
+    descripcion: "Polygonum - E: forma de las hojas",
+    opcionA: {
+      label: "Hojas lanceoladas",
+      keyStep: "E",
+      nextNodeId: "polygonum_f",
+    },
+    opcionA_prima: {
+      label: "Hojas anchamente ovadas; hierba anual erecta, híspida, de 0,5-1 m; flores en panojas de racimos espiciformes densos, péndulos; perianto rosa fuerte",
+      keyStep: "E'",
+      especieId: "polygonum_orientale",
+    },
+  },
+  polygonum_f: {
+    id: "polygonum_f",
+    milestone: "Polygonum",
+    manualPage: 180,
+    descripcion: "Polygonum - F: pubescencia de las hojas",
+    opcionA: {
+      label: "Hojas cubiertas de pubescencia tendida más o menos densa; ocreas superiores largamente ciliadas; flores blancas en espigas terminales densas",
+      keyStep: "F",
+      especieId: "polygonum_acuminatum_microstemon",
+    },
+    opcionA_prima: {
+      label: "Hojas glabras, o a lo más ciliadas en los bordes y en la nervadura central",
+      keyStep: "F'",
+      nextNodeId: "polygonum_g",
+    },
+  },
+  polygonum_g: {
+    id: "polygonum_g",
+    milestone: "Polygonum",
+    manualPage: 180,
+    descripcion: "Polygonum - G: puntos glandulares en los sépalos",
+    opcionA: {
+      label: "Sépalos cubiertos de puntos glandulares negros o rojizos; hojas lanceoladas, acuminadas, de 5-15 cm; flores blanquecinas o rosadas en espigas laxas",
+      keyStep: "G",
+      especieId: "polygonum_punctatum",
+    },
+    opcionA_prima: {
+      label: "Sépalos sin puntos glandulares negros",
+      keyStep: "G'",
+      nextNodeId: "polygonum_h",
+    },
+  },
+  polygonum_h: {
+    id: "polygonum_h",
+    milestone: "Polygonum",
+    manualPage: 180,
+    descripcion: "Polygonum - H: robustez de la planta y tipo de tallos",
+    opcionA: {
+      label: "Plantas muy robustas, con tallos crasos, flotantes, tendidos o ascendentes, de medio metro o más; hojas lanceoladas de 12-30 cm; espigas ramificadas densas",
+      keyStep: "H",
+      especieId: "polygonum_spectabile",
+    },
+    opcionA_prima: {
+      label: "Plantas gráciles, con tallos delgados, erectos",
+      keyStep: "H'",
+      nextNodeId: "polygonum_j",
+    },
+  },
+  polygonum_j: {
+    id: "polygonum_j",
+    milestone: "Polygonum",
+    manualPage: 180,
+    descripcion: "Polygonum - J: densidad de espigas y cilias de las ocreas",
+    opcionA: {
+      label: "Espigas laxas; ocreas con cilias largas en el borde; hierbas perennes generalmente glabras, con tallos erectos o ascendentes de medio metro; flores blanquecinas",
+      keyStep: "J",
+      especieId: "polygonum_hydropiperoides",
+    },
+    opcionA_prima: {
+      label: "Espigas densas; ocreas sin cilias; hierbas anuales de 30-90 cm; hojas lanceoladas ligeramente pubescentes; perianto rosado o blanco",
+      keyStep: "J'",
+      especieId: "polygonum_lapathifolium",
     },
   },
   dicot_group_b_g: {

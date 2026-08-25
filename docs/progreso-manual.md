@@ -35,10 +35,10 @@ Ultima familia cargada, validada y subida:
 
 ## Proxima familia consecutiva
 
-- `43. Polygonaceae`, en progreso desde pagina 177 del manual.
-- Primera tanda cargada: clave principal + `Emex` + `Rumex`.
-- Falta completar: `Polygonum` y `Muehlenbeckia`.
-- `Polygonum` empieza en pagina 180 del manual (`PDF_PAGE=187`).
+- `43. Polygonaceae`, completa localmente en dos tandas:
+  - Tanda 1: clave principal + `Emex` + `Rumex`.
+  - Tanda 2: `Polygonum` + `Muehlenbeckia`.
+- Proxima familia consecutiva: `44. Chenopodiaceae`, pagina 182 del manual (`PDF_PAGE=189`).
 
 ## Regla de trabajo
 
