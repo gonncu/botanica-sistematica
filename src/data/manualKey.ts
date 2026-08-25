@@ -1311,6 +1311,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Plantas volubles con hojas enteras alternas."
   ),
+  boussingaultia_gracilis_pseudobaselloides: species(
+    "boussingaultia_gracilis_pseudobaselloides",
+    "Boussingaultia gracilis f. pseudobaselloides",
+    "50. Basellaceae",
+    "Hierba perenne, voluble, glabra, con raíces tuberosas.",
+    "Hojas carnosas, pecioladas, anchamente ovado-acorazonadas; flores en largos racimos; corola blanca de 5 mm de diámetro; estilo trífido, con estigmas capitados; utrículo globoso incluido en el perianto.",
+    "América tropical. Cultivada y espontánea en cercos y alambrados. Nombre vulgar: brotal."
+  ),
   passifloraceae: family(
     "passifloraceae",
     "89. Passifloraceae",
@@ -4414,8 +4422,25 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Hojas alternas",
       keyStep: "g'",
-      especieId: "basellaceae",
+      nextNodeId: "basellaceae_terminal",
     },
+  },
+  basellaceae_terminal: {
+    id: "basellaceae_terminal",
+    milestone: "Basellaceae",
+    manualPage: 201,
+    descripcion: "Basellaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Boussingaultia gracilis f. pseudobaselloides",
+      keyStep: "1",
+      especieId: "boussingaultia_gracilis_pseudobaselloides",
+    },
+    opcionA_prima: {
+      label: "Identificar como Boussingaultia gracilis f. pseudobaselloides",
+      keyStep: "1",
+      especieId: "boussingaultia_gracilis_pseudobaselloides",
+    },
+    especie: manualFamilyData.boussingaultia_gracilis_pseudobaselloides,
   },
   dicot_group_c_h_lower: {
     id: "dicot_group_c_h_lower",

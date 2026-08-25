@@ -30,12 +30,12 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `49. Portulacaceae`, pagina 199-201 del manual.
-- Ultimo commit subido antes de esta tanda: `ab6dbf3 Add Aizoaceae species keys`.
+- `50. Basellaceae`, pagina 201-202 del manual.
+- Ultimo commit subido antes de esta tanda: `ddf9c0a Add Portulacaceae species keys`.
 
 ## Proxima familia consecutiva
 
-- `50. Basellaceae`, desde pagina 201 del manual (`PDF_PAGE=208`).
+- `51. Caryophyllaceae`, desde pagina 202 del manual (`PDF_PAGE=209`).
 
 ## Regla de trabajo
 
