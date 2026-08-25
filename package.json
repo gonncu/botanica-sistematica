@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "extract:manual": "python scripts/extract-manual-pages.py --combined",
+    "extract:manual:pages": "python scripts/extract-manual-pages.py",
+    "validate:data": "node scripts/validate-key-data.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.3",

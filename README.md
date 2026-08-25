@@ -44,6 +44,34 @@ The app expects:
 - a `photo_records` table for submitted plant records
 - a `quiz_sessions` table for completed quiz sessions
 
+## Manual de botanica
+
+El PDF fuente esta en `public/`. Para ahorrar trabajo repetido, se puede extraer a texto local por paginas:
+
+```bash
+npm run extract:manual
+```
+
+Tambien se puede extraer un rango chico:
+
+```bash
+npm run extract:manual:pages -- --start 184 --end 190
+```
+
+El texto queda en `manual-text/pages/`. La pagina 1 impresa del manual empieza en la pagina 8 del PDF, entonces:
+
+```txt
+manualPage = pdfPage - 7
+```
+
+El estado de carga esta en `docs/progreso-manual.md`.
+
+Para validar referencias internas de claves y especies:
+
+```bash
+npm run validate:data
+```
+
 Run the SQL in `supabase/setup-auth-records.sql` from the Supabase SQL editor to:
 
 - add `user_id` and `plant_number`
