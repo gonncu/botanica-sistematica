@@ -1341,6 +1341,46 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Fruto cápsula de dehiscencia transversal; plantas sin látex."
   ),
+  portulaca_oleracea: species(
+    "portulaca_oleracea",
+    "Portulaca oleracea",
+    "49. Portulacaceae",
+    "Hierba anual, glabra, tendida o ascendente y carnosa.",
+    "Hojas espatuladas y planas; flores amarillas; sépalos carenados o alados; pétalos 5, de 6-8 mm; estambres 7-12; cápsula de dehiscencia transversal; semillas con pequeños tubérculos.",
+    "Cosmopolita. Comestible y adventicia en chacras, jardines, etc. Nombre vulgar: verdolaga."
+  ),
+  portulaca_papulosa: species(
+    "portulaca_papulosa",
+    "Portulaca papulosa",
+    "49. Portulacaceae",
+    "Hierba anual, largamente velluda.",
+    "Hojas lineales, más o menos cilíndricas, subuladas, de 2-5 mm; flores amarillas con pétalos de 4 mm; estambres 5-7; semillas tuberculadas.",
+    "Uruguay y este de la Argentina, en suelos secos. Rara en la región."
+  ),
+  portulaca_gilliesii: species(
+    "portulaca_gilliesii",
+    "Portulaca gilliesii",
+    "49. Portulacaceae",
+    "Hierba perenne, con tallos y hojas rojizos.",
+    "Hojas lineales, más o menos cilíndricas, oblongo-lineales, de 5-8 mm, a veces hasta 15 mm, con pelos axilares rígidos; hojas involucrales más cortas que las tallinas; flores purpúreas con pétalos de 14-30 mm; estambres 60 o más; semillas tuberculadas.",
+    "Centro de la Argentina. Cerca de Buenos Aires crece en suelos salados y florece en otoño. Nombre vulgar: fique, flor de seda."
+  ),
+  talinum_patens: species(
+    "talinum_patens",
+    "Talinum patens",
+    "49. Portulacaceae",
+    "Hierba perenne, glabra, erecta, carnosa, de 30-75 cm de alto.",
+    "Hojas alternas, sin estípulas, amontonadas en la parte inferior de los tallos, oblanceoladas u obovadas, de 4-8 cm; flores en panojas de cimas; sépalos de 3-4 mm; pétalos purpúreos o amarillos; estambres numerosos; cápsulas globosas.",
+    "América cálida. Raro cerca de Buenos Aires. Nombre vulgar: carne gorda."
+  ),
+  montia_fontana: species(
+    "montia_fontana",
+    "Montia fontana",
+    "49. Portulacaceae",
+    "Hierba anual diminuta, pigmea, de 2-15 cm de alto.",
+    "Hojas carnosas, opuestas, espatuladas y obtusas, de 6-12 mm; flores diminutas, blancas, axilares, solitarias o racimosas; estambres 3, raramente 5; cápsula globosa de 2 mm; semillas 3.",
+    "Cosmopolita. Se encuentra en la ribera platense."
+  ),
   guttiferae: family(
     "guttiferae",
     "88. Guttiferae",
@@ -4449,7 +4489,71 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Fruto cápsula de dehiscencia transversal; plantas sin látex",
       keyStep: "l'",
-      especieId: "portulacaceae",
+      nextNodeId: "portulacaceae_a",
+    },
+  },
+  portulacaceae_a: {
+    id: "portulacaceae_a",
+    milestone: "Portulacaceae",
+    manualPage: 199,
+    descripcion: "Portulacaceae - A: unión del cáliz con el ovario y dehiscencia de la cápsula",
+    opcionA: {
+      label: "Cáliz parcialmente soldado con el ovario; cápsulas de dehiscencia transversal",
+      keyStep: "A",
+      nextNodeId: "portulaca_a",
+    },
+    opcionA_prima: {
+      label: "Cáliz no soldado con el ovario; cápsula de dehiscencia longitudinal, trivalva",
+      keyStep: "A'",
+      nextNodeId: "portulacaceae_b",
+    },
+  },
+  portulacaceae_b: {
+    id: "portulacaceae_b",
+    milestone: "Portulacaceae",
+    manualPage: 199,
+    descripcion: "Portulacaceae - B: semillas, estambres y hábito",
+    opcionA: {
+      label: "Semillas numerosas; estambres 5 a numerosos; hierbas carnosas, erectas",
+      keyStep: "B",
+      especieId: "talinum_patens",
+    },
+    opcionA_prima: {
+      label: "Semillas 3; estambres 3 o 5; hierbas pigmeas, rastreras",
+      keyStep: "B'",
+      especieId: "montia_fontana",
+    },
+  },
+  portulaca_a: {
+    id: "portulaca_a",
+    milestone: "Portulaca",
+    manualPage: 200,
+    descripcion: "Portulaca - A: forma de las hojas",
+    opcionA: {
+      label: "Hojas espatuladas, planas; hierba anual, glabra; flores amarillas; pétalos 5, de 6-8 mm; estambres 7-12",
+      keyStep: "A",
+      especieId: "portulaca_oleracea",
+    },
+    opcionA_prima: {
+      label: "Hojas lineales, más o menos cilíndricas",
+      keyStep: "A'",
+      nextNodeId: "portulaca_b",
+    },
+  },
+  portulaca_b: {
+    id: "portulaca_b",
+    milestone: "Portulaca",
+    manualPage: 200,
+    descripcion: "Portulaca - B: color de flores y tamaño de pétalos",
+    opcionA: {
+      label: "Flores amarillas, con pétalos de 4 mm; hierba anual, largamente velluda; hojas subuladas de 2-5 mm; estambres 5-7",
+      keyStep: "B",
+      especieId: "portulaca_papulosa",
+    },
+    opcionA_prima: {
+      label: "Flores purpúreas, con pétalos de 14-30 mm; hierba perenne; hojas oblongo-lineales, cilíndricas, con pelos axilares rígidos; estambres 60 o más",
+      keyStep: "B'",
+      especieId: "portulaca_gilliesii",
     },
   },
   dicot_group_c_m_lower: {
