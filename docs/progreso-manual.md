@@ -30,15 +30,14 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `42. Aristolochiaceae`, pagina 175-177 del manual.
-- Commit: `f95a466 Add Aristolochiaceae species keys`.
+- `43. Polygonaceae`, pagina 177-182 del manual.
+- Commit: `5f81583 Complete Polygonaceae species keys`.
 
 ## Proxima familia consecutiva
 
-- `43. Polygonaceae`, completa localmente en dos tandas:
-  - Tanda 1: clave principal + `Emex` + `Rumex`.
-  - Tanda 2: `Polygonum` + `Muehlenbeckia`.
-- Proxima familia consecutiva: `44. Chenopodiaceae`, pagina 182 del manual (`PDF_PAGE=189`).
+- `44. Chenopodiaceae`, en progreso desde pagina 182 del manual (`PDF_PAGE=189`).
+- Primera tanda cargada localmente: clave principal parcial + `Salicornia`, `Atriplex`, `Suaeda` y `Kochia`.
+- Falta completar: `Beta`, `Chenopodium` y `Holmbergia`.
 
 ## Regla de trabajo
 

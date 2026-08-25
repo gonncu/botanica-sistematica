@@ -807,6 +807,54 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo B.",
     "Hierbas o sufrútices con hojas alternas o ausentes; fruto nuez indehiscente o flores unisexuales con estambres rectos."
   ),
+  salicornia_ambigua: species(
+    "salicornia_ambigua",
+    "Salicornia ambigua",
+    "44. Chenopodiaceae",
+    "Sufrútice rastrero, glabro, con ramas ascendentes.",
+    "Hojas muy reducidas, soldadas entre sí y al tallo, dando aspecto articulado, carnoso y áfilo; flores en espigas terminales, agrupadas de a 3 en la axila de cada bráctea, ginodioicas.",
+    "Frecuente en suelos salados de toda América. Común cerca de Buenos Aires y Eva Perón."
+  ),
+  atriplex_montevidensis: species(
+    "atriplex_montevidensis",
+    "Atriplex montevidensis",
+    "44. Chenopodiaceae",
+    "Hierba perenne con tallos rastreros.",
+    "Hojas lanceoladas, enteras, pruinosas, de 5-15 mm; flores en glomérulos axilares; frutos con brácteas pentalobadas de unos 3 mm.",
+    "Uruguay y Argentina. Común en campos algo salados."
+  ),
+  atriplex_hastata: species(
+    "atriplex_hastata",
+    "Atriplex hastata",
+    "44. Chenopodiaceae",
+    "Hierba anual con tallos ascendentes.",
+    "Hojas triangulares, pecioladas, enteras u onduladas, pruinosas, de 3-8 cm por 1,5-4 cm; flores diclinas monoicas en glomérulos agrupados en espigas; brácteas del fruto triangulares y lisas.",
+    "Europa; adventicia en América. Común en campos bajos y salados."
+  ),
+  atriplex_patula: species(
+    "atriplex_patula",
+    "Atriplex patula",
+    "44. Chenopodiaceae",
+    "Hierba anual glabra, con tallos ascendentes o erectos de 10-40 cm.",
+    "Hojas superiores lanceoladas e inferiores ovadas; flores en glomérulos agrupados en espigas laxas; brácteas del fruto rómbicas, generalmente tuberculadas, de unos 4 mm.",
+    "Europa; adventicia en América. Común en campos bajos y salados."
+  ),
+  suaeda_patagonica_crassiuscula: species(
+    "suaeda_patagonica_crassiuscula",
+    "Suaeda patagonica var. crassiuscula",
+    "44. Chenopodiaceae",
+    "Hierba anual, decumbente, baja.",
+    "Hojas lineales, carnosas, de 7-15 mm; estambres 1-2; perigonio acrescente, con alas transversales.",
+    "Buenos Aires; común en campos bajos."
+  ),
+  kochia_scoparia: species(
+    "kochia_scoparia",
+    "Kochia scoparia",
+    "44. Chenopodiaceae",
+    "Hierba anual de 30-100 cm de alto.",
+    "Hojas pubescentes, ciliadas, de 1-5 cm; flores pequeñas sin brácteas; perigonio coriáceo en la fructificación, con segmentos alados.",
+    "Asia y Europa; adventicia en América. Común en el oeste de Buenos Aires y rara cerca de la Capital Federal. N. v.: morenita, alfalfa criolla."
+  ),
   ranunculaceae: family(
     "ranunculaceae",
     "54. Ranunculaceae",
@@ -2802,7 +2850,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Fruto nuez indehiscente",
       keyStep: "Q'",
-      especieId: "chenopodiaceae",
+      nextNodeId: "chenopodiaceae_a",
     },
   },
   dicot_group_b_r: {
@@ -2816,7 +2864,135 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Estambres rectos; flores unisexuales",
       keyStep: "R'",
+      nextNodeId: "chenopodiaceae_a",
+    },
+  },
+  chenopodiaceae_a: {
+    id: "chenopodiaceae_a",
+    milestone: "Chenopodiaceae",
+    manualPage: 182,
+    descripcion: "Chenopodiaceae - A: hojas reducidas y espigas con brácteas carnosas",
+    opcionA: {
+      label: "Plantas con hojas muy reducidas, aparentemente áfilas; flores en axilas de brácteas carnosas formando espigas",
+      keyStep: "A",
+      especieId: "salicornia_ambigua",
+    },
+    opcionA_prima: {
+      label: "Plantas con hojas normales; flores solitarias o agrupadas, pero no en axilas de brácteas formando espigas",
+      keyStep: "A'",
+      nextNodeId: "chenopodiaceae_b",
+    },
+  },
+  chenopodiaceae_b: {
+    id: "chenopodiaceae_b",
+    milestone: "Chenopodiaceae",
+    manualPage: 182,
+    descripcion: "Chenopodiaceae - B: sexualidad de las flores",
+    opcionA: {
+      label: "Flores hermafroditas o ginomonoicas",
+      keyStep: "B",
+      nextNodeId: "chenopodiaceae_c",
+    },
+    opcionA_prima: {
+      label: "Flores diclinas o polígamas",
+      keyStep: "B'",
+      nextNodeId: "chenopodiaceae_f",
+    },
+  },
+  chenopodiaceae_c: {
+    id: "chenopodiaceae_c",
+    milestone: "Chenopodiaceae",
+    manualPage: 182,
+    descripcion: "Chenopodiaceae - C: presencia de brácteas",
+    opcionA: {
+      label: "Flores con brácteas",
+      keyStep: "C",
+      nextNodeId: "chenopodiaceae_d",
+    },
+    opcionA_prima: {
+      label: "Flores sin brácteas",
+      keyStep: "C'",
+      nextNodeId: "chenopodiaceae_e",
+    },
+  },
+  chenopodiaceae_d: {
+    id: "chenopodiaceae_d",
+    milestone: "Chenopodiaceae",
+    manualPage: 182,
+    descripcion: "Chenopodiaceae - D: hojas y perigonio maduro",
+    opcionA: {
+      label: "Hojas anchas, pecioladas; perigonio lignificado a la madurez; Beta queda para la próxima tanda",
+      keyStep: "D",
       especieId: "chenopodiaceae",
+    },
+    opcionA_prima: {
+      label: "Hojas lineales, carnosas, sésiles; perigonio no lignificado",
+      keyStep: "D'",
+      especieId: "suaeda_patagonica_crassiuscula",
+    },
+  },
+  chenopodiaceae_e: {
+    id: "chenopodiaceae_e",
+    milestone: "Chenopodiaceae",
+    manualPage: 182,
+    descripcion: "Chenopodiaceae - E: pelos y alas del perigonio",
+    opcionA: {
+      label: "Hojas velludas; perigonio maduro con un ala en el dorso de cada segmento",
+      keyStep: "E",
+      especieId: "kochia_scoparia",
+    },
+    opcionA_prima: {
+      label: "Hojas con pelos glandulosos o vesiculosos; perigonio sin alas a la madurez; Chenopodium queda para la próxima tanda",
+      keyStep: "E'",
+      especieId: "chenopodiaceae",
+    },
+  },
+  chenopodiaceae_f: {
+    id: "chenopodiaceae_f",
+    milestone: "Chenopodiaceae",
+    manualPage: 182,
+    descripcion: "Chenopodiaceae - F: brácteas de flores femeninas y tipo de fruto",
+    opcionA: {
+      label: "Flores femeninas con dos brácteas; fruto utrículo",
+      keyStep: "F",
+      nextNodeId: "atriplex_a",
+    },
+    opcionA_prima: {
+      label: "Flores sin brácteas; fruto baya roja; Holmbergia queda para la próxima tanda",
+      keyStep: "F'",
+      especieId: "chenopodiaceae",
+    },
+  },
+  atriplex_a: {
+    id: "atriplex_a",
+    milestone: "Atriplex",
+    manualPage: 183,
+    descripcion: "Atriplex - A: duración, hojas y brácteas del fruto",
+    opcionA: {
+      label: "Hierba perenne, con tallos rastreros y hojas lanceoladas, enteras, pruinosas, de 5-15 mm; flores en glomérulos axilares; brácteas del fruto pentalobadas",
+      keyStep: "A",
+      especieId: "atriplex_montevidensis",
+    },
+    opcionA_prima: {
+      label: "Hierbas anuales, con hojas mayores; brácteas del fruto triangulares o rómbicas",
+      keyStep: "A'",
+      nextNodeId: "atriplex_b",
+    },
+  },
+  atriplex_b: {
+    id: "atriplex_b",
+    milestone: "Atriplex",
+    manualPage: 184,
+    descripcion: "Atriplex - B: forma de hojas y brácteas del fruto",
+    opcionA: {
+      label: "Hojas triangulares; brácteas del fruto triangulares, lisas; tallos ascendentes; flores en glomérulos agrupados en espigas",
+      keyStep: "B",
+      especieId: "atriplex_hastata",
+    },
+    opcionA_prima: {
+      label: "Hojas superiores lanceoladas, las inferiores ovadas; brácteas del fruto rómbicas, generalmente tuberculadas; espigas laxas",
+      keyStep: "B'",
+      especieId: "atriplex_patula",
     },
   },
   urticaceae_a: {
