@@ -517,6 +517,86 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo B.",
     "Hojas con ócrea formada por estípulas intrapeciolares soldadas."
   ),
+  emex_spinosa: species(
+    "emex_spinosa",
+    "Emex spinosa",
+    "43. Polygonaceae",
+    "Hierba anual de cerca de medio metro de altura, glabra.",
+    "Hojas pecioladas, ovadas, enteras u onduladas; frutos grandes con tres espinas divergentes en el ápice; flores diclinas monoicas.",
+    "Europa y África; adventicia en América. Aparece a veces cerca de Buenos Aires: Isla Maciel, La Plata e Isla Martín García."
+  ),
+  rumex_acetosella: species(
+    "rumex_acetosella",
+    "Rumex acetosella",
+    "43. Polygonaceae",
+    "Hierba perenne de 10-50 cm de alto.",
+    "Rizomas estoloniformes delgados; tallos erectos; hojas pecioladas y hastadas, con dos lóbulos divergentes en la base; flores dioicas numerosas en panojas áfilas.",
+    "Europa; adventicia en todo el globo. Rara cerca de Buenos Aires, citada para Quilmes."
+  ),
+  rumex_conglomeratus: species(
+    "rumex_conglomeratus",
+    "Rumex conglomeratus",
+    "43. Polygonaceae",
+    "Hierba perenne con raíces napiformes y tallos de cerca de medio metro.",
+    "Hojas ovado-oblongas, crenuladas y algo crespas; flores en glomérulos distantes, cada uno con una hoja en la base; valvas del fruto aovadas, enteras, con callo grueso.",
+    "Europa; adventicia en América. Común en campos húmedos y salinos."
+  ),
+  rumex_crispus: species(
+    "rumex_crispus",
+    "Rumex crispus",
+    "43. Polygonaceae",
+    "Hierba perenne, glabra, de cerca de un metro.",
+    "Hojas con lámina oblonga y margen crespo; flores en panojas áfilas densas; valvas del fruto anchamente membranosas, enteras, con callo semigloboso.",
+    "Europa; adventicia en todo el mundo. N. v.: lengua de vaca."
+  ),
+  rumex_argentinus: species(
+    "rumex_argentinus",
+    "Rumex argentinus",
+    "43. Polygonaceae",
+    "Hierba perenne de 0,5-1 m de alto, sin rizomas.",
+    "Hojas con lámina ovada u oblonga, aguda y ligeramente crenulada; valvas del fruto triangulares, crasas, con callo alargado grueso de 3-4 mm.",
+    "Uruguay y NE de la Argentina. Común en pajonales del Delta y de la ribera del Plata."
+  ),
+  rumex_cuneifolius: species(
+    "rumex_cuneifolius",
+    "Rumex cuneifolius",
+    "43. Polygonaceae",
+    "Hierba rizomatosa con tallos aéreos de 10-20 cm.",
+    "Hojas coriáceas, espatuladas, obtusas y crenuladas; valvas del fruto coriáceas, ovadas, con callo muy grueso de 4-5 mm.",
+    "América austral. Común en dunas de la Bahía de Samborombón y del litoral atlántico; rara cerca de Buenos Aires."
+  ),
+  rumex_pulcher: species(
+    "rumex_pulcher",
+    "Rumex pulcher",
+    "43. Polygonaceae",
+    "Planta perenne, divaricado-ramosa, de 30-50 cm.",
+    "Hojas inferiores largamente pecioladas, oblongo-panduriformes y obtusas; flores en glomérulos axilares; valvas del fruto ovado-triangulares, dentadas o laciniadas, de 4-5 mm.",
+    "Europa; adventicia en todo el mundo. Cerca de Buenos Aires frecuente en campos húmedos."
+  ),
+  rumex_obtusifolius: species(
+    "rumex_obtusifolius",
+    "Rumex obtusifolius",
+    "43. Polygonaceae",
+    "Hierba perenne con tallos erectos de cerca de 1 m.",
+    "Hojas oblongas, agudas o semiobtusas, crenadas y onduladas; flores en glomérulos áfilos que forman una panoja densa; valvas membranosas dentadas en la parte inferior.",
+    "Europa; adventicia en casi todo el globo. N. v.: lengua de vaca."
+  ),
+  rumex_obovatus: species(
+    "rumex_obovatus",
+    "Rumex obovatus",
+    "43. Polygonaceae",
+    "Hierba anual o bienal con tallos erectos de 20-70 cm.",
+    "Hojas obovadas y obtusas; valvas del fruto grandes, de 4-5 mm por 3 mm, con callo rugoso y profundamente laciniadas.",
+    "Argentina y Paraguay; adventicia en Europa. Rara en la región, citada para Pergamino y Capital Federal."
+  ),
+  rumex_paraguayensis: species(
+    "rumex_paraguayensis",
+    "Rumex paraguayensis",
+    "43. Polygonaceae",
+    "Hierba anual o bienal con tallos erectos de hasta 70 cm.",
+    "Hojas obovadas o panduriformes, algo crespas; flores en panojas de glomérulos; valvas del fruto menores, de unos 3 mm por 2 mm, con callo liso y dientes cortos.",
+    "Paraguay y norte de la Argentina; adventicia en Europa. Rara en las cercanías de Buenos Aires."
+  ),
   ulmaceae: family(
     "ulmaceae",
     "36. Ulmaceae",
@@ -2122,12 +2202,172 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Sí; ócrea formada por estípulas intrapeciolares soldadas",
       keyStep: "F",
-      especieId: "polygonaceae",
+      nextNodeId: "polygonaceae_a",
     },
     opcionA_prima: {
       label: "No; hojas sin ócrea",
       keyStep: "F'",
       nextNodeId: "dicot_group_b_g",
+    },
+  },
+  polygonaceae_a: {
+    id: "polygonaceae_a",
+    milestone: "Polygonaceae",
+    manualPage: 177,
+    descripcion: "Polygonaceae - A: frutos grandes espinosos o pequeños sin espinas",
+    opcionA: {
+      label: "Frutos grandes, con 3 espinas divergentes en el ápice; flores diclinas monoicas",
+      keyStep: "A",
+      especieId: "emex_spinosa",
+    },
+    opcionA_prima: {
+      label: "Frutos pequeños, sin espinas",
+      keyStep: "A'",
+      nextNodeId: "polygonaceae_b",
+    },
+  },
+  polygonaceae_b: {
+    id: "polygonaceae_b",
+    milestone: "Polygonaceae",
+    manualPage: 177,
+    descripcion: "Polygonaceae - B: piezas del perianto, estambres y estigmas",
+    opcionA: {
+      label: "Perianto formado por 6 piezas: tres cortas externas y tres más grandes internas, acrescentes y persistentes sobre el fruto; estambres 6; estigmas penicilados o fimbriados",
+      keyStep: "B",
+      nextNodeId: "rumex_a",
+    },
+    opcionA_prima: {
+      label: "Perianto formado por 5 piezas iguales, o las tres exteriores algo mayores; estambres 8; estigmas generalmente capitados; Polygonum/Muehlenbeckia queda para la próxima tanda",
+      keyStep: "B'",
+      especieId: "polygonaceae",
+    },
+  },
+  rumex_a: {
+    id: "rumex_a",
+    milestone: "Rumex",
+    manualPage: 178,
+    descripcion: "Rumex - A: valvas aladas del perianto fructífero",
+    opcionA: {
+      label: "Segmentos interiores del perianto no transformados en valvas aladas; hojas pecioladas, hastadas, con dos lóbulos divergentes en la base",
+      keyStep: "A",
+      especieId: "rumex_acetosella",
+    },
+    opcionA_prima: {
+      label: "Segmentos interiores del perianto transformados en valvas aladas; hojas no hastadas",
+      keyStep: "A'",
+      nextNodeId: "rumex_b",
+    },
+  },
+  rumex_b: {
+    id: "rumex_b",
+    milestone: "Rumex",
+    manualPage: 178,
+    descripcion: "Rumex - B: margen de las valvas del fruto",
+    opcionA: {
+      label: "Valvas de los frutos enteras en el margen",
+      keyStep: "B",
+      nextNodeId: "rumex_c",
+    },
+    opcionA_prima: {
+      label: "Valvas de los frutos dentadas o recortadas en el margen",
+      keyStep: "B'",
+      nextNodeId: "rumex_f",
+    },
+  },
+  rumex_c: {
+    id: "rumex_c",
+    milestone: "Rumex",
+    manualPage: 178,
+    descripcion: "Rumex - C: disposición de los glomérulos",
+    opcionA: {
+      label: "Flores en glomérulos distantes entre sí, cada uno con una hoja en su base; raíces napiformes; hojas ovado-oblongas, crenuladas y algo crespas",
+      keyStep: "C",
+      especieId: "rumex_conglomeratus",
+    },
+    opcionA_prima: {
+      label: "Flores en glomérulos aproximados, sin hojas, formando en conjunto una panoja densa",
+      keyStep: "C'",
+      nextNodeId: "rumex_d",
+    },
+  },
+  rumex_d: {
+    id: "rumex_d",
+    milestone: "Rumex",
+    manualPage: 178,
+    descripcion: "Rumex - D: margen de las hojas y forma de valvas",
+    opcionA: {
+      label: "Hojas crespas en el margen; valvas del fruto anchamente membranosas; callo semigloboso",
+      keyStep: "D",
+      especieId: "rumex_crispus",
+    },
+    opcionA_prima: {
+      label: "Hojas planas en el margen; valvas del fruto triangulares, no membranosas, con callo alargado",
+      keyStep: "D'",
+      nextNodeId: "rumex_e",
+    },
+  },
+  rumex_e: {
+    id: "rumex_e",
+    milestone: "Rumex",
+    manualPage: 178,
+    descripcion: "Rumex - E: rizomas y altura de tallos",
+    opcionA: {
+      label: "Hierbas perennes, de 0,5-1 m de alto, sin rizomas; hojas ovadas u oblongas, agudas, ligeramente crenuladas",
+      keyStep: "E",
+      especieId: "rumex_argentinus",
+    },
+    opcionA_prima: {
+      label: "Hierbas rizomatosas, con tallos aéreos de 10-20 cm; hojas coriáceas, espatuladas, obtusas, crenuladas",
+      keyStep: "E'",
+      especieId: "rumex_cuneifolius",
+    },
+  },
+  rumex_f: {
+    id: "rumex_f",
+    milestone: "Rumex",
+    manualPage: 178,
+    descripcion: "Rumex - F: duración de la planta",
+    opcionA: {
+      label: "Plantas perennes",
+      keyStep: "F",
+      nextNodeId: "rumex_g",
+    },
+    opcionA_prima: {
+      label: "Plantas anuales o bienales",
+      keyStep: "F'",
+      nextNodeId: "rumex_h",
+    },
+  },
+  rumex_g: {
+    id: "rumex_g",
+    milestone: "Rumex",
+    manualPage: 178,
+    descripcion: "Rumex - G: glomérulos axilares o panoja densa",
+    opcionA: {
+      label: "Flores en glomérulos axilares; plantas divaricado-ramosas, de 30-50 cm; hojas inferiores oblongo-panduriformes",
+      keyStep: "G",
+      especieId: "rumex_pulcher",
+    },
+    opcionA_prima: {
+      label: "Flores en glomérulos áfilos formando una panoja densa; tallos erectos de cerca de 1 m; hojas oblongas, agudas o semiobtusas",
+      keyStep: "G'",
+      especieId: "rumex_obtusifolius",
+    },
+  },
+  rumex_h: {
+    id: "rumex_h",
+    milestone: "Rumex",
+    manualPage: 178,
+    descripcion: "Rumex - H: tamaño de valvas y tipo de callo",
+    opcionA: {
+      label: "Valvas grandes, de 4-5 mm por 3 mm, con callo rugoso; tallos erectos de 20-70 cm; hojas obovadas, obtusas",
+      keyStep: "H",
+      especieId: "rumex_obovatus",
+    },
+    opcionA_prima: {
+      label: "Valvas menores, de unos 3 mm por 2 mm, con callo liso; tallos erectos de hasta 70 cm; hojas obovadas o panduriformes, algo crespas",
+      keyStep: "H'",
+      especieId: "rumex_paraguayensis",
     },
   },
   dicot_group_b_g: {
@@ -2854,7 +3094,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Hojas con ócrea",
       keyStep: "b",
-      especieId: "polygonaceae",
+      nextNodeId: "polygonaceae_a",
     },
     opcionA_prima: {
       label: "Hojas sin ócrea",

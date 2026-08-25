@@ -35,9 +35,10 @@ Ultima familia cargada, validada y subida:
 
 ## Proxima familia consecutiva
 
-- `43. Polygonaceae`, empieza en pagina 177 del manual.
-- En el PDF empieza alrededor de `PDF_PAGE=184`.
-- Conviene partirla en tandas si el bloque de `Rumex` o `Polygonum` es largo.
+- `43. Polygonaceae`, en progreso desde pagina 177 del manual.
+- Primera tanda cargada: clave principal + `Emex` + `Rumex`.
+- Falta completar: `Polygonum` y `Muehlenbeckia`.
+- `Polygonum` empieza en pagina 180 del manual (`PDF_PAGE=187`).
 
 ## Regla de trabajo
 
