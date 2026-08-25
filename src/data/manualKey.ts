@@ -1513,6 +1513,102 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas obovado-espatuladas, cortamente acuminadas en el ápice; flores en cimas muy laxas; pétalos blancos, de doble longitud que los sépalos; cápsula cilíndrica dehiscente por dientes apicales.",
     "Sur de Brasil, Paraguay, Uruguay y nordeste de la Argentina hasta Buenos Aires: Delta y ribera platense."
   ),
+  cardionema_ramosissimum: species(
+    "cardionema_ramosissimum",
+    "Cardionema ramosissimum",
+    "51. Caryophyllaceae",
+    "Hierba perenne, con tallos rastreros, difusos y pubescentes.",
+    "Hojas opuestas, densas, subuladas, con estípulas escariosas y fascículos axilares, de 5-15 mm; flores en dicasios amontonados en glomérulos axilares; cáliz con 3 sépalos terminados en larga espina y 2 solo mucronados; pétalos muy cortos.",
+    "América cálida. Rara en la Isla Maciel."
+  ),
+  paronychia_brasiliana: species(
+    "paronychia_brasiliana",
+    "Paronychia brasiliana",
+    "51. Caryophyllaceae",
+    "Hierba anual o perenne, difusa, con tallos rastreros, pubescentes o casi glabros, de 10-25 cm.",
+    "Hojas opuestas, lanceoladas, mucronadas y pilosas, de 5-8 mm; estípulas lanceoladas, acuminadas; flores diminutas en glomérulos axilares, rodeadas por brácteas hialinas; sépalos largamente mucronados; estambres 5; estaminodios 5.",
+    "América austral. Se halla en suelos arenosos y en la estepa clímax."
+  ),
+  spergularia_platensis: species(
+    "spergularia_platensis",
+    "Spergularia platensis",
+    "51. Caryophyllaceae",
+    "Hierba anual, erecta o ascendente, ramosa y glabra, de 5-40 cm de alto.",
+    "Hojas lineales de 1-4 cm; cimas plurifloras; sépalos muy cortos, de 0,8-1,5 mm; semillas sin alas.",
+    "Argentina; introducida en Chile y Estados Unidos. Común en suelos húmedos."
+  ),
+  spergularia_marina: species(
+    "spergularia_marina",
+    "Spergularia marina",
+    "51. Caryophyllaceae",
+    "Hierba anual, glabra o glanduloso-pubescente, tendida o ascendente.",
+    "Hojas lineales de 0,5-4 cm; flores en cimas laxas; sépalos de más de 2,2 mm, glabros o glandulosos; pétalos blancos o rosados; estambres 2-5; semillas con alas o sin ellas.",
+    "Suelos salinos de toda América."
+  ),
+  spergularia_levis: species(
+    "spergularia_levis",
+    "Spergularia levis",
+    "51. Caryophyllaceae",
+    "Hierba perenne, erecta y glabra, con tallos de 20-40 cm.",
+    "Hojas lineales de 2-8 cm; cimas paucifloras; sépalos glabros de 3-7 mm; estambres 6-10; semillas con ala recortada.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina. Común en suelos húmedos y fértiles."
+  ),
+  spergularia_bocconi: species(
+    "spergularia_bocconi",
+    "Spergularia bocconi",
+    "51. Caryophyllaceae",
+    "Hierba anual, difusa, glabra o glanduloso-pubescente.",
+    "Hojas lineales de 1-4,5 cm; cáliz glanduloso-pubescente de 2,5-5,5 mm; pétalos blancos o rosados; semillas pardo claro, esculpidas o rugosas, sin alas, de 0,4-0,6 mm.",
+    "Originaria del Viejo Mundo y adventicia en América."
+  ),
+  spergularia_ramosa: species(
+    "spergularia_ramosa",
+    "Spergularia ramosa",
+    "51. Caryophyllaceae",
+    "Hierba perenne, ascendente o rastrera, glanduloso-pubescente o glabra.",
+    "Hojas lineales de 1-4,5 mm; sépalos glanduloso-pubescentes de 6-10 mm; pétalos blancos, cortos; semillas pardo claro, lisas o papilosas, con ala escariosa casi entera de 0,3-0,7 mm.",
+    "América austral. En campos húmedos algo salados."
+  ),
+  spergularia_villosa: species(
+    "spergularia_villosa",
+    "Spergularia villosa",
+    "51. Caryophyllaceae",
+    "Hierba perenne, con tallos difusos, tendidos o ascendentes, glanduloso-pubescentes.",
+    "Hojas lineales de 1-4 cm; cimas laxas; sépalos glanduloso-pubescentes de 3-5 mm; pétalos blancos; semillas de 0,4-0,6 mm, casi negras, con alas o sin ellas.",
+    "América del Sur; introducida en Estados Unidos. Frecuente en suelos húmedos y salinos. Primavera."
+  ),
+  spergularia_media: species(
+    "spergularia_media",
+    "Spergularia media",
+    "51. Caryophyllaceae",
+    "Hierba anual o perenne, con tallos tendidos o ascendentes, glabros o ligeramente pubescentes.",
+    "Hojas lineales de 1-5 cm; cimas laxas; sépalos glanduloso-pubescentes de 3-6 mm; pétalos blancos; semillas pardo oscuro de 0,7-1,1 mm, con alas o sin ellas.",
+    "Europa; adventicia en América. Común en campos algo salados."
+  ),
+  spergula_arvensis: species(
+    "spergula_arvensis",
+    "Spergula arvensis",
+    "51. Caryophyllaceae",
+    "Hierba anual, ramosa, con tallos glabros o laxamente pubescentes, de 15-50 cm de alto.",
+    "Hojas subuladas, estrechamente lineales, fasciculadas, con estípulas membranosas; flores blancas en cimas terminales laxas; estilos 5; cápsulas ovoideas; semillas papilosas.",
+    "Europa; adventicia en América."
+  ),
+  polycarpon_suffruticosum: species(
+    "polycarpon_suffruticosum",
+    "Polycarpon suffruticosum",
+    "51. Caryophyllaceae",
+    "Hierba perenne, difusa, de 20-30 cm de alto.",
+    "Hojas lanceoladas, enteras, planas, en falsos verticilos de 4, de 6-20 mm; flores pequeñas en cimas terminales; cáliz de 2 mm; estambres 3; estilos soldados hasta cerca del ápice.",
+    "Centro de la Argentina. Citada para Pergamino."
+  ),
+  polycarpon_tetraphyllum: species(
+    "polycarpon_tetraphyllum",
+    "Polycarpon tetraphyllum",
+    "51. Caryophyllaceae",
+    "Hierba anual, rastrera, glabra y ramosa.",
+    "Hojas elípticas, planas, de unos 5 mm; cimas terminales densas; cáliz de 2 mm; pétalos pequeños, enteros o emarginados; cápsula trivalva.",
+    "Europa; adventicia en América. Común en suelos modificados."
+  ),
   frankeniaceae: family(
     "frankeniaceae",
     "85. Frankeniaceae",
@@ -4891,9 +4987,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "caryophyllaceae_g",
     },
     opcionA_prima: {
-      label: "Hojas con estípulas membranosas; Cardionema, Paronychia, Spergularia, Spergula y Polycarpon quedan para próximas tandas",
+      label: "Hojas con estípulas membranosas",
       keyStep: "F'",
-      especieId: "caryophyllaceae",
+      nextNodeId: "caryophyllaceae_j",
     },
   },
   caryophyllaceae_g: {
@@ -4990,6 +5086,182 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Cimas muy laxas; pétalos de doble longitud que los sépalos; anual, ascendente, híspido-glanduloso; hojas obovado-espatuladas, cortamente acuminadas; corola blanca",
       keyStep: "B'",
       especieId: "cerastium_rivulare",
+    },
+  },
+  caryophyllaceae_j: {
+    id: "caryophyllaceae_j",
+    milestone: "Caryophyllaceae",
+    manualPage: 203,
+    descripcion: "Caryophyllaceae - J: ápice de los sépalos y tipo de fruto",
+    opcionA: {
+      label: "Sépalos mucronados o espinosos en el ápice; fruto utrículo uniseminado",
+      keyStep: "J",
+      nextNodeId: "caryophyllaceae_k",
+    },
+    opcionA_prima: {
+      label: "Sépalos no espinosos en el ápice; fruto cápsula pluriseminada",
+      keyStep: "J'",
+      nextNodeId: "caryophyllaceae_l",
+    },
+  },
+  caryophyllaceae_k: {
+    id: "caryophyllaceae_k",
+    milestone: "Caryophyllaceae",
+    manualPage: 203,
+    descripcion: "Caryophyllaceae - K: espina de los sépalos y pétalos",
+    opcionA: {
+      label: "Sépalos terminados en larga espina; pétalos presentes, cortos",
+      keyStep: "K",
+      especieId: "cardionema_ramosissimum",
+    },
+    opcionA_prima: {
+      label: "Sépalos mucronados; pétalos ausentes o setáceos",
+      keyStep: "K'",
+      especieId: "paronychia_brasiliana",
+    },
+  },
+  caryophyllaceae_l: {
+    id: "caryophyllaceae_l",
+    milestone: "Caryophyllaceae",
+    manualPage: 203,
+    descripcion: "Caryophyllaceae - L: unión de los estilos",
+    opcionA: {
+      label: "Estilos libres desde su base",
+      keyStep: "L",
+      nextNodeId: "caryophyllaceae_m",
+    },
+    opcionA_prima: {
+      label: "Estilos soldados hasta cerca del ápice",
+      keyStep: "L'",
+      nextNodeId: "polycarpon_a",
+    },
+  },
+  caryophyllaceae_m: {
+    id: "caryophyllaceae_m",
+    milestone: "Caryophyllaceae",
+    manualPage: 203,
+    descripcion: "Caryophyllaceae - M: número de estilos",
+    opcionA: {
+      label: "Estilos 3",
+      keyStep: "M",
+      nextNodeId: "spergularia_a",
+    },
+    opcionA_prima: {
+      label: "Estilos 5",
+      keyStep: "M'",
+      especieId: "spergula_arvensis",
+    },
+  },
+  spergularia_a: {
+    id: "spergularia_a",
+    milestone: "Spergularia",
+    manualPage: 208,
+    descripcion: "Spergularia - A: largo de sépalos y alas de semillas",
+    opcionA: {
+      label: "Sépalos muy cortos, de 0,8-1,5 mm; semillas sin alas; anual, erecta o ascendente, ramosa, glabra",
+      keyStep: "A",
+      especieId: "spergularia_platensis",
+    },
+    opcionA_prima: {
+      label: "Sépalos de más de 2,2 mm de longitud",
+      keyStep: "A'",
+      nextNodeId: "spergularia_b",
+    },
+  },
+  spergularia_b: {
+    id: "spergularia_b",
+    milestone: "Spergularia",
+    manualPage: 208,
+    descripcion: "Spergularia - B: número de estambres",
+    opcionA: {
+      label: "Estambres 2-5; anual, glabra o glanduloso-pubescente, tendida o ascendente; flores en cimas laxas; sépalos glabros o glandulosos; pétalos blancos o rosados; semillas con alas o sin ellas",
+      keyStep: "B",
+      especieId: "spergularia_marina",
+    },
+    opcionA_prima: {
+      label: "Estambres 6-10",
+      keyStep: "B'",
+      nextNodeId: "spergularia_c",
+    },
+  },
+  spergularia_c: {
+    id: "spergularia_c",
+    milestone: "Spergularia",
+    manualPage: 208,
+    descripcion: "Spergularia - C: pubescencia de los sépalos",
+    opcionA: {
+      label: "Sépalos glabros; hierba perenne, erecta, glabra; cimas paucifloras; sépalos de 3-7 mm; semillas con ala recortada",
+      keyStep: "C",
+      especieId: "spergularia_levis",
+    },
+    opcionA_prima: {
+      label: "Sépalos glanduloso-pubescentes; plantas tendidas o ascendentes",
+      keyStep: "C'",
+      nextNodeId: "spergularia_d",
+    },
+  },
+  spergularia_d: {
+    id: "spergularia_d",
+    milestone: "Spergularia",
+    manualPage: 208,
+    descripcion: "Spergularia - D: color de las semillas",
+    opcionA: {
+      label: "Semillas de color pardo claro",
+      keyStep: "D",
+      nextNodeId: "spergularia_e",
+    },
+    opcionA_prima: {
+      label: "Semillas de color pardo oscuro",
+      keyStep: "D'",
+      nextNodeId: "spergularia_f",
+    },
+  },
+  spergularia_e: {
+    id: "spergularia_e",
+    milestone: "Spergularia",
+    manualPage: 208,
+    descripcion: "Spergularia - E: escultura y ala de semillas pardas claras",
+    opcionA: {
+      label: "Semillas esculpidas o rugosas, sin alas, de 0,4-0,6 mm; hierba anual, difusa, glabra o glanduloso-pubescente; cáliz glanduloso-pubescente; pétalos blancos o rosados",
+      keyStep: "E",
+      especieId: "spergularia_bocconi",
+    },
+    opcionA_prima: {
+      label: "Semillas no esculpidas, lisas o papilosas, con ala escariosa casi entera; hierba perenne, ascendente o rastrera, glanduloso-pubescente o glabra; pétalos blancos, cortos",
+      keyStep: "E'",
+      especieId: "spergularia_ramosa",
+    },
+  },
+  spergularia_f: {
+    id: "spergularia_f",
+    milestone: "Spergularia",
+    manualPage: 208,
+    descripcion: "Spergularia - F: tamaño de semillas pardas oscuras",
+    opcionA: {
+      label: "Semillas de 0,4-0,6 mm, casi negras, con alas o sin ellas; hierba perenne con tallos difusos, tendidos o ascendentes, glanduloso-pubescentes; pétalos blancos",
+      keyStep: "F",
+      especieId: "spergularia_villosa",
+    },
+    opcionA_prima: {
+      label: "Semillas de 0,7-1,1 mm, pardo oscuro, con alas o sin ellas; hierba anual o perenne, con tallos tendidos o ascendentes, glabros o ligeramente pubescentes; pétalos blancos",
+      keyStep: "F'",
+      especieId: "spergularia_media",
+    },
+  },
+  polycarpon_a: {
+    id: "polycarpon_a",
+    milestone: "Polycarpon",
+    manualPage: 209,
+    descripcion: "Polycarpon - A: ciclo de vida y hojas",
+    opcionA: {
+      label: "Hierbas perennes; hojas lanceoladas, enteras; flores en cimas terminales; cáliz de 2 mm; estambres 3",
+      keyStep: "A",
+      especieId: "polycarpon_suffruticosum",
+    },
+    opcionA_prima: {
+      label: "Hierbas anuales, rastreras, glabras; hojas elípticas; cimas terminales densas; cáliz de 2 mm",
+      keyStep: "A'",
+      especieId: "polycarpon_tetraphyllum",
     },
   },
   dicot_group_c_q_lower: {

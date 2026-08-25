@@ -30,13 +30,13 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `51. Caryophyllaceae`, en progreso desde pagina 202 del manual.
-- Tandas cargadas: clave familiar parcial, `Silene`, `Saponaria`, `Vaccaria`, `Agrostemma`, `Melandryum`, `Arenaria`, `Sagina`, `Stellaria` y `Cerastium`.
-- Ultimo commit subido antes de esta tanda: `5aa3d8a Add tubular Caryophyllaceae keys`.
+- `51. Caryophyllaceae`, pagina 202-210 del manual.
+- Tandas cargadas: clave familiar completa, `Silene`, `Saponaria`, `Vaccaria`, `Agrostemma`, `Melandryum`, `Arenaria`, `Sagina`, `Stellaria`, `Cerastium`, `Cardionema`, `Paronychia`, `Spergularia`, `Spergula` y `Polycarpon`.
+- Ultimo commit subido antes de esta tanda: `cc27449 Add free-sepal Caryophyllaceae keys`.
 
 ## Proxima familia consecutiva
 
-- `51. Caryophyllaceae`, continuar desde `Cardionema`, pagina 207 del manual (`PDF_PAGE=214`).
+- `52. Nymphaeaceae`, desde pagina 210 del manual (`PDF_PAGE=217`).
 
 ## Regla de trabajo
 
