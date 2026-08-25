@@ -891,6 +891,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo D.",
     "Plantas parásitas, con flores grandes y vivamente coloreadas."
   ),
+  psittacanthus_cuneifolius: species(
+    "psittacanthus_cuneifolius",
+    "Psittacanthus cuneifolius",
+    "41. Loranthaceae",
+    "Arbusto hemiparásito, con tallos leñosos.",
+    "Hojas alternas, crasas, lineal-espatuladas y enteras; flores grandes con perigonio rojo de unos 35-45 mm; bayas globosas u ovoideas.",
+    "América del Sur; en los alrededores de Buenos Aires se halla en Campana y Otamendi, parásita sobre talas y chañares. N. v.: liga, liguilla."
+  ),
+  psittacanthus_cuneifolius_flava: species(
+    "psittacanthus_cuneifolius_flava",
+    "Psittacanthus cuneifolius var. flava",
+    "41. Loranthaceae",
+    "Variedad de Psittacanthus cuneifolius con flores amarillas.",
+    "Arbusto hemiparásito; hojas crasas, lineal-espatuladas; flores de color amarillo intenso.",
+    "NE de la Argentina y Uruguay; hallada en la Isla Martín García sobre Schinus y Acacia."
+  ),
   combretaceae: family(
     "combretaceae",
     "95. Combretaceae",
@@ -3242,12 +3258,28 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Sí",
       keyStep: "F",
-      especieId: "loranthaceae",
+      nextNodeId: "loranthaceae_a",
     },
     opcionA_prima: {
       label: "No; flores pequeñas verdosas",
       keyStep: "F'",
       especieId: "combretaceae",
+    },
+  },
+  loranthaceae_a: {
+    id: "loranthaceae_a",
+    milestone: "Loranthaceae",
+    manualPage: 174,
+    descripcion: "Psittacanthus cuneifolius - A: color del perigonio",
+    opcionA: {
+      label: "Flores con perigonio rojo de unos 35-45 mm",
+      keyStep: "1",
+      especieId: "psittacanthus_cuneifolius",
+    },
+    opcionA_prima: {
+      label: "Flores de color amarillo intenso",
+      keyStep: "1a",
+      especieId: "psittacanthus_cuneifolius_flava",
     },
   },
   dicot_group_d_g: {
