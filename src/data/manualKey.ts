@@ -855,6 +855,94 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas pubescentes, ciliadas, de 1-5 cm; flores pequeñas sin brácteas; perigonio coriáceo en la fructificación, con segmentos alados.",
     "Asia y Europa; adventicia en América. Común en el oeste de Buenos Aires y rara cerca de la Capital Federal. N. v.: morenita, alfalfa criolla."
   ),
+  beta_vulgaris_perennis: species(
+    "beta_vulgaris_perennis",
+    "Beta vulgaris var. perennis",
+    "44. Chenopodiaceae",
+    "Hierba perenne de 10-60 cm de alto.",
+    "Hojas largamente pecioladas, ovado-oblongas, obtusas, sinuadas y rojizas; flores con bráctea y dos bractéolas; perigonio lignificado a la madurez.",
+    "Europa y Asia; adventicia en América. Común en campos bajos salinos. N. v.: acelga."
+  ),
+  chenopodium_multifidum: species(
+    "chenopodium_multifidum",
+    "Chenopodium multifidum",
+    "44. Chenopodiaceae",
+    "Hierba perenne aromática, glanduloso-pubescente, con tallos rastreros.",
+    "Hojas pinatisectas, de 3-15 mm, con segmentos lineales; flores verdosas de 1-1,5 mm en glomérulos axilares; semillas verticales; perigonio gamotépalo.",
+    "Originaria de la región platense y adventicia en casi todo el mundo. Común en la estepa clímax. N. v.: paico."
+  ),
+  chenopodium_ambrosioides: species(
+    "chenopodium_ambrosioides",
+    "Chenopodium ambrosioides",
+    "44. Chenopodiaceae",
+    "Hierba anual o bienal aromática, glanduloso-pubescente, con tallos erectos de 1-1,5 m.",
+    "Hojas ovado-lanceoladas, dentadas, de 6-9 cm; flores verdosas de 0,5-1 mm en panojas de espigas; perigonio dividido casi hasta la base; semillas generalmente horizontales.",
+    "América; adventicia en regiones cálidas y templadas del globo. Frecuente cerca de Buenos Aires. N. v.: paico macho."
+  ),
+  chenopodium_retusum: species(
+    "chenopodium_retusum",
+    "Chenopodium retusum",
+    "44. Chenopodiaceae",
+    "Hierba bienal aromática, con tallos tendidos o ascendentes.",
+    "Hojas espatuladas, obtusas, irregularmente dentadas, de 1-2 cm; flores de apenas 1 mm; tépalos 5, obtusos.",
+    "Uruguay y Argentina, en suelos arenosos. Hallada en la Isla Martín García."
+  ),
+  chenopodium_macrospermum_halophilum: species(
+    "chenopodium_macrospermum_halophilum",
+    "Chenopodium macrospermum subsp. halophilum",
+    "44. Chenopodiaceae",
+    "Hierba anual, pruinosa, de 30-50 cm.",
+    "Hojas triangulares, carnosas y dentadas; flores 3-4-meras en panojas densas de glomérulos; semillas verticales y horizontales en el mismo individuo.",
+    "América del Sur, en suelos salinos."
+  ),
+  chenopodium_murale: species(
+    "chenopodium_murale",
+    "Chenopodium murale",
+    "44. Chenopodiaceae",
+    "Hierba anual de 20-50 cm.",
+    "Hojas uniformemente aserradas, ovadas, adultas verdes, glabras o apenas pruinosas; flores 5-meras en panojas contraídas de glomérulos más cortos que las hojas; semillas horizontales.",
+    "Europa; adventicia en América. Común en suelos modificados."
+  ),
+  chenopodium_pratericola: species(
+    "chenopodium_pratericola",
+    "Chenopodium pratericola",
+    "44. Chenopodiaceae",
+    "Hierba anual, erecta, de 30-80 cm.",
+    "Hojas lineal-lanceoladas, las superiores enteras y las inferiores a veces con un lóbulo a cada lado cerca de la base, de 15-35 mm por 2-8 mm; flores muy pruinosas en panojas de glomérulos.",
+    "América. Rara en la región."
+  ),
+  chenopodium_zobelii: species(
+    "chenopodium_zobelii",
+    "Chenopodium zobelii",
+    "44. Chenopodiaceae",
+    "Hierba anual, glauca, de cerca de 1 m de alto.",
+    "Hojas rómbico-elípticas, irregularmente dentadas; sépalos planos; flores en panojas de glomérulos.",
+    "Argentina, en suelos modificados."
+  ),
+  chenopodium_album: species(
+    "chenopodium_album",
+    "Chenopodium album",
+    "44. Chenopodiaceae",
+    "Hierba anual erecta.",
+    "Hojas ovado-lanceoladas u ovadas, agudas, irregularmente dentadas o enteras, laxamente pruinosas, de hasta 6 cm por 3 cm; sépalos carenados; flores en espigas de glomérulos.",
+    "Europa; adventicia en casi todo el mundo. N. v.: quinoa."
+  ),
+  chenopodium_hircinum: species(
+    "chenopodium_hircinum",
+    "Chenopodium hircinum",
+    "44. Chenopodiaceae",
+    "Hierba anual erecta, de cerca de 1 m de alto.",
+    "Hojas hastado-trilobadas, obtusas, densamente pruinosas, de 2-4 cm; sépalos carenados; flores en espigas de glomérulos.",
+    "América del Sur; introducida en África y Europa. Común en suelos modificados. N. v.: quinoa."
+  ),
+  holmbergia_tweedii: species(
+    "holmbergia_tweedii",
+    "Holmbergia tweedii",
+    "44. Chenopodiaceae",
+    "Arbusto apoyante o decumbente.",
+    "Hojas alternas u opuestas, enteras, ovado-sagitadas; flores masculinas en espigas y femeninas axilares; fruto baya elipsoidal roja.",
+    "Argentina, desde Salta hasta Buenos Aires."
+  ),
   ranunculaceae: family(
     "ranunculaceae",
     "54. Ranunculaceae",
@@ -2921,9 +3009,9 @@ export const manualKeyData: Record<string, CladoNode> = {
     manualPage: 182,
     descripcion: "Chenopodiaceae - D: hojas y perigonio maduro",
     opcionA: {
-      label: "Hojas anchas, pecioladas; perigonio lignificado a la madurez; Beta queda para la próxima tanda",
+      label: "Hojas anchas, pecioladas; perigonio lignificado a la madurez",
       keyStep: "D",
-      especieId: "chenopodiaceae",
+      especieId: "beta_vulgaris_perennis",
     },
     opcionA_prima: {
       label: "Hojas lineales, carnosas, sésiles; perigonio no lignificado",
@@ -2942,9 +3030,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "kochia_scoparia",
     },
     opcionA_prima: {
-      label: "Hojas con pelos glandulosos o vesiculosos; perigonio sin alas a la madurez; Chenopodium queda para la próxima tanda",
+      label: "Hojas con pelos glandulosos o vesiculosos; perigonio sin alas a la madurez",
       keyStep: "E'",
-      especieId: "chenopodiaceae",
+      nextNodeId: "chenopodium_a",
     },
   },
   chenopodiaceae_f: {
@@ -2958,9 +3046,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "atriplex_a",
     },
     opcionA_prima: {
-      label: "Flores sin brácteas; fruto baya roja; Holmbergia queda para la próxima tanda",
+      label: "Flores sin brácteas; fruto baya roja",
       keyStep: "F'",
-      especieId: "chenopodiaceae",
+      especieId: "holmbergia_tweedii",
     },
   },
   atriplex_a: {
@@ -2993,6 +3081,134 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hojas superiores lanceoladas, las inferiores ovadas; brácteas del fruto rómbicas, generalmente tuberculadas; espigas laxas",
       keyStep: "B'",
       especieId: "atriplex_patula",
+    },
+  },
+  chenopodium_a: {
+    id: "chenopodium_a",
+    milestone: "Chenopodium",
+    manualPage: 185,
+    descripcion: "Chenopodium - A: pubescencia glandulosa y aroma",
+    opcionA: {
+      label: "Plantas glanduloso-pubescentes, aromáticas",
+      keyStep: "A",
+      nextNodeId: "chenopodium_b",
+    },
+    opcionA_prima: {
+      label: "Plantas glabras o pruinosas, fétidas",
+      keyStep: "A'",
+      nextNodeId: "chenopodium_d",
+    },
+  },
+  chenopodium_b: {
+    id: "chenopodium_b",
+    milestone: "Chenopodium",
+    manualPage: 185,
+    descripcion: "Chenopodium - B: orientación de semillas y hojas",
+    opcionA: {
+      label: "Semillas verticales; hierbas perennes con tallos rastreros; hojas pinatisectas, con segmentos lineales; flores en glomérulos axilares; perigonio gamotépalo",
+      keyStep: "B",
+      especieId: "chenopodium_multifidum",
+    },
+    opcionA_prima: {
+      label: "Semillas generalmente horizontales; hojas dentadas; flores en panojas de espigas",
+      keyStep: "B'",
+      nextNodeId: "chenopodium_c",
+    },
+  },
+  chenopodium_c: {
+    id: "chenopodium_c",
+    milestone: "Chenopodium",
+    manualPage: 185,
+    descripcion: "Chenopodium - C: forma de las hojas aromáticas",
+    opcionA: {
+      label: "Hojas ovado-lanceoladas; hierba anual o bienal con tallos erectos de 1-1,5 m; perigonio dividido casi hasta la base",
+      keyStep: "C",
+      especieId: "chenopodium_ambrosioides",
+    },
+    opcionA_prima: {
+      label: "Hojas espatuladas, obtusas; hierba bienal con tallos tendidos o ascendentes; tépalos 5, obtusos",
+      keyStep: "C'",
+      especieId: "chenopodium_retusum",
+    },
+  },
+  chenopodium_d: {
+    id: "chenopodium_d",
+    milestone: "Chenopodium",
+    manualPage: 185,
+    descripcion: "Chenopodium - D: número de piezas florales y semillas",
+    opcionA: {
+      label: "Flores 3-4-meras; hierba anual pruinosa de 30-50 cm; hojas triangulares, carnosas y dentadas; semillas verticales y horizontales en el mismo individuo",
+      keyStep: "D",
+      especieId: "chenopodium_macrospermum_halophilum",
+    },
+    opcionA_prima: {
+      label: "Flores 5-meras; semillas todas horizontales",
+      keyStep: "D'",
+      nextNodeId: "chenopodium_e",
+    },
+  },
+  chenopodium_e: {
+    id: "chenopodium_e",
+    milestone: "Chenopodium",
+    manualPage: 185,
+    descripcion: "Chenopodium - E: margen y color de hojas adultas",
+    opcionA: {
+      label: "Hojas uniformemente aserradas, ovadas, las adultas verdes, glabras o apenas pruinosas; anual de 20-50 cm; flores en panojas contraídas",
+      keyStep: "E",
+      especieId: "chenopodium_murale",
+    },
+    opcionA_prima: {
+      label: "Hojas irregularmente recortadas o lobadas, o enteras; adultas glaucas o blanquecinas, farinoso-pruinosas al menos en la cara inferior",
+      keyStep: "E'",
+      nextNodeId: "chenopodium_f",
+    },
+  },
+  chenopodium_f: {
+    id: "chenopodium_f",
+    milestone: "Chenopodium",
+    manualPage: 185,
+    descripcion: "Chenopodium - F: hojas lineales u ovado-rómbicas/hastadas",
+    opcionA: {
+      label: "Hojas lineal-lanceoladas, las superiores enteras y las inferiores a veces con un lóbulo a cada lado cerca de la base; anual erecta de 30-80 cm",
+      keyStep: "F",
+      especieId: "chenopodium_pratericola",
+    },
+    opcionA_prima: {
+      label: "Hojas ovado-rómbicas, ovado-lanceoladas o hastadas, generalmente dentadas o lobadas",
+      keyStep: "F'",
+      nextNodeId: "chenopodium_g",
+    },
+  },
+  chenopodium_g: {
+    id: "chenopodium_g",
+    milestone: "Chenopodium",
+    manualPage: 185,
+    descripcion: "Chenopodium - G: sépalos planos o carenados",
+    opcionA: {
+      label: "Sépalos planos; anual de 1 m, glauca, con hojas rómbico-elípticas irregularmente dentadas; flores en panojas de glomérulos",
+      keyStep: "G",
+      especieId: "chenopodium_zobelii",
+    },
+    opcionA_prima: {
+      label: "Sépalos carenados",
+      keyStep: "G'",
+      nextNodeId: "chenopodium_h",
+    },
+  },
+  chenopodium_h: {
+    id: "chenopodium_h",
+    milestone: "Chenopodium",
+    manualPage: 186,
+    descripcion: "Chenopodium - H: forma y pruina de las hojas",
+    opcionA: {
+      label: "Hojas ovado-lanceoladas u ovadas, agudas, irregularmente dentadas o enteras, laxamente pruinosas; anual erecta; flores en espigas de glomérulos",
+      keyStep: "H",
+      especieId: "chenopodium_album",
+    },
+    opcionA_prima: {
+      label: "Hojas hastado-trilobadas, obtusas, densamente pruinosas; anual erecta de 1 m; flores en espigas de glomérulos",
+      keyStep: "H'",
+      especieId: "chenopodium_hircinum",
     },
   },
   urticaceae_a: {

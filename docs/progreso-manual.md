@@ -35,9 +35,10 @@ Ultima familia cargada, validada y subida:
 
 ## Proxima familia consecutiva
 
-- `44. Chenopodiaceae`, en progreso desde pagina 182 del manual (`PDF_PAGE=189`).
-- Primera tanda cargada localmente: clave principal parcial + `Salicornia`, `Atriplex`, `Suaeda` y `Kochia`.
-- Falta completar: `Beta`, `Chenopodium` y `Holmbergia`.
+- `44. Chenopodiaceae`, completa localmente en dos tandas:
+  - Tanda 1: `Salicornia`, `Atriplex`, `Suaeda` y `Kochia`.
+  - Tanda 2: `Beta`, `Chenopodium` y `Holmbergia`.
+- Proxima familia consecutiva: `45. Amaranthaceae`, pagina 187 del manual (`PDF_PAGE=194`).
 
 ## Regla de trabajo
 
