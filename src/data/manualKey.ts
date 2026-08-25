@@ -1155,6 +1155,46 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas ovadas, densamente albo-tomentosas, de 2-5 cm por 1,5-3 cm; capítulos solitarios de 10-15 mm de diámetro, sobre pedúnculos largos; flores de 4-6 mm.",
     "Centro y este de la Argentina; Uruguay. Estepa clímax."
   ),
+  alternanthera_philoxeroides: species(
+    "alternanthera_philoxeroides",
+    "Alternanthera philoxeroides",
+    "45. Amaranthaceae",
+    "Hierba palustre perenne, decumbente o ascendente.",
+    "Hojas glabras, oblanceoladas y enteras, de 2-8 cm por 1,5-2,5 cm; flores pentámeras en espigas capituliformes pedunculadas de 1 cm de diámetro o más; pedúnculos de 3-6 cm; seudoestaminodios alargados, iguales o mayores que los filamentos.",
+    "América del Sur. Común en lagunas y pantanos. Nombre vulgar: lagunilla."
+  ),
+  alternanthera_paronychioides: species(
+    "alternanthera_paronychioides",
+    "Alternanthera paronychioides",
+    "45. Amaranthaceae",
+    "Hierba perenne, con tallos tendidos, radicantes y pubescentes en los nudos.",
+    "Hojas espatuladas de 1-4 cm por 0,5-1 cm; flores pentámeras de 3,5-5 mm en espigas cortas axilares de 5-15 mm; brácteas obtusas, no aristadas. El manual cita la var. pilosa, de pubescencia más densa y hojas menores.",
+    "América templado-cálida. Común en la región; la var. pilosa es muy común."
+  ),
+  alternanthera_pungens: species(
+    "alternanthera_pungens",
+    "Alternanthera pungens",
+    "45. Amaranthaceae",
+    "Hierba perenne, con tallos tendidos, radicantes y pubescentes.",
+    "Hojas anchamente espatuladas u orbiculares, obtusas, de 2-5 cm por 2-3,5 cm; flores pentámeras de 6-7 mm en espigas axilares cortas; brácteas agudas, aristadas o subaristadas; seudoestaminodios denticulados.",
+    "América del Sur. Común en suelos modificados. Medicinal. Nombre vulgar: yerba del pollo."
+  ),
+  alternanthera_repens: species(
+    "alternanthera_repens",
+    "Alternanthera repens",
+    "45. Amaranthaceae",
+    "Hierba perenne, con tallos tendidos, radicantes y pubescentes.",
+    "Hojas espatuladas y obtusas, de 2-4 cm por 0,8-1,5 cm; flores pentámeras de 3-5 mm en espigas axilares cortas; brácteas agudas, aristadas o subaristadas; tépalos desiguales.",
+    "Cosmopolita. Rara cerca de Buenos Aires. Nombre vulgar: yerba del pollo."
+  ),
+  alternanthera_reineckii: species(
+    "alternanthera_reineckii",
+    "Alternanthera reineckii",
+    "45. Amaranthaceae",
+    "Hierba perenne, con tallos rastreros radicantes y pubescentes.",
+    "Hojas elípticas u obovadas, velludas, de 1-3 cm por 4-12 mm; flores tetrámeras en espigas capituliformes axilares de 7 mm; tépalos de 1,5 mm.",
+    "Sur de Brasil y nordeste de la Argentina. Delta."
+  ),
   malpighiaceae: family(
     "malpighiaceae",
     "71. Malpighiaceae",
@@ -3895,9 +3935,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "pfaffia_a",
     },
     opcionA_prima: {
-      label: "Con seudoestaminodios entre los estambres; Alternanthera queda para la próxima tanda",
+      label: "Con seudoestaminodios entre los estambres",
       keyStep: "C'",
-      especieId: "amaranthaceae",
+      nextNodeId: "alternanthera_a",
     },
   },
   pfaffia_a: {
@@ -3914,6 +3954,70 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Capítulos solitarios de 10-15 mm de diámetro; hemicriptófita con raíz gruesa; tallos tomentosos ascendentes o erectos; hojas ovadas, densamente albo-tomentosas; flores de 4-6 mm",
       keyStep: "A'",
       especieId: "pfaffia_lanata",
+    },
+  },
+  alternanthera_a: {
+    id: "alternanthera_a",
+    milestone: "Alternanthera",
+    manualPage: 190,
+    descripcion: "Alternanthera - A: posición de las inflorescencias",
+    opcionA: {
+      label: "Inflorescencias pedunculadas; seudoestaminodios alargados, iguales o mayores que los filamentos; hierba palustre, perenne, decumbente o ascendente; hojas glabras, oblanceoladas, enteras; flores pentámeras",
+      keyStep: "A",
+      especieId: "alternanthera_philoxeroides",
+    },
+    opcionA_prima: {
+      label: "Inflorescencias sentadas; seudoestaminodios más cortos que los filamentos",
+      keyStep: "A'",
+      nextNodeId: "alternanthera_b",
+    },
+  },
+  alternanthera_b: {
+    id: "alternanthera_b",
+    milestone: "Alternanthera",
+    manualPage: 192,
+    descripcion: "Alternanthera - B: número de tépalos",
+    opcionA: {
+      label: "Flores con 5 tépalos",
+      keyStep: "B",
+      nextNodeId: "alternanthera_c",
+    },
+    opcionA_prima: {
+      label: "Flores con 4 tépalos; hierba perenne con tallos rastreros radicantes, pubescentes; hojas elípticas u obovadas, velludas; espigas capituliformes axilares de 7 mm",
+      keyStep: "B'",
+      especieId: "alternanthera_reineckii",
+    },
+  },
+  alternanthera_c: {
+    id: "alternanthera_c",
+    milestone: "Alternanthera",
+    manualPage: 192,
+    descripcion: "Alternanthera - C: brácteas",
+    opcionA: {
+      label: "Brácteas obtusas, no aristadas; hierba perenne con tallos tendidos radicantes, pubescentes en los nudos; hojas espatuladas; espigas cortas axilares de 5-15 mm",
+      keyStep: "C",
+      especieId: "alternanthera_paronychioides",
+    },
+    opcionA_prima: {
+      label: "Brácteas agudas, aristadas o subaristadas",
+      keyStep: "C'",
+      nextNodeId: "alternanthera_d",
+    },
+  },
+  alternanthera_d: {
+    id: "alternanthera_d",
+    milestone: "Alternanthera",
+    manualPage: 192,
+    descripcion: "Alternanthera - D: largo de los tépalos",
+    opcionA: {
+      label: "Tépalos de 6-7 mm; hierba perenne con tallos tendidos radicantes, pubescentes; hojas anchamente espatuladas u orbiculares, obtusas; espigas axilares cortas",
+      keyStep: "D",
+      especieId: "alternanthera_pungens",
+    },
+    opcionA_prima: {
+      label: "Tépalos de 3-5 mm; hierba perenne con tallos tendidos radicantes, pubescentes; hojas espatuladas, obtusas; espigas axilares cortas",
+      keyStep: "D'",
+      especieId: "alternanthera_repens",
     },
   },
   amaranthus_a: {
