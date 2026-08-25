@@ -30,15 +30,14 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `43. Polygonaceae`, pagina 177-182 del manual.
-- Commit: `5f81583 Complete Polygonaceae species keys`.
+- `44. Chenopodiaceae`, pagina 182-187 del manual.
+- Commit: `fe978fe Complete Chenopodiaceae species keys`.
 
 ## Proxima familia consecutiva
 
-- `44. Chenopodiaceae`, completa localmente en dos tandas:
-  - Tanda 1: `Salicornia`, `Atriplex`, `Suaeda` y `Kochia`.
-  - Tanda 2: `Beta`, `Chenopodium` y `Holmbergia`.
-- Proxima familia consecutiva: `45. Amaranthaceae`, pagina 187 del manual (`PDF_PAGE=194`).
+- `45. Amaranthaceae`, en progreso desde pagina 187 del manual (`PDF_PAGE=194`).
+- Primera tanda cargada localmente: clave principal parcial + `Amaranthus`.
+- Falta completar: `Pfaffia`, `Alternanthera`, `Gomphrena`, `Iresine` y `Philoxerus`.
 
 ## Regla de trabajo
 

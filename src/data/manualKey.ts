@@ -1075,6 +1075,70 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Flores pequeñas en inflorescencias densas, con tépalos escariosos o membranosos."
   ),
+  amaranthus_hybridus_quitensis: species(
+    "amaranthus_hybridus_quitensis",
+    "Amaranthus hybridus var. quitensis",
+    "45. Amaranthaceae",
+    "Hierba anual, erecta, rojiza, de hasta 2 m de alto.",
+    "Hojas ovadas; inflorescencias en espigas o panojas terminales; flores pentámeras, diclinas monoicas; ovario con 3 ramas estigmáticas; fruto casi globoso, levemente rugoso y dehiscente transversalmente. El manual cita también la var. pergaminensis, con brácteas más cortas que los tépalos.",
+    "América cálida. Común en la región en suelos modificados. N. v.: yuyo colorado."
+  ),
+  amaranthus_albus: species(
+    "amaranthus_albus",
+    "Amaranthus albus",
+    "45. Amaranthaceae",
+    "Hierba anual, erecta, amarillenta, de unos 70 cm de alto.",
+    "Hojas ovado-oblongas, obtusas y mucronadas en el ápice; flores trímeras, diclinas monoicas, en glomérulos axilares; estigma con 3 ramitas; frutos obovados, algo rugosos y dehiscentes transversalmente.",
+    "América del Norte. Rara cerca de Buenos Aires."
+  ),
+  amaranthus_muricatus: species(
+    "amaranthus_muricatus",
+    "Amaranthus muricatus",
+    "45. Amaranthaceae",
+    "Hierba perenne, decumbente.",
+    "Hojas lineal-lanceoladas, cortamente pecioladas; flores diclinas en glomérulos axilares y espigas terminales, con 4-5 tépalos lanceolados o espatulados; fruto semigloboso, rugoso e indehiscente.",
+    "Argentina."
+  ),
+  amaranthus_crispus: species(
+    "amaranthus_crispus",
+    "Amaranthus crispus",
+    "45. Amaranthaceae",
+    "Hierba anual, tendida y velluda.",
+    "Hojas cortamente pecioladas, ovadas o romboideas, con borde ondulado-crenado; flores en glomérulos axilares; tépalos ovado-lanceolados o espatulados; fruto globoso, rugoso e indehiscente.",
+    "Especie de origen desconocido. Rara cerca de Buenos Aires."
+  ),
+  amaranthus_standleyanus: species(
+    "amaranthus_standleyanus",
+    "Amaranthus standleyanus",
+    "45. Amaranthaceae",
+    "Hierba anual, erecta o tendida, glabra.",
+    "Hojas largamente pecioladas, ovadas o lanceoladas, de 4-8 cm por 1,5-2,5 cm, con borde plano y entero; flores en glomérulos axilares o en una espiga terminal corta; fruto casi globoso, rugoso e indehiscente.",
+    "Centro y norte de la Argentina."
+  ),
+  amaranthus_deflexus: species(
+    "amaranthus_deflexus",
+    "Amaranthus deflexus",
+    "45. Amaranthaceae",
+    "Hierba anual, con tallos pilosos tendidos o ascendentes.",
+    "Hojas largamente pecioladas, ovadas, velludas en la cara inferior, de 3,5-7 cm por 0,5-2,5 cm; inflorescencias en espigas terminales; flores con 2 tépalos lineal-lanceolados; fruto piriforme, liso, casi dos veces tan largo como el perigonio.",
+    "América del Sur. Común cerca de Buenos Aires."
+  ),
+  amaranthus_gracilis: species(
+    "amaranthus_gracilis",
+    "Amaranthus gracilis",
+    "45. Amaranthaceae",
+    "Hierba anual, erecta y glabra.",
+    "Hojas ovadas, con el ápice entero, de 5-11 cm por 2-4,5 cm; flores en panojas o espigas terminales y en glomérulos axilares; tépalos 3-4, lineal-espatulados; fruto casi globoso, muy rugoso.",
+    "Maleza cosmopolita común en suelos modificados."
+  ),
+  amaranthus_lividus_ascendens: species(
+    "amaranthus_lividus_ascendens",
+    "Amaranthus lividus var. ascendens",
+    "45. Amaranthaceae",
+    "Hierba anual, tendida o ascendente.",
+    "Hojas obovadas, atenuadas en la base, de 3,5-5 cm por 1-2 cm, con ápice bilobado; flores en espiga corta terminal y glomérulos axilares; tépalos 2-3, lanceolados o espatulados; fruto casi globoso, poco rugoso.",
+    "Maleza originaria probablemente de América."
+  ),
   malpighiaceae: family(
     "malpighiaceae",
     "71. Malpighiaceae",
@@ -3769,7 +3833,151 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Flores pequeñas en inflorescencias densas; plantas no carnosas",
       keyStep: "d'",
+      nextNodeId: "amaranthaceae_a",
+    },
+  },
+  amaranthaceae_a: {
+    id: "amaranthaceae_a",
+    milestone: "Amaranthaceae",
+    manualPage: 187,
+    descripcion: "Amaranthaceae - A: tecas de las anteras y hojas",
+    opcionA: {
+      label: "Anteras con 2 tecas; hojas alternas",
+      keyStep: "A",
+      nextNodeId: "amaranthus_a",
+    },
+    opcionA_prima: {
+      label: "Anteras con una teca; hojas opuestas; Pfaffia, Alternanthera, Gomphrena, Iresine y Philoxerus quedan para la próxima tanda",
+      keyStep: "A'",
       especieId: "amaranthaceae",
+    },
+  },
+  amaranthus_a: {
+    id: "amaranthus_a",
+    milestone: "Amaranthus",
+    manualPage: 188,
+    descripcion: "Amaranthus - A: dehiscencia del fruto",
+    opcionA: {
+      label: "Fruto dehiscente transversalmente",
+      keyStep: "A",
+      nextNodeId: "amaranthus_b",
+    },
+    opcionA_prima: {
+      label: "Fruto indehiscente",
+      keyStep: "A'",
+      nextNodeId: "amaranthus_c",
+    },
+  },
+  amaranthus_b: {
+    id: "amaranthus_b",
+    milestone: "Amaranthus",
+    manualPage: 188,
+    descripcion: "Amaranthus - B: número de piezas florales en frutos dehiscentes",
+    opcionA: {
+      label: "Flores pentámeras; plantas anuales, erectas, rojizas, con hojas ovadas; inflorescencia en espigas o panojas terminales",
+      keyStep: "B",
+      especieId: "amaranthus_hybridus_quitensis",
+    },
+    opcionA_prima: {
+      label: "Flores trímeras; plantas anuales, erectas, amarillentas; hojas ovado-oblongas, obtusas y mucronadas; glomérulos axilares",
+      keyStep: "B'",
+      especieId: "amaranthus_albus",
+    },
+  },
+  amaranthus_c: {
+    id: "amaranthus_c",
+    milestone: "Amaranthus",
+    manualPage: 188,
+    descripcion: "Amaranthus - C: número de piezas florales en frutos indehiscentes",
+    opcionA: {
+      label: "Flores pentámeras",
+      keyStep: "C",
+      nextNodeId: "amaranthus_d",
+    },
+    opcionA_prima: {
+      label: "Flores dímeras o tetrámeras",
+      keyStep: "C'",
+      nextNodeId: "amaranthus_f",
+    },
+  },
+  amaranthus_d: {
+    id: "amaranthus_d",
+    milestone: "Amaranthus",
+    manualPage: 188,
+    descripcion: "Amaranthus - D: forma de hojas en flores pentámeras",
+    opcionA: {
+      label: "Hojas lineal-lanceoladas; hierba perenne, decumbente; flores en glomérulos axilares y espigas terminales; fruto semigloboso, rugoso",
+      keyStep: "D",
+      especieId: "amaranthus_muricatus",
+    },
+    opcionA_prima: {
+      label: "Hojas ovadas u ovado-lanceoladas",
+      keyStep: "D'",
+      nextNodeId: "amaranthus_e",
+    },
+  },
+  amaranthus_e: {
+    id: "amaranthus_e",
+    milestone: "Amaranthus",
+    manualPage: 188,
+    descripcion: "Amaranthus - E: borde de las hojas",
+    opcionA: {
+      label: "Borde de las hojas ondulado-crenado; hierba anual, tendida, velluda; flores en glomérulos axilares",
+      keyStep: "E",
+      especieId: "amaranthus_crispus",
+    },
+    opcionA_prima: {
+      label: "Borde de las hojas plano, entero; hierba anual, erecta o tendida, glabra; flores en glomérulos axilares o espiga terminal corta",
+      keyStep: "E'",
+      especieId: "amaranthus_standleyanus",
+    },
+  },
+  amaranthus_f: {
+    id: "amaranthus_f",
+    milestone: "Amaranthus",
+    manualPage: 188,
+    descripcion: "Amaranthus - F: forma de hojas en flores dímeras o tetrámeras",
+    opcionA: {
+      label: "Hojas lineal-lanceoladas",
+      keyStep: "F",
+      especieId: "amaranthus_muricatus",
+    },
+    opcionA_prima: {
+      label: "Hojas obovadas, ovadas u ovado-lanceoladas",
+      keyStep: "F'",
+      nextNodeId: "amaranthus_g",
+    },
+  },
+  amaranthus_g: {
+    id: "amaranthus_g",
+    milestone: "Amaranthus",
+    manualPage: 188,
+    descripcion: "Amaranthus - G: forma y textura del fruto",
+    opcionA: {
+      label: "Fruto piriforme, liso, casi dos veces tan largo como el perigonio; tallos pilosos tendidos o ascendentes; hojas ovadas velludas en la cara inferior",
+      keyStep: "G",
+      especieId: "amaranthus_deflexus",
+    },
+    opcionA_prima: {
+      label: "Fruto subgloboso, apenas mayor que el perigonio, rugoso",
+      keyStep: "G'",
+      nextNodeId: "amaranthus_h",
+    },
+  },
+  amaranthus_h: {
+    id: "amaranthus_h",
+    milestone: "Amaranthus",
+    manualPage: 188,
+    descripcion: "Amaranthus - H: ápice de las hojas",
+    opcionA: {
+      label: "Hojas con el ápice entero; hierba anual, erecta, glabra; flores en panojas o espigas terminales y glomérulos axilares",
+      keyStep: "H",
+      especieId: "amaranthus_gracilis",
+    },
+    opcionA_prima: {
+      label: "Hojas con el ápice bilobado; hierba anual, tendida o ascendente; flores en espiga corta terminal y glomérulos axilares",
+      keyStep: "H'",
+      especieId: "amaranthus_lividus_ascendens",
     },
   },
   dicot_group_c_e_lower: {
