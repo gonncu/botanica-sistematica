@@ -9,6 +9,8 @@ jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
-      - name: Realizar peticion publica a Supabase
+      - name: Realizar peticion de prueba a Supabase
         run: |
-          curl -i -X GET "${{ secrets.SUPABASE_URL }}"
+          curl -i -X GET "${{ secrets.SUPABASE_URL }}/rest/v1/" \
+          -H "apikey: ${{ secrets.SUPABASE_SECRET_KEY }}" \
+          -H "Authorization: Bearer ${{ secrets.SUPABASE_SECRET_KEY }}"
