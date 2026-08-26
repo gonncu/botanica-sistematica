@@ -1633,6 +1633,54 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas inferiores bipinatisectas; hojas superiores dentadas o pinatisectas, no dilatadas en la base, con segmentos de 1-2 mm; racimos densifloros con pedicelos cortos; estambres 2; silículas anchamente elípticas, de 3-3,5 mm, escotadas, con estilo nulo.",
     "América austral. Común en suelos modificados."
   ),
+  draba_australis: species(
+    "draba_australis",
+    "Draba australis",
+    "59. Cruciferae",
+    "Hierba anual, pigmea, con pubescencia estrellada.",
+    "Hojas enteras en roseta radical; pedúnculos paucifloros; flores blancas; silícuas cortas, gruesas, oblongo-lineales.",
+    "Sur de Buenos Aires y Patagonia. Rara en las cercanías de la Capital Federal."
+  ),
+  malcomia_maritima: species(
+    "malcomia_maritima",
+    "Malcomia maritima",
+    "59. Cruciferae",
+    "Hierba anual con tallos ascendentes y pelos simples o estrellados.",
+    "Hojas obovado-espatuladas, enteras o dentadas; flores laxamente racimosas, blancas o purpúreas; sépalos de 5-10 mm; pétalos rosados o purpúreos; silicuas muy largas, de dehiscencia tardía.",
+    "Europa. Rara en la región: Ensenada."
+  ),
+  erysimum_repandum: species(
+    "erysimum_repandum",
+    "Erysimum repandum",
+    "59. Cruciferae",
+    "Hierba anual, laxamente pubescente, con pelos en T, de 20-30 cm de alto.",
+    "Hojas lanceoladas, sinuado-dentadas; flores amarillas, grandes, cortamente pedunculadas; silicuas largas, tetragonales, rígidas, casi en ángulo recto con el eje de la inflorescencia, de 8-10 cm.",
+    "Europa; adventicia en América. Rara en la región."
+  ),
+  descurainia_argentina: species(
+    "descurainia_argentina",
+    "Descurainia argentina",
+    "59. Cruciferae",
+    "Hierba anual, erecta, de alrededor de medio metro de alto, con pelos estrellados y glandulosos.",
+    "Hojas bipinatisectas, con segmentos cortos, obovados y obtusos; flores pequeñas, amarillas, en racimos terminales; silicuas de 10-12 mm.",
+    "Centro de la Argentina. Rara en la región, en suelos modificados."
+  ),
+  descurainia_appendiculata: species(
+    "descurainia_appendiculata",
+    "Descurainia appendiculata",
+    "59. Cruciferae",
+    "Hierba anual, erecta, de 40-80 cm de alto, con pelos estrellados y glandulosos.",
+    "Hojas bi- o tripinatisectas, con segmentos alargados, lanceolados y agudos; flores pequeñas, amarillas, en racimos terminales; silicuas de 12-18 mm.",
+    "Norte y centro de la Argentina. Bosques de talas."
+  ),
+  halimolobos_montanus: species(
+    "halimolobos_montanus",
+    "Halimolobos montanus",
+    "59. Cruciferae",
+    "Hierba perenne, erecta, de alrededor de medio metro de alto, con pelos bifurcados.",
+    "Hojas oblanceoladas; las inferiores dentadas y atenuadas en la base, las superiores semiabrazadoras y enteras; flores blancas, pequeñas, en racimos; silicuas redondeadas de 10-12 mm, con valvas uninervadas.",
+    "Centro de la Argentina. Hallada en la Isla Martín García."
+  ),
   elatinaceae: family(
     "elatinaceae",
     "84. Elatinaceae",
@@ -5293,9 +5341,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "cruciferae_b",
     },
     opcionA_prima: {
-      label: "Fruto largamente elíptico o lineal, varias veces más largo que ancho (silicua); rama pendiente para próxima tanda",
+      label: "Fruto largamente elíptico o lineal, varias veces más largo que ancho (silicua)",
       keyStep: "A'",
-      especieId: "cruciferae",
+      nextNodeId: "cruciferae_h",
     },
   },
   cruciferae_b: {
@@ -5520,6 +5568,102 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hojas superiores no dilatadas en la base, con segmentos de 1-2 mm; hierba anual o bienal con pubescencia retrorsa; estambres 2; silículas anchamente elípticas de 3-3,5 mm, escotadas",
       keyStep: "D'",
       especieId: "lepidium_bonariense",
+    },
+  },
+  cruciferae_h: {
+    id: "cruciferae_h",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - H: tipo de pubescencia en silicuas largas",
+    opcionA: {
+      label: "Plantas con pelos estrellados, ramificados o en T, a veces acompañados por pelos simples o glandulosos",
+      keyStep: "H",
+      nextNodeId: "cruciferae_i",
+    },
+    opcionA_prima: {
+      label: "Plantas glabras o con pelos simples; rama pendiente para próxima tanda",
+      keyStep: "H'",
+      especieId: "cruciferae",
+    },
+  },
+  cruciferae_i: {
+    id: "cruciferae_i",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - I: largo y grosor de la silicua",
+    opcionA: {
+      label: "Silicua corta y gruesa; plantas pigmeas",
+      keyStep: "I",
+      especieId: "draba_australis",
+    },
+    opcionA_prima: {
+      label: "Silicuas muy largas; plantas robustas",
+      keyStep: "I'",
+      nextNodeId: "cruciferae_j",
+    },
+  },
+  cruciferae_j: {
+    id: "cruciferae_j",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - J: tipo de pelos en plantas robustas",
+    opcionA: {
+      label: "Pelos en T, raramente más divididos",
+      keyStep: "J",
+      nextNodeId: "cruciferae_k",
+    },
+    opcionA_prima: {
+      label: "Pelos estrellados o ramificados; los tegumentos de la semilla se gelifican en agua caliente",
+      keyStep: "J'",
+      nextNodeId: "cruciferae_l",
+    },
+  },
+  cruciferae_k: {
+    id: "cruciferae_k",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - K: color de flores en plantas con pelos en T",
+    opcionA: {
+      label: "Flores blancas, rosadas o violáceas",
+      keyStep: "K",
+      especieId: "malcomia_maritima",
+    },
+    opcionA_prima: {
+      label: "Flores amarillas",
+      keyStep: "K'",
+      especieId: "erysimum_repandum",
+    },
+  },
+  cruciferae_l: {
+    id: "cruciferae_l",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - L: pelos glandulosos y forma de hojas",
+    opcionA: {
+      label: "Pelos estrellados mezclados con pelos glandulosos; hojas bipinatisectas",
+      keyStep: "L",
+      nextNodeId: "descurainia_a",
+    },
+    opcionA_prima: {
+      label: "Pelos ramificados únicamente; hojas dentadas o incisas",
+      keyStep: "L'",
+      especieId: "halimolobos_montanus",
+    },
+  },
+  descurainia_a: {
+    id: "descurainia_a",
+    milestone: "Descurainia",
+    manualPage: 228,
+    descripcion: "Descurainia - A: forma de los segmentos foliares",
+    opcionA: {
+      label: "Segmentos de las hojas cortos, obovados, obtusos; hierba anual, erecta; silicuas de 10-12 mm",
+      keyStep: "A",
+      especieId: "descurainia_argentina",
+    },
+    opcionA_prima: {
+      label: "Segmentos de las hojas alargados, lanceolados, agudos; hierba anual de 40-80 cm; silicuas de 12-18 mm",
+      keyStep: "A'",
+      especieId: "descurainia_appendiculata",
     },
   },
   dicot_group_c_k_lower: {
