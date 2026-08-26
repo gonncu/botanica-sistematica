@@ -399,6 +399,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo A.",
     "Plantas sumergidas con hojas verticiladas divididas dicotómicamente."
   ),
+  ceratophyllum_demersum_oxyacanthum: species(
+    "ceratophyllum_demersum_oxyacanthum",
+    "Ceratophyllum demersum var. oxyacanthum",
+    "53. Ceratophyllaceae",
+    "Hierba perenne sumergida, libre, sin raíces.",
+    "Hojas verticiladas con segmentos lineales, aserrados en sus bordes; flores diclinas, naciendo en diferentes nudos y supliendo el lugar de una hoja; aquenios con una larga espina terminal y dos espinas laterales dirigidas hacia abajo.",
+    "Sur de Brasil y norte de la Argentina. Frecuente en arroyos y lagunas. Nombre vulgar: cola de zorro."
+  ),
   euphorbiaceae: family(
     "euphorbiaceae",
     "73. Euphorbiaceae",
@@ -2721,13 +2729,30 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Sí",
       keyStep: "A",
-      especieId: "ceratophyllaceae",
+      nextNodeId: "ceratophyllaceae_terminal",
     },
     opcionA_prima: {
       label: "No; terrestre o acuática, pero con hojas no divididas dicotómicamente",
       keyStep: "A'",
       nextNodeId: "dicot_group_a_2",
     },
+  },
+  ceratophyllaceae_terminal: {
+    id: "ceratophyllaceae_terminal",
+    milestone: "Ceratophyllaceae",
+    manualPage: 211,
+    descripcion: "Ceratophyllaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Ceratophyllum demersum var. oxyacanthum",
+      keyStep: "1",
+      especieId: "ceratophyllum_demersum_oxyacanthum",
+    },
+    opcionA_prima: {
+      label: "Identificar como Ceratophyllum demersum var. oxyacanthum",
+      keyStep: "1",
+      especieId: "ceratophyllum_demersum_oxyacanthum",
+    },
+    especie: manualFamilyData.ceratophyllum_demersum_oxyacanthum,
   },
   dicot_group_a_2: {
     id: "dicot_group_a_2",
