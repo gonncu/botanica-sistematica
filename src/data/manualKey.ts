@@ -1125,6 +1125,46 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Flores cigomorfas o irregulares; cáliz con 2 sépalos y pétalos 4, o plantas robustas con látex."
   ),
+  argemone_mexicana: species(
+    "argemone_mexicana",
+    "Argemone mexicana",
+    "57. Papaveraceae",
+    "Hierba anual, glabra, erecta, glauca, de cerca de 1 m de alto, con jugo lechoso amarillento.",
+    "Hojas alternas, oblanceoladas, lobadas, con lóbulos espinoso-dentados, manchas blancas, de 10-25 cm por 5-10 cm; flores actinomorfas, amarillo claro, solitarias, de 3-7 cm; hojas espinosas; cápsulas espinosas.",
+    "América cálida y templada. Rara en la región platense. Nombre vulgar: cardo santo."
+  ),
+  papaver_dubium: species(
+    "papaver_dubium",
+    "Papaver dubium",
+    "57. Papaveraceae",
+    "Hierba anual, ascendente, ramosa en la base, hirsuta y con látex.",
+    "Hojas alternas, pinatisectas o bipinatisectas, no espinosas; flores actinomorfas, grandes, solitarias, largamente pedunculadas, de color escarlata; cápsulas oblongas, glabras, dehiscentes por poros apicales.",
+    "Europa; adventicia en América. Nombre vulgar: amapola silvestre."
+  ),
+  fumaria_capreolata: species(
+    "fumaria_capreolata",
+    "Fumaria capreolata",
+    "57. Papaveraceae",
+    "Hierba anual, voluble, glabra, con tallos cuadrangulares.",
+    "Hojas alternas con pecíolo enroscante; segmentos ovados, lobados o divididos, casi tan anchos como largos; flores cigomorfas, espolonadas, rosadas, grandes, de 7-15 mm; pedicelos fructíferos recurvados; aquenios globosos, lisos, con punta obtusa.",
+    "Europa; adventicia en América. Común en suelos modificados. Nombre vulgar: flor de pajarito."
+  ),
+  fumaria_agraria: species(
+    "fumaria_agraria",
+    "Fumaria agraria",
+    "57. Papaveraceae",
+    "Hierba anual, voluble.",
+    "Hojas con segmentos ovados, casi tan anchos como largos; flores cigomorfas, espolonadas, rosadas, grandes, de 7-15 mm; pedicelos fructíferos erectos; aquenios rugoso-papilosos.",
+    "Europa; adventicia en América del Sur. Común en cultivos de lino de Pergamino."
+  ),
+  fumaria_officinalis: species(
+    "fumaria_officinalis",
+    "Fumaria officinalis",
+    "57. Papaveraceae",
+    "Hierba anual, glabra, con tallos difusos y ascendentes.",
+    "Hojas finamente divididas, con segmentos lineal-lanceolados; flores cigomorfas, espolonadas, purpúreas, de 4-6 mm; fruto deprimido-globoso, de 2 mm de diámetro.",
+    "Europa; adventicia en América. Rara en la región: Capitán Sarmiento y Pergamino."
+  ),
   resedaceae: family(
     "resedaceae",
     "60. Resedaceae",
@@ -4152,6 +4192,70 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "ranunculus_apiifolius",
     },
   },
+  papaveraceae_a: {
+    id: "papaveraceae_a",
+    milestone: "Papaveraceae",
+    manualPage: 218,
+    descripcion: "Papaveraceae - A: simetría floral, espolón y estambres",
+    opcionA: {
+      label: "Flores actinomorfas, sin espolón; estambres numerosos",
+      keyStep: "A",
+      nextNodeId: "papaveraceae_b",
+    },
+    opcionA_prima: {
+      label: "Flores cigomorfas, espolonadas; estambres 6",
+      keyStep: "A'",
+      nextNodeId: "fumaria_a",
+    },
+  },
+  papaveraceae_b: {
+    id: "papaveraceae_b",
+    milestone: "Papaveraceae",
+    manualPage: 218,
+    descripcion: "Papaveraceae - B: hojas espinosas",
+    opcionA: {
+      label: "Hojas espinosas",
+      keyStep: "B",
+      especieId: "argemone_mexicana",
+    },
+    opcionA_prima: {
+      label: "Hojas no espinosas",
+      keyStep: "B'",
+      especieId: "papaver_dubium",
+    },
+  },
+  fumaria_a: {
+    id: "fumaria_a",
+    milestone: "Fumaria",
+    manualPage: 219,
+    descripcion: "Fumaria - A: forma de los segmentos foliares y tamaño de flores",
+    opcionA: {
+      label: "Segmentos de las hojas ovados, casi tan anchos como largos; flores grandes, de 7-15 mm",
+      keyStep: "A",
+      nextNodeId: "fumaria_b",
+    },
+    opcionA_prima: {
+      label: "Segmentos de las hojas lineal-lanceolados; flores purpúreas de 4-6 mm; anual, glabra; tallos difusos, ascendentes; fruto deprimido-globoso de 2 mm",
+      keyStep: "A'",
+      especieId: "fumaria_officinalis",
+    },
+  },
+  fumaria_b: {
+    id: "fumaria_b",
+    milestone: "Fumaria",
+    manualPage: 219,
+    descripcion: "Fumaria - B: posición de los pedicelos fructíferos",
+    opcionA: {
+      label: "Pedicelos fructíferos recurvados; aquenios globosos, lisos, con punta obtusa; anual, voluble, glabra; hojas con pecíolo enroscante; flores rosadas",
+      keyStep: "B",
+      especieId: "fumaria_capreolata",
+    },
+    opcionA_prima: {
+      label: "Pedicelos fructíferos erectos; aquenios rugoso-papilosos; anual, voluble; flores rosadas",
+      keyStep: "B'",
+      especieId: "fumaria_agraria",
+    },
+  },
   dicot_group_c_f: {
     id: "dicot_group_c_f",
     milestone: "Grupo C",
@@ -4174,7 +4278,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Cáliz formado por 2 sépalos; pétalos 4; estambres 4",
       keyStep: "G",
-      especieId: "papaveraceae",
+      nextNodeId: "papaveraceae_a",
     },
     opcionA_prima: {
       label: "Cáliz con 4-5 sépalos; pétalos 2-5; estambres 5-20",
@@ -5103,7 +5207,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Plantas con látex, robustas",
       keyStep: "m",
-      especieId: "papaveraceae",
+      nextNodeId: "papaveraceae_a",
     },
     opcionA_prima: {
       label: "Plantas sin látex, pigmeas",

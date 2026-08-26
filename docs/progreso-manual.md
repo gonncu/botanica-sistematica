@@ -30,12 +30,12 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `56. Lauraceae`, pagina 215-216 del manual.
-- Ultimo commit subido antes de esta tanda: `e379c4e Add Berberidaceae species key`.
+- `57. Papaveraceae`, pagina 217-219 del manual.
+- Ultimo commit subido antes de esta tanda: `70e9eb2 Add Lauraceae species keys`.
 
 ## Proxima familia consecutiva
 
-- `57. Papaveraceae`, desde pagina 217 del manual (`PDF_PAGE=224`).
+- `58. Capparidaceae`, desde pagina 219 del manual (`PDF_PAGE=226`).
 
 ## Regla de trabajo
 
