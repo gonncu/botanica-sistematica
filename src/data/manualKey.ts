@@ -1021,6 +1021,30 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Gineceo dialicarpelar, hojas sin estípulas y estambres indefinidos."
   ),
+  clematis_bonariensis: species(
+    "clematis_bonariensis",
+    "Clematis bonariensis",
+    "54. Ranunculaceae",
+    "Arbusto voluble con hojas opuestas.",
+    "Hojas 3-folioladas; folíolos rígidos, lustrosos, generalmente enteros, ovados, acuminados en el ápice y semiacorazonados en la base, de 6-10 cm por 3-5 cm; flores dioicas en panojas.",
+    "Norte de la Argentina y Uruguay. Frecuente en los bosques del Delta y de la ribera del Plata. Nombre vulgar: cabello de ángel."
+  ),
+  clematis_hilarii: species(
+    "clematis_hilarii",
+    "Clematis hilarii",
+    "54. Ranunculaceae",
+    "Arbusto voluble con hojas opuestas.",
+    "Hojas 3-5-folioladas; folíolos tiernos, opacos, ovados, agudos, frecuentemente con un gran lóbulo a cada lado, menores que en la especie anterior, de 1-3,5 cm de ancho; flores dioicas en panojas.",
+    "Sur de Brasil, Paraguay, Uruguay y norte de la Argentina. Común en el Delta y en la ribera. Nombre vulgar: cabello de ángel."
+  ),
+  anemone_triternata: species(
+    "anemone_triternata",
+    "Anemone triternata",
+    "54. Ranunculaceae",
+    "Hierba perenne, con raíz carnosa.",
+    "Hojas radicales en roseta, finamente 3-4-ternadas; escapos pubescentes de 6-40 cm; involucro formado por 3 hojas verticiladas, finamente divididas; flores solitarias, blancas; sépalos lanceolados de 10 mm; aquenios velludos con estilo muy corto.",
+    "América austral. Frecuente en la estepa clímax."
+  ),
   rutaceae: family(
     "rutaceae",
     "70. Rutaceae",
@@ -3873,7 +3897,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Estambres indefinidos",
       keyStep: "C",
-      especieId: "ranunculaceae",
+      nextNodeId: "ranunculaceae_a",
     },
     opcionA_prima: {
       label: "Estambres 5-6",
@@ -3927,6 +3951,54 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "cabomba_australis",
     },
     especie: manualFamilyData.cabomba_australis,
+  },
+  ranunculaceae_a: {
+    id: "ranunculaceae_a",
+    milestone: "Ranunculaceae",
+    manualPage: 212,
+    descripcion: "Ranunculaceae - A: hábito, hojas y sexualidad floral",
+    opcionA: {
+      label: "Arbustos volubles con hojas opuestas; flores unisexuales",
+      keyStep: "A",
+      nextNodeId: "clematis_a",
+    },
+    opcionA_prima: {
+      label: "Hierbas con hojas radicales o alternas; flores hermafroditas",
+      keyStep: "A'",
+      nextNodeId: "ranunculaceae_b",
+    },
+  },
+  clematis_a: {
+    id: "clematis_a",
+    milestone: "Clematis",
+    manualPage: 212,
+    descripcion: "Clematis - A: número de folíolos y textura",
+    opcionA: {
+      label: "Hojas 3-folioladas; folíolos rígidos, lustrosos, generalmente enteros, ovados, acuminados y semiacorazonados en la base, de 6-10 cm por 3-5 cm; flores dioicas en panojas",
+      keyStep: "A",
+      especieId: "clematis_bonariensis",
+    },
+    opcionA_prima: {
+      label: "Hojas 3-5-folioladas; folíolos tiernos, opacos, ovados, agudos, frecuentemente con un gran lóbulo a cada lado, menores, de 1-3,5 cm de ancho; flores dioicas en panojas",
+      keyStep: "A'",
+      especieId: "clematis_hilarii",
+    },
+  },
+  ranunculaceae_b: {
+    id: "ranunculaceae_b",
+    milestone: "Ranunculaceae",
+    manualPage: 212,
+    descripcion: "Ranunculaceae - B: pelos de los carpelos, óvulos e involucro",
+    opcionA: {
+      label: "Carpelos cubiertos de largos pelos lanosos; óvulos péndulos; flores con un involucro formado por tres hojas verticiladas",
+      keyStep: "B",
+      especieId: "anemone_triternata",
+    },
+    opcionA_prima: {
+      label: "Carpelos lisos o erizados; óvulos ascendentes; flores sin involucro; Ranunculus queda para la próxima tanda",
+      keyStep: "B'",
+      especieId: "ranunculaceae",
+    },
   },
   dicot_group_c_f: {
     id: "dicot_group_c_f",
