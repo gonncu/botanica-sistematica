@@ -1025,6 +1025,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Plantas acuáticas con hojas flotantes peltadas y hojas sumergidas finamente laciniadas."
   ),
+  cabomba_australis: species(
+    "cabomba_australis",
+    "Cabomba australis",
+    "52. Nymphaeaceae",
+    "Planta acuática sumergida y arraigada.",
+    "Hojas sumergidas opuestas, pecioladas, de contorno circular, varias veces palmatisectas, con segmentos muy angostos; hojas florales alternas, flotantes, peltadas, con lámina lanceolada aguda en ambas puntas; flores flotantes, blancas; carpelos 3, biovulados.",
+    "Nordeste de la Argentina y Uruguay, en aguas tranquilas y poco profundas. Frecuente en el Delta y en Río Santiago."
+  ),
   crassulaceae: family(
     "crassulaceae",
     "61. Crassulaceae",
@@ -3870,13 +3878,30 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Plantas acuáticas, con hojas flotantes peltadas y hojas sumergidas laciniadas",
       keyStep: "E",
-      especieId: "nymphaeaceae",
+      nextNodeId: "nymphaeaceae_terminal",
     },
     opcionA_prima: {
       label: "Plantas pigmeas de suelos húmedos, con hojas lineales enteras",
       keyStep: "E'",
       especieId: "crassulaceae",
     },
+  },
+  nymphaeaceae_terminal: {
+    id: "nymphaeaceae_terminal",
+    milestone: "Nymphaeaceae",
+    manualPage: 211,
+    descripcion: "Nymphaeaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Cabomba australis",
+      keyStep: "1",
+      especieId: "cabomba_australis",
+    },
+    opcionA_prima: {
+      label: "Identificar como Cabomba australis",
+      keyStep: "1",
+      especieId: "cabomba_australis",
+    },
+    especie: manualFamilyData.cabomba_australis,
   },
   dicot_group_c_f: {
     id: "dicot_group_c_f",
