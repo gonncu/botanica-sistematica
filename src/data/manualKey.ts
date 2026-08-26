@@ -1209,6 +1209,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Ovario unilocular y estambres 6."
   ),
+  berberis_ruscifolia: species(
+    "berberis_ruscifolia",
+    "Berberis ruscifolia",
+    "55. Berberidaceae",
+    "Arbusto espinoso, glabro, de 1-1,5 m de alto.",
+    "Hojas coriáceas, oblanceoladas, agudas, mucronadas, con un diente espinoso a cada lado, de 2-4 cm; nervaduras y margen muy marcados; espinas trífidas pardo claras, rectas o recurvadas, de 1-1,5 cm; flores amarillas en racimos axilares cortos; bayas de 5-6 mm, con estilo corto.",
+    "Uruguay y nordeste de la Argentina. En barrancas de Zárate, Campana y San Isidro, y en la Isla Martín García."
+  ),
   lauraceae: family(
     "lauraceae",
     "56. Lauraceae",
@@ -4440,8 +4448,25 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Estambres 6",
       keyStep: "Y'",
-      especieId: "berberidaceae",
+      nextNodeId: "berberidaceae_terminal",
     },
+  },
+  berberidaceae_terminal: {
+    id: "berberidaceae_terminal",
+    milestone: "Berberidaceae",
+    manualPage: 215,
+    descripcion: "Berberidaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Berberis ruscifolia",
+      keyStep: "1",
+      especieId: "berberis_ruscifolia",
+    },
+    opcionA_prima: {
+      label: "Identificar como Berberis ruscifolia",
+      keyStep: "1",
+      especieId: "berberis_ruscifolia",
+    },
+    especie: manualFamilyData.berberis_ruscifolia,
   },
   dicot_group_c_z: {
     id: "dicot_group_c_z",
