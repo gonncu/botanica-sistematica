@@ -30,13 +30,13 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `54. Ranunculaceae`, en progreso desde pagina 211 del manual.
-- Tanda cargada: clave familiar parcial, `Clematis` y `Anemone`.
-- Ultimo commit subido antes de esta tanda: `8ec4009 Add Ceratophyllaceae species key`.
+- `54. Ranunculaceae`, pagina 211-214 del manual.
+- Tandas cargadas: clave familiar completa, `Clematis`, `Anemone` y `Ranunculus`.
+- Ultimo commit subido antes de esta tanda: `829d07a Add initial Ranunculaceae keys`.
 
 ## Proxima familia consecutiva
 
-- `54. Ranunculaceae`, continuar desde `Ranunculus`, pagina 213 del manual (`PDF_PAGE=220`).
+- `55. Berberidaceae`, desde pagina 214 del manual (`PDF_PAGE=221`).
 
 ## Regla de trabajo
 

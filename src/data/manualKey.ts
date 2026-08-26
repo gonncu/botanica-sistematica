@@ -1045,6 +1045,54 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas radicales en roseta, finamente 3-4-ternadas; escapos pubescentes de 6-40 cm; involucro formado por 3 hojas verticiladas, finamente divididas; flores solitarias, blancas; sépalos lanceolados de 10 mm; aquenios velludos con estilo muy corto.",
     "América austral. Frecuente en la estepa clímax."
   ),
+  ranunculus_flagelliformis: species(
+    "ranunculus_flagelliformis",
+    "Ranunculus flagelliformis",
+    "54. Ranunculaceae",
+    "Hierba anual diminuta y tendida, con tallos cuyos nudos producen hojas y flores.",
+    "Hojas enteras, largamente pecioladas, elípticas o circulares, obtusas, algo atenuadas en la base, con lámina de 10-15 mm; flores amarillentas, diminutas, largamente pedunculadas; receptáculo pequeño, hemisférico; carpelos lisos.",
+    "América del Sur. Charcas y arroyos del Delta y de la ribera platense."
+  ),
+  ranunculus_bonariensis: species(
+    "ranunculus_bonariensis",
+    "Ranunculus bonariensis",
+    "54. Ranunculaceae",
+    "Hierba anual diminuta, con hojas enteras y tallos tendidos cuyos nudos producen hojas y flores.",
+    "Hojas largamente pecioladas, ovadas, algo acorazonadas en la base y sinuadas; flores diminutas; receptáculo cónico o cilíndrico. El manual cita formas con todas las hojas cordadas, con hojas basales cordadas y caulinares atenuadas, y con todas las hojas atenuadas en la base.",
+    "América austral. Charcas, arroyos y lugares muy húmedos o inundables."
+  ),
+  ranunculus_platensis: species(
+    "ranunculus_platensis",
+    "Ranunculus platensis",
+    "54. Ranunculaceae",
+    "Hierba anual, velluda, con tallos ascendentes o tendidos.",
+    "Hojas tripartidas, con segmentos profundamente lobados; flores diminutas, amarillas, solitarias, opuestas a las hojas; frutos inferiores con geotropismo positivo; carpelos lisos.",
+    "Región del Plata, en suelos húmedos y fértiles."
+  ),
+  ranunculus_muricatus: species(
+    "ranunculus_muricatus",
+    "Ranunculus muricatus",
+    "54. Ranunculaceae",
+    "Hierba anual, glabérrima, con tallos ascendentes de 30-40 cm.",
+    "Hojas pecioladas, con lámina semicircular profundamente trilobada y lóbulos divididos; flores amarillas, medianas, opuestas a las hojas; carpelos erizados de púas rígidas.",
+    "Europa; adventicia en América. En suelos húmedos. Nombre vulgar: pata de gallo."
+  ),
+  ranunculus_repens: species(
+    "ranunculus_repens",
+    "Ranunculus repens",
+    "54. Ranunculaceae",
+    "Hierba perenne, glabérrima, con tallos ascendentes de 20-40 cm.",
+    "Hojas pinaticompuestas, con 1-2 pares de segmentos y un segmento terminal, todos trilobados, con lóbulos aserrados o dentados; flores grandes, amarillas, solitarias o agrupadas en corto número; carpelos lisos.",
+    "Europa; adventicia en América. Suelos húmedos. Nombre vulgar: botón de oro."
+  ),
+  ranunculus_apiifolius: species(
+    "ranunculus_apiifolius",
+    "Ranunculus apiifolius",
+    "54. Ranunculaceae",
+    "Hierba anual, erecta, glabérrima, de 30-60 cm.",
+    "Hojas largamente pecioladas, con lámina orbicular 3-5-partida y lóbulos a su vez divididos; flores pequeñas, blancas o verdosas, dispuestas en cimas terminales; carpelos lisos.",
+    "América austral, en lugares inundados. Nombre vulgar: apio del diablo."
+  ),
   rutaceae: family(
     "rutaceae",
     "70. Rutaceae",
@@ -3995,9 +4043,89 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "anemone_triternata",
     },
     opcionA_prima: {
-      label: "Carpelos lisos o erizados; óvulos ascendentes; flores sin involucro; Ranunculus queda para la próxima tanda",
+      label: "Carpelos lisos o erizados; óvulos ascendentes; flores sin involucro",
       keyStep: "B'",
-      especieId: "ranunculaceae",
+      nextNodeId: "ranunculus_a",
+    },
+  },
+  ranunculus_a: {
+    id: "ranunculus_a",
+    milestone: "Ranunculus",
+    manualPage: 213,
+    descripcion: "Ranunculus - A: forma de las hojas",
+    opcionA: {
+      label: "Hojas enteras; plantas diminutas con tallos tendidos en cuyos nudos nacen hojas y flores",
+      keyStep: "A",
+      nextNodeId: "ranunculus_b",
+    },
+    opcionA_prima: {
+      label: "Hojas lobuladas o partidas",
+      keyStep: "A'",
+      nextNodeId: "ranunculus_c",
+    },
+  },
+  ranunculus_b: {
+    id: "ranunculus_b",
+    milestone: "Ranunculus",
+    manualPage: 213,
+    descripcion: "Ranunculus - B: forma del receptáculo en hojas enteras",
+    opcionA: {
+      label: "Receptáculo pequeño, hemisférico; hojas largamente pecioladas, elípticas o circulares, obtusas, algo atenuadas en la base; flores amarillentas, diminutas, largamente pedunculadas; carpelos lisos",
+      keyStep: "B",
+      especieId: "ranunculus_flagelliformis",
+    },
+    opcionA_prima: {
+      label: "Receptáculo cónico o cilíndrico; hojas largamente pecioladas, ovadas, algo acorazonadas en la base, sinuadas; flores diminutas",
+      keyStep: "B'",
+      especieId: "ranunculus_bonariensis",
+    },
+  },
+  ranunculus_c: {
+    id: "ranunculus_c",
+    milestone: "Ranunculus",
+    manualPage: 213,
+    descripcion: "Ranunculus - C: pubescencia de las plantas",
+    opcionA: {
+      label: "Plantas velludas, anuales; tallos ascendentes o tendidos; hojas tripartidas, con segmentos profundamente lobados; flores diminutas, amarillas, solitarias, opuestas a las hojas; carpelos lisos",
+      keyStep: "C",
+      especieId: "ranunculus_platensis",
+    },
+    opcionA_prima: {
+      label: "Plantas glabérrimas",
+      keyStep: "C'",
+      nextNodeId: "ranunculus_d",
+    },
+  },
+  ranunculus_d: {
+    id: "ranunculus_d",
+    milestone: "Ranunculus",
+    manualPage: 213,
+    descripcion: "Ranunculus - D: superficie de los carpelos",
+    opcionA: {
+      label: "Carpelos erizados de púas rígidas; anual con tallos ascendentes de 30-40 cm; hojas pecioladas con lámina semicircular profundamente trilobada; flores amarillas medianas",
+      keyStep: "D",
+      especieId: "ranunculus_muricatus",
+    },
+    opcionA_prima: {
+      label: "Carpelos lisos",
+      keyStep: "D'",
+      nextNodeId: "ranunculus_e",
+    },
+  },
+  ranunculus_e: {
+    id: "ranunculus_e",
+    milestone: "Ranunculus",
+    manualPage: 213,
+    descripcion: "Ranunculus - E: tamaño y disposición de las flores",
+    opcionA: {
+      label: "Flores grandes, amarillas, solitarias o agrupadas en corto número; hierba perenne; tallos ascendentes de 20-40 cm; hojas pinaticompuestas con segmentos trilobados",
+      keyStep: "E",
+      especieId: "ranunculus_repens",
+    },
+    opcionA_prima: {
+      label: "Flores pequeñas, blancas o verdosas, dispuestas en cimas terminales; anual, erecto, de 30-60 cm; hojas largamente pecioladas con lámina orbicular 3-5-partida",
+      keyStep: "E'",
+      especieId: "ranunculus_apiifolius",
     },
   },
   dicot_group_c_f: {
