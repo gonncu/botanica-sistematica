@@ -1223,6 +1223,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Flores con perigonio coralino, estambres 9 y anteras de dehiscencia valvar."
   ),
+  ocotea_acutifolia: species(
+    "ocotea_acutifolia",
+    "Ocotea acutifolia",
+    "56. Lauraceae",
+    "Árbol de hasta 20 m de altura, con corteza gris-parda y grietas longitudinales.",
+    "Hojas pecioladas, lanceoladas, acuminadas, enteras, coriáceas, verde claras, de 7-10 cm por 1,5-2,5 cm, con nervaduras reticuladas; flores pequeñas amarillentas en panojas de cimas; anteras con valvas en dos pares superpuestos; bayas ovoideas verdes de 2 cm.",
+    "Sur de Brasil, Paraguay, Uruguay y nordeste de la Argentina, en bosques higrófilos. Común en bosques indígenas del Delta y de la ribera platense. Nombre vulgar: laurel."
+  ),
+  nectandra_falcifolia: species(
+    "nectandra_falcifolia",
+    "Nectandra falcifolia",
+    "56. Lauraceae",
+    "Árbol elevado, con ramas jóvenes redondeadas y glabras.",
+    "Hojas pecioladas, estrechamente lanceoladas y algo falcadas, agudas, enteras, con nervaduras muy marcadas, de unos 12 cm por 0,8-1,2 cm; flores amarillentas en racimos de cimas; anteras con cuatro valvas al mismo nivel; bayas ovoideas de 2 cm.",
+    "Paraguay, Uruguay y norte de la Argentina. Frecuente en las islas del Delta, frente a Ramallo, San Pedro y Baradero."
+  ),
   anacardiaceae: family(
     "anacardiaceae",
     "75. Anacardiaceae",
@@ -4475,12 +4491,28 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Flores con perigonio coralino; estambres 9; anteras de dehiscencia valvar",
       keyStep: "Z",
-      especieId: "lauraceae",
+      nextNodeId: "lauraceae_a",
     },
     opcionA_prima: {
       label: "Flores con cáliz y corola; estambres 10; anteras de dehiscencia longitudinal",
       keyStep: "Z'",
       especieId: "anacardiaceae",
+    },
+  },
+  lauraceae_a: {
+    id: "lauraceae_a",
+    milestone: "Lauraceae",
+    manualPage: 216,
+    descripcion: "Lauraceae - A: disposición de las valvas de dehiscencia de las anteras",
+    opcionA: {
+      label: "Anteras con valvas de dehiscencia dispuestas en dos pares superpuestos",
+      keyStep: "A",
+      especieId: "ocotea_acutifolia",
+    },
+    opcionA_prima: {
+      label: "Anteras con las 4 valvas al mismo nivel",
+      keyStep: "A'",
+      especieId: "nectandra_falcifolia",
     },
   },
   dicot_group_c_a_lower: {
