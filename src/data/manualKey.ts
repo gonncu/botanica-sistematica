@@ -1593,6 +1593,46 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas enteras, lineal-lanceoladas, de 2-5 cm; flores pequeñas, blancas, de 4 mm, en racimos terminales; plantas con pelos en T; silículas ovadas u orbiculares, de 2-3 mm, con una semilla por lóculo.",
     "Europa. Cultivada como ornamental y con frecuencia escapada sobre escombros, terraplenes, etc."
   ),
+  lepidium_draba: species(
+    "lepidium_draba",
+    "Lepidium draba",
+    "59. Cruciferae",
+    "Hierba perenne, con raíces gemíferas y tallos erectos ceniciento-pubescentes de 25-50 cm.",
+    "Hojas oblongas u oblongo-lanceoladas, anchas, obtusas; las inferiores pecioladas y las superiores sésiles, semiabrazadoras y auriculadas en la base, sinuado-dentadas; flores blancas; silículas obcordadas de 3 mm por 4 mm, con estilo persistente largo y delgado.",
+    "Europa; adventicia en América. Maleza invasora de jardines."
+  ),
+  lepidium_spicatum: species(
+    "lepidium_spicatum",
+    "Lepidium spicatum",
+    "59. Cruciferae",
+    "Hierba anual, erecta, ramosa, puberulenta, de 5-25 cm de alto.",
+    "Hojas basales laciniado-pinatífidas o enteras; hojas caulinares lineales, enteras; racimos plurifloros; pétalos blancos; estambres 2; silículas elípticas u ovadas, glabras, de 2,5-3 mm, con estilo nulo.",
+    "América austral. Frecuente en la región."
+  ),
+  lepidium_parodii: species(
+    "lepidium_parodii",
+    "Lepidium parodii",
+    "59. Cruciferae",
+    "Hierba perenne, erecta, glabra o puberulenta, con tallos de 20-40 cm, apenas ramosos.",
+    "Hojas inferiores por lo común pinatisectas; hojas superiores lineales, enteras, algo auriculadas en la base; racimos multifloros con pedicelos cortos; pétalos blancos; estambres 2; silículas anchamente elípticas, glabras o algo ciliadas, escotadas en el ápice, de 4-4,5 mm, con estilo nulo.",
+    "América austral. Común en suelos bajos algo salados."
+  ),
+  lepidium_aletes: species(
+    "lepidium_aletes",
+    "Lepidium aletes",
+    "59. Cruciferae",
+    "Hierba anual, con tallos erectos o ascendentes de 10-40 cm y pubescencia retrorsa.",
+    "Hojas basales bipinatisectas; hojas superiores dentadas o pinatisectas, algo dilatadas en la base y semi-auriculadas, con segmentos de 0,5 mm de ancho; racimos densifloros con pedicelos cortos; silículas anchamente elípticas, escotadas, de 2,5-3 mm, con estilo nulo.",
+    "América austral. Común en campos húmedos."
+  ),
+  lepidium_bonariense: species(
+    "lepidium_bonariense",
+    "Lepidium bonariense",
+    "59. Cruciferae",
+    "Hierba anual o bienal, con tallos de 30-50 cm y pubescencia retrorsa.",
+    "Hojas inferiores bipinatisectas; hojas superiores dentadas o pinatisectas, no dilatadas en la base, con segmentos de 1-2 mm; racimos densifloros con pedicelos cortos; estambres 2; silículas anchamente elípticas, de 3-3,5 mm, escotadas, con estilo nulo.",
+    "América austral. Común en suelos modificados."
+  ),
   elatinaceae: family(
     "elatinaceae",
     "84. Elatinaceae",
@@ -5413,9 +5453,73 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "lobularia_maritima",
     },
     opcionA_prima: {
-      label: "Plantas glabras o con pelos simples; Lepidium queda para la próxima tanda",
+      label: "Plantas glabras o con pelos simples",
       keyStep: "G'",
-      especieId: "cruciferae",
+      nextNodeId: "lepidium_a",
+    },
+  },
+  lepidium_a: {
+    id: "lepidium_a",
+    milestone: "Lepidium",
+    manualPage: 226,
+    descripcion: "Lepidium - A: forma de hojas y estilo",
+    opcionA: {
+      label: "Hojas oblongas u oblongo-lanceoladas, anchas, obtusas; inferiores pecioladas, superiores sésiles, semiabrazadoras y auriculadas; hierba perenne con raíces gemíferas; silículas obcordadas; estilo persistente, largo y delgado",
+      keyStep: "A",
+      especieId: "lepidium_draba",
+    },
+    opcionA_prima: {
+      label: "Hojas caulinares lineales o pinatisectas; estilo muy corto",
+      keyStep: "A'",
+      nextNodeId: "lepidium_b",
+    },
+  },
+  lepidium_b: {
+    id: "lepidium_b",
+    milestone: "Lepidium",
+    manualPage: 226,
+    descripcion: "Lepidium - B: hojas superiores",
+    opcionA: {
+      label: "Hojas superiores enteras",
+      keyStep: "B",
+      nextNodeId: "lepidium_c",
+    },
+    opcionA_prima: {
+      label: "Hojas superiores dentadas o pinatisectas",
+      keyStep: "B'",
+      nextNodeId: "lepidium_d",
+    },
+  },
+  lepidium_c: {
+    id: "lepidium_c",
+    milestone: "Lepidium",
+    manualPage: 226,
+    descripcion: "Lepidium - C: tamaño y forma de las silículas con hojas superiores enteras",
+    opcionA: {
+      label: "Silículas de 2,5-3 mm, elípticas u ovadas, glabras; estilo nulo; hierba anual, erecta, ramosa, puberulenta; hojas basales laciniado-pinatífidas o enteras; pétalos blancos; estambres 2",
+      keyStep: "C",
+      especieId: "lepidium_spicatum",
+    },
+    opcionA_prima: {
+      label: "Silículas de 4-4,5 mm, anchamente elípticas, glabras o algo ciliadas, escotadas; estilo nulo; hierba perenne, erecta, glabra o puberulenta; hojas inferiores por lo común pinatisectas; pétalos blancos; estambres 2",
+      keyStep: "C'",
+      especieId: "lepidium_parodii",
+    },
+  },
+  lepidium_d: {
+    id: "lepidium_d",
+    milestone: "Lepidium",
+    manualPage: 226,
+    descripcion: "Lepidium - D: ancho de segmentos de hojas superiores",
+    opcionA: {
+      label: "Segmentos de las hojas superiores de 0,5 mm de ancho; hojas superiores algo dilatadas en la base y semi-auriculadas; hierba anual con pubescencia retrorsa; silículas de 2,5-3 mm, anchamente elípticas, escotadas",
+      keyStep: "D",
+      especieId: "lepidium_aletes",
+    },
+    opcionA_prima: {
+      label: "Hojas superiores no dilatadas en la base, con segmentos de 1-2 mm; hierba anual o bienal con pubescencia retrorsa; estambres 2; silículas anchamente elípticas de 3-3,5 mm, escotadas",
+      keyStep: "D'",
+      especieId: "lepidium_bonariense",
     },
   },
   dicot_group_c_k_lower: {

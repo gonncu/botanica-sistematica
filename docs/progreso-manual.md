@@ -31,12 +31,12 @@ npm run build
 Ultima familia cargada, validada y subida:
 
 - `59. Cruciferae`, en progreso desde pagina 221 del manual.
-- Tanda cargada: clave parcial de siliculas, `Capsella`, `Rapistrum`, `Neslia`, `Camelina`, `Coronopus` y `Lobularia`.
-- Ultimo commit subido antes de esta tanda: `67c0317 Add Capparidaceae species keys`.
+- Tandas cargadas: clave parcial de siliculas, `Capsella`, `Rapistrum`, `Neslia`, `Camelina`, `Coronopus`, `Lobularia` y `Lepidium`.
+- Ultimo commit subido antes de esta tanda: `3280535 Add initial Cruciferae silicle keys`.
 
 ## Proxima familia consecutiva
 
-- `59. Cruciferae`, continuar desde `Lepidium`, pagina 226 del manual (`PDF_PAGE=233`).
+- `59. Cruciferae`, continuar desde `Draba`, pagina 227 del manual (`PDF_PAGE=234`).
 
 ## Regla de trabajo
 
