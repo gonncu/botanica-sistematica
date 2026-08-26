@@ -1189,6 +1189,30 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Estípulas espiniformes o hojas 3-5-folioladas con estípulas espiniformes."
   ),
+  cleome_trachycarpa: species(
+    "cleome_trachycarpa",
+    "Cleome trachycarpa",
+    "58. Capparidaceae",
+    "Hierba perenne, erecta, híspido-glandulosa, con aguijones rectos, de 40-80 cm de alto.",
+    "Hojas palmaticompuestas, largamente pecioladas, con 5 folíolos ovado-lanceolados enteros; flores rosadas en racimos, largamente pedunculadas; sépalos lineales; pétalos unguiculados de 2-3 cm; cápsula lineal de 6-7 cm, híspido-velluda; carpóforo de 4-6 cm.",
+    "Sur de Brasil, Paraguay, Uruguay y nordeste de la Argentina, en suelos húmedos."
+  ),
+  cleome_titubans: species(
+    "cleome_titubans",
+    "Cleome titubans",
+    "58. Capparidaceae",
+    "Hierba perenne, híspido-glandulosa, de 30-50 cm de alto.",
+    "Tallos y pecíolos con aguijones; hojas palmaticompuestas, con 3-5 folíolos ovados, sinuados, a veces con algunas hojas simples ovadas; flores rosadas en racimos terminales; sépalos lineales; pétalos de 1 cm; cápsula lineal, glabra, de 3-4 cm; carpóforo de 5-15 mm.",
+    "Región platense, en pajonales."
+  ),
+  cleome_spinosa: species(
+    "cleome_spinosa",
+    "Cleome spinosa",
+    "58. Capparidaceae",
+    "Hierba anual, erecta, híspido-glandulosa, de 40-100 cm de alto.",
+    "Hojas palmaticompuestas, con 5-7 folíolos oblanceolados; hojas superiores simples, ovadas; pecíolos espinosos en la base; flores purpúreas o blancas en racimos; cápsula lineal, glabra, de 6-8 cm; carpóforo de 50-70 mm.",
+    "América tropical. Rara en el Delta."
+  ),
   polygalaceae: family(
     "polygalaceae",
     "72. Polygalaceae",
@@ -4343,7 +4367,39 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Estambres 6; estípulas espiniformes",
       keyStep: "K'",
-      especieId: "capparidaceae",
+      nextNodeId: "capparidaceae_a",
+    },
+  },
+  capparidaceae_a: {
+    id: "capparidaceae_a",
+    milestone: "Capparidaceae",
+    manualPage: 221,
+    descripcion: "Cleome - A: pubescencia de la cápsula y largo del carpóforo",
+    opcionA: {
+      label: "Cápsula lineal, de 6-7 cm, híspido-velluda; carpóforo de 4-6 cm; hierba perenne, erecta, híspido-glandulosa, con aguijones rectos; folíolos 5, ovado-lanceolados, enteros; pétalos rosados de 2-3 cm",
+      keyStep: "A",
+      especieId: "cleome_trachycarpa",
+    },
+    opcionA_prima: {
+      label: "Cápsula lineal, glabra",
+      keyStep: "A'",
+      nextNodeId: "capparidaceae_b",
+    },
+  },
+  capparidaceae_b: {
+    id: "capparidaceae_b",
+    milestone: "Cleome",
+    manualPage: 221,
+    descripcion: "Cleome - B: largo del carpóforo",
+    opcionA: {
+      label: "Carpóforo de 5-15 mm; hierba perenne, híspido-glandulosa, de 30-50 cm; tallos y pecíolos con aguijones; folíolos 3-5, ovados, sinuados; pétalos rosados de 1 cm; cápsulas de 3-4 cm",
+      keyStep: "B",
+      especieId: "cleome_titubans",
+    },
+    opcionA_prima: {
+      label: "Carpóforo de 50-70 mm; hierba anual, erecta, de 40-100 cm, híspido-glandulosa; folíolos 5-7 oblanceolados; hojas superiores simples; flores purpúreas o blancas; cápsulas de 6-8 cm",
+      keyStep: "B'",
+      especieId: "cleome_spinosa",
     },
   },
   dicot_group_c_l: {
@@ -5682,7 +5738,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Sí",
       keyStep: "q",
-      especieId: "capparidaceae",
+      nextNodeId: "capparidaceae_a",
     },
     opcionA_prima: {
       label: "No; hojas simples",
