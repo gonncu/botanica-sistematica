@@ -30,12 +30,13 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `58. Capparidaceae`, pagina 219-221 del manual.
-- Ultimo commit subido antes de esta tanda: `b641448 Add Papaveraceae species keys`.
+- `59. Cruciferae`, en progreso desde pagina 221 del manual.
+- Tanda cargada: clave parcial de siliculas, `Capsella`, `Rapistrum`, `Neslia`, `Camelina`, `Coronopus` y `Lobularia`.
+- Ultimo commit subido antes de esta tanda: `67c0317 Add Capparidaceae species keys`.
 
 ## Proxima familia consecutiva
 
-- `59. Cruciferae`, desde pagina 221 del manual (`PDF_PAGE=228`).
+- `59. Cruciferae`, continuar desde `Lepidium`, pagina 226 del manual (`PDF_PAGE=233`).
 
 ## Regla de trabajo
 

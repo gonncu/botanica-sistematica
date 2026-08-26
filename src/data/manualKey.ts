@@ -1513,6 +1513,86 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Estambres tetradínamos, pétalos 4 y fruto silicua o silícula."
   ),
+  capsella_bursa_pastoris: species(
+    "capsella_bursa_pastoris",
+    "Capsella bursa-pastoris",
+    "59. Cruciferae",
+    "Hierba anual baja, glabra o con pelos estrellados ralos, con tallos erectos de 10-40 cm.",
+    "Hojas radicales enteras o divididas; hojas caulinares generalmente sagitadas; flores pequeñas blancas; frutos triangulares fértiles, con bordes ligeramente convexos o rectos; pétalos al menos media vez más largos que los sépalos; silículas de 5-8 mm.",
+    "Europa; adventicia en todo el globo. En suelos modificados. Nombre vulgar: zurrón de pastor."
+  ),
+  capsella_rubella: species(
+    "capsella_rubella",
+    "Capsella rubella",
+    "59. Cruciferae",
+    "Hierba anual baja, glabra o con pelos estrellados ralos.",
+    "Flores rosadas; frutos triangulares fértiles, con bordes marcadamente cóncavos; pétalos apenas más largos que los sépalos.",
+    "Europa; adventicia en la Argentina."
+  ),
+  capsella_gracilis: species(
+    "capsella_gracilis",
+    "Capsella gracilis",
+    "59. Cruciferae",
+    "Hierba anual baja, de origen híbrido entre Capsella bursa-pastoris y Capsella rubella.",
+    "Frutos acorazonados, pequeños, estériles, de 2-3 mm.",
+    "Europa; adventicia en la Argentina."
+  ),
+  rapistrum_rugosum: species(
+    "rapistrum_rugosum",
+    "Rapistrum rugosum",
+    "59. Cruciferae",
+    "Hierba bienal, erecta, ramosa, pubescente, de 0,5-1,5 m de alto.",
+    "Hojas inferiores lirado-pinatífidas, las superiores lanceoladas y no sagitadas; flores amarillas en largos racimos; fruto indehiscente formado por dos artículos superpuestos, el superior globoso, rugoso, fértil y biseminado, y el inferior menor.",
+    "Europa; adventicia en la Argentina. En terraplenes y suelos modificados."
+  ),
+  neslia_paniculata: species(
+    "neslia_paniculata",
+    "Neslia paniculata",
+    "59. Cruciferae",
+    "Hierba anual o bienal, erecta, ramosa, hirsuta, de 30-60 cm de alto.",
+    "Tallos híspidos, con pelos bifurcados; hojas enteras, las caulinares sagitadas; flores pequeñas amarillas, racimosas; frutos globosos, indehiscentes, reticulados, de unos 2 mm, generalmente monospermos.",
+    "Europa; adventicia en América. Rara en la región platense."
+  ),
+  camelina_sativa: species(
+    "camelina_sativa",
+    "Camelina sativa",
+    "59. Cruciferae",
+    "Hierba anual, erecta, glabra o con pelos en T, de 60-80 cm de alto.",
+    "Hojas enteras, las inferiores oblanceoladas y las superiores lineales, algo auriculadas en la base; flores pequeñas amarillas; frutos obovoideos, polispermos y dehiscentes; semillas obovadas con cotiledones incumbentes; silículas de 11 mm.",
+    "Europa; adventicia en América. En suelos modificados. Nombre vulgar: nabo francés."
+  ),
+  camelina_parodii: species(
+    "camelina_parodii",
+    "Camelina parodii",
+    "59. Cruciferae",
+    "Hierba anual, erecta, pubescente, de 60-80 cm de alto.",
+    "Hojas inferiores lirado-lobadas, las superiores lanceoladas, dentadas y sagitadas en la base; frutos casi acorazonados, polispermos y dehiscentes; semillas achatadas, redondeadas, con cotiledones acumbentes.",
+    "Hallada en cultivos de Buenos Aires y Santa Fe. Probablemente originaria de Europa."
+  ),
+  coronopus_didymus: species(
+    "coronopus_didymus",
+    "Coronopus didymus",
+    "59. Cruciferae",
+    "Hierba anual, rastrera.",
+    "Hojas bipinatisectas; flores blancas en racimos cortos; fruto indehiscente que se separa en dos cocos monospermos, rugosos, de 1-1,5 mm por 2 mm.",
+    "Europa; adventicia en América. Muy común en suelos modificados. Nombre vulgar: mastuerzo."
+  ),
+  coronopus_rhytidocarpus: species(
+    "coronopus_rhytidocarpus",
+    "Coronopus rhytidocarpus",
+    "59. Cruciferae",
+    "Hierba perenne, con raíz gruesa y profunda; tallos rastreros.",
+    "Hojas lineales, enteras o pinatisectas; flores blancas con 2 estambres; frutos indehiscentes muy rugosos, de 3 mm por 4 mm, que se separan en dos cocos monospermos.",
+    "América austral. Rara en la estepa climáxica."
+  ),
+  lobularia_maritima: species(
+    "lobularia_maritima",
+    "Lobularia maritima",
+    "59. Cruciferae",
+    "Hierba perenne, pubescente, glauca, con tallos ascendentes y ramosos de 10-30 cm.",
+    "Hojas enteras, lineal-lanceoladas, de 2-5 cm; flores pequeñas, blancas, de 4 mm, en racimos terminales; plantas con pelos en T; silículas ovadas u orbiculares, de 2-3 mm, con una semilla por lóculo.",
+    "Europa. Cultivada como ornamental y con frecuencia escapada sobre escombros, terraplenes, etc."
+  ),
   elatinaceae: family(
     "elatinaceae",
     "84. Elatinaceae",
@@ -5154,12 +5234,188 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Sí; pétalos 4; fruto silicua o silícula",
       keyStep: "j",
-      especieId: "cruciferae",
+      nextNodeId: "cruciferae_a",
     },
     opcionA_prima: {
       label: "No; estambres no tetradínamos y fruto no silicua",
       keyStep: "j'",
       nextNodeId: "dicot_group_c_k_lower",
+    },
+  },
+  cruciferae_a: {
+    id: "cruciferae_a",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - A: forma relativa del fruto",
+    opcionA: {
+      label: "Fruto orbicular, aovado, elíptico o triangular, tan largo como ancho o poco más largo que ancho (silícula)",
+      keyStep: "A",
+      nextNodeId: "cruciferae_b",
+    },
+    opcionA_prima: {
+      label: "Fruto largamente elíptico o lineal, varias veces más largo que ancho (silicua); rama pendiente para próxima tanda",
+      keyStep: "A'",
+      especieId: "cruciferae",
+    },
+  },
+  cruciferae_b: {
+    id: "cruciferae_b",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - B: forma triangular del fruto",
+    opcionA: {
+      label: "Fruto más o menos triangular; flores blancas o rosadas",
+      keyStep: "B",
+      nextNodeId: "capsella_a",
+    },
+    opcionA_prima: {
+      label: "Fruto globoso, lenticular u ovoideo",
+      keyStep: "B'",
+      nextNodeId: "cruciferae_c",
+    },
+  },
+  capsella_a: {
+    id: "capsella_a",
+    milestone: "Capsella",
+    manualPage: 223,
+    descripcion: "Capsella - A: fertilidad y forma del fruto",
+    opcionA: {
+      label: "Frutos triangulares, fértiles",
+      keyStep: "A",
+      nextNodeId: "capsella_b",
+    },
+    opcionA_prima: {
+      label: "Frutos acorazonados, pequeños, estériles",
+      keyStep: "A'",
+      especieId: "capsella_gracilis",
+    },
+  },
+  capsella_b: {
+    id: "capsella_b",
+    milestone: "Capsella",
+    manualPage: 223,
+    descripcion: "Capsella - B: borde de la silícula y largo de pétalos",
+    opcionA: {
+      label: "Bordes de la silícula ligeramente convexos o rectos; pétalos al menos media vez más largos que los sépalos; hojas dentadas o lobadas; flores blancas",
+      keyStep: "B",
+      especieId: "capsella_bursa_pastoris",
+    },
+    opcionA_prima: {
+      label: "Bordes de la silícula marcadamente cóncavos; pétalos apenas más largos que los sépalos; flores rosadas",
+      keyStep: "B'",
+      especieId: "capsella_rubella",
+    },
+  },
+  cruciferae_c: {
+    id: "cruciferae_c",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - C: color de las flores en silículas no triangulares",
+    opcionA: {
+      label: "Flores amarillas",
+      keyStep: "C",
+      nextNodeId: "cruciferae_d",
+    },
+    opcionA_prima: {
+      label: "Flores blancas",
+      keyStep: "C'",
+      nextNodeId: "cruciferae_f",
+    },
+  },
+  cruciferae_d: {
+    id: "cruciferae_d",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - D: dehiscencia del fruto en flores amarillas",
+    opcionA: {
+      label: "Frutos indehiscentes, globosos, con 1-2 semillas",
+      keyStep: "D",
+      nextNodeId: "cruciferae_e",
+    },
+    opcionA_prima: {
+      label: "Frutos obovoideos, polispermos, dehiscentes",
+      keyStep: "D'",
+      nextNodeId: "camelina_a",
+    },
+  },
+  cruciferae_e: {
+    id: "cruciferae_e",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - E: base de hojas caulinares y estructura del fruto",
+    opcionA: {
+      label: "Hojas no sagitadas en la base; frutos formados por dos artículos superpuestos, el superior mayor, globoso y fértil, el inferior menor y estéril",
+      keyStep: "E",
+      especieId: "rapistrum_rugosum",
+    },
+    opcionA_prima: {
+      label: "Hojas caulinares sagitadas en la base; frutos globosos",
+      keyStep: "E'",
+      especieId: "neslia_paniculata",
+    },
+  },
+  camelina_a: {
+    id: "camelina_a",
+    milestone: "Camelina",
+    manualPage: 225,
+    descripcion: "Camelina - A: forma de semillas y cotiledones",
+    opcionA: {
+      label: "Semillas obovadas con cotiledones incumbentes; frutos obovoideos",
+      keyStep: "A",
+      especieId: "camelina_sativa",
+    },
+    opcionA_prima: {
+      label: "Semillas achatadas, redondeadas, con cotiledones acumbentes; frutos casi acorazonados",
+      keyStep: "A'",
+      especieId: "camelina_parodii",
+    },
+  },
+  cruciferae_f: {
+    id: "cruciferae_f",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - F: dehiscencia del fruto en flores blancas",
+    opcionA: {
+      label: "Fruto indehiscente, deshaciéndose en dos cocos monospermos",
+      keyStep: "F",
+      nextNodeId: "coronopus_a",
+    },
+    opcionA_prima: {
+      label: "Fruto dehiscente",
+      keyStep: "F'",
+      nextNodeId: "cruciferae_g",
+    },
+  },
+  coronopus_a: {
+    id: "coronopus_a",
+    milestone: "Coronopus",
+    manualPage: 225,
+    descripcion: "Coronopus - A: ciclo de vida, hojas y tamaño del fruto",
+    opcionA: {
+      label: "Hierba anual, rastrera; hojas bipinatisectas; frutos rugosos de 1-1,5 mm por 2 mm",
+      keyStep: "A",
+      especieId: "coronopus_didymus",
+    },
+    opcionA_prima: {
+      label: "Hierba perenne, con raíz gruesa y profunda; tallos rastreros; hojas lineales, enteras o pinatisectas; flores con 2 estambres; frutos muy rugosos de 3 mm por 4 mm",
+      keyStep: "A'",
+      especieId: "coronopus_rhytidocarpus",
+    },
+  },
+  cruciferae_g: {
+    id: "cruciferae_g",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - G: tipo de pubescencia",
+    opcionA: {
+      label: "Plantas con pelos en T",
+      keyStep: "G",
+      especieId: "lobularia_maritima",
+    },
+    opcionA_prima: {
+      label: "Plantas glabras o con pelos simples; Lepidium queda para la próxima tanda",
+      keyStep: "G'",
+      especieId: "cruciferae",
     },
   },
   dicot_group_c_k_lower: {
