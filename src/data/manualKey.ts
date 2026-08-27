@@ -1119,6 +1119,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Plantas pigmeas de suelos húmedos, con hojas lineales enteras."
   ),
+  crassula_bonariensis: species(
+    "crassula_bonariensis",
+    "Crassula bonariensis",
+    "61. Crassulaceae",
+    "Hierba anual, pigmea y glabra, con tallos de 2-6 cm de alto.",
+    "Hojas opuestas, lineales, agudas, connatas en la base y enteras, de unos 5 mm; flores axilares, pedunculadas, 4-meras, con pedúnculos generalmente muy alargados a la fructificación; carpelos mucronados y polispermos.",
+    "Suelos húmedos del sur de Brasil, Uruguay y nordeste de la Argentina. Común en el césped de la ribera platense y en campos del interior."
+  ),
+  crassula_solieri: species(
+    "crassula_solieri",
+    "Crassula solieri",
+    "61. Crassulaceae",
+    "Hierba anual pigmea y glabra, semejante a Crassula bonariensis.",
+    "Hojas opuestas, lineales y enteras; flores axilares, sésiles o cortísimamente pedunculadas, 4-meras; carpelos aristados en el ápice y pluriseminados.",
+    "Chile y Argentina. Hallada en Pergamino."
+  ),
   papaveraceae: family(
     "papaveraceae",
     "57. Papaveraceae",
@@ -1170,6 +1186,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "60. Resedaceae",
     "Dicotiledóneas del Grupo C.",
     "Flores cigomorfas con estambres alrededor de 20 o flores actinomorfas con numerosos estambres."
+  ),
+  reseda_luteola: species(
+    "reseda_luteola",
+    "Reseda luteola",
+    "60. Resedaceae",
+    "Hierba anual o bienal, erecta y glabra.",
+    "Hojas lineal-lanceoladas y enteras; flores amarillo-verdosas en racimos alargados; pétalos 4-5 desiguales, el inferior lineal y entero, los superiores lobados; cápsula globosa con costillas y 3-4 dientes apicales.",
+    "Europa. Cultivada como planta de adorno y a veces escapada; subespontánea entre escombros. Nombre vulgar: resedá."
   ),
   leguminosae: family(
     "leguminosae",
@@ -4412,7 +4436,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Plantas pigmeas de suelos húmedos, con hojas lineales enteras",
       keyStep: "E'",
-      especieId: "crassulaceae",
+      nextNodeId: "crassula_a",
     },
   },
   nymphaeaceae_terminal: {
@@ -4431,6 +4455,22 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "cabomba_australis",
     },
     especie: manualFamilyData.cabomba_australis,
+  },
+  crassula_a: {
+    id: "crassula_a",
+    milestone: "Crassulaceae",
+    manualPage: 235,
+    descripcion: "Crassula - A: pedúnculo floral y ápice de los carpelos",
+    opcionA: {
+      label: "Flores axilares, pedunculadas, con pedúnculos generalmente muy alargados a la fructificación; carpelos mucronados en el ápice",
+      keyStep: "A",
+      especieId: "crassula_bonariensis",
+    },
+    opcionA_prima: {
+      label: "Flores axilares, sésiles o cortísimamente pedunculadas; carpelos aristados en el ápice",
+      keyStep: "A'",
+      especieId: "crassula_solieri",
+    },
   },
   ranunculaceae_a: {
     id: "ranunculaceae_a",
@@ -4661,7 +4701,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Estambres alrededor de 20",
       keyStep: "H",
-      especieId: "resedaceae",
+      especieId: "reseda_luteola",
     },
     opcionA_prima: {
       label: "Estambres 5-10",
