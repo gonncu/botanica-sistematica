@@ -1473,6 +1473,62 @@ export const manualFamilyData: Record<string, Especie> = {
     "Folíolos oblongo-elípticos u oblongo-lineales; flores solitarias de 1,5-1,8 cm; legumbres negras.",
     "Europa; adventicia en América. En suelos modificados."
   ),
+  lathyrus_crassipes: species(
+    "lathyrus_crassipes",
+    "Lathyrus crassipes",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual, glabra o casi glabra, voluble, con tallos estrechamente alados.",
+    "Flores generalmente 2 por racimo, raramente 1 o 3; hojas uniyugas con folíolos lineal-lanceolados de 25-50 mm por 3-7 mm; corolas azuladas; ovario y legumbre glabérrimos; legumbre lineal, recta.",
+    "América austral. Común en el norte de la provincia de Buenos Aires. Nombre vulgar: arvejilla."
+  ),
+  lathyrus_paranensis: species(
+    "lathyrus_paranensis",
+    "Lathyrus paranensis",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual, glabra o casi glabra, de tallos bialados y volubles de 20-100 cm.",
+    "Flores 3-9 por racimo; hojas uniyugas con folíolos lanceolados, agudos, de 5-12 cm por 4-14 mm; corolas azules; ovario y legumbres glabérrimos; legumbres rectas, comprimidas y oscuras.",
+    "Uruguay y nordeste de la Argentina. Frecuente en bosques húmedos del Delta y de la ribera platense."
+  ),
+  lathyrus_hirsutus: species(
+    "lathyrus_hirsutus",
+    "Lathyrus hirsutus",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual trepadora, casi glabra, con tallos anchamente alados.",
+    "Ovarios y legumbres hirsutos; hojas uniyugas con folíolos lanceolados y mucronados; pedúnculos con 2-3 flores nutantes, rosadas o azules; legumbre de 3 cm.",
+    "Sur de Europa. Adventicia en la Argentina; citada para el Delta."
+  ),
+  lathyrus_pubescens: species(
+    "lathyrus_pubescens",
+    "Lathyrus pubescens",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, voluble, pubescente y glandulosa, con rizomas leñosos y tallos estrechamente bialados.",
+    "Folíolos uniyugos, lanceolado-ovados, de 25-60 mm por 5-20 mm; flores azules en racimos axilares 6-16-floros; plantas seríceo-pubescentes o tomentosas; legumbres lineales.",
+    "América austral. Frecuente en matorrales del Delta y de la ribera. Nombre vulgar: arvejilla peluda."
+  ),
+  lathyrus_tomentosus: species(
+    "lathyrus_tomentosus",
+    "Lathyrus tomentosus",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne velluda, con raíces leñosas y tallos decumbentes o volubles de 20-60 cm.",
+    "Folíolos lineal-lanceolados de 15-50 mm por 2-6 mm; hojas plateadas, uniyugas; zarcillos nulos o muy cortos; flores azules de 2-3 cm en racimos 3-4-floros; estilo de 7-10 mm; legumbres velludas.",
+    "Campos secos de Uruguay y este de la Argentina; estepa clímax."
+  ),
+  lathyrus_subulatus: species(
+    "lathyrus_subulatus",
+    "Lathyrus subulatus",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, seríceo-pubescente, con tallos decumbentes o algo volubles.",
+    "Folíolos uniyugos, lineal-subulados, de 1,5-4,5 cm; flores azules o violáceas de 1,5-2 cm en racimos erguidos de 2-3 flores; estilo de 3-4 mm; frutos lineales de 4 cm.",
+    "Sur de Brasil, Uruguay y nordeste y centro de la Argentina. Rara en el norte de Buenos Aires; más común en las Sierras."
+  ),
+  lathyrus_parodii: species(
+    "lathyrus_parodii",
+    "Lathyrus parodii",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, glabra o casi glabra, con tallos bialados.",
+    "Folíolos uniyugos, lineal-lanceolados, de 6-11 cm; racimos con 5-11 flores azulado-violáceas; ovario glabro; legumbre de 3-4,5 cm.",
+    "Sur de Brasil y región platense: Delta y San Isidro."
+  ),
   violaceae: family(
     "violaceae",
     "67. Violaceae",
@@ -4136,9 +4192,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "vicia_a",
     },
     opcionA_prima: {
-      label: "Tubo estaminal truncado transversalmente en el ápice; rama pendiente para Lathyrus",
+      label: "Tubo estaminal truncado transversalmente en el ápice",
       keyStep: "E'",
-      especieId: "leguminosae",
+      nextNodeId: "lathyrus_a",
     },
   },
   lupinus_a: {
@@ -4267,6 +4323,102 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Folíolos oblongo-elípticos u oblongo-lineales; flores solitarias de 1,5-1,8 cm; legumbres negras",
       keyStep: "G'",
       especieId: "vicia_angustifolia",
+    },
+  },
+  lathyrus_a: {
+    id: "lathyrus_a",
+    milestone: "Lathyrus",
+    manualPage: 252,
+    descripcion: "Lathyrus - A: ciclo de vida",
+    opcionA: {
+      label: "Hierbas anuales, glabras o casi glabras",
+      keyStep: "A",
+      nextNodeId: "lathyrus_b",
+    },
+    opcionA_prima: {
+      label: "Hierbas perennes",
+      keyStep: "A'",
+      nextNodeId: "lathyrus_d",
+    },
+  },
+  lathyrus_b: {
+    id: "lathyrus_b",
+    milestone: "Lathyrus",
+    manualPage: 252,
+    descripcion: "Lathyrus - B: pubescencia de ovarios y legumbres",
+    opcionA: {
+      label: "Ovarios y legumbres glabérrimos",
+      keyStep: "B",
+      nextNodeId: "lathyrus_c",
+    },
+    opcionA_prima: {
+      label: "Ovarios y legumbres hirsutos; anual, trepadora, casi glabra; tallos anchamente alados; pedúnculos con 2-3 flores nutantes",
+      keyStep: "B'",
+      especieId: "lathyrus_hirsutus",
+    },
+  },
+  lathyrus_c: {
+    id: "lathyrus_c",
+    milestone: "Lathyrus",
+    manualPage: 252,
+    descripcion: "Lathyrus - C: cantidad de flores por racimo",
+    opcionA: {
+      label: "Flores generalmente 2 por racimo, raramente 1 o 3; tallos estrechamente alados; folíolos lineal-lanceolados de 25-50 mm",
+      keyStep: "C",
+      especieId: "lathyrus_crassipes",
+    },
+    opcionA_prima: {
+      label: "Flores 3-9 por racimo; tallos bialados; folíolos lanceolados de 5-12 cm; corolas azules",
+      keyStep: "C'",
+      especieId: "lathyrus_paranensis",
+    },
+  },
+  lathyrus_d: {
+    id: "lathyrus_d",
+    milestone: "Lathyrus",
+    manualPage: 254,
+    descripcion: "Lathyrus - D: pubescencia en plantas perennes",
+    opcionA: {
+      label: "Plantas seríceo-pubescentes o tomentosas",
+      keyStep: "D",
+      nextNodeId: "lathyrus_e",
+    },
+    opcionA_prima: {
+      label: "Plantas glabras o casi glabras, perennes; tallos bialados; folíolos uniyugos, lineal-lanceolados, de 6-11 cm; racimos con 5-11 flores",
+      keyStep: "D'",
+      especieId: "lathyrus_parodii",
+    },
+  },
+  lathyrus_e: {
+    id: "lathyrus_e",
+    milestone: "Lathyrus",
+    manualPage: 254,
+    descripcion: "Lathyrus - E: forma de folíolos",
+    opcionA: {
+      label: "Folíolos uniyugos, lanceolado-ovados, de 25-60 mm por 5-20 mm; hierba perenne, voluble, pubescente y glandulosa",
+      keyStep: "E",
+      especieId: "lathyrus_pubescens",
+    },
+    opcionA_prima: {
+      label: "Folíolos lineales de 1-6 mm de anchura; flores 1-5 en cada racimo",
+      keyStep: "E'",
+      nextNodeId: "lathyrus_f",
+    },
+  },
+  lathyrus_f: {
+    id: "lathyrus_f",
+    milestone: "Lathyrus",
+    manualPage: 254,
+    descripcion: "Lathyrus - F: largo del estilo",
+    opcionA: {
+      label: "Estilo de 7-10 mm; flores azules de 2-3 cm; hierba perenne velluda; zarcillos nulos o muy cortos; legumbres velludas",
+      keyStep: "F",
+      especieId: "lathyrus_tomentosus",
+    },
+    opcionA_prima: {
+      label: "Estilo de 3-4 mm; flores azules o violáceas de 1,5-2 cm; hierba perenne seríceo-pubescente; frutos lineales de 4 cm",
+      keyStep: "F'",
+      especieId: "lathyrus_subulatus",
     },
   },
   santalaceae_a: {
