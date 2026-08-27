@@ -1569,6 +1569,46 @@ export const manualFamilyData: Record<string, Especie> = {
     "Frutos glabros o casi glabros; hojas envainadoras, con folíolos lanceolados de nervaduras muy marcadas; cabezuelas cerdosas; flores amarillas pequeñas.",
     "Paraguay, Uruguay y norte de la Argentina. Accidental en el Dock Sur."
   ),
+  medicago_lupulina: species(
+    "medicago_lupulina",
+    "Medicago lupulina",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual o perenne, con tallos decumbentes.",
+    "Fruto uniseminado, reniforme, de 1,5-3 mm, inerme, espiralado sólo en la parte superior; folíolos pubescentes casi circulares, dentados en la parte superior; estípulas grandes, poco dentadas; flores amarillas pequeñas en racimos capituliformes.",
+    "Hemisferio oriental; adventicia en América. En suelos modificados. Nombre vulgar: lupulina."
+  ),
+  medicago_sativa: species(
+    "medicago_sativa",
+    "Medicago sativa",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, con raíz gruesa y profunda; tallos erectos de un metro o más.",
+    "Folíolos elípticos dentados en el ápice; estípulas lanceoladas casi enteras; flores azules o violáceas, a veces blancas, en racimos alargados; frutos espiralados, sin gloquidios.",
+    "Europa; cultivada como forrajera y a veces subespontánea. Nombre vulgar: alfalfa."
+  ),
+  medicago_minima: species(
+    "medicago_minima",
+    "Medicago minima",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual velluda, con tallos decumbentes.",
+    "Estípulas enteras o casi enteras; folíolos dentados en la parte superior; flores amarillas muy pequeñas; frutos espiralados, con largos gloquidios ganchudos.",
+    "Europa; adventicia en la Argentina. Muy común en campos dedicados a la ganadería. Nombre vulgar: trébol de carretilla."
+  ),
+  medicago_arabica: species(
+    "medicago_arabica",
+    "Medicago arabica",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual semidecumbente, casi glabra.",
+    "Frutos globosos, espiralados, formados por 4-5 espiras anchas y planas en el borde, con gloquidios entrecruzados no ganchudos; folíolos grandes, con una mancha oscura central; estípulas grandes, dentadas.",
+    "Viejo Mundo; introducida en América. En suelos modificados."
+  ),
+  medicago_hispida: species(
+    "medicago_hispida",
+    "Medicago hispida",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual, glabra, con tallos decumbentes o ascendentes.",
+    "Frutos espiralados, con 2-4 espiras de borde carenado, con gloquidios ganchudos o sin ellos; folíolos dentados, sin mancha; estípulas laciniadas. El manual cita var. apiculata, con espinas muy cortas, y var. confinis, sin espinas y con pequeños tubérculos.",
+    "Europa; adventicia en Sudamérica. En campos con hacienda, jardines, etc. Nombre vulgar: trébol de carretilla."
+  ),
   violaceae: family(
     "violaceae",
     "67. Violaceae",
@@ -4504,9 +4544,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "papilionoideae_i",
     },
     opcionA_prima: {
-      label: "Fruto de otro tipo, no lamento; rama pendiente desde Medicago",
+      label: "Fruto de otro tipo, no lamento",
       keyStep: "H'",
-      especieId: "leguminosae",
+      nextNodeId: "papilionoideae_j",
     },
   },
   papilionoideae_i: {
@@ -4555,6 +4595,102 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Frutos glabros o casi; hojas envainadoras con folíolos lanceolados y nervaduras muy marcadas; cabezuelas cerdosas",
       keyStep: "A'",
       especieId: "stylosanthes_gracilis_subviscosa",
+    },
+  },
+  papilionoideae_j: {
+    id: "papilionoideae_j",
+    milestone: "Papilionoideae",
+    manualPage: 242,
+    descripcion: "Papilionoideae - J: forma y dehiscencia de los frutos",
+    opcionA: {
+      label: "Frutos cortos y anchos, generalmente indehiscentes; folíolos dentados",
+      keyStep: "J",
+      nextNodeId: "papilionoideae_k",
+    },
+    opcionA_prima: {
+      label: "Frutos alargados, dehiscentes; folíolos enteros; rama pendiente para Phaseolus y afines",
+      keyStep: "J'",
+      especieId: "leguminosae",
+    },
+  },
+  papilionoideae_k: {
+    id: "papilionoideae_k",
+    milestone: "Papilionoideae",
+    manualPage: 242,
+    descripcion: "Papilionoideae - K: curvatura del fruto",
+    opcionA: {
+      label: "Fruto curvado o enroscado, frecuentemente cubierto de garfios",
+      keyStep: "K",
+      nextNodeId: "medicago_a",
+    },
+    opcionA_prima: {
+      label: "Fruto no curvado; rama pendiente para Trifolium y Melilotus",
+      keyStep: "K'",
+      especieId: "leguminosae",
+    },
+  },
+  medicago_a: {
+    id: "medicago_a",
+    milestone: "Medicago",
+    manualPage: 256,
+    descripcion: "Medicago - A: cantidad de semillas en el fruto",
+    opcionA: {
+      label: "Fruto uniseminado, reniforme, de 1,5-3 mm, inerme, espiralado sólo en la parte superior",
+      keyStep: "A",
+      especieId: "medicago_lupulina",
+    },
+    opcionA_prima: {
+      label: "Fruto con varias semillas, arrollado en espiral",
+      keyStep: "A'",
+      nextNodeId: "medicago_b",
+    },
+  },
+  medicago_b: {
+    id: "medicago_b",
+    milestone: "Medicago",
+    manualPage: 256,
+    descripcion: "Medicago - B: ciclo de vida y color de flores",
+    opcionA: {
+      label: "Hierba perenne; folíolos elípticos dentados en el ápice; flores azules o violáceas, a veces blancas; frutos sin gloquidios",
+      keyStep: "B",
+      especieId: "medicago_sativa",
+    },
+    opcionA_prima: {
+      label: "Plantas anuales; flores amarillas",
+      keyStep: "B'",
+      nextNodeId: "medicago_c",
+    },
+  },
+  medicago_c: {
+    id: "medicago_c",
+    milestone: "Medicago",
+    manualPage: 257,
+    descripcion: "Medicago - C: estípulas y pubescencia",
+    opcionA: {
+      label: "Estípulas enteras o casi enteras; plantas velludas; frutos con largos gloquidios ganchudos",
+      keyStep: "C",
+      especieId: "medicago_minima",
+    },
+    opcionA_prima: {
+      label: "Estípulas profundamente dentadas o laciniadas; plantas casi glabras",
+      keyStep: "C'",
+      nextNodeId: "medicago_d",
+    },
+  },
+  medicago_d: {
+    id: "medicago_d",
+    milestone: "Medicago",
+    manualPage: 257,
+    descripcion: "Medicago - D: espiras del fruto y mancha foliar",
+    opcionA: {
+      label: "Frutos globosos, con 4-5 espiras anchas y planas, con gloquidios entrecruzados no ganchudos; folíolos grandes con mancha oscura",
+      keyStep: "D",
+      especieId: "medicago_arabica",
+    },
+    opcionA_prima: {
+      label: "Frutos espiralados, con 2-4 espiras de borde carenado, con gloquidios ganchudos o sin gloquidios; folíolos sin mancha",
+      keyStep: "D'",
+      especieId: "medicago_hispida",
     },
   },
   santalaceae_a: {

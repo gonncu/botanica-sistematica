@@ -31,12 +31,12 @@ npm run build
 Ultima familia cargada, validada y subida:
 
 - `64. Leguminosae`, en progreso desde pagina 240 del manual.
-- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` con `Mimosoideae`, `Caesalpinioideae` y `Papilionoideae` cargada hasta `Stylosanthes`.
-- Ultimo commit subido antes de esta tanda: `24c0c42 Add Lathyrus Leguminosae keys`.
+- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` con `Mimosoideae`, `Caesalpinioideae` y `Papilionoideae` cargada hasta `Medicago`.
+- Ultimo commit subido antes de esta tanda: `eb6f812 Add Desmodium Stylosanthes Leguminosae keys`.
 
 ## Proxima familia consecutiva
 
-- `64. Leguminosae`, continuar con `Medicago`, pagina 256 del manual (`PDF_PAGE=263`).
+- `64. Leguminosae`, continuar con `Trifolium`, pagina 257 del manual (`PDF_PAGE=264`).
 
 ## Regla de trabajo
 
