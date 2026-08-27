@@ -1377,6 +1377,38 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas bipinadas y glabras; racimos terminales multifloros, con pedúnculos y pedicelos muy glandulosos; cáliz glanduloso; pétalos amarillos de 2-3 cm; estambres y estilo rojos de 8-9 cm; legumbre comprimida de 7-10 cm, bivalva.",
     "Norte y centro de la Argentina y Uruguay. Común en barrancas del Paraná y a veces junto a alambrados y cercos. Nombre vulgar: lagaña de perro, barba de chivo."
   ),
+  ulex_europaeus: species(
+    "ulex_europaeus",
+    "Ulex europaeus",
+    "64. Leguminosae - Papilionoideae",
+    "Arbusto de 1-2 m de alto.",
+    "Ramas espiniformes y hojas reducidas a un pecíolo espinoso; flores grandes, amarillas; cáliz coloreado y bipartido; legumbres comprimidas, cortas, con 1-3 semillas.",
+    "Europa; cultivada para cercos vivos y a veces subespontánea. Nombre vulgar: tojo."
+  ),
+  galactia_marginalis: species(
+    "galactia_marginalis",
+    "Galactia marginalis",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba rastrera, con raíz napiforme.",
+    "Hojas unifolioladas, con folíolo lanceolado de 2-5 cm por 5-10 mm; flores 1-3 en las axilas de las hojas, con corola azul o violácea; legumbre lineal.",
+    "América cálida. Rara en campos altos de Abasto."
+  ),
+  lupinus_bracteolaris: species(
+    "lupinus_bracteolaris",
+    "Lupinus bracteolaris",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual cubierta de pelos leonados largos.",
+    "Hojas digitadas con 5 folíolos oblanceolados; estípulas grandes; flores azuladas en racimos terminales; legumbre más o menos comprimida, con frecuencia seríceo-velluda.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina. En suelos arenosos. Muy rara cerca de Buenos Aires."
+  ),
+  lupinus_multiflorus: species(
+    "lupinus_multiflorus",
+    "Lupinus multiflorus",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, de 50 cm de alto, densamente argénteo-serícea.",
+    "Hojas digitadas con 7-9 folíolos oblanceolados; flores azules en racimos terminales; legumbre más o menos comprimida.",
+    "Uruguay y nordeste de la Argentina. En dunas y arenales; citada para Isla Martín García."
+  ),
   violaceae: family(
     "violaceae",
     "67. Violaceae",
@@ -3722,7 +3754,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Pétalo superior externo, cubriendo con sus bordes a los otros pétalos; corola generalmente amariposada",
       keyStep: "B'",
-      especieId: "leguminosae",
+      nextNodeId: "papilionoideae_a",
     },
   },
   mimosoideae_a: {
@@ -3963,6 +3995,70 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hierba perenne, glabra; hojas paripinadas 4-6-yugas; legumbres comprimidas, largas y estrechas, con 20-40 semillas",
       keyStep: "A'",
       especieId: "cassia_occidentalis",
+    },
+  },
+  papilionoideae_a: {
+    id: "papilionoideae_a",
+    milestone: "Papilionoideae",
+    manualPage: 241,
+    descripcion: "Papilionoideae - A: hojas reducidas o normales",
+    opcionA: {
+      label: "Hojas reducidas, espiniformes",
+      keyStep: "A",
+      especieId: "ulex_europaeus",
+    },
+    opcionA_prima: {
+      label: "Hojas normales, no espiniformes",
+      keyStep: "A'",
+      nextNodeId: "papilionoideae_b",
+    },
+  },
+  papilionoideae_b: {
+    id: "papilionoideae_b",
+    milestone: "Papilionoideae",
+    manualPage: 241,
+    descripcion: "Papilionoideae - B: número de folíolos",
+    opcionA: {
+      label: "Hojas formadas por un solo folíolo",
+      keyStep: "B",
+      especieId: "galactia_marginalis",
+    },
+    opcionA_prima: {
+      label: "Hojas compuestas, con más de un folíolo",
+      keyStep: "B'",
+      nextNodeId: "papilionoideae_c",
+    },
+  },
+  papilionoideae_c: {
+    id: "papilionoideae_c",
+    milestone: "Papilionoideae",
+    manualPage: 241,
+    descripcion: "Papilionoideae - C: hojas digitadas o pinadas",
+    opcionA: {
+      label: "Hojas digitadas, con 5-15 folíolos",
+      keyStep: "C",
+      nextNodeId: "lupinus_a",
+    },
+    opcionA_prima: {
+      label: "Hojas pinadas; rama pendiente desde Vicia",
+      keyStep: "C'",
+      especieId: "leguminosae",
+    },
+  },
+  lupinus_a: {
+    id: "lupinus_a",
+    milestone: "Lupinus",
+    manualPage: 251,
+    descripcion: "Lupinus - A: ciclo de vida, pubescencia y folíolos",
+    opcionA: {
+      label: "Hierba anual, cubierta de pelos leonados largos; hojas con 5 folíolos oblanceolados; estípulas grandes; flores azuladas",
+      keyStep: "A",
+      especieId: "lupinus_bracteolaris",
+    },
+    opcionA_prima: {
+      label: "Hierba perenne, de 50 cm, densamente argénteo-serícea; hojas con 7-9 folíolos oblanceolados; flores azules",
+      keyStep: "A'",
+      especieId: "lupinus_multiflorus",
     },
   },
   santalaceae_a: {
