@@ -1241,6 +1241,94 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Ovario unicarpelar unilocular; fruto legumbre."
   ),
+  desmanthus_virgatus: species(
+    "desmanthus_virgatus",
+    "Desmanthus virgatus",
+    "64. Leguminosae - Mimosoideae",
+    "Hierba perenne con raíces gruesas; tallos erectos, costados y glabrescentes, de 0,5-1 m de alto.",
+    "Hojas bipinadas con foliólulos muy pequeños; flores blancas en cabezuelas; estambres 5-10; legumbres lineales, agudas, comprimidas y dehiscentes.",
+    "América tropical y subtropical. En campos altos del norte de la provincia de Buenos Aires."
+  ),
+  mimosa_bonplandii: species(
+    "mimosa_bonplandii",
+    "Mimosa bonplandii",
+    "64. Leguminosae - Mimosoideae",
+    "Arbusto inerme de 2-3 m de altura, glabrescente.",
+    "Hojas bipinadas, con 2-6 pares de divisiones primarias, cada una con 11-20 pares de foliólulos; flores amarillas en capítulos globosos; estambres unidos en la base; frutos con pelos estrellados.",
+    "Endémica de la región platense. Común en terrenos inundables del Delta y de la ribera."
+  ),
+  mimosa_pilulifera: species(
+    "mimosa_pilulifera",
+    "Mimosa pilulifera",
+    "64. Leguminosae - Mimosoideae",
+    "Arbusto o arbolito inerme, con ramas jóvenes tomentosas.",
+    "Hojas bipinadas, con un solo par de divisiones primarias, cada una con 15-31 pares de foliólulos; flores amarillas en cabezuelas esféricas axilares, largamente pedunculadas; estambres libres hasta la base; frutos lineales muy comprimidos con tomento de pelitos estrellados.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina. Hallada en la ribera platense y en la Isla Martín García."
+  ),
+  mimosa_pigra: species(
+    "mimosa_pigra",
+    "Mimosa pigra",
+    "64. Leguminosae - Mimosoideae",
+    "Arbusto hirsuto con aguijones curvos y pelos tiesos bronceados.",
+    "Hojas grandes, sensitivas, con raquis provisto de aguijones y 5-15 pares de divisiones primarias, cada una con numerosos foliólulos oblongo-lineales; flores rosadas o blancas en capítulos arracimados o axilares; lamentos con 7-21 artejos caducos.",
+    "América y África tropicales. Común en el Delta y en Martín García. Nombre vulgar: carpinchera."
+  ),
+  mimosa_vellosiella: species(
+    "mimosa_vellosiella",
+    "Mimosa vellosiella",
+    "64. Leguminosae - Mimosoideae",
+    "Arbusto rastrero con aguijones y pelos tendidos cenicientos.",
+    "Hojas sensitivas, con 4-10 pares de divisiones primarias, cada una con numerosos foliólulos oblongos; flores en cabezuelas globosas arracimadas; lamentos muy comprimidos, con 3-15 artículos.",
+    "Sur de Brasil, Paraguay y nordeste de la Argentina hasta el Delta y Martín García."
+  ),
+  prosopis_alba: species(
+    "prosopis_alba",
+    "Prosopis alba",
+    "64. Leguminosae - Mimosoideae",
+    "Árbol robusto, de copa amplia, con espinas escasas.",
+    "Hojas 1-3-yugas, con pínulas de 25-36 pares de foliólulos oblongo-lineales; flores amarillentas en racimos densos; frutos largos, rectos o curvos, amarillo claro.",
+    "Norte y centro de la Argentina. Cerca de Buenos Aires sólo se cita un ejemplar viejísimo en la barranca de San Isidro. Nombre vulgar: algarrobo blanco."
+  ),
+  acacia_caven: species(
+    "acacia_caven",
+    "Acacia caven",
+    "64. Leguminosae - Mimosoideae",
+    "Árbol de 5-6 m de altura, con ramas pardas onduladas y espinas estipulares rectas en los nudos.",
+    "Flores anaranjadas, fragantes, dispuestas en cabezuelas; hojas bipinadas con foliólulos muy pequeños; legumbres gruesas, indehiscentes y negras.",
+    "América templado-cálida. Frecuente en bosques de tala de las barrancas del Paraná y de la ribera platense. Nombre vulgar: espinillo, aromo."
+  ),
+  acacia_bonariensis: species(
+    "acacia_bonariensis",
+    "Acacia bonariensis",
+    "64. Leguminosae - Mimosoideae",
+    "Arbusto erecto o apoyante, de 2-3 m de alto, con ramas provistas de fuertes aguijones curvos.",
+    "Flores blancas en espigas; hojas bipinadas, con aguijones sobre el raquis y 3-6 pares de ramificaciones primarias con numerosos foliólulos; legumbre dehiscente, oblonga y comprimida.",
+    "Sur de Brasil, Uruguay y norte y centro de la Argentina. Frecuente en talares, terraplenes ferroviarios y alambrados. Nombre vulgar: ñapinday."
+  ),
+  inga_uruguensis: species(
+    "inga_uruguensis",
+    "Inga uruguensis",
+    "64. Leguminosae - Mimosoideae",
+    "Árbol achaparrado, con ramas jóvenes amarillento-tomentosas.",
+    "Hojas paripinadas, con 4-6 pares de folíolos lanceolados grandes y raquis alado; flores grandes en espigas cortas; cáliz y corola amarillento-tomentosos; estambres blancos; legumbres comprimidas, tomentosas, con sutura y nervadura muy engrosadas.",
+    "Uruguay, Paraguay, sur de Brasil y nordeste de la Argentina. Bosques higrófilos del Delta e Isla Martín García. Nombre vulgar: ingá."
+  ),
+  calliandra_parvifolia: species(
+    "calliandra_parvifolia",
+    "Calliandra parvifolia",
+    "64. Leguminosae - Mimosoideae",
+    "Arbusto inerme de 2-3 m de alto.",
+    "Hojas bipinadas, con foliólulos oblongos muy pequeños; flores en cabezuelas axilares hemisféricas grandes; filamentos estaminales muy largos, blancos en la parte inferior y rosados en la superior; fruto legumbre dehiscente.",
+    "Sur de Brasil, Paraguay, Uruguay y nordeste de la Argentina hasta el Río de la Plata. Frecuente en matorrales del Delta y de la ribera. Nombre vulgar: flor de seda."
+  ),
+  enterolobium_contortisiliquum: species(
+    "enterolobium_contortisiliquum",
+    "Enterolobium contortisiliquum",
+    "64. Leguminosae - Mimosoideae",
+    "Árbol elevado, de corteza gris y copa amplia.",
+    "Hojas bipinadas, con 3-7 pares de divisiones primarias, cada una con 8-23 pares de foliólulos lanceolados; flores blancas en racimos de cabezuelas; fruto ancho, arriñonado o auriculiforme, comprimido, indehiscente y negro.",
+    "América tropical y subtropical. Rara en el Delta y en la Isla Martín García. Nombre vulgar: timbó, pacará, oreja de negro."
+  ),
   violaceae: family(
     "violaceae",
     "67. Violaceae",
@@ -3557,6 +3645,198 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "rubus_caesius",
     },
   },
+  leguminosae_a: {
+    id: "leguminosae_a",
+    milestone: "Leguminosae",
+    manualPage: 241,
+    descripcion: "Leguminosae - A: simetría floral y prefloración",
+    opcionA: {
+      label: "Flores actinomorfas, en espigas o capítulos densos; corola de prefloración valvar; hojas bipinadas o reducidas a filodios",
+      keyStep: "A",
+      nextNodeId: "mimosoideae_a",
+    },
+    opcionA_prima: {
+      label: "Flores cigomorfas o irregulares; corola de prefloración imbricada",
+      keyStep: "A'",
+      nextNodeId: "leguminosae_b",
+    },
+  },
+  leguminosae_b: {
+    id: "leguminosae_b",
+    milestone: "Leguminosae",
+    manualPage: 241,
+    descripcion: "Leguminosae - B: posición del estandarte",
+    opcionA: {
+      label: "Pétalo superior interno, cubierto en sus bordes por los otros pétalos; sépalos y pétalos libres; hojas pinadas o bipinadas",
+      keyStep: "B",
+      especieId: "leguminosae",
+    },
+    opcionA_prima: {
+      label: "Pétalo superior externo, cubriendo con sus bordes a los otros pétalos; corola generalmente amariposada",
+      keyStep: "B'",
+      especieId: "leguminosae",
+    },
+  },
+  mimosoideae_a: {
+    id: "mimosoideae_a",
+    milestone: "Mimosoideae",
+    manualPage: 241,
+    descripcion: "Mimosoideae - A: número de estambres",
+    opcionA: {
+      label: "Estambres 5-10",
+      keyStep: "A",
+      nextNodeId: "mimosoideae_b",
+    },
+    opcionA_prima: {
+      label: "Estambres muy numerosos; arbustos o árboles",
+      keyStep: "A'",
+      nextNodeId: "mimosoideae_d",
+    },
+  },
+  mimosoideae_b: {
+    id: "mimosoideae_b",
+    milestone: "Mimosoideae",
+    manualPage: 241,
+    descripcion: "Mimosoideae - B: porte y tipo de legumbre",
+    opcionA: {
+      label: "Hierbas perennes; legumbre normal",
+      keyStep: "B",
+      especieId: "desmanthus_virgatus",
+    },
+    opcionA_prima: {
+      label: "Arbustos o árboles; legumbre lomentácea o indehiscente",
+      keyStep: "B'",
+      nextNodeId: "mimosoideae_c",
+    },
+  },
+  mimosoideae_c: {
+    id: "mimosoideae_c",
+    milestone: "Mimosoideae",
+    manualPage: 241,
+    descripcion: "Mimosoideae - C: tipo de inflorescencia y glándula de anteras",
+    opcionA: {
+      label: "Flores en capítulos esféricos; anteras sin glándula",
+      keyStep: "C",
+      nextNodeId: "mimosa_a",
+    },
+    opcionA_prima: {
+      label: "Flores en espigas alargadas; anteras con glándula apical",
+      keyStep: "C'",
+      especieId: "prosopis_alba",
+    },
+  },
+  mimosa_a: {
+    id: "mimosa_a",
+    milestone: "Mimosa",
+    manualPage: 243,
+    descripcion: "Mimosa - A: presencia de aguijones y número de estambres",
+    opcionA: {
+      label: "Arbustos inermes; flores haplostémonas, con 4-5 estambres",
+      keyStep: "A",
+      nextNodeId: "mimosa_b",
+    },
+    opcionA_prima: {
+      label: "Arbustos con aguijones; flores diplostémonas, con 8-10 estambres",
+      keyStep: "A'",
+      nextNodeId: "mimosa_c",
+    },
+  },
+  mimosa_b: {
+    id: "mimosa_b",
+    milestone: "Mimosa",
+    manualPage: 243,
+    descripcion: "Mimosa - B: pares de divisiones primarias",
+    opcionA: {
+      label: "Hojas bipinadas, con 2-6 pares de divisiones primarias, cada una con 11-20 pares de foliólulos; flores amarillas; estambres unidos en la base",
+      keyStep: "B",
+      especieId: "mimosa_bonplandii",
+    },
+    opcionA_prima: {
+      label: "Hojas bipinadas, con un solo par de divisiones primarias, cada una con 15-31 pares de foliólulos; flores amarillas; estambres libres hasta la base",
+      keyStep: "B'",
+      especieId: "mimosa_pilulifera",
+    },
+  },
+  mimosa_c: {
+    id: "mimosa_c",
+    milestone: "Mimosa",
+    manualPage: 245,
+    descripcion: "Mimosa - C: hábito y pubescencia",
+    opcionA: {
+      label: "Arbustos hirsutos, con aguijones curvos y pelos tiesos bronceados; hojas grandes, sensitivas; lamentos con 7-21 artejos caducos",
+      keyStep: "C",
+      especieId: "mimosa_pigra",
+    },
+    opcionA_prima: {
+      label: "Arbusto rastrero con aguijones y pelos tendidos cenicientos; hojas sensitivas; lamentos muy comprimidos con 3-15 artículos",
+      keyStep: "C'",
+      especieId: "mimosa_vellosiella",
+    },
+  },
+  mimosoideae_d: {
+    id: "mimosoideae_d",
+    milestone: "Mimosoideae",
+    manualPage: 241,
+    descripcion: "Mimosoideae - D: filamentos de los estambres",
+    opcionA: {
+      label: "Filamentos de los estambres libres entre sí",
+      keyStep: "D",
+      nextNodeId: "acacia_a",
+    },
+    opcionA_prima: {
+      label: "Filamentos de los estambres soldados en la parte inferior formando un tubo más o menos largo",
+      keyStep: "D'",
+      nextNodeId: "mimosoideae_e",
+    },
+  },
+  acacia_a: {
+    id: "acacia_a",
+    milestone: "Acacia",
+    manualPage: 246,
+    descripcion: "Acacia - A: color e inflorescencia",
+    opcionA: {
+      label: "Flores anaranjadas, fragantes, dispuestas en cabezuelas; hojas bipinadas con foliólulos muy pequeños; legumbres gruesas, indehiscentes, negras",
+      keyStep: "A",
+      especieId: "acacia_caven",
+    },
+    opcionA_prima: {
+      label: "Flores blancas, en espigas; hojas bipinadas, con aguijones sobre el raquis y 3-6 pares de ramificaciones primarias; legumbre dehiscente, oblonga, comprimida",
+      keyStep: "A'",
+      especieId: "acacia_bonariensis",
+    },
+  },
+  mimosoideae_e: {
+    id: "mimosoideae_e",
+    milestone: "Mimosoideae",
+    manualPage: 241,
+    descripcion: "Mimosoideae - E: tipo de hoja y raquis",
+    opcionA: {
+      label: "Hojas paripinadas, con raquis alado",
+      keyStep: "E",
+      especieId: "inga_uruguensis",
+    },
+    opcionA_prima: {
+      label: "Hojas bipinadas; raquis sin alas",
+      keyStep: "E'",
+      nextNodeId: "mimosoideae_f",
+    },
+  },
+  mimosoideae_f: {
+    id: "mimosoideae_f",
+    milestone: "Mimosoideae",
+    manualPage: 241,
+    descripcion: "Mimosoideae - F: dehiscencia del fruto",
+    opcionA: {
+      label: "Fruto legumbre dehiscente",
+      keyStep: "F",
+      especieId: "calliandra_parvifolia",
+    },
+    opcionA_prima: {
+      label: "Fruto indehiscente, en forma de oreja",
+      keyStep: "F'",
+      especieId: "enterolobium_contortisiliquum",
+    },
+  },
   santalaceae_a: {
     id: "santalaceae_a",
     milestone: "Santalaceae",
@@ -4828,7 +5108,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Estambres 10; ovario unicarpelar unilocular; fruto legumbre",
       keyStep: "I",
-      especieId: "leguminosae",
+      nextNodeId: "leguminosae_a",
     },
     opcionA_prima: {
       label: "Estambres 5-8; ovario 2-3-carpelar; fruto no legumbre",
@@ -4980,7 +5260,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Ovario unilocular; estambres 10-∞; fruto legumbre",
       keyStep: "Q",
-      especieId: "leguminosae",
+      nextNodeId: "leguminosae_a",
     },
     opcionA_prima: {
       label: "Ovario 3-5-locular; estambres 8-10",
@@ -7379,7 +7659,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Hojas alternas, compuestas; estambres 5 a numerosos",
       keyStep: "M'",
-      especieId: "leguminosae",
+      nextNodeId: "leguminosae_a",
     },
   },
   nyctaginaceae_a: {
