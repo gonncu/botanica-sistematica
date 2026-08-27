@@ -1329,6 +1329,54 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas bipinadas, con 3-7 pares de divisiones primarias, cada una con 8-23 pares de foliólulos lanceolados; flores blancas en racimos de cabezuelas; fruto ancho, arriñonado o auriculiforme, comprimido, indehiscente y negro.",
     "América tropical y subtropical. Rara en el Delta y en la Isla Martín García. Nombre vulgar: timbó, pacará, oreja de negro."
   ),
+  bauhinia_candicans: species(
+    "bauhinia_candicans",
+    "Bauhinia candicans",
+    "64. Leguminosae - Caesalpinioideae",
+    "Árbol de 3-8 m de altura, con aguijones estipulares curvos.",
+    "Hojas simples, bilobadas, de unos 10 cm por 10 cm; flores grandes y blancas; cáliz gamosépalo, hendido lateralmente durante la antesis; pétalos libres y estambres 10.",
+    "Uruguay y norte de la Argentina. Cultivada como ornamental y a veces subespontánea cerca de Buenos Aires. Nombre vulgar: falsa caoba, pezuña de vaca, pata de buey."
+  ),
+  parkinsonia_aculeata: species(
+    "parkinsonia_aculeata",
+    "Parkinsonia aculeata",
+    "64. Leguminosae - Caesalpinioideae",
+    "Arbolito de 6-8 m de alto.",
+    "Flores anaranjadas; hojas pinadas con raquis primario corto y espinoso, y raquis secundarios largos, planos, con numerosos foliólulos caducos; legumbre lineal bivalva.",
+    "América tropical y subtropical. Cultivada para cercos vivos y espontánea en bosques próximos a la ribera del Plata y terraplenes. Nombre vulgar: cina-cina."
+  ),
+  gleditsia_triacanthos: species(
+    "gleditsia_triacanthos",
+    "Gleditsia triacanthos",
+    "64. Leguminosae - Caesalpinioideae",
+    "Árbol elevado, con tronco provisto de grandes espinas ramificadas.",
+    "Hojas bipinadas con foliólulos elípticos y glabros; flores pequeñas en racimos; legumbres rectas o arqueadas, de 30-50 cm por 3-5 cm.",
+    "América del Norte. Cultivada como forestal y subespontánea en el Delta. Nombre vulgar: acacia negra, corona de cristo."
+  ),
+  cassia_corymbosa: species(
+    "cassia_corymbosa",
+    "Cassia corymbosa",
+    "64. Leguminosae - Caesalpinioideae",
+    "Arbusto glabro de 1-3 m de alto.",
+    "Hojas pinadas con estípulas basales caducas; raquis de unos 4 cm con 3 pares de folíolos oblongos y agudos; flores amarillas en racimos axilares y terminales; estambres desiguales; legumbres cilíndricas de unos 10 cm.",
+    "Sur de Brasil, Uruguay y norte de la Argentina hasta Buenos Aires. En talares y bosques del Delta y de la ribera. Nombre vulgar: sen del campo, rama negra."
+  ),
+  cassia_occidentalis: species(
+    "cassia_occidentalis",
+    "Cassia occidentalis",
+    "64. Leguminosae - Caesalpinioideae",
+    "Hierba perenne, glabra, de hasta 1 m de alto.",
+    "Hojas paripinadas, 4-6-yugas, con folíolos ovado-lanceolados, acuminados; flores amarillas grandes en racimos terminales; legumbres comprimidas, largas y estrechas, con 20-40 semillas.",
+    "Cosmopolita, muy común en el norte de la Argentina. Rara en la región platense."
+  ),
+  caesalpinia_gilliesii: species(
+    "caesalpinia_gilliesii",
+    "Caesalpinia gilliesii",
+    "64. Leguminosae - Caesalpinioideae",
+    "Arbusto de 1-3 m de alto.",
+    "Hojas bipinadas y glabras; racimos terminales multifloros, con pedúnculos y pedicelos muy glandulosos; cáliz glanduloso; pétalos amarillos de 2-3 cm; estambres y estilo rojos de 8-9 cm; legumbre comprimida de 7-10 cm, bivalva.",
+    "Norte y centro de la Argentina y Uruguay. Común en barrancas del Paraná y a veces junto a alambrados y cercos. Nombre vulgar: lagaña de perro, barba de chivo."
+  ),
   violaceae: family(
     "violaceae",
     "67. Violaceae",
@@ -3669,7 +3717,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Pétalo superior interno, cubierto en sus bordes por los otros pétalos; sépalos y pétalos libres; hojas pinadas o bipinadas",
       keyStep: "B",
-      especieId: "leguminosae",
+      nextNodeId: "caesalpinioideae_a",
     },
     opcionA_prima: {
       label: "Pétalo superior externo, cubriendo con sus bordes a los otros pétalos; corola generalmente amariposada",
@@ -3835,6 +3883,86 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Fruto indehiscente, en forma de oreja",
       keyStep: "F'",
       especieId: "enterolobium_contortisiliquum",
+    },
+  },
+  caesalpinioideae_a: {
+    id: "caesalpinioideae_a",
+    milestone: "Caesalpinioideae",
+    manualPage: 241,
+    descripcion: "Caesalpinioideae - A: hojas simples o compuestas",
+    opcionA: {
+      label: "Hojas simples, bilobadas; árboles con flores blancas muy grandes",
+      keyStep: "A",
+      especieId: "bauhinia_candicans",
+    },
+    opcionA_prima: {
+      label: "Hojas pinadas o bipinadas",
+      keyStep: "A'",
+      nextNodeId: "caesalpinioideae_b",
+    },
+  },
+  caesalpinioideae_b: {
+    id: "caesalpinioideae_b",
+    milestone: "Caesalpinioideae",
+    manualPage: 241,
+    descripcion: "Caesalpinioideae - B: árboles espinosos o inermes",
+    opcionA: {
+      label: "Árboles espinosos",
+      keyStep: "B",
+      nextNodeId: "caesalpinioideae_c",
+    },
+    opcionA_prima: {
+      label: "Árboles o arbustos inermes",
+      keyStep: "B'",
+      nextNodeId: "caesalpinioideae_d",
+    },
+  },
+  caesalpinioideae_c: {
+    id: "caesalpinioideae_c",
+    milestone: "Caesalpinioideae",
+    manualPage: 241,
+    descripcion: "Caesalpinioideae - C: color de flores y espinas",
+    opcionA: {
+      label: "Flores amarillas; hojas bipinadas, con raquis primario corto prolongado en una espina y raquis secundarios planos verdes",
+      keyStep: "C",
+      especieId: "parkinsonia_aculeata",
+    },
+    opcionA_prima: {
+      label: "Flores verdosas o blancas; hojas bipinadas, con raquis primario largo no espinoso; espinas del tallo ramificadas",
+      keyStep: "C'",
+      especieId: "gleditsia_triacanthos",
+    },
+  },
+  caesalpinioideae_d: {
+    id: "caesalpinioideae_d",
+    milestone: "Caesalpinioideae",
+    manualPage: 241,
+    descripcion: "Caesalpinioideae - D: hojas pinadas o bipinadas",
+    opcionA: {
+      label: "Hojas pinadas",
+      keyStep: "D",
+      nextNodeId: "cassia_a",
+    },
+    opcionA_prima: {
+      label: "Hojas bipinadas",
+      keyStep: "D'",
+      especieId: "caesalpinia_gilliesii",
+    },
+  },
+  cassia_a: {
+    id: "cassia_a",
+    milestone: "Cassia",
+    manualPage: 249,
+    descripcion: "Cassia - A: porte y hojas",
+    opcionA: {
+      label: "Arbustos o arbolitos glabros; hojas pinadas con raquis de unos 4 cm y 3 pares de folíolos; legumbres cilíndricas de unos 10 cm",
+      keyStep: "A",
+      especieId: "cassia_corymbosa",
+    },
+    opcionA_prima: {
+      label: "Hierba perenne, glabra; hojas paripinadas 4-6-yugas; legumbres comprimidas, largas y estrechas, con 20-40 semillas",
+      keyStep: "A'",
+      especieId: "cassia_occidentalis",
     },
   },
   santalaceae_a: {
