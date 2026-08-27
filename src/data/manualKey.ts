@@ -1529,6 +1529,46 @@ export const manualFamilyData: Record<string, Especie> = {
     "Folíolos uniyugos, lineal-lanceolados, de 6-11 cm; racimos con 5-11 flores azulado-violáceas; ovario glabro; legumbre de 3-4,5 cm.",
     "Sur de Brasil y región platense: Delta y San Isidro."
   ),
+  erythrina_crista_galli: species(
+    "erythrina_crista_galli",
+    "Erythrina crista-galli",
+    "64. Leguminosae - Papilionoideae",
+    "Árbol de 4-8 m de alto, con tronco de hasta 1 m de diámetro en la base y corteza gris, rugosa.",
+    "Ramas con aguijones; hojas caducas, pinadas, trifolioladas, con raquis aculeado y folíolos elípticos u ovados, enteros y glabros; flores rojas en racimos hojosos; legumbres multiseminadas.",
+    "Sur de Brasil, Paraguay, Uruguay y norte de la Argentina hasta Buenos Aires. Muy común en pajonales del Delta y de la ribera platense. Nombre vulgar: seibo."
+  ),
+  desmodium_uncinatum: species(
+    "desmodium_uncinatum",
+    "Desmodium uncinatum",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne cubierta por pelos ganchosos, con rizoma leñoso y tallos débiles, tendidos o apoyantes.",
+    "Estípulas lineales; folíolos ovados de 3-5 cm; flores rosadas; fruto con 4-7 artejos peludos.",
+    "América tropical y subtropical. Frecuente en bosques del Delta y en Punta Lara."
+  ),
+  desmodium_affine: species(
+    "desmodium_affine",
+    "Desmodium affine",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne sin pelos ganchosos, rizomatosa, con tallos rastreros o ascendentes, pubérulos o glabros.",
+    "Folíolos membranosos, romboidales, laxamente pubescentes, el terminal de 2,5-8 cm por 1,5-5 cm; flores blancas o rosadas; fruto con 3-6 artejos pegajosos.",
+    "América cálida. Rara en el Delta y en Martín García."
+  ),
+  stylosanthes_montevidensis: species(
+    "stylosanthes_montevidensis",
+    "Stylosanthes montevidensis",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba rizomatosa de 20-50 cm de alto.",
+    "Frutos hirsutos; hojas envainadoras, con folíolos lineal-lanceolados; cabezuelas apicales; flores amarillas pequeñas.",
+    "Sur de Brasil, Uruguay, Paraguay y norte y centro de la Argentina. Campos secos del norte de Buenos Aires."
+  ),
+  stylosanthes_gracilis_subviscosa: species(
+    "stylosanthes_gracilis_subviscosa",
+    "Stylosanthes gracilis var. subviscosa",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne con raíz leñosa y tallos ascendentes, ramosos e híspidos.",
+    "Frutos glabros o casi glabros; hojas envainadoras, con folíolos lanceolados de nervaduras muy marcadas; cabezuelas cerdosas; flores amarillas pequeñas.",
+    "Paraguay, Uruguay y norte de la Argentina. Accidental en el Dock Sur."
+  ),
   violaceae: family(
     "violaceae",
     "67. Violaceae",
@@ -4176,9 +4216,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "papilionoideae_e",
     },
     opcionA_prima: {
-      label: "Hojas sin zarcillos; rama pendiente para la próxima tanda",
+      label: "Hojas sin zarcillos",
       keyStep: "D'",
-      especieId: "leguminosae",
+      nextNodeId: "papilionoideae_f",
     },
   },
   papilionoideae_e: {
@@ -4419,6 +4459,102 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Estilo de 3-4 mm; flores azules o violáceas de 1,5-2 cm; hierba perenne seríceo-pubescente; frutos lineales de 4 cm",
       keyStep: "F'",
       especieId: "lathyrus_subulatus",
+    },
+  },
+  papilionoideae_f: {
+    id: "papilionoideae_f",
+    milestone: "Papilionoideae",
+    manualPage: 241,
+    descripcion: "Papilionoideae - F: hojas trifolioladas o pinadas con más de 3 folíolos",
+    opcionA: {
+      label: "Hojas trifolioladas",
+      keyStep: "F",
+      nextNodeId: "papilionoideae_g",
+    },
+    opcionA_prima: {
+      label: "Hojas pinadas, con más de 3 folíolos; rama pendiente para la próxima tanda",
+      keyStep: "F'",
+      especieId: "leguminosae",
+    },
+  },
+  papilionoideae_g: {
+    id: "papilionoideae_g",
+    milestone: "Papilionoideae",
+    manualPage: 242,
+    descripcion: "Papilionoideae - G: porte y alas de la corola",
+    opcionA: {
+      label: "Árboles con aguijones en las ramas y en las hojas; alas de la corola diminutas",
+      keyStep: "G",
+      especieId: "erythrina_crista_galli",
+    },
+    opcionA_prima: {
+      label: "Hierbas o lianas inermes; alas de la corola bien desarrolladas",
+      keyStep: "G'",
+      nextNodeId: "papilionoideae_h",
+    },
+  },
+  papilionoideae_h: {
+    id: "papilionoideae_h",
+    milestone: "Papilionoideae",
+    manualPage: 242,
+    descripcion: "Papilionoideae - H: tipo de fruto",
+    opcionA: {
+      label: "Fruto lamento, fragmentado a la madurez en varios trozos o artejos",
+      keyStep: "H",
+      nextNodeId: "papilionoideae_i",
+    },
+    opcionA_prima: {
+      label: "Fruto de otro tipo, no lamento; rama pendiente desde Medicago",
+      keyStep: "H'",
+      especieId: "leguminosae",
+    },
+  },
+  papilionoideae_i: {
+    id: "papilionoideae_i",
+    milestone: "Papilionoideae",
+    manualPage: 242,
+    descripcion: "Papilionoideae - I: estipelas y artejos",
+    opcionA: {
+      label: "Folíolos con estipelas lineales en la inserción del peciólulo; lamentos generalmente con más de dos artejos",
+      keyStep: "I",
+      nextNodeId: "desmodium_a",
+    },
+    opcionA_prima: {
+      label: "Folíolos sin estipelas; lamentos con 2 artejos",
+      keyStep: "I'",
+      nextNodeId: "stylosanthes_a",
+    },
+  },
+  desmodium_a: {
+    id: "desmodium_a",
+    milestone: "Desmodium",
+    manualPage: 255,
+    descripcion: "Desmodium - A: pelos ganchosos",
+    opcionA: {
+      label: "Plantas cubiertas por pelos ganchosos; perennes, con rizoma leñoso y tallos débiles, tendidos o apoyantes; fruto con 4-7 artejos peludos",
+      keyStep: "A",
+      especieId: "desmodium_uncinatum",
+    },
+    opcionA_prima: {
+      label: "Plantas sin pelos ganchosos; perennes, rizomatosas, con tallos rastreros o ascendentes; fruto con 3-6 artejos pegajosos",
+      keyStep: "A'",
+      especieId: "desmodium_affine",
+    },
+  },
+  stylosanthes_a: {
+    id: "stylosanthes_a",
+    milestone: "Stylosanthes",
+    manualPage: 256,
+    descripcion: "Stylosanthes - A: pubescencia del fruto",
+    opcionA: {
+      label: "Frutos hirsutos; hojas envainadoras con folíolos lineal-lanceolados; cabezuelas apicales",
+      keyStep: "A",
+      especieId: "stylosanthes_montevidensis",
+    },
+    opcionA_prima: {
+      label: "Frutos glabros o casi; hojas envainadoras con folíolos lanceolados y nervaduras muy marcadas; cabezuelas cerdosas",
+      keyStep: "A'",
+      especieId: "stylosanthes_gracilis_subviscosa",
     },
   },
   santalaceae_a: {
