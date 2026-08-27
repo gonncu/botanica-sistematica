@@ -2259,6 +2259,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo D.",
     "Plantas terrestres con anteras de dehiscencia longitudinal y estambres 5."
   ),
+  escallonia_megapotamica: species(
+    "escallonia_megapotamica",
+    "Escallonia megapotamica",
+    "62. Saxifragaceae",
+    "Arbusto glabro de cerca de 1,5 m de alto.",
+    "Hojas alternas, sésiles, oblanceoladas, obtusas y apiculadas, atenuadas en la base, aserradas en la parte superior; flores en panojas densas; receptáculo turbinado; sépalos triangulares; pétalos blancos de 5-6 mm; cápsula de 4-5 mm con estilo persistente.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina. Rara en las islas altas y arenosas del Delta."
+  ),
   onagraceae: family(
     "onagraceae",
     "98. Onagraceae",
@@ -7066,7 +7074,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Estambres 5",
       keyStep: "K",
-      especieId: "saxifragaceae",
+      especieId: "escallonia_megapotamica",
     },
     opcionA_prima: {
       label: "Estambres 4; tubo del cáliz muy largo, a veces prolongado en hipanto",
