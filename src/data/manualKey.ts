@@ -1681,6 +1681,118 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas oblanceoladas; las inferiores dentadas y atenuadas en la base, las superiores semiabrazadoras y enteras; flores blancas, pequeñas, en racimos; silicuas redondeadas de 10-12 mm, con valvas uninervadas.",
     "Centro de la Argentina. Hallada en la Isla Martín García."
   ),
+  cakile_maritima: species(
+    "cakile_maritima",
+    "Cakile maritima",
+    "59. Cruciferae",
+    "Hierba anual carnosa, glabra y ascendente, de 40-50 cm de alto.",
+    "Hojas pinatisectas con segmentos obtusos; flores blancas o rosadas; pétalos de 8-10 mm; silicuas de 1,5-2 cm, tetrágonas y formadas por dos artículos superpuestos.",
+    "Europa; adventicia en América. Rara en Dock Sur y muy común en dunas próximas al mar del este de Buenos Aires."
+  ),
+  raphanus_sativus: species(
+    "raphanus_sativus",
+    "Raphanus sativus",
+    "59. Cruciferae",
+    "Hierba anual o bienal de alrededor de medio metro de altura, a veces con raíz suculenta.",
+    "Flores blancas o rosadas; frutos gruesos, carnosos, apenas contraídos; raíces carnosas comestibles.",
+    "Europa; cultivada y adventicia en América. Nombre vulgar: rábano, rabanito."
+  ),
+  raphanus_raphanistrum: species(
+    "raphanus_raphanistrum",
+    "Raphanus raphanistrum",
+    "59. Cruciferae",
+    "Hierba anual o bienal de 50-80 cm de alto.",
+    "Flores amarillentas; frutos más delgados, con 6-10 semillas, contraídos entre las semillas; raíces alargadas.",
+    "Europa; adventicia en América. Rara en la región: Campana y Otamendi."
+  ),
+  eruca_sativa: species(
+    "eruca_sativa",
+    "Eruca sativa",
+    "59. Cruciferae",
+    "Hierba anual, erecta y glabra, de 30-50 cm de alto.",
+    "Hojas inferiores pinatisectas y superiores dentadas; sépalos de 10-12 mm; pétalos de 15-20 mm, amarillentos con nervaduras pardas; silicuas oblongas de 15-25 mm, con valvas aquilladas.",
+    "Europa; adventicia en América. Rara en Dock Sur; más común en el este y sur de la provincia de Buenos Aires."
+  ),
+  diplotaxis_muralis: species(
+    "diplotaxis_muralis",
+    "Diplotaxis muralis",
+    "59. Cruciferae",
+    "Hierba anual con hojas arrosetadas y tallos ascendentes casi desnudos, de 20-50 cm de alto.",
+    "Hojas oblanceoladas, sinuado-dentadas o lobadas; flores amarillas en racimo laxo; silicuas lineales de unos 3,5 cm, comprimidas, con valvas uninervadas.",
+    "Europa; adventicia en América. Común en suelos calcáreos."
+  ),
+  roripa_pamparum: species(
+    "roripa_pamparum",
+    "Roripa pamparum",
+    "59. Cruciferae",
+    "Hierba perenne y glabra.",
+    "Hojas radicales enteras, oblanceoladas y atenuadas en largo pecíolo; hojas medianas ovaladas con uno o dos lóbulos basales; hojas superiores enteras y lineales; flores blancas pequeñas; silicuas lineales.",
+    "Argentina. En campos húmedos."
+  ),
+  roripa_bonariensis: species(
+    "roripa_bonariensis",
+    "Roripa bonariensis",
+    "59. Cruciferae",
+    "Hierba perenne, glabra y erecta, de 12-50 cm de alto.",
+    "Todas las hojas pinatisectas, profundamente divididas, con lóbulos lineales o lanceolados en 4-6 pares; flores blancas pequeñas; silicuas de cerca de 1 cm.",
+    "América austral. Común en campos húmedos. Nombre vulgar: mastuerzo de los sapos."
+  ),
+  roripa_nasturtium_aquaticum: species(
+    "roripa_nasturtium_aquaticum",
+    "Roripa nasturtium-aquaticum",
+    "59. Cruciferae",
+    "Hierba perenne rastrera o flotante, glabra, con tallos radicantes en los nudos.",
+    "Hojas con lóbulo terminal circular y sinuado, y 1-3 pares de lóbulos laterales anchamente lanceolados u ovados; flores blancas en racimos cortos; silicuas de 10-15 mm.",
+    "Europa; adventicia en América. Frecuente en zanjas y charcas. Nombre vulgar: berro."
+  ),
+  roripa_hilariana: species(
+    "roripa_hilariana",
+    "Roripa hilariana",
+    "59. Cruciferae",
+    "Hierba perenne, glabra, con raíces gemíferas y tallos ascendentes o erectos de 50-150 cm.",
+    "Hojas con segmento terminal anchamente ovado, a veces acorazonado, y 1-2 pares de segmentos laterales ovados, crenados o aserrados; flores blancas pequeñas; silicuas arqueadas de 25-40 mm.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina. Común en matorrales y pajonales del Delta y de la ribera del Plata. Nombre vulgar: berro cimarrón."
+  ),
+  roripa_sinapis: species(
+    "roripa_sinapis",
+    "Roripa sinapis",
+    "59. Cruciferae",
+    "Hierba perenne, de 5-10 cm de alto.",
+    "Flores apétalas; hojas ovadas u ovado-lanceoladas, en parte pinatífidas, con 1-3 pares de lóbulos laterales y un lóbulo terminal muy grande; racimos terminales y axilares, paucifloros; silicuas de 15-25 mm.",
+    "Tropical, cosmopolita. Rara en el Delta."
+  ),
+  cardamine_chenopodiifolia: species(
+    "cardamine_chenopodiifolia",
+    "Cardamine chenopodiifolia",
+    "59. Cruciferae",
+    "Hierba perenne, glabra o algo pubescente, con tallos ascendentes de 15-50 cm de alto.",
+    "Hojas simples; las radicales largamente pecioladas, espatuladas, enteras o sinuadas; hojas caulinares obovadas y dentadas; flores blancas pequeñas de dos tipos; silicuas erectas de 15-35 mm y otras cortas que se entierran espontáneamente.",
+    "América austral. Se halla en campos y bosques ribereños. Comestible en ensalada."
+  ),
+  cardamine_hirsuta: species(
+    "cardamine_hirsuta",
+    "Cardamine hirsuta",
+    "59. Cruciferae",
+    "Hierba anual, erecta y laxamente pubescente, de 15-40 cm de alto.",
+    "Hojas pinatisectas con segmentos ovados u orbiculares; hojas basales en roseta, con segmento terminal circular y sinuado, y 2-4 pares de segmentos laterales ovados; flores diminutas; silicuas lineales de 20-25 mm.",
+    "Europa; adventicia en América. Común en jardines y suelos modificados."
+  ),
+  cardamine_bonariensis: species(
+    "cardamine_bonariensis",
+    "Cardamine bonariensis",
+    "59. Cruciferae",
+    "Hierba perenne rastrera, radicante en los nudos.",
+    "Hojas pinatisectas, con segmento terminal circular acorazonado y 1-2 pares de segmentos laterales anchamente ovados y sinuados; flores blancas diminutas, axilares o en cortos racimos; silicuas lineales de 10-20 mm.",
+    "América cálida; hidrófila. Común en zanjas y arroyos del Delta y de la ribera platense. Nombre vulgar: berro cimarrón."
+  ),
+  cardamine_flaccida: species(
+    "cardamine_flaccida",
+    "Cardamine flaccida",
+    "59. Cruciferae",
+    "Hierba perenne, ascendente en la base y luego erecta, rizomatosa, con tallos glabros de hasta 40 cm.",
+    "Hojas pinatisectas, con segmento terminal circular o arriñonado y 1-3 pares de segmentos laterales ovados y peciolulados; flores blancas diminutas en racimos terminales bracteados; silicuas lineales, erectas, de 18-25 mm.",
+    "América del Sur. En suelos arenosos y húmedos."
+  ),
   elatinaceae: family(
     "elatinaceae",
     "84. Elatinaceae",
@@ -5581,9 +5693,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "cruciferae_i",
     },
     opcionA_prima: {
-      label: "Plantas glabras o con pelos simples; rama pendiente para próxima tanda",
+      label: "Plantas glabras o con pelos simples",
       keyStep: "H'",
-      especieId: "cruciferae",
+      nextNodeId: "cruciferae_m",
     },
   },
   cruciferae_i: {
@@ -5664,6 +5776,230 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Segmentos de las hojas alargados, lanceolados, agudos; hierba anual de 40-80 cm; silicuas de 12-18 mm",
       keyStep: "A'",
       especieId: "descurainia_appendiculata",
+    },
+  },
+  cruciferae_m: {
+    id: "cruciferae_m",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - M: fruto dividido transversalmente",
+    opcionA: {
+      label: "Fruto dividido transversalmente en dos porciones indehiscentes uniseminadas, la superior caduca y la inferior persistente",
+      keyStep: "M",
+      especieId: "cakile_maritima",
+    },
+    opcionA_prima: {
+      label: "Fruto no dividido transversalmente en dos porciones",
+      keyStep: "M'",
+      nextNodeId: "cruciferae_n",
+    },
+  },
+  cruciferae_n: {
+    id: "cruciferae_n",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - N: dehiscencia del fruto",
+    opcionA: {
+      label: "Fruto carnoso, indehiscente",
+      keyStep: "N",
+      nextNodeId: "raphanus_a",
+    },
+    opcionA_prima: {
+      label: "Fruto dehiscente",
+      keyStep: "N'",
+      nextNodeId: "cruciferae_o",
+    },
+  },
+  raphanus_a: {
+    id: "raphanus_a",
+    milestone: "Raphanus",
+    manualPage: 229,
+    descripcion: "Raphanus - A: color de flores y forma del fruto",
+    opcionA: {
+      label: "Flores blancas o rosadas; frutos gruesos, carnosos, apenas contraídos; raíces carnosas",
+      keyStep: "A",
+      especieId: "raphanus_sativus",
+    },
+    opcionA_prima: {
+      label: "Flores amarillentas; frutos más delgados, con 6-10 semillas, contraídos entre las semillas; raíces alargadas",
+      keyStep: "A'",
+      especieId: "raphanus_raphanistrum",
+    },
+  },
+  cruciferae_o: {
+    id: "cruciferae_o",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - O: disposición de las semillas",
+    opcionA: {
+      label: "Semillas dispuestas en dos hileras",
+      keyStep: "O",
+      nextNodeId: "cruciferae_p",
+    },
+    opcionA_prima: {
+      label: "Semillas dispuestas en una sola hilera",
+      keyStep: "O'",
+      nextNodeId: "cruciferae_r",
+    },
+  },
+  cruciferae_p: {
+    id: "cruciferae_p",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - P: grosor y forma de la silicua",
+    opcionA: {
+      label: "Silicuas gruesas, oblongas o elipsoideas",
+      keyStep: "P",
+      especieId: "eruca_sativa",
+    },
+    opcionA_prima: {
+      label: "Silicuas delgadas, lineales",
+      keyStep: "P'",
+      nextNodeId: "cruciferae_q",
+    },
+  },
+  cruciferae_q: {
+    id: "cruciferae_q",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - Q: disposición de hojas y color de flores",
+    opcionA: {
+      label: "Plantas con hojas arrosetadas y tallos desnudos en sus dos tercios superiores; flores amarillas",
+      keyStep: "Q",
+      especieId: "diplotaxis_muralis",
+    },
+    opcionA_prima: {
+      label: "Plantas con hojas sobre todo el tallo; flores generalmente blancas",
+      keyStep: "Q'",
+      nextNodeId: "roripa_a",
+    },
+  },
+  roripa_a: {
+    id: "roripa_a",
+    milestone: "Roripa",
+    manualPage: 230,
+    descripcion: "Roripa - A: presencia de pétalos",
+    opcionA: {
+      label: "Flores con pétalos",
+      keyStep: "A",
+      nextNodeId: "roripa_b",
+    },
+    opcionA_prima: {
+      label: "Flores apétalas; hierba perenne de 5-10 cm; hojas ovadas u ovado-lanceoladas, en parte pinatífidas; silicuas de 15-25 mm",
+      keyStep: "A'",
+      especieId: "roripa_sinapis",
+    },
+  },
+  roripa_b: {
+    id: "roripa_b",
+    milestone: "Roripa",
+    manualPage: 230,
+    descripcion: "Roripa - B: forma de las hojas",
+    opcionA: {
+      label: "Hojas radicales enteras, oblanceoladas, obtusas, atenuadas en largo pecíolo; hojas medianas ovaladas con uno o dos lóbulos basales; hojas superiores enteras y lineales",
+      keyStep: "B",
+      especieId: "roripa_pamparum",
+    },
+    opcionA_prima: {
+      label: "Todas las hojas pinatisectas",
+      keyStep: "B'",
+      nextNodeId: "roripa_c",
+    },
+  },
+  roripa_c: {
+    id: "roripa_c",
+    milestone: "Roripa",
+    manualPage: 230,
+    descripcion: "Roripa - C: forma de los lóbulos foliares",
+    opcionA: {
+      label: "Hojas profundamente pinatisectas, con lóbulos lineales o lanceolados, enteros o con algún diente, dispuestos en 4-6 pares",
+      keyStep: "C",
+      especieId: "roripa_bonariensis",
+    },
+    opcionA_prima: {
+      label: "Hojas con lóbulos laterales lanceolados u ovalados y lóbulo terminal anchamente ovado o circular",
+      keyStep: "C'",
+      nextNodeId: "roripa_d",
+    },
+  },
+  roripa_d: {
+    id: "roripa_d",
+    milestone: "Roripa",
+    manualPage: 230,
+    descripcion: "Roripa - D: porte y lóbulos de las hojas",
+    opcionA: {
+      label: "Hierba perenne, rastrera o flotante, glabra; hojas con lóbulo terminal circular, sinuado, y 1-3 pares de lóbulos laterales anchamente lanceolados u ovados",
+      keyStep: "D",
+      especieId: "roripa_nasturtium_aquaticum",
+    },
+    opcionA_prima: {
+      label: "Hierba perenne, con raíces gemíferas y tallos ascendentes o erectos; segmento terminal anchamente ovado, a veces acorazonado, y 1-2 pares de segmentos laterales ovados",
+      keyStep: "D'",
+      especieId: "roripa_hilariana",
+    },
+  },
+  cruciferae_r: {
+    id: "cruciferae_r",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - R: color de flores y nervaduras de la silicua",
+    opcionA: {
+      label: "Flores blancas; valvas de la silicua sin nervaduras",
+      keyStep: "R",
+      nextNodeId: "cardamine_a",
+    },
+    opcionA_prima: {
+      label: "Flores amarillas; valvas de la silicua con 1-3 nervaduras; rama pendiente para la próxima tanda",
+      keyStep: "R'",
+      especieId: "cruciferae",
+    },
+  },
+  cardamine_a: {
+    id: "cardamine_a",
+    milestone: "Cardamine",
+    manualPage: 232,
+    descripcion: "Cardamine - A: hojas simples o pinatisectas",
+    opcionA: {
+      label: "Hojas simples; radicales largamente pecioladas, espatuladas, enteras o sinuadas; hojas caulinares obovadas y dentadas; flores de dos tipos",
+      keyStep: "A",
+      especieId: "cardamine_chenopodiifolia",
+    },
+    opcionA_prima: {
+      label: "Hojas pinatisectas, con segmentos ovados u orbiculares; flores de un solo tipo, todas aéreas",
+      keyStep: "A'",
+      nextNodeId: "cardamine_b",
+    },
+  },
+  cardamine_b: {
+    id: "cardamine_b",
+    milestone: "Cardamine",
+    manualPage: 232,
+    descripcion: "Cardamine - B: ciclo de vida y porte",
+    opcionA: {
+      label: "Hierbas anuales, erectas, ligeramente pubescentes; hojas basales en roseta; silicuas lineales de 20-25 mm",
+      keyStep: "B",
+      especieId: "cardamine_hirsuta",
+    },
+    opcionA_prima: {
+      label: "Plantas perennes, erectas o tendidas",
+      keyStep: "B'",
+      nextNodeId: "cardamine_c",
+    },
+  },
+  cardamine_c: {
+    id: "cardamine_c",
+    milestone: "Cardamine",
+    manualPage: 232,
+    descripcion: "Cardamine - C: plantas rastreras o ascendentes",
+    opcionA: {
+      label: "Plantas rastreras, radicantes en los nudos; hojas con segmento terminal circular acorazonado y 1-2 pares de segmentos laterales anchamente ovados",
+      keyStep: "C",
+      especieId: "cardamine_bonariensis",
+    },
+    opcionA_prima: {
+      label: "Plantas ascendentes en la base y luego erectas, rizomatosas; hojas con segmento terminal circular o arriñonado y 1-3 pares de segmentos laterales ovados peciolulados",
+      keyStep: "C'",
+      especieId: "cardamine_flaccida",
     },
   },
   dicot_group_c_k_lower: {
