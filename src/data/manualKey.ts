@@ -1409,6 +1409,70 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas digitadas con 7-9 folíolos oblanceolados; flores azules en racimos terminales; legumbre más o menos comprimida.",
     "Uruguay y nordeste de la Argentina. En dunas y arenales; citada para Isla Martín García."
   ),
+  vicia_nana: species(
+    "vicia_nana",
+    "Vicia nana",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual, tendida o voluble y pubescente.",
+    "Flores pequeñas azules en racimos axilares de 6-12 flores; hojas con 4-6 pares de folíolos alternos, lineal-oblongos o elípticos, mucronados, de menos de 1 cm; zarcillo poco ramificado; legumbres cortas.",
+    "Uruguay y nordeste de la Argentina. En campos húmedos."
+  ),
+  vicia_montevidensis: species(
+    "vicia_montevidensis",
+    "Vicia montevidensis",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual, con tallos volubles y pubescentes.",
+    "Flores azules en racimos axilares; hojas con 3-6 pares de folíolos alternos, elípticos, enteros o aserrados, de 12-17 mm; estípulas aserradas; legumbres comprimidas, oblongas.",
+    "Uruguay y nordeste de la Argentina. En los bosques del Delta."
+  ),
+  vicia_selloi: species(
+    "vicia_selloi",
+    "Vicia selloi",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual y voluble, glabra o casi glabra.",
+    "Hojas 1-2-yugas, con folíolos lineal-filiformes de menos de 0,5 mm de anchura; flores azules en racimos axilares paucifloros; legumbres cortas y anchas.",
+    "Uruguay y nordeste de la Argentina. Rara en la región."
+  ),
+  vicia_graminea: species(
+    "vicia_graminea",
+    "Vicia graminea",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual y voluble, glabra o casi glabra.",
+    "Hojas con 2-3 pares de folíolos lineal-oblongos de 0,7-3 mm de anchura; flores azules en racimos axilares paucifloros; legumbres oblongas y comprimidas.",
+    "América del Sur. Muy común en los alrededores de Buenos Aires, especialmente en matorrales de la ribera."
+  ),
+  vicia_magellanica: species(
+    "vicia_magellanica",
+    "Vicia magellanica",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual, rastrera, glabra o algo pubescente.",
+    "Flores solitarias, largamente pedunculadas; hojas con 1-2 pares de folíolos oblongo-lineales; legumbre lineal-oblonga.",
+    "América austral. Accidental en los alrededores de Eva Perón."
+  ),
+  vicia_linearifolia: species(
+    "vicia_linearifolia",
+    "Vicia linearifolia",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual débil, rastrera o voluble, laxamente pubescente.",
+    "Flores de 4-7 mm, 1-3, sésiles o casi sésiles en las axilas de las hojas; hojas con 3-5 pares de folíolos lineales de 0,5-1 mm de anchura.",
+    "América austral. Rara en la región: Los Talas."
+  ),
+  vicia_sativa: species(
+    "vicia_sativa",
+    "Vicia sativa",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual robusta, rastrera o voluble, glabra o casi glabra, con tallos tetragonales.",
+    "Flores generalmente 2-3 en cada axila, de 2-3 cm, con corolas azules o violáceas; hojas con 4-8 pares de folíolos obovados u obovado-oblongos; legumbres castañas.",
+    "Europa. Cultivada como forrajera y adventicia en suelos modificados."
+  ),
+  vicia_angustifolia: species(
+    "vicia_angustifolia",
+    "Vicia angustifolia",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual de flores solitarias.",
+    "Folíolos oblongo-elípticos u oblongo-lineales; flores solitarias de 1,5-1,8 cm; legumbres negras.",
+    "Europa; adventicia en América. En suelos modificados."
+  ),
   violaceae: family(
     "violaceae",
     "67. Violaceae",
@@ -4040,8 +4104,40 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "lupinus_a",
     },
     opcionA_prima: {
-      label: "Hojas pinadas; rama pendiente desde Vicia",
+      label: "Hojas pinadas",
       keyStep: "C'",
+      nextNodeId: "papilionoideae_d",
+    },
+  },
+  papilionoideae_d: {
+    id: "papilionoideae_d",
+    milestone: "Papilionoideae",
+    manualPage: 241,
+    descripcion: "Papilionoideae - D: hojas con zarcillos",
+    opcionA: {
+      label: "Hojas terminadas en zarcillos",
+      keyStep: "D",
+      nextNodeId: "papilionoideae_e",
+    },
+    opcionA_prima: {
+      label: "Hojas sin zarcillos; rama pendiente para la próxima tanda",
+      keyStep: "D'",
+      especieId: "leguminosae",
+    },
+  },
+  papilionoideae_e: {
+    id: "papilionoideae_e",
+    milestone: "Papilionoideae",
+    manualPage: 241,
+    descripcion: "Papilionoideae - E: corte del tubo estaminal",
+    opcionA: {
+      label: "Tubo estaminal cortado en bisel en el ápice",
+      keyStep: "E",
+      nextNodeId: "vicia_a",
+    },
+    opcionA_prima: {
+      label: "Tubo estaminal truncado transversalmente en el ápice; rama pendiente para Lathyrus",
+      keyStep: "E'",
       especieId: "leguminosae",
     },
   },
@@ -4059,6 +4155,118 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hierba perenne, de 50 cm, densamente argénteo-serícea; hojas con 7-9 folíolos oblanceolados; flores azules",
       keyStep: "A'",
       especieId: "lupinus_multiflorus",
+    },
+  },
+  vicia_a: {
+    id: "vicia_a",
+    milestone: "Vicia",
+    manualPage: 251,
+    descripcion: "Vicia - A: disposición de las flores",
+    opcionA: {
+      label: "Flores dispuestas en racimos",
+      keyStep: "A",
+      nextNodeId: "vicia_b",
+    },
+    opcionA_prima: {
+      label: "Flores solitarias o en grupos de 2-3, y entonces sésiles en las axilas de las hojas",
+      keyStep: "A'",
+      nextNodeId: "vicia_e",
+    },
+  },
+  vicia_b: {
+    id: "vicia_b",
+    milestone: "Vicia",
+    manualPage: 251,
+    descripcion: "Vicia - B: pubescencia y racimos",
+    opcionA: {
+      label: "Plantas pubescentes; hojas con 4-5 pares de folíolos; racimos multifloros, con más de 6 flores aproximadas y vueltas hacia el mismo lado",
+      keyStep: "B",
+      nextNodeId: "vicia_c",
+    },
+    opcionA_prima: {
+      label: "Plantas glabras o casi glabras; hojas con 2-4 pares de folíolos; racimos paucifloros, con 2-4 flores ralas",
+      keyStep: "B'",
+      nextNodeId: "vicia_d",
+    },
+  },
+  vicia_c: {
+    id: "vicia_c",
+    milestone: "Vicia",
+    manualPage: 251,
+    descripcion: "Vicia - C: largo de folíolos en plantas pubescentes",
+    opcionA: {
+      label: "Folíolos de menos de 1 cm; hierba anual tendida o voluble; flores pequeñas azules en racimos axilares de 6-12 flores",
+      keyStep: "C",
+      especieId: "vicia_nana",
+    },
+    opcionA_prima: {
+      label: "Folíolos de 12-17 mm; anual con tallos volubles y pubescentes; flores azules en racimos axilares",
+      keyStep: "C'",
+      especieId: "vicia_montevidensis",
+    },
+  },
+  vicia_d: {
+    id: "vicia_d",
+    milestone: "Vicia",
+    manualPage: 251,
+    descripcion: "Vicia - D: ancho de los folíolos en plantas glabras",
+    opcionA: {
+      label: "Folíolos lineal-filiformes, de menos de 0,5 mm de anchura; hojas 1-2-yugas; legumbres cortas y anchas",
+      keyStep: "D",
+      especieId: "vicia_selloi",
+    },
+    opcionA_prima: {
+      label: "Folíolos lineal-oblongos, de 0,7-3 mm de anchura; hojas con 2-3 pares de folíolos; legumbres oblongas, comprimidas",
+      keyStep: "D'",
+      especieId: "vicia_graminea",
+    },
+  },
+  vicia_e: {
+    id: "vicia_e",
+    milestone: "Vicia",
+    manualPage: 251,
+    descripcion: "Vicia - E: flores solitarias o axilares agrupadas",
+    opcionA: {
+      label: "Flores solitarias, largamente pedunculadas; anual rastrera, glabra o algo pubescente; hojas con 1-2 pares de folíolos",
+      keyStep: "E",
+      especieId: "vicia_magellanica",
+    },
+    opcionA_prima: {
+      label: "Flores 1-3, sésiles o casi sésiles en las axilas de las hojas",
+      keyStep: "E'",
+      nextNodeId: "vicia_f",
+    },
+  },
+  vicia_f: {
+    id: "vicia_f",
+    milestone: "Vicia",
+    manualPage: 251,
+    descripcion: "Vicia - F: ancho de folíolos en flores axilares",
+    opcionA: {
+      label: "Folíolos de 0,5-1 mm de anchura; anual débil, rastrera o voluble, laxamente pubescente; flores de 4-7 mm",
+      keyStep: "F",
+      especieId: "vicia_linearifolia",
+    },
+    opcionA_prima: {
+      label: "Folíolos de 2-6 mm de anchura, a veces más; flores de más de 10 mm",
+      keyStep: "F'",
+      nextNodeId: "vicia_g",
+    },
+  },
+  vicia_g: {
+    id: "vicia_g",
+    milestone: "Vicia",
+    manualPage: 251,
+    descripcion: "Vicia - G: forma de los folíolos y color del fruto",
+    opcionA: {
+      label: "Folíolos obovados u obovado-oblongos, anchos; flores generalmente 2-3 por axila, de 2-3 cm; legumbres castañas",
+      keyStep: "G",
+      especieId: "vicia_sativa",
+    },
+    opcionA_prima: {
+      label: "Folíolos oblongo-elípticos u oblongo-lineales; flores solitarias de 1,5-1,8 cm; legumbres negras",
+      keyStep: "G'",
+      especieId: "vicia_angustifolia",
     },
   },
   santalaceae_a: {

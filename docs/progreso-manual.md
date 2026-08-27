@@ -31,12 +31,12 @@ npm run build
 Ultima familia cargada, validada y subida:
 
 - `64. Leguminosae`, en progreso desde pagina 240 del manual.
-- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` con `Mimosoideae`, `Caesalpinioideae` y primer tramo de `Papilionoideae` (`Ulex`, `Galactia`, `Lupinus`) completos.
-- Ultimo commit subido antes de esta tanda: `b0cea1b Add Leguminosae Caesalpinioideae keys`.
+- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` con `Mimosoideae`, `Caesalpinioideae` y `Papilionoideae` cargada hasta `Vicia`.
+- Ultimo commit subido antes de esta tanda: `4e018d3 Add initial Leguminosae Papilionoideae keys`.
 
 ## Proxima familia consecutiva
 
-- `64. Leguminosae`, continuar con `Vicia`, pagina 251 del manual (`PDF_PAGE=258`).
+- `64. Leguminosae`, continuar con `Lathyrus`, pagina 252 del manual (`PDF_PAGE=259`).
 
 ## Regla de trabajo
 
