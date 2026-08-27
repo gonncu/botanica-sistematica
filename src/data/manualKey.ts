@@ -1609,6 +1609,102 @@ export const manualFamilyData: Record<string, Especie> = {
     "Frutos espiralados, con 2-4 espiras de borde carenado, con gloquidios ganchudos o sin ellos; folíolos dentados, sin mancha; estípulas laciniadas. El manual cita var. apiculata, con espinas muy cortas, y var. confinis, sin espinas y con pequeños tubérculos.",
     "Europa; adventicia en Sudamérica. En campos con hacienda, jardines, etc. Nombre vulgar: trébol de carretilla."
   ),
+  trifolium_fragiferum: species(
+    "trifolium_fragiferum",
+    "Trifolium fragiferum",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, rastrera y radicante.",
+    "Cáliz glabro abajo y largamente pubescente arriba, plurinervado, acrescente, vesiculoso-inflado y reticulado a la madurez; folíolos obovado-elípticos; cabezuelas fructíferas ovoideas, largamente pedunculadas; frutos con dos semillas.",
+    "Europa; adventicia en la Argentina. Vegeta en campos bajos arcillosos."
+  ),
+  trifolium_pratense: species(
+    "trifolium_pratense",
+    "Trifolium pratense",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba bienal o perenne, erecta y glabra.",
+    "Cabezuelas terminales sésiles; estípulas anchas; folíolos elípticos, con una mancha blanquecina central en forma de V; flores violáceas; cáliz con 10 nervaduras; legumbres monospermas.",
+    "Europa. Cultivada como forrajera y espontánea en suelos modificados. Nombre vulgar: trébol rojo."
+  ),
+  trifolium_repens: species(
+    "trifolium_repens",
+    "Trifolium repens",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, glabra, rastrera y estolonífera.",
+    "Tallos rastreros, radicantes, sin flores cleistógamas subterráneas; folíolos elípticos u obacorazonados, con mancha blanquecina en V; flores blancas o ligeramente rosadas en cabezuelas esféricas; cáliz con 10 nervaduras; legumbres con 3-4 semillas.",
+    "Europa; adventicia en América. Forrajera, muy común en suelos algo húmedos. Nombre vulgar: trébol."
+  ),
+  trifolium_polymorphum: species(
+    "trifolium_polymorphum",
+    "Trifolium polymorphum",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne velluda, rastrera y estolonífera.",
+    "Tallos con manojos de flores cleistógamas subterráneas en los nudos; folíolos sin mancha blanca, obcordados; flores chasmógamas rojas o rosadas; frutos con 2-5 semillas.",
+    "América austral. Común en la estepa clímax."
+  ),
+  trifolium_argentinense: species(
+    "trifolium_argentinense",
+    "Trifolium argentinense",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, rastrera y glabra.",
+    "Tallos con flores cleistógamas subterráneas; folíolos sin mancha blanca; flores chasmógamas amarillentas en cabezuelas esféricas; cáliz con 10 nervaduras; frutos con 1-2 semillas.",
+    "Uruguay y nordeste de la Argentina. Común en campos bajos."
+  ),
+  trifolium_filiforme: species(
+    "trifolium_filiforme",
+    "Trifolium filiforme",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual, con tallos rastreros.",
+    "Cáliz con 5 nervaduras; flores amarillas en capítulos 10-17-floros; hojas cortamente pecioladas, con folíolos obovados y emarginados.",
+    "Europa. Adventicia en el Delta."
+  ),
+  melilotus_alba: species(
+    "melilotus_alba",
+    "Melilotus alba",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba bienal, glabra, con tallos de 1-2 m de alto.",
+    "Flores blancas; folíolos oblongo-elípticos; frutos de 3-3,5 mm, con 1-2 semillas; hierba con olor a cumarina.",
+    "Europa. Cultivada como forrajera y melífera; con frecuencia espontánea en rastrojos y escombros. Nombre vulgar: trébol de olor blanco."
+  ),
+  melilotus_messanensis: species(
+    "melilotus_messanensis",
+    "Melilotus messanensis",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual rastrera.",
+    "Flores amarillas; plantas decumbentes; folíolos cuneiformes; racimos axilares cortos; frutos ovoideos, rugosos, de 7-8 mm, con 1-3 semillas.",
+    "Europa; adventicia en Buenos Aires. En campos bajos y salados."
+  ),
+  melilotus_indica: species(
+    "melilotus_indica",
+    "Melilotus indica",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual, de 0,5-1 m de alto, con tallos erectos.",
+    "Flores amarillas de 2-3 mm; estípulas triangulares, dentadas en la base; folíolos oblanceolados, redondeados y denticulados arriba; frutos globosos de 2 mm.",
+    "Asia y África; adventicia en todo el globo. Muy común en suelos modificados. Nombre vulgar: trébol de olor."
+  ),
+  melilotus_officinalis: species(
+    "melilotus_officinalis",
+    "Melilotus officinalis",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba bienal, de cerca de 1 m de alto.",
+    "Flores amarillas de 4-6 mm; estípulas lineales, subuladas y enteras; folíolos elíptico-lanceolados, dentados; frutos de 3-4 mm con pocas semillas.",
+    "Europa. Accidental cerca de Buenos Aires."
+  ),
+  phaseolus_adenanthus: species(
+    "phaseolus_adenanthus",
+    "Phaseolus adenanthus",
+    "64. Leguminosae - Papilionoideae",
+    "Enredadera perenne.",
+    "Flores amarillas de 2-2,5 cm en racimos axilares cortos; folíolos anchamente ovados y pubescentes; quilla terminada en un rostro largo enroscado; legumbres comprimidas y pubescentes.",
+    "América cálida. Se halla en los bosques del Delta y de la ribera platense."
+  ),
+  phaseolus_prostratus: species(
+    "phaseolus_prostratus",
+    "Phaseolus prostratus",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, rastrera.",
+    "Flores amarillas de 1,5 cm en racimos largamente pedunculados; folíolos ovados o lanceolados, glabros o pubescentes; legumbres lineales y velludas.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina. Rara en los campos del norte de Buenos Aires."
+  ),
   violaceae: family(
     "violaceae",
     "67. Violaceae",
@@ -4608,9 +4704,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "papilionoideae_k",
     },
     opcionA_prima: {
-      label: "Frutos alargados, dehiscentes; folíolos enteros; rama pendiente para Phaseolus y afines",
+      label: "Frutos alargados, dehiscentes; folíolos enteros",
       keyStep: "J'",
-      especieId: "leguminosae",
+      nextNodeId: "papilionoideae_m",
     },
   },
   papilionoideae_k: {
@@ -4624,9 +4720,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "medicago_a",
     },
     opcionA_prima: {
-      label: "Fruto no curvado; rama pendiente para Trifolium y Melilotus",
+      label: "Fruto no curvado",
       keyStep: "K'",
-      especieId: "leguminosae",
+      nextNodeId: "papilionoideae_l",
     },
   },
   medicago_a: {
@@ -4691,6 +4787,182 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Frutos espiralados, con 2-4 espiras de borde carenado, con gloquidios ganchudos o sin gloquidios; folíolos sin mancha",
       keyStep: "D'",
       especieId: "medicago_hispida",
+    },
+  },
+  papilionoideae_l: {
+    id: "papilionoideae_l",
+    milestone: "Papilionoideae",
+    manualPage: 242,
+    descripcion: "Papilionoideae - L: persistencia de la corola",
+    opcionA: {
+      label: "Corola persistente sobre el fruto; folíolos con peciólulos de igual longitud; flores en espigas cortas o capítulos; plantas rastreras",
+      keyStep: "L",
+      nextNodeId: "trifolium_a",
+    },
+    opcionA_prima: {
+      label: "Corola caduca después de la floración; folíolo terminal con peciólulo más largo que los laterales; flores en racimos axilares; plantas erectas",
+      keyStep: "L'",
+      nextNodeId: "melilotus_a",
+    },
+  },
+  trifolium_a: {
+    id: "trifolium_a",
+    milestone: "Trifolium",
+    manualPage: 258,
+    descripcion: "Trifolium - A: cáliz acrescente o no",
+    opcionA: {
+      label: "Cáliz glabro abajo y largamente pubescente arriba, plurinervado, acrescente, vesiculoso-inflado y reticulado a la madurez",
+      keyStep: "A",
+      especieId: "trifolium_fragiferum",
+    },
+    opcionA_prima: {
+      label: "Cáliz uniformemente pubescente o glabro, con 5-10 nervaduras, no acrescente ni reticulado a la madurez",
+      keyStep: "A'",
+      nextNodeId: "trifolium_b",
+    },
+  },
+  trifolium_b: {
+    id: "trifolium_b",
+    milestone: "Trifolium",
+    manualPage: 258,
+    descripcion: "Trifolium - B: porte y cabezuelas",
+    opcionA: {
+      label: "Plantas erectas, glabras, con cabezuelas terminales sésiles; estípulas anchas; flores violáceas; cáliz con 10 nervaduras",
+      keyStep: "B",
+      especieId: "trifolium_pratense",
+    },
+    opcionA_prima: {
+      label: "Plantas rastreras, estoloníferas; cabezuelas axilares sobre largos pedúnculos",
+      keyStep: "B'",
+      nextNodeId: "trifolium_c",
+    },
+  },
+  trifolium_c: {
+    id: "trifolium_c",
+    milestone: "Trifolium",
+    manualPage: 258,
+    descripcion: "Trifolium - C: nervaduras del cáliz y color de flores",
+    opcionA: {
+      label: "Cáliz con 10 nervaduras; flores rojas, blancas o amarillentas",
+      keyStep: "C",
+      nextNodeId: "trifolium_d",
+    },
+    opcionA_prima: {
+      label: "Cáliz con 5 nervaduras; flores amarillas en capítulos 10-17-floros; hierba anual con tallos rastreros",
+      keyStep: "C'",
+      especieId: "trifolium_filiforme",
+    },
+  },
+  trifolium_d: {
+    id: "trifolium_d",
+    milestone: "Trifolium",
+    manualPage: 258,
+    descripcion: "Trifolium - D: flores cleistógamas subterráneas",
+    opcionA: {
+      label: "Tallos rastreros, radicantes, sin flores cleistógamas subterráneas; folíolos con mancha blanca en V; flores blancas o ligeramente rosadas",
+      keyStep: "D",
+      especieId: "trifolium_repens",
+    },
+    opcionA_prima: {
+      label: "Tallos con manojos de flores cleistógamas subterráneas en los nudos; folíolos sin mancha blanca",
+      keyStep: "D'",
+      nextNodeId: "trifolium_e",
+    },
+  },
+  trifolium_e: {
+    id: "trifolium_e",
+    milestone: "Trifolium",
+    manualPage: 259,
+    descripcion: "Trifolium - E: color de flores chasmógamas",
+    opcionA: {
+      label: "Flores chasmógamas rojas o rosadas; plantas velludas; folíolos obcordados; frutos con 2-5 semillas",
+      keyStep: "E",
+      especieId: "trifolium_polymorphum",
+    },
+    opcionA_prima: {
+      label: "Flores chasmógamas amarillentas, en cabezuelas esféricas; plantas glabras; frutos con 1-2 semillas",
+      keyStep: "E'",
+      especieId: "trifolium_argentinense",
+    },
+  },
+  melilotus_a: {
+    id: "melilotus_a",
+    milestone: "Melilotus",
+    manualPage: 259,
+    descripcion: "Melilotus - A: color de flores",
+    opcionA: {
+      label: "Flores blancas; folíolos oblongo-elípticos; frutos de 3-3,5 mm, con 1-2 semillas",
+      keyStep: "A",
+      especieId: "melilotus_alba",
+    },
+    opcionA_prima: {
+      label: "Flores amarillas",
+      keyStep: "A'",
+      nextNodeId: "melilotus_b",
+    },
+  },
+  melilotus_b: {
+    id: "melilotus_b",
+    milestone: "Melilotus",
+    manualPage: 259,
+    descripcion: "Melilotus - B: porte y tamaño del fruto",
+    opcionA: {
+      label: "Plantas decumbentes; folíolos cuneiformes; racimos axilares cortos; frutos ovoideos de 7-8 mm, con 1-3 semillas",
+      keyStep: "B",
+      especieId: "melilotus_messanensis",
+    },
+    opcionA_prima: {
+      label: "Plantas erectas; frutos de 2-3 mm",
+      keyStep: "B'",
+      nextNodeId: "melilotus_c",
+    },
+  },
+  melilotus_c: {
+    id: "melilotus_c",
+    milestone: "Melilotus",
+    manualPage: 259,
+    descripcion: "Melilotus - C: forma de estípulas y largo de flores",
+    opcionA: {
+      label: "Estípulas triangulares, dentadas en la base; flores de 2-3 mm; folíolos oblanceolados, redondeados y denticulados arriba; frutos globosos de 2 mm",
+      keyStep: "C",
+      especieId: "melilotus_indica",
+    },
+    opcionA_prima: {
+      label: "Estípulas lineales, subuladas, enteras; flores de 4-6 mm; folíolos elíptico-lanceolados, dentados; frutos de 3-4 mm",
+      keyStep: "C'",
+      especieId: "melilotus_officinalis",
+    },
+  },
+  papilionoideae_m: {
+    id: "papilionoideae_m",
+    milestone: "Papilionoideae",
+    manualPage: 242,
+    descripcion: "Papilionoideae - M: forma de la quilla",
+    opcionA: {
+      label: "Quilla de la corola enroscada o espiralada en el ápice",
+      keyStep: "M",
+      nextNodeId: "phaseolus_a",
+    },
+    opcionA_prima: {
+      label: "Quilla recta o sólo arqueada; rama pendiente desde Lotus",
+      keyStep: "M'",
+      especieId: "leguminosae",
+    },
+  },
+  phaseolus_a: {
+    id: "phaseolus_a",
+    milestone: "Phaseolus",
+    manualPage: 260,
+    descripcion: "Phaseolus - A: largo de flores y hábito",
+    opcionA: {
+      label: "Flores de 2-2,5 cm; enredadera perenne; folíolos anchamente ovados, pubescentes; racimos axilares cortos; legumbres comprimidas, pubescentes",
+      keyStep: "A",
+      especieId: "phaseolus_adenanthus",
+    },
+    opcionA_prima: {
+      label: "Flores de 1,5 cm; hierba perenne, rastrera; folíolos ovados o lanceolados, glabros o pubescentes; racimos largamente pedunculados; legumbres lineales, velludas",
+      keyStep: "A'",
+      especieId: "phaseolus_prostratus",
     },
   },
   santalaceae_a: {
