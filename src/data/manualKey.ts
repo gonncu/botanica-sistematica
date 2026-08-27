@@ -1793,6 +1793,70 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas pinatisectas, con segmento terminal circular o arriñonado y 1-3 pares de segmentos laterales ovados y peciolulados; flores blancas diminutas en racimos terminales bracteados; silicuas lineales, erectas, de 18-25 mm.",
     "América del Sur. En suelos arenosos y húmedos."
   ),
+  hirschfeldia_incana: species(
+    "hirschfeldia_incana",
+    "Hirschfeldia incana",
+    "59. Cruciferae",
+    "Hierba anual o bienal, erecta y densamente pubescente, de 0,5-1 m de alto.",
+    "Hojas superiores lineales y hojas inferiores lirado-pinatisectas; pétalos amarillos de 6-7 mm; silicuas pequeñas de 8-12 mm, terminadas en un rostro cónico con una o dos semillas; valvas trinervadas.",
+    "Viejo Mundo; adventicia en la Argentina. En suelos modificados."
+  ),
+  brassica_campestris: species(
+    "brassica_campestris",
+    "Brassica campestris",
+    "59. Cruciferae",
+    "Hierba anual, glauca, glabra o casi glabra, de 30-120 cm de alto.",
+    "Silicuas de 5-6 cm; hojas superiores oblongo-lanceoladas, agudas, auriculadas y semiabrazadoras; hojas inferiores lirado-pinatífidas, con lóbulo terminal muy grande; flores amarillas grandes, con flores abiertas superando a los pimpollos.",
+    "Europa; adventicia en regiones templadas de todo el globo. Común en la región. Nombre vulgar: nabo, mostacilla."
+  ),
+  brassica_juncea: species(
+    "brassica_juncea",
+    "Brassica juncea",
+    "59. Cruciferae",
+    "Hierba anual, glabra o laxamente pubescente, de 50-150 cm de alto.",
+    "Silicuas de 3-5 cm; hojas superiores no semiabrazadoras ni auriculadas, sésiles o pecioladas; hojas inferiores lirado-pinatífidas, con lóbulo terminal ovado, dentado y grande, y pocos lóbulos laterales pequeños.",
+    "Asia; adventicia en América. Rara en la región."
+  ),
+  brassica_nigra: species(
+    "brassica_nigra",
+    "Brassica nigra",
+    "59. Cruciferae",
+    "Hierba anual, erecta y pubescente, de 50-150 cm de alto.",
+    "Silicuas de 1-2 cm; hojas inferiores lirado-pinatisectas y superiores oblongo-lineales, cortamente pecioladas; racimo casi corimbiforme; pétalos amarillos de 7,5-9 mm.",
+    "Europa; adventicia en América. En suelos modificados."
+  ),
+  sisymbrium_officinale: species(
+    "sisymbrium_officinale",
+    "Sisymbrium officinale",
+    "59. Cruciferae",
+    "Hierba anual, ramosa, glabra o pubescente, de hasta un metro de alto.",
+    "Silicuas de 10-14 mm, apretadas contra el eje de la inflorescencia; ramas muy abiertas; hojas runcinado-pinatisectas con segmentos anchos y dentados; flores amarillas pequeñas.",
+    "Europa; adventicia en América. Común en suelos modificados."
+  ),
+  sisymbrium_altissimum: species(
+    "sisymbrium_altissimum",
+    "Sisymbrium altissimum",
+    "59. Cruciferae",
+    "Hierba anual, glabra o casi glabra, de cerca de 1 m de alto.",
+    "Silicuas lineales de 7-10 cm por 1 mm, divergentes del eje de la inflorescencia; pedicelos gruesos; hojas runcinado-pinatisectas con segmento terminal pequeño y segmentos laterales numerosos, lanceolado-lineales; flores amarillas.",
+    "Europa; adventicia en América. Común en suelos modificados."
+  ),
+  sisymbrium_irio: species(
+    "sisymbrium_irio",
+    "Sisymbrium irio",
+    "59. Cruciferae",
+    "Hierba anual, casi glabra, de medio metro de alto.",
+    "Silicuas estrechamente lineales de 2,5-4,5 cm, divergentes del eje; pedicelos delgados; hojas runcinado-pinatisectas con segmento terminal muy grande y 1-2 pares de segmentos lanceolados; flores amarillo pálido.",
+    "Europa; adventicia en América. En suelos modificados."
+  ),
+  sinapis_arvensis_schkuhriana: species(
+    "sinapis_arvensis_schkuhriana",
+    "Sinapis arvensis var. schkuhriana",
+    "59. Cruciferae",
+    "Hierba anual, híspida o glabra, de 1-1,5 m de alto.",
+    "Hojas inferiores lirado-pinatífidas y superiores ovado-lanceoladas, irregularmente dentadas; flores amarillas en racimos; silicuas de 3-4 cm, semitorulosas, con valvas de 3-5 nervaduras y rostro generalmente con una semilla en su base.",
+    "Europa; adventicia en América. Rara en suelos modificados."
+  ),
   elatinaceae: family(
     "elatinaceae",
     "84. Elatinaceae",
@@ -5949,9 +6013,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "cardamine_a",
     },
     opcionA_prima: {
-      label: "Flores amarillas; valvas de la silicua con 1-3 nervaduras; rama pendiente para la próxima tanda",
+      label: "Flores amarillas; valvas de la silicua con 1-3 nervaduras",
       keyStep: "R'",
-      especieId: "cruciferae",
+      nextNodeId: "cruciferae_s",
     },
   },
   cardamine_a: {
@@ -6000,6 +6064,118 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Plantas ascendentes en la base y luego erectas, rizomatosas; hojas con segmento terminal circular o arriñonado y 1-3 pares de segmentos laterales ovados peciolulados",
       keyStep: "C'",
       especieId: "cardamine_flaccida",
+    },
+  },
+  cruciferae_s: {
+    id: "cruciferae_s",
+    milestone: "Cruciferae",
+    manualPage: 222,
+    descripcion: "Cruciferae - S: presencia de rostro largo",
+    opcionA: {
+      label: "Silicuas terminadas en un largo rostro indehiscente; nervaduras laterales de las valvas onduladas",
+      keyStep: "S",
+      nextNodeId: "cruciferae_t",
+    },
+    opcionA_prima: {
+      label: "Silicuas sin rostro largo, dehiscentes casi hasta el ápice; nervaduras laterales de las valvas rectas",
+      keyStep: "S'",
+      nextNodeId: "sisymbrium_a",
+    },
+  },
+  cruciferae_t: {
+    id: "cruciferae_t",
+    milestone: "Cruciferae",
+    manualPage: 223,
+    descripcion: "Cruciferae - T: semillas en el rostro",
+    opcionA: {
+      label: "Rostro generalmente con 1-2 semillas en su interior; valvas de la silicua con 3-5 nervios gruesos",
+      keyStep: "T",
+      nextNodeId: "cruciferae_u",
+    },
+    opcionA_prima: {
+      label: "Rostro sin semillas; nervaduras laterales de las valvas muy poco marcadas",
+      keyStep: "T'",
+      nextNodeId: "brassica_a",
+    },
+  },
+  cruciferae_u: {
+    id: "cruciferae_u",
+    milestone: "Cruciferae",
+    manualPage: 223,
+    descripcion: "Cruciferae - U: pubescencia de las hojas",
+    opcionA: {
+      label: "Hojas glabras o con pelos laxos",
+      keyStep: "U",
+      especieId: "sinapis_arvensis_schkuhriana",
+    },
+    opcionA_prima: {
+      label: "Hojas densamente pubescentes en ambas caras",
+      keyStep: "U'",
+      especieId: "hirschfeldia_incana",
+    },
+  },
+  brassica_a: {
+    id: "brassica_a",
+    milestone: "Brassica",
+    manualPage: 233,
+    descripcion: "Brassica - A: largo de las silicuas",
+    opcionA: {
+      label: "Silicuas de más de 3 cm de largo",
+      keyStep: "A",
+      nextNodeId: "brassica_b",
+    },
+    opcionA_prima: {
+      label: "Silicuas de 1-2 cm; hojas inferiores lirado-pinatisectas; superiores oblongo-lineales, cortamente pecioladas; racimo casi corimbiforme",
+      keyStep: "A'",
+      especieId: "brassica_nigra",
+    },
+  },
+  brassica_b: {
+    id: "brassica_b",
+    milestone: "Brassica",
+    manualPage: 233,
+    descripcion: "Brassica - B: hojas superiores",
+    opcionA: {
+      label: "Hojas superiores oblongo-lanceoladas, agudas, auriculadas y semiabrazadoras; hojas inferiores con lóbulo terminal muy grande y obtuso",
+      keyStep: "B",
+      especieId: "brassica_campestris",
+    },
+    opcionA_prima: {
+      label: "Hojas superiores no semiabrazadoras ni auriculadas, sésiles o pecioladas; hojas inferiores con lóbulo terminal ovado, dentado y grande",
+      keyStep: "B'",
+      especieId: "brassica_juncea",
+    },
+  },
+  sisymbrium_a: {
+    id: "sisymbrium_a",
+    milestone: "Sisymbrium",
+    manualPage: 233,
+    descripcion: "Sisymbrium - A: posición de las silicuas",
+    opcionA: {
+      label: "Silicuas apretadas contra el eje de la inflorescencia, de 10-14 mm; hierba anual ramosa con ramas muy abiertas",
+      keyStep: "A",
+      especieId: "sisymbrium_officinale",
+    },
+    opcionA_prima: {
+      label: "Silicuas abiertas, divergentes del eje de la inflorescencia",
+      keyStep: "A'",
+      nextNodeId: "sisymbrium_b",
+    },
+  },
+  sisymbrium_b: {
+    id: "sisymbrium_b",
+    milestone: "Sisymbrium",
+    manualPage: 233,
+    descripcion: "Sisymbrium - B: grosor de pedicelos y hojas",
+    opcionA: {
+      label: "Pedicelos de las silicuas gruesos; hojas runcinado-pinatisectas con segmento terminal pequeño y segmentos laterales numerosos, lanceolado-lineales; silicuas de 7-10 cm",
+      keyStep: "B",
+      especieId: "sisymbrium_altissimum",
+    },
+    opcionA_prima: {
+      label: "Pedicelos de las silicuas delgados; hojas runcinado-pinatisectas con segmento terminal muy grande y 1-2 pares de segmentos lanceolados; silicuas de 2,5-4,5 cm",
+      keyStep: "B'",
+      especieId: "sisymbrium_irio",
     },
   },
   dicot_group_c_k_lower: {

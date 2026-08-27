@@ -30,13 +30,13 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `59. Cruciferae`, en progreso desde pagina 221 del manual.
-- Tandas cargadas: clave parcial de siliculas, `Capsella`, `Rapistrum`, `Neslia`, `Camelina`, `Coronopus`, `Lobularia`, `Lepidium`, `Draba`, `Malcomia`, `Erysimum`, `Descurainia`, `Halimolobos`, `Cakile`, `Raphanus`, `Eruca`, `Diplotaxis`, `Roripa` y `Cardamine`.
-- Ultimo commit subido antes de esta tanda: `f518445 Add hairy Cruciferae silique keys`.
+- `59. Cruciferae`, completa hasta pagina 234 del manual.
+- Tandas cargadas: clave completa de generos y especies, incluyendo `Capsella`, `Rapistrum`, `Neslia`, `Camelina`, `Coronopus`, `Lobularia`, `Lepidium`, `Draba`, `Malcomia`, `Erysimum`, `Descurainia`, `Halimolobos`, `Cakile`, `Raphanus`, `Eruca`, `Diplotaxis`, `Roripa`, `Cardamine`, `Hirschfeldia`, `Brassica`, `Sisymbrium` y `Sinapis`.
+- Ultimo commit subido antes de esta tanda: `521af70 Add fast manual drafting flow and Cruciferae keys`.
 
 ## Proxima familia consecutiva
 
-- `59. Cruciferae`, continuar desde la rama `R'` de la clave general, pagina 223 del manual (`PDF_PAGE=230`), con `Hirschfeldia`, `Brassica`, `Sinapis` y `Sisymbrium`.
+- `60. Resedaceae`, pagina 234 del manual (`PDF_PAGE=241`).
 
 ## Regla de trabajo
 
