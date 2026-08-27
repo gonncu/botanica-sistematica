@@ -489,6 +489,46 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo B.",
     "Hierbas o arbustos con hojas estipuladas y ovario ínfero o semiínfero."
   ),
+  alchemilla_parodii: species(
+    "alchemilla_parodii",
+    "Alchemilla parodii",
+    "63. Rosaceae",
+    "Hierba anual, pigmea, tendida o ascendente y velluda.",
+    "Hojas alternas, pecioladas, flabeladas, de 3-6 mm, tripartidas con segmentos 3-4-fidos; estípulas inciso-dentadas, amplexicaules y adnatas al pecíolo; flores opositifolias, aglomeradas entre las estípulas.",
+    "Argentina y Uruguay. Se halla en la estepa prístina."
+  ),
+  margyricarpus_pinnatus: species(
+    "margyricarpus_pinnatus",
+    "Margyricarpus pinnatus",
+    "63. Rosaceae",
+    "Arbustito glabro de 15-30 cm de alto.",
+    "Hojas de 1-2 cm, con 7-9 pares de segmentos lineales caducos; estípulas soldadas con el pecíolo; flores diminutas; frutos gruesos y angulosos.",
+    "América austral. Cerca de Buenos Aires se halla en la estepa clímax. Nombre vulgar: yerba de la perdiz."
+  ),
+  rubus_ulmifolius: species(
+    "rubus_ulmifolius",
+    "Rubus ulmifolius",
+    "63. Rosaceae",
+    "Arbusto sarmentoso, con tallos redondeados y numerosos aguijones.",
+    "Hojas 3-5-folioladas, con folíolos ovados, acuminados y albo-tomentosos en la cara inferior; flores blancas o rosadas en panojas terminales; estípulas estrechamente lineales; frutos casi negros.",
+    "Europa; adventicia en América del Sur."
+  ),
+  rubus_caesius: species(
+    "rubus_caesius",
+    "Rubus caesius",
+    "63. Rosaceae",
+    "Arbusto sarmentoso, con tallos angulosos, pubescentes y con aguijones curvos.",
+    "Hojas generalmente 3-folioladas, con folíolos ovados u obovados, glabros en el haz y velludos en el envés; flores blancas en corimbos; estípulas lanceoladas; frutos casi negros.",
+    "Europa; adventicia en América. Nombre vulgar: zarzamora."
+  ),
+  duchesnea_indica: species(
+    "duchesnea_indica",
+    "Duchesnea indica",
+    "63. Rosaceae",
+    "Hierba perenne con tallos tendidos, radicantes en los nudos y plateado-pubescentes.",
+    "Hojas trifolioladas, largamente pecioladas; flores amarillas, solitarias; cáliz con calículo de 5 brácteas; fruto rojo, formado por aquenios sobre un receptáculo carnoso.",
+    "India; adventicia en América. En jardines."
+  ),
   santalaceae: family(
     "santalaceae",
     "40. Santalaceae",
@@ -3445,12 +3485,76 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Hierbas o arbustos; hojas estipuladas",
       keyStep: "E",
-      especieId: "rosaceae",
+      nextNodeId: "rosaceae_a",
     },
     opcionA_prima: {
       label: "Árboles; hojas sin estípulas",
       keyStep: "E'",
       nextNodeId: "santalaceae_a",
+    },
+  },
+  rosaceae_a: {
+    id: "rosaceae_a",
+    milestone: "Rosaceae",
+    manualPage: 237,
+    descripcion: "Rosaceae - A: presencia de pétalos y posición del gineceo",
+    opcionA: {
+      label: "Flores desprovistas de pétalos; gineceo ínfero",
+      keyStep: "A",
+      nextNodeId: "rosaceae_b",
+    },
+    opcionA_prima: {
+      label: "Flores con pétalos grandes; gineceo súpero",
+      keyStep: "A'",
+      nextNodeId: "rosaceae_c",
+    },
+  },
+  rosaceae_b: {
+    id: "rosaceae_b",
+    milestone: "Rosaceae",
+    manualPage: 237,
+    descripcion: "Rosaceae - B: lóbulos del cáliz",
+    opcionA: {
+      label: "Cáliz con 8-10 lóbulos; hierbas pigmeas",
+      keyStep: "B",
+      especieId: "alchemilla_parodii",
+    },
+    opcionA_prima: {
+      label: "Cáliz con 4-5 lóbulos; arbustos bajos",
+      keyStep: "B'",
+      especieId: "margyricarpus_pinnatus",
+    },
+  },
+  rosaceae_c: {
+    id: "rosaceae_c",
+    milestone: "Rosaceae",
+    manualPage: 237,
+    descripcion: "Rosaceae - C: tipo de fruto",
+    opcionA: {
+      label: "Fruto formado por numerosas drupas jugosas semejantes a una mora; flores blancas o rosadas; enredaderas espinosas",
+      keyStep: "C",
+      nextNodeId: "rubus_a",
+    },
+    opcionA_prima: {
+      label: "Fruto formado por numerosos aquenios sobre un receptáculo carnoso; flores amarillas; hierbas inermes, rastreras",
+      keyStep: "C'",
+      especieId: "duchesnea_indica",
+    },
+  },
+  rubus_a: {
+    id: "rubus_a",
+    milestone: "Rubus",
+    manualPage: 240,
+    descripcion: "Rubus - A: número de folíolos y pubescencia",
+    opcionA: {
+      label: "Hojas 3-5-folioladas; folíolos ovados, acuminados, albo-tomentosos en la cara inferior; tallos redondeados con numerosos aguijones",
+      keyStep: "A",
+      especieId: "rubus_ulmifolius",
+    },
+    opcionA_prima: {
+      label: "Hojas generalmente 3-folioladas; folíolos ovados u obovados, glabros en el haz y velludos en el envés; tallos angulosos, pubescentes, con aguijones curvos",
+      keyStep: "A'",
+      especieId: "rubus_caesius",
     },
   },
   santalaceae_a: {
@@ -4394,7 +4498,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Hojas con estípulas",
       keyStep: "B",
-      especieId: "rosaceae",
+      nextNodeId: "rosaceae_a",
     },
     opcionA_prima: {
       label: "Hojas sin estípulas",

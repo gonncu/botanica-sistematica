@@ -30,13 +30,13 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `62. Saxifragaceae`, completa hasta pagina 237 del manual.
-- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa.
-- Ultimo commit subido antes de esta tanda: `c086bc4 Complete Cruciferae species keys`.
+- `63. Rosaceae`, completa hasta pagina 240 del manual.
+- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa.
+- Ultimo commit subido antes de esta tanda: `d121922 Add Saxifragaceae species key`.
 
 ## Proxima familia consecutiva
 
-- `63. Rosaceae`, pagina 237 del manual (`PDF_PAGE=244`).
+- `64. Leguminosae`, pagina 240 del manual (`PDF_PAGE=247`).
 
 ## Regla de trabajo
 
