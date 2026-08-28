@@ -1139,6 +1139,30 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "En esta rama aparece por flores actinomorfas y caracteres de estambres/hojas u ovario."
   ),
+  ruta_chalepensis: species(
+    "ruta_chalepensis",
+    "Ruta chalepensis",
+    "70. Rutaceae",
+    "Sufrútice fétido de medio metro de alto.",
+    "Hojas bipinatisectas, con segmentos oblanceolado-espatulados, obtusos y punteado-glandulosos; flores en cimas corimbiformes; pétalos amarillo-limón, cóncavos y laciniados en el margen; cápsulas globosas dehiscentes por 4-5 dientes apicales.",
+    "Viejo Mundo; adventicia en América. Frecuente en suelos modificados. Nombre vulgar: ruda."
+  ),
+  fagara_hiemalis: species(
+    "fagara_hiemalis",
+    "Fagara hiemalis",
+    "70. Rutaceae",
+    "Arbolito con aguijones curvos en las ramas.",
+    "Hojas imparipinadas, con raquis inerme y 6-8 pares de folíolos elíptico-lanceolados, crenados, glabros, de 15-25 mm; flores amarillentas en panojas cortas; flores masculinas con 4 estambres; gineceo con 1-2 carpelos; cocos globosos dehiscentes por dos valvas, con semillas negras.",
+    "Sur de Brasil, Paraguay, Uruguay y norte de la Argentina. Se halla en bosques de la Isla Martín García y en el Delta del Paraná. Nombre vulgar: tembetarí."
+  ),
+  fagara_rhoifolia: species(
+    "fagara_rhoifolia",
+    "Fagara rhoifolia",
+    "70. Rutaceae",
+    "Árbol con aguijones rectos en las ramas.",
+    "Hojas imparipinadas, con raquis provisto de largos aguijones rectos y generalmente 4-5 pares de folíolos ovado-lanceolados, crenado-aserrados, glabros, de 25-40 mm; flores pequeñas en panojas cortas; flores masculinas con 5 estambres.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina, hasta las barrancas del Paraná al norte de Buenos Aires. Nombre vulgar: tembetarí."
+  ),
   nymphaeaceae: family(
     "nymphaeaceae",
     "52. Nymphaeaceae",
@@ -5869,6 +5893,38 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "linum_selaginoides",
     },
   },
+  rutaceae_a: {
+    id: "rutaceae_a",
+    milestone: "Rutaceae",
+    manualPage: 276,
+    descripcion: "Rutaceae - A: porte y número de estambres",
+    opcionA: {
+      label: "Hierbas; estambres diplostémonos",
+      keyStep: "A",
+      especieId: "ruta_chalepensis",
+    },
+    opcionA_prima: {
+      label: "Árboles; estambres isostémonos",
+      keyStep: "A'",
+      nextNodeId: "fagara_a",
+    },
+  },
+  fagara_a: {
+    id: "fagara_a",
+    milestone: "Fagara",
+    manualPage: 278,
+    descripcion: "Fagara - A: raquis y folíolos",
+    opcionA: {
+      label: "Hojas imparipinadas, con raquis inerme y 6-8 pares de folíolos elíptico-lanceolados; flores masculinas con 4 estambres",
+      keyStep: "A",
+      especieId: "fagara_hiemalis",
+    },
+    opcionA_prima: {
+      label: "Hojas imparipinadas, con raquis provisto de largos aguijones rectos y generalmente 4-5 pares de folíolos ovado-lanceolados; flores masculinas con 5 estambres",
+      keyStep: "A'",
+      especieId: "fagara_rhoifolia",
+    },
+  },
   santalaceae_a: {
     id: "santalaceae_a",
     milestone: "Santalaceae",
@@ -6840,7 +6896,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Árboles",
       keyStep: "D",
-      especieId: "rutaceae",
+      nextNodeId: "rutaceae_a",
     },
     opcionA_prima: {
       label: "Hierbas",
@@ -7277,7 +7333,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Estambres 4-5",
       keyStep: "P",
-      especieId: "rutaceae",
+      nextNodeId: "rutaceae_a",
     },
     opcionA_prima: {
       label: "Estambres 8 a muchos",
@@ -9323,7 +9379,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Flores amarillas; pétalos en forma de cuchara; plantas fétidas",
       keyStep: "x",
-      especieId: "rutaceae",
+      nextNodeId: "rutaceae_a",
     },
     opcionA_prima: {
       label: "Flores azules o violáceas; pétalos planos; plantas no fétidas",

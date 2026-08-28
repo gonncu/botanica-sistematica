@@ -30,13 +30,13 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `69. Zygophyllaceae`, completa.
-- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` completa; `65. Oxalidaceae` completa; `66. Geraniaceae` completa; `67. Tropaeolaceae` completa; `68. Linaceae` completa; `69. Zygophyllaceae` completa.
-- Ultimo commit subido antes de esta tanda: `532d80e Add Tropaeolaceae species key`.
+- `70. Rutaceae`, completa.
+- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` completa; `65. Oxalidaceae` completa; `66. Geraniaceae` completa; `67. Tropaeolaceae` completa; `68. Linaceae` completa; `69. Zygophyllaceae` completa; `70. Rutaceae` completa.
+- Ultimo commit subido antes de esta tanda: `ae47415 Add Linaceae Zygophyllaceae keys`.
 
 ## Proxima familia consecutiva
 
-- `70. Rutaceae`, pagina 276 del manual (`PDF_PAGE=283`).
+- `71. Malpighiaceae`, pagina 278 del manual (`PDF_PAGE=285`).
 
 ## Regla de trabajo
 
