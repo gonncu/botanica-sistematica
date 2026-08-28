@@ -501,6 +501,94 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas elíptico-oblongas, obtusas; flores solitarias, axilares, cortamente pedunculadas; flores masculinas con sépalos de 0,5 mm; flores femeninas algo mayores, con 3 estilos bisectos; cada lóculo del ovario con 2 óvulos; cápsulas de 3 mm con 6 semillas.",
     "América cálida. Común en los bosques del Delta y de la ribera platense."
   ),
+  sebastiania_brasiliensis: species(
+    "sebastiania_brasiliensis",
+    "Sebastiania brasiliensis",
+    "73. Euphorbiaceae",
+    "Árbol de 8-10 m de alto, con corteza blanquecina.",
+    "Brácteas de la inflorescencia con dos glándulas chatas y rugosas en su base; hojas cortamente pecioladas, elípticas, finamente aserradas, glabras, de 2-10 cm; flores diclinas monoicas; estambres 3; cápsulas de más de 1 cm.",
+    "América austral subtropical hasta el Delta y la ribera del Plata, donde constituye un elemento dominante en la selva marginal prístina. Nombres vulgares: lecherón, blanquillo."
+  ),
+  sebastiania_klotzschiana: species(
+    "sebastiania_klotzschiana",
+    "Sebastiania klotzschiana",
+    "73. Euphorbiaceae",
+    "Árbol de 5-10 m de alto, con corteza blanquecina.",
+    "Brácteas de la inflorescencia con dos glándulas pequeñas, lisas y pediceladas en su base; hojas pecioladas, elíptico-lanceoladas; flores diclinas monoicas; estambres 3; cápsulas de unos 8 mm.",
+    "América austral subtropical, hasta la ribera del Plata. Nombre vulgar: blanquillo."
+  ),
+  sapium_haematospermum: species(
+    "sapium_haematospermum",
+    "Sapium haematospermum",
+    "73. Euphorbiaceae",
+    "Árbol de 8-10 m de alto, con corteza blanquecina y látex.",
+    "Hojas cortamente pecioladas, lanceoladas, aserradas, glabras, de 7-20 cm; flores en espigas o racimos; estambres 2; cápsulas piriformes de 1 cm de diámetro.",
+    "América austral subtropical, hasta el río de la Plata. Común en pajonales y bosques ribereños; su látex contiene caucho. Nombres vulgares: blanquillo, curupí."
+  ),
+  acalypha_communis_guaranitica: species(
+    "acalypha_communis_guaranitica",
+    "Acalypha communis var. guaranitica",
+    "73. Euphorbiaceae",
+    "Hierba hirsuta, de 0,5 m de alto, con rizoma grueso.",
+    "Hojas alternas, elípticas, aserradas, trinervadas, de 2-7 cm; espigas femeninas terminales con brácteas laciniadas; espigas masculinas axilares; anteras con lóculos divergentes.",
+    "América subtropical, hasta el río de la Plata."
+  ),
+  acalypha_gracilis: species(
+    "acalypha_gracilis",
+    "Acalypha gracilis",
+    "73. Euphorbiaceae",
+    "Sufrútice de 0,5-1 m de alto, con ramas cortamente pubescentes.",
+    "Hojas alternas, ovadas, acuminadas, glabras, trinervadas, de 10-15 cm; espigas masculinas terminales y femeninas axilares o subterminales con brácteas laciniadas; anteras con lóculos divergentes.",
+    "Sur de Brasil, Paraguay, Uruguay y nordeste de la Argentina, hasta las selvas marginales del Delta y de la ribera del Plata."
+  ),
+  mercurialis_annua: species(
+    "mercurialis_annua",
+    "Mercurialis annua",
+    "73. Euphorbiaceae",
+    "Hierba anual, ramosa, glabra, de 20-50 cm de alto.",
+    "Hojas opuestas, ovadas, aserradas, de 20-70 mm; flores dioicas pequeñas; flores masculinas con 8-12 estambres y tecas divergentes; flores femeninas con ovario erizado y estilos fimbriados; cápsulas bicocas.",
+    "Europa; adventicia en América. Rara en Dock Sur, Avellaneda."
+  ),
+  tragia_volubilis: species(
+    "tragia_volubilis",
+    "Tragia volubilis",
+    "73. Euphorbiaceae",
+    "Hierba perenne, voluble, cortamente pubescente.",
+    "Hojas ovado-acorazonadas, aserradas; flores diclinas monoicas en racimos axilares; estambres 3; flores femeninas con pedúnculos de 15-40 mm; cápsulas peludas.",
+    "América cálida y Antillas. Vive en los bosques del Delta, de la Isla Martín García y de la ribera del Plata."
+  ),
+  tragia_geraniifolia: species(
+    "tragia_geraniifolia",
+    "Tragia geraniifolia",
+    "73. Euphorbiaceae",
+    "Hierba perenne, ascendente, cubierta de pelos urticantes.",
+    "Hojas pecioladas, acorazonadas en la base y dentadas; racimos opositifolios; estambres 3; flores femeninas con pedúnculos de hasta 5 mm; cápsulas peludas.",
+    "Sur de Brasil, Uruguay y norte de la Argentina. Se halla en la estepa clímax; florece en verano."
+  ),
+  chiropetalum_griseum: species(
+    "chiropetalum_griseum",
+    "Chiropetalum griseum",
+    "73. Euphorbiaceae",
+    "Sufrútice de 50 cm de alto.",
+    "Hojas alternas, ovadas, aserradas, de 2-4 cm, cubiertas de pelos estrellados; estípulas lineales; flores en racimos axilares, las masculinas arriba y las femeninas abajo; estambres 5 en un solo verticilo; sépalos largamente velludos; cápsulas de 4-5 mm.",
+    "Centro de la Argentina. Se halla en las barrancas del Paraná: Baradero, Zárate, San Isidro, etc."
+  ),
+  croton_parvifolius: species(
+    "croton_parvifolius",
+    "Croton parvifolius",
+    "73. Euphorbiaceae",
+    "Arbustito rastrero de 20-40 cm de alto, con pelos estrellados ralos.",
+    "Hojas alternas, oblongas, enteras, de 1,5-2 cm por 2 mm; espigas andróginas terminales, a veces unisexuales; estambres numerosos con filamentos largos curvados en el botón floral; cápsulas de 5 mm.",
+    "Uruguay y nordeste y centro de la Argentina. Rara en la estepa clímax cerca de Eva Perón."
+  ),
+  caperonia_cordata: species(
+    "caperonia_cordata",
+    "Caperonia cordata",
+    "73. Euphorbiaceae",
+    "Hierba dioica, erecta, de cerca de 1 m de alto.",
+    "Hojas alternas, subsésiles, ovadas u ovado-lanceoladas, agudas en el ápice y acorazonadas en la base, aserradas, de 5-10 cm; flores en racimos axilares; estambres 10-20 con filamentos cortísimos; sépalos de 4-6 mm; cápsulas de 7-8 mm.",
+    "Brasil, Uruguay y nordeste de la Argentina. Rara cerca de Buenos Aires: Avellaneda."
+  ),
   salicaceae: family(
     "salicaceae",
     "35. Salicaceae",
@@ -6258,7 +6346,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Cada lóculo del ovario contiene un solo óvulo; rama pendiente desde Sebastiania",
       keyStep: "D'",
-      especieId: "euphorbiaceae",
+      nextNodeId: "euphorbiaceae_e",
     },
   },
   euphorbia_a: {
@@ -6371,6 +6459,166 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hierbas anuales glabras de 30-60 cm; hojas elíptico-oblongas; flores solitarias axilares",
       keyStep: "A'",
       especieId: "phyllanthus_lathyroides",
+    },
+  },
+  euphorbiaceae_e: {
+    id: "euphorbiaceae_e",
+    milestone: "Euphorbiaceae",
+    manualPage: 283,
+    descripcion: "Euphorbiaceae - E: porte y sépalos masculinos",
+    opcionA: {
+      label: "Árboles; sépalos de las flores masculinas imbricados",
+      keyStep: "E",
+      nextNodeId: "euphorbiaceae_f",
+    },
+    opcionA_prima: {
+      label: "Hierbas o arbustos bajos; sépalos de las flores masculinas valvados o apenas imbricados",
+      keyStep: "E'",
+      nextNodeId: "euphorbiaceae_g",
+    },
+  },
+  euphorbiaceae_f: {
+    id: "euphorbiaceae_f",
+    milestone: "Euphorbiaceae",
+    manualPage: 283,
+    descripcion: "Euphorbiaceae - F: cantidad de estambres",
+    opcionA: {
+      label: "Estambres 3",
+      keyStep: "F",
+      nextNodeId: "sebastiania_a",
+    },
+    opcionA_prima: {
+      label: "Estambres 2",
+      keyStep: "F'",
+      especieId: "sapium_haematospermum",
+    },
+  },
+  sebastiania_a: {
+    id: "sebastiania_a",
+    milestone: "Sebastiania",
+    manualPage: 286,
+    descripcion: "Sebastiania - A: glándulas de brácteas",
+    opcionA: {
+      label: "Brácteas de la inflorescencia con dos glándulas chatas y rugosas en su base; cápsulas de más de 1 cm",
+      keyStep: "A",
+      especieId: "sebastiania_brasiliensis",
+    },
+    opcionA_prima: {
+      label: "Brácteas de la inflorescencia con dos glándulas pequeñas, lisas y pediceladas en su base; cápsulas de unos 8 mm",
+      keyStep: "A'",
+      especieId: "sebastiania_klotzschiana",
+    },
+  },
+  euphorbiaceae_g: {
+    id: "euphorbiaceae_g",
+    milestone: "Euphorbiaceae",
+    manualPage: 283,
+    descripcion: "Euphorbiaceae - G: disposición de lóculos de anteras",
+    opcionA: {
+      label: "Lóculos de las anteras divergentes, unidos al filamento únicamente por su ápice",
+      keyStep: "G",
+      nextNodeId: "euphorbiaceae_h",
+    },
+    opcionA_prima: {
+      label: "Lóculos de las anteras paralelos y adnatos",
+      keyStep: "G'",
+      nextNodeId: "euphorbiaceae_i",
+    },
+  },
+  euphorbiaceae_h: {
+    id: "euphorbiaceae_h",
+    milestone: "Euphorbiaceae",
+    manualPage: 283,
+    descripcion: "Euphorbiaceae - H: disposición de hojas",
+    opcionA: {
+      label: "Hojas alternas",
+      keyStep: "H",
+      nextNodeId: "acalypha_a",
+    },
+    opcionA_prima: {
+      label: "Hojas opuestas",
+      keyStep: "H'",
+      especieId: "mercurialis_annua",
+    },
+  },
+  acalypha_a: {
+    id: "acalypha_a",
+    milestone: "Acalypha",
+    manualPage: 288,
+    descripcion: "Acalypha - A: porte y hojas",
+    opcionA: {
+      label: "Hierba hirsuta de 0,5 m; rizoma grueso; hojas elípticas, aserradas, trinervadas, de 2-7 cm",
+      keyStep: "A",
+      especieId: "acalypha_communis_guaranitica",
+    },
+    opcionA_prima: {
+      label: "Sufrútice de 0,5-1 m; ramas cortamente pubescentes; hojas ovadas, acuminadas, glabras, trinervadas, de 10-15 cm",
+      keyStep: "A'",
+      especieId: "acalypha_gracilis",
+    },
+  },
+  euphorbiaceae_i: {
+    id: "euphorbiaceae_i",
+    milestone: "Euphorbiaceae",
+    manualPage: 283,
+    descripcion: "Euphorbiaceae - I: cantidad de estambres",
+    opcionA: {
+      label: "Estambres 3; estilos 3, enteros o fimbriados",
+      keyStep: "I",
+      nextNodeId: "tragia_a",
+    },
+    opcionA_prima: {
+      label: "Estambres 5-20",
+      keyStep: "I'",
+      nextNodeId: "euphorbiaceae_j",
+    },
+  },
+  tragia_a: {
+    id: "tragia_a",
+    milestone: "Tragia",
+    manualPage: 288,
+    descripcion: "Tragia - A: largo del pedúnculo femenino",
+    opcionA: {
+      label: "Flores femeninas con pedúnculos de 15-40 mm; hierba perenne voluble, cortamente pubescente",
+      keyStep: "A",
+      especieId: "tragia_volubilis",
+    },
+    opcionA_prima: {
+      label: "Flores femeninas con pedúnculos de hasta 5 mm; hierba perenne ascendente, cubierta de pelos urticantes",
+      keyStep: "A'",
+      especieId: "tragia_geraniifolia",
+    },
+  },
+  euphorbiaceae_j: {
+    id: "euphorbiaceae_j",
+    milestone: "Euphorbiaceae",
+    manualPage: 283,
+    descripcion: "Euphorbiaceae - J: cantidad y disposición de estambres",
+    opcionA: {
+      label: "Estambres 5, en un solo verticilo",
+      keyStep: "J",
+      especieId: "chiropetalum_griseum",
+    },
+    opcionA_prima: {
+      label: "Estambres 10-20",
+      keyStep: "J'",
+      nextNodeId: "euphorbiaceae_k",
+    },
+  },
+  euphorbiaceae_k: {
+    id: "euphorbiaceae_k",
+    milestone: "Euphorbiaceae",
+    manualPage: 283,
+    descripcion: "Euphorbiaceae - K: largo y curvatura de filamentos",
+    opcionA: {
+      label: "Filamentos estaminales largos, curvados dentro del botón floral; en la región, especies arbustivas",
+      keyStep: "K",
+      especieId: "croton_parvifolius",
+    },
+    opcionA_prima: {
+      label: "Filamentos estaminales cortísimos, no curvados; en la región, especies herbáceas",
+      keyStep: "K'",
+      especieId: "caperonia_cordata",
     },
   },
   santalaceae_a: {

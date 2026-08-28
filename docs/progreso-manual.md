@@ -30,13 +30,13 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `73. Euphorbiaceae`, en progreso desde pagina 282 del manual.
-- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` completa; `65. Oxalidaceae` completa; `66. Geraniaceae` completa; `67. Tropaeolaceae` completa; `68. Linaceae` completa; `69. Zygophyllaceae` completa; `70. Rutaceae` completa; `71. Malpighiaceae` completa; `72. Polygalaceae` completa; `73. Euphorbiaceae` cargada hasta `Phyllanthus`.
-- Ultimo commit subido antes de esta tanda: `3dcf932 Add Polygalaceae species keys`.
+- `73. Euphorbiaceae`, completa.
+- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` completa; `65. Oxalidaceae` completa; `66. Geraniaceae` completa; `67. Tropaeolaceae` completa; `68. Linaceae` completa; `69. Zygophyllaceae` completa; `70. Rutaceae` completa; `71. Malpighiaceae` completa; `72. Polygalaceae` completa; `73. Euphorbiaceae` completa.
+- Ultimo commit subido antes de esta tanda: `95bf108 Add initial Euphorbiaceae keys`.
 
 ## Proxima familia consecutiva
 
-- `73. Euphorbiaceae`, continuar desde `Sebastiania`, pagina 286 del manual (`PDF_PAGE=293`).
+- `74. Callitrichaceae`, pagina 290 del manual (`PDF_PAGE=297`).
 
 ## Regla de trabajo
 
