@@ -3791,6 +3791,62 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo D.",
     "Plantas crasas, sin hojas, generalmente con espinas; flores espiraladas."
   ),
+  opuntia_aurantiaca: species(
+    "opuntia_aurantiaca",
+    "Opuntia aurantiaca",
+    "92. Cactaceae",
+    "Planta ramosa, de 30-70 cm de alto, a veces rastrera.",
+    "Artículos del tallo ligeramente aplastados, oblongos, de 5-15 cm de largo por 1,2-2 cm de ancho; areolas densas, con gloquidios y manojos de unas 5 espinas blanquecinas, dos de ellas de hasta 3,5 cm; flores anaranjadas, de 1,5-2 cm; frutos rojos, de 2,5 cm.",
+    "Frecuente en las barrancas del Paraná: San Nicolás, San Pedro, Escobar, etc., y en la Isla Martín García. Existe también en Entre Ríos y Uruguay."
+  ),
+  opuntia_arechavaletai: species(
+    "opuntia_arechavaletai",
+    "Opuntia arechavaletai",
+    "92. Cactaceae",
+    "Planta erecta, de 1-2 m de alto.",
+    "Artículos muy comprimidos, de 15-30 cm de largo por 8-12 cm de ancho; areolas con gloquidios y una o dos espinas blanquecinas de 3-7 cm; ovario turbinado, de 4-5 cm; perianto anaranjado, de 2,5-3,5 cm.",
+    "Uruguay y región platense. Crece en las barrancas de San Isidro, junto a las vías férreas, etc."
+  ),
+  opuntia_vulgaris: species(
+    "opuntia_vulgaris",
+    "Opuntia vulgaris",
+    "92. Cactaceae",
+    "Planta ramosa, de 1-4 m de alto, con tronco principal cilíndrico.",
+    "Artículos muy comprimidos, obovados, de 10-30 cm de largo; areolas con lana blanca, gloquidios y una o dos espinas cortas y gruesas, amarillentas o pardas, de 1-4 cm; perianto amarillo, de 3-4 cm.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Adventicia en otras regiones del globo. Hallada en la Isla Martín García."
+  ),
+  rhipsalis_leucorhaphis: species(
+    "rhipsalis_leucorhaphis",
+    "Rhipsalis leucorhaphis",
+    "92. Cactaceae",
+    "Epífita con tallos verdes, cilíndricos, surcados, de más de 30 cm de largo por 4-5 mm de diámetro.",
+    "Areolas con una bráctea papirácea triangular, muy conspicua en los tallos jóvenes, y espinitas caducas; flores blancas; ovario de unos 5 mm; perianto de 10 mm; frutos de color vinoso oscuro, casi globosos, de 6-10 mm de diámetro.",
+    "Paraguay y nordeste de la Argentina. Hallada en los bosques de Campana."
+  ),
+  rhipsalis_lumbricoides: species(
+    "rhipsalis_lumbricoides",
+    "Rhipsalis lumbricoides",
+    "92. Cactaceae",
+    "Epífita con tallos cilíndricos, 8-costados, de unos 6 mm de diámetro.",
+    "Areolas con brácteas muy reducidas y espinitas cortas, caducas o persistentes; flores blancas nacaradas; perianto de 10-12 mm; frutos pequeños, globosos.",
+    "Sur del Brasil, Paraguay, Uruguay y norte de la Argentina. Muy común en los bosques del Delta y de la ribera del Plata, especialmente sobre seibos."
+  ),
+  cereus_peruvianus: species(
+    "cereus_peruvianus",
+    "Cereus peruvianus",
+    "92. Cactaceae",
+    "Planta arbórea, ramificada, de 3-15 m de alto.",
+    "Ramas glaucas, de 9-20 cm de diámetro, con 6-9 costillas salientes; areolas con 5-10 espinas pardas de 1-3 cm; flores de unos 15 cm, con tépalos interiores blancos; estambres en dos series; frutos amarillos, ovoideos, de unos 6,5 cm; semillas negras.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Se encuentra en la Isla Martín García. Nombre vulgar: cardón."
+  ),
+  echinopsis_tubiflora: species(
+    "echinopsis_tubiflora",
+    "Echinopsis tubiflora",
+    "92. Cactaceae",
+    "Planta con tallos simples o agrupados en corto número, globosos y deprimidos en el centro, de unos 10-12 cm de diámetro.",
+    "Costillas 10-14, prominentes, ligeramente onduladas; areolas con lana blanca y 9-10 espinas claras de unos 15 mm; flores laterales, blancas, de 15-20 cm; frutos de 4 cm.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina, hasta las barrancas de Campana, al norte de Buenos Aires."
+  ),
   begoniaceae: family(
     "begoniaceae",
     "91. Begoniaceae",
@@ -11303,12 +11359,108 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Sí; flores espiraladas",
       keyStep: "C",
-      especieId: "cactaceae",
+      nextNodeId: "cactaceae_a",
     },
     opcionA_prima: {
       label: "No; plantas con hojas, sin espinas",
       keyStep: "C'",
       nextNodeId: "dicot_group_d_d",
+    },
+  },
+  cactaceae_a: {
+    id: "cactaceae_a",
+    milestone: "Cactaceae",
+    manualPage: 325,
+    descripcion: "Cactaceae - A: presencia de gloquidios",
+    opcionA: {
+      label: "Plantas con gloquidios en las areolas; tallos aplanados, articulados",
+      keyStep: "A",
+      nextNodeId: "opuntia_a",
+    },
+    opcionA_prima: {
+      label: "Plantas sin gloquidios en las areolas; tallos cilíndricos o globosos",
+      keyStep: "A'",
+      nextNodeId: "cactaceae_b",
+    },
+  },
+  cactaceae_b: {
+    id: "cactaceae_b",
+    milestone: "Cactaceae",
+    manualPage: 325,
+    descripcion: "Cactaceae - B: forma floral y hábito",
+    opcionA: {
+      label: "Flores rotáceas o muy cortamente tubuladas; plantas epífitas",
+      keyStep: "B",
+      nextNodeId: "rhipsalis_a",
+    },
+    opcionA_prima: {
+      label: "Flores con tubo desarrollado, hipocraterimorfas o infundibuliformes",
+      keyStep: "B'",
+      nextNodeId: "cactaceae_c",
+    },
+  },
+  cactaceae_c: {
+    id: "cactaceae_c",
+    milestone: "Cactaceae",
+    manualPage: 325,
+    descripcion: "Cactaceae - C: tallos columnares o globosos",
+    opcionA: {
+      label: "Tallos columnares, ramosos",
+      keyStep: "C",
+      especieId: "cereus_peruvianus",
+    },
+    opcionA_prima: {
+      label: "Tallos globosos",
+      keyStep: "C'",
+      especieId: "echinopsis_tubiflora",
+    },
+  },
+  opuntia_a: {
+    id: "opuntia_a",
+    milestone: "Opuntia",
+    manualPage: 326,
+    descripcion: "Opuntia - A: forma de los artículos del tallo",
+    opcionA: {
+      label: "Artículos del tallo ligeramente aplastados, oblongos, de 5-15 cm por 1,2-2 cm; areolas densas, con gloquidios y manojos de unas 5 espinas blanquecinas; flores anaranjadas",
+      keyStep: "A",
+      especieId: "opuntia_aurantiaca",
+    },
+    opcionA_prima: {
+      label: "Artículos del tallo muy comprimidos, obovados, unas dos veces tan largos como anchos",
+      keyStep: "A'",
+      nextNodeId: "opuntia_b",
+    },
+  },
+  opuntia_b: {
+    id: "opuntia_b",
+    milestone: "Opuntia",
+    manualPage: 327,
+    descripcion: "Opuntia - B: espinas y color del perianto",
+    opcionA: {
+      label: "Areolas con gloquidios y una o dos espinas blanquecinas, de 3-7 cm; ovario turbinado; perianto anaranjado",
+      keyStep: "B",
+      especieId: "opuntia_arechavaletai",
+    },
+    opcionA_prima: {
+      label: "Areolas con lana blanca, gloquidios y una o dos espinas cortas y gruesas, amarillentas o pardas; perianto amarillo",
+      keyStep: "B'",
+      especieId: "opuntia_vulgaris",
+    },
+  },
+  rhipsalis_a: {
+    id: "rhipsalis_a",
+    milestone: "Rhipsalis",
+    manualPage: 328,
+    descripcion: "Rhipsalis - A: brácteas de las areolas",
+    opcionA: {
+      label: "Areolas con una bráctea papirácea triangular, muy conspicua en tallos jóvenes, con espinitas caducas; frutos vinosos oscuros",
+      keyStep: "A",
+      especieId: "rhipsalis_leucorhaphis",
+    },
+    opcionA_prima: {
+      label: "Areolas con brácteas muy reducidas; espinitas cortas, caducas o persistentes; frutos pequeños, globosos",
+      keyStep: "A'",
+      especieId: "rhipsalis_lumbricoides",
     },
   },
   dicot_group_d_d: {
