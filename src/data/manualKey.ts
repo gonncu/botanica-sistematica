@@ -2247,6 +2247,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Flores unisexuales o estambres 4; en la clave aparece por ovario bilocular o unilocular."
   ),
+  schaefferia_uruguayensis: species(
+    "schaefferia_uruguayensis",
+    "Schaefferia uruguayensis",
+    "76. Celastraceae",
+    "Arbusto o arbolito glabro, de 1,5-4 m de alto, con ramas delgadas y estriadas.",
+    "Hojas alternas, anchamente lanceoladas, enteras, sin estípulas, de 2,5-5 cm; flores unisexuales dioicas, tetrámeras, axilares y solitarias; fruto drupáceo, globoso-ovoide, anaranjado, de 4 mm, con 2 semillas.",
+    "Uruguay y nordeste de la Argentina, hasta las barrancas del Paraná al norte de Buenos Aires: Atucha, Las Palmas, etc."
+  ),
+  maytenus_vitis_idaea: species(
+    "maytenus_vitis_idaea",
+    "Maytenus vitis-idaea",
+    "76. Celastraceae",
+    "Arbusto o arbolito glabro, con hojas alternas, persistentes, coriáceas o carnosas.",
+    "Hojas ovadas u ovado-oblongas, obtusas, enteras u onduladas, glabras, pecioladas, de 2-3 cm; flores axilares pequeñas en glomérulos, con cáliz 5-fido y pétalos de doble longitud que el cáliz; fruto capsular globoso, 3-valvo, de unos 10 mm; semillas con arilo amarillento.",
+    "Centro de la Argentina. Rara en las barrancas del Paraná, al norte de la Capital Federal."
+  ),
   tiliaceae: family(
     "tiliaceae",
     "80. Tiliaceae",
@@ -2300,6 +2316,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "75. Anacardiaceae",
     "Dicotiledóneas del Grupo C.",
     "Flores con cáliz y corola, estambres 10 y anteras de dehiscencia longitudinal."
+  ),
+  schinus_longifolius: species(
+    "schinus_longifolius",
+    "Schinus longifolius",
+    "75. Anacardiaceae",
+    "Árbol de 2-5 m de alto, con ramas espinescentes.",
+    "Hojas simples, oblanceolado-espatuladas, obtusas en el ápice, atenuadas y cortamente pecioladas en la base, enteras, glabras, de 2-5 cm; seudoracimos axilares densos y cortos; corola amarillenta; fruto drupáceo brillante.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina, hasta las barrancas del Paraná y bosques de talas del este bonaerense. Florece en primavera. Nombres vulgares: molle, incienso."
   ),
   amaranthaceae: family(
     "amaranthaceae",
@@ -6725,6 +6749,22 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "callitriche_oblongicarpa",
     },
   },
+  celastraceae_a: {
+    id: "celastraceae_a",
+    milestone: "Celastraceae",
+    manualPage: 293,
+    descripcion: "Celastraceae - A: tipo de fruto y mería floral",
+    opcionA: {
+      label: "Fruto drupáceo; flores tetrámeras",
+      keyStep: "A",
+      especieId: "schaefferia_uruguayensis",
+    },
+    opcionA_prima: {
+      label: "Fruto cápsula; semillas con arilo; flores 5-meras",
+      keyStep: "A'",
+      especieId: "maytenus_vitis_idaea",
+    },
+  },
   santalaceae_a: {
     id: "santalaceae_a",
     milestone: "Santalaceae",
@@ -8228,7 +8268,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Plantas dioicas; flores tetrámeras; ovario bilocular",
       keyStep: "V'",
-      especieId: "celastraceae",
+      nextNodeId: "celastraceae_a",
     },
   },
   dicot_group_c_w: {
@@ -8283,7 +8323,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Estambres 4",
       keyStep: "Y",
-      especieId: "celastraceae",
+      nextNodeId: "celastraceae_a",
     },
     opcionA_prima: {
       label: "Estambres 6",
@@ -8320,7 +8360,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Flores con cáliz y corola; estambres 10; anteras de dehiscencia longitudinal",
       keyStep: "Z'",
-      especieId: "anacardiaceae",
+      especieId: "schinus_longifolius",
     },
   },
   lauraceae_a: {
