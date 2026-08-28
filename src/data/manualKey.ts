@@ -2271,6 +2271,62 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas largamente pecioladas, circulares, palmatisectas; flores axilares, solitarias, de color minio; pedúnculos por lo general más cortos que el pecíolo; carpelos con dos óvulos, divididos en dos cavidades superpuestas y maduros biaristados.",
     "América cálida y templado-cálida. Común en suelos modificados. Nombres vulgares: sánalo todo, mercurio."
   ),
+  sphaeralcea_bonariensis: species(
+    "sphaeralcea_bonariensis",
+    "Sphaeralcea bonariensis",
+    "81. Malvaceae",
+    "Sufrútice de 1-1,5 m de alto, con tallos erectos cubiertos de pelos estrellados amarillentos.",
+    "Cáliz con calículo; carpelos con 2-3 óvulos, maduros múticos o biaristados; hojas pecioladas, ovaladas, a menudo con un lóbulo a cada lado de la base, crenadas, glabrescentes en el haz y velludas en el envés; flores minio en cincinios axilares que forman un seudotirso alargado.",
+    "Sur de Brasil, Uruguay, Paraguay y nordeste de la Argentina. Común en bosques de talas y a lo largo de terraplenes ferroviarios. Nombre vulgar: malvavisco."
+  ),
+  abutilon_pauciflorum: species(
+    "abutilon_pauciflorum",
+    "Abutilon pauciflorum",
+    "81. Malvaceae",
+    "Arbusto de 1-1,5 m de alto, densamente cubierto por pelos estrellados.",
+    "Cáliz sin calículo; flores siempre solitarias sobre pedúnculos largos y gruesos; pétalos anaranjado-rojizos; hojas anchamente acorazonadas y discolores; carpelos con 5 o más óvulos.",
+    "Brasil, Paraguay, Uruguay y norte de la Argentina. Vegeta en la Isla Martín García y en bosquecillos de las barrancas del Paraná."
+  ),
+  abutilon_molle: species(
+    "abutilon_molle",
+    "Abutilon molle",
+    "81. Malvaceae",
+    "Arbusto de 1-2,5 m de alto, densamente cubierto de pelos estrellados.",
+    "Cáliz sin calículo; flores generalmente geminadas; pétalos amarillos; hojas anchamente acorazonadas y concolores; mericarpos con 5 o más semillas.",
+    "América cálida. Frecuente en suelos modificados, vías férreas, etc.; florece a fines del invierno."
+  ),
+  anoda_cristata: species(
+    "anoda_cristata",
+    "Anoda cristata",
+    "81. Malvaceae",
+    "Hierba anual, erecta o decumbente.",
+    "Flores sin calículo; carpelos con paredes laterales incompletas que dejan ver la única semilla péndula u horizontal; hojas ovado-triangulares, 3-5-lobuladas y más o menos pubescentes; flores azules, pequeñas, solitarias, largamente pedunculadas.",
+    "América. Ruderal; florece en verano y otoño. Nombre vulgar: malva cimarrona."
+  ),
+  modiolastrum_gilliesii: species(
+    "modiolastrum_gilliesii",
+    "Modiolastrum gilliesii",
+    "81. Malvaceae",
+    "Hierba pubescente, con raíces tuberosas.",
+    "Calículo con bractéolas soldadas en la base del cáliz; mericarpos castaños, con una doble fila de prominencias notables en el dorso; hojas laciniadas, cubiertas de pelos estrellados; flores rojo-violáceas, vistosas.",
+    "Uruguay y centro de la Argentina, hasta el norte de Buenos Aires."
+  ),
+  modiolastrum_malvifolium: species(
+    "modiolastrum_malvifolium",
+    "Modiolastrum malvifolium",
+    "81. Malvaceae",
+    "Hierba perenne, rastrera, radicante en los nudos, con tallos floríferos erguidos de 15-20 cm de alto.",
+    "Mericarpos con dorso casi liso, ligeramente pubescentes en la parte superior, con la cámara vacía igual o mayor que la seminífera; raíces no tuberosas; flores amarillas o algo rojizas, largamente pedunculadas; hojas largamente pecioladas, orbiculares, pentalobadas y dentadas.",
+    "Paraguay y norte de la Argentina. Frecuente en la ribera del Plata."
+  ),
+  modiolastrum_lateritium: species(
+    "modiolastrum_lateritium",
+    "Modiolastrum lateritium",
+    "81. Malvaceae",
+    "Hierba perenne, pubescente, con tallos tendidos radicantes y tallos floríferos erguidos.",
+    "Mericarpos con dorso casi liso, largamente hirsutos en la parte superior, con la cámara estéril mucho menor que la seminífera; flores rojas o rosadas sobre pedúnculos más largos que las hojas; hojas pecioladas, ovadas, 3-5-partidas, con segmentos inciso-dentados; calículo de 3 brácteas anchas.",
+    "Nordeste de la Argentina y Uruguay. Común en los matorrales de la ribera; florece en primavera."
+  ),
   sapindaceae: family(
     "sapindaceae",
     "77. Sapindaceae",
@@ -7200,9 +7256,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "malvaceae_d",
     },
     opcionA_prima: {
-      label: "Carpelos con un solo óvulo; rama pendiente desde Anoda/Sida/Malva",
+      label: "Carpelos con un solo óvulo",
       keyStep: "C'",
-      especieId: "malvaceae",
+      nextNodeId: "malvaceae_f",
     },
   },
   malvaceae_d: {
@@ -7216,9 +7272,105 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "modiola_caroliniana",
     },
     opcionA_prima: {
-      label: "Carpelos uniloculares; rama pendiente desde Sphaeralcea/Abutilon",
+      label: "Carpelos uniloculares",
       keyStep: "D'",
+      nextNodeId: "malvaceae_e",
+    },
+  },
+  malvaceae_e: {
+    id: "malvaceae_e",
+    milestone: "Malvaceae",
+    manualPage: 304,
+    descripcion: "Malvaceae - E: presencia de calículo",
+    opcionA: {
+      label: "Cáliz con calículo; carpelos con 2-3 óvulos",
+      keyStep: "E",
+      especieId: "sphaeralcea_bonariensis",
+    },
+    opcionA_prima: {
+      label: "Cáliz sin calículo; carpelos con 3-9 óvulos",
+      keyStep: "E'",
+      nextNodeId: "abutilon_a",
+    },
+  },
+  abutilon_a: {
+    id: "abutilon_a",
+    milestone: "Abutilon",
+    manualPage: 308,
+    descripcion: "Abutilon - A: disposición de flores y color de pétalos",
+    opcionA: {
+      label: "Flores siempre solitarias, sobre pedúnculos largos y gruesos; pétalos anaranjado-rojizos; hojas discolores",
+      keyStep: "A",
+      especieId: "abutilon_pauciflorum",
+    },
+    opcionA_prima: {
+      label: "Flores generalmente geminadas; pétalos amarillos; hojas concolores",
+      keyStep: "A'",
+      especieId: "abutilon_molle",
+    },
+  },
+  malvaceae_f: {
+    id: "malvaceae_f",
+    milestone: "Malvaceae",
+    manualPage: 304,
+    descripcion: "Malvaceae - F: paredes laterales de carpelos maduros",
+    opcionA: {
+      label: "Paredes laterales de los carpelos maduros incompletas, dejando ver las semillas",
+      keyStep: "F",
+      especieId: "anoda_cristata",
+    },
+    opcionA_prima: {
+      label: "Paredes laterales de los carpelos maduros completas, encerrando totalmente la semilla",
+      keyStep: "F'",
+      nextNodeId: "malvaceae_g",
+    },
+  },
+  malvaceae_g: {
+    id: "malvaceae_g",
+    milestone: "Malvaceae",
+    manualPage: 304,
+    descripcion: "Malvaceae - G: cavidades de carpelos",
+    opcionA: {
+      label: "Carpelos divididos en dos cavidades superpuestas, la superior vacía y la inferior con un óvulo",
+      keyStep: "G",
+      nextNodeId: "modiolastrum_a",
+    },
+    opcionA_prima: {
+      label: "Carpelos con una sola cavidad; rama pendiente desde Sida",
+      keyStep: "G'",
       especieId: "malvaceae",
+    },
+  },
+  modiolastrum_a: {
+    id: "modiolastrum_a",
+    milestone: "Modiolastrum",
+    manualPage: 309,
+    descripcion: "Modiolastrum - A: dorso de mericarpos y raíces",
+    opcionA: {
+      label: "Mericarpos castaños, con una doble fila de prominencias notables en su dorso; raíces tuberosas",
+      keyStep: "A",
+      especieId: "modiolastrum_gilliesii",
+    },
+    opcionA_prima: {
+      label: "Mericarpos con el dorso casi liso; raíces no tuberosas",
+      keyStep: "A'",
+      nextNodeId: "modiolastrum_b",
+    },
+  },
+  modiolastrum_b: {
+    id: "modiolastrum_b",
+    milestone: "Modiolastrum",
+    manualPage: 309,
+    descripcion: "Modiolastrum - B: pubescencia y tamaño de cámara estéril",
+    opcionA: {
+      label: "Mericarpos ligeramente pubescentes en la parte superior, con la cámara vacía igual o más grande que la seminífera",
+      keyStep: "B",
+      especieId: "modiolastrum_malvifolium",
+    },
+    opcionA_prima: {
+      label: "Mericarpos largamente hirsutos en la parte superior, con la cámara estéril mucho menor que la seminífera",
+      keyStep: "B'",
+      especieId: "modiolastrum_lateritium",
     },
   },
   santalaceae_a: {
