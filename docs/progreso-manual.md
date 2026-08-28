@@ -30,13 +30,13 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `64. Leguminosae`, completa.
-- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` completa.
-- Ultimo commit subido antes de esta tanda: `5d5ce9a Add Lotus Poiretia Leguminosae keys`.
+- `65. Oxalidaceae`, completa.
+- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` completa; `65. Oxalidaceae` completa.
+- Ultimo commit subido antes de esta tanda: `8345607 Complete Leguminosae Papilionoideae keys`.
 
 ## Proxima familia consecutiva
 
-- `65. Oxalidaceae`, pagina 268 del manual (`PDF_PAGE=275`).
+- `66. Geraniaceae`, pagina 270 del manual (`PDF_PAGE=277`).
 
 ## Regla de trabajo
 

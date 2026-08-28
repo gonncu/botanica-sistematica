@@ -2857,6 +2857,70 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Hojas trifolioladas con folíolos acorazonados; estambres 10, ovario 5-locular y 5 estilos."
   ),
+  oxalis_mallobolba: species(
+    "oxalis_mallobolba",
+    "Oxalis mallobolba",
+    "65. Oxalidaceae",
+    "Hierba acaule, bulbosa, con bulbo esférico recubierto de lana parda y rudimentos de brácteas.",
+    "Flores solitarias amarillas, de 10-14 mm; raíz carnosa cónica; hojas trifolioladas con folíolos obcordados de hasta 5 mm; pedúnculos 1-4, más largos que las hojas.",
+    "Sur de Brasil, Uruguay, centro de la Argentina y Chile. Común en la estepa clímax; otoña. Nombre vulgar: macachín."
+  ),
+  oxalis_martiana: species(
+    "oxalis_martiana",
+    "Oxalis martiana",
+    "65. Oxalidaceae",
+    "Hierba acaule, bulbosa, con bulbo central del tamaño de una avellana rodeado de numerosos bulbillos menores.",
+    "Flores rosadas o liliáceas, 5-20 en cimas umbeliformes; hojas largamente pecioladas, trifolioladas, con folíolos obcordados de 25-35 mm.",
+    "Regiones cálidas. Poco frecuente en la región."
+  ),
+  oxalis_macachin: species(
+    "oxalis_macachin",
+    "Oxalis macachin",
+    "65. Oxalidaceae",
+    "Hierba acaule, bulbosa, con bulbo simple, esférico, cubierto por brácteas no lanosas.",
+    "Flores rosadas o liliáceas, 1-5 en cimas umbeliformes; raíz cónica, carnosa y blanca; hojas trifolioladas con folíolos obcordados de 8-15 mm; corola de 15 mm.",
+    "Uruguay, Paraguay y nordeste de la Argentina. Se halla en la estepa clímax; florece en primavera. Nombre vulgar: macachín."
+  ),
+  oxalis_articulata: species(
+    "oxalis_articulata",
+    "Oxalis articulata",
+    "65. Oxalidaceae",
+    "Hierba acaule, sin bulbo, con gruesos tubérculos alargados o articulados.",
+    "Flores rosadas, de unos 15 mm, 3-10 en cimas umbeliformes; hojas trifolioladas con folíolos obcordados de 12-20 mm, glabros o laxamente pilosos; incluye la var. sericea, de folíolos densamente seríceo-pubescentes.",
+    "Río Grande do Sul, Paraguay, Uruguay y nordeste de la Argentina. Muy común en la región; la var. sericea se halla en la estepa clímax."
+  ),
+  oxalis_corniculata: species(
+    "oxalis_corniculata",
+    "Oxalis corniculata",
+    "65. Oxalidaceae",
+    "Hierba caulescente, débil y tendida.",
+    "Flores amarillas, 2-5 en cimas; corola de 7-10 mm; hojas trifolioladas con folíolos obcordados de 10 mm; pedúnculos más largos que las hojas.",
+    "Europa; adventicia en casi todo el mundo. Común en suelos modificados. Nombre vulgar: vinagrillo."
+  ),
+  oxalis_subcorymbosa: species(
+    "oxalis_subcorymbosa",
+    "Oxalis subcorymbosa",
+    "65. Oxalidaceae",
+    "Hierba caulescente, más robusta, ascendente, con rizomas delgados.",
+    "Flores amarillas en cimas, con corola de 10-15 mm; hojas trifolioladas con folíolos obcordados, pubescentes, de cerca de 20 mm.",
+    "Uruguay y Buenos Aires. Vive en los bosques de la ribera platense: San Isidro, Punta Lara, etc."
+  ),
+  oxalis_commersonii: species(
+    "oxalis_commersonii",
+    "Oxalis commersonii",
+    "65. Oxalidaceae",
+    "Hierba con tallos cortos, formando matitas, y rizomas delgados provistos de tubérculos semiesféricos.",
+    "Flores amarillas solitarias, con corola de 15-18 mm; hojas semiarrosetadas, largamente pecioladas, trifolioladas, con folíolos obcordados profundamente incisos, hirsutos, de 5-10 mm.",
+    "Sur de Brasil, Paraguay, Uruguay y norte de la Argentina. Rara en la región platense."
+  ),
+  oxalis_cordobensis: species(
+    "oxalis_cordobensis",
+    "Oxalis cordobensis",
+    "65. Oxalidaceae",
+    "Hierba tendida, con tallos rastreros radicantes y rizomas delgados.",
+    "Flores amarillas solitarias, con corolas de 12-15 mm; hojas alternas, trifolioladas, con folíolos obcordados profundamente hendidos, laxamente pubescentes, de 4-8 mm.",
+    "Paraguay, Uruguay y norte de la Argentina. Común en la estepa clímax; florece en primavera. Nombre vulgar: vinagrillo."
+  ),
   linaceae: family(
     "linaceae",
     "68. Linaceae",
@@ -5491,6 +5555,118 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Estambre vexilar libre",
       keyStep: "c'",
       especieId: "astragalus_distinens",
+    },
+  },
+  oxalidaceae_a: {
+    id: "oxalidaceae_a",
+    milestone: "Oxalidaceae",
+    manualPage: 268,
+    descripcion: "Oxalidaceae - A: presencia de bulbo",
+    opcionA: {
+      label: "Plantas acaules, provistas de bulbo",
+      keyStep: "A",
+      nextNodeId: "oxalidaceae_b",
+    },
+    opcionA_prima: {
+      label: "Plantas acaules o caulescentes, sin bulbo, con rizomas o tubérculos, o anuales",
+      keyStep: "A'",
+      nextNodeId: "oxalidaceae_d",
+    },
+  },
+  oxalidaceae_b: {
+    id: "oxalidaceae_b",
+    milestone: "Oxalidaceae",
+    manualPage: 268,
+    descripcion: "Oxalidaceae - B: flores solitarias o en cimas",
+    opcionA: {
+      label: "Flores solitarias, amarillas; corola de 10-14 mm; bulbo esférico recubierto de lana parda",
+      keyStep: "B",
+      especieId: "oxalis_mallobolba",
+    },
+    opcionA_prima: {
+      label: "Flores 2 a muchas, rosadas o liliáceas",
+      keyStep: "B'",
+      nextNodeId: "oxalidaceae_c",
+    },
+  },
+  oxalidaceae_c: {
+    id: "oxalidaceae_c",
+    milestone: "Oxalidaceae",
+    manualPage: 268,
+    descripcion: "Oxalidaceae - C: tipo de bulbo",
+    opcionA: {
+      label: "Bulbo central del tamaño de una avellana, rodeado de numerosos bulbillos menores; flores 5-20",
+      keyStep: "C",
+      especieId: "oxalis_martiana",
+    },
+    opcionA_prima: {
+      label: "Bulbo simple, esférico, cubierto de brácteas no lanosas; flores 1-5",
+      keyStep: "C'",
+      especieId: "oxalis_macachin",
+    },
+  },
+  oxalidaceae_d: {
+    id: "oxalidaceae_d",
+    milestone: "Oxalidaceae",
+    manualPage: 268,
+    descripcion: "Oxalidaceae - D: color de flores y porte",
+    opcionA: {
+      label: "Flores rosadas, de unos 15 mm; plantas acaules con gruesos tubérculos alargados o articulados",
+      keyStep: "D",
+      especieId: "oxalis_articulata",
+    },
+    opcionA_prima: {
+      label: "Flores amarillas; plantas caulescentes",
+      keyStep: "D'",
+      nextNodeId: "oxalidaceae_e",
+    },
+  },
+  oxalidaceae_e: {
+    id: "oxalidaceae_e",
+    milestone: "Oxalidaceae",
+    manualPage: 268,
+    descripcion: "Oxalidaceae - E: cantidad de flores por pedúnculo",
+    opcionA: {
+      label: "Pedúnculos con 2 o más flores",
+      keyStep: "E",
+      nextNodeId: "oxalidaceae_f",
+    },
+    opcionA_prima: {
+      label: "Pedúnculos unifloros",
+      keyStep: "E'",
+      nextNodeId: "oxalidaceae_g",
+    },
+  },
+  oxalidaceae_f: {
+    id: "oxalidaceae_f",
+    milestone: "Oxalidaceae",
+    manualPage: 269,
+    descripcion: "Oxalidaceae - F: porte y tamaño de corola",
+    opcionA: {
+      label: "Plantas débiles, tendidas; corola de 7-10 mm; pedúnculos más largos que las hojas; cimas 2-5-floras",
+      keyStep: "F",
+      especieId: "oxalis_corniculata",
+    },
+    opcionA_prima: {
+      label: "Plantas más robustas, ascendentes, con rizomas delgados; corola de 10-15 mm; flores en cimas",
+      keyStep: "F'",
+      especieId: "oxalis_subcorymbosa",
+    },
+  },
+  oxalidaceae_g: {
+    id: "oxalidaceae_g",
+    milestone: "Oxalidaceae",
+    manualPage: 269,
+    descripcion: "Oxalidaceae - G: tallos y rizomas",
+    opcionA: {
+      label: "Plantas con tallos cortos, formando matitas, y rizomas delgados con tubérculos semiesféricos",
+      keyStep: "G",
+      especieId: "oxalis_commersonii",
+    },
+    opcionA_prima: {
+      label: "Plantas tendidas, con tallos rastreros radicantes y rizomas delgados",
+      keyStep: "G'",
+      especieId: "oxalis_cordobensis",
     },
   },
   santalaceae_a: {
@@ -8887,7 +9063,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Sí; estambres 10, ovario 5-locular, 5 estilos",
       keyStep: "t",
-      especieId: "oxalidaceae",
+      nextNodeId: "oxalidaceae_a",
     },
     opcionA_prima: {
       label: "No; hojas simples o compuestas, pero no trifolioladas",
