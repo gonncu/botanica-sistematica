@@ -2225,6 +2225,46 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Plantas volubles con hojas enteras opuestas."
   ),
+  janusia_guaranitica: species(
+    "janusia_guaranitica",
+    "Janusia guaranitica",
+    "71. Malpighiaceae",
+    "Sufrútice voluble, ramoso y pubescente.",
+    "Hojas pecioladas, ovadas, enteras, discolores, de 2-7 cm por 1-3 cm; umbelas 4-floras; pétalos amarillos; fruto formado por 3 sámaras con ala dorsal larga.",
+    "América austral cálida, hasta el centro de la Argentina. Citada para el Delta."
+  ),
+  stigmatophyllum_littorale: species(
+    "stigmatophyllum_littorale",
+    "Stigmatophyllum littorale",
+    "71. Malpighiaceae",
+    "Sufrútice con tubérculos leñosos gruesos y tallos tendidos o volubles.",
+    "Hojas pecioladas, ovadas u orbiculares, enteras o trilobadas, discolores y amarillento-sedosas en el envés; seudoumbelas 10-20-floras; pétalos amarillos, fimbriados, de 1 cm; estigmas dilatados y foliáceos.",
+    "Sur de Brasil, Uruguay, Paraguay y nordeste de la Argentina. Común en el Delta y en la ribera del Plata; florece en verano."
+  ),
+  galphimia_brasiliensis: species(
+    "galphimia_brasiliensis",
+    "Galphimia brasiliensis",
+    "71. Malpighiaceae",
+    "Sufrútice de 20-80 cm de alto, glabro.",
+    "Hojas cortamente pecioladas, lanceoladas, agudas, enteras y discolores; racimos laxos 10-25-floros; pétalos amarillos; ovario glabro; cápsulas tricocas con alas angostísimas.",
+    "América austral templado-cálida. Citada para el Tigre y la ribera platense."
+  ),
+  heteropteris_angustifolia: species(
+    "heteropteris_angustifolia",
+    "Heteropteris angustifolia",
+    "71. Malpighiaceae",
+    "Arbusto apoyante de 1-3 m de alto, glabrescente.",
+    "Hojas cortamente pecioladas, lanceoladas, enteras, de 3-12 cm por 4-10 mm; racimos terminales o axilares; flores amarillas; ovario con pubescencia rojiza; sámaras rojizas con una sola ala dorsal de 2-2,5 cm.",
+    "Sur de Brasil, Paraguay, Uruguay y nordeste de la Argentina. Rara en la región platense: San Isidro."
+  ),
+  mascagnia_psilophylla: species(
+    "mascagnia_psilophylla",
+    "Mascagnia psilophylla",
+    "71. Malpighiaceae",
+    "Liana glabrescente.",
+    "Hojas elípticas u ovadas, pecioladas, enteras y glabras, de 3-12 cm por 2-6 cm; estípulas triangulares; umbelas 4-floras agrupadas en corimbos; pétalos amarillos; sámaras con alas rojizas, dos laterales grandes y una dorsal menor.",
+    "Sur de Brasil, Paraguay, Uruguay y norte de la Argentina. Hallada en la Isla Martín García."
+  ),
   basellaceae: family(
     "basellaceae",
     "50. Basellaceae",
@@ -5925,6 +5965,70 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "fagara_rhoifolia",
     },
   },
+  malpighiaceae_a: {
+    id: "malpighiaceae_a",
+    milestone: "Malpighiaceae",
+    manualPage: 278,
+    descripcion: "Malpighiaceae - A: ciclos de estambres fértiles",
+    opcionA: {
+      label: "Un solo ciclo de estambres fértiles",
+      keyStep: "A",
+      especieId: "janusia_guaranitica",
+    },
+    opcionA_prima: {
+      label: "Dos ciclos de estambres fértiles",
+      keyStep: "A'",
+      nextNodeId: "malpighiaceae_b",
+    },
+  },
+  malpighiaceae_b: {
+    id: "malpighiaceae_b",
+    milestone: "Malpighiaceae",
+    manualPage: 278,
+    descripcion: "Malpighiaceae - B: cantidad de estambres fértiles y estigmas",
+    opcionA: {
+      label: "Estambres fértiles 6; estigmas ensanchados, petaloides",
+      keyStep: "B",
+      especieId: "stigmatophyllum_littorale",
+    },
+    opcionA_prima: {
+      label: "Estambres fértiles 10; estigmas no petaloides",
+      keyStep: "B'",
+      nextNodeId: "malpighiaceae_c",
+    },
+  },
+  malpighiaceae_c: {
+    id: "malpighiaceae_c",
+    milestone: "Malpighiaceae",
+    manualPage: 278,
+    descripcion: "Malpighiaceae - C: pubescencia del ovario y alas del fruto",
+    opcionA: {
+      label: "Ovario glabro; fruto con alas inconspicuas",
+      keyStep: "C",
+      especieId: "galphimia_brasiliensis",
+    },
+    opcionA_prima: {
+      label: "Ovario pubescente; frutos con alas grandes",
+      keyStep: "C'",
+      nextNodeId: "malpighiaceae_d",
+    },
+  },
+  malpighiaceae_d: {
+    id: "malpighiaceae_d",
+    milestone: "Malpighiaceae",
+    manualPage: 278,
+    descripcion: "Malpighiaceae - D: tipo de alas de las sámaras",
+    opcionA: {
+      label: "Sámaras con una sola ala dorsal",
+      keyStep: "D",
+      especieId: "heteropteris_angustifolia",
+    },
+    opcionA_prima: {
+      label: "Sámaras con dos alas laterales grandes y un ala dorsal menor",
+      keyStep: "D'",
+      especieId: "mascagnia_psilophylla",
+    },
+  },
   santalaceae_a: {
     id: "santalaceae_a",
     milestone: "Santalaceae",
@@ -7956,7 +8060,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Hojas opuestas",
       keyStep: "g",
-      especieId: "malpighiaceae",
+      nextNodeId: "malpighiaceae_a",
     },
     opcionA_prima: {
       label: "Hojas alternas",
