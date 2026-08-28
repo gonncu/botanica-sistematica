@@ -2123,9 +2123,49 @@ export const manualFamilyData: Record<string, Especie> = {
   ),
   violaceae: family(
     "violaceae",
-    "67. Violaceae",
+    "87. Violaceae",
     "Dicotiledóneas del Grupo C.",
     "Estambres 5 y estípulas herbáceas."
+  ),
+  anchietea_parvifolia: species(
+    "anchietea_parvifolia",
+    "Anchietea parvifolia",
+    "87. Violaceae",
+    "Arbusto voluble, con tronco grueso y hojas alternas.",
+    "Semillas aladas; cápsulas grandes, membranosas, de 3,5-5 cm; hojas pecioladas, elípticas o lanceolado-elípticas, sinuado-aserradas, glabras, de 3-8 cm por 1,5-2 cm; flores rosadas en fascículos axilares, con corola de unos 8 mm y espolón de 5 mm; semillas de 1 cm de diámetro.",
+    "América del Sur subtropical, hasta las selvas marginales del Delta y del río de la Plata."
+  ),
+  viola_tricolor: species(
+    "viola_tricolor",
+    "Viola tricolor",
+    "87. Violaceae",
+    "Hierba anual o bienal, con tallos ramosos, tendidos o ascendentes, glabros o pubescentes.",
+    "Semillas no aladas; sépalos prolongados en la base; flores solitarias sobre largos pedúnculos axilares; estípulas foliáceas, lirado-pinatífidas; hojas ovadas, crenadas, largamente pecioladas; corola blanca y amarilla.",
+    "Europa; adventicia en América. Frecuente en campos cultivados. Nombre vulgar: pensamiento salvaje."
+  ),
+  viola_odorata: species(
+    "viola_odorata",
+    "Viola odorata",
+    "87. Violaceae",
+    "Hierba perenne, rizomatosa, con estolones y hojas en roseta.",
+    "Semillas no aladas; estípulas lineal-lanceoladas reducidas; hojas acorazonado-reniformes, más anchas que largas, menudamente crenadas; sépalos ovados, obtusos; pétalos violáceos o blancos.",
+    "Europa y Asia. Cultivada como ornamental y a veces espontánea en bosques de talas de los alrededores de Buenos Aires, Magdalena, Punta del Indio, etc. Nombre vulgar: violeta."
+  ),
+  viola_japonica: species(
+    "viola_japonica",
+    "Viola japonica",
+    "87. Violaceae",
+    "Hierba perenne, con hojas en roseta.",
+    "Semillas no aladas; estípulas lineal-lanceoladas reducidas; hojas acorazonado-ovadas, más largas que anchas; sépalos lanceolados, agudos; pétalos violáceos.",
+    "Japón. Cultivada como ornamental y a veces espontánea. Nombre vulgar: violeta francesa."
+  ),
+  hybanthus_parviflorus: species(
+    "hybanthus_parviflorus",
+    "Hybanthus parviflorus",
+    "87. Violaceae",
+    "Hierba perenne, ascendente, cortamente glanduloso-pubescente, de 20-50 cm de alto.",
+    "Semillas no aladas; sépalos no prolongados en su base; flores pequeñas blancas en las axilas de las hojas superiores, formando seudoracimos terminales; hojas opuestas, lanceoladas o elípticas, agudas, cortamente pecioladas, aserradas, glabras, de 1-3 cm; cápsulas globosas de 4-5 mm.",
+    "América del Sur subtropical, hasta el centro de la Argentina. Frecuente en bosques del Delta y de la ribera platense; florece en primavera."
   ),
   capparidaceae: family(
     "capparidaceae",
@@ -3538,6 +3578,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "88. Turneraceae",
     "Dicotiledóneas del Grupo C.",
     "Óvulos de placentación parietal y hojas alternas."
+  ),
+  turnera_pinnatifida_angustiloba: species(
+    "turnera_pinnatifida_angustiloba",
+    "Turnera pinnatifida var. angustiloba",
+    "88. Turneraceae",
+    "Hierba perenne con raíces gemíferas profundas y tallos ascendentes, velludos, de unos 20 cm de alto.",
+    "Hojas alternas, pinatisectas, con segmentos lineales; flores grandes en las axilas de las hojas superiores; cáliz velludo, con segmentos lanceolados; pétalos color minio, de 1-1,5 cm.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina. Se encuentra en la estepa clímax; florece en primavera."
   ),
   lythraceae: family(
     "lythraceae",
@@ -8920,7 +8968,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Estambres 5; estípulas herbáceas",
       keyStep: "K",
-      especieId: "violaceae",
+      nextNodeId: "violaceae_a",
     },
     opcionA_prima: {
       label: "Estambres 6; estípulas espiniformes",
@@ -8958,6 +9006,70 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Carpóforo de 50-70 mm; hierba anual, erecta, de 40-100 cm, híspido-glandulosa; folíolos 5-7 oblanceolados; hojas superiores simples; flores purpúreas o blancas; cápsulas de 6-8 cm",
       keyStep: "B'",
       especieId: "cleome_spinosa",
+    },
+  },
+  violaceae_a: {
+    id: "violaceae_a",
+    milestone: "Violaceae",
+    manualPage: 317,
+    descripcion: "Violaceae - A: semillas aladas",
+    opcionA: {
+      label: "Semillas aladas; plantas leñosas volubles; cápsulas grandes, membranosas",
+      keyStep: "A",
+      especieId: "anchietea_parvifolia",
+    },
+    opcionA_prima: {
+      label: "Semillas no aladas; plantas herbáceas o sufrutescentes, rastreras o erguidas; cápsulas pequeñas",
+      keyStep: "A'",
+      nextNodeId: "violaceae_b",
+    },
+  },
+  violaceae_b: {
+    id: "violaceae_b",
+    milestone: "Violaceae",
+    manualPage: 317,
+    descripcion: "Violaceae - B: apéndice basal de los sépalos",
+    opcionA: {
+      label: "Sépalos más o menos prolongados en su base en un apéndice herbáceo; flores solitarias sobre largos pedúnculos axilares",
+      keyStep: "B",
+      nextNodeId: "viola_a",
+    },
+    opcionA_prima: {
+      label: "Sépalos no prolongados en su base; flores en las axilas de las hojas superiores, formando racimos hojosos",
+      keyStep: "B'",
+      especieId: "hybanthus_parviflorus",
+    },
+  },
+  viola_a: {
+    id: "viola_a",
+    milestone: "Viola",
+    manualPage: 317,
+    descripcion: "Viola - A: forma de las estípulas",
+    opcionA: {
+      label: "Estípulas foliáceas, lirado-pinatífidas; hierba anual o bienal; corola blanca y amarilla",
+      keyStep: "A",
+      especieId: "viola_tricolor",
+    },
+    opcionA_prima: {
+      label: "Estípulas lineal-lanceoladas, reducidas; plantas perennes, acaules o subacaules, a veces estoloníferas",
+      keyStep: "A'",
+      nextNodeId: "viola_b",
+    },
+  },
+  viola_b: {
+    id: "viola_b",
+    milestone: "Viola",
+    manualPage: 318,
+    descripcion: "Viola - B: forma relativa de las hojas",
+    opcionA: {
+      label: "Hojas acorazonado-reniformes, más anchas que largas, menudamente crenadas; pétalos violáceos o blancos",
+      keyStep: "B",
+      especieId: "viola_odorata",
+    },
+    opcionA_prima: {
+      label: "Hojas acorazonado-ovadas, más largas que anchas; sépalos lanceolados, agudos; pétalos violáceos",
+      keyStep: "B'",
+      especieId: "viola_japonica",
     },
   },
   dicot_group_c_l: {
@@ -10988,7 +11100,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Hojas alternas",
       keyStep: "r'",
-      especieId: "turneraceae",
+      especieId: "turnera_pinnatifida_angustiloba",
     },
   },
   dicot_group_c_s_lower: {
