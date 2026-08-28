@@ -3943,6 +3943,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo D.",
     "Plantas no parásitas, con flores pequeñas verdosas."
   ),
+  terminalia_australis: species(
+    "terminalia_australis",
+    "Terminalia australis",
+    "95. Combretaceae",
+    "Árbol de 4-10 m de alto.",
+    "Hojas oblanceoladas, glabras, enteras, de 2-7 cm de largo; flores amarillentas, de 2-2,5 mm, en capítulos; frutos elípticos, con dos alas.",
+    "Paraguay, Uruguay y nordeste de la Argentina, hasta el Delta y la ribera del Plata. Florece en primavera. Nombre vulgar: palo amarillo."
+  ),
   umbelliferae: family(
     "umbelliferae",
     "100. Umbelliferae",
@@ -11658,8 +11666,25 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "No; flores pequeñas verdosas",
       keyStep: "F'",
-      especieId: "combretaceae",
+      nextNodeId: "combretaceae_terminal",
     },
+  },
+  combretaceae_terminal: {
+    id: "combretaceae_terminal",
+    milestone: "Combretaceae",
+    manualPage: 333,
+    descripcion: "Combretaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Terminalia australis",
+      keyStep: "1",
+      especieId: "terminalia_australis",
+    },
+    opcionA_prima: {
+      label: "Identificar como Terminalia australis",
+      keyStep: "1",
+      especieId: "terminalia_australis",
+    },
+    especie: manualFamilyData.terminalia_australis,
   },
   loranthaceae_a: {
     id: "loranthaceae_a",
