@@ -2221,6 +2221,54 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Árboles, arbustos o plantas volubles; en la clave aparece por hojas/folíolos y ovario 3-5-locular o frutos trialados."
   ),
+  dodonaea_viscosa: species(
+    "dodonaea_viscosa",
+    "Dodonaea viscosa",
+    "77. Sapindaceae",
+    "Arbusto glabro, pegajoso, de 1-2 m de alto.",
+    "Hojas simples, lanceoladas, cortamente pecioladas y enteras; flores pequeñas en panojas contraídas; fruto cápsula trialada o bialada con alas grandes, membranosas y cobrizas.",
+    "Especie polimorfa pantropical. Frecuente en las dunas de la Isla Martín García."
+  ),
+  allophylus_edulis: species(
+    "allophylus_edulis",
+    "Allophylus edulis",
+    "77. Sapindaceae",
+    "Árbol de 4-10 m, con corteza rojiza.",
+    "Hojas pecioladas, trifolioladas, glabras; folíolos lanceolados, aserrados, el terminal algo mayor; flores pequeñas blanquecinas en racimos; frutos constituidos por drupas ovoides rojizas, casi sin carne, del tamaño de una arveja.",
+    "América tropical. Frecuente en bosques marginales del Delta y de la ribera platense. Nombre vulgar: chalchal."
+  ),
+  cardiospermum_halicacabum: species(
+    "cardiospermum_halicacabum",
+    "Cardiospermum halicacabum",
+    "77. Sapindaceae",
+    "Enredadera anual, glabra salvo las partes jóvenes lanuginosas.",
+    "Hojas largamente pecioladas, membranosas, bicompuestas, con 3 divisiones de primer orden divididas a su vez en 3 segmentos o folíolos ovados, irregularmente aserrados o lobados; inflorescencias de 6-9 cm con zarcillos en la base; flores blancas pequeñas; cápsulas membranosas infladas de 25 mm.",
+    "Pantropical. Común en pajonales y matorrales de la ribera platense. Nombre vulgar: globitos."
+  ),
+  cardiospermum_grandiflorum: species(
+    "cardiospermum_grandiflorum",
+    "Cardiospermum grandiflorum",
+    "77. Sapindaceae",
+    "Enredadera perenne, leñosa en la base, corta y densamente pubescente.",
+    "Hojas largamente pecioladas, compuestas o bicompuestas, con 3 folíolos o con tres divisiones primarias trifolioladas; folíolos ovados, irregularmente dentados; flores blancas de unos 10 mm; cápsulas membranosas infladas de 25-30 mm.",
+    "América y África cálidas. Común en los bosques del Delta y de la ribera. Nombre vulgar: cipó."
+  ),
+  urvillea_uniloba: species(
+    "urvillea_uniloba",
+    "Urvillea uniloba",
+    "77. Sapindaceae",
+    "Liana con zarcillos y hojas alternas trifolioladas.",
+    "Folíolos ovados, dentado-lobados; tirsos axilares más largos que las hojas, con dos zarcillos en el pedúnculo; flores pequeñas amarillentas; fruto trisámara de 25-30 mm, con semillas en el centro del fruto y ala alrededor.",
+    "Sur de Brasil, Paraguay, Uruguay y nordeste de Argentina, hasta los bosques del Delta y de la ribera del Plata. Nombre vulgar: cipó."
+  ),
+  serjania_meridionalis: species(
+    "serjania_meridionalis",
+    "Serjania meridionalis",
+    "77. Sapindaceae",
+    "Liana glabra o casi glabra.",
+    "Hojas biternadas, con folíolos ovado-lanceolados, agudos y paucidentados; tirsos axilares con zarcillos; flores pequeñas; fruto trisámara de 2 cm, con la parte seminífera apical y ala inferior.",
+    "Bosques del sur de Brasil, Paraguay, Uruguay y nordeste de Argentina, hasta el Delta y la Isla Martín García."
+  ),
   zygophyllaceae: family(
     "zygophyllaceae",
     "69. Zygophyllaceae",
@@ -6765,6 +6813,86 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "maytenus_vitis_idaea",
     },
   },
+  sapindaceae_a: {
+    id: "sapindaceae_a",
+    milestone: "Sapindaceae",
+    manualPage: 295,
+    descripcion: "Sapindaceae - A: hojas simples o compuestas",
+    opcionA: {
+      label: "Hojas simples, enteras, lanceoladas; arbustos resinosos; fruto cápsula trialada",
+      keyStep: "A",
+      especieId: "dodonaea_viscosa",
+    },
+    opcionA_prima: {
+      label: "Hojas compuestas, con folíolos generalmente aserrados",
+      keyStep: "A'",
+      nextNodeId: "sapindaceae_b",
+    },
+  },
+  sapindaceae_b: {
+    id: "sapindaceae_b",
+    milestone: "Sapindaceae",
+    manualPage: 295,
+    descripcion: "Sapindaceae - B: porte y zarcillos",
+    opcionA: {
+      label: "Árboles desprovistos de zarcillos; frutos constituidos por 3 drupas",
+      keyStep: "B",
+      especieId: "allophylus_edulis",
+    },
+    opcionA_prima: {
+      label: "Lianas con zarcillos; fruto cápsula o trisámara",
+      keyStep: "B'",
+      nextNodeId: "sapindaceae_c",
+    },
+  },
+  sapindaceae_c: {
+    id: "sapindaceae_c",
+    milestone: "Sapindaceae",
+    manualPage: 295,
+    descripcion: "Sapindaceae - C: tipo de fruto en lianas",
+    opcionA: {
+      label: "Fruto cápsula membranosa, inflada, trilocular",
+      keyStep: "C",
+      nextNodeId: "cardiospermum_a",
+    },
+    opcionA_prima: {
+      label: "Fruto trisámara",
+      keyStep: "C'",
+      nextNodeId: "sapindaceae_d",
+    },
+  },
+  cardiospermum_a: {
+    id: "cardiospermum_a",
+    milestone: "Cardiospermum",
+    manualPage: 297,
+    descripcion: "Cardiospermum - A: ciclo de vida y pubescencia",
+    opcionA: {
+      label: "Enredadera anual, glabra salvo partes jóvenes lanuginosas; flores pequeñas blancas; cápsulas de 25 mm",
+      keyStep: "A",
+      especieId: "cardiospermum_halicacabum",
+    },
+    opcionA_prima: {
+      label: "Enredadera perenne, leñosa en la base, corta y densamente pubescente; flores blancas de unos 10 mm; cápsulas de 25-30 mm",
+      keyStep: "A'",
+      especieId: "cardiospermum_grandiflorum",
+    },
+  },
+  sapindaceae_d: {
+    id: "sapindaceae_d",
+    milestone: "Sapindaceae",
+    manualPage: 295,
+    descripcion: "Sapindaceae - D: posición de semillas y ala",
+    opcionA: {
+      label: "Semillas en el centro del fruto, llevando el ala a su alrededor",
+      keyStep: "D",
+      especieId: "urvillea_uniloba",
+    },
+    opcionA_prima: {
+      label: "Semillas en el ápice del fruto, llevando el ala sólo en su parte inferior",
+      keyStep: "D'",
+      especieId: "serjania_meridionalis",
+    },
+  },
   santalaceae_a: {
     id: "santalaceae_a",
     milestone: "Santalaceae",
@@ -8203,7 +8331,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Folíolos grandes, ovados, aserrados",
       keyStep: "R",
-      especieId: "sapindaceae",
+      nextNodeId: "sapindaceae_a",
     },
     opcionA_prima: {
       label: "Folíolos pequeños, oblongos, enteros",
@@ -8298,7 +8426,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Plantas no espinosas; receptáculo casi plano; frutos trialados",
       keyStep: "X'",
-      especieId: "sapindaceae",
+      nextNodeId: "sapindaceae_a",
     },
   },
   dicot_group_c_x_upper: {
@@ -8843,7 +8971,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Estambres 8; gineceo tricarpelar trilocular; hojas trifolioladas o bipinaticompuestas",
       keyStep: "i",
-      especieId: "sapindaceae",
+      nextNodeId: "sapindaceae_a",
     },
     opcionA_prima: {
       label: "Estambres 4-5; gineceo bicarpelar; hojas palmaticompuestas",
