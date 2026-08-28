@@ -30,13 +30,13 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `65. Oxalidaceae`, completa.
-- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` completa; `65. Oxalidaceae` completa.
-- Ultimo commit subido antes de esta tanda: `8345607 Complete Leguminosae Papilionoideae keys`.
+- `66. Geraniaceae`, completa.
+- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` completa; `65. Oxalidaceae` completa; `66. Geraniaceae` completa.
+- Ultimo commit subido antes de esta tanda: `d12dd9a Add Oxalidaceae species keys`.
 
 ## Proxima familia consecutiva
 
-- `66. Geraniaceae`, pagina 270 del manual (`PDF_PAGE=277`).
+- `67. Tropaeolaceae`, pagina 273 del manual (`PDF_PAGE=280`).
 
 ## Regla de trabajo
 

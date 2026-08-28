@@ -2933,6 +2933,62 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Flores azules o violáceas, pétalos planos; plantas no fétidas."
   ),
+  geranium_robertianum: species(
+    "geranium_robertianum",
+    "Geranium robertianum",
+    "66. Geraniaceae",
+    "Hierba anual, glanduloso-pubescente, erecta o ascendente.",
+    "Hojas divididas hasta la base en 3-5 segmentos pinatilobados; pedúnculos bifloros; pétalos rosados; flores con 10 estambres.",
+    "Europa; adventicia en América. Se halla en los bosques del Delta y de la ribera platense."
+  ),
+  geranium_dissectum: species(
+    "geranium_dissectum",
+    "Geranium dissectum",
+    "66. Geraniaceae",
+    "Hierba anual, híspida, con pelos dirigidos hacia abajo y tallos decumbentes o ascendentes.",
+    "Hojas largamente pecioladas, de contorno reniforme, profundamente partidas en 5 segmentos palmatipartidos o palmatilobados; esquizocarpos lisos y peludos; pedúnculos bifloros; sépalos ovados de 6-8 mm; pétalos purpúreos.",
+    "Europa; adventicia en América. Común en la región; florece en primavera."
+  ),
+  geranium_molle: species(
+    "geranium_molle",
+    "Geranium molle",
+    "66. Geraniaceae",
+    "Hierba anual, pubescente, decumbente o ascendente.",
+    "Hojas muy largamente pecioladas, reniformes, partidas hasta su mitad en 7-9 lóbulos trilobados; esquizocarpos transversalmente rugosos y casi glabros; pedúnculos bifloros; pétalos purpúreos.",
+    "Europa; adventicia en América. Común durante la primavera."
+  ),
+  geranium_albicans: species(
+    "geranium_albicans",
+    "Geranium albicans",
+    "66. Geraniaceae",
+    "Hierba perenne, con raíz napiforme y tallos de 15-20 cm de alto, laxamente sedosos.",
+    "Hojas palmatisectas, con segmentos lobados; pedúnculos 1-2-floros; flores con 10 estambres; rostros de los carpelos glabros en la cara interior.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina. Se halla en la estepa clímax del norte de Buenos Aires: Pergamino."
+  ),
+  erodium_malacoides: species(
+    "erodium_malacoides",
+    "Erodium malacoides",
+    "66. Geraniaceae",
+    "Hierba anual o bienal, ascendente y pilosa.",
+    "Hojas simples, opuestas, largamente pecioladas, ovadas, lobado-crenadas y acorazonadas en la base; flores liliáceas en umbelas definidas; sépalos de unos 5 mm; esquizocarpos hirsutos.",
+    "Europa; adventicia en América. Muy común en suelos modificados a fines del invierno."
+  ),
+  erodium_cicutarium: species(
+    "erodium_cicutarium",
+    "Erodium cicutarium",
+    "66. Geraniaceae",
+    "Hierba anual o bienal, pubescente, con tallos tendidos o ascendentes; hojas radicales en roseta y caulinares escasas.",
+    "Hojas bipinatisectas, con pinas ovadas y pínulas lanceoladas o lineales; estípulas agudas; flores en umbelas definidas largamente pedunculadas; sépalos de 6-7 mm; esquizocarpos seríceos.",
+    "Europa; adventicia en América. Raro en campos fértiles. Nombre vulgar: alfilerillo."
+  ),
+  erodium_moschatum: species(
+    "erodium_moschatum",
+    "Erodium moschatum",
+    "66. Geraniaceae",
+    "Hierba anual o bienal, tendida o ascendente, con hojas inferiores arrosetadas.",
+    "Hojas pinatisectas, con pinas ovadas, pecioladas y más o menos profundamente lobadas; estípulas obtusas; flores en umbelas definidas axilares largamente pedunculadas; cáliz de unos 8 mm; esquizocarpos seríceos.",
+    "Europa; adventicia en América. Rara en la región. Nombre vulgar: alfilerillo."
+  ),
   loasaceae: family(
     "loasaceae",
     "90. Loasaceae",
@@ -5667,6 +5723,102 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Plantas tendidas, con tallos rastreros radicantes y rizomas delgados",
       keyStep: "G'",
       especieId: "oxalis_cordobensis",
+    },
+  },
+  geraniaceae_a: {
+    id: "geraniaceae_a",
+    milestone: "Geraniaceae",
+    manualPage: 270,
+    descripcion: "Geraniaceae - A: estambres y rostro de carpelos",
+    opcionA: {
+      label: "Flores con 10 estambres; rostros de los carpelos glabros en su cara interior",
+      keyStep: "A",
+      nextNodeId: "geranium_a",
+    },
+    opcionA_prima: {
+      label: "Flores con 5 estambres y 5 estaminodios; rostros de los carpelos con largas cerdas",
+      keyStep: "A'",
+      nextNodeId: "erodium_a",
+    },
+  },
+  geranium_a: {
+    id: "geranium_a",
+    milestone: "Geranium",
+    manualPage: 271,
+    descripcion: "Geranium - A: ciclo de vida",
+    opcionA: {
+      label: "Plantas anuales",
+      keyStep: "A",
+      nextNodeId: "geranium_b",
+    },
+    opcionA_prima: {
+      label: "Hierbas perennes, con raíz napiforme; tallos de 15-20 cm; hojas palmatisectas; pedúnculos 1-2-floros",
+      keyStep: "A'",
+      especieId: "geranium_albicans",
+    },
+  },
+  geranium_b: {
+    id: "geranium_b",
+    milestone: "Geranium",
+    manualPage: 271,
+    descripcion: "Geranium - B: división de hojas",
+    opcionA: {
+      label: "Hojas divididas hasta la base en 3-5 segmentos pinatilobados; pedúnculos bifloros; pétalos rosados",
+      keyStep: "B",
+      especieId: "geranium_robertianum",
+    },
+    opcionA_prima: {
+      label: "Hojas palmatilobadas o palmatisectas, con segmentos palmatilobados",
+      keyStep: "B'",
+      nextNodeId: "geranium_c",
+    },
+  },
+  geranium_c: {
+    id: "geranium_c",
+    milestone: "Geranium",
+    manualPage: 271,
+    descripcion: "Geranium - C: superficie de esquizocarpos",
+    opcionA: {
+      label: "Esquizocarpos lisos, peludos; hojas reniformes profundamente partidas en 5 segmentos; sépalos de 6-8 mm",
+      keyStep: "C",
+      especieId: "geranium_dissectum",
+    },
+    opcionA_prima: {
+      label: "Esquizocarpos rugosos transversalmente, casi glabros; hojas reniformes partidas hasta su mitad en 7-9 lóbulos",
+      keyStep: "C'",
+      especieId: "geranium_molle",
+    },
+  },
+  erodium_a: {
+    id: "erodium_a",
+    milestone: "Erodium",
+    manualPage: 272,
+    descripcion: "Erodium - A: tipo de hojas",
+    opcionA: {
+      label: "Hojas simples, opuestas, largamente pecioladas, ovadas, lobado-crenadas y acorazonadas en la base",
+      keyStep: "A",
+      especieId: "erodium_malacoides",
+    },
+    opcionA_prima: {
+      label: "Hojas pinaticompuestas, con folíolos lobados o partidos",
+      keyStep: "A'",
+      nextNodeId: "erodium_b",
+    },
+  },
+  erodium_b: {
+    id: "erodium_b",
+    milestone: "Erodium",
+    manualPage: 272,
+    descripcion: "Erodium - B: grado de división de hojas",
+    opcionA: {
+      label: "Hojas bipinatisectas; pinas ovadas; pínulas lanceoladas o lineales; estípulas agudas; sépalos de 6-7 mm",
+      keyStep: "B",
+      especieId: "erodium_cicutarium",
+    },
+    opcionA_prima: {
+      label: "Hojas pinatisectas; pinas ovadas, pecioladas y lobadas; estípulas obtusas; cáliz de unos 8 mm",
+      keyStep: "B'",
+      especieId: "erodium_moschatum",
     },
   },
   santalaceae_a: {
@@ -9128,7 +9280,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Flores azules o violáceas; pétalos planos; plantas no fétidas",
       keyStep: "x'",
-      especieId: "geraniaceae",
+      nextNodeId: "geraniaceae_a",
     },
   },
   dicot_group_pending_d: {
