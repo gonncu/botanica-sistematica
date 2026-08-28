@@ -30,13 +30,13 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `77. Sapindaceae`, completa.
-- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` completa; `65. Oxalidaceae` completa; `66. Geraniaceae` completa; `67. Tropaeolaceae` completa; `68. Linaceae` completa; `69. Zygophyllaceae` completa; `70. Rutaceae` completa; `71. Malpighiaceae` completa; `72. Polygalaceae` completa; `73. Euphorbiaceae` completa; `74. Callitrichaceae` completa; `75. Anacardiaceae` completa; `76. Celastraceae` completa; `77. Sapindaceae` completa.
-- Ultimo commit subido antes de esta tanda: `e7ff38b Add Anacardiaceae Celastraceae keys`.
+- `78. Rhamnaceae`, completa.
+- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` completa; `65. Oxalidaceae` completa; `66. Geraniaceae` completa; `67. Tropaeolaceae` completa; `68. Linaceae` completa; `69. Zygophyllaceae` completa; `70. Rutaceae` completa; `71. Malpighiaceae` completa; `72. Polygalaceae` completa; `73. Euphorbiaceae` completa; `74. Callitrichaceae` completa; `75. Anacardiaceae` completa; `76. Celastraceae` completa; `77. Sapindaceae` completa; `78. Rhamnaceae` completa.
+- Ultimo commit subido antes de esta tanda: `63cba5b Add Sapindaceae species keys`.
 
 ## Proxima familia consecutiva
 
-- `78. Rhamnaceae`, pagina 298 del manual (`PDF_PAGE=305`).
+- `79. Vitaceae`, pagina 301 del manual (`PDF_PAGE=308`).
 
 ## Regla de trabajo
 

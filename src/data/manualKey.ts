@@ -2323,6 +2323,46 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Plantas espinosas, receptáculo floral muy cóncavo a urceolado y frutos no alados."
   ),
+  scutia_buxifolia: species(
+    "scutia_buxifolia",
+    "Scutia buxifolia",
+    "78. Rhamnaceae",
+    "Arbolito de 2-6 m de alto, con ramas subopuestas y espinas axilares.",
+    "Hojas persistentes, semiopuestas, elípticas y apenas aserradas; flores pequeñas verdosas, 5-meras; disco grueso; fruto piriforme, 3-carpelar.",
+    "Sur de Brasil, Uruguay y norte de la Argentina. Común en bosques xerófilos del norte y este bonaerense; florece en primavera. Nombre vulgar: coronillo."
+  ),
+  rhamnus_cathartica: species(
+    "rhamnus_cathartica",
+    "Rhamnus cathartica",
+    "78. Rhamnaceae",
+    "Arbusto o arbolito de 2-6 m de alto, con ramas espiniformes.",
+    "Hojas persistentes, glabras, anchamente ovadas o elípticas, crenadas, de 3-6 cm; flores dioicas pequeñas, 4-meras, amontonadas en las axilas; disco delgado; drupas globosas negras de 1 cm.",
+    "Europa. Cultivado y adventicio en el Delta del Paraná. Frutos medicinales. Nombre vulgar: espino cerval."
+  ),
+  discaria_longispina: species(
+    "discaria_longispina",
+    "Discaria longispina",
+    "78. Rhamnaceae",
+    "Arbusto achaparrado de 50-80 cm de alto, con ramas espinosas.",
+    "Ramas laterales opuestas, cortas, generalmente con un solo nudo próximo al ápice; hojas rudimentarias y efímeras; ramas con nudos marcados por una línea transversal; flores blancas con pétalos diminutos dentados; borde del disco no enrollado hacia adentro.",
+    "Sur de Brasil, Uruguay y norte de la Argentina. Rara cerca de la Capital Federal, pero frecuente hacia Magdalena y General Lavalle. Nombre vulgar: brusquilla."
+  ),
+  colletia_spinosissima: species(
+    "colletia_spinosissima",
+    "Colletia spinosissima",
+    "78. Rhamnaceae",
+    "Arbusto áfilo de 1,5-4 m de alto, con ramas y espinas gruesas y rígidas.",
+    "Ramas espiniformes opuestas, cruzadas, cilíndricas o comprimidas; hojas rudimentarias y efímeras; flores aglomeradas en la base de las espinas, con receptáculo blanco; borde del disco enrollado hacia adentro.",
+    "Uruguay y Argentina. Común en bosques de talas del norte bonaerense. La corteza se usa en medicina popular como febrífuga y astringente. Nombres vulgares: quina, barba de tigre."
+  ),
+  colletia_tenuicola: species(
+    "colletia_tenuicola",
+    "Colletia tenuicola",
+    "78. Rhamnaceae",
+    "Arbusto áfilo de 1,5-2 m de alto, con ramas y espinas delgadas y flexibles.",
+    "Ramas espiniformes opuestas; hojas rudimentarias y efímeras; flores con receptáculo blanco; borde del disco enrollado hacia adentro.",
+    "Vive en los talares del norte de la provincia de Buenos Aires."
+  ),
   berberidaceae: family(
     "berberidaceae",
     "55. Berberidaceae",
@@ -6893,6 +6933,70 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "serjania_meridionalis",
     },
   },
+  rhamnaceae_a: {
+    id: "rhamnaceae_a",
+    milestone: "Rhamnaceae",
+    manualPage: 299,
+    descripcion: "Rhamnaceae - A: porte y hojas",
+    opcionA: {
+      label: "Árboles con hojas persistentes",
+      keyStep: "A",
+      nextNodeId: "rhamnaceae_b",
+    },
+    opcionA_prima: {
+      label: "Arbustos espinosos, áfilos o con hojas reducidas",
+      keyStep: "A'",
+      nextNodeId: "rhamnaceae_c",
+    },
+  },
+  rhamnaceae_b: {
+    id: "rhamnaceae_b",
+    milestone: "Rhamnaceae",
+    manualPage: 299,
+    descripcion: "Rhamnaceae - B: espinas y disco",
+    opcionA: {
+      label: "Espinas axilares, cortas; hojas apenas aserradas; disco grueso",
+      keyStep: "B",
+      especieId: "scutia_buxifolia",
+    },
+    opcionA_prima: {
+      label: "Espinas formadas por las ramas hojosas; hojas aserradas; disco delgado",
+      keyStep: "B'",
+      especieId: "rhamnus_cathartica",
+    },
+  },
+  rhamnaceae_c: {
+    id: "rhamnaceae_c",
+    milestone: "Rhamnaceae",
+    manualPage: 299,
+    descripcion: "Rhamnaceae - C: nudos y borde del disco",
+    opcionA: {
+      label: "Ramas con nudos marcados por una línea transversal; flores con el borde del disco no enrollado hacia adentro",
+      keyStep: "C",
+      especieId: "discaria_longispina",
+    },
+    opcionA_prima: {
+      label: "Ramas sin nudos marcados; flores con el borde del disco enrollado hacia adentro",
+      keyStep: "C'",
+      nextNodeId: "colletia_a",
+    },
+  },
+  colletia_a: {
+    id: "colletia_a",
+    milestone: "Colletia",
+    manualPage: 300,
+    descripcion: "Colletia - A: grosor de ramas y espinas",
+    opcionA: {
+      label: "Ramas y espinas gruesas, rígidas; arbusto de 1,5-4 m; flores aglomeradas en la base de las espinas",
+      keyStep: "A",
+      especieId: "colletia_spinosissima",
+    },
+    opcionA_prima: {
+      label: "Ramas y espinas delgadas, flexibles; arbusto de 1,5-2 m",
+      keyStep: "A'",
+      especieId: "colletia_tenuicola",
+    },
+  },
   santalaceae_a: {
     id: "santalaceae_a",
     milestone: "Santalaceae",
@@ -8421,7 +8525,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Plantas espinosas; receptáculo floral muy cóncavo a urceolado; frutos no alados",
       keyStep: "X",
-      especieId: "rhamnaceae",
+      nextNodeId: "rhamnaceae_a",
     },
     opcionA_prima: {
       label: "Plantas no espinosas; receptáculo casi plano; frutos trialados",
