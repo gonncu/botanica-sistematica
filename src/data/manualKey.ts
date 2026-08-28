@@ -1955,6 +1955,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Folíolos pequeños, oblongos y enteros; ovario 3-5-locular, estambres 8-10."
   ),
+  porlieria_microphylla: species(
+    "porlieria_microphylla",
+    "Porlieria microphylla",
+    "69. Zygophyllaceae",
+    "Arbusto intrincadamente ramoso, de 1-3 m de alto.",
+    "Hojas pubescentes, paripinadas, con 5-20 pares de folíolos oblongos, enteros, muy apretados y pequeños; flores amarillas 4-meras; cocos negros o pardos.",
+    "Norte y centro de la Argentina y Bolivia. Rara en la región: barrancas del Paraná en Zárate, San Nicolás, etc."
+  ),
   sterculiaceae: family(
     "sterculiaceae",
     "82. Sterculiaceae",
@@ -2934,6 +2942,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "68. Linaceae",
     "Dicotiledóneas del Grupo C.",
     "Hojas lineales enteras, alternas; plantas robustas."
+  ),
+  linum_usitatissimum: species(
+    "linum_usitatissimum",
+    "Linum usitatissimum",
+    "68. Linaceae",
+    "Planta anual, erecta, de 40-80 cm de alto, glabra.",
+    "Hojas alternas, lineal-lanceoladas, trinervadas, de 2-4 cm por 2-6 mm; flores grandes, azules, en cimas corimbiformes terminales; cápsulas ovoideas.",
+    "Viejo Mundo. Cultivada y con frecuencia subespontánea junto a vías férreas, rastrojos, etc. Nombre vulgar: lino."
+  ),
+  linum_selaginoides: species(
+    "linum_selaginoides",
+    "Linum selaginoides",
+    "68. Linaceae",
+    "Planta perenne, con raíz gruesa y tallos ascendentes o tendidos.",
+    "Hojas densas, abiertas, estrechamente lineales, de 6-10 mm por 0,2-0,5 mm; flores solitarias en ramificaciones superiores y ápices de ramitas; pétalos blancos o rosados, más cortos que los sépalos; cápsulas globosas.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina. Muy rara cerca de Buenos Aires; más frecuente en el interior de la provincia."
   ),
   geraniaceae: family(
     "geraniaceae",
@@ -5829,6 +5853,22 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "erodium_moschatum",
     },
   },
+  linum_a: {
+    id: "linum_a",
+    milestone: "Linum",
+    manualPage: 275,
+    descripcion: "Linum - A: ciclo de vida y porte",
+    opcionA: {
+      label: "Plantas anuales, erectas, de 40-80 cm, glabras; hojas lineal-lanceoladas; flores azules en cimas corimbiformes terminales",
+      keyStep: "A",
+      especieId: "linum_usitatissimum",
+    },
+    opcionA_prima: {
+      label: "Plantas perennes, con raíz gruesa y tallos ascendentes o tendidos; hojas estrechamente lineales; flores solitarias blancas o rosadas",
+      keyStep: "A'",
+      especieId: "linum_selaginoides",
+    },
+  },
   santalaceae_a: {
     id: "santalaceae_a",
     milestone: "Santalaceae",
@@ -7272,7 +7312,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Folíolos pequeños, oblongos, enteros",
       keyStep: "R'",
-      especieId: "zygophyllaceae",
+      especieId: "porlieria_microphylla",
     },
   },
   dicot_group_c_s: {
@@ -9268,7 +9308,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Hojas alternas; plantas robustas",
       keyStep: "w",
-      especieId: "linaceae",
+      nextNodeId: "linum_a",
     },
     opcionA_prima: {
       label: "Hojas opuestas; plantas pigmeas",
