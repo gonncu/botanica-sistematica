@@ -30,13 +30,13 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `84. Elatinaceae`, completa.
-- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` completa; `65. Oxalidaceae` completa; `66. Geraniaceae` completa; `67. Tropaeolaceae` completa; `68. Linaceae` completa; `69. Zygophyllaceae` completa; `70. Rutaceae` completa; `71. Malpighiaceae` completa; `72. Polygalaceae` completa; `73. Euphorbiaceae` completa; `74. Callitrichaceae` completa; `75. Anacardiaceae` completa; `76. Celastraceae` completa; `77. Sapindaceae` completa; `78. Rhamnaceae` completa; `79. Vitaceae` completa; `80. Tiliaceae` completa; `81. Malvaceae` completa; `82. Sterculiaceae` completa; `83. Guttiferae` completa; `84. Elatinaceae` completa.
-- Ultimo commit subido antes de esta tanda: `1495f7a Complete Malvaceae species keys`.
+- `86. Cistaceae`, ficha cargada; revisar conexion en clave general porque la clave impresa extraida salta de `Frankeniaceae` a `Turneraceae`.
+- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` completa; `65. Oxalidaceae` completa; `66. Geraniaceae` completa; `67. Tropaeolaceae` completa; `68. Linaceae` completa; `69. Zygophyllaceae` completa; `70. Rutaceae` completa; `71. Malpighiaceae` completa; `72. Polygalaceae` completa; `73. Euphorbiaceae` completa; `74. Callitrichaceae` completa; `75. Anacardiaceae` completa; `76. Celastraceae` completa; `77. Sapindaceae` completa; `78. Rhamnaceae` completa; `79. Vitaceae` completa; `80. Tiliaceae` completa; `81. Malvaceae` completa; `82. Sterculiaceae` completa; `83. Guttiferae` completa; `84. Elatinaceae` completa; `85. Frankeniaceae` completa; `86. Cistaceae` ficha cargada.
+- Ultimo commit subido antes de esta tanda: `4c914b6 Add Sterculiaceae Guttiferae Elatinaceae keys`.
 
 ## Proxima familia consecutiva
 
-- `85. Frankeniaceae`, pagina 315 del manual (`PDF_PAGE=322`).
+- `87. Violaceae`, pagina 316 del manual (`PDF_PAGE=323`).
 
 ## Regla de trabajo
 

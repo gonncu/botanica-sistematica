@@ -3511,6 +3511,28 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Óvulos de placentación parietal y hojas opuestas."
   ),
+  frankenia_pulverulenta: species(
+    "frankenia_pulverulenta",
+    "Frankenia pulverulenta",
+    "85. Frankeniaceae",
+    "Hierba anual, tendida.",
+    "Hojas algo carnosas, obovadas, enteras, de 2,5-3,5 mm, glabras en el haz y algo pubescentes en el envés; flores solitarias, sésiles, axilares en las ramificaciones del tallo; cáliz de 3,5 mm; pétalos 5, blancos o rosados; estambres 5; cápsula de 2,5 mm con 3-12 semillas.",
+    "Europa; adventicia en la provincia de Buenos Aires. Citada por Spegazzini para los alrededores de La Plata."
+  ),
+  cistaceae: family(
+    "cistaceae",
+    "86. Cistaceae",
+    "Dicotiledóneas del Grupo C.",
+    "Hierbas, sufrútices o arbustos, con estambres indefinidos, ovario unilocular y placentas parietales."
+  ),
+  halimium_brasiliense: species(
+    "halimium_brasiliense",
+    "Halimium brasiliense",
+    "86. Cistaceae",
+    "Sufrútice de 10-40 cm de alto, ascendente o erecto, velludo.",
+    "Hojas sésiles, lanceolado-elípticas, agudas, enteras, de 1,5-3 cm; flores largamente pedunculadas, en cincinios muy laxos o subsolitarias; pétalos amarillos de 1-1,5 cm; flores cleistógamas precoces, casi sésiles en las axilas de las hojas inferiores; cápsulas ovoides, glabras.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina, hasta la provincia de Buenos Aires. Rara cerca de Buenos Aires; más común en el norte provincial y en sierras de Tandil y Ventana; florece en primavera."
+  ),
   turneraceae: family(
     "turneraceae",
     "88. Turneraceae",
@@ -10961,7 +10983,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Hojas opuestas",
       keyStep: "r",
-      especieId: "frankeniaceae",
+      especieId: "frankenia_pulverulenta",
     },
     opcionA_prima: {
       label: "Hojas alternas",
