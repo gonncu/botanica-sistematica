@@ -2317,6 +2317,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Flores hermafroditas con estambres muy numerosos."
   ),
+  luehea_divaricata: species(
+    "luehea_divaricata",
+    "Luehea divaricata",
+    "80. Tiliaceae",
+    "Árbol elevado, con ramas castañas.",
+    "Hojas alternas, pecioladas, ovadas, aserradas, trinervadas, glabras en el haz y densamente tomentosas en el envés, de 7-10 cm; flores grandes en cimas terminales y axilares; pétalos lilas; estambres indefinidos; cápsulas ovoides pubescentes de 2-2,5 cm, dehiscentes por 3-5 valvas apicales.",
+    "Brasil, Paraguay, Uruguay y nordeste de la Argentina. Cerca de la Capital Federal sólo hallada en Isla Martín García. Nombre vulgar: azota caballo."
+  ),
   rhamnaceae: family(
     "rhamnaceae",
     "78. Rhamnaceae",
@@ -2650,6 +2658,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "79. Vitaceae",
     "Dicotiledóneas del Grupo C.",
     "Plantas volubles con estambres 4-5, gineceo bicarpelar y hojas palmaticompuestas."
+  ),
+  cissus_palmata: species(
+    "cissus_palmata",
+    "Cissus palmata",
+    "79. Vitaceae",
+    "Enredadera perenne, glabra, con zarcillos.",
+    "Hojas alternas, palmaticompuestas, con 5 folíolos lanceolado-lineales, aserrados; cimas opuestas a las hojas; flores verdosas; bayas negras, ovoides, con 1-2 semillas.",
+    "Sur de Brasil, Paraguay y nordeste de la Argentina, hasta los bosques del Delta y de la ribera platense. Florece en verano. Nombre vulgar: uva del diablo."
+  ),
+  cissus_striata_argentina: species(
+    "cissus_striata_argentina",
+    "Cissus striata var. argentina",
+    "79. Vitaceae",
+    "Enredadera con zarcillos.",
+    "Hojas alternas, palmaticompuestas, con folíolos oblanceolado-espatulados, algo coriáceos; cimas opuestas a las hojas; flores verdosas; bayas negras.",
+    "América austral. Común en los bosques del Delta y de la ribera del Plata."
   ),
   cruciferae: family(
     "cruciferae",
@@ -6997,6 +7021,22 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "colletia_tenuicola",
     },
   },
+  vitaceae_a: {
+    id: "vitaceae_a",
+    milestone: "Vitaceae",
+    manualPage: 302,
+    descripcion: "Vitaceae - Cissus A: forma de folíolos",
+    opcionA: {
+      label: "Folíolos lanceolado-lineales, aserrados; cimas opuestas a las hojas; bayas negras ovoides con 1-2 semillas",
+      keyStep: "A",
+      especieId: "cissus_palmata",
+    },
+    opcionA_prima: {
+      label: "Folíolos oblanceolado-espatulados, algo coriáceos; el resto de los caracteres como en A",
+      keyStep: "A'",
+      especieId: "cissus_striata_argentina",
+    },
+  },
   santalaceae_a: {
     id: "santalaceae_a",
     milestone: "Santalaceae",
@@ -8510,7 +8550,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Estambres muy numerosos",
       keyStep: "W",
-      especieId: "tiliaceae",
+      especieId: "luehea_divaricata",
     },
     opcionA_prima: {
       label: "Estambres 4-10",
@@ -9080,7 +9120,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Estambres 4-5; gineceo bicarpelar; hojas palmaticompuestas",
       keyStep: "i'",
-      especieId: "vitaceae",
+      nextNodeId: "vitaceae_a",
     },
   },
   dicot_group_c_j_lower: {
