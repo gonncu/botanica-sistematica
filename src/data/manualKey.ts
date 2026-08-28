@@ -4013,6 +4013,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo D.",
     "Anteras dehiscentes por poros apicales."
   ),
+  tibouchina_nitida: species(
+    "tibouchina_nitida",
+    "Tibouchina nitida",
+    "97. Melastomaceae",
+    "Hierba perenne, estolonífera, con tallos erectos, tetrágonos.",
+    "Hojas opuestas, cortamente pecioladas, lanceoladas, menudamente aserradas, hirsutas, con 5 nervaduras principales, de 4-6 cm; flores en cimas trifloras, tetrámeras; lóbulos del cáliz lanceolados, ciliados; corola rosada; anteras falcadas, dehiscentes por poros apicales.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Se halla en los matorrales del Delta y de la ribera platense. Florece en verano."
+  ),
   lentibulariaceae: family(
     "lentibulariaceae",
     "120. Lentibulariaceae",
@@ -11800,8 +11808,25 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Dehiscencia por poros apicales",
       keyStep: "J'",
-      especieId: "melastomaceae",
+      nextNodeId: "melastomaceae_terminal",
     },
+  },
+  melastomaceae_terminal: {
+    id: "melastomaceae_terminal",
+    milestone: "Melastomaceae",
+    manualPage: 336,
+    descripcion: "Melastomaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Tibouchina nitida",
+      keyStep: "1",
+      especieId: "tibouchina_nitida",
+    },
+    opcionA_prima: {
+      label: "Identificar como Tibouchina nitida",
+      keyStep: "1",
+      especieId: "tibouchina_nitida",
+    },
+    especie: manualFamilyData.tibouchina_nitida,
   },
   dicot_group_d_k: {
     id: "dicot_group_d_k",
