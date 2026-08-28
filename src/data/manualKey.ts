@@ -3797,6 +3797,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo D.",
     "Hierbas con flores unisexuales diclinas."
   ),
+  begonia_cucullata: species(
+    "begonia_cucullata",
+    "Begonia cucullata",
+    "91. Begoniaceae",
+    "Hierba perenne, estolonífera, glabra, de 10-50 cm de alto, tuberosa en la base.",
+    "Hojas pecioladas, asimétricas, anchamente ovadas, obtusas, crenado-aserradas, palminervadas, de 7-8 cm de largo; estípulas oblongas; cimas axilares paucifloras; flores masculinas con 4 tépalos, exteriores rosados e interiores blancos; flores femeninas con 4-5 tépalos; fruto cápsula trilocular, con 3 alas desiguales.",
+    "América tropical y subtropical. Común en lugares húmedos y sombríos de los bosques del Delta y de la ribera del Plata. También se cultiva como ornamental. Nombre vulgar: begonia."
+  ),
   myrtaceae: family(
     "myrtaceae",
     "96. Myrtaceae",
@@ -11310,13 +11318,30 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Hierbas; flores unisexuales diclinas",
       keyStep: "D",
-      especieId: "begoniaceae",
+      nextNodeId: "begoniaceae_terminal",
     },
     opcionA_prima: {
       label: "Árboles; flores hermafroditas",
       keyStep: "D'",
       especieId: "myrtaceae",
     },
+  },
+  begoniaceae_terminal: {
+    id: "begoniaceae_terminal",
+    milestone: "Begoniaceae",
+    manualPage: 325,
+    descripcion: "Begoniaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Begonia cucullata",
+      keyStep: "1",
+      especieId: "begonia_cucullata",
+    },
+    opcionA_prima: {
+      label: "Identificar como Begonia cucullata",
+      keyStep: "1",
+      especieId: "begonia_cucullata",
+    },
+    especie: manualFamilyData.begonia_cucullata,
   },
   dicot_group_d_e: {
     id: "dicot_group_d_e",
