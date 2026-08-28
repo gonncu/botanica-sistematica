@@ -30,13 +30,13 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `64. Leguminosae`, en progreso desde pagina 240 del manual.
-- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` con `Mimosoideae`, `Caesalpinioideae` y `Papilionoideae` cargada hasta `Poiretia`.
-- Ultimo commit subido antes de esta tanda: `7cc07cc Add Trifolium Melilotus Phaseolus keys`.
+- `64. Leguminosae`, completa.
+- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` completa.
+- Ultimo commit subido antes de esta tanda: `5d5ce9a Add Lotus Poiretia Leguminosae keys`.
 
 ## Proxima familia consecutiva
 
-- `64. Leguminosae`, continuar con la rama de `Indigofera` y generos afines, pagina 265 del manual (`PDF_PAGE=272`).
+- `65. Oxalidaceae`, pagina 268 del manual (`PDF_PAGE=275`).
 
 ## Regla de trabajo
 

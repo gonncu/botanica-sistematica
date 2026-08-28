@@ -1825,6 +1825,62 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas glabras con 2 pares de folíolos elípticos u ovados grandes; flores amarillas en racimos axilares; frutos formados por 2-4 artejos glabros y glandulosos.",
     "Campos del sur de Brasil, Uruguay y norte y centro de la Argentina. Rara en los alrededores de La Plata."
   ),
+  indigofera_suffruticosa: species(
+    "indigofera_suffruticosa",
+    "Indigofera suffruticosa",
+    "64. Leguminosae - Papilionoideae",
+    "Sufrútice o arbustito de 0,30-3 m de alto, seríceo-pubescente, con pelos malpigiáceos en T.",
+    "Hojas imparipinadas, con 7-21 folíolos elíptico-lanceolados; flores anaranjado-violáceas en racimos axilares; anteras apiculadas; frutos lineales, curvos y dehiscentes.",
+    "América cálida. Se cultiva para la producción de añil; rara en Palermo, Isla Maciel, Isla Santiago, etc. Nombre vulgar: añil."
+  ),
+  sesbania_punicea: species(
+    "sesbania_punicea",
+    "Sesbania punicea",
+    "64. Leguminosae - Papilionoideae",
+    "Arbusto o arbolito glabro de 2-4 m de alto.",
+    "Flores rojas; hojas con 7-14 pares de folíolos elípticos enteros; racimos péndulos; legumbres tetrágonas con 4 alas longitudinales.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina. Común en lugares inundables del Delta y de la ribera del Plata; florece en verano."
+  ),
+  sesbania_virgata: species(
+    "sesbania_virgata",
+    "Sesbania virgata",
+    "64. Leguminosae - Papilionoideae",
+    "Arbusto de 1-2 m de alto, algo seríceo cuando joven y luego glabro.",
+    "Flores amarillas; hojas con 12-20 pares de folíolos oblongos, enteros, obtusos y mucronulados; racimos multifloros; legumbre de 4-7 cm con suturas gruesas y sin alas.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina. Se halla en el Delta y en la ribera platense."
+  ),
+  lonchocarpus_nitidus: species(
+    "lonchocarpus_nitidus",
+    "Lonchocarpus nitidus",
+    "64. Leguminosae - Papilionoideae",
+    "Árbol de 10-15 m de altura, con tronco de cerca de medio metro de diámetro y corteza gris casi lisa.",
+    "Hojas glabras con 7-9 folíolos elíptico-lanceolados; flores azuladas; frutos casi glabros, chatos, con 1-5 semillas.",
+    "Sur de Brasil, Paraguay y nordeste de la Argentina. En selvas marginales del Delta y de Punta Lara."
+  ),
+  galega_officinalis: species(
+    "galega_officinalis",
+    "Galega officinalis",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, glabra, de cerca de un metro de alto.",
+    "Hojas imparipinadas, con 6-12 pares de folíolos elípticos enteros y un folíolo terminal; flores azules en racimos densos; estambres monadelfos; legumbres lineales, casi cilíndricas y estriadas.",
+    "Europa; adventicia en América. Planta medicinal y tóxica para el ganado; común en suelos húmedos, vías férreas, etc."
+  ),
+  tephrosia_cinerea: species(
+    "tephrosia_cinerea",
+    "Tephrosia cinerea",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, con raíz fusiforme o napiforme y tallos tendidos puberulento-cenicientos.",
+    "Hojas imparipinadas, con 7-13 folíolos lineal-lanceolados, obtusos y mucronados; flores violáceas en racimos opositifolios.",
+    "América cálida. Aparece a veces en suelos arenosos: Capital Federal e Isla Santiago."
+  ),
+  astragalus_distinens: species(
+    "astragalus_distinens",
+    "Astragalus distinens",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, rastrera, ceniciento-serícea o glabrescente.",
+    "Hojas con folíolos lineales; flores azules en racimos axilares; estambre vexilar libre; legumbres algo infladas.",
+    "Norte y centro de la Argentina y Uruguay. Se encuentra en las barrancas de Escobar y Campana."
+  ),
   violaceae: family(
     "violaceae",
     "67. Violaceae",
@@ -5226,7 +5282,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Fruto legumbre; rama pendiente desde Indigofera y géneros afines",
       keyStep: "U'",
-      especieId: "leguminosae",
+      nextNodeId: "papilionoideae_x",
     },
   },
   papilionoideae_v: {
@@ -5323,6 +5379,118 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Plantas glabras o casi; hojas con 8-21 pares de folíolos; flores en panojas",
       keyStep: "B'",
       especieId: "aeschynomene_sensitiva",
+    },
+  },
+  papilionoideae_x: {
+    id: "papilionoideae_x",
+    milestone: "Papilionoideae",
+    manualPage: 243,
+    descripcion: "Papilionoideae - X: color de flores",
+    opcionA: {
+      label: "Flores amarillas, rojas o purpúreas",
+      keyStep: "X",
+      nextNodeId: "papilionoideae_y",
+    },
+    opcionA_prima: {
+      label: "Flores blancas o azules",
+      keyStep: "X'",
+      nextNodeId: "papilionoideae_aa",
+    },
+  },
+  papilionoideae_y: {
+    id: "papilionoideae_y",
+    milestone: "Papilionoideae",
+    manualPage: 243,
+    descripcion: "Papilionoideae - Y: forma de anteras",
+    opcionA: {
+      label: "Anteras apiculadas",
+      keyStep: "Y",
+      especieId: "indigofera_suffruticosa",
+    },
+    opcionA_prima: {
+      label: "Anteras obtusas, no apiculadas",
+      keyStep: "Y'",
+      nextNodeId: "papilionoideae_z",
+    },
+  },
+  papilionoideae_z: {
+    id: "papilionoideae_z",
+    milestone: "Papilionoideae",
+    manualPage: 243,
+    descripcion: "Papilionoideae - Z: hábito y cantidad de folíolos",
+    opcionA: {
+      label: "Hierbas; hojas con 5 folíolos, los dos inferiores basales y estipuliformes",
+      keyStep: "Z",
+      especieId: "lotus_corniculatus",
+    },
+    opcionA_prima: {
+      label: "Arbustos o sufrútices; hojas con muchos folíolos",
+      keyStep: "Z'",
+      nextNodeId: "sesbania_a",
+    },
+  },
+  sesbania_a: {
+    id: "sesbania_a",
+    milestone: "Sesbania",
+    manualPage: 266,
+    descripcion: "Sesbania - A: color de flores y tipo de legumbre",
+    opcionA: {
+      label: "Flores rojas; hojas con 7-14 pares de folíolos elípticos; racimos péndulos; legumbres tetrágonas con 4 alas longitudinales",
+      keyStep: "A",
+      especieId: "sesbania_punicea",
+    },
+    opcionA_prima: {
+      label: "Flores amarillas; hojas con 12-20 pares de folíolos oblongos; racimos multifloros; legumbre sin alas",
+      keyStep: "A'",
+      especieId: "sesbania_virgata",
+    },
+  },
+  papilionoideae_aa: {
+    id: "papilionoideae_aa",
+    milestone: "Papilionoideae",
+    manualPage: 243,
+    descripcion: "Papilionoideae - a: porte",
+    opcionA: {
+      label: "Árboles elevados",
+      keyStep: "a",
+      especieId: "lonchocarpus_nitidus",
+    },
+    opcionA_prima: {
+      label: "Hierbas o sufrútices",
+      keyStep: "a'",
+      nextNodeId: "papilionoideae_ab",
+    },
+  },
+  papilionoideae_ab: {
+    id: "papilionoideae_ab",
+    milestone: "Papilionoideae",
+    manualPage: 243,
+    descripcion: "Papilionoideae - b: posición de racimos",
+    opcionA: {
+      label: "Flores en racimos axilares",
+      keyStep: "b",
+      nextNodeId: "papilionoideae_ac",
+    },
+    opcionA_prima: {
+      label: "Racimos opuestos a las hojas o terminales",
+      keyStep: "b'",
+      especieId: "tephrosia_cinerea",
+    },
+  },
+  papilionoideae_ac: {
+    id: "papilionoideae_ac",
+    milestone: "Papilionoideae",
+    manualPage: 243,
+    descripcion: "Papilionoideae - c: soldadura de estambres",
+    opcionA: {
+      label: "Estambres monadelfos, con tubo cerrado",
+      keyStep: "c",
+      especieId: "galega_officinalis",
+    },
+    opcionA_prima: {
+      label: "Estambre vexilar libre",
+      keyStep: "c'",
+      especieId: "astragalus_distinens",
     },
   },
   santalaceae_a: {
