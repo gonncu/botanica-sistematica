@@ -609,6 +609,46 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo A.",
     "Hierbas humildes con hojas opuestas, flores axilares y ovario 2-4-locular."
   ),
+  callitriche_turfosa: species(
+    "callitriche_turfosa",
+    "Callitriche turfosa",
+    "74. Callitrichaceae",
+    "Hierba anual, pigmea, terrestre de suelos húmedos.",
+    "Fruto más ancho que alto, de 0,7-0,9 mm por 0,6-0,8 mm; cara de los mericarpos convexa; ala muy estrecha; estambres de 0,2-1,2 mm; flores sin brácteas; hojas más o menos uniformes, de 2-4 mm por 0,7-1,5 mm.",
+    "América del Sur. En suelos pantanosos."
+  ),
+  callitriche_deflexa: species(
+    "callitriche_deflexa",
+    "Callitriche deflexa",
+    "74. Callitrichaceae",
+    "Hierba pigmea, terrestre de suelos húmedos.",
+    "Fruto más ancho que alto, de 0,5-0,9 mm por 0,3-0,7 mm; cara de los mericarpos casi plana; ala muy angosta; flores sin brácteas; hojas más o menos uniformes, de 2-4 mm por 0,8-2,3 mm; pedicelos de los frutos de 0,5-4 mm, o de 0,1-0,3 mm en la var. subsessilis.",
+    "América del Sur subtropical; en suelos húmedos. La var. subsessilis es de América cálida."
+  ),
+  callitriche_rimosa: species(
+    "callitriche_rimosa",
+    "Callitriche rimosa",
+    "74. Callitrichaceae",
+    "Hierba anfibia, sumergida con roseta de hojas flotantes o tendida sobre el fango.",
+    "Fruto tan alto como ancho o algo más alto, redondeado, de 0,9-1,2 mm por 0,9-1,3 mm, circundado por alas estrechas; estambres acrescentes; flores con dos brácteas; hojas obovadas o espatuladas, hasta 15 mm por 6 mm en formas acuáticas.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina, hasta el río de la Plata. Vive en charcas y bordes de arroyos."
+  ),
+  callitriche_heterophylla: species(
+    "callitriche_heterophylla",
+    "Callitriche heterophylla",
+    "74. Callitrichaceae",
+    "Hierba anfibia o acuática, con hojas de formas distintas en una misma planta.",
+    "Fruto tan alto como ancho, sin alas, de 0,6-1,2 mm por otro tanto de alto; flores con dos brácteas; hojas lineales o espatuladas.",
+    "América del Norte. Rara en Uruguay y en la provincia de Buenos Aires: Sierra de la Ventana."
+  ),
+  callitriche_oblongicarpa: species(
+    "callitriche_oblongicarpa",
+    "Callitriche oblongicarpa",
+    "74. Callitrichaceae",
+    "Hierba anfibia o acuática, con hojas espatuladas.",
+    "Fruto tan alto como ancho o algo más alto, con alas estrechísimas que no llegan ni a la base ni al ápice de los mericarpos, de 0,7-0,9 mm por 0,8-0,9 mm; flores con dos brácteas.",
+    "Uruguay y alrededores de Buenos Aires en la Argentina."
+  ),
   piperaceae: family(
     "piperaceae",
     "34. Piperaceae",
@@ -4428,7 +4468,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Ovario 2-4-locular; flores axilares",
       keyStep: "D",
-      especieId: "callitrichaceae",
+      nextNodeId: "callitrichaceae_a",
     },
     opcionA_prima: {
       label: "Ovario unilocular; flores en espigas terminales",
@@ -6619,6 +6659,70 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Filamentos estaminales cortísimos, no curvados; en la región, especies herbáceas",
       keyStep: "K'",
       especieId: "caperonia_cordata",
+    },
+  },
+  callitrichaceae_a: {
+    id: "callitrichaceae_a",
+    milestone: "Callitrichaceae",
+    manualPage: 291,
+    descripcion: "Callitrichaceae - A: proporción del fruto y brácteas",
+    opcionA: {
+      label: "Fruto más ancho que alto; flores sin brácteas; plantas terrestres de suelos húmedos",
+      keyStep: "A",
+      nextNodeId: "callitrichaceae_b",
+    },
+    opcionA_prima: {
+      label: "Fruto tan alto como ancho o algo más alto; flores con dos brácteas; plantas anfibias o sumergidas",
+      keyStep: "A'",
+      nextNodeId: "callitrichaceae_c",
+    },
+  },
+  callitrichaceae_b: {
+    id: "callitrichaceae_b",
+    milestone: "Callitrichaceae",
+    manualPage: 291,
+    descripcion: "Callitrichaceae - B: cara de mericarpos",
+    opcionA: {
+      label: "Frutos de 0,7-0,9 mm por 0,6-0,8 mm; cara de los mericarpos convexa; ala muy estrecha",
+      keyStep: "B",
+      especieId: "callitriche_turfosa",
+    },
+    opcionA_prima: {
+      label: "Frutos de 0,5-0,9 mm por 0,3-0,7 mm; cara de los mericarpos casi plana; ala muy angosta",
+      keyStep: "B'",
+      especieId: "callitriche_deflexa",
+    },
+  },
+  callitrichaceae_c: {
+    id: "callitrichaceae_c",
+    milestone: "Callitrichaceae",
+    manualPage: 291,
+    descripcion: "Callitrichaceae - C: alas del fruto",
+    opcionA: {
+      label: "Frutos redondeados, circundados por alas estrechas; hojas obovadas o espatuladas",
+      keyStep: "C",
+      especieId: "callitriche_rimosa",
+    },
+    opcionA_prima: {
+      label: "Frutos sin ala o con ala estrechísima que no rodea totalmente los mericarpos",
+      keyStep: "C'",
+      nextNodeId: "callitrichaceae_d",
+    },
+  },
+  callitrichaceae_d: {
+    id: "callitrichaceae_d",
+    milestone: "Callitrichaceae",
+    manualPage: 291,
+    descripcion: "Callitrichaceae - D: presencia de alas",
+    opcionA: {
+      label: "Frutos sin alas, de 0,6-1,2 mm por otro tanto de alto; hojas lineales o espatuladas",
+      keyStep: "D",
+      especieId: "callitriche_heterophylla",
+    },
+    opcionA_prima: {
+      label: "Frutos con alas estrechísimas que no llegan ni a la base ni al ápice; hojas espatuladas",
+      keyStep: "D'",
+      especieId: "callitriche_oblongicarpa",
     },
   },
   santalaceae_a: {
