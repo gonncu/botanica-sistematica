@@ -2215,6 +2215,62 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Flores actinomorfas con estambres numerosos y monadelfos formando un tubo."
   ),
+  hibiscus_cisplatinus: species(
+    "hibiscus_cisplatinus",
+    "Hibiscus cisplatinus",
+    "81. Malvaceae",
+    "Arbusto de 1-2 m de alto, con frecuencia aculeado en tallos y pecíolos.",
+    "Hojas largamente pecioladas, ovadas, generalmente 3-lobadas, a veces enteras o 5-lobadas, aserradas, de 7-10 cm por 4-7 cm; flores solitarias axilares, largamente pedunculadas; pétalos rosa fuerte con nervaduras más oscuras, de 6-8 cm; fruto cápsula loculicida híspida, con muchas semillas pilosas.",
+    "Pajonales y lugares húmedos del sur de Brasil, Uruguay y nordeste de la Argentina, hasta el Delta y la ribera del Plata. Florece a fines del verano. Nombre vulgar: rosa del río."
+  ),
+  pavonia_sepium: species(
+    "pavonia_sepium",
+    "Pavonia sepium",
+    "81. Malvaceae",
+    "Arbustito de 1-2 m de alto, levemente pubescente.",
+    "Carpelos con 3 fuertes aristas cubiertas de pelos retrorsos; hojas ovado-lanceoladas, acuminadas y aserradas; flores solitarias en axilas de hojas superiores, cleistógamas primaverales y chasmógamas estivales; pétalos amarillos.",
+    "América cálida. Común en los bosques del Delta y de la ribera del Plata; florece en primavera y verano."
+  ),
+  pavonia_xanthogloea: species(
+    "pavonia_xanthogloea",
+    "Pavonia xanthogloea",
+    "81. Malvaceae",
+    "Arbusto de 1-2 m de alto, densamente cubierto de pelos estrellados.",
+    "Carpelos no aristados, tuberculado-rugosos en el dorso, suborbiculares y levemente pubescentes; hojas triangular-hastadas, discolores, aserradas, con pelos estrellados densos en el envés; flores cleistógamas y chasmógamas axilares, solitarias; pétalos rosados con venas purpúreas.",
+    "Nordeste de la Argentina hasta la ribera del Plata; florece en otoño."
+  ),
+  pavonia_hastata: species(
+    "pavonia_hastata",
+    "Pavonia hastata",
+    "81. Malvaceae",
+    "Arbusto de 1-2 m de alto, cubierto de pelos estrellados.",
+    "Carpelos reticulados; bractéolas del calículo espatuladas; hojas largamente pecioladas, triangulares, sagitadas o truncadas en la base, discolores y aserradas; flores cleistógamas o chasmógamas, largamente pedunculadas y solitarias; pétalos rosados con venas violáceas.",
+    "Sur de Brasil, Paraguay, Uruguay y norte de la Argentina, hasta los bosques del Delta y de la ribera platense."
+  ),
+  pavonia_pulchra: species(
+    "pavonia_pulchra",
+    "Pavonia pulchra",
+    "81. Malvaceae",
+    "Arbusto de 1-1,5 m de alto, cubierto de pelos glandulosos.",
+    "Carpelos reticulados, con retículo notable; bractéolas del calículo lanceoladas; hojas ovado-deltoideas, acorazonadas, crenado-aserradas; flores cleistógamas con 5 estambres y chasmógamas con muchos estambres; pétalos rosados de 2 cm.",
+    "Hallada únicamente en las abras de la selva marginal de Punta Lara, cerca de Eva Perón."
+  ),
+  pavonia_consobrina: species(
+    "pavonia_consobrina",
+    "Pavonia consobrina",
+    "81. Malvaceae",
+    "Arbusto de 1-1,5 m de alto, cubierto de pelos estrellados.",
+    "Carpelos apenas reticulados; bractéolas del calículo lanceoladas; hojas lanceoladas, cortamente pecioladas, de base redondeada y borde crenado; flores axilares casi sésiles, cleistógamas y chasmógamas; pétalos rosados con nervaduras rojizas, de 1,5 cm.",
+    "Paraguay, Uruguay y nordeste de la Argentina, hasta el Delta y la ribera del Plata."
+  ),
+  modiola_caroliniana: species(
+    "modiola_caroliniana",
+    "Modiola caroliniana",
+    "81. Malvaceae",
+    "Hierba perenne, rastrera, radicante en los nudos.",
+    "Hojas largamente pecioladas, circulares, palmatisectas; flores axilares, solitarias, de color minio; pedúnculos por lo general más cortos que el pecíolo; carpelos con dos óvulos, divididos en dos cavidades superpuestas y maduros biaristados.",
+    "América cálida y templado-cálida. Común en suelos modificados. Nombres vulgares: sánalo todo, mercurio."
+  ),
   sapindaceae: family(
     "sapindaceae",
     "77. Sapindaceae",
@@ -7037,6 +7093,134 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "cissus_striata_argentina",
     },
   },
+  malvaceae_a: {
+    id: "malvaceae_a",
+    milestone: "Malvaceae",
+    manualPage: 304,
+    descripcion: "Malvaceae - A: tipo de fruto y estilos",
+    opcionA: {
+      label: "Fruto cápsula loculicida; estilos soldados hasta cerca del ápice, donde los estigmas forman una cabezuela lobulada",
+      keyStep: "A",
+      especieId: "hibiscus_cisplatinus",
+    },
+    opcionA_prima: {
+      label: "Fruto formado por carpelos indehiscentes o dehiscentes que se separan a la madurez; estilos libres desde su mitad o desde más abajo",
+      keyStep: "A'",
+      nextNodeId: "malvaceae_b",
+    },
+  },
+  malvaceae_b: {
+    id: "malvaceae_b",
+    milestone: "Malvaceae",
+    manualPage: 304,
+    descripcion: "Malvaceae - B: número de estilos respecto de carpelos",
+    opcionA: {
+      label: "Estilos en número doble a los carpelos",
+      keyStep: "B",
+      nextNodeId: "pavonia_a",
+    },
+    opcionA_prima: {
+      label: "Estilos en igual número que los carpelos",
+      keyStep: "B'",
+      nextNodeId: "malvaceae_c",
+    },
+  },
+  pavonia_a: {
+    id: "pavonia_a",
+    milestone: "Pavonia",
+    manualPage: 305,
+    descripcion: "Pavonia - A: aristas de los carpelos",
+    opcionA: {
+      label: "Carpelos con 3 fuertes aristas cubiertas de pelos retrorsos",
+      keyStep: "A",
+      especieId: "pavonia_sepium",
+    },
+    opcionA_prima: {
+      label: "Carpelos no aristados",
+      keyStep: "A'",
+      nextNodeId: "pavonia_b",
+    },
+  },
+  pavonia_b: {
+    id: "pavonia_b",
+    milestone: "Pavonia",
+    manualPage: 305,
+    descripcion: "Pavonia - B: superficie de carpelos",
+    opcionA: {
+      label: "Carpelos tuberculado-rugosos en el dorso, suborbiculares, levemente pubescentes",
+      keyStep: "B",
+      especieId: "pavonia_xanthogloea",
+    },
+    opcionA_prima: {
+      label: "Carpelos reticulados",
+      keyStep: "B'",
+      nextNodeId: "pavonia_c",
+    },
+  },
+  pavonia_c: {
+    id: "pavonia_c",
+    milestone: "Pavonia",
+    manualPage: 306,
+    descripcion: "Pavonia - C: forma de bractéolas del calículo",
+    opcionA: {
+      label: "Bractéolas del calículo espatuladas",
+      keyStep: "C",
+      especieId: "pavonia_hastata",
+    },
+    opcionA_prima: {
+      label: "Bractéolas del calículo lanceoladas",
+      keyStep: "C'",
+      nextNodeId: "pavonia_d",
+    },
+  },
+  pavonia_d: {
+    id: "pavonia_d",
+    milestone: "Pavonia",
+    manualPage: 306,
+    descripcion: "Pavonia - D: forma de hojas y retículo del carpelo",
+    opcionA: {
+      label: "Hojas ovado-deltoideas, acorazonadas, crenado-aserradas; carpelos con retículo notable",
+      keyStep: "D",
+      especieId: "pavonia_pulchra",
+    },
+    opcionA_prima: {
+      label: "Hojas lanceoladas, de base redondeada y borde crenado; carpelos apenas reticulados",
+      keyStep: "D'",
+      especieId: "pavonia_consobrina",
+    },
+  },
+  malvaceae_c: {
+    id: "malvaceae_c",
+    milestone: "Malvaceae",
+    manualPage: 304,
+    descripcion: "Malvaceae - C: cantidad de óvulos por carpelo",
+    opcionA: {
+      label: "Carpelos con 2 a muchos óvulos",
+      keyStep: "C",
+      nextNodeId: "malvaceae_d",
+    },
+    opcionA_prima: {
+      label: "Carpelos con un solo óvulo; rama pendiente desde Anoda/Sida/Malva",
+      keyStep: "C'",
+      especieId: "malvaceae",
+    },
+  },
+  malvaceae_d: {
+    id: "malvaceae_d",
+    milestone: "Malvaceae",
+    manualPage: 304,
+    descripcion: "Malvaceae - D: cavidades de los carpelos",
+    opcionA: {
+      label: "Carpelos divididos en dos cavidades superpuestas",
+      keyStep: "D",
+      especieId: "modiola_caroliniana",
+    },
+    opcionA_prima: {
+      label: "Carpelos uniloculares; rama pendiente desde Sphaeralcea/Abutilon",
+      keyStep: "D'",
+      especieId: "malvaceae",
+    },
+  },
   santalaceae_a: {
     id: "santalaceae_a",
     milestone: "Santalaceae",
@@ -8400,7 +8584,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Sí; tubo estaminal atravesado por el estilo",
       keyStep: "M",
-      especieId: "malvaceae",
+      nextNodeId: "malvaceae_a",
     },
     opcionA_prima: {
       label: "No; estambres libres o unidos sólo en la base o en grupos",
