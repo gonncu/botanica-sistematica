@@ -4021,6 +4021,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Estambres en número doble a las divisiones del perigonio."
   ),
+  daphnopsis_racemosa: species(
+    "daphnopsis_racemosa",
+    "Daphnopsis racemosa",
+    "93. Thymelaeaceae",
+    "Arbusto glabro, de cerca de 2 m de alto.",
+    "Hojas coriáceas, alternas, cortamente pecioladas, oblanceolado-espatuladas, obtusas, enteras, de 5-7 cm de largo; flores blancas en racimos axilares, las masculinas infundibuliformes y las femeninas acampanadas, de unos 4 mm; frutos ovoides, de 4 mm.",
+    "Vive en los bosques ribereños del río Uruguay, hasta el Delta y la Isla Martín García; prefiere suelos arenosos."
+  ),
   myrsinaceae: family(
     "myrsinaceae",
     "101. Myrsinaceae",
@@ -11931,13 +11939,30 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Estambres en número doble a las divisiones del perigonio",
       keyStep: "O",
-      especieId: "thymelaeaceae",
+      nextNodeId: "thymelaeaceae_terminal",
     },
     opcionA_prima: {
       label: "Estambres en el mismo número que las divisiones de la corola",
       keyStep: "O'",
       nextNodeId: "dicot_group_e_p",
     },
+  },
+  thymelaeaceae_terminal: {
+    id: "thymelaeaceae_terminal",
+    milestone: "Thymelaeaceae",
+    manualPage: 330,
+    descripcion: "Thymelaeaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Daphnopsis racemosa",
+      keyStep: "1",
+      especieId: "daphnopsis_racemosa",
+    },
+    opcionA_prima: {
+      label: "Identificar como Daphnopsis racemosa",
+      keyStep: "1",
+      especieId: "daphnopsis_racemosa",
+    },
+    especie: manualFamilyData.daphnopsis_racemosa,
   },
   dicot_group_e_p: {
     id: "dicot_group_e_p",
