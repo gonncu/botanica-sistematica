@@ -413,6 +413,94 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas con caracteres variables.",
     "En la clave aparece por ovario 3-carpelar y látex, o por otros caracteres vegetativos/florales."
   ),
+  euphorbia_lathyrus: species(
+    "euphorbia_lathyrus",
+    "Euphorbia lathyrus",
+    "73. Euphorbiaceae",
+    "Hierba anual o bienal, erecta y glabra.",
+    "Ciatios con glándulas involucrales semilunares terminadas en dos cuernitos; hojas caulinares decusadas, subsésiles, lanceoladas, enteras, de 4-14 cm por 0,7-2 cm; hojas superiores alternas o verticiladas; ciatios axilares; cápsulas de 5-9 mm.",
+    "Europa; adventicia en América. Aparece en suelos modificados."
+  ),
+  euphorbia_peplus: species(
+    "euphorbia_peplus",
+    "Euphorbia peplus",
+    "73. Euphorbiaceae",
+    "Hierba anual, glabra, erecta, de 20-50 cm.",
+    "Ciatios con glándulas involucrales semilunares terminadas en dos cuernitos; hojas caulinares alternas, obovado-espatuladas, atenuadas en pecíolo, obtusas y enteras, de 2-3 cm; hojas superiores opuestas; ciatios en cimas dicotómicas; cápsulas de 2 mm.",
+    "Europa; adventicia en América. Muy común en suelos modificados; florece en primavera."
+  ),
+  euphorbia_serpens_montevidensis: species(
+    "euphorbia_serpens_montevidensis",
+    "Euphorbia serpens var. montevidensis",
+    "73. Euphorbiaceae",
+    "Hierba anual, tendida y glabra.",
+    "Ciatios con glándulas semicirculares sin cuernitos; todas las hojas opuestas y oblicuas en la base; raíces delgadas; hojas cortamente pecioladas, elípticas, obtusas y enteras, de 4-5 mm; ciatios axilares solitarios; semillas lisas.",
+    "Variedad de Uruguay y nordeste de la Argentina. Ubicua; considerada medicinal, diurética. Nombres vulgares: yerba meona, yerba de la golondrina."
+  ),
+  euphorbia_lorentzii: species(
+    "euphorbia_lorentzii",
+    "Euphorbia lorentzii",
+    "73. Euphorbiaceae",
+    "Hierba anual, ascendente o erecta, laxamente hirsuta, de 30-50 cm de alto.",
+    "Ciatios con glándulas semicirculares sin cuernitos; hojas opuestas, ovadas, obtusas y finamente aserradas, de 12-25 mm; ciatios amontonados en el extremo de las ramitas; cápsulas glabras de 1,5 mm.",
+    "Centro y oeste de la Argentina. Común en el Delta y en los bosques del Paraná y de la ribera del Plata; florece en verano."
+  ),
+  euphorbia_maculata: species(
+    "euphorbia_maculata",
+    "Euphorbia maculata",
+    "73. Euphorbiaceae",
+    "Hierba anual pubescente, con tallos ascendentes.",
+    "Ciatios con glándulas semicirculares sin cuernitos; hojas opuestas, oblongo-ovadas, cortamente pecioladas, obtusas, semicordadas y oblicuas en la base, aserradas, de 4-6 mm; ciatios solitarios; cápsulas pubescentes de 2 mm.",
+    "Estados Unidos; adventicia en Pergamino."
+  ),
+  euphorbia_caespitosa: species(
+    "euphorbia_caespitosa",
+    "Euphorbia caespitosa",
+    "73. Euphorbiaceae",
+    "Hierba perenne, con raíces napiformes y tallos ascendentes, glabros, de 20-40 cm.",
+    "Hojas caulinares alternas, algo carnosas, elíptico-espatuladas o lanceoladas, obtusas o semiagudas, enteras y glabras, de 12-35 mm; ciatios en cimas dicotómicas terminales; involucro de 2 mm con glándulas gruesas purpúreas; cápsulas de 4 mm.",
+    "Uruguay y nordeste de la Argentina. Hallada en dunas de Martín García y de la Isla Santiago. Nombre vulgar: leche tres."
+  ),
+  euphorbia_pampeana: species(
+    "euphorbia_pampeana",
+    "Euphorbia pampeana",
+    "73. Euphorbiaceae",
+    "Hierba perenne, pigmea, con raíz tuberosa y tallos débiles, decumbentes o ascendentes, glabros.",
+    "Hojas alternas, algo carnosas, obovadas e irregularmente denticuladas; ciatios en las dicotomías superiores, cortamente pedunculados; involucro con 4 glándulas semidiscoideas verdes y lóbulos triangulares semienteros ciliados.",
+    "Región platense. Rara en campos húmedos."
+  ),
+  ricinus_communis: species(
+    "ricinus_communis",
+    "Ricinus communis",
+    "73. Euphorbiaceae",
+    "Hierba anual de 1-2 m de alto, alta y glabra.",
+    "Hojas alternas, grandes, palmatilobadas, de 10-30 cm de ancho, con 6-11 lóbulos dentados; flores diclinas monoicas en racimos terminales; estambres numerosos reunidos en grupos; cápsulas ovoideas, generalmente erizadas.",
+    "Asia y África; adventicia en América cálida. Se encuentra en suelos removidos, escombros, etc. El aceite de las semillas se usa en medicina e industria. Nombres vulgares: ricino, castor, tártago."
+  ),
+  manihot_flabellifolia: species(
+    "manihot_flabellifolia",
+    "Manihot flabellifolia",
+    "73. Euphorbiaceae",
+    "Arbusto o arbolito de 1-4 m de alto, glabro.",
+    "Hojas palmatisectas, con 7-12 segmentos oblanceolados, enteros o sinuados; flores amarillentas o verdosas en panojas terminales; cáliz masculino acampanado, pentáfido, de 13-17 mm; cáliz femenino con 5 sépalos libres; estilos laciniados; cápsulas subglobosas de 15-17 mm.",
+    "Sur de Brasil, Paraguay, Uruguay y norte de la Argentina hasta Buenos Aires. A veces cultivada como ornamental. Nombres vulgares: falso café, mandioca salvaje."
+  ),
+  phyllanthus_sellowianus: species(
+    "phyllanthus_sellowianus",
+    "Phyllanthus sellowianus",
+    "73. Euphorbiaceae",
+    "Arbusto glabro de 2-3 m de alto.",
+    "Hojas elíptico-lanceoladas, cortamente pecioladas, enteras, de 15-50 mm; flores masculinas en fascículos cortos, con estambres casi libres; flores femeninas cortamente pediceladas, con 3 estilos casi libres; cada lóculo del ovario con 2 óvulos; cápsulas de 2,5 mm.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina. Común a orillas de los ríos. Nombre vulgar: sarandí blanco."
+  ),
+  phyllanthus_lathyroides: species(
+    "phyllanthus_lathyroides",
+    "Phyllanthus lathyroides",
+    "73. Euphorbiaceae",
+    "Hierba anual, glabra, de 30-60 cm de alto.",
+    "Hojas elíptico-oblongas, obtusas; flores solitarias, axilares, cortamente pedunculadas; flores masculinas con sépalos de 0,5 mm; flores femeninas algo mayores, con 3 estilos bisectos; cada lóculo del ovario con 2 óvulos; cápsulas de 3 mm con 6 semillas.",
+    "América cálida. Común en los bosques del Delta y de la ribera platense."
+  ),
   salicaceae: family(
     "salicaceae",
     "35. Salicaceae",
@@ -4224,7 +4312,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Ovario 3-carpelar, 3-locular; por lo común con látex",
       keyStep: "B",
-      especieId: "euphorbiaceae",
+      nextNodeId: "euphorbiaceae_a",
     },
     opcionA_prima: {
       label: "Ovario 1-2-carpelar, 1-2-locular o 4-locular",
@@ -6109,6 +6197,182 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "polygala_duarteana",
     },
   },
+  euphorbiaceae_a: {
+    id: "euphorbiaceae_a",
+    milestone: "Euphorbiaceae",
+    manualPage: 283,
+    descripcion: "Euphorbiaceae - A: flores en ciatios",
+    opcionA: {
+      label: "Flores desnudas, reunidas en ciatios",
+      keyStep: "A",
+      nextNodeId: "euphorbia_a",
+    },
+    opcionA_prima: {
+      label: "Flores no en ciatios",
+      keyStep: "A'",
+      nextNodeId: "euphorbiaceae_b",
+    },
+  },
+  euphorbiaceae_b: {
+    id: "euphorbiaceae_b",
+    milestone: "Euphorbiaceae",
+    manualPage: 283,
+    descripcion: "Euphorbiaceae - B: forma de hojas",
+    opcionA: {
+      label: "Hojas palmatilobadas o palmatipartidas; flores grandes",
+      keyStep: "B",
+      nextNodeId: "euphorbiaceae_c",
+    },
+    opcionA_prima: {
+      label: "Hojas enteras o aserradas, pinatinervadas",
+      keyStep: "B'",
+      nextNodeId: "euphorbiaceae_d",
+    },
+  },
+  euphorbiaceae_c: {
+    id: "euphorbiaceae_c",
+    milestone: "Euphorbiaceae",
+    manualPage: 283,
+    descripcion: "Euphorbiaceae - C: soldadura de estambres y hojas",
+    opcionA: {
+      label: "Estambres soldados en grupos, con filamentos que parecen ramificados; hojas palmatilobadas",
+      keyStep: "C",
+      especieId: "ricinus_communis",
+    },
+    opcionA_prima: {
+      label: "Estambres libres entre sí; hojas palmatisectas",
+      keyStep: "C'",
+      especieId: "manihot_flabellifolia",
+    },
+  },
+  euphorbiaceae_d: {
+    id: "euphorbiaceae_d",
+    milestone: "Euphorbiaceae",
+    manualPage: 283,
+    descripcion: "Euphorbiaceae - D: cantidad de óvulos por lóculo",
+    opcionA: {
+      label: "Cada lóculo del ovario contiene 2 óvulos",
+      keyStep: "D",
+      nextNodeId: "phyllanthus_a",
+    },
+    opcionA_prima: {
+      label: "Cada lóculo del ovario contiene un solo óvulo; rama pendiente desde Sebastiania",
+      keyStep: "D'",
+      especieId: "euphorbiaceae",
+    },
+  },
+  euphorbia_a: {
+    id: "euphorbia_a",
+    milestone: "Euphorbia",
+    manualPage: 284,
+    descripcion: "Euphorbia - A: glándulas de los ciatios",
+    opcionA: {
+      label: "Ciatios con glándulas involucrales semilunares terminadas en dos cuernitos",
+      keyStep: "A",
+      nextNodeId: "euphorbia_b",
+    },
+    opcionA_prima: {
+      label: "Ciatios con glándulas semicirculares, no terminadas en cuernitos",
+      keyStep: "A'",
+      nextNodeId: "euphorbia_c",
+    },
+  },
+  euphorbia_b: {
+    id: "euphorbia_b",
+    milestone: "Euphorbia",
+    manualPage: 284,
+    descripcion: "Euphorbia - B: disposición de hojas caulinares",
+    opcionA: {
+      label: "Hojas caulinares decusadas, subsésiles, lanceoladas; hojas superiores alternas o verticiladas; ciatios axilares",
+      keyStep: "B",
+      especieId: "euphorbia_lathyrus",
+    },
+    opcionA_prima: {
+      label: "Hojas caulinares alternas, obovado-espatuladas; hojas superiores opuestas; ciatios en cimas dicotómicas",
+      keyStep: "B'",
+      especieId: "euphorbia_peplus",
+    },
+  },
+  euphorbia_c: {
+    id: "euphorbia_c",
+    milestone: "Euphorbia",
+    manualPage: 284,
+    descripcion: "Euphorbia - C: hojas opuestas o alternas",
+    opcionA: {
+      label: "Todas las hojas opuestas, oblicuas en la base; raíces delgadas",
+      keyStep: "C",
+      nextNodeId: "euphorbia_d",
+    },
+    opcionA_prima: {
+      label: "Hojas caulinares alternas; raíces muy gruesas",
+      keyStep: "C'",
+      nextNodeId: "euphorbia_f",
+    },
+  },
+  euphorbia_d: {
+    id: "euphorbia_d",
+    milestone: "Euphorbia",
+    manualPage: 284,
+    descripcion: "Euphorbia - D: porte y pubescencia",
+    opcionA: {
+      label: "Plantas tendidas, glabras; hojas elípticas, obtusas y enteras; ciatios axilares solitarios; semillas lisas",
+      keyStep: "D",
+      especieId: "euphorbia_serpens_montevidensis",
+    },
+    opcionA_prima: {
+      label: "Plantas ascendentes o erectas, pubescentes",
+      keyStep: "D'",
+      nextNodeId: "euphorbia_e",
+    },
+  },
+  euphorbia_e: {
+    id: "euphorbia_e",
+    milestone: "Euphorbia",
+    manualPage: 284,
+    descripcion: "Euphorbia - E: pubescencia de cápsulas",
+    opcionA: {
+      label: "Cápsulas glabras; hierba anual laxamente hirsuta; hojas ovadas y finamente aserradas",
+      keyStep: "E",
+      especieId: "euphorbia_lorentzii",
+    },
+    opcionA_prima: {
+      label: "Cápsulas pubescentes; hojas oblongo-ovadas, semicordadas y oblicuas en la base",
+      keyStep: "E'",
+      especieId: "euphorbia_maculata",
+    },
+  },
+  euphorbia_f: {
+    id: "euphorbia_f",
+    milestone: "Euphorbia",
+    manualPage: 284,
+    descripcion: "Euphorbia - F: involucro y glándulas",
+    opcionA: {
+      label: "Involucro de 2 mm, con glándulas gruesas purpúreas y lóbulos espatulados pectinado-partidos",
+      keyStep: "F",
+      especieId: "euphorbia_caespitosa",
+    },
+    opcionA_prima: {
+      label: "Involucro con 4 glándulas semidiscoideas verdes y lóbulos triangulares semienteros ciliados",
+      keyStep: "F'",
+      especieId: "euphorbia_pampeana",
+    },
+  },
+  phyllanthus_a: {
+    id: "phyllanthus_a",
+    milestone: "Phyllanthus",
+    manualPage: 286,
+    descripcion: "Phyllanthus - A: porte",
+    opcionA: {
+      label: "Arbustos glabros de 2-3 m; hojas elíptico-lanceoladas; flores masculinas en fascículos cortos",
+      keyStep: "A",
+      especieId: "phyllanthus_sellowianus",
+    },
+    opcionA_prima: {
+      label: "Hierbas anuales glabras de 30-60 cm; hojas elíptico-oblongas; flores solitarias axilares",
+      keyStep: "A'",
+      especieId: "phyllanthus_lathyroides",
+    },
+  },
   santalaceae_a: {
     id: "santalaceae_a",
     milestone: "Santalaceae",
@@ -6495,7 +6759,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Sí",
       keyStep: "H",
-      especieId: "euphorbiaceae",
+      nextNodeId: "euphorbiaceae_a",
     },
     opcionA_prima: {
       label: "No; sin látex y ovario no 3-locular",
@@ -6558,7 +6822,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Hojas no verticiladas",
       keyStep: "K'",
-      especieId: "euphorbiaceae",
+      nextNodeId: "euphorbiaceae_a",
     },
   },
   dicot_group_b_l: {
@@ -7607,7 +7871,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Plantas monoicas; flores diclinas; ovario trilocular",
       keyStep: "V",
-      especieId: "euphorbiaceae",
+      nextNodeId: "euphorbiaceae_a",
     },
     opcionA_prima: {
       label: "Plantas dioicas; flores tetrámeras; ovario bilocular",
@@ -9518,7 +9782,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Flores unisexuales, diclinas",
       keyStep: "u",
-      especieId: "euphorbiaceae",
+      nextNodeId: "euphorbiaceae_a",
     },
     opcionA_prima: {
       label: "Flores hermafroditas",
