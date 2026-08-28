@@ -1929,6 +1929,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Estambres libres, fruto trilocular, cáliz espolonado; enredaderas."
   ),
+  tropaeolum_pentaphyllum: species(
+    "tropaeolum_pentaphyllum",
+    "Tropaeolum pentaphyllum",
+    "67. Tropaeolaceae",
+    "Enredadera perenne, con tubérculos subterráneos globosos o fusiformes pardos y tallos volubles glabros.",
+    "Hojas alternas, largamente pecioladas, palmaticompuestas, con 5 folíolos lanceolados o elípticos, enteros y glabros; flores con cáliz verdoso prolongado en un largo espolón rojo vivo; pétalos 2, pequeños, azules; fruto carnoso negruzco-azulado.",
+    "América cálida. Común en el Delta y en los bosques de la ribera platense; florece en primavera. Nombre vulgar: flor de pitito."
+  ),
   malvaceae: family(
     "malvaceae",
     "81. Malvaceae",
@@ -7174,7 +7182,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Estambres libres; fruto trilocular; cáliz espolonado; enredaderas",
       keyStep: "L'",
-      especieId: "tropaeolaceae",
+      especieId: "tropaeolum_pentaphyllum",
     },
   },
   dicot_group_c_m: {
