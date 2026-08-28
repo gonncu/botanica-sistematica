@@ -3915,6 +3915,30 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo D.",
     "Árboles con flores hermafroditas."
   ),
+  blepharocalyx_tweediei: species(
+    "blepharocalyx_tweediei",
+    "Blepharocalyx tweediei",
+    "96. Myrtaceae",
+    "Árbol de 5-12 m de alto, con tronco de hasta 40 cm de diámetro.",
+    "Hojas cortamente pecioladas, lanceoladas, glabras, enteras, de 4-8 cm; flores blancas, con pétalos y sépalos fimbriados en el margen; bayas globosas, rojas; semillas con cotiledones diminutos en el extremo de una radícula grande, más o menos enroscada.",
+    "Sur del Brasil, Uruguay y norte de la Argentina. Muy común en los bosques del Delta y en las selvas marginales de la ribera platense. Florece a fines de primavera y fructifica en verano y otoño. Medicinal. Nombre vulgar: arrayán."
+  ),
+  myrceugenia_glaucescens: species(
+    "myrceugenia_glaucescens",
+    "Myrceugenia glaucescens",
+    "96. Myrtaceae",
+    "Arbolito o arbusto de 3-5 m de alto.",
+    "Hojas opuestas, oblanceoladas, enteras, discolores, glabras, de 5-8 cm; flores blancas, fragantes, dispuestas de 2-3 en las axilas de las hojas; bayas elipsoideas, de unos 12 mm; cotiledones grandes, delgados y plegados.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Bastante frecuente en los matorrales del Delta y de la ribera del Plata. Medicinal. Nombre vulgar: murta."
+  ),
+  eugenia_opaca: species(
+    "eugenia_opaca",
+    "Eugenia opaca",
+    "96. Myrtaceae",
+    "Arbolito con ramitas pubescentes o casi glabras.",
+    "Hojas ovado-oblongas, cortamente pecioladas, acuminadas y subobtusas en el ápice, de 7 cm; flores en pequeños racimitos o corimbos subumbeliformes, rara vez solitarias; pétalos fimbriados, blancos; bayas ovoides; semillas con cotiledones grandes, gruesos y carnosos.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina, hasta el Delta del Paraná. Nombre vulgar: guayabo blanco."
+  ),
   loranthaceae: family(
     "loranthaceae",
     "41. Loranthaceae",
@@ -11619,7 +11643,39 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Árboles; flores hermafroditas",
       keyStep: "D'",
-      especieId: "myrtaceae",
+      nextNodeId: "myrtaceae_a",
+    },
+  },
+  myrtaceae_a: {
+    id: "myrtaceae_a",
+    milestone: "Myrtaceae",
+    manualPage: 335,
+    descripcion: "Myrtaceae - A: estructura de semillas y tipo de inflorescencia",
+    opcionA: {
+      label: "Semillas con cotiledones diminutos en el extremo de una radícula muy grande, más o menos enroscada; flores en cimas dicotómicas",
+      keyStep: "A",
+      especieId: "blepharocalyx_tweediei",
+    },
+    opcionA_prima: {
+      label: "Semillas con cotiledones grandes, más o menos de la misma longitud que la radícula o mucho mayores que ésta",
+      keyStep: "A'",
+      nextNodeId: "myrtaceae_b",
+    },
+  },
+  myrtaceae_b: {
+    id: "myrtaceae_b",
+    milestone: "Myrtaceae",
+    manualPage: 335,
+    descripcion: "Myrtaceae - B: forma de cotiledones y disposición floral",
+    opcionA: {
+      label: "Cotiledones delgados, plegados, más o menos de la misma longitud que la radícula; flores 1-3 en las axilas de las hojas",
+      keyStep: "B",
+      especieId: "myrceugenia_glaucescens",
+    },
+    opcionA_prima: {
+      label: "Cotiledones grandes, gruesos y carnosos; radícula diminuta, apenas conspicua; flores en pequeños racimos o corimbos",
+      keyStep: "B'",
+      especieId: "eugenia_opaca",
     },
   },
   begoniaceae_terminal: {
