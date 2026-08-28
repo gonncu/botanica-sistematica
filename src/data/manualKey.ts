@@ -1947,6 +1947,38 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Estambres monadelfos, fruto bilocular, cáliz no espolonado; hierbas."
   ),
+  polygala_australis: species(
+    "polygala_australis",
+    "Polygala australis",
+    "72. Polygalaceae",
+    "Planta anual o bienal, baja, de 5-15 cm de alto, con tallos ascendentes.",
+    "Semillas terminadas en una coronita de pelos; hojas alternas, lineal-oblongas o elípticas, de 6-8 mm; racimos espiciformes compactos; flores blanquecinas, de 1,8-2,2 mm.",
+    "Nordeste de la Argentina y Uruguay. Común en la estepa clímax; florece en primavera."
+  ),
+  polygala_linoides: species(
+    "polygala_linoides",
+    "Polygala linoides",
+    "72. Polygalaceae",
+    "Hemicriptófita con tallos ascendentes de 7-40 cm de alto.",
+    "Semillas sin coronita de pelos; cápsula sin bordes alados, orbicular-elíptica; hojas lineales, agudas, de 6-17 mm; racimos espiciformes de 1,5-12 cm; flores blancas con tintes violáceos, de 2,3-3,7 mm; semillas cilíndricas, pubescentes y negras.",
+    "Sur de Brasil, Uruguay y nordeste y centro de la Argentina. Vive en suelos arenosos."
+  ),
+  polygala_bonariensis: species(
+    "polygala_bonariensis",
+    "Polygala bonariensis",
+    "72. Polygalaceae",
+    "Hemicriptófita de 10-35 cm de alto.",
+    "Semillas sin coronita de pelos; cápsula con uno o dos bordes alados; hojas numerosas, densas, estrechamente lineales, de 6-15 mm; racimos espiciformes laxos; flores blanquecinas con tintes violáceos, de 3-4 mm; semillas pubescentes.",
+    "Nordeste de Argentina, hasta el norte de Buenos Aires."
+  ),
+  polygala_duarteana: species(
+    "polygala_duarteana",
+    "Polygala duarteana",
+    "72. Polygalaceae",
+    "Hemicriptófita de 30-80 cm de alto, con tallos ascendentes y laxamente pubescentes.",
+    "Semillas sin coronita de pelos; cápsula con uno o dos bordes alados; hojas pocas y laxas, lineal-lanceoladas, de 10-40 mm; racimos espiciformes laxos; flores de 2-3,2 mm; semillas velludas.",
+    "Uruguay y norte de la Argentina, hasta la Isla Martín García y las proximidades de Buenos Aires."
+  ),
   tropaeolaceae: family(
     "tropaeolaceae",
     "67. Tropaeolaceae",
@@ -6029,6 +6061,54 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "mascagnia_psilophylla",
     },
   },
+  polygalaceae_a: {
+    id: "polygalaceae_a",
+    milestone: "Polygalaceae",
+    manualPage: 281,
+    descripcion: "Polygalaceae - A: coronita de pelos en semillas",
+    opcionA: {
+      label: "Semillas terminadas en una coronita de pelos; plantas anuales o bienales, bajas; racimos compactos",
+      keyStep: "A",
+      especieId: "polygala_australis",
+    },
+    opcionA_prima: {
+      label: "Semillas sin coronita de pelos",
+      keyStep: "A'",
+      nextNodeId: "polygalaceae_b",
+    },
+  },
+  polygalaceae_b: {
+    id: "polygalaceae_b",
+    milestone: "Polygalaceae",
+    manualPage: 281,
+    descripcion: "Polygalaceae - B: bordes alados de la cápsula",
+    opcionA: {
+      label: "Cápsula sin bordes alados, orbicular-elíptica; tallos de 7-40 cm; hojas lineales",
+      keyStep: "B",
+      especieId: "polygala_linoides",
+    },
+    opcionA_prima: {
+      label: "Cápsula con uno o dos bordes alados",
+      keyStep: "B'",
+      nextNodeId: "polygalaceae_c",
+    },
+  },
+  polygalaceae_c: {
+    id: "polygalaceae_c",
+    milestone: "Polygalaceae",
+    manualPage: 281,
+    descripcion: "Polygalaceae - C: densidad y forma de hojas",
+    opcionA: {
+      label: "Hojas numerosas, densas, estrechamente lineales, de 6-15 mm; racimos laxos; flores de 3-4 mm",
+      keyStep: "C",
+      especieId: "polygala_bonariensis",
+    },
+    opcionA_prima: {
+      label: "Hojas pocas, laxas, lineal-lanceoladas, de 10-40 mm; racimos laxos; flores de 2-3,2 mm",
+      keyStep: "C'",
+      especieId: "polygala_duarteana",
+    },
+  },
   santalaceae_a: {
     id: "santalaceae_a",
     milestone: "Santalaceae",
@@ -7377,7 +7457,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Estambres monadelfos; fruto bilocular; cáliz no espolonado; hierbas",
       keyStep: "L",
-      especieId: "polygalaceae",
+      nextNodeId: "polygalaceae_a",
     },
     opcionA_prima: {
       label: "Estambres libres; fruto trilocular; cáliz espolonado; enredaderas",
