@@ -1705,6 +1705,126 @@ export const manualFamilyData: Record<string, Especie> = {
     "Flores amarillas de 1,5 cm en racimos largamente pedunculados; folíolos ovados o lanceolados, glabros o pubescentes; legumbres lineales y velludas.",
     "Sur de Brasil, Uruguay y nordeste de la Argentina. Rara en los campos del norte de Buenos Aires."
   ),
+  lotus_corniculatus: species(
+    "lotus_corniculatus",
+    "Lotus corniculatus",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, con tallos tendidos o ascendentes.",
+    "Hojas con 3 folíolos terminales y 2 folíolos basales que simulan grandes estípulas; flores amarillas en umbelas axilares densas; legumbres de 2,5 cm.",
+    "Europa; adventicia en América. Frecuente en campos bajos y junto a vías férreas."
+  ),
+  canavalia_bonariensis: species(
+    "canavalia_bonariensis",
+    "Canavalia bonariensis",
+    "64. Leguminosae - Papilionoideae",
+    "Liana con hojas coriáceas y lustrosas.",
+    "Folíolos enteros; flores grandes, carnosas, rojo-violáceas, en racimos péndulos; cáliz bilabiado; legumbres gruesas, anchas, de 8-12 cm por 3-4 cm, con 2-6 semillas orbiculares de hilo muy largo.",
+    "Selvas húmedas del nordeste de la Argentina y regiones limítrofes. Frecuente en bosques prístinos del Delta y de la ribera platense. Nombre vulgar: isipó."
+  ),
+  camptosema_rubicundum: species(
+    "camptosema_rubicundum",
+    "Camptosema rubicundum",
+    "64. Leguminosae - Papilionoideae",
+    "Liana robusta y glabra.",
+    "Folíolos elípticos, obtusos, a veces escotados en el ápice, coriáceos, enteros y glabros; flores rojo vivo en racimos densos; cáliz con 4 dientes triangulares; legumbres comprimidas de 4-7 cm por casi 1 cm.",
+    "Selvas marginales del nordeste de la Argentina y regiones limítrofes. Rara en la Isla Martín García y en la ribera del Plata. Nombre vulgar: isipó colorado."
+  ),
+  vigna_luteola: species(
+    "vigna_luteola",
+    "Vigna luteola",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba voluble, laxamente pubescente.",
+    "Folíolos ovado-lanceolados, enteros; flores amarillas en racimos axilares largamente pedunculados; estilo barbelado en la parte interior; legumbres casi cilíndricas y velludas, con 4-8 semillas.",
+    "América cálida. Común en bañados y matorrales del Delta y de la ribera platense. Semillas comestibles. Nombre vulgar: porotillo."
+  ),
+  rhynchosia_senna: species(
+    "rhynchosia_senna",
+    "Rhynchosia senna",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, con tallos tendidos o ascendentes.",
+    "Folíolos ovados u orbiculares, enteros, glabros en el haz y algo pubescentes en el envés; flores amarillas pequeñas en racimos axilares; legumbres algo curvadas.",
+    "Regiones templado-cálidas de América. Rara en barrancas del Paraná y campos secos. Nombre vulgar: sen de campo."
+  ),
+  rhynchosia_texana: species(
+    "rhynchosia_texana",
+    "Rhynchosia texana",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, con tallos volubles o tendidos.",
+    "Folíolos lanceolados o lineales, raramente ovados, obtusos y pubescentes; flores amarillas, solitarias o 2-3; legumbres estrechas.",
+    "América templado-cálida. Rara en la región."
+  ),
+  geoffroea_decorticans: species(
+    "geoffroea_decorticans",
+    "Geoffroea decorticans",
+    "64. Leguminosae - Papilionoideae",
+    "Arbolito de 3-5 m de alto, con tronco verdoso irregular, ramas intrincadas y espinosas, y raíces gemíferas cundidoras.",
+    "Hojas pinadas, con 3-13 pares de folíolos oblongos y un folíolo terminal; flores amarillas con estrías rojas, pequeñas, en racimos cortos; fruto drupáceo, ovoideo y monospermo.",
+    "América austral. En barrancas del Paraná desde San Nicolás y San Pedro hasta San Isidro. Nombre vulgar: chañar."
+  ),
+  poecilanthe_parviflora: species(
+    "poecilanthe_parviflora",
+    "Poecilanthe parviflora",
+    "64. Leguminosae - Papilionoideae",
+    "Árbol de 8-15 m de altura, con corteza parda y amplia copa.",
+    "Hojas alternas, imparipinadas, con 5-7 folíolos ovados y agudos; flores blanquecinas en racimos axilares; fruto chato, discoidal, biconvexo, indehiscente, con una sola semilla y un diente apical torcido.",
+    "Bosques higrófilos del río Uruguay, hasta el Delta y la Isla Martín García."
+  ),
+  adesmia_bicolor: species(
+    "adesmia_bicolor",
+    "Adesmia bicolor",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, tendida, glabra, con tallos radicantes en los nudos.",
+    "Hojas glabras o laxamente pubescentes; folíolos de menos de 10 mm, 8-10-yugos, elípticos, obtusos y enteros; flores amarillas en racimos terminales; lomento con 5-7 artículos ligeramente pubescentes.",
+    "Uruguay y norte y centro de la Argentina. Común en la estepa clímax."
+  ),
+  adesmia_latifolia: species(
+    "adesmia_latifolia",
+    "Adesmia latifolia",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, rastrera, radicante en los nudos.",
+    "Hojas glabras o laxamente pubescentes; folíolos de 15-26 mm, 6-12-yugos, oblongos, anchos y glabros; flores grandes, amarillas, en racimos terminales.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina. Muy rara cerca de Buenos Aires: Ensenada."
+  ),
+  adesmia_incana: species(
+    "adesmia_incana",
+    "Adesmia incana",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, rastrera, radicante y seríceo-pubescente.",
+    "Hojas densamente seríceo-incanas, con 5-9 pares de folíolos oblongos y obtusos; flores amarillas en racimos terminales.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina. En suelos arenosos; citada para barrancas del Paraná y dunas del litoral atlántico."
+  ),
+  aeschynomene_montevidensis: species(
+    "aeschynomene_montevidensis",
+    "Aeschynomene montevidensis",
+    "64. Leguminosae - Papilionoideae",
+    "Arbusto glabro de 1,5-3 m de alto.",
+    "Hojas con 15-27 pares de folíolos; estípulas caducas; flores anaranjadas de 15 mm; lomentos glabros con artejos elípticos.",
+    "Sur de Brasil, Paraguay, Uruguay y nordeste de la Argentina. Común en pajonales y lugares inundables del Delta y de la ribera del Plata."
+  ),
+  aeschynomene_rudis: species(
+    "aeschynomene_rudis",
+    "Aeschynomene rudis",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba erecta de 40-70 cm, hirsuta.",
+    "Hojas con 7-22 pares de folíolos glabros; racimos paucifloros; corolas amarillas de 6-12 mm; artejos castaños, casi rectangulares, de 3,5-4 mm de anchura.",
+    "América del Sur cálida. Rara en la región: Isla Santiago."
+  ),
+  aeschynomene_sensitiva: species(
+    "aeschynomene_sensitiva",
+    "Aeschynomene sensitiva",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba anual, erecta, glabra o casi glabra.",
+    "Hojas con 8-21 pares de folíolos elíptico-oblongos; flores amarillas con estrías rojas, de 7-8 mm, en panojas; frutos lineales de 6 mm de ancho, con artejos negros casi cuadrados.",
+    "América tropical. Hallada en el Delta y en la Boca del Riachuelo."
+  ),
+  poiretia_tetraphylla: species(
+    "poiretia_tetraphylla",
+    "Poiretia tetraphylla",
+    "64. Leguminosae - Papilionoideae",
+    "Hierba perenne, erecta, con rizoma corto leñoso y tallos de 30-60 cm, glabros y punteado-glandulosos.",
+    "Hojas glabras con 2 pares de folíolos elípticos u ovados grandes; flores amarillas en racimos axilares; frutos formados por 2-4 artejos glabros y glandulosos.",
+    "Campos del sur de Brasil, Uruguay y norte y centro de la Argentina. Rara en los alrededores de La Plata."
+  ),
   violaceae: family(
     "violaceae",
     "67. Violaceae",
@@ -4608,9 +4728,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "papilionoideae_g",
     },
     opcionA_prima: {
-      label: "Hojas pinadas, con más de 3 folíolos; rama pendiente para la próxima tanda",
+      label: "Hojas pinadas, con más de 3 folíolos",
       keyStep: "F'",
-      especieId: "leguminosae",
+      nextNodeId: "papilionoideae_s",
     },
   },
   papilionoideae_g: {
@@ -4944,9 +5064,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "phaseolus_a",
     },
     opcionA_prima: {
-      label: "Quilla recta o sólo arqueada; rama pendiente desde Lotus",
+      label: "Quilla recta o sólo arqueada",
       keyStep: "M'",
-      especieId: "leguminosae",
+      nextNodeId: "papilionoideae_n",
     },
   },
   phaseolus_a: {
@@ -4963,6 +5083,246 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Flores de 1,5 cm; hierba perenne, rastrera; folíolos ovados o lanceolados, glabros o pubescentes; racimos largamente pedunculados; legumbres lineales, velludas",
       keyStep: "A'",
       especieId: "phaseolus_prostratus",
+    },
+  },
+  papilionoideae_n: {
+    id: "papilionoideae_n",
+    milestone: "Papilionoideae",
+    manualPage: 242,
+    descripcion: "Papilionoideae - N: número y disposición de folíolos",
+    opcionA: {
+      label: "Hojas con 5 folíolos, 3 terminales y 2 basales que semejan grandes estípulas; hierbas con flores amarillas",
+      keyStep: "N",
+      especieId: "lotus_corniculatus",
+    },
+    opcionA_prima: {
+      label: "Hojas con 3 folíolos; estípulas pequeñas",
+      keyStep: "N'",
+      nextNodeId: "papilionoideae_o",
+    },
+  },
+  papilionoideae_o: {
+    id: "papilionoideae_o",
+    milestone: "Papilionoideae",
+    manualPage: 242,
+    descripcion: "Papilionoideae - O: color de las flores",
+    opcionA: {
+      label: "Flores rojas",
+      keyStep: "O",
+      nextNodeId: "papilionoideae_p",
+    },
+    opcionA_prima: {
+      label: "Flores amarillas, violáceas o blancas",
+      keyStep: "O'",
+      nextNodeId: "papilionoideae_q",
+    },
+  },
+  papilionoideae_p: {
+    id: "papilionoideae_p",
+    milestone: "Papilionoideae",
+    manualPage: 242,
+    descripcion: "Papilionoideae - P: forma del cáliz",
+    opcionA: {
+      label: "Cáliz con los dos lóbulos superiores muy dilatados, soldados y obtusos, y los 3 inferiores muy pequeños y agudos",
+      keyStep: "P",
+      especieId: "canavalia_bonariensis",
+    },
+    opcionA_prima: {
+      label: "Cáliz con 4 dientes triangulares agudos",
+      keyStep: "P'",
+      especieId: "camptosema_rubicundum",
+    },
+  },
+  papilionoideae_q: {
+    id: "papilionoideae_q",
+    milestone: "Papilionoideae",
+    manualPage: 242,
+    descripcion: "Papilionoideae - Q: pubescencia del estilo",
+    opcionA: {
+      label: "Estilo pubescente o barbudo a lo largo del borde ventral",
+      keyStep: "Q",
+      especieId: "vigna_luteola",
+    },
+    opcionA_prima: {
+      label: "Estilo glabro",
+      keyStep: "Q'",
+      nextNodeId: "papilionoideae_r",
+    },
+  },
+  papilionoideae_r: {
+    id: "papilionoideae_r",
+    milestone: "Papilionoideae",
+    manualPage: 242,
+    descripcion: "Papilionoideae - R: color de las flores",
+    opcionA: {
+      label: "Flores blancas o violáceas",
+      keyStep: "R",
+      especieId: "galactia_marginalis",
+    },
+    opcionA_prima: {
+      label: "Flores amarillas",
+      keyStep: "R'",
+      nextNodeId: "rhynchosia_a",
+    },
+  },
+  rhynchosia_a: {
+    id: "rhynchosia_a",
+    milestone: "Rhynchosia",
+    manualPage: 262,
+    descripcion: "Rhynchosia - A: forma de folíolos y disposición de flores",
+    opcionA: {
+      label: "Folíolos ovados u orbiculares; flores en racimos axilares pequeños",
+      keyStep: "A",
+      especieId: "rhynchosia_senna",
+    },
+    opcionA_prima: {
+      label: "Folíolos lanceolados o lineales; flores solitarias o en grupos de 2-3",
+      keyStep: "A'",
+      especieId: "rhynchosia_texana",
+    },
+  },
+  papilionoideae_s: {
+    id: "papilionoideae_s",
+    milestone: "Papilionoideae",
+    manualPage: 242,
+    descripcion: "Papilionoideae - S: tipo de fruto",
+    opcionA: {
+      label: "Fruto anormal, indehiscente, generalmente uniseminado",
+      keyStep: "S",
+      nextNodeId: "papilionoideae_t",
+    },
+    opcionA_prima: {
+      label: "Fruto legumbre alargada o lomento",
+      keyStep: "S'",
+      nextNodeId: "papilionoideae_u",
+    },
+  },
+  papilionoideae_t: {
+    id: "papilionoideae_t",
+    milestone: "Papilionoideae",
+    manualPage: 242,
+    descripcion: "Papilionoideae - T: estambres y forma del fruto",
+    opcionA: {
+      label: "Estambres libres casi hasta su base; fruto globoso, drupiforme",
+      keyStep: "T",
+      especieId: "geoffroea_decorticans",
+    },
+    opcionA_prima: {
+      label: "Estambres soldados formando un tubo; fruto chato, discoidal, con un reborde",
+      keyStep: "T'",
+      especieId: "poecilanthe_parviflora",
+    },
+  },
+  papilionoideae_u: {
+    id: "papilionoideae_u",
+    milestone: "Papilionoideae",
+    manualPage: 242,
+    descripcion: "Papilionoideae - U: legumbre o lomento",
+    opcionA: {
+      label: "Fruto lomento: a la madurez se fragmenta en varios artejos",
+      keyStep: "U",
+      nextNodeId: "papilionoideae_v",
+    },
+    opcionA_prima: {
+      label: "Fruto legumbre; rama pendiente desde Indigofera y géneros afines",
+      keyStep: "U'",
+      especieId: "leguminosae",
+    },
+  },
+  papilionoideae_v: {
+    id: "papilionoideae_v",
+    milestone: "Papilionoideae",
+    manualPage: 243,
+    descripcion: "Papilionoideae - V: soldadura de estambres",
+    opcionA: {
+      label: "Estambres libres entre sí",
+      keyStep: "V",
+      nextNodeId: "adesmia_a",
+    },
+    opcionA_prima: {
+      label: "Estambres más o menos soldados por los filamentos",
+      keyStep: "V'",
+      nextNodeId: "papilionoideae_w",
+    },
+  },
+  adesmia_a: {
+    id: "adesmia_a",
+    milestone: "Adesmia",
+    manualPage: 263,
+    descripcion: "Adesmia - A: pubescencia de hojas",
+    opcionA: {
+      label: "Hojas glabras o laxamente pubescentes",
+      keyStep: "A",
+      nextNodeId: "adesmia_b",
+    },
+    opcionA_prima: {
+      label: "Hojas densamente seríceo-incanas",
+      keyStep: "A'",
+      especieId: "adesmia_incana",
+    },
+  },
+  adesmia_b: {
+    id: "adesmia_b",
+    milestone: "Adesmia",
+    manualPage: 263,
+    descripcion: "Adesmia - B: tamaño de folíolos",
+    opcionA: {
+      label: "Folíolos menores de 10 mm",
+      keyStep: "B",
+      especieId: "adesmia_bicolor",
+    },
+    opcionA_prima: {
+      label: "Folíolos de 15-26 mm",
+      keyStep: "B'",
+      especieId: "adesmia_latifolia",
+    },
+  },
+  papilionoideae_w: {
+    id: "papilionoideae_w",
+    milestone: "Papilionoideae",
+    manualPage: 243,
+    descripcion: "Papilionoideae - W: hojas imparipinadas o paripinadas",
+    opcionA: {
+      label: "Hojas imparipinadas, con numerosos folíolos",
+      keyStep: "W",
+      nextNodeId: "aeschynomene_a",
+    },
+    opcionA_prima: {
+      label: "Hojas paripinadas, con 4 folíolos",
+      keyStep: "W'",
+      especieId: "poiretia_tetraphylla",
+    },
+  },
+  aeschynomene_a: {
+    id: "aeschynomene_a",
+    milestone: "Aeschynomene",
+    manualPage: 264,
+    descripcion: "Aeschynomene - A: porte y cantidad de folíolos",
+    opcionA: {
+      label: "Arbustos con 15-27 pares de folíolos y flores anaranjadas",
+      keyStep: "A",
+      especieId: "aeschynomene_montevidensis",
+    },
+    opcionA_prima: {
+      label: "Plantas herbáceas",
+      keyStep: "A'",
+      nextNodeId: "aeschynomene_b",
+    },
+  },
+  aeschynomene_b: {
+    id: "aeschynomene_b",
+    milestone: "Aeschynomene",
+    manualPage: 264,
+    descripcion: "Aeschynomene - B: pubescencia y tipo de inflorescencia",
+    opcionA: {
+      label: "Plantas hirsutas; hojas con 7-22 pares de folíolos; racimos paucifloros",
+      keyStep: "B",
+      especieId: "aeschynomene_rudis",
+    },
+    opcionA_prima: {
+      label: "Plantas glabras o casi; hojas con 8-21 pares de folíolos; flores en panojas",
+      keyStep: "B'",
+      especieId: "aeschynomene_sensitiva",
     },
   },
   santalaceae_a: {
