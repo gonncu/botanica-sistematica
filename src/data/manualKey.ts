@@ -2885,6 +2885,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Flores grandes llamativas con corona de apéndices filamentosos; hojas palmatisectas o bilobadas."
   ),
+  passiflora_caerulea: species(
+    "passiflora_caerulea",
+    "Passiflora caerulea",
+    "89. Passifloraceae",
+    "Sufrútice trepador, glabro, glauco, con zarcillos.",
+    "Hojas palmadas, 5-lobadas, con lóbulos elíptico-lanceolados, enteros, obtusos y mucronados; pecíolo con 2-4 glándulas pediceladas; estípulas reniformes; flores solitarias, largamente pedunculadas, de 7-10 cm de diámetro; pétalos blancos; corona en 4 series, azul en el ápice, blanca en el centro y purpúrea en la base; frutos ovoideos anaranjados, con endocarpo rojo comestible.",
+    "América subtropical. Común en los bosques del Delta, en los talares y en la ribera del Plata. A veces cultivada. Florece en primavera. Nombre vulgar: pasionaria, flor de pasión, mburucuyá."
+  ),
+  passiflora_misera: species(
+    "passiflora_misera",
+    "Passiflora misera",
+    "89. Passifloraceae",
+    "Enredadera perenne; tallos glabros o algo pubescentes, con zarcillos.",
+    "Hojas bilobadas, con lóbulos muy divergentes, recordando la forma de una mariposa; nervadura central terminada en un mucroncito; estípulas lineales; flores solitarias, largamente pedunculadas, de 2,5-4 cm de diámetro; pétalos blancos; filamentos de la corona en dos series, purpúreos; frutos globosos, de 0,5-1,5 cm de diámetro.",
+    "América tropical y subtropical, hasta los bosques del Delta del Paraná."
+  ),
   vitaceae: family(
     "vitaceae",
     "79. Vitaceae",
@@ -9794,12 +9810,28 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Flores grandes, llamativas, con corona filamentosa",
       keyStep: "h",
-      especieId: "passifloraceae",
+      nextNodeId: "passifloraceae_a",
     },
     opcionA_prima: {
       label: "Flores pequeñas, sin apéndices filamentosos en la base de pétalos",
       keyStep: "h'",
       nextNodeId: "dicot_group_c_i_lower",
+    },
+  },
+  passifloraceae_a: {
+    id: "passifloraceae_a",
+    milestone: "Passifloraceae",
+    manualPage: 321,
+    descripcion: "Passiflora - A: forma de las hojas",
+    opcionA: {
+      label: "Hojas palmadas, 5-lobadas, con lóbulos elíptico-lanceolados, enteros, obtusos, mucronados; pecíolo con 2-4 glándulas pediceladas; estípulas reniformes; flores de 7-10 cm de diámetro; frutos ovoideos anaranjados",
+      keyStep: "A",
+      especieId: "passiflora_caerulea",
+    },
+    opcionA_prima: {
+      label: "Hojas bilobadas, con lóbulos muy divergentes, recordando una mariposa; nervadura central terminada en un mucroncito; estípulas lineales; flores de 2,5-4 cm de diámetro; frutos globosos",
+      keyStep: "A'",
+      especieId: "passiflora_misera",
     },
   },
   dicot_group_c_i_lower: {
