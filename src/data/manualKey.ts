@@ -2473,6 +2473,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Hojas simples, ovario 5-locular y estambres monadelfos."
   ),
+  buettneria_urticifolia: species(
+    "buettneria_urticifolia",
+    "Buettneria urticifolia",
+    "82. Sterculiaceae",
+    "Arbusto de 1,5 m de alto, con tallos costados, híspidos y con aguijones curvos.",
+    "Hojas largamente pecioladas, ovadas, acuminadas, aserradas, pubescentes en ambas caras, de 5-8 cm; flores pequeñas en umbelas largamente pedunculadas; sépalos lanceolados de unos 6 mm; fruto cápsula globosa erizada, de 12 mm.",
+    "Sur de Brasil, Uruguay y nordeste de la Argentina. Se halla en las selvas marginales del Delta y de la Isla Martín García."
+  ),
   celastraceae: family(
     "celastraceae",
     "76. Celastraceae",
@@ -3215,6 +3223,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Plantas pigmeas sin látex o con hojas opuestas lineales en ramas de la clave."
   ),
+  elatine_minima: species(
+    "elatine_minima",
+    "Elatine minima",
+    "84. Elatinaceae",
+    "Plantita pigmea, glabra, con tallos rastreros de 3-4 cm de largo.",
+    "Hojas opuestas o verticiladas, ovadas, enteras y obtusas; flores axilares, solitarias, sésiles, trímeras, verdosas, de 1-1,5 mm de diámetro; cápsulas membranáceas.",
+    "América. Según Spegazzini es frecuente en las charcas próximas a La Plata."
+  ),
   portulacaceae: family(
     "portulacaceae",
     "49. Portulacaceae",
@@ -3263,9 +3279,17 @@ export const manualFamilyData: Record<string, Especie> = {
   ),
   guttiferae: family(
     "guttiferae",
-    "88. Guttiferae",
+    "83. Guttiferae",
     "Dicotiledóneas del Grupo C.",
     "Hojas opuestas y estambres generalmente reunidos en tres o más manojos."
+  ),
+  hypericum_brasiliense: species(
+    "hypericum_brasiliense",
+    "Hypericum brasiliense",
+    "83. Guttiferae",
+    "Sufrútice glabro, erecto y ramoso, de 50-90 cm de alto.",
+    "Hojas opuestas, sésiles, lanceolado-oblongas, agudas, enteras y glabras, de 2,5-4 cm; flores numerosas en cimas dicotómicas terminales; pétalos amarillos de 5-6 mm; ovario unilocular con 5 placentas parietales y 5 estilos; estambres en 5 manojos de 15-20; cápsulas 5-valvas, polispermas.",
+    "Brasil, Paraguay, Uruguay y nordeste de la Argentina, hasta los bosques de la ribera platense."
   ),
   caryophyllaceae: family(
     "caryophyllaceae",
@@ -9041,7 +9065,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Ovario 5-locular; estambres monadelfos",
       keyStep: "T",
-      especieId: "sterculiaceae",
+      especieId: "buettneria_urticifolia",
     },
     opcionA_prima: {
       label: "Ovario 2-4-locular",
@@ -10452,7 +10476,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Plantas sin látex, pigmeas",
       keyStep: "m'",
-      especieId: "elatinaceae",
+      especieId: "elatine_minima",
     },
   },
   dicot_group_c_n_lower: {
@@ -10482,7 +10506,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Hojas opuestas; estambres en tres o más manojos",
       keyStep: "ñ'",
-      especieId: "guttiferae",
+      especieId: "hypericum_brasiliense",
     },
   },
   dicot_group_c_o_lower: {
@@ -11017,7 +11041,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Hojas opuestas; plantas pigmeas",
       keyStep: "w'",
-      especieId: "elatinaceae",
+      especieId: "elatine_minima",
     },
   },
   dicot_group_c_x_lower: {
