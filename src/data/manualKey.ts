@@ -2327,6 +2327,78 @@ export const manualFamilyData: Record<string, Especie> = {
     "Mericarpos con dorso casi liso, largamente hirsutos en la parte superior, con la cámara estéril mucho menor que la seminífera; flores rojas o rosadas sobre pedúnculos más largos que las hojas; hojas pecioladas, ovadas, 3-5-partidas, con segmentos inciso-dentados; calículo de 3 brácteas anchas.",
     "Nordeste de la Argentina y Uruguay. Común en los matorrales de la ribera; florece en primavera."
   ),
+  sida_leprosa: species(
+    "sida_leprosa",
+    "Sida leprosa",
+    "81. Malvaceae",
+    "Hierba perenne con tallos tendidos.",
+    "Plantas decumbentes, con carpelos múticos; hojas flabeladas o reniformes, crenadas, verdes y laxamente escamosas en el haz, densamente cubiertas de pelos escamosos plateados en el envés, de 1-2 cm; flores solitarias, largamente pedunculadas; pétalos amarillo azufre de 13-16 mm; carpelos con pelitos escamosos.",
+    "América, desde México hasta Patagonia, en suelos salobres."
+  ),
+  sida_hastata: species(
+    "sida_hastata",
+    "Sida hastata",
+    "81. Malvaceae",
+    "Hierba perenne tendida, cubierta de pelos estrellados.",
+    "Plantas decumbentes, con carpelos múticos; hojas ovadas u orbiculares, dentadas, verdes en ambas caras, con pelos estrellados, de 2-3,5 cm; flores solitarias, con pedúnculo de 1-2 cm; pétalos amarillo claro con nervaduras rojizas, de 1-2 cm; carpelos glabros.",
+    "América cálida, en suelos secos."
+  ),
+  sida_spinosa_angustifolia: species(
+    "sida_spinosa_angustifolia",
+    "Sida spinosa var. angustifolia",
+    "81. Malvaceae",
+    "Caméfita erecta, ramosa, pubescente, de 30-70 cm de alto.",
+    "Plantas erectas, con carpelos de dos aristas apicales; ovario con 5 carpelos; hojas con una espinita en la base del pecíolo, oblongas, crenado-dentadas, de 1-3 cm por 3-8 mm; flores axilares solitarias, amarillo crema.",
+    "América cálida. Común en jardines y suelos modificados."
+  ),
+  sida_rhombifolia: species(
+    "sida_rhombifolia",
+    "Sida rhombifolia",
+    "81. Malvaceae",
+    "Caméfita erecta, de 50-80 cm de alto.",
+    "Plantas erectas, con carpelos de dos aristas apicales; ovario con 10-14 carpelos; hojas sin espinita basal, cortamente pecioladas, rómbicas, agudas, dentadas, de 3-6 cm; flores axilares solitarias, amarillas, largamente pedunculadas. Incluye variedades canariensis y rhomboidea citadas en el manual.",
+    "Regiones tropicales y subtropicales del globo. Común en suelos modificados y comunidades arbóreas. Nombres vulgares: afata, escoba dura."
+  ),
+  monteiroa_glomerata: species(
+    "monteiroa_glomerata",
+    "Monteiroa glomerata",
+    "81. Malvaceae",
+    "Sufrútice de cerca de 1 m de alto, laxamente estrellado-pubescente.",
+    "Calículo de 3 bractéolas ovado-lanceoladas; carpelos 10-18, con un solo óvulo erecto, dehiscentes ventral y apicalmente; hojas largamente pecioladas, ovado-triangulares y crenadas; flores violáceas, en cimas paucifloras densas en el extremo de ramitas desnudas; frutos con más de 12 carpelos.",
+    "Paraguay, Uruguay y nordeste de la Argentina. Común en pajonales del Delta y de la ribera del Plata; florece en primavera."
+  ),
+  malvastrum_coromandelianum: species(
+    "malvastrum_coromandelianum",
+    "Malvastrum coromandelianum",
+    "81. Malvaceae",
+    "Sufrútice pubescente, de 0,5 m de alto.",
+    "Calículo formado por 1-3 bractéolas o nulo; mericarpos indehiscentes; hojas pecioladas, ovadas, agudas, irregularmente dentadas; flores muy cortamente pedunculadas, agrupadas en las axilas de las hojas superiores; pétalos amarillos; frutos con 10-12 carpelos, cada uno con una corta arista dorsal y dos espinitas.",
+    "América cálida. Común en suelos modificados."
+  ),
+  malva_parviflora: species(
+    "malva_parviflora",
+    "Malva parviflora",
+    "81. Malvaceae",
+    "Hierba anual rastrera.",
+    "Calículo de 3 bractéolas lineales; hojas suborbiculares, lobadas; pétalos violáceos, poco más largos que los sépalos; estigmas distribuidos a lo largo de las ramas subuladas del estilo.",
+    "Europa; adventicia en América. En suelos modificados. Nombre vulgar: malva."
+  ),
+  malva_sylvestris: species(
+    "malva_sylvestris",
+    "Malva sylvestris",
+    "81. Malvaceae",
+    "Planta erguida, bienal.",
+    "Bractéolas del calículo ovadas; hojas suborbiculares, lobuladas, largamente pecioladas; pétalos violáceos, 2-3 veces más largos que el cáliz.",
+    "Europa; adventicia en América. En suelos modificados. Nombre vulgar: malva."
+  ),
+  malva_nicaensis: species(
+    "malva_nicaensis",
+    "Malva nicaensis",
+    "81. Malvaceae",
+    "Planta decumbente.",
+    "Bractéolas del calículo ovadas; hojas suborbiculares, lobadas; pétalos blanquecinos, una o dos veces tan largos como el cáliz.",
+    "Europa; adventicia en América. En suelos modificados."
+  ),
   sapindaceae: family(
     "sapindaceae",
     "77. Sapindaceae",
@@ -7336,9 +7408,9 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "modiolastrum_a",
     },
     opcionA_prima: {
-      label: "Carpelos con una sola cavidad; rama pendiente desde Sida",
+      label: "Carpelos con una sola cavidad",
       keyStep: "G'",
-      especieId: "malvaceae",
+      nextNodeId: "malvaceae_h",
     },
   },
   modiolastrum_a: {
@@ -7371,6 +7443,134 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Mericarpos largamente hirsutos en la parte superior, con la cámara estéril mucho menor que la seminífera",
       keyStep: "B'",
       especieId: "modiolastrum_lateritium",
+    },
+  },
+  malvaceae_h: {
+    id: "malvaceae_h",
+    milestone: "Malvaceae",
+    manualPage: 304,
+    descripcion: "Malvaceae - H: posición de óvulos",
+    opcionA: {
+      label: "Óvulos péndulos",
+      keyStep: "H",
+      nextNodeId: "sida_a",
+    },
+    opcionA_prima: {
+      label: "Óvulos ascendentes",
+      keyStep: "H'",
+      nextNodeId: "malvaceae_j",
+    },
+  },
+  sida_a: {
+    id: "sida_a",
+    milestone: "Sida",
+    manualPage: 310,
+    descripcion: "Sida - A: porte y aristas de carpelos",
+    opcionA: {
+      label: "Plantas decumbentes; carpelos múticos",
+      keyStep: "A",
+      nextNodeId: "sida_b",
+    },
+    opcionA_prima: {
+      label: "Plantas erectas; carpelos con dos aristas apicales",
+      keyStep: "A'",
+      nextNodeId: "sida_c",
+    },
+  },
+  sida_b: {
+    id: "sida_b",
+    milestone: "Sida",
+    manualPage: 310,
+    descripcion: "Sida - B: forma e indumento de hojas",
+    opcionA: {
+      label: "Hojas flabeladas o reniformes, crenadas, verdes y laxamente escamosas en el haz, plateadas en el envés",
+      keyStep: "B",
+      especieId: "sida_leprosa",
+    },
+    opcionA_prima: {
+      label: "Hojas ovadas u orbiculares, dentadas, verdes en ambas caras, con pelos estrellados",
+      keyStep: "B'",
+      especieId: "sida_hastata",
+    },
+  },
+  sida_c: {
+    id: "sida_c",
+    milestone: "Sida",
+    manualPage: 310,
+    descripcion: "Sida - C: cantidad de carpelos y espinita basal",
+    opcionA: {
+      label: "Ovario con 5 carpelos; hojas con una espinita en la base del pecíolo",
+      keyStep: "C",
+      especieId: "sida_spinosa_angustifolia",
+    },
+    opcionA_prima: {
+      label: "Ovario con 10-14 carpelos; hojas sin espinita en su base",
+      keyStep: "C'",
+      especieId: "sida_rhombifolia",
+    },
+  },
+  malvaceae_j: {
+    id: "malvaceae_j",
+    milestone: "Malvaceae",
+    manualPage: 304,
+    descripcion: "Malvaceae - J: tipo de estigmas",
+    opcionA: {
+      label: "Estigmas capitados",
+      keyStep: "J",
+      nextNodeId: "malvaceae_k",
+    },
+    opcionA_prima: {
+      label: "Estigmas distribuidos a lo largo de las ramas subuladas del estilo",
+      keyStep: "J'",
+      nextNodeId: "malva_a",
+    },
+  },
+  malvaceae_k: {
+    id: "malvaceae_k",
+    milestone: "Malvaceae",
+    manualPage: 304,
+    descripcion: "Malvaceae - K: dehiscencia de carpelos",
+    opcionA: {
+      label: "Carpelos dehiscentes ventral y apicalmente; inflorescencias cimosas",
+      keyStep: "K",
+      especieId: "monteiroa_glomerata",
+    },
+    opcionA_prima: {
+      label: "Carpelos indehiscentes; flores no en cimas",
+      keyStep: "K'",
+      especieId: "malvastrum_coromandelianum",
+    },
+  },
+  malva_a: {
+    id: "malva_a",
+    milestone: "Malva",
+    manualPage: 311,
+    descripcion: "Malva - A: forma de bractéolas",
+    opcionA: {
+      label: "Bractéolas del calículo lineales; pétalos violáceos, poco más largos que los sépalos; hierba anual rastrera",
+      keyStep: "A",
+      especieId: "malva_parviflora",
+    },
+    opcionA_prima: {
+      label: "Bractéolas del calículo ovadas",
+      keyStep: "A'",
+      nextNodeId: "malva_b",
+    },
+  },
+  malva_b: {
+    id: "malva_b",
+    milestone: "Malva",
+    manualPage: 312,
+    descripcion: "Malva - B: porte y color de pétalos",
+    opcionA: {
+      label: "Plantas erguidas, bienales; pétalos violáceos, 2-3 veces más largos que el cáliz",
+      keyStep: "B",
+      especieId: "malva_sylvestris",
+    },
+    opcionA_prima: {
+      label: "Plantas decumbentes; pétalos blanquecinos, una o dos veces tan largos como el cáliz",
+      keyStep: "B'",
+      especieId: "malva_nicaensis",
     },
   },
   santalaceae_a: {
