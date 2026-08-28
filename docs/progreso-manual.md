@@ -30,13 +30,13 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `93. Thymelaeaceae`, completa.
-- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` completa; `65. Oxalidaceae` completa; `66. Geraniaceae` completa; `67. Tropaeolaceae` completa; `68. Linaceae` completa; `69. Zygophyllaceae` completa; `70. Rutaceae` completa; `71. Malpighiaceae` completa; `72. Polygalaceae` completa; `73. Euphorbiaceae` completa; `74. Callitrichaceae` completa; `75. Anacardiaceae` completa; `76. Celastraceae` completa; `77. Sapindaceae` completa; `78. Rhamnaceae` completa; `79. Vitaceae` completa; `80. Tiliaceae` completa; `81. Malvaceae` completa; `82. Sterculiaceae` completa; `83. Guttiferae` completa; `84. Elatinaceae` completa; `85. Frankeniaceae` completa; `86. Cistaceae` ficha cargada, revisar conexion; `87. Violaceae` completa; `88. Turneraceae` completa; `89. Passifloraceae` completa; `90. Loasaceae` completa; `91. Begoniaceae` completa; `92. Cactaceae` completa; `93. Thymelaeaceae` completa.
-- Ultimo commit subido antes de esta tanda: `02b58df Add Cactaceae species keys`.
+- `94. Lythraceae`, completa.
+- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` completa; `65. Oxalidaceae` completa; `66. Geraniaceae` completa; `67. Tropaeolaceae` completa; `68. Linaceae` completa; `69. Zygophyllaceae` completa; `70. Rutaceae` completa; `71. Malpighiaceae` completa; `72. Polygalaceae` completa; `73. Euphorbiaceae` completa; `74. Callitrichaceae` completa; `75. Anacardiaceae` completa; `76. Celastraceae` completa; `77. Sapindaceae` completa; `78. Rhamnaceae` completa; `79. Vitaceae` completa; `80. Tiliaceae` completa; `81. Malvaceae` completa; `82. Sterculiaceae` completa; `83. Guttiferae` completa; `84. Elatinaceae` completa; `85. Frankeniaceae` completa; `86. Cistaceae` ficha cargada, revisar conexion; `87. Violaceae` completa; `88. Turneraceae` completa; `89. Passifloraceae` completa; `90. Loasaceae` completa; `91. Begoniaceae` completa; `92. Cactaceae` completa; `93. Thymelaeaceae` completa; `94. Lythraceae` completa.
+- Ultimo commit subido antes de esta tanda: `cecc0ec Add Thymelaeaceae species key`.
 
 ## Proxima familia consecutiva
 
-- `94. Lythraceae`, pagina 330 del manual (`PDF_PAGE=337`).
+- `95. Combretaceae`, pagina 332 del manual (`PDF_PAGE=339`).
 
 ## Regla de trabajo
 

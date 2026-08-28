@@ -3609,6 +3609,54 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo C.",
     "Receptáculo tubuloso, verde o coloreado, con pétalos insertos en su borde."
   ),
+  lythrum_maritimum: species(
+    "lythrum_maritimum",
+    "Lythrum maritimum",
+    "94. Lythraceae",
+    "Planta perenne sufruticosa, de 0,5 m de alto.",
+    "Pie del ovario rodeado por un anillo carnoso; estambres 6; hojas decusadas o alternas, oblongo-lanceoladas, obtusas en la base, de 7-33 mm; flores sésiles en las axilas de las hojas; tubo del receptáculo de 5-8 mm, semialado; pétalos 6, violáceos, de 5 mm.",
+    "América cálida. Común en los bosques de la ribera del Plata. Florece en verano."
+  ),
+  lythrum_hyssopifolia: species(
+    "lythrum_hyssopifolia",
+    "Lythrum hyssopifolia",
+    "94. Lythraceae",
+    "Hierba anual, decumbente o ascendente, con tallos angostamente alados, glabros.",
+    "Pie del ovario sin anillo carnoso; estambres generalmente 4; hojas densas, lineal-oblongas, de 7-30 mm; flores sésiles en las axilas de las hojas; tubo receptacular de 4-5 mm; pétalos 6, azules.",
+    "Cosmopolita. Común en suelos húmedos."
+  ),
+  heimia_salicifolia: species(
+    "heimia_salicifolia",
+    "Heimia salicifolia",
+    "94. Lythraceae",
+    "Arbusto glabro de 50 cm de alto.",
+    "Hojas opuestas, decusadas, lanceoladas, enteras, discolores, de 1,5-8 cm; flores solitarias, axilares; pétalos amarillos, de 10-18 mm; cápsulas tetraloculares, polispermas.",
+    "América cálida. Se halla en la estepa clímax. Nombre vulgar: quiebra arado."
+  ),
+  cuphea_glutinosa: species(
+    "cuphea_glutinosa",
+    "Cuphea glutinosa",
+    "94. Lythraceae",
+    "Planta sufruticosa, densamente glanduloso-pubescente, de unos 40 cm de alto.",
+    "Pedúnculos florales con dos bracteolas cerca del ápice; hojas opuestas, cortamente pecioladas, ovadas, de 4-20 mm; flores alternas; receptáculo de 6-9 mm; pétalos violáceos de unos 5 mm.",
+    "América templado-cálida. Frecuente en la estepa clímax. Florece en verano. Se considera medicinal. Nombre vulgar: siete sangrías."
+  ),
+  cuphea_fruticosa: species(
+    "cuphea_fruticosa",
+    "Cuphea fruticosa",
+    "94. Lythraceae",
+    "Sufrútice de 50 cm de alto.",
+    "Pedúnculos florales sin bracteolas; hojas lanceoladas, opuestas, cortísimamente pecioladas, glabras o casi glabras, de 2-7 cm; flores opuestas, pediceladas, formando seudorracimos terminales; receptáculo de 8-10 mm; pétalos liliáceos, de unos 5 mm.",
+    "América austral subtropical. Muy común en el Delta y en la ribera platense. Nombre vulgar: siete sangrías."
+  ),
+  cuphea_origanifolia: species(
+    "cuphea_origanifolia",
+    "Cuphea origanifolia",
+    "94. Lythraceae",
+    "Hierba perenne, de 50 cm de alto.",
+    "Pedúnculos florales sin bracteolas; hojas ovadas u ovado-oblongas, generalmente obtusas en la base, de 1,5-4 cm; flores opuestas, en racimos terminales; receptáculo de 6-9 mm; pétalos rosados o violáceos.",
+    "Sur del Brasil, Uruguay, Paraguay y nordeste de la Argentina, hasta los bosques de la ribera del Plata."
+  ),
   oxalidaceae: family(
     "oxalidaceae",
     "65. Oxalidaceae",
@@ -11230,12 +11278,92 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Receptáculo tubuloso, verde o coloreado, con pétalos insertos en el borde",
       keyStep: "s",
-      especieId: "lythraceae",
+      nextNodeId: "lythraceae_a",
     },
     opcionA_prima: {
       label: "Receptáculo a veces algo cóncavo, pero no tubuloso",
       keyStep: "s'",
       nextNodeId: "dicot_group_c_t_lower",
+    },
+  },
+  lythraceae_a: {
+    id: "lythraceae_a",
+    milestone: "Lythraceae",
+    manualPage: 330,
+    descripcion: "Lythraceae - A: simetría de las flores",
+    opcionA: {
+      label: "Flores casi actinomorfas, subsésiles",
+      keyStep: "A",
+      nextNodeId: "lythraceae_b",
+    },
+    opcionA_prima: {
+      label: "Flores cigomorfas, con la base del receptáculo espolonada o hinchada, cortamente pediceladas",
+      keyStep: "A'",
+      nextNodeId: "cuphea_a",
+    },
+  },
+  lythraceae_b: {
+    id: "lythraceae_b",
+    milestone: "Lythraceae",
+    manualPage: 330,
+    descripcion: "Lythraceae - B: color floral y número de estambres",
+    opcionA: {
+      label: "Flores rosadas; estambres 4-6",
+      keyStep: "B",
+      nextNodeId: "lythrum_a",
+    },
+    opcionA_prima: {
+      label: "Flores amarillas; estambres 12-18",
+      keyStep: "B'",
+      especieId: "heimia_salicifolia",
+    },
+  },
+  lythrum_a: {
+    id: "lythrum_a",
+    milestone: "Lythrum",
+    manualPage: 330,
+    descripcion: "Lythrum - A: anillo carnoso en el pie del ovario",
+    opcionA: {
+      label: "Pie del ovario rodeado por un anillo carnoso; estambres 6; plantas perennes sufruticosas; pétalos violáceos",
+      keyStep: "A",
+      especieId: "lythrum_maritimum",
+    },
+    opcionA_prima: {
+      label: "Pie del ovario sin anillo carnoso; estambres generalmente 4; hierba anual; pétalos azules",
+      keyStep: "A'",
+      especieId: "lythrum_hyssopifolia",
+    },
+  },
+  cuphea_a: {
+    id: "cuphea_a",
+    milestone: "Cuphea",
+    manualPage: 332,
+    descripcion: "Cuphea - A: bracteolas en los pedúnculos florales",
+    opcionA: {
+      label: "Pedúnculos florales con dos bracteolas cerca del ápice; plantas densamente glanduloso-pubescentes; hojas ovadas; flores alternas",
+      keyStep: "A",
+      especieId: "cuphea_glutinosa",
+    },
+    opcionA_prima: {
+      label: "Pedúnculos florales sin bracteolas; plantas pubescentes o casi glabras; hojas generalmente mayores",
+      keyStep: "A'",
+      nextNodeId: "cuphea_b",
+    },
+  },
+  cuphea_b: {
+    id: "cuphea_b",
+    milestone: "Cuphea",
+    manualPage: 332,
+    descripcion: "Cuphea - B: forma de las hojas",
+    opcionA: {
+      label: "Hojas lanceoladas, opuestas, cortísimamente pecioladas, glabras o casi glabras; flores opuestas, formando seudorracimos terminales; pétalos liliáceos",
+      keyStep: "B",
+      especieId: "cuphea_fruticosa",
+    },
+    opcionA_prima: {
+      label: "Hojas ovadas u ovado-oblongas, generalmente obtusas en la base; flores opuestas, en racimos terminales; pétalos rosados o violáceos",
+      keyStep: "B'",
+      especieId: "cuphea_origanifolia",
     },
   },
   dicot_group_c_t_lower: {
