@@ -3769,6 +3769,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo D.",
     "Plantas con pelos urticantes."
   ),
+  blumenbachia_urens: species(
+    "blumenbachia_urens",
+    "Blumenbachia urens",
+    "90. Loasaceae",
+    "Hierba anual, decumbente, urticante.",
+    "Hojas trifolioladas, con folíolos ovados más o menos profundamente lobados en el margen; flores cortamente pedunculadas, con pedúnculos de 3-15 mm y corola blanca; sépalos pinatipartidos; cápsulas globosas, de 2 cm de diámetro.",
+    "América austral cálida. Vive en los bosques de talas y en las selvas de la ribera platense."
+  ),
+  blumenbachia_insignis: species(
+    "blumenbachia_insignis",
+    "Blumenbachia insignis",
+    "90. Loasaceae",
+    "Hierba perenne, rastrera o ascendente, urticante.",
+    "Hojas palmatisectas, con 3-5 segmentos primarios, cada uno bipinatisecto, con segmentitos lanceolados; flores largamente pedunculadas, con pedúnculos de 30-120 mm y corola blanca; sépalos enteros; cápsulas globosas, de 1,5-2 cm de diámetro.",
+    "Sur del Brasil, Uruguay y norte y centro de la Argentina. Cerca de la Capital Federal se encuentra en suelos sueltos, especialmente en bancos de conchilla paralelos al Río de la Plata."
+  ),
   cactaceae: family(
     "cactaceae",
     "92. Cactaceae",
@@ -11233,12 +11249,28 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Sí",
       keyStep: "A",
-      especieId: "loasaceae",
+      nextNodeId: "loasaceae_a",
     },
     opcionA_prima: {
       label: "No",
       keyStep: "A'",
       nextNodeId: "dicot_group_d_b",
+    },
+  },
+  loasaceae_a: {
+    id: "loasaceae_a",
+    milestone: "Loasaceae",
+    manualPage: 323,
+    descripcion: "Blumenbachia - A: forma de las hojas",
+    opcionA: {
+      label: "Hojas trifolioladas, con folíolos ovados, más o menos profundamente lobados en el margen; flores cortamente pedunculadas, con corola blanca; sépalos pinatipartidos; cápsulas globosas de 2 cm de diámetro",
+      keyStep: "A",
+      especieId: "blumenbachia_urens",
+    },
+    opcionA_prima: {
+      label: "Hojas palmatisectas, con 3-5 segmentos primarios bipinatisectos; flores largamente pedunculadas, con corola blanca; sépalos enteros; cápsulas globosas de 1,5-2 cm de diámetro",
+      keyStep: "A'",
+      especieId: "blumenbachia_insignis",
     },
   },
   dicot_group_d_b: {
