@@ -4669,6 +4669,46 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Hojas opuestas y ovario 2-4-locular."
   ),
+  buddleja_grandiflora: species(
+    "buddleja_grandiflora",
+    "Buddleja grandiflora",
+    "107. Loganiaceae",
+    "Sufrútice densamente ferrugíneo-tomentoso, de 1-2 m de alto, con tallos cuadrangulares.",
+    "Tubo de la corola tres veces más largo que el cáliz; cáliz de 6-7 mm; corola de unos 20 mm, con tubo cilíndrico; hojas ovado-lanceoladas, agudas en el ápice y atenuadas en la base, de 10-18 cm por 3-5 cm; flores en una densa espiga de glomérulos.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina, hasta la Isla Martín García."
+  ),
+  buddleja_stachyoides: species(
+    "buddleja_stachyoides",
+    "Buddleja stachyoides",
+    "107. Loganiaceae",
+    "Arbusto de 1,5 m de alto, con ramas cuadrangulares estrechamente aladas.",
+    "Tubo de la corola a lo más de dos veces la longitud del cáliz; hojas rómbico-ovadas, agudas en el ápice y cuneiformes abajo, connatas en la base por dos pequeñas aurículas, crenado-dentadas y laxamente tomentosas; flores en espiga interrumpida de glomérulos; corola amarilla, tubulosa.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina, hasta el Delta, las barrancas del Paraná y la Isla Martín García."
+  ),
+  buddleja_thyrsoides: species(
+    "buddleja_thyrsoides",
+    "Buddleja thyrsoides",
+    "107. Loganiaceae",
+    "Arbusto de 1,5-2 m de alto, con ramitas nuevas tomentosas y semicuadrangulares.",
+    "Hojas lineal-lanceoladas, largamente atenuadas en el ápice y en la base, sésiles, uniformemente aserradas, glabras en el haz y albo-tomentosas en el envés; pedicelos más largos que el cáliz; corola blanca, acampanada, de 6-7 mm; inflorescencia en tirso de cimas.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Se halla en los pajonales del Delta y de la ribera platense."
+  ),
+  buddleja_elegans: species(
+    "buddleja_elegans",
+    "Buddleja elegans",
+    "107. Loganiaceae",
+    "Sufrútice de 1,5-2 m de alto, con ramas nuevas tomentulosas.",
+    "Hojas oblongo-lanceoladas, agudas en el ápice y atenuadas en la base, crenadas en la parte superior o enteras, glabras en el haz y tomentosas en el envés; flores blancas; cáliz tomentoso de 3 mm; corola acampanada de 5-6 mm.",
+    "Sur del Brasil. Hallada en los pajonales del Delta."
+  ),
+  spigelia_humboldtiana: species(
+    "spigelia_humboldtiana",
+    "Spigelia humboldtiana",
+    "107. Loganiaceae",
+    "Hierba perenne, rizomatosa, glabra o apenas pubescente, con tallos cuadrangulares de 30-50 cm de alto.",
+    "Hojas opuestas o verticiladas, sésiles, lanceoladas u ovado-lanceoladas, enteras, de 3-6 cm por 1-1,5 cm; flores blancas en espigas unilaterales curvas; corola de 8-10 mm; cápsulas bilobadas de 4 mm.",
+    "América cálida. Común en los bosques del Delta y de la ribera del Plata."
+  ),
   plantaginaceae: family(
     "plantaginaceae",
     "122. Plantaginaceae",
@@ -13767,7 +13807,71 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Ovario 2-4-locular",
       keyStep: "W'",
-      especieId: "loganiaceae",
+      nextNodeId: "loganiaceae_a",
+    },
+  },
+  loganiaceae_a: {
+    id: "loganiaceae_a",
+    milestone: "Loganiaceae",
+    manualPage: 363,
+    descripcion: "Loganiaceae - A: hábito e inflorescencia",
+    opcionA: {
+      label: "Sufrútices o arbustos; flores en cimas densas agrupadas en espigas, panojas o tirsos; cápsulas ovoideas",
+      keyStep: "A",
+      nextNodeId: "buddleja_a",
+    },
+    opcionA_prima: {
+      label: "Hierbas; flores en espigas unilaterales; cápsulas bilobas",
+      keyStep: "A'",
+      especieId: "spigelia_humboldtiana",
+    },
+  },
+  buddleja_a: {
+    id: "buddleja_a",
+    milestone: "Buddleja",
+    manualPage: 363,
+    descripcion: "Buddleja - A: largo del tubo de la corola",
+    opcionA: {
+      label: "Tubo de la corola tres veces más largo que el cáliz; cáliz de 6-7 mm; corola de unos 20 mm; tallos cuadrangulares",
+      keyStep: "A",
+      especieId: "buddleja_grandiflora",
+    },
+    opcionA_prima: {
+      label: "Tubo de la corola a lo más de dos veces la longitud del cáliz",
+      keyStep: "A'",
+      nextNodeId: "buddleja_b",
+    },
+  },
+  buddleja_b: {
+    id: "buddleja_b",
+    milestone: "Buddleja",
+    manualPage: 363,
+    descripcion: "Buddleja - B: forma de hojas y base connata",
+    opcionA: {
+      label: "Hojas rómbico-ovadas, connatas en la base por dos pequeñas aurículas, crenado-dentadas; flores en espiga interrumpida de glomérulos; corola amarilla",
+      keyStep: "B",
+      especieId: "buddleja_stachyoides",
+    },
+    opcionA_prima: {
+      label: "Hojas lanceoladas o lineal-lanceoladas, no connatas en la base; inflorescencia en tirso de cimas",
+      keyStep: "B'",
+      nextNodeId: "buddleja_c",
+    },
+  },
+  buddleja_c: {
+    id: "buddleja_c",
+    milestone: "Buddleja",
+    manualPage: 363,
+    descripcion: "Buddleja - C: ancho y forma de hojas",
+    opcionA: {
+      label: "Hojas lineal-lanceoladas, largamente atenuadas en ápice y base, sésiles, uniformemente aserradas; corola blanca de 6-7 mm",
+      keyStep: "C",
+      especieId: "buddleja_thyrsoides",
+    },
+    opcionA_prima: {
+      label: "Hojas oblongo-lanceoladas, agudas en el ápice y atenuadas en la base, crenadas en la parte superior o enteras; corola blanca de 5-6 mm",
+      keyStep: "C'",
+      especieId: "buddleja_elegans",
     },
   },
   dicot_group_e_x: {
