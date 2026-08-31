@@ -5071,6 +5071,70 @@ export const manualFamilyData: Record<string, Especie> = {
     "Flores rojas, raramente blancas, de 1,5-3 cm; hojas profundamente pinatisectas, con segmentos lineales; sépalos elípticos, obtusos, mucronados; semillas tomentosas.",
     "India. Cultivada como planta ornamental y a veces escapada de los cultivos."
   ),
+  convolvulus_laciniatus: species(
+    "convolvulus_laciniatus",
+    "Convolvulus laciniatus",
+    "111. Convolvulaceae",
+    "Hierba perenne, con tallos rastreros glabros o casi glabros.",
+    "Hojas de contorno ovado, profundamente bipinatisectas, con raquis y segmentos lineales; flores axilares, solitarias, largamente pedunculadas; sépalos cortamente acuminados; corola blanca, de 10-15 mm.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Frecuente en la estepa climax. Primavera."
+  ),
+  convolvulus_laciniatus_hirsutus: species(
+    "convolvulus_laciniatus_hirsutus",
+    "Convolvulus laciniatus var. hirsutus",
+    "111. Convolvulaceae",
+    "Variedad densamente tomentosa de Convolvulus laciniatus.",
+    "Mantiene las hojas profundamente bipinatisectas de la especie, con raquis y segmentos lineales, flores axilares solitarias y corola blanca de 10-15 mm.",
+    "Uruguay, Chile y nordeste de la Argentina. Rara en la estepa climax."
+  ),
+  convolvulus_hermanniae: species(
+    "convolvulus_hermanniae",
+    "Convolvulus hermanniae",
+    "111. Convolvulaceae",
+    "Hierba perenne, rastrera, densamente cubierta de vello aterciopelado amarillento o plateado.",
+    "Hojas ovado-oblongas, obtusas, acorazonadas en la base, crenado-dentadas, densamente aterciopelado-velludas, de 15-35 mm; flores axilares solitarias o geminadas, largamente pedunculadas; sépalos acuminados, densamente velludos; corola blanca de unos 12 mm.",
+    "América cálida. Muy común en la estepa climax. Primavera."
+  ),
+  convolvulus_arvensis: species(
+    "convolvulus_arvensis",
+    "Convolvulus arvensis",
+    "111. Convolvulaceae",
+    "Hierba perenne, rizomatosa, voluble o rastrera, glabra o muy laxamente pubescente.",
+    "Hojas ovado-hastadas, obtusas, generalmente enteras, de 2-6 cm; flores solitarias o geminadas; sépalos obtusos de 3,5-4,5 mm; corola blanca de 20-35 mm.",
+    "Europa; adventicia en América. Planta invasora de suelos modificados. Nombre vulgar: corregüela."
+  ),
+  convolvulus_bonariensis: species(
+    "convolvulus_bonariensis",
+    "Convolvulus bonariensis",
+    "111. Convolvulaceae",
+    "Hierba perenne, tendida o voluble.",
+    "Hojas ovado-lanceoladas o lanceoladas, obtusas, hastado-sagitadas en la base, con aurículas divergentes, enteras o crenadas, de 3-11 cm; pubescencia muy fina y adpresa; flores en cimas 2-6-floras o solitarias; sépalos obtusos, mucronados, de 6-8 mm; corola blanco-rosada de 10-16 mm.",
+    "Argentina, Chile y Uruguay. Rara en la región platense: Martínez, Núñez, etc."
+  ),
+  convolvulus_crenatifolius: species(
+    "convolvulus_crenatifolius",
+    "Convolvulus crenatifolius",
+    "111. Convolvulaceae",
+    "Hierba perenne, voluble o decumbente.",
+    "Hojas elípticas u ovadas, enteras o crenadas, cordado-sagitadas en la base, con aurículas paralelas o convergentes, de 3-10 cm; pubescencia no adpresa; flores en cimas 2-6-floras o solitarias; sépalos elípticos, obtusos, de 7-10 mm; corola blanca de 14-25 mm.",
+    "América austral. Escasa en la región."
+  ),
+  calystegia_sepium_americana: species(
+    "calystegia_sepium_americana",
+    "Calystegia sepium var. americana",
+    "111. Convolvulaceae",
+    "Hierba perenne, voluble, glabra.",
+    "Hojas ovadas o triangulares, acuminadas en el ápice y hastadas en la base, enteras, de hasta 10 cm por 6 cm; flores axilares, solitarias, largamente pedunculadas; brácteas foliáceas de 15-20 mm; corola blanca o rosada, amplia, de unos 5 cm.",
+    "Regiones cálidas de todo el globo. Frecuente en los pajonales del Delta y ribera del Plata. Primavera."
+  ),
+  calystegia_soldanella: species(
+    "calystegia_soldanella",
+    "Calystegia soldanella",
+    "111. Convolvulaceae",
+    "Hierba perenne, rizomatosa, glabra.",
+    "Hojas orbicular-reniformes, algo carnosas, enteras, de 1-2 cm de diámetro; brácteas ovales u oval-orbiculares, de 8 mm; corola purpúrea o rosada, de 2,5-4 cm; flores axilares solitarias.",
+    "Europa. Adventicia en regiones litorales de casi todo el mundo. Accidental en la región, frecuente en las dunas del este de Buenos Aires."
+  ),
   solanaceae: family(
     "solanaceae",
     "116. Solanaceae",
@@ -14676,7 +14740,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Estigma bifurcado, con lóbulos ovados o lineales",
       keyStep: "E'",
-      especieId: "convolvulaceae",
+      nextNodeId: "convolvulaceae_g",
     },
   },
   convolvulaceae_f: {
@@ -14837,6 +14901,118 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hojas profundamente pinatisectas, con segmentos lineales",
       keyStep: "J'",
       especieId: "ipomoea_quamoclit",
+    },
+  },
+  convolvulaceae_g: {
+    id: "convolvulaceae_g",
+    milestone: "Convolvulaceae",
+    manualPage: 376,
+    descripcion: "Convolvulaceae - G: tamaño de las brácteas florales y lóculos del ovario",
+    opcionA: {
+      label: "Brácteas florales pequeñas; ovario bilocular",
+      keyStep: "G",
+      nextNodeId: "convolvulus_a",
+    },
+    opcionA_prima: {
+      label: "Brácteas florales foliáceas, muy grandes; ovario unilocular o casi bilocular",
+      keyStep: "G'",
+      nextNodeId: "calystegia_a",
+    },
+  },
+  convolvulus_a: {
+    id: "convolvulus_a",
+    milestone: "Convolvulus",
+    manualPage: 382,
+    descripcion: "Convolvulus - A: división de las hojas",
+    opcionA: {
+      label: "Hojas de contorno ovado, profundamente bipinatisectas, con raquis y segmentos lineales",
+      keyStep: "A",
+      nextNodeId: "convolvulus_laciniatus_a",
+    },
+    opcionA_prima: {
+      label: "Hojas enteras o dentadas",
+      keyStep: "A'",
+      nextNodeId: "convolvulus_b",
+    },
+  },
+  convolvulus_laciniatus_a: {
+    id: "convolvulus_laciniatus_a",
+    milestone: "Convolvulus",
+    manualPage: 382,
+    descripcion: "Convolvulus laciniatus - variedad",
+    opcionA: {
+      label: "Tallos rastreros glabros o casi glabros",
+      keyStep: "1",
+      especieId: "convolvulus_laciniatus",
+    },
+    opcionA_prima: {
+      label: "Variedad densamente tomentosa",
+      keyStep: "1a",
+      especieId: "convolvulus_laciniatus_hirsutus",
+    },
+  },
+  convolvulus_b: {
+    id: "convolvulus_b",
+    milestone: "Convolvulus",
+    manualPage: 382,
+    descripcion: "Convolvulus - B: pubescencia de las hojas",
+    opcionA: {
+      label: "Hojas ovado-oblongas, obtusas, acorazonadas, crenado-dentadas y densamente aterciopelado-velludas",
+      keyStep: "B",
+      especieId: "convolvulus_hermanniae",
+    },
+    opcionA_prima: {
+      label: "Hojas glabras o laxamente pubescentes, no densamente aterciopelado-velludas; sépalos obtusos",
+      keyStep: "B'",
+      nextNodeId: "convolvulus_c",
+    },
+  },
+  convolvulus_c: {
+    id: "convolvulus_c",
+    milestone: "Convolvulus",
+    manualPage: 382,
+    descripcion: "Convolvulus - C: largo de los sépalos",
+    opcionA: {
+      label: "Sépalos de 3,5-4,5 mm; hojas ovado-hastadas, obtusas, generalmente enteras",
+      keyStep: "C",
+      especieId: "convolvulus_arvensis",
+    },
+    opcionA_prima: {
+      label: "Sépalos de 6-10 mm",
+      keyStep: "C'",
+      nextNodeId: "convolvulus_d",
+    },
+  },
+  convolvulus_d: {
+    id: "convolvulus_d",
+    milestone: "Convolvulus",
+    manualPage: 382,
+    descripcion: "Convolvulus - D: forma foliar, aurículas y pubescencia",
+    opcionA: {
+      label: "Hojas ovado-lanceoladas o lanceoladas, con aurículas divergentes; pubescencia muy fina y adpresa",
+      keyStep: "D",
+      especieId: "convolvulus_bonariensis",
+    },
+    opcionA_prima: {
+      label: "Hojas elípticas u ovadas, con aurículas paralelas o convergentes; pubescencia no adpresa",
+      keyStep: "D'",
+      especieId: "convolvulus_crenatifolius",
+    },
+  },
+  calystegia_a: {
+    id: "calystegia_a",
+    milestone: "Calystegia",
+    manualPage: 383,
+    descripcion: "Calystegia - A: forma de las hojas",
+    opcionA: {
+      label: "Hojas ovadas o triangulares, acuminadas y hastadas en la base, de hasta 10 cm por 6 cm",
+      keyStep: "A",
+      especieId: "calystegia_sepium_americana",
+    },
+    opcionA_prima: {
+      label: "Hojas orbicular-reniformes, algo carnosas, de 1-2 cm de diámetro",
+      keyStep: "A'",
+      especieId: "calystegia_soldanella",
     },
   },
   dichondra_a: {
