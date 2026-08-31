@@ -4539,6 +4539,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Árboles con ovario unilocular y estambres opuestos a los pétalos."
   ),
+  rapanea_laetevirens: species(
+    "rapanea_laetevirens",
+    "Rapanea laetevirens",
+    "101. Myrsinaceae",
+    "Árbol de 6-10 m de alto, con ramitas glabras.",
+    "Flores en racimos cortos, con eje conspicuo; hojas verdes al secarse, cortamente pecioladas, oblanceoladas, obtusas, enteras, glabras, de unos 8 cm; corolas de sólo 2,5 mm.",
+    "Norte de la Argentina y Uruguay. Frecuente en el Delta y en los bosques de la ribera del Plata. Nombre vulgar: canelón."
+  ),
+  rapanea_lorentziana: species(
+    "rapanea_lorentziana",
+    "Rapanea lorentziana",
+    "101. Myrsinaceae",
+    "Árbol con hojas enteras y flores pequeñas en umbelas densas.",
+    "Flores en umbelas densas; hojas castañas al secarse; demás caracteres semejantes a Rapanea laetevirens.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina, hasta el Delta y la ribera platense. Nombre vulgar: canelón."
+  ),
   sapotaceae: family(
     "sapotaceae",
     "104. Sapotaceae",
@@ -13451,12 +13467,28 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Ovario unilocular",
       keyStep: "R",
-      especieId: "myrsinaceae",
+      nextNodeId: "myrsinaceae_a",
     },
     opcionA_prima: {
       label: "Ovario 4-locular",
       keyStep: "R'",
       especieId: "sapotaceae",
+    },
+  },
+  myrsinaceae_a: {
+    id: "myrsinaceae_a",
+    milestone: "Myrsinaceae",
+    manualPage: 356,
+    descripcion: "Rapanea - A: tipo de inflorescencia y color de hojas secas",
+    opcionA: {
+      label: "Flores en racimos cortos, con eje conspicuo; hojas verdes al secarse, cortamente pecioladas, oblanceoladas, obtusas, enteras y glabras; corolas de sólo 2,5 mm",
+      keyStep: "A",
+      especieId: "rapanea_laetevirens",
+    },
+    opcionA_prima: {
+      label: "Flores en umbelas densas; hojas castañas al secarse",
+      keyStep: "A'",
+      especieId: "rapanea_lorentziana",
     },
   },
   dicot_group_e_s: {
