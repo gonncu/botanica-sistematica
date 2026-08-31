@@ -4519,6 +4519,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Estambres muy numerosos; también aparece con ovario ínfero y estambres más de 10."
   ),
+  symplocos_uniflora: species(
+    "symplocos_uniflora",
+    "Symplocos uniflora",
+    "105. Symplocaceae",
+    "Arbolito con ramitas pubescentes.",
+    "Hojas subcoriáceas, cortamente pecioladas, elípticas, casi obtusas, cortamente aserradas en el margen, glabras o casi glabras, de 6-8 cm por 2-3,5 cm; flores en racimos axilares cortos o solitarias; cáliz de 2 mm; corola blanca, glabra, de 8 mm; estambres numerosos en 3 series, soldados por los filamentos; fruto ovoideo, glabro, de 10-12 mm.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Frecuente en los bosques indígenas del Delta. Primavera."
+  ),
   thymelaeaceae: family(
     "thymelaeaceae",
     "93. Thymelaeaceae",
@@ -13446,13 +13454,30 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Estambres muy numerosos",
       keyStep: "N",
-      especieId: "symplocaceae",
+      nextNodeId: "symplocaceae_terminal",
     },
     opcionA_prima: {
       label: "Estambres 2-12",
       keyStep: "N'",
       nextNodeId: "dicot_group_e_o",
     },
+  },
+  symplocaceae_terminal: {
+    id: "symplocaceae_terminal",
+    milestone: "Symplocaceae",
+    manualPage: 362,
+    descripcion: "Symplocaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Symplocos uniflora",
+      keyStep: "1",
+      especieId: "symplocos_uniflora",
+    },
+    opcionA_prima: {
+      label: "Identificar como Symplocos uniflora",
+      keyStep: "1",
+      especieId: "symplocos_uniflora",
+    },
+    especie: manualFamilyData.symplocos_uniflora,
   },
   dicot_group_e_o: {
     id: "dicot_group_e_o",
@@ -13925,7 +13950,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Estambres más de 10",
       keyStep: "h",
-      especieId: "symplocaceae",
+      nextNodeId: "symplocaceae_terminal",
     },
     opcionA_prima: {
       label: "Estambres 3-5",

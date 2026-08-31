@@ -30,13 +30,13 @@ npm run build
 
 Ultima familia cargada, validada y subida:
 
-- `104. Sapotaceae`, completa.
-- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` completa; `65. Oxalidaceae` completa; `66. Geraniaceae` completa; `67. Tropaeolaceae` completa; `68. Linaceae` completa; `69. Zygophyllaceae` completa; `70. Rutaceae` completa; `71. Malpighiaceae` completa; `72. Polygalaceae` completa; `73. Euphorbiaceae` completa; `74. Callitrichaceae` completa; `75. Anacardiaceae` completa; `76. Celastraceae` completa; `77. Sapindaceae` completa; `78. Rhamnaceae` completa; `79. Vitaceae` completa; `80. Tiliaceae` completa; `81. Malvaceae` completa; `82. Sterculiaceae` completa; `83. Guttiferae` completa; `84. Elatinaceae` completa; `85. Frankeniaceae` completa; `86. Cistaceae` ficha cargada, revisar conexion; `87. Violaceae` completa; `88. Turneraceae` completa; `89. Passifloraceae` completa; `90. Loasaceae` completa; `91. Begoniaceae` completa; `92. Cactaceae` completa; `93. Thymelaeaceae` completa; `94. Lythraceae` completa; `95. Combretaceae` completa; `96. Myrtaceae` completa; `97. Melastomaceae` completa; `98. Onagraceae` completa; `99. Haloragaceae` completa; `100. Umbelliferae` completa; `101. Myrsinaceae` completa; `102. Primulaceae` completa; `103. Plumbaginaceae` completa; `104. Sapotaceae` completa.
-- Ultimo commit subido antes de esta tanda: `9cd3d0c Add Plumbaginaceae species key`.
+- `105. Symplocaceae`, completa.
+- Tandas cargadas: `59. Cruciferae` completa; `60. Resedaceae` completa; `61. Crassulaceae` completa; `62. Saxifragaceae` completa; `63. Rosaceae` completa; `64. Leguminosae` completa; `65. Oxalidaceae` completa; `66. Geraniaceae` completa; `67. Tropaeolaceae` completa; `68. Linaceae` completa; `69. Zygophyllaceae` completa; `70. Rutaceae` completa; `71. Malpighiaceae` completa; `72. Polygalaceae` completa; `73. Euphorbiaceae` completa; `74. Callitrichaceae` completa; `75. Anacardiaceae` completa; `76. Celastraceae` completa; `77. Sapindaceae` completa; `78. Rhamnaceae` completa; `79. Vitaceae` completa; `80. Tiliaceae` completa; `81. Malvaceae` completa; `82. Sterculiaceae` completa; `83. Guttiferae` completa; `84. Elatinaceae` completa; `85. Frankeniaceae` completa; `86. Cistaceae` ficha cargada, revisar conexion; `87. Violaceae` completa; `88. Turneraceae` completa; `89. Passifloraceae` completa; `90. Loasaceae` completa; `91. Begoniaceae` completa; `92. Cactaceae` completa; `93. Thymelaeaceae` completa; `94. Lythraceae` completa; `95. Combretaceae` completa; `96. Myrtaceae` completa; `97. Melastomaceae` completa; `98. Onagraceae` completa; `99. Haloragaceae` completa; `100. Umbelliferae` completa; `101. Myrsinaceae` completa; `102. Primulaceae` completa; `103. Plumbaginaceae` completa; `104. Sapotaceae` completa; `105. Symplocaceae` completa.
+- Ultimo commit subido antes de esta tanda: `28d8665 Add Sapotaceae species key`.
 
 ## Proxima familia consecutiva
 
-- `105. Symplocaceae`, pagina 361 del manual (`PDF_PAGE=368`).
+- `106. Oleaceae`, pagina 362 del manual (`PDF_PAGE=369`).
 
 ## Regla de trabajo
 
