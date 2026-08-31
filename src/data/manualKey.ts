@@ -4117,6 +4117,78 @@ export const manualFamilyData: Record<string, Especie> = {
     "Umbelas 8-21-floras, en grupos de 2-4, raramente hasta 7, en las axilas de las hojas; hojas subuladas, atenuadas en la parte superior, de 6-27 cm por 0,2-0,5 cm; frutos globosos, de 1,5-2 mm.",
     "Centro y este de la Argentina. Común en la orilla inundable de arroyos y lagunas."
   ),
+  centella_hirtella: species(
+    "centella_hirtella",
+    "Centella hirtella",
+    "100. Umbelliferae",
+    "Hierba perenne, rizomatosa, con tallos rastreros radicantes de los que nacen rosetitas de hojas y pedúnculos.",
+    "Hojas largamente pecioladas, ovadas, obtusas, algo cordadas en la base, crenado-dentadas, hirsutas; pedúnculos cortos con umbelas paucifloras o flores solitarias; frutos de 2,5-3 mm; mericarpos con 7-9 costillas.",
+    "América austral. Rara en campos húmedos."
+  ),
+  hydrocotyle_cryptocarpa: species(
+    "hydrocotyle_cryptocarpa",
+    "Hydrocotyle cryptocarpa",
+    "100. Umbelliferae",
+    "Hierba perenne, glabra, rastrera, radicante en los nudos.",
+    "Flores solitarias sobre largos pedúnculos axilares, pequeñas; fruto elíptico, grande, de 6-7 mm por 4-5 mm, que se entierra espontáneamente a la madurez; hojas reniformes, generalmente flotantes, 5-7-palmatilobadas, de 7-15 mm de diámetro.",
+    "Uruguay y este de la Argentina. Común en pantanos, charcas, etc. Florece en primavera."
+  ),
+  hydrocotyle_ranunculoides: species(
+    "hydrocotyle_ranunculoides",
+    "Hydrocotyle ranunculoides",
+    "100. Umbelliferae",
+    "Hierba perenne, glabra.",
+    "Flores en umbelas; hojas no peltadas, reniformes o suborbiculares; frutos muy comprimidos lateralmente, reniformes; umbelas 4-12-floras; plantas flotantes o tendidas sobre el barro; hojas 5-7-palmatilobadas, con lóbulos crenados, de 0,5-6 cm.",
+    "América cálida. Común en arroyos, lagunas, etc. Florece en primavera."
+  ),
+  hydrocotyle_leucocephala: species(
+    "hydrocotyle_leucocephala",
+    "Hydrocotyle leucocephala",
+    "100. Umbelliferae",
+    "Hierba perenne, humilde, de suelos húmedos, con rizoma horizontal delgado.",
+    "Hojas no peltadas, circular-reniformes, profundamente hendidas a un lado, crenadas, finamente velludas, de 1-5 cm de diámetro; umbelas simples, contraídas, muy largamente pedunculadas, 20-30-floras; flores blancas diminutas; frutos más o menos globosos.",
+    "Sudeste del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Común en las selvas ribereñas del Delta y de la ribera platense."
+  ),
+  hydrocotyle_pusilla: species(
+    "hydrocotyle_pusilla",
+    "Hydrocotyle pusilla",
+    "100. Umbelliferae",
+    "Hierba perenne, pigmea, glabra o casi glabra, con tallos rastreros y rizomas horizontales delgados.",
+    "Hojas peltadas, cortamente pecioladas, con lámina orbicular, crenada, de 4-20 mm de diámetro; umbelas simples casi capituliformes, con 3-10 flores; pedicelos cortísimos; fruto reniforme, grueso.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Muy común en el césped de la ribera platense. Florece en primavera."
+  ),
+  hydrocotyle_modesta: species(
+    "hydrocotyle_modesta",
+    "Hydrocotyle modesta",
+    "100. Umbelliferae",
+    "Hierba perenne, pigmea, glabra, con rizomas horizontales o tallos rastreros.",
+    "Hojas peltadas, orbiculares, crenadas, de 10-50 mm de diámetro; umbelas simples, con pedicelos de 2-4 mm y 20-40 flores; frutos gruesos, reniformes.",
+    "Uruguay, Argentina y Chile. Muy común en la orilla de los arroyos y en el césped de la ribera. Florece en primavera."
+  ),
+  hydrocotyle_bonariensis: species(
+    "hydrocotyle_bonariensis",
+    "Hydrocotyle bonariensis",
+    "100. Umbelliferae",
+    "Hierba perenne, glabra, con rizomas horizontales blancos o tallos rastreros radicantes.",
+    "Hojas peltadas, circulares, lobulado-crenadas, de 2-10 cm de diámetro; umbelas compuestas, plurifloras; pétalos amarillentos; frutos comprimidos lateralmente, orbiculares o reniformes, de 2-3 mm de ancho.",
+    "América del Sur templado-cálida. Vegeta en suelos pantanosos o en dunas húmedas. Común en el Delta y en la ribera platense. Florece en verano. Nombre vulgar: redondita de agua."
+  ),
+  hydrocotyle_verticillata: species(
+    "hydrocotyle_verticillata",
+    "Hydrocotyle verticillata",
+    "100. Umbelliferae",
+    "Hierba perenne, glabra, rizomatosa.",
+    "Hojas peltadas, circulares, crenadas, de 1,5-6 cm de diámetro; flores casi sentadas, dispuestas en 2-5 verticilos distantes a lo largo del eje de la inflorescencia, cada uno con 2-7 flores; frutos muy comprimidos, suborbiculares.",
+    "América austral. Se halla en pajonales y suelos húmedos."
+  ),
+  bowlesia_tenera: species(
+    "bowlesia_tenera",
+    "Bowlesia tenera",
+    "100. Umbelliferae",
+    "Hierba anual, ramosa, tendida o ascendente, laxamente cubierta de pelos estrellados.",
+    "Plantas con tallos aéreos ramificados y pelos estrellados; hojas largamente pecioladas, reniformes, profundamente palmatilobadas, con unos 7 lóbulos enteros o dentados; umbelas simples, paucifloras, cortamente pedunculadas; frutos con pelos estrellados.",
+    "América del Sur. Común en lugares húmedos, especialmente en suelos modificados. Florece al comienzo de la primavera."
+  ),
   haloragaceae: family(
     "haloragaceae",
     "99. Haloragaceae",
@@ -12122,7 +12194,135 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Hojas ovadas, circulares o reniformes, crenadas o lobadas",
       keyStep: "E'",
-      especieId: "umbelliferae",
+      nextNodeId: "umbelliferae_f",
+    },
+  },
+  umbelliferae_f: {
+    id: "umbelliferae_f",
+    milestone: "Umbelliferae",
+    manualPage: 343,
+    descripcion: "Umbelliferae - F: origen de hojas y pedúnculos",
+    opcionA: {
+      label: "Hojas y pedúnculos naciendo directamente de un rizoma horizontal o de un tallo rastrero radicante; plantas glabras o con pelos simples",
+      keyStep: "F",
+      nextNodeId: "umbelliferae_g",
+    },
+    opcionA_prima: {
+      label: "Plantas con tallos aéreos ramificados, con pelos estrellados",
+      keyStep: "F'",
+      especieId: "bowlesia_tenera",
+    },
+  },
+  umbelliferae_g: {
+    id: "umbelliferae_g",
+    milestone: "Umbelliferae",
+    manualPage: 343,
+    descripcion: "Umbelliferae - G: número de costillas de los mericarpos",
+    opcionA: {
+      label: "Mericarpos con 7-9 costillas; hojas notablemente envainadoras",
+      keyStep: "G",
+      especieId: "centella_hirtella",
+    },
+    opcionA_prima: {
+      label: "Mericarpos con 5 costillas; hojas no envainadoras",
+      keyStep: "G'",
+      nextNodeId: "hydrocotyle_a",
+    },
+  },
+  hydrocotyle_a: {
+    id: "hydrocotyle_a",
+    milestone: "Hydrocotyle",
+    manualPage: 350,
+    descripcion: "Hydrocotyle - A: flores solitarias o en umbelas",
+    opcionA: {
+      label: "Flores solitarias sobre largos pedúnculos axilares; fruto elíptico, grande, que se entierra espontáneamente a su madurez",
+      keyStep: "A",
+      especieId: "hydrocotyle_cryptocarpa",
+    },
+    opcionA_prima: {
+      label: "Flores en umbelas simples o compuestas",
+      keyStep: "A'",
+      nextNodeId: "hydrocotyle_b",
+    },
+  },
+  hydrocotyle_b: {
+    id: "hydrocotyle_b",
+    milestone: "Hydrocotyle",
+    manualPage: 350,
+    descripcion: "Hydrocotyle - B: hojas peltadas o no peltadas",
+    opcionA: {
+      label: "Hojas no peltadas, reniformes o suborbiculares, crenadas o lobadas",
+      keyStep: "B",
+      nextNodeId: "hydrocotyle_c",
+    },
+    opcionA_prima: {
+      label: "Hojas peltadas, orbiculares o algo reniformes, crenadas o lobadas",
+      keyStep: "B'",
+      nextNodeId: "hydrocotyle_d",
+    },
+  },
+  hydrocotyle_c: {
+    id: "hydrocotyle_c",
+    milestone: "Hydrocotyle",
+    manualPage: 350,
+    descripcion: "Hydrocotyle - C: forma de frutos y número de flores",
+    opcionA: {
+      label: "Frutos muy comprimidos lateralmente, reniformes; umbelas 4-12-floras; plantas flotantes o tendidas sobre el barro",
+      keyStep: "C",
+      especieId: "hydrocotyle_ranunculoides",
+    },
+    opcionA_prima: {
+      label: "Frutos más o menos globosos; umbelas 20-30-floras, simples, contraídas, muy largamente pedunculadas",
+      keyStep: "C'",
+      especieId: "hydrocotyle_leucocephala",
+    },
+  },
+  hydrocotyle_d: {
+    id: "hydrocotyle_d",
+    milestone: "Hydrocotyle",
+    manualPage: 351,
+    descripcion: "Hydrocotyle - D: umbelas simples o compuestas",
+    opcionA: {
+      label: "Umbelas simples",
+      keyStep: "D",
+      nextNodeId: "hydrocotyle_e",
+    },
+    opcionA_prima: {
+      label: "Umbelas compuestas o flores dispuestas en verticilos alrededor de un eje",
+      keyStep: "D'",
+      nextNodeId: "hydrocotyle_f",
+    },
+  },
+  hydrocotyle_e: {
+    id: "hydrocotyle_e",
+    milestone: "Hydrocotyle",
+    manualPage: 351,
+    descripcion: "Hydrocotyle - E: pedicelos y número de flores",
+    opcionA: {
+      label: "Pedicelos de las flores cortísimos; umbela casi capituliforme, con 3-10 flores; hoja orbicular de 4-20 mm",
+      keyStep: "E",
+      especieId: "hydrocotyle_pusilla",
+    },
+    opcionA_prima: {
+      label: "Pedicelos de 2-4 mm; flores 20-40; hojas peltadas, orbiculares, crenadas, de 10-50 mm",
+      keyStep: "E'",
+      especieId: "hydrocotyle_modesta",
+    },
+  },
+  hydrocotyle_f: {
+    id: "hydrocotyle_f",
+    milestone: "Hydrocotyle",
+    manualPage: 351,
+    descripcion: "Hydrocotyle - F: umbelas compuestas o flores verticiladas",
+    opcionA: {
+      label: "Umbelas compuestas, plurifloras; pétalos amarillentos; frutos comprimidos lateralmente, orbiculares o reniformes",
+      keyStep: "F",
+      especieId: "hydrocotyle_bonariensis",
+    },
+    opcionA_prima: {
+      label: "Flores casi sentadas, dispuestas en 2-5 verticilos distantes a lo largo del eje; frutos muy comprimidos, suborbiculares",
+      keyStep: "F'",
+      especieId: "hydrocotyle_verticillata",
     },
   },
   lilaeopsis_a: {
