@@ -4077,6 +4077,46 @@ export const manualFamilyData: Record<string, Especie> = {
     "Capítulos ovoideo-globosos, de 15-17 mm, en cimas corimbiformes dicotómicas muy laxas; brácteas involucrales acuminadas; hojas inferiores arrosetadas, lineales, envainadoras, agudas, con espinas cortas en el margen; hojas caulinares lineal-lanceoladas, mucho menores.",
     "Sur del Brasil. El manual refiere con reservas un ejemplar de Punta Lara, en la ribera del Río de la Plata."
   ),
+  torilis_nodosa: species(
+    "torilis_nodosa",
+    "Torilis nodosa",
+    "100. Umbelliferae",
+    "Hierba anual, decumbente, ramosa, con pelos tendidos y en el tallo retrorsos.",
+    "Hojas bi- o tripinatisectas, con segmentos oblongo-lineales, agudos; umbelas sésiles, densas, opuestas a las hojas, con radios muy cortos; frutos ovoideos de unos 3 mm, con cerdas espiniformes sobre toda su superficie.",
+    "Europa; adventicia en América. Común en la estepa clímax y en los talares. Florece en primavera."
+  ),
+  daucus_montevidensis: species(
+    "daucus_montevidensis",
+    "Daucus montevidensis",
+    "100. Umbelliferae",
+    "Hierba anual, pubescente, de altura muy variable, con tallos erectos.",
+    "Hojas bipinatisectas; flores blancas, en umbelas compuestas; frutos con espinas únicamente sobre las costillas; umbelas grandes, compuestas, terminales.",
+    "América austral; adventicia en Europa. Común en suelos arenosos."
+  ),
+  lilaeopsis_minor: species(
+    "lilaeopsis_minor",
+    "Lilaeopsis minor",
+    "100. Umbelliferae",
+    "Hierba perenne, acaule, con rizoma delgado.",
+    "Umbelas 2-7-floras, solitarias en las axilas de las hojas, raramente de a dos; hojas lineales, obtusas, de 2-6,5 cm; frutos globosos, de 2 mm.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Común en lugares inundables, en el césped de la ribera, etc."
+  ),
+  lilaeopsis_caroliniensis: species(
+    "lilaeopsis_caroliniensis",
+    "Lilaeopsis caroliniensis",
+    "100. Umbelliferae",
+    "Hierba perenne, acaule, rizomatosa.",
+    "Umbelas generalmente con más de 7 flores, agrupadas de a dos o tres en cada nudo; hojas espatuladas, septadas, de 6-20 cm por 0,5-1,2 cm; frutos transovados, de 2-3 mm.",
+    "América templado-cálida. Común en las orillas de charcas y lagunas, a veces semisumergida."
+  ),
+  lilaeopsis_attenuata: species(
+    "lilaeopsis_attenuata",
+    "Lilaeopsis attenuata",
+    "100. Umbelliferae",
+    "Hierba perenne, acaule, rizomatosa.",
+    "Umbelas 8-21-floras, en grupos de 2-4, raramente hasta 7, en las axilas de las hojas; hojas subuladas, atenuadas en la parte superior, de 6-27 cm por 0,2-0,5 cm; frutos globosos, de 1,5-2 mm.",
+    "Centro y este de la Argentina. Común en la orilla inundable de arroyos y lagunas."
+  ),
   haloragaceae: family(
     "haloragaceae",
     "99. Haloragaceae",
@@ -12018,7 +12058,103 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Flores en umbelas simples o compuestas",
       keyStep: "A'",
+      nextNodeId: "umbelliferae_b",
+    },
+  },
+  umbelliferae_b: {
+    id: "umbelliferae_b",
+    milestone: "Umbelliferae",
+    manualPage: 343,
+    descripcion: "Umbelliferae - B: cerdas fuertes en los frutos",
+    opcionA: {
+      label: "Frutos cubiertos de cerdas fuertes",
+      keyStep: "B",
+      nextNodeId: "umbelliferae_c",
+    },
+    opcionA_prima: {
+      label: "Frutos sin cerdas espiniformes",
+      keyStep: "B'",
+      nextNodeId: "umbelliferae_d",
+    },
+  },
+  umbelliferae_c: {
+    id: "umbelliferae_c",
+    milestone: "Umbelliferae",
+    manualPage: 343,
+    descripcion: "Umbelliferae - C: distribución de espinas en el fruto",
+    opcionA: {
+      label: "Fruto con cerdas espiniformes sobre toda su superficie; umbelas reducidas, opuestas a las hojas a lo largo del tallo",
+      keyStep: "C",
+      especieId: "torilis_nodosa",
+    },
+    opcionA_prima: {
+      label: "Fruto con espinas únicamente sobre las costillas; umbelas grandes, compuestas, terminales",
+      keyStep: "C'",
+      especieId: "daucus_montevidensis",
+    },
+  },
+  umbelliferae_d: {
+    id: "umbelliferae_d",
+    milestone: "Umbelliferae",
+    manualPage: 343,
+    descripcion: "Umbelliferae - D: división de las hojas",
+    opcionA: {
+      label: "Hojas enteras, crenadas, dentadas o lobadas, no pinatisectas",
+      keyStep: "D",
+      nextNodeId: "umbelliferae_e",
+    },
+    opcionA_prima: {
+      label: "Hojas profundamente pinatisectas o bipinatisectas",
+      keyStep: "D'",
       especieId: "umbelliferae",
+    },
+  },
+  umbelliferae_e: {
+    id: "umbelliferae_e",
+    milestone: "Umbelliferae",
+    manualPage: 343,
+    descripcion: "Umbelliferae - E: hojas lineales u ovadas",
+    opcionA: {
+      label: "Hojas lineales o lineal-lanceoladas, enteras",
+      keyStep: "E",
+      nextNodeId: "lilaeopsis_a",
+    },
+    opcionA_prima: {
+      label: "Hojas ovadas, circulares o reniformes, crenadas o lobadas",
+      keyStep: "E'",
+      especieId: "umbelliferae",
+    },
+  },
+  lilaeopsis_a: {
+    id: "lilaeopsis_a",
+    milestone: "Lilaeopsis",
+    manualPage: 348,
+    descripcion: "Lilaeopsis - A: cantidad y disposición de flores en las umbelas",
+    opcionA: {
+      label: "Umbelas 2-7-floras, solitarias en las axilas de las hojas; hojas lineales, obtusas, de 2-6,5 cm; frutos globosos de 2 mm",
+      keyStep: "A",
+      especieId: "lilaeopsis_minor",
+    },
+    opcionA_prima: {
+      label: "Umbelas generalmente con más de 7 flores, en grupos de 2-4 en las axilas de las hojas; hojas de 6-30 cm",
+      keyStep: "A'",
+      nextNodeId: "lilaeopsis_b",
+    },
+  },
+  lilaeopsis_b: {
+    id: "lilaeopsis_b",
+    milestone: "Lilaeopsis",
+    manualPage: 348,
+    descripcion: "Lilaeopsis - B: forma de las hojas",
+    opcionA: {
+      label: "Hojas espatuladas, septadas, de 6-20 cm por 0,5-1,2 cm; umbelas 7-15-floras, agrupadas de a dos o tres en cada nudo; frutos transovados",
+      keyStep: "B",
+      especieId: "lilaeopsis_caroliniensis",
+    },
+    opcionA_prima: {
+      label: "Hojas subuladas, atenuadas en la parte superior, de 6-27 cm por 0,2-0,5 cm; umbelas 8-21-floras en grupos de 2-4; frutos globosos",
+      keyStep: "B'",
+      especieId: "lilaeopsis_attenuata",
     },
   },
   eryngium_a: {
