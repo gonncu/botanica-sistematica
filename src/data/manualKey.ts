@@ -4613,6 +4613,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Hierbas con óvulo solitario."
   ),
+  limonium_brasiliense: species(
+    "limonium_brasiliense",
+    "Limonium brasiliense",
+    "103. Plumbaginaceae",
+    "Hemicriptófita de 25-40 cm de alto, con raíces gruesas rojizas.",
+    "Hojas en roseta, obovadas, obtusas, atenuadas en pecíolo en la base, enteras u onduladas en el margen, glabras, de 6-15 cm por 2-4 cm; tallos escapiformes, ramosos; flores muy numerosas en panojas de espigas unilaterales; cáliz de 4 mm con 5 nervios rojizos; corola blanco-azulada; cápsulas de 2 mm.",
+    "Suelos salados de la América austral. Común en campos bajos y salobres: Río Luján, Avellaneda, Ensenada, etc. Usada en medicina popular. Nombre vulgar: gaycurú."
+  ),
   oleaceae: family(
     "oleaceae",
     "106. Oleaceae",
@@ -13543,7 +13551,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Óvulo solitario",
       keyStep: "S'",
-      especieId: "plumbaginaceae",
+      nextNodeId: "plumbaginaceae_terminal",
     },
   },
   primulaceae_a: {
@@ -13609,6 +13617,23 @@ export const manualKeyData: Record<string, CladoNode> = {
       keyStep: "1a",
       especieId: "anagallis_arvensis_coerulea",
     },
+  },
+  plumbaginaceae_terminal: {
+    id: "plumbaginaceae_terminal",
+    milestone: "Plumbaginaceae",
+    manualPage: 359,
+    descripcion: "Plumbaginaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Limonium brasiliense",
+      keyStep: "1",
+      especieId: "limonium_brasiliense",
+    },
+    opcionA_prima: {
+      label: "Identificar como Limonium brasiliense",
+      keyStep: "1",
+      especieId: "limonium_brasiliense",
+    },
+    especie: manualFamilyData.limonium_brasiliense,
   },
   dicot_group_e_t: {
     id: "dicot_group_e_t",
