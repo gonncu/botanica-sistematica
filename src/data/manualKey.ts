@@ -4895,6 +4895,62 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Óvulos generalmente 2 por carpelo, erectos desde la base del lóculo."
   ),
+  cuscuta_cristata: species(
+    "cuscuta_cristata",
+    "Cuscuta cristata",
+    "111. Convolvulaceae",
+    "Planta parásita con tallos amarillos, a menudo con estrías rojizas.",
+    "Fruto indehiscente; lóbulos del cáliz con crestas dorsales; flores blancas de 3-3,5 mm; cáliz igual o más corto que el tubo corolino; lóbulos corolinos obtusos y reflejos; filamentos muy anchos; estilos comprimidos, 2-3 veces más cortos que el ovario; fruto globoso-deprimido.",
+    "Argentina y Uruguay. Común en el Delta y en la ribera paranense y platense, sobre diversas dicotiledóneas."
+  ),
+  cuscuta_obtusiflora: species(
+    "cuscuta_obtusiflora",
+    "Cuscuta obtusiflora",
+    "111. Convolvulaceae",
+    "Planta parásita con tallos amarillos y glomérulos 2-4-floros.",
+    "Fruto indehiscente; lóbulos del cáliz sin crestas, obtusos y algo superpuestos antes de la fecundación; corola sin papilas; estilos cilíndricos antes de la fecundación, luego engrosados en la mitad inferior; flores de 2-3 mm; fruto globoso.",
+    "América del Sur. Frecuente sobre dicotiledóneas hidrófilas."
+  ),
+  cuscuta_platyloba: species(
+    "cuscuta_platyloba",
+    "Cuscuta platyloba",
+    "111. Convolvulaceae",
+    "Planta parásita con tallos amarillos y glomérulos 3-5-floros.",
+    "Fruto indehiscente; estilos siempre cilíndricos; flores fructificadas de 3-4,5 mm y flores jóvenes de 2,5-3,5 mm; cáliz tan largo como el tubo corolino; lóbulos corolinos triangular-aovados; escamas algo más largas que el tubo; estilos por lo común más largos que el ovario.",
+    "Sur del Brasil y Bolivia, Uruguay y este de la Argentina. Frecuente en el Delta y ribera del Plata, sobre dicotiledóneas herbáceas."
+  ),
+  cuscuta_pentagona_calycina: species(
+    "cuscuta_pentagona_calycina",
+    "Cuscuta pentagona var. calycina",
+    "111. Convolvulaceae",
+    "Planta parásita con tallos anaranjados y glomérulos compactos multifloros.",
+    "Fruto indehiscente; estilos siempre cilíndricos; flores fructificadas de 2-2,8 mm y flores jóvenes de 2-2,5 mm con papilas muy pequeñas; cáliz más corto o igual al tubo corolino; lóbulos corolinos iguales o más cortos que el tubo; escamas largamente fimbriadas.",
+    "Estados Unidos; distribuida por todo el mundo como parásito de la alfalfa y otras plantas cultivadas. También frecuente sobre especies silvestres."
+  ),
+  cuscuta_indecora: species(
+    "cuscuta_indecora",
+    "Cuscuta indecora",
+    "111. Convolvulaceae",
+    "Planta parásita con tallos amarillo-anaranjados e inflorescencias laxas paucifloras.",
+    "Fruto indehiscente; lóbulos del cáliz agudos, sin bordes superpuestos; corola con papilas globosas e irregulares; flores de 3-3,7 mm; cáliz blanco-verdoso que alcanza hasta la mitad o menos del tubo corolino; lóbulos corolinos triangulares, agudos e inflexos; fruto esférico.",
+    "América. Parásita de la alfalfa. Rara en la región."
+  ),
+  cuscuta_indecora_longisepala: species(
+    "cuscuta_indecora_longisepala",
+    "Cuscuta indecora var. longisepala",
+    "111. Convolvulaceae",
+    "Variedad de Cuscuta indecora.",
+    "Se diferencia de la variedad indecora por el cáliz tan largo como el tubo corolino y los segmentos de la corola de igual longitud o mayores que el tubo.",
+    "América. Frecuente sobre alfalfa y ligustro; también sobre Ambrosia tenuifolia."
+  ),
+  cuscuta_xanthochortos_lanceolata: species(
+    "cuscuta_xanthochortos_lanceolata",
+    "Cuscuta xanthochortos var. lanceolata",
+    "111. Convolvulaceae",
+    "Planta parásita con glomérulos multifloros densos.",
+    "Fruto dehiscente por circuncisión transversal; flores de 3,5-5 mm; cáliz de 2-2,5 mm, tan largo como el tubo corolino o mayor; lóbulos calicinos alargados y revolutos en el ápice; lóbulos corolinos angostos y largos, 1,5-2 veces mayores que el tubo, reflejos; estilos cilíndricos, mucho más largos que el ovario.",
+    "Paraguay y Misiones en la Argentina. Accidental en la ribera platense: Quilmes."
+  ),
   solanaceae: family(
     "solanaceae",
     "116. Solanaceae",
@@ -14415,12 +14471,124 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Óvulos generalmente 2, a veces 1-3, en cada carpelo, erectos desde la base del lóculo",
       keyStep: "a",
-      especieId: "convolvulaceae",
+      nextNodeId: "convolvulaceae_a",
     },
     opcionA_prima: {
       label: "Óvulos generalmente más de dos en cada carpelo, sobre placentas axilares",
       keyStep: "a'",
       especieId: "solanaceae",
+    },
+  },
+  convolvulaceae_a: {
+    id: "convolvulaceae_a",
+    milestone: "Convolvulaceae",
+    manualPage: 375,
+    descripcion: "Convolvulaceae - A: parasitismo y presencia de clorofila",
+    opcionA: {
+      label: "Plantas parásitas, sin clorofila, con tallos volubles desprovistos de hojas",
+      keyStep: "A",
+      nextNodeId: "cuscuta_a",
+    },
+    opcionA_prima: {
+      label: "Plantas no parásitas, con clorofila; tallos volubles o rastreros, con hojas",
+      keyStep: "A'",
+      especieId: "convolvulaceae",
+    },
+  },
+  cuscuta_a: {
+    id: "cuscuta_a",
+    milestone: "Cuscuta",
+    manualPage: 376,
+    descripcion: "Cuscuta - A: dehiscencia del fruto",
+    opcionA: {
+      label: "Fruto indehiscente",
+      keyStep: "A",
+      nextNodeId: "cuscuta_b",
+    },
+    opcionA_prima: {
+      label: "Fruto dehiscente por circuncisión transversal marcada en el ovario",
+      keyStep: "A'",
+      especieId: "cuscuta_xanthochortos_lanceolata",
+    },
+  },
+  cuscuta_b: {
+    id: "cuscuta_b",
+    milestone: "Cuscuta",
+    manualPage: 376,
+    descripcion: "Cuscuta - B: crestas dorsales en los lóbulos del cáliz",
+    opcionA: {
+      label: "Lóbulos del cáliz con crestas dorsales, al menos dos de ellos; flores blancas de 3-3,5 mm",
+      keyStep: "B",
+      especieId: "cuscuta_cristata",
+    },
+    opcionA_prima: {
+      label: "Lóbulos del cáliz sin crestas en el dorso",
+      keyStep: "B'",
+      nextNodeId: "cuscuta_c",
+    },
+  },
+  cuscuta_c: {
+    id: "cuscuta_c",
+    milestone: "Cuscuta",
+    manualPage: 376,
+    descripcion: "Cuscuta - C: forma de los lóbulos del cáliz y papilas de la corola",
+    opcionA: {
+      label: "Lóbulos del cáliz obtusos y con bordes algo superpuestos antes de la fecundación; corola sin papilas",
+      keyStep: "C",
+      nextNodeId: "cuscuta_d",
+    },
+    opcionA_prima: {
+      label: "Lóbulos del cáliz agudos, con bordes no superpuestos; corola con papilas globosas e irregulares",
+      keyStep: "C'",
+      nextNodeId: "cuscuta_indecora_a",
+    },
+  },
+  cuscuta_d: {
+    id: "cuscuta_d",
+    milestone: "Cuscuta",
+    manualPage: 376,
+    descripcion: "Cuscuta - D: forma de los estilos",
+    opcionA: {
+      label: "Estilos cilíndricos antes de la fecundación, luego engrosados en la mitad inferior",
+      keyStep: "D",
+      especieId: "cuscuta_obtusiflora",
+    },
+    opcionA_prima: {
+      label: "Estilos siempre cilíndricos, sólo por excepción algo engrosados en la base",
+      keyStep: "D'",
+      nextNodeId: "cuscuta_e",
+    },
+  },
+  cuscuta_e: {
+    id: "cuscuta_e",
+    milestone: "Cuscuta",
+    manualPage: 376,
+    descripcion: "Cuscuta - E: tamaño de las flores fructificadas",
+    opcionA: {
+      label: "Flores fructificadas de 3-4,5 mm; estilos por lo común más largos que el ovario",
+      keyStep: "E",
+      especieId: "cuscuta_platyloba",
+    },
+    opcionA_prima: {
+      label: "Flores fructificadas de 2-2,8 mm; estilos más cortos que el ovario",
+      keyStep: "E'",
+      especieId: "cuscuta_pentagona_calycina",
+    },
+  },
+  cuscuta_indecora_a: {
+    id: "cuscuta_indecora_a",
+    milestone: "Cuscuta",
+    manualPage: 377,
+    descripcion: "Cuscuta indecora - variedad",
+    opcionA: {
+      label: "Cáliz más corto que el tubo corolino; segmentos de la corola más cortos que el tubo",
+      keyStep: "5",
+      especieId: "cuscuta_indecora",
+    },
+    opcionA_prima: {
+      label: "Cáliz tan largo como el tubo corolino; segmentos de la corola de igual longitud o mayores que el tubo",
+      keyStep: "5a",
+      especieId: "cuscuta_indecora_longisepala",
     },
   },
   dicot_group_e_b_lower: {
