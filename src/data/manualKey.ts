@@ -4007,6 +4007,62 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo D.",
     "Estambres 4 y tubo del cáliz muy largo, frecuentemente prolongado en hipanto."
   ),
+  jussiaea_uruguayensis: species(
+    "jussiaea_uruguayensis",
+    "Jussiaea uruguayensis",
+    "98. Onagraceae",
+    "Hierba perenne, rizomatosa, con tallos flotantes o tendidos, o bien ascendentes, generalmente pubescentes.",
+    "Flores 5-meras; semillas uniseriadas en cada lóculo de la cápsula; hojas de los tallos florales lanceoladas; bracteolas lanceoladas; hojas lanceoladas u oblanceoladas, agudas u obtusas, de 1-6 cm; flores cortamente pedunculadas; pétalos amarillos de 1,5-2 cm.",
+    "América cálida. Común en lagunas del Delta y de la ribera platense."
+  ),
+  jussiaea_repens_montevidensis: species(
+    "jussiaea_repens_montevidensis",
+    "Jussiaea repens var. montevidensis",
+    "98. Onagraceae",
+    "Planta perenne, con tallos tendidos o flotantes, radicantes en los nudos, pilosos.",
+    "Flores 5-meras; semillas uniseriadas en cada lóculo de la cápsula; hojas de los tallos florales oblongas u obovadas; bracteolas deltoideas; hojas oblongas o espatuladas, obtusas, atenuadas en la base en largo pecíolo, glabras o pubescentes, de 1-6 cm; pétalos amarillos, de 0,8-1,5 cm.",
+    "América austral. Común en charcas y suelos inundados. Florece en primavera."
+  ),
+  jussiaea_bonariensis: species(
+    "jussiaea_bonariensis",
+    "Jussiaea bonariensis",
+    "98. Onagraceae",
+    "Hierba perenne, rizomatosa, ramosa, de 1-1,5 m de alto.",
+    "Flores generalmente 4-meras; semillas multiseriadas en cada lóculo; cápsulas cilíndricas; semillas con rafe muy grande, casi igual al cuerpo de la semilla; hojas lanceoladas, agudas, enteras, cubiertas de pelos tendidos laxos, de 5-15 cm; pétalos amarillos, de 2-3,5 cm.",
+    "Sur del Brasil, Uruguay y norte de la Argentina; también existe en el sur de Estados Unidos y México. Muy común en terrenos inundables del Delta y de la ribera. Florece en verano."
+  ),
+  jussiaea_longifolia: species(
+    "jussiaea_longifolia",
+    "Jussiaea longifolia",
+    "98. Onagraceae",
+    "Hierba perenne, de 0,5-2 m de alto, con tallos notablemente costados, rojizos y glabros.",
+    "Cápsulas obcónicas u obpiramidales; rafe mucho menor que el cuerpo de la semilla; estilo de 3-9 mm con estigma capitado grueso; hojas glabras o algo escabrosas en el margen, sésiles o casi, lanceoladas, semienteras, de 10-15 cm por 0,8-2 cm; flores solitarias en las axilas superiores; pétalos amarillo pálido de 15-25 mm; cápsulas alargadas, obpiramidales, con 4 costillas.",
+    "América del Sur cálida, hasta el Río de la Plata. Común en los matorrales del Delta y de la ribera."
+  ),
+  jussiaea_peruviana: species(
+    "jussiaea_peruviana",
+    "Jussiaea peruviana",
+    "98. Onagraceae",
+    "Sufrútice de 0,5-3 m de alto.",
+    "Estilo de 0,5-2 mm; tallos y envés de las hojas hirsuto-pubescentes; hojas anchamente lanceoladas o elípticas, con nervaduras muy marcadas y anastomosadas, de 5-15 cm por 1,5-5 cm; pecíolos de 3-10 mm; pétalos amarillos de 12-27 mm; cápsulas obcónicas, con 4 ángulos.",
+    "América cálida. Muy frecuente en los matorrales del Delta y de la ribera platense."
+  ),
+  jussiaea_elegans_intermedia: species(
+    "jussiaea_elegans_intermedia",
+    "Jussiaea elegans var. intermedia",
+    "98. Onagraceae",
+    "Sufrútice de 1-2 m de alto, con tallos y hojas glabros, salvo órganos jóvenes algo pubescentes.",
+    "Estilo de 0,5-2 mm; hojas elíptico-lanceoladas, agudas, de 7-15 cm por 1,5-3 cm; pétalos amarillos de 15-25 mm; cápsulas obpiramidales, con 4 ángulos.",
+    "Sur del Brasil, Paraguay y nordeste de la Argentina. Muy común en lugares inundables del Delta y de la ribera del Plata. Florece en verano."
+  ),
+  epilobium_brasiliense: species(
+    "epilobium_brasiliense",
+    "Epilobium brasiliense",
+    "98. Onagraceae",
+    "Hierba perenne, estolonífera, erecta, de 15-80 cm de alto, pubescente en la parte superior.",
+    "Receptáculo prolongado por encima del ovario en un corto hipanto; semillas coronadas por un mechón de pelos blancos; hojas oblongo-lanceoladas, agudamente aserradas, cortamente pubescentes, de 2,5-4 cm; flores axilares; pétalos rosados, pequeños; cápsulas lineales, de 5-6 cm, sobre pedicelos de 1-1,5 cm.",
+    "Sur del Brasil, Uruguay y nordeste y centro de la Argentina. Común en el Delta y en la ribera platense. Florece en primavera."
+  ),
   melastomaceae: family(
     "melastomaceae",
     "97. Melastomaceae",
@@ -11840,7 +11896,119 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Estambres 4; tubo del cáliz muy largo, a veces prolongado en hipanto",
       keyStep: "K'",
+      nextNodeId: "onagraceae_a",
+    },
+  },
+  onagraceae_a: {
+    id: "onagraceae_a",
+    milestone: "Onagraceae",
+    manualPage: 338,
+    descripcion: "Onagraceae - A: persistencia del cáliz y prolongación del receptáculo",
+    opcionA: {
+      label: "Cáliz persistente; receptáculo no prolongado por encima del ovario",
+      keyStep: "A",
+      nextNodeId: "jussiaea_a",
+    },
+    opcionA_prima: {
+      label: "Cáliz caduco; receptáculo prolongado por encima del ovario, formando un tubo o hipanto",
+      keyStep: "A'",
+      nextNodeId: "onagraceae_b",
+    },
+  },
+  onagraceae_b: {
+    id: "onagraceae_b",
+    milestone: "Onagraceae",
+    manualPage: 338,
+    descripcion: "Onagraceae - B: pelos en las semillas",
+    opcionA: {
+      label: "Semillas con un mechón de pelos en uno de sus extremos",
+      keyStep: "B",
+      especieId: "epilobium_brasiliense",
+    },
+    opcionA_prima: {
+      label: "Semillas sin mechón de pelos",
+      keyStep: "B'",
       especieId: "onagraceae",
+    },
+  },
+  jussiaea_a: {
+    id: "jussiaea_a",
+    milestone: "Jussiaea",
+    manualPage: 338,
+    descripcion: "Jussiaea - A: mería floral y disposición de semillas",
+    opcionA: {
+      label: "Flores 5-meras; semillas uniseriadas en cada lóculo de la cápsula; plantas flotantes o tendidas sobre el barro",
+      keyStep: "A",
+      nextNodeId: "jussiaea_b",
+    },
+    opcionA_prima: {
+      label: "Flores generalmente 4-meras; semillas multiseriadas en cada lóculo de la cápsula; plantas erectas, más o menos elevadas",
+      keyStep: "A'",
+      nextNodeId: "jussiaea_c",
+    },
+  },
+  jussiaea_b: {
+    id: "jussiaea_b",
+    milestone: "Jussiaea",
+    manualPage: 338,
+    descripcion: "Jussiaea - B: hojas florales y bracteolas",
+    opcionA: {
+      label: "Hojas de los tallos florales lanceoladas; bracteolas lanceoladas; hojas lanceoladas u oblanceoladas",
+      keyStep: "B",
+      especieId: "jussiaea_uruguayensis",
+    },
+    opcionA_prima: {
+      label: "Hojas de los tallos florales oblongas u obovadas; bracteolas deltoideas; tallos tendidos o flotantes, radicantes en los nudos",
+      keyStep: "B'",
+      especieId: "jussiaea_repens_montevidensis",
+    },
+  },
+  jussiaea_c: {
+    id: "jussiaea_c",
+    milestone: "Jussiaea",
+    manualPage: 338,
+    descripcion: "Jussiaea - C: forma de la cápsula y tamaño del rafe",
+    opcionA: {
+      label: "Cápsulas cilíndricas; semillas con rafe muy grande, casi igual al cuerpo de la semilla",
+      keyStep: "C",
+      especieId: "jussiaea_bonariensis",
+    },
+    opcionA_prima: {
+      label: "Cápsulas obcónicas u obpiramidales; rafe mucho menor que el cuerpo de la semilla",
+      keyStep: "C'",
+      nextNodeId: "jussiaea_d",
+    },
+  },
+  jussiaea_d: {
+    id: "jussiaea_d",
+    milestone: "Jussiaea",
+    manualPage: 338,
+    descripcion: "Jussiaea - D: longitud del estilo",
+    opcionA: {
+      label: "Estilo de 3-9 mm de largo, con estigma capitado grueso",
+      keyStep: "D",
+      especieId: "jussiaea_longifolia",
+    },
+    opcionA_prima: {
+      label: "Estilo de 0,5-2 mm de largo",
+      keyStep: "D'",
+      nextNodeId: "jussiaea_e",
+    },
+  },
+  jussiaea_e: {
+    id: "jussiaea_e",
+    milestone: "Jussiaea",
+    manualPage: 338,
+    descripcion: "Jussiaea - E: pubescencia de tallos y hojas",
+    opcionA: {
+      label: "Tallos y envés de las hojas hirsuto-pubescentes; hojas anchamente lanceoladas o elípticas, con nervaduras muy marcadas",
+      keyStep: "E",
+      especieId: "jussiaea_peruviana",
+    },
+    opcionA_prima: {
+      label: "Tallos y hojas glabros, sólo los órganos jóvenes algo pubescentes; hojas elíptico-lanceoladas, agudas",
+      keyStep: "E'",
+      especieId: "jussiaea_elegans_intermedia",
     },
   },
   dicot_group_pending_e: {
