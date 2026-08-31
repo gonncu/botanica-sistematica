@@ -4487,6 +4487,54 @@ export const manualFamilyData: Record<string, Especie> = {
     "Plantas hirsutas o glanduloso-pubescentes; hojas pecioladas, con pecíolo de 1-4 cm, ovado-lanceoladas; flores violetas en cincinios; estilo terminal indiviso.",
     "América austral hasta el norte y centro de la Argentina. Frecuente en los bosques del Delta y ribera del Plata. Verano."
   ),
+  echium_plantagineum: species(
+    "echium_plantagineum",
+    "Echium plantagineum",
+    "113. Boraginaceae",
+    "Hierba anual o bienal, híspida, con tallos ascendentes o erectos de 30-80 cm.",
+    "Corola muy cigomorfa, oblicua, infundibuliforme; hojas radicales espatuladas y caulinares oblongas, enteras; flores violetas en grandes cincinios; corola de 2-3 cm; nuececitas de 2,5 mm.",
+    "Europa; adventicia en Sud América. Muy común en suelos modificados. Primavera. Nombre vulgar: flor morada."
+  ),
+  amsinckia_hispida: species(
+    "amsinckia_hispida",
+    "Amsinckia hispida",
+    "113. Boraginaceae",
+    "Hierba anual, de 20-70 cm de alto, ramosa, densamente hirsuta.",
+    "Flores amarillas o anaranjadas; hojas inferiores oblanceoladas, enteras, de 5-18 cm por 5-15 mm; hojas superiores lanceoladas; cincinios largos, sin brácteas o con alguna bráctea en la base; cáliz hirsuto; corola amarilla, tubulosa, de 8-9 mm; nuececillas tuberculadas.",
+    "América austral. Rara en rastrojos sobre suelos arenosos en la región de Junín."
+  ),
+  borago_officinalis: species(
+    "borago_officinalis",
+    "Borago officinalis",
+    "113. Boraginaceae",
+    "Hierba anual, erecta, híspida, de 30-60 cm de alto.",
+    "Corola rotácea o muy anchamente acampanada; estambres muy exertos; hojas hirsutas, las inferiores ovadas y contraídas en largo pecíolo alado, con lámina de 10-15 cm; hojas superiores más angostas, sésiles o cortamente pecioladas, auriculadas; flores azules en cimas corimbiformes; nuececitas de 5-6 mm.",
+    "Europa; cultivada y subespontánea en América. Medicinal. Nombre vulgar: borraja."
+  ),
+  myosotis_laxa: species(
+    "myosotis_laxa",
+    "Myosotis laxa",
+    "113. Boraginaceae",
+    "Hierba anual o perenne, con soboles y tallos ascendentes o erectos, laxamente estrigosos.",
+    "Nuececitas lisas; racimos sin brácteas; hojas esparcidas, estrigosas, las inferiores oblanceoladas o espatuladas de 3-6 cm y las superiores estrechamente lineales; cincinios geminados o solitarios; cáliz con lóbulos estrechamente ovados; corola azul claro con manchitas amarillas.",
+    "Europa; adventicia en América del Sur. Rara cerca de Buenos Aires."
+  ),
+  anchusa_officinalis: species(
+    "anchusa_officinalis",
+    "Anchusa officinalis",
+    "113. Boraginaceae",
+    "Hierba bienal, erecta, híspida, de 30-60 cm de alto.",
+    "Nuececitas rugosas; racimos con brácteas; plantas con pelos tiesos; garganta de la corola con escamitas; hojas inferiores lanceoladas, atenuadas en largo pecíolo alado, y superiores oblongas u oblongo-lanceoladas; cincinios solitarios o geminados, bracteados, densos; corola púrpura.",
+    "Europa; adventicia en América. Rara en la región: Núñez."
+  ),
+  lithospermum_arvense: species(
+    "lithospermum_arvense",
+    "Lithospermum arvense",
+    "113. Boraginaceae",
+    "Hierba anual, erecta, de 20-70 cm de alto, velludo-estrigosa.",
+    "Nuececitas rugosas; racimos con brácteas; plantas con pelos tendidos; garganta de la corola sin escamitas; hojas oblongo-lanceoladas, enteras, de 2-5 cm; flores diminutas, blancas, en cincinios muy cortos; corola de 5-7 mm; nuececillas de unos 3 mm, rugosas y tuberculadas.",
+    "Europa; adventicia en América. Rara en suelos modificados."
+  ),
   scrophulariaceae: family(
     "scrophulariaceae",
     "117. Scrophulariaceae",
@@ -14718,7 +14766,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Estilo ginobásico, inserto entre los cuatro lóbulos que forman el ovario",
       keyStep: "A'",
-      especieId: "borraginaceae",
+      nextNodeId: "boraginaceae_c",
     },
   },
   boraginaceae_b: {
@@ -14767,6 +14815,86 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hojas pecioladas, ovado-lanceoladas; flores violetas en cincinios",
       keyStep: "B'",
       especieId: "heliotropium_nicotianaefolium",
+    },
+  },
+  boraginaceae_c: {
+    id: "boraginaceae_c",
+    milestone: "Boraginaceae",
+    manualPage: 385,
+    descripcion: "Boraginaceae - C: simetría de la corola",
+    opcionA: {
+      label: "Corola muy cigomorfa, oblicua, más o menos infundibuliforme",
+      keyStep: "C",
+      especieId: "echium_plantagineum",
+    },
+    opcionA_prima: {
+      label: "Corola actinomorfa",
+      keyStep: "C'",
+      nextNodeId: "boraginaceae_d",
+    },
+  },
+  boraginaceae_d: {
+    id: "boraginaceae_d",
+    milestone: "Boraginaceae",
+    manualPage: 385,
+    descripcion: "Boraginaceae - D: color de las flores",
+    opcionA: {
+      label: "Flores amarillas o anaranjadas",
+      keyStep: "D",
+      especieId: "amsinckia_hispida",
+    },
+    opcionA_prima: {
+      label: "Flores azules, purpúreas o blancas",
+      keyStep: "D'",
+      nextNodeId: "boraginaceae_e",
+    },
+  },
+  boraginaceae_e: {
+    id: "boraginaceae_e",
+    milestone: "Boraginaceae",
+    manualPage: 385,
+    descripcion: "Boraginaceae - E: forma de la corola y exposición de estambres",
+    opcionA: {
+      label: "Corola rotácea; estambres muy exertos",
+      keyStep: "E",
+      especieId: "borago_officinalis",
+    },
+    opcionA_prima: {
+      label: "Corola tubulosa o infundibuliforme",
+      keyStep: "E'",
+      nextNodeId: "boraginaceae_f",
+    },
+  },
+  boraginaceae_f: {
+    id: "boraginaceae_f",
+    milestone: "Boraginaceae",
+    manualPage: 386,
+    descripcion: "Boraginaceae - F: superficie de las nuececitas y brácteas",
+    opcionA: {
+      label: "Nuececitas lisas; racimos sin brácteas; plantas con pelos blandos o glabras",
+      keyStep: "F",
+      especieId: "myosotis_laxa",
+    },
+    opcionA_prima: {
+      label: "Nuececitas rugosas; racimos con brácteas",
+      keyStep: "F'",
+      nextNodeId: "boraginaceae_g",
+    },
+  },
+  boraginaceae_g: {
+    id: "boraginaceae_g",
+    milestone: "Boraginaceae",
+    manualPage: 386,
+    descripcion: "Boraginaceae - G: tipo de pelos y escamas en la garganta de la corola",
+    opcionA: {
+      label: "Plantas con pelos tiesos; garganta de la corola con escamitas",
+      keyStep: "G",
+      especieId: "anchusa_officinalis",
+    },
+    opcionA_prima: {
+      label: "Plantas con pelos tendidos; garganta de la corola sin escamitas",
+      keyStep: "G'",
+      especieId: "lithospermum_arvense",
     },
   },
   dicot_group_e_a_lowercase: {
