@@ -3987,6 +3987,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo D.",
     "Plantas acuáticas semisumergidas con hojas verticiladas, pinatisectas, de segmentos lineales."
   ),
+  myriophyllum_brasiliense: species(
+    "myriophyllum_brasiliense",
+    "Myriophyllum brasiliense",
+    "99. Haloragaceae",
+    "Hierba perenne, ramosa, generalmente sumergida excepto en la parte superior, donde aparecen las flores; a veces vegeta emergida sobre barro húmedo.",
+    "Todas las hojas profundamente pinatisectas, en verticilos de 4-6, de contorno elíptico, con raquis y segmentos lineal-filiformes; flores unisexuales, monoicas o semidioicas, diminutas, solitarias en las axilas de las hojas.",
+    "América austral. Común en los arroyos del Delta y de la ribera platense. Nombre vulgar: helechito de agua."
+  ),
+  myriophyllum_elatinoides: species(
+    "myriophyllum_elatinoides",
+    "Myriophyllum elatinoides",
+    "99. Haloragaceae",
+    "Hierba sumergida, salvo el extremo superior de los tallos, muy ramosa.",
+    "Hojas superiores florales obovadas u orbiculares, aserradas; las demás hojas sumergidas, profundamente pinatisectas, con raquis y segmentos lineal-filiformes, dispuestas en verticilos de 3-5; flores solitarias, hermafroditas o algunas unisexuales.",
+    "Tasmania, Nueva Zelandia y América del Sur. Rara en la región; más frecuente en el interior de la provincia de Buenos Aires, en lagunas y tanques australianos. Nombre vulgar: gambarusa."
+  ),
   saxifragaceae: family(
     "saxifragaceae",
     "62. Saxifragaceae",
@@ -11900,12 +11916,28 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Sí; segmentos lineales",
       keyStep: "H",
-      especieId: "haloragaceae",
+      nextNodeId: "haloragaceae_a",
     },
     opcionA_prima: {
       label: "No; plantas terrestres, rara vez acuáticas con hojas enteras flotantes",
       keyStep: "H'",
       nextNodeId: "dicot_group_d_j",
+    },
+  },
+  haloragaceae_a: {
+    id: "haloragaceae_a",
+    milestone: "Haloragaceae",
+    manualPage: 342,
+    descripcion: "Myriophyllum - A: hojas florales y hojas sumergidas",
+    opcionA: {
+      label: "Todas las hojas profundamente pinatisectas, en verticilos de 4-6, de contorno elíptico, con raquis y segmentos lineal-filiformes; flores unisexuales, monoicas o semidioicas",
+      keyStep: "A",
+      especieId: "myriophyllum_brasiliense",
+    },
+    opcionA_prima: {
+      label: "Hojas superiores florales obovadas u orbiculares, aserradas; las demás sumergidas y profundamente pinatisectas, en verticilos de 3-5; flores solitarias, hermafroditas o algunas unisexuales",
+      keyStep: "A'",
+      especieId: "myriophyllum_elatinoides",
     },
   },
   dicot_group_d_j: {
