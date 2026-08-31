@@ -4189,6 +4189,86 @@ export const manualFamilyData: Record<string, Especie> = {
     "Plantas con tallos aéreos ramificados y pelos estrellados; hojas largamente pecioladas, reniformes, profundamente palmatilobadas, con unos 7 lóbulos enteros o dentados; umbelas simples, paucifloras, cortamente pedunculadas; frutos con pelos estrellados.",
     "América del Sur. Común en lugares húmedos, especialmente en suelos modificados. Florece al comienzo de la primavera."
   ),
+  foeniculum_vulgare: species(
+    "foeniculum_vulgare",
+    "Foeniculum vulgare",
+    "100. Umbelliferae",
+    "Hierba perenne, glabra, erecta, de 1-2 m de alto.",
+    "Hojas envainadoras en la base, pecioladas, profundamente tripinatisectas, con muchos segmentos capilares; umbelas compuestas, sin involucros; corolas amarillas; frutos de unos 6 mm.",
+    "Europa; adventicia en América. Común en suelos modificados, terraplenes del ferrocarril, etc. Nombre vulgar: hinojo."
+  ),
+  notiosciadium_pampicola: species(
+    "notiosciadium_pampicola",
+    "Notiosciadium pampicola",
+    "100. Umbelliferae",
+    "Hierba anual, glabra, tendida.",
+    "Hojas bipinaticompuestas, dilatadas en la base del pecíolo, con segmentos diminutos lanceolados; umbelas sésiles, con 1-3 radios terminados en umbélulas de 1-3 flores; frutos oblongos de unos 4 mm, áspero-papilosos sobre las costillas.",
+    "Provincia de Buenos Aires, en la estepa clímax. Florece en octubre y noviembre."
+  ),
+  conium_maculatum: species(
+    "conium_maculatum",
+    "Conium maculatum",
+    "100. Umbelliferae",
+    "Hierba anual o bienal, glabra, erecta, de cerca de 2 m de alto.",
+    "Hojas pinaticompuestas, con folíolos pinatilobados y segmentos aserrados; umbelas compuestas, multirradiadas, con involucro e involucelos; flores blancas; frutos de unos 3 mm, con costillas muy rugosas.",
+    "Europa; adventicia en América. Muy común en terraplenes del ferrocarril, orillas de caminos, rastrojos, etc. Planta fétida y venenosa. Florece en primavera. Nombre vulgar: cicuta."
+  ),
+  ammi_majus: species(
+    "ammi_majus",
+    "Ammi majus",
+    "100. Umbelliferae",
+    "Hierba anual, erecta, de 50 cm de alto.",
+    "Hojas inferiores pinati- o bipinaticompuestas, con folíolos ovado-lanceolados, aserrados; hojas superiores con segmentos lineales; umbelas con involucro formado por brácteas pinatisectas e involucelos de brácteas lineales; flores diminutas, blancas; inflorescencia fructificada abierta.",
+    "Europa; adventicia en América. Común en suelos modificados. Florece en verano."
+  ),
+  ammi_visnaga: species(
+    "ammi_visnaga",
+    "Ammi visnaga",
+    "100. Umbelliferae",
+    "Hierba anual, erecta, de cerca de 1 m de alto.",
+    "Hojas inferiores y superiores tripinatisectas, con segmentos lineales muy angostos; umbelas densas, plurifloras; brácteas del involucro pinatisectas y las de los involucelos lineales; flores blancas, pequeñas; inflorescencias fructificadas con radios curvados hacia adentro.",
+    "Europa; adventicia en América. Muy común en suelos modificados, rastrojos, etc. Florece en verano. Nombre vulgar: biznaga."
+  ),
+  apium_sellowianum: species(
+    "apium_sellowianum",
+    "Apium sellowianum",
+    "100. Umbelliferae",
+    "Hierba erecta, anual o bienal, de 1-1,5 m de alto.",
+    "Hojas bipinaticompuestas, con 1-4 divisiones primarias divididas en folíolos lanceolados, enteros o lobados; umbelas compuestas, con involucro de 1-2 brácteas trífidas, sin involucelos; flores muy numerosas; frutos ovoideos, de 2,5 mm.",
+    "Región platense. Muy común en pajonales del Delta y de la ribera. Florece a principios del verano. Nombre vulgar: apio cimarrón."
+  ),
+  apium_leptophyllum: species(
+    "apium_leptophyllum",
+    "Apium leptophyllum",
+    "100. Umbelliferae",
+    "Hierba anual, glabra, ascendente o erecta, de 10-80 cm de alto.",
+    "Hojas bi- o tripinatisectas, con segmentos estrechamente lineales y pecíolo envainador; umbelas compuestas, por lo común sésiles, sin involucro ni involucelos; flores numerosas; frutos circulares, con costillas gruesas, de cerca de 2 mm. El manual cita además la forma filamentosum, con lacinias foliares filiformes.",
+    "América cálida; adventicia en Europa y otras regiones del globo. Muy común en suelos húmedos. Florece en primavera."
+  ),
+  apium_prostratum: species(
+    "apium_prostratum",
+    "Apium prostratum",
+    "100. Umbelliferae",
+    "Hierba perenne, con raíz gruesa y tallos tendidos, ramosos, de 10-30 cm de largo.",
+    "Hojas bi- o tripinatisectas, largamente pecioladas, con segmentos lineales; umbelas compuestas, sin involucro ni involucelos; frutos circulares, con costillas muy gruesas, de 2-2,4 mm.",
+    "Australia, Tasmania y extremo sur de Patagonia. El manual indica que a esta especie podría referirse un pequeño Apium perenne de campos salobres de los alrededores de La Plata."
+  ),
+  oenanthe_globulosa: species(
+    "oenanthe_globulosa",
+    "Oenanthe globulosa",
+    "100. Umbelliferae",
+    "Hierba perenne, con raíces crasas fasciculadas y tallos de 20-50 cm de alto.",
+    "Segmentos de las hojas oblongos; flores blancas o rosadas, en umbelas de 5-6 radios que llevan umbelillas globosas; frutos gruesos, globulosos, no comprimidos.",
+    "Sur de Europa. Se halla a veces en suelos modificados."
+  ),
+  coriandrum_sativum: species(
+    "coriandrum_sativum",
+    "Coriandrum sativum",
+    "100. Umbelliferae",
+    "Hierba anual, glabra, de 30-40 cm de alto.",
+    "Hojas inferiores pinatisectas, con segmentos ovados, dentados; hojas superiores tripinatisectas, con segmentos lineales; flores con pétalos exteriores más largos; fruto semigloboso u ovoideo.",
+    "Europa; adventicia en todo el globo. Rara en la región: Isla Santiago. Nombre vulgar: coriandro."
+  ),
   haloragaceae: family(
     "haloragaceae",
     "99. Haloragaceae",
@@ -12178,7 +12258,167 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Hojas profundamente pinatisectas o bipinatisectas",
       keyStep: "D'",
-      especieId: "umbelliferae",
+      nextNodeId: "umbelliferae_h",
+    },
+  },
+  umbelliferae_h: {
+    id: "umbelliferae_h",
+    milestone: "Umbelliferae",
+    manualPage: 343,
+    descripcion: "Umbelliferae - H: color de las flores",
+    opcionA: {
+      label: "Flores amarillas",
+      keyStep: "H",
+      especieId: "foeniculum_vulgare",
+    },
+    opcionA_prima: {
+      label: "Flores blancas",
+      keyStep: "H'",
+      nextNodeId: "umbelliferae_i",
+    },
+  },
+  umbelliferae_i: {
+    id: "umbelliferae_i",
+    milestone: "Umbelliferae",
+    manualPage: 343,
+    descripcion: "Umbelliferae - I: forma y superficie de los frutos",
+    opcionA: {
+      label: "Frutos oblongos, de 4 mm, áspero-papilosos sobre las costillas",
+      keyStep: "I",
+      especieId: "notiosciadium_pampicola",
+    },
+    opcionA_prima: {
+      label: "Frutos de contorno circular u ovoideo, lisos o rugosos, pero no áspero-papilosos, de menos de 3 mm",
+      keyStep: "I'",
+      nextNodeId: "umbelliferae_j",
+    },
+  },
+  umbelliferae_j: {
+    id: "umbelliferae_j",
+    milestone: "Umbelliferae",
+    manualPage: 343,
+    descripcion: "Umbelliferae - J: involucro de las umbelas",
+    opcionA: {
+      label: "Umbelas con un involucro de brácteas foliáceas",
+      keyStep: "J",
+      nextNodeId: "umbelliferae_k",
+    },
+    opcionA_prima: {
+      label: "Umbelas sin involucro",
+      keyStep: "J'",
+      nextNodeId: "umbelliferae_m",
+    },
+  },
+  umbelliferae_k: {
+    id: "umbelliferae_k",
+    milestone: "Umbelliferae",
+    manualPage: 343,
+    descripcion: "Umbelliferae - K: rugosidad de las costillas del fruto",
+    opcionA: {
+      label: "Costillas del fruto muy rugosas",
+      keyStep: "K",
+      especieId: "conium_maculatum",
+    },
+    opcionA_prima: {
+      label: "Costillas del fruto lisas",
+      keyStep: "K'",
+      nextNodeId: "umbelliferae_l",
+    },
+  },
+  umbelliferae_l: {
+    id: "umbelliferae_l",
+    milestone: "Umbelliferae",
+    manualPage: 343,
+    descripcion: "Umbelliferae - L: brácteas del involucro y forma de frutos",
+    opcionA: {
+      label: "Involucro formado por numerosas brácteas pinatisectas; frutos ovoideos, con costillas poco prominentes",
+      keyStep: "L",
+      nextNodeId: "ammi_a",
+    },
+    opcionA_prima: {
+      label: "Involucro formado por sólo 1-4 brácteas; frutos redondeados o arriñonados, con surcos muy profundos",
+      keyStep: "L'",
+      nextNodeId: "apium_a",
+    },
+  },
+  umbelliferae_m: {
+    id: "umbelliferae_m",
+    milestone: "Umbelliferae",
+    manualPage: 344,
+    descripcion: "Umbelliferae - M: simetría floral",
+    opcionA: {
+      label: "Flores actinomorfas, con todos los pétalos iguales",
+      keyStep: "M",
+      nextNodeId: "umbelliferae_n",
+    },
+    opcionA_prima: {
+      label: "Flores cigomorfas, con 3 pétalos más largos que los otros dos",
+      keyStep: "M'",
+      especieId: "coriandrum_sativum",
+    },
+  },
+  umbelliferae_n: {
+    id: "umbelliferae_n",
+    milestone: "Umbelliferae",
+    manualPage: 344,
+    descripcion: "Umbelliferae - N: compresión de los frutos",
+    opcionA: {
+      label: "Frutos algo comprimidos",
+      keyStep: "N",
+      nextNodeId: "apium_a",
+    },
+    opcionA_prima: {
+      label: "Frutos no comprimidos",
+      keyStep: "N'",
+      especieId: "oenanthe_globulosa",
+    },
+  },
+  ammi_a: {
+    id: "ammi_a",
+    milestone: "Ammi",
+    manualPage: 353,
+    descripcion: "Ammi - A: división de las hojas",
+    opcionA: {
+      label: "Hojas inferiores pinati- o bipinaticompuestas, con folíolos ovado-lanceolados, aserrados; hojas superiores con segmentos lineales; inflorescencia fructificada abierta",
+      keyStep: "A",
+      especieId: "ammi_majus",
+    },
+    opcionA_prima: {
+      label: "Hojas inferiores y superiores tripinatisectas, con segmentos lineales muy angostos; inflorescencias fructificadas con radios curvados hacia adentro",
+      keyStep: "A'",
+      especieId: "ammi_visnaga",
+    },
+  },
+  apium_a: {
+    id: "apium_a",
+    milestone: "Apium",
+    manualPage: 353,
+    descripcion: "Apium - A: división de las hojas",
+    opcionA: {
+      label: "Hojas bipinaticompuestas, con 1-4 divisiones primarias divididas en folíolos lanceolados; hierba erecta de 1-1,5 m; frutos ovoideos",
+      keyStep: "A",
+      especieId: "apium_sellowianum",
+    },
+    opcionA_prima: {
+      label: "Hojas bi- o tripinatisectas, con segmentos estrechamente lineales; plantas más bajas, por lo común tendidas o ascendentes",
+      keyStep: "A'",
+      nextNodeId: "apium_b",
+    },
+  },
+  apium_b: {
+    id: "apium_b",
+    milestone: "Apium",
+    manualPage: 354,
+    descripcion: "Apium - B: ciclo y porte",
+    opcionA: {
+      label: "Hierba anual, glabra, ascendente o erecta, de 10-80 cm; umbelas por lo común sésiles; frutos circulares de cerca de 2 mm",
+      keyStep: "B",
+      especieId: "apium_leptophyllum",
+    },
+    opcionA_prima: {
+      label: "Hierba perenne, con raíz gruesa y tallos tendidos, ramosos, de 10-30 cm; frutos circulares de 2-2,4 mm",
+      keyStep: "B'",
+      especieId: "apium_prostratum",
     },
   },
   umbelliferae_e: {
