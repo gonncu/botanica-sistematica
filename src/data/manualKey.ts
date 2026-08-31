@@ -3981,6 +3981,102 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo D.",
     "Flores pequeñas en umbelas o capítulos densos; fruto seco dividido en dos mericarpos."
   ),
+  eryngium_coronatum: species(
+    "eryngium_coronatum",
+    "Eryngium coronatum",
+    "100. Umbelliferae",
+    "Hierba perenne, erecta, de 30-40 cm de alto, ramificada dicotómicamente.",
+    "Planta de menos de 50 cm; capítulos ovoideos coronados por brácteas lineal-lanceoladas rígidas casi tan largas o más largas que el capítulo; hojas rígidas, las inferiores en roseta, oblanceoladas, dentadas, lobuladas o pinatisectas, con lóbulos espinescentes; frutos con escamas dorsales vesiculosas y laterales algo mayores.",
+    "Paraguay, Uruguay y nordeste de la Argentina. Rara en campos húmedos."
+  ),
+  eryngium_kurtzii: species(
+    "eryngium_kurtzii",
+    "Eryngium kurtzii",
+    "100. Umbelliferae",
+    "Hierba perenne, rastrera, ramificada dicotómicamente.",
+    "Planta de menos de 50 cm; capítulos sésiles en las bifurcaciones del tallo, ovoideo-cilíndricos; hojas tiernas, radicales y caulinares largamente pecioladas, trisectas, con segmentos lanceolados irregularmente aserrados, lobados o partidos; brácteas superiores subuladas formando un penacho apical.",
+    "Centro de la Argentina. Rara en los alrededores de Buenos Aires: San Pedro."
+  ),
+  eryngium_divaricatum: species(
+    "eryngium_divaricatum",
+    "Eryngium divaricatum",
+    "100. Umbelliferae",
+    "Hierba perenne, glabra, rastrera, ramificada dicotómicamente.",
+    "Capítulos ovoideos o esféricos, no coronados por brácteas largas; tallos tendidos o ascendentes; hojas radicales lineales, profundamente pinatisectas, con segmentos lanceolados; brácteas involucrales mucho más cortas que los capítulos; capítulos verdosos, cortamente pedunculados.",
+    "Nordeste de la Argentina y Uruguay. En terrenos húmedos."
+  ),
+  eryngium_echinatum: species(
+    "eryngium_echinatum",
+    "Eryngium echinatum",
+    "100. Umbelliferae",
+    "Hierba perenne, con raíces carnosas y tallos tendidos, laxamente ramificados dicotómicamente.",
+    "Capítulos ovoideos o esféricos, no coronados; brácteas involucrales iguales o más largas que los capítulos; hojas radicales oblanceolado-lineales, aserradas o lobadas, con dientes o segmentos espinosos; hojas caulinares opuestas en los puntos de ramificación.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Común en campos húmedos."
+  ),
+  eryngium_nudicaule: species(
+    "eryngium_nudicaule",
+    "Eryngium nudicaule",
+    "100. Umbelliferae",
+    "Hierba perenne, erecta, glabra, con raíces carnosas y tallos erectos, de 10-30 cm de alto.",
+    "Planta de menos de 50 cm, con tallos erectos divididos en 3-5 ramas en la parte superior; hojas radicales oblanceolado-espatuladas, obtusas, crenadas; hojas superiores verticiladas; capítulos en cima corimbiforme compuesta, globosos u ovoideos.",
+    "América austral. Se halla en la estepa clímax."
+  ),
+  eryngium_serra: species(
+    "eryngium_serra",
+    "Eryngium serra",
+    "100. Umbelliferae",
+    "Hierba perenne, rizomatosa, glabra, erecta, de 1-2 m de alto.",
+    "Planta de más de 50 cm; hojas lanceoladas, con nervaduras divergentes y margen con dientes perpendiculares espinosos y cilias; brácteas florales enteras; hojas basales lineal-lanceoladas, envainadoras en la base; frutos con escamas laterales aliformes y dorsales vesiculosas.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Común en los pajonales del Delta y de la ribera. Florece en verano. Nombre vulgar: carda."
+  ),
+  eryngium_elegans: species(
+    "eryngium_elegans",
+    "Eryngium elegans",
+    "100. Umbelliferae",
+    "Hierba perenne, rizomatosa, erecta, de 0,5-1,5 m de alto.",
+    "Planta de más de 50 cm; hojas lanceoladas, con nervaduras divergentes; brácteas florales tricuspidadas; hojas basales oblanceolado-lineales, aserradas, con dientes muy abiertos espinosos y cilias cortas; inflorescencia en panoja de cimas.",
+    "América austral cálida. En campos húmedos de toda la provincia de Buenos Aires."
+  ),
+  eryngium_ebracteatum: species(
+    "eryngium_ebracteatum",
+    "Eryngium ebracteatum",
+    "100. Umbelliferae",
+    "Hierba perenne, erecta, de 1-2 m de alto, con rizomas cilíndricos y tallos delgados, glabros.",
+    "Hojas lineales, con nervaduras paralelas y margen entero con espinas apenas divergentes o sin espinas; capítulos cilíndricos, vinosos, de 1-2 cm, con brácteas involucrales y florales muy cortas; frutos con escamas vesiculosas.",
+    "América cálida. Común en pajonales, lagunas, etc."
+  ),
+  eryngium_eburneum: species(
+    "eryngium_eburneum",
+    "Eryngium eburneum",
+    "100. Umbelliferae",
+    "Hierba perenne, rizomatosa, glabra, de 2-2,5 m de alto.",
+    "Hojas lineales con nervaduras paralelas; capítulos ovoideos de 15-20 mm, en panoja alargada de cimas; frutos con escamas marginales aliformes, sin escamas dorsales; hojas basales en roseta, lineales, envainadoras y canaliculadas, con fuertes espinas marginales.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Muy frecuente en pajonales y lugares inundables del Delta y de la ribera. Nombre vulgar: carda."
+  ),
+  eryngium_pandanifolium: species(
+    "eryngium_pandanifolium",
+    "Eryngium pandanifolium",
+    "100. Umbelliferae",
+    "Hierba perenne, rizomatosa, glabra, robusta, de 2-2,5 m de alto.",
+    "Capítulos ovoideos, verdosos o algo violáceos, de 7-9 mm, en amplia panoja corimbiforme de cimas; brácteas involucrales cortas, anchamente lanceoladas; hojas inferiores en roseta, envainadoras, acanaladas en la base, lineales, con borde recto provisto de espinas apenas divergentes.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Muy frecuente en orillas de riachos del Delta y pajonales de la ribera platense. Florece en verano. Nombre vulgar: caraguatá."
+  ),
+  eryngium_horridum: species(
+    "eryngium_horridum",
+    "Eryngium horridum",
+    "100. Umbelliferae",
+    "Hierba perenne, rizomatosa, glabra, de 1,5-2 m de alto.",
+    "Capítulos globosos, de 10-12 mm, verdosos, en densa panoja de cimas; brácteas involucrales ovadas, acuminado-espinosas, enteras; hojas basales en roseta, lineales, envainadoras, acanaladas en la base, agudísimas, con fuertes espinas en el margen.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Rara en la ribera platense."
+  ),
+  eryngium_chamissonis: species(
+    "eryngium_chamissonis",
+    "Eryngium chamissonis",
+    "100. Umbelliferae",
+    "Hierba perenne, rizomatosa, robusta.",
+    "Capítulos ovoideo-globosos, de 15-17 mm, en cimas corimbiformes dicotómicas muy laxas; brácteas involucrales acuminadas; hojas inferiores arrosetadas, lineales, envainadoras, agudas, con espinas cortas en el margen; hojas caulinares lineal-lanceoladas, mucho menores.",
+    "Sur del Brasil. El manual refiere con reservas un ejemplar de Punta Lara, en la ribera del Río de la Plata."
+  ),
   haloragaceae: family(
     "haloragaceae",
     "99. Haloragaceae",
@@ -11901,12 +11997,204 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Sí; fruto seco dividido en dos mericarpos",
       keyStep: "G",
-      especieId: "umbelliferae",
+      nextNodeId: "umbelliferae_a",
     },
     opcionA_prima: {
       label: "No; flores pequeñas o grandes dispuestas en otra forma",
       keyStep: "G'",
       nextNodeId: "dicot_group_d_h",
+    },
+  },
+  umbelliferae_a: {
+    id: "umbelliferae_a",
+    milestone: "Umbelliferae",
+    manualPage: 343,
+    descripcion: "Umbelliferae - A: tipo de inflorescencia",
+    opcionA: {
+      label: "Flores en cabezuelas densas, esféricas u ovoideas",
+      keyStep: "A",
+      nextNodeId: "eryngium_a",
+    },
+    opcionA_prima: {
+      label: "Flores en umbelas simples o compuestas",
+      keyStep: "A'",
+      especieId: "umbelliferae",
+    },
+  },
+  eryngium_a: {
+    id: "eryngium_a",
+    milestone: "Eryngium",
+    manualPage: 344,
+    descripcion: "Eryngium - A: altura y ramificación",
+    opcionA: {
+      label: "Plantas de menos de 50 cm de alto, tendidas o erectas, con tallos divididos dicotómicamente desde la base o desde poca altura",
+      keyStep: "A",
+      nextNodeId: "eryngium_b",
+    },
+    opcionA_prima: {
+      label: "Plantas de más de 50 cm de alto, erectas, ramificadas solamente en la inflorescencia",
+      keyStep: "A'",
+      nextNodeId: "eryngium_f",
+    },
+  },
+  eryngium_b: {
+    id: "eryngium_b",
+    milestone: "Eryngium",
+    manualPage: 344,
+    descripcion: "Eryngium - B: capítulos coronados por brácteas largas",
+    opcionA: {
+      label: "Capítulos ovoideos, llevando en su ápice algunas brácteas lineal-lanceoladas rígidas, casi tan largas o más largas que el capítulo",
+      keyStep: "B",
+      nextNodeId: "eryngium_c",
+    },
+    opcionA_prima: {
+      label: "Capítulos ovoideos o esféricos, no coronados por brácteas largas",
+      keyStep: "B'",
+      nextNodeId: "eryngium_d",
+    },
+  },
+  eryngium_c: {
+    id: "eryngium_c",
+    milestone: "Eryngium",
+    manualPage: 344,
+    descripcion: "Eryngium - C: consistencia y división de las hojas",
+    opcionA: {
+      label: "Hojas rígidas, las inferiores en roseta, oblanceoladas, dentadas, lobuladas o pinatisectas, con lóbulos espinescentes",
+      keyStep: "C",
+      especieId: "eryngium_coronatum",
+    },
+    opcionA_prima: {
+      label: "Hojas tiernas, radicales y caulinares largamente pecioladas, trisectas, con segmentos lanceolados irregularmente aserrados, lobados o partidos",
+      keyStep: "C'",
+      especieId: "eryngium_kurtzii",
+    },
+  },
+  eryngium_d: {
+    id: "eryngium_d",
+    milestone: "Eryngium",
+    manualPage: 344,
+    descripcion: "Eryngium - D: porte de los tallos",
+    opcionA: {
+      label: "Plantas con tallos tendidos o ascendentes; capítulos ovoideos o cilíndrico-ovoideos; hojas radicales lineales, aserradas o pinatisectas",
+      keyStep: "D",
+      nextNodeId: "eryngium_e",
+    },
+    opcionA_prima: {
+      label: "Plantas con tallos erectos, de 10-30 cm de alto, divididos en 3-5 ramas en la parte superior",
+      keyStep: "D'",
+      especieId: "eryngium_nudicaule",
+    },
+  },
+  eryngium_e: {
+    id: "eryngium_e",
+    milestone: "Eryngium",
+    manualPage: 344,
+    descripcion: "Eryngium - E: largo de brácteas involucrales",
+    opcionA: {
+      label: "Brácteas involucrales mucho más cortas que los capítulos; hojas profundamente pinatisectas; capítulos verdosos, cortamente pedunculados",
+      keyStep: "E",
+      especieId: "eryngium_divaricatum",
+    },
+    opcionA_prima: {
+      label: "Brácteas involucrales iguales o más largas que los capítulos; brácteas florales más largas que las flores",
+      keyStep: "E'",
+      especieId: "eryngium_echinatum",
+    },
+  },
+  eryngium_f: {
+    id: "eryngium_f",
+    milestone: "Eryngium",
+    manualPage: 345,
+    descripcion: "Eryngium - F: forma de hojas y nervaduras",
+    opcionA: {
+      label: "Hojas lanceoladas, con nervaduras divergentes y margen provisto de dientes perpendiculares espinosos y cilias",
+      keyStep: "F",
+      nextNodeId: "eryngium_g",
+    },
+    opcionA_prima: {
+      label: "Hojas lineales, con nervaduras paralelas y margen entero, provisto de espinas apenas divergentes, o sin espinas",
+      keyStep: "F'",
+      nextNodeId: "eryngium_h",
+    },
+  },
+  eryngium_g: {
+    id: "eryngium_g",
+    milestone: "Eryngium",
+    manualPage: 345,
+    descripcion: "Eryngium - G: brácteas florales",
+    opcionA: {
+      label: "Brácteas florales enteras; hojas basales lineal-lanceoladas, agudas, envainadoras en la base",
+      keyStep: "G",
+      especieId: "eryngium_serra",
+    },
+    opcionA_prima: {
+      label: "Brácteas florales tricuspidadas; hojas basales oblanceolado-lineales, aserradas, con dientes muy abiertos espinosos",
+      keyStep: "G'",
+      especieId: "eryngium_elegans",
+    },
+  },
+  eryngium_h: {
+    id: "eryngium_h",
+    milestone: "Eryngium",
+    manualPage: 345,
+    descripcion: "Eryngium - H: forma y color de los capítulos",
+    opcionA: {
+      label: "Capítulos cilíndricos, de color vinoso, de 1-2 cm, con brácteas involucrales y florales muy cortas",
+      keyStep: "H",
+      especieId: "eryngium_ebracteatum",
+    },
+    opcionA_prima: {
+      label: "Capítulos esféricos u ovoideos",
+      keyStep: "H'",
+      nextNodeId: "eryngium_j",
+    },
+  },
+  eryngium_j: {
+    id: "eryngium_j",
+    milestone: "Eryngium",
+    manualPage: 345,
+    descripcion: "Eryngium - J: escamas del fruto",
+    opcionA: {
+      label: "Frutos con escamas marginales aliformes, pero sin escamas dorsales; capítulos ovoideos de 15-20 mm en panoja alargada de cimas",
+      keyStep: "J",
+      especieId: "eryngium_eburneum",
+    },
+    opcionA_prima: {
+      label: "Frutos con escamas dorsales vesiculosas o membranosas; capítulos dispuestos en cimas corimbiformes",
+      keyStep: "J'",
+      nextNodeId: "eryngium_k",
+    },
+  },
+  eryngium_k: {
+    id: "eryngium_k",
+    milestone: "Eryngium",
+    manualPage: 345,
+    descripcion: "Eryngium - K: tamaño y disposición de capítulos",
+    opcionA: {
+      label: "Capítulos ovoideos, verdosos o algo violáceos, de 7-9 mm, en amplia panoja corimbiforme de cimas",
+      keyStep: "K",
+      especieId: "eryngium_pandanifolium",
+    },
+    opcionA_prima: {
+      label: "Capítulos esféricos o subovoideos, de 10-18 mm",
+      keyStep: "K'",
+      nextNodeId: "eryngium_l",
+    },
+  },
+  eryngium_l: {
+    id: "eryngium_l",
+    milestone: "Eryngium",
+    manualPage: 345,
+    descripcion: "Eryngium - L: capítulos globosos u ovoideo-globosos",
+    opcionA: {
+      label: "Capítulos globosos, de 10-12 mm, verdosos, dispuestos en densa panoja de cimas; brácteas involucrales ovadas, acuminado-espinosas, enteras",
+      keyStep: "L",
+      especieId: "eryngium_horridum",
+    },
+    opcionA_prima: {
+      label: "Capítulos ovoideo-globosos, de 15-17 mm, en cimas corimbiformes dicotómicas muy laxas; brácteas involucrales acuminadas",
+      keyStep: "L'",
+      especieId: "eryngium_chamissonis",
     },
   },
   dicot_group_d_h: {
