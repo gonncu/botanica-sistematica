@@ -4951,6 +4951,46 @@ export const manualFamilyData: Record<string, Especie> = {
     "Fruto dehiscente por circuncisión transversal; flores de 3,5-5 mm; cáliz de 2-2,5 mm, tan largo como el tubo corolino o mayor; lóbulos calicinos alargados y revolutos en el ápice; lóbulos corolinos angostos y largos, 1,5-2 veces mayores que el tubo, reflejos; estilos cilíndricos, mucho más largos que el ovario.",
     "Paraguay y Misiones en la Argentina. Accidental en la ribera platense: Quilmes."
   ),
+  dichondra_repens: species(
+    "dichondra_repens",
+    "Dichondra repens",
+    "111. Convolvulaceae",
+    "Hierba débil, tendida, con hojas acorazonadas o reniformes y flores pequeñas, axilares, solitarias.",
+    "Plantas verdes, laxamente pubescentes, perennes, pigmeas, con tallos rastreros radicantes; hojas largamente pecioladas, cordado-orbiculares o reniformes, enteras, de 8-25 mm de largo y ancho; flores axilares, largamente pedunculadas; cáliz de 2 mm; corola amarillenta de la misma longitud que el cáliz; ovario velludo.",
+    "América cálida; adventicia en casi todo el globo. Común en campos húmedos y jardines. Primavera. Nombre vulgar: oreja de ratón."
+  ),
+  dichondra_sericea: species(
+    "dichondra_sericea",
+    "Dichondra sericea",
+    "111. Convolvulaceae",
+    "Hierba tendida, plateada, densamente seríceo-pubescente.",
+    "Cáliz de 3 mm; los demás caracteres son semejantes a Dichondra repens: hojas acorazonadas o reniformes, flores pequeñas axilares y fruto formado por dos capsulitas.",
+    "América cálida. Rara en la estepa climax; más común en las sierras de la provincia de Buenos Aires."
+  ),
+  cressa_truxillensis: species(
+    "cressa_truxillensis",
+    "Cressa truxillensis",
+    "111. Convolvulaceae",
+    "Sufrútice enano, con ramas ascendentes, densamente hojosas, seríceo-pubescentes.",
+    "Hojas lanceoladas, de 8-10 mm; flores cortamente pedunculadas, solitarias en las axilas de las hojas superiores; cáliz de 4 mm; corola amarillenta, algo más larga; ovario bilocular con dos estilos separados desde la base y estigmas globosos.",
+    "América austral. Rara en campos bajos y salobres: Tolosa. Primavera."
+  ),
+  evolvulus_sericeus: species(
+    "evolvulus_sericeus",
+    "Evolvulus sericeus",
+    "111. Convolvulaceae",
+    "Hierba perenne, densamente seríceo-pubescente, con tallos tendidos o ascendentes.",
+    "Hojas lanceoladas, cortamente pecioladas, de 6-25 mm; flores sésiles o cortamente pedunculadas en las axilas superiores; sépalos de 3-5 mm, acuminados; corola blanca o azulada, con limbo rotáceo de 7-12 mm de diámetro; estilos dos, libres o apenas unidos en la base, profundamente bífidos.",
+    "América cálida. Se halla en la estepa climax. Verano."
+  ),
+  aniseia_argentina: species(
+    "aniseia_argentina",
+    "Aniseia argentina",
+    "111. Convolvulaceae",
+    "Enredadera casi glabra.",
+    "Sépalos exteriores mucho mayores que los internos; hojas cortamente pecioladas, oblongo-lanceoladas, obtusas y mucronadas, de 6-7 cm por 1-1,5 cm; flores 1-3, axilares, largamente pedunculadas; corola rosado-violácea o blanca, de unos 3,5 cm.",
+    "Paraguay y nordeste de la Argentina. Rara en el Delta y ribera del Plata."
+  ),
   solanaceae: family(
     "solanaceae",
     "116. Solanaceae",
@@ -14492,7 +14532,103 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Plantas no parásitas, con clorofila; tallos volubles o rastreros, con hojas",
       keyStep: "A'",
+      nextNodeId: "convolvulaceae_b",
+    },
+  },
+  convolvulaceae_b: {
+    id: "convolvulaceae_b",
+    milestone: "Convolvulaceae",
+    manualPage: 375,
+    descripcion: "Convolvulaceae - B: división del ovario y tipo de fruto",
+    opcionA: {
+      label: "Ovario partido en dos, con dos estilos insertos entre las dos mitades; fruto formado por dos capsulitas monospermas; plantas rastreras con hojas reniformes",
+      keyStep: "B",
+      nextNodeId: "dichondra_a",
+    },
+    opcionA_prima: {
+      label: "Ovario no partido en dos; fruto capsular dehiscente",
+      keyStep: "B'",
+      nextNodeId: "convolvulaceae_c",
+    },
+  },
+  convolvulaceae_c: {
+    id: "convolvulaceae_c",
+    milestone: "Convolvulaceae",
+    manualPage: 375,
+    descripcion: "Convolvulaceae - C: estilos del gineceo",
+    opcionA: {
+      label: "Gineceo con dos estilos separados, o con un solo estilo partido casi hasta su base",
+      keyStep: "C",
+      nextNodeId: "convolvulaceae_d",
+    },
+    opcionA_prima: {
+      label: "Gineceo con un solo estilo indiviso o sólo dividido en el ápice",
+      keyStep: "C'",
+      nextNodeId: "convolvulaceae_e",
+    },
+  },
+  convolvulaceae_d: {
+    id: "convolvulaceae_d",
+    milestone: "Convolvulaceae",
+    manualPage: 375,
+    descripcion: "Convolvulaceae - D: división de los estilos",
+    opcionA: {
+      label: "Gineceo con dos estilos separados, indivisos, con estigmas capitados; hierbas bajas de flores pequeñas",
+      keyStep: "D",
+      especieId: "cressa_truxillensis",
+    },
+    opcionA_prima: {
+      label: "Gineceo con dos estilos separados o unidos sólo en la base, cada uno profundamente bífido; hierbas tendidas, ascendentes o erectas",
+      keyStep: "D'",
+      especieId: "evolvulus_sericeus",
+    },
+  },
+  convolvulaceae_e: {
+    id: "convolvulaceae_e",
+    milestone: "Convolvulaceae",
+    manualPage: 375,
+    descripcion: "Convolvulaceae - E: forma del estigma",
+    opcionA: {
+      label: "Estigma capitado o bilobado, con lóbulos globosos",
+      keyStep: "E",
+      nextNodeId: "convolvulaceae_f",
+    },
+    opcionA_prima: {
+      label: "Estigma bifurcado, con lóbulos ovados o lineales",
+      keyStep: "E'",
       especieId: "convolvulaceae",
+    },
+  },
+  convolvulaceae_f: {
+    id: "convolvulaceae_f",
+    milestone: "Convolvulaceae",
+    manualPage: 376,
+    descripcion: "Convolvulaceae - F: tamaño relativo de los sépalos",
+    opcionA: {
+      label: "Sépalos exteriores mucho mayores que los internos, herbáceos, generalmente acorazonados o decurrentes en la base",
+      keyStep: "F",
+      especieId: "aniseia_argentina",
+    },
+    opcionA_prima: {
+      label: "Sépalos más o menos iguales entre sí",
+      keyStep: "F'",
+      especieId: "convolvulaceae",
+    },
+  },
+  dichondra_a: {
+    id: "dichondra_a",
+    milestone: "Dichondra",
+    manualPage: 378,
+    descripcion: "Dichondra - A: pubescencia y color de la planta",
+    opcionA: {
+      label: "Plantas verdes, laxamente pubescentes; cáliz de 2 mm; corola amarillenta de la misma longitud que el cáliz",
+      keyStep: "A",
+      especieId: "dichondra_repens",
+    },
+    opcionA_prima: {
+      label: "Plantas plateadas, densamente seríceo-pubescentes; cáliz de 3 mm",
+      keyStep: "A'",
+      especieId: "dichondra_sericea",
     },
   },
   cuscuta_a: {
