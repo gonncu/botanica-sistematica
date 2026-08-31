@@ -1,4 +1,4 @@
-import { CladoNode, Especie } from "@/types";
+﻿import { CladoNode, Especie } from "@/types";
 
 function family(
   id: string,
@@ -4490,6 +4490,134 @@ export const manualFamilyData: Record<string, Especie> = {
     "110. Asclepiadaceae",
     "Dicotiledóneas del Grupo E.",
     "Plantas con látex abundante; androceo y gineceo unidos en ginostemio; polen en polinias."
+  ),
+  oxypetalum_solanoides: species(
+    "oxypetalum_solanoides",
+    "Oxypetalum solanoides",
+    "110. Asclepiadaceae",
+    "Hierba perenne con tallos erectos, densamente pubescentes, de 30-50 cm de alto.",
+    "Flores en seudocorimbos terminales y axilares; cáliz con lóbulos lineal-lanceolados, pubescentes; corola rosada fuerte, pubescente exteriormente, de unos 10 mm; corona con lóbulos rojizos; estigma largamente bífido; folículos pubescentes de 10-15 cm; hojas ovadas, acorazonadas, enteras, amarillento-tomentosas, de 3-7 cm.",
+    "Sur del Brasil, Uruguay y norte y centro de la Argentina. Común en la estepa pampeana climáxica. Primavera."
+  ),
+  oxypetalum_pratense: species(
+    "oxypetalum_pratense",
+    "Oxypetalum pratense",
+    "110. Asclepiadaceae",
+    "Hierba perenne, erecta, de 30-50 cm de alto, con tallos y hojas pubescentes.",
+    "Flores en umbelas terminales; cáliz con segmentos lineales; corola rosada, con tubo de 2 mm y lóbulos lanceolados de 5-7 mm; apéndice estigmático bidentado; hojas pecioladas, oblongo-ovadas, acorazonadas, enteras, de 3-5 cm.",
+    "Norte y centro de la Argentina, Paraguay y Uruguay. Común en las sierras de Buenos Aires, pero muy rara cerca de la Capital Federal."
+  ),
+  oxypetalum_atropurpureum: species(
+    "oxypetalum_atropurpureum",
+    "Oxypetalum atropurpureum",
+    "110. Asclepiadaceae",
+    "Hierba perenne, erecta, pubescente, de unos 25 cm de alto.",
+    "Caudículas sin diente; hojas ovado-acorazonadas, cortamente pecioladas, de 2,5 cm; flores en umbelas terminales; segmentos del cáliz lanceolados; corola con tubo acampanado corto y lóbulos anchamente lanceolados de 3 mm; apéndice estigmático corto.",
+    "Sur del Brasil y provincia de Buenos Aires: Chacabuco."
+  ),
+  oxypetalum_balansae: species(
+    "oxypetalum_balansae",
+    "Oxypetalum balansae",
+    "110. Asclepiadaceae",
+    "Planta voluble, con hojas largamente pecioladas, ovado-acorazonadas, agudas, laxamente pubescentes, de 6 cm.",
+    "Flores en corimbos axilares paucifloros; cáliz con segmentos lineales de 4 mm; corola con tubo acampanado corto y lóbulos reflejos, lanceolados, de 8-10 mm; apéndice estigmático bífido; caudículas con diente grande.",
+    "Bolivia, Paraguay y norte de la Argentina. Muy rara en la región estudiada: San Martín."
+  ),
+  amblyopetalum_coccineum: species(
+    "amblyopetalum_coccineum",
+    "Amblyopetalum coccineum",
+    "110. Asclepiadaceae",
+    "Hierba perenne, erecta, pubescente, de 30-60 cm de alto.",
+    "Hojas ovado-acorazonadas de 3-7 cm; flores rojas en cimas corimbiformes terminales; corona inserta en la base del ginostegio, con lóbulos cuadrangulares; caudículas descendentes, cortas, sin diente; folículos de 9-10 cm.",
+    "Norte y centro de la Argentina. Citada para campos altos de San Fernando, San Isidro, etc."
+  ),
+  asclepias_mellodora: species(
+    "asclepias_mellodora",
+    "Asclepias mellodora",
+    "110. Asclepiadaceae",
+    "Hierba perenne, laxamente pubescente, de 30-50 cm de alto, con raíces leñosas gruesas y tallos ascendentes o erguidos.",
+    "Corona doble; hojas lanceoladas, casi glabras, enteras, de 5-9 cm; flores amarillentas; cáliz de 3 mm; corola con segmentos reflejos de unos 6 mm; folículos de 9-12 cm.",
+    "Sur del Brasil, Uruguay y norte de la Argentina. Muy común en la estepa climax. Verano. Nombre vulgar: yerba de la víbora."
+  ),
+  cynanchum_bonariense: species(
+    "cynanchum_bonariense",
+    "Cynanchum bonariense",
+    "110. Asclepiadaceae",
+    "Enredadera con ramas delgadas, pubescentes.",
+    "Flores diminutas amarillentas en umbelas paucifloras; corola glabra, con tubo corto y lóbulos lanceolados de unos 3 mm; hojas pequeñas, ovado-lanceoladas, cortamente pecioladas, de 2 cm; folículos lineales de 3-4 cm.",
+    "Norte y centro de la Argentina. Citada para Buenos Aires por Decaisne y Hicken."
+  ),
+  araujia_hortorum: species(
+    "araujia_hortorum",
+    "Araujia hortorum",
+    "110. Asclepiadaceae",
+    "Sufrútice voluble, con tallos enroscantes albo-pubescentes.",
+    "Segmentos del cáliz no reflejos; corola blanca o rosada, de unos 15 mm, con lóbulos abiertos; hojas ovado-triangulares, obtusas y truncadas en la base, discolores, glabras en el haz y densamente albo-pubescentes en el envés, de 5-10 cm; folículos ovoideos, lisos y glabros, de 14 cm por 5 cm.",
+    "América del Sur cálida. Común en bosques del Delta y ribera del Plata, también en alambrados y cercos. Medicinal: galactógena. Nombre vulgar: tasi."
+  ),
+  araujia_angustifolia: species(
+    "araujia_angustifolia",
+    "Araujia angustifolia",
+    "110. Asclepiadaceae",
+    "Sufrútice voluble.",
+    "Segmentos del cáliz reflejos, lanceolados, de unos 12 mm; corola con tubo acampanado y lóbulos reflejos, de 22-24 mm en total; hojas hastado-sagitadas, cortamente pecioladas, glabras, de 4-10 cm; flores pocas o solitarias; folículos ovoides, acuminados, lisos, de 8-9 cm por 2,5 cm.",
+    "Nordeste de la Argentina, hasta Campana y Vicente López."
+  ),
+  morrenia_brachystephana: species(
+    "morrenia_brachystephana",
+    "Morrenia brachystephana",
+    "110. Asclepiadaceae",
+    "Sufrútice voluble, con pubescencia blanca laxa.",
+    "Flores pequeñas; corola casi rotácea, con tubo corto y lóbulos de 6-7 mm; corona tubuloso-acampanada, de 2-3 mm; ginostegio subsésil; hojas ovado-hastadas o lanceolado-hastadas, de 3-5 cm; umbelas paucifloras; folículos rugosos de 6-7 cm.",
+    "Norte y centro de la Argentina. Se halla en cercos, bosques, etc."
+  ),
+  morrenia_odorata: species(
+    "morrenia_odorata",
+    "Morrenia odorata",
+    "110. Asclepiadaceae",
+    "Sufrútice voluble, laxamente albo-piloso.",
+    "Flores mayores; corola rotácea, con lóbulos de 10-12 mm; corona tubulosa de cerca de 8 mm; ginostegio estipitado; hojas ovado-hastadas de 3-6 cm; umbelas paucifloras; folículos lisos de 8-14 cm.",
+    "Paraguay, sur del Brasil y norte y centro de la Argentina. Común en bosques secos, cercos y alambrados. Nombre vulgar: tasi."
+  ),
+  schistogyne_sylvestris: species(
+    "schistogyne_sylvestris",
+    "Schistogyne sylvestris",
+    "110. Asclepiadaceae",
+    "Sufrútice voluble, glabro o laxamente pubescente.",
+    "Hojas ovado-lanceoladas, acuminadas, acorazonadas en la base, enteras, de 3-8 cm; flores pequeñas en corimbos, con lóbulos de la corola de 4-6 mm, reflejos y retorcidos; estigma terminado en 7 filamentos largos y retorcidos; folículos de 5-6 cm.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Común en bosques primitivos del Delta y ribera platense. Verano."
+  ),
+  philibertia_gilliesii_gracilis: species(
+    "philibertia_gilliesii_gracilis",
+    "Philibertia gilliesii var. gracilis",
+    "110. Asclepiadaceae",
+    "Sufrútice voluble.",
+    "Hojas acorazonadas, glabras o algo pubescentes, de unos 7 cm por 4-5 cm; cimas extraaxilares paucifloras; corola de unos 15 mm de diámetro, blanco-verdosa por fuera y con manchas vinosas por dentro; corona con lóbulos vesiculosos; apéndice estigmático algo partido en el ápice.",
+    "Bolivia y norte y centro de la Argentina. Se halla en bosques xerófilos: Isla Martín García, General Lavalle, etc."
+  ),
+  funastrum_flavum: species(
+    "funastrum_flavum",
+    "Funastrum flavum",
+    "110. Asclepiadaceae",
+    "Sufrútice voluble con hojas opuestas, pecioladas.",
+    "Corona doble, blanca, con segmentos cuculados; hojas ovado-lanceoladas, agudas y acorazonadas en la base, enteras, laxamente pubescentes, de 8-13 cm por 2,5-3,5 cm; cimas umbeliformes multifloras; corola rotácea, con lóbulos ovado-lanceolados de unos 5 mm; folículos fusiformes de 8 cm.",
+    "Uruguay y nordeste de la Argentina, hasta el Delta y la ribera platense."
+  ),
+  roulinia_montevidensis: species(
+    "roulinia_montevidensis",
+    "Roulinia montevidensis",
+    "110. Asclepiadaceae",
+    "Sufrútice voluble, con hojas pecioladas, opuestas.",
+    "Hojas ovadas, agudas y acorazonadas en la base, enteras, glabras, de 5-9 cm por 3-7 cm; cimas paucifloras; lóbulos de la corola de 4-7 mm; corona simple, con lóbulos anchos insertos en el tubo de la corola; folículos de 7-10 cm.",
+    "Bosques húmedos del sur del Brasil, Paraguay, Uruguay y norte y centro de la Argentina. Común en el Delta y ribera platense."
+  ),
+  metastelma_virgatum: species(
+    "metastelma_virgatum",
+    "Metastelma virgatum",
+    "110. Asclepiadaceae",
+    "Sufrútice voluble con hojas pequeñas y flores amarillentas o verdosas en cimas extraaxilares.",
+    "Hojas diminutas, cortamente pecioladas, ovado-lanceoladas, enteras, fácilmente caducas, de 1-3 cm por 0,5-1 cm; flores muy pequeñas; corona simple con lóbulos lineales insertos en la base del ginostegio; folículos de unos 3 cm.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Común en el Delta y bosques de la ribera platense. Invierno."
   ),
   nyctaginaceae: family(
     "nyctaginaceae",
@@ -13385,12 +13513,268 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Plantas con látex abundante; androceo y gineceo unidos formando ginostemio; polen en polinias",
       keyStep: "K",
-      especieId: "asclepiadaceae",
+      nextNodeId: "asclepiadaceae_a",
     },
     opcionA_prima: {
       label: "Plantas sin látex o con látex inconspicuo; androceo y gineceo no unidos en ginostemio; polen no en polinias",
       keyStep: "K'",
       nextNodeId: "dicot_group_e_l",
+    },
+  },
+  asclepiadaceae_a: {
+    id: "asclepiadaceae_a",
+    milestone: "Asclepiadaceae",
+    manualPage: 369,
+    descripcion: "Asclepiadaceae - A: hábito de la planta",
+    opcionA: {
+      label: "Plantas erectas",
+      keyStep: "A",
+      nextNodeId: "asclepiadaceae_b",
+    },
+    opcionA_prima: {
+      label: "Plantas volubles",
+      keyStep: "A'",
+      nextNodeId: "asclepiadaceae_d",
+    },
+  },
+  asclepiadaceae_b: {
+    id: "asclepiadaceae_b",
+    milestone: "Asclepiadaceae",
+    manualPage: 369,
+    descripcion: "Asclepiadaceae - B: tipo de corona en plantas erectas",
+    opcionA: {
+      label: "Corona simple",
+      keyStep: "B",
+      nextNodeId: "asclepiadaceae_c",
+    },
+    opcionA_prima: {
+      label: "Corona doble; caudículas sin diente",
+      keyStep: "B'",
+      especieId: "asclepias_mellodora",
+    },
+  },
+  asclepiadaceae_c: {
+    id: "asclepiadaceae_c",
+    milestone: "Asclepiadaceae",
+    manualPage: 369,
+    descripcion: "Asclepiadaceae - C: presencia de diente en las caudículas",
+    opcionA: {
+      label: "Caudículas con un diente en su parte superior",
+      keyStep: "C",
+      nextNodeId: "oxypetalum_a",
+    },
+    opcionA_prima: {
+      label: "Caudículas sin diente",
+      keyStep: "C'",
+      especieId: "amblyopetalum_coccineum",
+    },
+  },
+  asclepiadaceae_d: {
+    id: "asclepiadaceae_d",
+    milestone: "Asclepiadaceae",
+    manualPage: 369,
+    descripcion: "Asclepiadaceae - D: presencia de tubo en la corona",
+    opcionA: {
+      label: "Corona formando un tubo en su parte inferior",
+      keyStep: "D",
+      nextNodeId: "asclepiadaceae_e",
+    },
+    opcionA_prima: {
+      label: "Corona sin tubo, con lóbulos libres o apenas soldados en la base",
+      keyStep: "D'",
+      nextNodeId: "asclepiadaceae_g",
+    },
+  },
+  asclepiadaceae_e: {
+    id: "asclepiadaceae_e",
+    milestone: "Asclepiadaceae",
+    manualPage: 369,
+    descripcion: "Asclepiadaceae - E: tamaño de las flores",
+    opcionA: {
+      label: "Flores diminutas, con corola no mayor de 5 mm de diámetro",
+      keyStep: "E",
+      especieId: "cynanchum_bonariense",
+    },
+    opcionA_prima: {
+      label: "Flores medianas o grandes, con corola de más de 10 mm de diámetro",
+      keyStep: "E'",
+      nextNodeId: "asclepiadaceae_f",
+    },
+  },
+  asclepiadaceae_f: {
+    id: "asclepiadaceae_f",
+    milestone: "Asclepiadaceae",
+    manualPage: 369,
+    descripcion: "Asclepiadaceae - F: retináculo y unión del tubo de la corona",
+    opcionA: {
+      label: "Retináculo con apéndice membranáceo superior; tubo de la corona soldado a la corola",
+      keyStep: "F",
+      nextNodeId: "araujia_a",
+    },
+    opcionA_prima: {
+      label: "Retináculo sin apéndice; tubo de la corona no soldado a la corola",
+      keyStep: "F'",
+      nextNodeId: "morrenia_a",
+    },
+  },
+  asclepiadaceae_g: {
+    id: "asclepiadaceae_g",
+    milestone: "Asclepiadaceae",
+    manualPage: 369,
+    descripcion: "Asclepiadaceae - G: apéndices estigmáticos del ginostegio",
+    opcionA: {
+      label: "Ginostegio terminado en uno o más apéndices estigmáticos",
+      keyStep: "G",
+      nextNodeId: "asclepiadaceae_h",
+    },
+    opcionA_prima: {
+      label: "Ginostegio superiormente plano, sin apéndices estigmáticos",
+      keyStep: "G'",
+      nextNodeId: "asclepiadaceae_j",
+    },
+  },
+  asclepiadaceae_h: {
+    id: "asclepiadaceae_h",
+    milestone: "Asclepiadaceae",
+    manualPage: 369,
+    descripcion: "Asclepiadaceae - H: forma de las caudículas",
+    opcionA: {
+      label: "Caudículas dilatadas en forma de membrana transparente y con un diente superior",
+      keyStep: "H",
+      nextNodeId: "oxypetalum_a",
+    },
+    opcionA_prima: {
+      label: "Caudículas no dilatadas, sin diente",
+      keyStep: "H'",
+      nextNodeId: "asclepiadaceae_i",
+    },
+  },
+  asclepiadaceae_i: {
+    id: "asclepiadaceae_i",
+    milestone: "Asclepiadaceae",
+    manualPage: 369,
+    descripcion: "Asclepiadaceae - I: forma del apéndice estigmático",
+    opcionA: {
+      label: "Apéndices estigmáticos largos, filiformes",
+      keyStep: "I",
+      especieId: "schistogyne_sylvestris",
+    },
+    opcionA_prima: {
+      label: "Apéndice estigmático corto, grueso, entero o dividido",
+      keyStep: "I'",
+      especieId: "philibertia_gilliesii_gracilis",
+    },
+  },
+  asclepiadaceae_j: {
+    id: "asclepiadaceae_j",
+    milestone: "Asclepiadaceae",
+    manualPage: 369,
+    descripcion: "Asclepiadaceae - J: tipo de corona sin apéndices estigmáticos",
+    opcionA: {
+      label: "Corona doble, con segmentos cuculados",
+      keyStep: "J",
+      especieId: "funastrum_flavum",
+    },
+    opcionA_prima: {
+      label: "Corona simple, con segmentos planos",
+      keyStep: "J'",
+      nextNodeId: "asclepiadaceae_k",
+    },
+  },
+  asclepiadaceae_k: {
+    id: "asclepiadaceae_k",
+    milestone: "Asclepiadaceae",
+    manualPage: 369,
+    descripcion: "Asclepiadaceae - K: tamaño de hojas e inserción de la corona",
+    opcionA: {
+      label: "Hojas grandes; lóbulos de la corona anchos, insertos en el tubo de la corola",
+      keyStep: "K",
+      especieId: "roulinia_montevidensis",
+    },
+    opcionA_prima: {
+      label: "Hojas pequeñas, caducas; corona de lóbulos lineales, inserta en la base del ginostegio",
+      keyStep: "K'",
+      especieId: "metastelma_virgatum",
+    },
+  },
+  oxypetalum_a: {
+    id: "oxypetalum_a",
+    milestone: "Oxypetalum",
+    manualPage: 369,
+    descripcion: "Oxypetalum - A: hábito de la planta",
+    opcionA: {
+      label: "Plantas erectas",
+      keyStep: "A",
+      nextNodeId: "oxypetalum_b",
+    },
+    opcionA_prima: {
+      label: "Planta voluble; hojas largamente pecioladas; flores en corimbos paucifloros axilares; caudículas con diente grande",
+      keyStep: "A'",
+      especieId: "oxypetalum_balansae",
+    },
+  },
+  oxypetalum_b: {
+    id: "oxypetalum_b",
+    milestone: "Oxypetalum",
+    manualPage: 369,
+    descripcion: "Oxypetalum - B: diente de las caudículas",
+    opcionA: {
+      label: "Caudículas con diente grande, bien visible",
+      keyStep: "B",
+      nextNodeId: "oxypetalum_c",
+    },
+    opcionA_prima: {
+      label: "Caudículas sin diente; hojas ovado-acorazonadas; flores en umbelas terminales",
+      keyStep: "B'",
+      especieId: "oxypetalum_atropurpureum",
+    },
+  },
+  oxypetalum_c: {
+    id: "oxypetalum_c",
+    milestone: "Oxypetalum",
+    manualPage: 369,
+    descripcion: "Oxypetalum - C: disposición de las flores",
+    opcionA: {
+      label: "Flores en seudocorimbos terminales y axilares; corola rosado fuerte, de unos 10 mm",
+      keyStep: "C",
+      especieId: "oxypetalum_solanoides",
+    },
+    opcionA_prima: {
+      label: "Flores en umbelas terminales; corola rosada, con tubo de 2 mm y lóbulos de 5-7 mm",
+      keyStep: "C'",
+      especieId: "oxypetalum_pratense",
+    },
+  },
+  araujia_a: {
+    id: "araujia_a",
+    milestone: "Araujia",
+    manualPage: 371,
+    descripcion: "Araujia - A: posición de los segmentos del cáliz",
+    opcionA: {
+      label: "Segmentos del cáliz no reflejos; corola blanca o rosada, de unos 15 mm",
+      keyStep: "A",
+      especieId: "araujia_hortorum",
+    },
+    opcionA_prima: {
+      label: "Segmentos del cáliz reflejos, lanceolados; corola de 22-24 mm en total",
+      keyStep: "A'",
+      especieId: "araujia_angustifolia",
+    },
+  },
+  morrenia_a: {
+    id: "morrenia_a",
+    milestone: "Morrenia",
+    manualPage: 372,
+    descripcion: "Morrenia - A: tamaño de flores y folículos",
+    opcionA: {
+      label: "Flores pequeñas; corona de 2-3 mm; folículos rugosos de 6-7 cm",
+      keyStep: "A",
+      especieId: "morrenia_brachystephana",
+    },
+    opcionA_prima: {
+      label: "Flores mayores; corona de cerca de 8 mm; folículos lisos de 8-14 cm",
+      keyStep: "A'",
+      especieId: "morrenia_odorata",
     },
   },
   dicot_group_e_l: {
