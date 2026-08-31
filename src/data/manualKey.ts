@@ -4663,6 +4663,38 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Hojas opuestas y ovario unilocular."
   ),
+  blackstonia_perfoliata: species(
+    "blackstonia_perfoliata",
+    "Blackstonia perfoliata",
+    "108. Gentianaceae",
+    "Hierba anual, glabra, de 20-50 cm de alto.",
+    "Plantas terrestres; cáliz con 6-8 sépalos; lóbulos de la corola y estambres generalmente 8; hojas opuestas, ovado-triangulares, connatas por su base; flores amarillas en cimas laxas; cáliz de 16 mm; corola del largo del cáliz.",
+    "Europa; adventicia en la Argentina y Uruguay. No hallada cerca de Capital Federal, pero presente en campos arenosos de San Clemente del Tuyú y La Margarita."
+  ),
+  centaurium_pulchellum: species(
+    "centaurium_pulchellum",
+    "Centaurium pulchellum",
+    "108. Gentianaceae",
+    "Hierba anual, erecta, ramosa, de 10-50 cm de alto.",
+    "Plantas terrestres; cáliz con 4-5 segmentos; anteras espiraladas; flores generalmente numerosas en cimas dicotómicas laxas; hojas ovadas u oblongas, subobtusas; corola rosada, de 10-12 mm.",
+    "Europa; adventicia en América. Frecuente en suelos húmedos. Verano."
+  ),
+  zygostigma_australe: species(
+    "zygostigma_australe",
+    "Zygostigma australe",
+    "108. Gentianaceae",
+    "Hierba perenne, erecta, poco ramosa, de 20-50 cm de alto.",
+    "Plantas terrestres; cáliz con 4-5 segmentos; anteras rectas; flores 1-3, largamente pedunculadas; hojas opuestas, sésiles, lineales, agudas; cáliz de unos 12 mm; corola de 20-25 mm, con segmentos agudos.",
+    "América austral. Rara en la estepa clímax. Primavera."
+  ),
+  limnanthemum_humboldtianum: species(
+    "limnanthemum_humboldtianum",
+    "Limnanthemum humboldtianum",
+    "108. Gentianaceae",
+    "Hierba acuática, con rizoma corto y raíces fasciculadas.",
+    "Plantas acuáticas, con hojas flotantes largamente pecioladas; lámina orbicular, acorazonada, palmatinervada; flores en fascículos umbeliformes axilares, aparentemente sobre el pecíolo foliar; corola blanca, con lóbulos fimbriados y pelos glandulares largos en la cara superior; cápsulas globosas indehiscentes.",
+    "América cálida. Hallada en la Isla Martín García y en el arroyo del Pescado, entre Eva Perón y Magdalena."
+  ),
   loganiaceae: family(
     "loganiaceae",
     "107. Loganiaceae",
@@ -13802,12 +13834,60 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Ovario unilocular",
       keyStep: "W",
-      especieId: "gentianaceae",
+      nextNodeId: "gentianaceae_a",
     },
     opcionA_prima: {
       label: "Ovario 2-4-locular",
       keyStep: "W'",
       nextNodeId: "loganiaceae_a",
+    },
+  },
+  gentianaceae_a: {
+    id: "gentianaceae_a",
+    milestone: "Gentianaceae",
+    manualPage: 365,
+    descripcion: "Gentianaceae - A: plantas terrestres o acuáticas",
+    opcionA: {
+      label: "Plantas terrestres",
+      keyStep: "A",
+      nextNodeId: "gentianaceae_b",
+    },
+    opcionA_prima: {
+      label: "Plantas acuáticas, con hojas flotantes",
+      keyStep: "A'",
+      especieId: "limnanthemum_humboldtianum",
+    },
+  },
+  gentianaceae_b: {
+    id: "gentianaceae_b",
+    milestone: "Gentianaceae",
+    manualPage: 365,
+    descripcion: "Gentianaceae - B: número de piezas florales",
+    opcionA: {
+      label: "Cáliz con 6-8 sépalos; lóbulos de la corola y estambres generalmente 8; hojas ovadas, opuestas, unidas por su base",
+      keyStep: "B",
+      especieId: "blackstonia_perfoliata",
+    },
+    opcionA_prima: {
+      label: "Cáliz con 4-5 segmentos; lóbulos de la corola y estambres 4-5; hojas lineal-lanceoladas u oblongas",
+      keyStep: "B'",
+      nextNodeId: "gentianaceae_c",
+    },
+  },
+  gentianaceae_c: {
+    id: "gentianaceae_c",
+    milestone: "Gentianaceae",
+    manualPage: 365,
+    descripcion: "Gentianaceae - C: forma de las anteras y número de flores",
+    opcionA: {
+      label: "Anteras espiraladas; flores generalmente numerosas",
+      keyStep: "C",
+      especieId: "centaurium_pulchellum",
+    },
+    opcionA_prima: {
+      label: "Anteras rectas; flores 1-3",
+      keyStep: "C'",
+      especieId: "zygostigma_australe",
     },
   },
   loganiaceae_a: {
