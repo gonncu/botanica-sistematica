@@ -4561,6 +4561,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Árboles con ovario 4-locular y estambres opuestos a los pétalos."
   ),
+  pouteria_salicifolia: species(
+    "pouteria_salicifolia",
+    "Pouteria salicifolia",
+    "104. Sapotaceae",
+    "Árbol de 8-15 m de alto, con corteza parda agrietada longitudinalmente.",
+    "Hojas alternas, coriáceas, oblanceoladas, enteras, glabras, de color verde aceitunado, de 9-15 cm; flores pequeñas, amarillentas, fasciculadas; cáliz sedoso, de 5 mm; corola de 10 mm; frutos carnosos, ovoideos, con una larga punta curva, de unos 4 cm.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Frecuente en las selvas marginales del Delta y de la ribera del Plata. Nombre vulgar: mata-ojo."
+  ),
   primulaceae: family(
     "primulaceae",
     "102. Primulaceae",
@@ -13520,8 +13528,25 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Ovario 4-locular",
       keyStep: "R'",
-      especieId: "sapotaceae",
+      nextNodeId: "sapotaceae_terminal",
     },
+  },
+  sapotaceae_terminal: {
+    id: "sapotaceae_terminal",
+    milestone: "Sapotaceae",
+    manualPage: 361,
+    descripcion: "Sapotaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Pouteria salicifolia",
+      keyStep: "1",
+      especieId: "pouteria_salicifolia",
+    },
+    opcionA_prima: {
+      label: "Identificar como Pouteria salicifolia",
+      keyStep: "1",
+      especieId: "pouteria_salicifolia",
+    },
+    especie: manualFamilyData.pouteria_salicifolia,
   },
   myrsinaceae_a: {
     id: "myrsinaceae_a",
