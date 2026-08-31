@@ -4063,6 +4063,62 @@ export const manualFamilyData: Record<string, Especie> = {
     "Receptáculo prolongado por encima del ovario en un corto hipanto; semillas coronadas por un mechón de pelos blancos; hojas oblongo-lanceoladas, agudamente aserradas, cortamente pubescentes, de 2,5-4 cm; flores axilares; pétalos rosados, pequeños; cápsulas lineales, de 5-6 cm, sobre pedicelos de 1-1,5 cm.",
     "Sur del Brasil, Uruguay y nordeste y centro de la Argentina. Común en el Delta y en la ribera platense. Florece en primavera."
   ),
+  oenothera_rosea: species(
+    "oenothera_rosea",
+    "Oenothera rosea",
+    "98. Onagraceae",
+    "Hierba perenne, de 0,5-1 m de alto.",
+    "Flores rosadas o blancas; pétalos rosados o violáceos, de 5-10 mm; hojas enteras o casi pinatífidas, elípticas, agudas, largamente atenuadas en la base en estrecho pecíolo, de 2-6 cm; flores pequeñas, con hipanto de 4-8 mm; cápsulas obovoideas, con 8 costillas, de 8-10 mm.",
+    "América cálida. Cultivada como ornamental y adventicia en suelos modificados. Florece en verano."
+  ),
+  oenothera_centaurifolia: species(
+    "oenothera_centaurifolia",
+    "Oenothera centaurifolia",
+    "98. Onagraceae",
+    "Hierba perenne, erecta, de 10-50 cm de alto, finamente glanduloso-pubescente.",
+    "Flores rosadas o blancas; pétalos blancos, de 40 mm; hojas runcinadas o lirado-pinatífidas; flores axilares, solitarias, con hipanto de 9-13 mm; cápsulas elipsoideas, aladas, de 15-20 mm.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Rara en la región platense."
+  ),
+  oenothera_affinis: species(
+    "oenothera_affinis",
+    "Oenothera affinis",
+    "98. Onagraceae",
+    "Hierba bienal, erecta, blandamente pubescente, de cerca de 1 m de alto.",
+    "Flores amarillas; pétalos de 20-40 mm; hipanto de 30-100 mm; hojas caulinares lanceoladas, dentadas, de 2-10 cm por 0,5-1,5 cm; flores grandes, con hipanto de 10 cm y pétalos de 25-35 mm; cápsulas cilíndricas.",
+    "América austral. Común en el Delta, junto a las vías férreas, etc. Florece en primavera y verano. Nombre vulgar: flor de la oración."
+  ),
+  oenothera_longiflora: species(
+    "oenothera_longiflora",
+    "Oenothera longiflora",
+    "98. Onagraceae",
+    "Hierba bienal o perenne, con hojas basales en roseta y tallos ascendentes, hirsutos, de 30-60 cm de alto.",
+    "Flores amarillas; hojas caulinares oblongo-ovadas, sésiles y ensanchadas en la base, denticuladas, de 2-5 cm por 0,7-1,6 cm; flores solitarias en las axilas superiores; hipanto de 3-8 cm; pétalos de 2-4 cm; cápsulas cilíndricas, de 2-3 cm.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste y centro de la Argentina. Rara en la región."
+  ),
+  oenothera_indecora: species(
+    "oenothera_indecora",
+    "Oenothera indecora",
+    "98. Onagraceae",
+    "Hierba anual, erecta, pubescente.",
+    "Flores amarillas; pétalos de 3-8 mm; hipanto de 7-18 mm; hojas lanceoladas, dentadas, de 2-7 cm; cápsulas cilíndricas, de 10-27 mm.",
+    "Sur del Brasil, Uruguay y norte y centro de la Argentina. Común en suelos arenosos, terraplenes, etc."
+  ),
+  oenothera_parodiana: species(
+    "oenothera_parodiana",
+    "Oenothera parodiana",
+    "98. Onagraceae",
+    "Hierba bienal, de 15-80 cm de alto, blandamente hirsuta.",
+    "Flores amarillas; hojas florales ovadas, crespas, sésiles, cordiformes; hojas inferiores en roseta, oblanceoladas, sinuado-dentadas, de 5-15 cm; hojas caulinares sésiles, oblongo-lanceoladas, de 2-8 cm; hipanto de 15-35 mm; pétalos de 8-14 mm; cápsulas de 15-35 mm.",
+    "Paraguay, Uruguay y nordeste y centro de la Argentina. Rara en el Delta y en la ribera del Plata."
+  ),
+  oenothera_mollissima: species(
+    "oenothera_mollissima",
+    "Oenothera mollissima",
+    "98. Onagraceae",
+    "Hierba bienal o perenne, de 30-100 cm de alto, blandamente pubescente.",
+    "Flores amarillas; hojas florales lanceoladas, apenas crespas; hojas caulinares lanceoladas, blandamente pubescentes, remotamente dentadas, de 2-10 cm; hipanto de 2-5 cm; pétalos de 1-2 cm; cápsulas cilíndricas, de 2-3,5 cm.",
+    "América austral. Frecuente en suelos arenosos de la ribera."
+  ),
   melastomaceae: family(
     "melastomaceae",
     "97. Melastomaceae",
@@ -11928,7 +11984,103 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Semillas sin mechón de pelos",
       keyStep: "B'",
-      especieId: "onagraceae",
+      nextNodeId: "oenothera_a",
+    },
+  },
+  oenothera_a: {
+    id: "oenothera_a",
+    milestone: "Oenothera",
+    manualPage: 339,
+    descripcion: "Oenothera - A: color de las flores",
+    opcionA: {
+      label: "Flores rosadas o blancas",
+      keyStep: "A",
+      nextNodeId: "oenothera_b",
+    },
+    opcionA_prima: {
+      label: "Flores amarillas; hojas dentadas",
+      keyStep: "A'",
+      nextNodeId: "oenothera_c",
+    },
+  },
+  oenothera_b: {
+    id: "oenothera_b",
+    milestone: "Oenothera",
+    manualPage: 339,
+    descripcion: "Oenothera - B: pétalos rosados o blancos",
+    opcionA: {
+      label: "Pétalos rosados o violáceos, de 5-10 mm; hojas enteras o casi pinatífidas; flores pequeñas, con hipanto de 4-8 mm; cápsulas obovoideas, con 8 costillas",
+      keyStep: "B",
+      especieId: "oenothera_rosea",
+    },
+    opcionA_prima: {
+      label: "Pétalos blancos, de 40 mm; hojas runcinadas o lirado-pinatífidas; flores axilares, solitarias; cápsulas elipsoideas, aladas",
+      keyStep: "B'",
+      especieId: "oenothera_centaurifolia",
+    },
+  },
+  oenothera_c: {
+    id: "oenothera_c",
+    milestone: "Oenothera",
+    manualPage: 340,
+    descripcion: "Oenothera - C: tamaño de pétalos e hipanto",
+    opcionA: {
+      label: "Pétalos de 20-40 mm; hipanto de 30-100 mm",
+      keyStep: "C",
+      nextNodeId: "oenothera_d",
+    },
+    opcionA_prima: {
+      label: "Pétalos de 3-20 mm; hipanto de 10-50 mm",
+      keyStep: "C'",
+      nextNodeId: "oenothera_e",
+    },
+  },
+  oenothera_d: {
+    id: "oenothera_d",
+    milestone: "Oenothera",
+    manualPage: 340,
+    descripcion: "Oenothera - D: hojas caulinares",
+    opcionA: {
+      label: "Hojas caulinares lanceoladas, dentadas; flores grandes, con hipanto de 10 cm y pétalos de 25-35 mm",
+      keyStep: "D",
+      especieId: "oenothera_affinis",
+    },
+    opcionA_prima: {
+      label: "Hojas caulinares oblongo-ovadas, sésiles y ensanchadas en la base, denticuladas; hipanto de 3-8 cm; pétalos de 2-4 cm",
+      keyStep: "D'",
+      especieId: "oenothera_longiflora",
+    },
+  },
+  oenothera_e: {
+    id: "oenothera_e",
+    milestone: "Oenothera",
+    manualPage: 340,
+    descripcion: "Oenothera - E: ciclo y porte",
+    opcionA: {
+      label: "Hierbas anuales, erectas, pubescentes; hojas lanceoladas, dentadas; flores pequeñas; pétalos de 3-8 mm",
+      keyStep: "E",
+      especieId: "oenothera_indecora",
+    },
+    opcionA_prima: {
+      label: "Hierbas bienales o perennes; pétalos de 8-20 mm; hipanto de 15-50 mm",
+      keyStep: "E'",
+      nextNodeId: "oenothera_f",
+    },
+  },
+  oenothera_f: {
+    id: "oenothera_f",
+    milestone: "Oenothera",
+    manualPage: 340,
+    descripcion: "Oenothera - F: hojas florales",
+    opcionA: {
+      label: "Hojas florales ovadas, crespas, sésiles, cordiformes; hojas inferiores en roseta; hipanto de 15-35 mm; pétalos de 8-14 mm",
+      keyStep: "F",
+      especieId: "oenothera_parodiana",
+    },
+    opcionA_prima: {
+      label: "Hojas florales lanceoladas, apenas crespas; hojas caulinares lanceoladas, blandamente pubescentes; hipanto de 2-5 cm; pétalos de 1-2 cm",
+      keyStep: "F'",
+      especieId: "oenothera_mollissima",
     },
   },
   jussiaea_a: {
