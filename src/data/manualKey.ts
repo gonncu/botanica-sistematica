@@ -4455,6 +4455,38 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Hierbas o arbustos; aparece por fruto drupáceo o por inflorescencias escorpioides."
   ),
+  cordia_bifurcata: species(
+    "cordia_bifurcata",
+    "Cordia bifurcata",
+    "113. Boraginaceae",
+    "Arbusto ramoso, de 1,5-2 m de alto, con ramitas y hojas áspero-pubescentes.",
+    "Hojas cortamente pecioladas, lanceoladas u ovado-lanceoladas, aserradas, de 5-6 cm; flores amarillentas en cimas corimbiformes densas; cáliz cortamente dentado; corola acampanada de 5 mm; estilo terminal, bífido, con ramas bifurcadas.",
+    "América del Sur cálida. Frecuente en los bosques marginales del Delta y ribera platense. Primavera."
+  ),
+  heliotropium_curassavicum_argentinum: species(
+    "heliotropium_curassavicum_argentinum",
+    "Heliotropium curassavicum var. argentinum",
+    "113. Boraginaceae",
+    "Hierba perenne, baja, glauca, glabra, con tallos ramosos desde la base y tendidos.",
+    "Hojas carnosas, lineal-espatuladas, enteras, de 2-5 cm por 3-6 mm; flores pequeñas, blancas; corola de 3-5 mm; estilo terminal indiviso; frutos secos que se separan en nuececitas.",
+    "Suelos salinos del sur del Brasil, Paraguay, Uruguay y norte y centro de la Argentina. Común en suelos salados de Buenos Aires. Nombre vulgar: heliotropo."
+  ),
+  heliotropium_amplexicaule: species(
+    "heliotropium_amplexicaule",
+    "Heliotropium amplexicaule",
+    "113. Boraginaceae",
+    "Hierba perenne, densamente velluda, con tallos tendidos o ascendentes, ramosos.",
+    "Plantas hirsutas; hojas sésiles y algo abrazadoras en la base, lanceoladas u oblongas, agudas o semiobtusas, enteras u onduladas; flores violetas dispuestas en 2-4 cimas escorpioides terminales.",
+    "América austral, hasta el norte y centro de la Argentina. Común en suelos sueltos, terraplenes y caminos. Nombre vulgar: borraja de campo."
+  ),
+  heliotropium_nicotianaefolium: species(
+    "heliotropium_nicotianaefolium",
+    "Heliotropium nicotianaefolium",
+    "113. Boraginaceae",
+    "Sufrútice o hierba perenne, densamente glanduloso-velludo, con tallos ascendentes o erectos.",
+    "Plantas hirsutas o glanduloso-pubescentes; hojas pecioladas, con pecíolo de 1-4 cm, ovado-lanceoladas; flores violetas en cincinios; estilo terminal indiviso.",
+    "América austral hasta el norte y centro de la Argentina. Frecuente en los bosques del Delta y ribera del Plata. Verano."
+  ),
   scrophulariaceae: family(
     "scrophulariaceae",
     "117. Scrophulariaceae",
@@ -14653,7 +14685,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Estilo indiviso o cortamente bilobado",
       keyStep: "Z'",
-      especieId: "borraginaceae",
+      nextNodeId: "boraginaceae_a",
     },
   },
   hydrophyllaceae_terminal: {
@@ -14672,6 +14704,70 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "phacelia_artemisioides",
     },
     especie: manualFamilyData.phacelia_artemisioides,
+  },
+  boraginaceae_a: {
+    id: "boraginaceae_a",
+    milestone: "Boraginaceae",
+    manualPage: 385,
+    descripcion: "Boraginaceae - A: posición del estilo y división del ovario",
+    opcionA: {
+      label: "Estilo terminal; ovario indiviso",
+      keyStep: "A",
+      nextNodeId: "boraginaceae_b",
+    },
+    opcionA_prima: {
+      label: "Estilo ginobásico, inserto entre los cuatro lóbulos que forman el ovario",
+      keyStep: "A'",
+      especieId: "borraginaceae",
+    },
+  },
+  boraginaceae_b: {
+    id: "boraginaceae_b",
+    milestone: "Boraginaceae",
+    manualPage: 385,
+    descripcion: "Boraginaceae - B: hábito y división del estilo",
+    opcionA: {
+      label: "Arbustos; estilos divididos dos veces",
+      keyStep: "B",
+      especieId: "cordia_bifurcata",
+    },
+    opcionA_prima: {
+      label: "Hierbas; estilo indiviso",
+      keyStep: "B'",
+      nextNodeId: "heliotropium_a",
+    },
+  },
+  heliotropium_a: {
+    id: "heliotropium_a",
+    milestone: "Heliotropium",
+    manualPage: 386,
+    descripcion: "Heliotropium - A: pubescencia y porte",
+    opcionA: {
+      label: "Plantas glabras, con tallos ramosos desde la base, tendidos; hojas carnosas lineal-espatuladas",
+      keyStep: "A",
+      especieId: "heliotropium_curassavicum_argentinum",
+    },
+    opcionA_prima: {
+      label: "Plantas hirsutas o glanduloso-pubescentes",
+      keyStep: "A'",
+      nextNodeId: "heliotropium_b",
+    },
+  },
+  heliotropium_b: {
+    id: "heliotropium_b",
+    milestone: "Heliotropium",
+    manualPage: 386,
+    descripcion: "Heliotropium - B: hojas e inflorescencia",
+    opcionA: {
+      label: "Hojas sésiles y algo abrazadoras; flores violetas en 2-4 cimas escorpioides terminales",
+      keyStep: "B",
+      especieId: "heliotropium_amplexicaule",
+    },
+    opcionA_prima: {
+      label: "Hojas pecioladas, ovado-lanceoladas; flores violetas en cincinios",
+      keyStep: "B'",
+      especieId: "heliotropium_nicotianaefolium",
+    },
   },
   dicot_group_e_a_lowercase: {
     id: "dicot_group_e_a_lowercase",
