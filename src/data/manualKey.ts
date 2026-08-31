@@ -4889,6 +4889,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Inflorescencias escorpioides y estilo profundamente bífido."
   ),
+  phacelia_artemisioides: species(
+    "phacelia_artemisioides",
+    "Phacelia artemisioides",
+    "112. Hydrophyllaceae",
+    "Hierba anual, hirsuta, ramosa desde la base, con tallos tendidos o ascendentes de 10-30 cm.",
+    "Hojas alternas, bipinatisectas, con segmentos obovados, obtusos e hirsutos; flores muy numerosas en cincinios terminales dísticos, sésiles o casi sésiles, apretadas; cáliz de 2-3 mm; corola blanca o azulada de 3-4 mm, con lóbulos anchos; cápsula globosa de unos 3 mm; semillas tuberculadas.",
+    "Suelos secos o arenosos del sur del Brasil, Uruguay y norte y centro de la Argentina. Rara en la región, más frecuente en el oeste y sur de Buenos Aires."
+  ),
   convolvulaceae: family(
     "convolvulaceae",
     "111. Convolvulaceae",
@@ -14640,13 +14648,30 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Estilo profundamente bífido",
       keyStep: "Z",
-      especieId: "hydrophyllaceae",
+      nextNodeId: "hydrophyllaceae_terminal",
     },
     opcionA_prima: {
       label: "Estilo indiviso o cortamente bilobado",
       keyStep: "Z'",
       especieId: "borraginaceae",
     },
+  },
+  hydrophyllaceae_terminal: {
+    id: "hydrophyllaceae_terminal",
+    milestone: "Hydrophyllaceae",
+    manualPage: 385,
+    descripcion: "Hydrophyllaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Phacelia artemisioides",
+      keyStep: "1",
+      especieId: "phacelia_artemisioides",
+    },
+    opcionA_prima: {
+      label: "Identificar como Phacelia artemisioides",
+      keyStep: "1",
+      especieId: "phacelia_artemisioides",
+    },
+    especie: manualFamilyData.phacelia_artemisioides,
   },
   dicot_group_e_a_lowercase: {
     id: "dicot_group_e_a_lowercase",
