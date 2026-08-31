@@ -4567,6 +4567,46 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Hierbas con óvulos numerosos."
   ),
+  samolus_valerandi: species(
+    "samolus_valerandi",
+    "Samolus valerandi",
+    "102. Primulaceae",
+    "Hierba anual, glabra, erecta, de 10-40 cm de alto.",
+    "Hojas alternas, obovado-espatuladas, enteras; flores en racimos terminales; brácteas insertas en el pedicelo; cáliz de unos 2 mm; corola blanca; ovario semi-ínfero.",
+    "Cosmopolita. Frecuente en suelos húmedos. Verano."
+  ),
+  anagallis_arvensis: species(
+    "anagallis_arvensis",
+    "Anagallis arvensis",
+    "102. Primulaceae",
+    "Hierba anual, glabra, con tallos ascendentes o tendidos.",
+    "Hojas opuestas o ternadas, sésiles, ovadas, enteras; flores axilares, pedunculadas; corola de color minio; cápsula de dehiscencia transversal.",
+    "Europa; adventicia en regiones templadas. Común en suelos modificados."
+  ),
+  anagallis_arvensis_coerulea: species(
+    "anagallis_arvensis_coerulea",
+    "Anagallis arvensis var. coerulea",
+    "102. Primulaceae",
+    "Variedad de Anagallis arvensis con flores de color azul oscuro.",
+    "Hábito semejante a Anagallis arvensis; se distingue por la corola azul oscuro.",
+    "Europa; adventicia en las regiones templadas."
+  ),
+  centunculus_minimus: species(
+    "centunculus_minimus",
+    "Centunculus minimus",
+    "102. Primulaceae",
+    "Hierba anual, pigmea, glabra, de 3-7 cm de alto.",
+    "Hojas alternas, obovadas o elípticas, sésiles o contraídas en la base en corto pecíolo; flores axilares, sésiles o muy cortamente pedunculadas; cáliz más largo que la corola; corola de 1 mm; cápsula dehiscente transversalmente.",
+    "Europa; adventicia en todo el globo. Rara en la región."
+  ),
+  pelletiera_verna: species(
+    "pelletiera_verna",
+    "Pelletiera verna",
+    "102. Primulaceae",
+    "Hierba pigmea, glabra, de 2-10 cm de alto, con tallos ascendentes, angulosos.",
+    "Hojas opuestas, sésiles, lanceoladas; flores solitarias en las axilas de las hojas, cortamente pedunculadas, blancas; cápsula globosa, dehiscente por 3 valvas.",
+    "América austral. Rara en suelos húmedos de la ribera platense."
+  ),
   plumbaginaceae: family(
     "plumbaginaceae",
     "103. Plumbaginaceae",
@@ -13498,12 +13538,76 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Óvulos numerosos",
       keyStep: "S",
-      especieId: "primulaceae",
+      nextNodeId: "primulaceae_a",
     },
     opcionA_prima: {
       label: "Óvulo solitario",
       keyStep: "S'",
       especieId: "plumbaginaceae",
+    },
+  },
+  primulaceae_a: {
+    id: "primulaceae_a",
+    milestone: "Primulaceae",
+    manualPage: 356,
+    descripcion: "Primulaceae - A: posición de flores y ovario",
+    opcionA: {
+      label: "Flores en racimos o corimbos terminales; ovario semi-ínfero",
+      keyStep: "A",
+      especieId: "samolus_valerandi",
+    },
+    opcionA_prima: {
+      label: "Flores solitarias en las axilas de las hojas; ovario súpero",
+      keyStep: "A'",
+      nextNodeId: "primulaceae_b",
+    },
+  },
+  primulaceae_b: {
+    id: "primulaceae_b",
+    milestone: "Primulaceae",
+    manualPage: 356,
+    descripcion: "Primulaceae - B: dehiscencia de la cápsula",
+    opcionA: {
+      label: "Cápsula de dehiscencia transversal (pixidio)",
+      keyStep: "B",
+      nextNodeId: "primulaceae_c",
+    },
+    opcionA_prima: {
+      label: "Cápsula de dehiscencia valvar",
+      keyStep: "B'",
+      especieId: "pelletiera_verna",
+    },
+  },
+  primulaceae_c: {
+    id: "primulaceae_c",
+    milestone: "Primulaceae",
+    manualPage: 356,
+    descripcion: "Primulaceae - C: inserción de estambres y tamaño relativo de corola",
+    opcionA: {
+      label: "Estambres fijos en la base de la corola, que es mayor que el cáliz",
+      keyStep: "C",
+      nextNodeId: "anagallis_a",
+    },
+    opcionA_prima: {
+      label: "Estambres fijos en la fauce de la corola, que es menor que el cáliz",
+      keyStep: "C'",
+      especieId: "centunculus_minimus",
+    },
+  },
+  anagallis_a: {
+    id: "anagallis_a",
+    milestone: "Anagallis",
+    manualPage: 358,
+    descripcion: "Anagallis arvensis - color de la corola",
+    opcionA: {
+      label: "Corola de color minio",
+      keyStep: "1",
+      especieId: "anagallis_arvensis",
+    },
+    opcionA_prima: {
+      label: "Flores de color azul oscuro",
+      keyStep: "1a",
+      especieId: "anagallis_arvensis_coerulea",
     },
   },
   dicot_group_e_t: {
