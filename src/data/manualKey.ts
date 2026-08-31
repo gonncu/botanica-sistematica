@@ -4991,6 +4991,86 @@ export const manualFamilyData: Record<string, Especie> = {
     "Sépalos exteriores mucho mayores que los internos; hojas cortamente pecioladas, oblongo-lanceoladas, obtusas y mucronadas, de 6-7 cm por 1-1,5 cm; flores 1-3, axilares, largamente pedunculadas; corola rosado-violácea o blanca, de unos 3,5 cm.",
     "Paraguay y nordeste de la Argentina. Rara en el Delta y ribera del Plata."
   ),
+  ipomoea_fimbriosepala: species(
+    "ipomoea_fimbriosepala",
+    "Ipomoea fimbriosepala",
+    "111. Convolvulaceae",
+    "Enredadera anual, glabra o hirsuto-pilosa.",
+    "Estambres y estilo cortos, no sobresalientes; sépalos con costillas longitudinales aladas y generalmente dentadas; hojas ovadas o lanceoladas, cordadas o sagitadas en la base; flores solitarias o en cimas corimbiformes; corola rosada de 2-4,5 cm; cápsula bilocular con 4 semillas tomentosas.",
+    "África y América tropicales. Accidental en el puerto de Buenos Aires."
+  ),
+  ipomoea_grandifolia: species(
+    "ipomoea_grandifolia",
+    "Ipomoea grandifolia",
+    "111. Convolvulaceae",
+    "Enredadera anual, con ramas angulosas laxamente hirsutas.",
+    "Ovario bicarpelar, hirsuto-velludo; estigma bilobado; cápsula bilocular, hirsuta, con 4 semillas glabras; hojas ovadas, enteras, algo sinuosas, con un lóbulo a cada lado de la base acorazonada; cimas 3-10-floras, rara vez flores solitarias; sépalos lanceolados, largamente atenuados; corola rosada de 13-25 mm.",
+    "Sur del Brasil, Paraguay, Uruguay y Argentina, hasta el Delta del Paraná."
+  ),
+  ipomoea_purpurea: species(
+    "ipomoea_purpurea",
+    "Ipomoea purpurea",
+    "111. Convolvulaceae",
+    "Enredadera anual, pubescente.",
+    "Ovario tricarpelar, glabro; estigma trilobado; sépalos lanceolados, agudos, híspidos en la base; corola infundibuliforme, violácea, rosada o blanca, de 5-8 cm; hojas enteras, raramente trilobadas, acorazonadas y acuminadas, pubescentes en ambas caras.",
+    "América tropical. Cultivada como ornamental y subespontánea en cercos y escombros. Nombre vulgar: campanilla, suspiros."
+  ),
+  ipomoea_congesta: species(
+    "ipomoea_congesta",
+    "Ipomoea congesta",
+    "111. Convolvulaceae",
+    "Enredadera perenne, con tallos pubescentes.",
+    "Ovario tricarpelar, glabro; sépalos lanceolados, largamente atenuado-caudados, seríceo-pubescentes en la base; corola lilácea de 6-8 cm; hojas orbicular-ovadas, onduladas o trilobadas, pubescentes en el haz y plateado-canescentes en el envés; cimas generalmente trifloras.",
+    "América cálida. Cultivada como enredadera ornamental y con frecuencia subespontánea. Otoño. Nombre vulgar: campanilla, suspiros."
+  ),
+  ipomoea_bonariensis: species(
+    "ipomoea_bonariensis",
+    "Ipomoea bonariensis",
+    "111. Convolvulaceae",
+    "Enredadera perenne, con tallos pubescentes.",
+    "Sépalos membranáceos o coriáceos, obtusos; semillas con largos pelos seríceos en los bordes; hojas acorazonadas, enteras u obtusamente 3-5-lobuladas, seríceo-pubescentes, especialmente en el envés; flores en cimas plurifloras largamente pedunculadas; corola rosada de 4-7 cm; cápsulas esféricas.",
+    "Endémica de la región platense. Común durante el verano en los bosques de la ribera y del Delta."
+  ),
+  ipomoea_platensis: species(
+    "ipomoea_platensis",
+    "Ipomoea platensis",
+    "111. Convolvulaceae",
+    "Hierba perenne, voluble, glabra.",
+    "Hojas profundamente palmatisectas, con 5-9 segmentos estrechamente lanceolados, enteros, de 7-10 cm; cimas axilares paucifloras, largamente pedunculadas; sépalos coriáceos, obtusos; corola acampanado-infundibuliforme, rosada o lilácea, de 5-7 cm; cápsulas esféricas.",
+    "Regiones cálidas de América, hasta el Río de la Plata. Común en los bosques del Delta y de la ribera. Verano."
+  ),
+  ipomoea_cairica: species(
+    "ipomoea_cairica",
+    "Ipomoea cairica",
+    "111. Convolvulaceae",
+    "Hierba perenne, voluble, glabra.",
+    "Hojas profundamente palmatisectas, con 5 segmentos anchamente lanceolados, mucronados en el ápice, de 4-6 cm; cimas paucifloras, con frecuencia unifloras; sépalos obtusos, mucronulados; corola violácea o lilácea, de 4-6 cm; cápsulas esféricas.",
+    "Regiones cálidas del globo. Muy común en cercos y bosques. Otoño."
+  ),
+  ipomoea_alba: species(
+    "ipomoea_alba",
+    "Ipomoea alba",
+    "111. Convolvulaceae",
+    "Hierba perenne, glabra o algo pubescente, con tallos rastreros y volubles.",
+    "Estambres y estilo largos, sobresalientes; flores blancas; sépalos largamente atenuado-caudados; corola hipocraterimorfa de 10-15 cm, con tubo estrecho y limbo muy abierto; cápsula ovado-cónica; hojas inferiores acorazonadas y profundamente trilobadas, las superiores acorazonadas y enteras.",
+    "Regiones cálidas del globo. Común en los bosques del Delta y de la ribera. Frecuentemente cultivada. Nombre vulgar: dama de noche."
+  ),
+  ipomoea_indivisa: species(
+    "ipomoea_indivisa",
+    "Ipomoea indivisa",
+    "111. Convolvulaceae",
+    "Enredadera con flores rojas de 1,5-3 cm y semillas tomentosas.",
+    "Hojas deltoideo-acorazonadas, acuminadas, con algún diente cerca de la base, de 4-6 cm; cimas 2-3-floras, largamente pedunculadas; sépalos obtusos, largamente mucronados.",
+    "América cálida. Frecuente en el Delta y ribera del Plata. Verano."
+  ),
+  ipomoea_quamoclit: species(
+    "ipomoea_quamoclit",
+    "Ipomoea quamoclit",
+    "111. Convolvulaceae",
+    "Enredadera anual, glabra.",
+    "Flores rojas, raramente blancas, de 1,5-3 cm; hojas profundamente pinatisectas, con segmentos lineales; sépalos elípticos, obtusos, mucronados; semillas tomentosas.",
+    "India. Cultivada como planta ornamental y a veces escapada de los cultivos."
+  ),
   solanaceae: family(
     "solanaceae",
     "116. Solanaceae",
@@ -14612,7 +14692,151 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Sépalos más o menos iguales entre sí",
       keyStep: "F'",
-      especieId: "convolvulaceae",
+      nextNodeId: "ipomoea_a",
+    },
+  },
+  ipomoea_a: {
+    id: "ipomoea_a",
+    milestone: "Ipomoea",
+    manualPage: 379,
+    descripcion: "Ipomoea - A: longitud de estambres y estilo respecto del tubo de la corola",
+    opcionA: {
+      label: "Estambres y estilo cortos, no sobresaliendo del tubo de la corola; flores violáceas, rosadas o liláceas, raramente blancas",
+      keyStep: "A",
+      nextNodeId: "ipomoea_b",
+    },
+    opcionA_prima: {
+      label: "Estambres y estilo largos, sobresaliendo del tubo de la corola; flores blancas o rojas",
+      keyStep: "A'",
+      nextNodeId: "ipomoea_h",
+    },
+  },
+  ipomoea_b: {
+    id: "ipomoea_b",
+    milestone: "Ipomoea",
+    manualPage: 379,
+    descripcion: "Ipomoea - B: costillas aladas en los sépalos",
+    opcionA: {
+      label: "Sépalos con costillas longitudinales aladas y generalmente dentadas",
+      keyStep: "B",
+      especieId: "ipomoea_fimbriosepala",
+    },
+    opcionA_prima: {
+      label: "Sépalos sin costillas aladas",
+      keyStep: "B'",
+      nextNodeId: "ipomoea_c",
+    },
+  },
+  ipomoea_c: {
+    id: "ipomoea_c",
+    milestone: "Ipomoea",
+    manualPage: 379,
+    descripcion: "Ipomoea - C: textura y forma de los sépalos",
+    opcionA: {
+      label: "Sépalos herbáceos, agudos o acuminados; semillas glabras o tomentosas",
+      keyStep: "C",
+      nextNodeId: "ipomoea_d",
+    },
+    opcionA_prima: {
+      label: "Sépalos membranáceos o coriáceos, obtusos; semillas con largos pelos seríceos en los bordes",
+      keyStep: "C'",
+      nextNodeId: "ipomoea_f",
+    },
+  },
+  ipomoea_d: {
+    id: "ipomoea_d",
+    milestone: "Ipomoea",
+    manualPage: 379,
+    descripcion: "Ipomoea - D: carpelos, pubescencia del ovario y estigma",
+    opcionA: {
+      label: "Ovario bicarpelar, hirsuto-velludo; estigma bilobado; cápsula bilocular con 4 semillas glabras",
+      keyStep: "D",
+      especieId: "ipomoea_grandifolia",
+    },
+    opcionA_prima: {
+      label: "Ovario tricarpelar, glabro; estigma trilobado; cápsula trilocular con 6 semillas finamente tomentosas",
+      keyStep: "D'",
+      nextNodeId: "ipomoea_e",
+    },
+  },
+  ipomoea_e: {
+    id: "ipomoea_e",
+    milestone: "Ipomoea",
+    manualPage: 380,
+    descripcion: "Ipomoea - E: forma de sépalos y hojas",
+    opcionA: {
+      label: "Sépalos lanceolados, agudos, híspidos en la base; corola violácea, rosada o blanca de 5-8 cm; hojas enteras, raramente trilobadas",
+      keyStep: "E",
+      especieId: "ipomoea_purpurea",
+    },
+    opcionA_prima: {
+      label: "Sépalos lanceolados, largamente atenuado-caudados, seríceo-pubescentes en la base; corola lilácea de 6-8 cm; hojas onduladas o trilobadas",
+      keyStep: "E'",
+      especieId: "ipomoea_congesta",
+    },
+  },
+  ipomoea_f: {
+    id: "ipomoea_f",
+    milestone: "Ipomoea",
+    manualPage: 380,
+    descripcion: "Ipomoea - F: forma de las hojas",
+    opcionA: {
+      label: "Hojas acorazonadas, enteras u obtusamente 3-5-lobuladas, seríceo-pubescentes",
+      keyStep: "F",
+      especieId: "ipomoea_bonariensis",
+    },
+    opcionA_prima: {
+      label: "Hojas profundamente palmatisectas, glabras",
+      keyStep: "F'",
+      nextNodeId: "ipomoea_g",
+    },
+  },
+  ipomoea_g: {
+    id: "ipomoea_g",
+    milestone: "Ipomoea",
+    manualPage: 380,
+    descripcion: "Ipomoea - G: número y forma de los segmentos foliares",
+    opcionA: {
+      label: "Hojas con 5-9 segmentos estrechamente lanceolados, enteros, de 7-10 cm",
+      keyStep: "G",
+      especieId: "ipomoea_platensis",
+    },
+    opcionA_prima: {
+      label: "Hojas con 5 segmentos anchamente lanceolados, mucronados, de 4-6 cm",
+      keyStep: "G'",
+      especieId: "ipomoea_cairica",
+    },
+  },
+  ipomoea_h: {
+    id: "ipomoea_h",
+    milestone: "Ipomoea",
+    manualPage: 380,
+    descripcion: "Ipomoea - H: color de las flores",
+    opcionA: {
+      label: "Flores blancas; sépalos largamente atenuado-caudados; corola hipocraterimorfa de 10-15 cm",
+      keyStep: "H",
+      especieId: "ipomoea_alba",
+    },
+    opcionA_prima: {
+      label: "Flores rojas, de 1,5-3 cm; semillas tomentosas",
+      keyStep: "H'",
+      nextNodeId: "ipomoea_j",
+    },
+  },
+  ipomoea_j: {
+    id: "ipomoea_j",
+    milestone: "Ipomoea",
+    manualPage: 380,
+    descripcion: "Ipomoea - J: forma de las hojas en flores rojas",
+    opcionA: {
+      label: "Hojas deltoideo-acorazonadas, acuminadas, con algún diente cerca de la base",
+      keyStep: "J",
+      especieId: "ipomoea_indivisa",
+    },
+    opcionA_prima: {
+      label: "Hojas profundamente pinatisectas, con segmentos lineales",
+      keyStep: "J'",
+      especieId: "ipomoea_quamoclit",
     },
   },
   dichondra_a: {
