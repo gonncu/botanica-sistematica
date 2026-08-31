@@ -4643,6 +4643,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Estambres 2."
   ),
+  ligustrum_lucidum: species(
+    "ligustrum_lucidum",
+    "Ligustrum lucidum",
+    "106. Oleaceae",
+    "Árbol glabro, de 6-10 m de alto.",
+    "Hojas semicoriáceas, pecioladas, ovadas, enteras, verde oscuras, de 7-15 cm por 3,5-5,5 cm; panojas terminales anchas, multifloras; flores blancas, pequeñas; corola de 4 mm; fruto baya negro-azulada, subglobosa, de 8 mm de diámetro.",
+    "Asia. Cultivado en todo el mundo como árbol de sombra, para cercos, etc. Espontáneo en el Delta del Paraná y en la ribera del Plata, asociado con árboles indígenas. Nombre vulgar: ligustro."
+  ),
   apocynaceae: family(
     "apocynaceae",
     "109. Apocynaceae",
@@ -13692,13 +13700,30 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Estambres 2",
       keyStep: "T",
-      especieId: "oleaceae",
+      nextNodeId: "oleaceae_terminal",
     },
     opcionA_prima: {
       label: "Estambres 4-5",
       keyStep: "T'",
       nextNodeId: "dicot_group_e_u",
     },
+  },
+  oleaceae_terminal: {
+    id: "oleaceae_terminal",
+    milestone: "Oleaceae",
+    manualPage: 362,
+    descripcion: "Oleaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Ligustrum lucidum",
+      keyStep: "1",
+      especieId: "ligustrum_lucidum",
+    },
+    opcionA_prima: {
+      label: "Identificar como Ligustrum lucidum",
+      keyStep: "1",
+      especieId: "ligustrum_lucidum",
+    },
+    especie: manualFamilyData.ligustrum_lucidum,
   },
   dicot_group_e_u: {
     id: "dicot_group_e_u",
