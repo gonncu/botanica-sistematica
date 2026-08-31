@@ -4657,6 +4657,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Gineceo formado por dos ovarios separados unidos por el estilo."
   ),
+  vinca_major: species(
+    "vinca_major",
+    "Vinca major",
+    "109. Apocynaceae",
+    "Hierba perenne, rizomatosa, glabra, con tallos ascendentes de 20-50 cm de alto.",
+    "Hojas algo carnosas, cortamente pecioladas, ovadas, enteras, de 2,5-6 cm; flores axilares solitarias, grandes, pedunculadas, azules, de 18-30 mm de diámetro; corola hipocraterimorfa; folículos pauciseminados.",
+    "Europa. Cultivada como ornamental y subespontánea en lugares sombreados."
+  ),
   gentianaceae: family(
     "gentianaceae",
     "108. Gentianaceae",
@@ -13819,13 +13827,30 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Gineceo formado por dos ovarios separados, unidos por el estilo",
       keyStep: "V",
-      especieId: "apocynaceae",
+      nextNodeId: "apocynaceae_terminal",
     },
     opcionA_prima: {
       label: "Gineceo constituido por un solo ovario",
       keyStep: "V'",
       nextNodeId: "dicot_group_e_w",
     },
+  },
+  apocynaceae_terminal: {
+    id: "apocynaceae_terminal",
+    milestone: "Apocynaceae",
+    manualPage: 368,
+    descripcion: "Apocynaceae: única especie citada por el manual para la región.",
+    opcionA: {
+      label: "Identificar como Vinca major",
+      keyStep: "1",
+      especieId: "vinca_major",
+    },
+    opcionA_prima: {
+      label: "Identificar como Vinca major",
+      keyStep: "1",
+      especieId: "vinca_major",
+    },
+    especie: manualFamilyData.vinca_major,
   },
   dicot_group_e_w: {
     id: "dicot_group_e_w",
