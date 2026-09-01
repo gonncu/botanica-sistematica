@@ -5589,6 +5589,190 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Óvulos generalmente más de dos por carpelo sobre placentas axilares."
   ),
+  physalis_viscosa: species(
+    "physalis_viscosa",
+    "Physalis viscosa",
+    "116. Solanaceae",
+    "Hierba perenne, rizomatosa, de 20-50 cm de alto, con tallos ramosos y cortamente pubescentes.",
+    "Fruto baya envuelto por un cáliz muy acrescente en forma de vejiga membranosa; hojas ovadas, sinuadas y pecioladas; flores amarillas; bayas anaranjadas, globosas, encerradas por el cáliz de 25-35 mm.",
+    "América cálida. Común en suelos modificados. Nombre vulgar: camambú."
+  ),
+  jaborosa_integrifolia: species(
+    "jaborosa_integrifolia",
+    "Jaborosa integrifolia",
+    "116. Solanaceae",
+    "Hierba perenne, acaule y glabra, con rizomas horizontales de los cuales nacen directamente hojas y flores.",
+    "Planta acaule con flores nacidas de una roseta de hojas; hojas pecioladas, elípticas, enteras o dentadas; flores solitarias largamente pedunculadas; corola blanca hipocraterimorfa, con tubo de 4-6 cm y limbo pentalobado.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Muy frecuente en suelos húmedos. Nombre vulgar: flor de sapo."
+  ),
+  jaborosa_runcinata: species(
+    "jaborosa_runcinata",
+    "Jaborosa runcinata",
+    "116. Solanaceae",
+    "Hierba perenne, rizomatosa, con hojas en roseta basal, glabras y pecioladas.",
+    "Planta acaule; hojas obovadas, sinuado-runcinadas; flores solitarias, largamente pedunculadas, naciendo del centro de la roseta; corola blanca acampanada, con tubo de 1 cm y limbo abierto de 3 cm de diámetro.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Común en suelos húmedos. Nombre vulgar: flor de sapo."
+  ),
+  salpichroa_origanifolia: species(
+    "salpichroa_origanifolia",
+    "Salpichroa origanifolia",
+    "116. Solanaceae",
+    "Hierba perenne, rizomatosa, laxamente pubescente, de 30-50 cm de alto, con tallos ascendentes.",
+    "Fruto baya; corola urceolada; hojas inferiores opuestas y superiores alternas, pecioladas, ovado-redondeadas, enteras o sinuadas; flores axilares, solitarias y pedunculadas; corola blanca de 7-8 mm; bayas blancas, dulces, de 15-20 mm.",
+    "Sur del Brasil, Uruguay y norte y centro de la Argentina. Adventicia en Europa. Nombre vulgar: huevito de gallo."
+  ),
+  lycium_cestroides: species(
+    "lycium_cestroides",
+    "Lycium cestroides",
+    "116. Solanaceae",
+    "Arbusto de 1-3 m de alto, ramoso, espinoso y cortamente pubescente.",
+    "Arbusto espinoso con fruto baya; corola tubulosa, violácea, con lóbulos muy cortos; hojas alternas o fasciculadas, ovado-lanceoladas, atenuadas en corto pecíolo; flores solitarias o en fascículos de 2-6; bayas globosas u ovoideas.",
+    "Sur de Bolivia, Uruguay y norte y centro de la Argentina. En bosques xerófilos."
+  ),
+  lycium_chilense: species(
+    "lycium_chilense",
+    "Lycium chilense",
+    "116. Solanaceae",
+    "Arbusto bajo, densamente ramoso, con ramas espiniformes.",
+    "Arbusto espinoso con fruto baya; corola infundibuliforme, blanco-verdosa, con tubo de 3-5 mm y lóbulos abiertos; hojas oblanceoladas u obovadas, cortamente pubescentes; flores generalmente solitarias; frutos rojos, ovoideos.",
+    "Chile y Argentina. Hallado en las barrancas del Paraná: Campana, San Nicolás, etc."
+  ),
+  grabowskia_duplicata: species(
+    "grabowskia_duplicata",
+    "Grabowskia duplicata",
+    "116. Solanaceae",
+    "Arbustito achaparrado, con ramas redondeadas y espinas rectas cortas.",
+    "Fruto drupáceo con dos carozos biloculares; hojas anchamente ovadas o redondeadas, glaucas, atenuadas en corto pecíolo y onduladas en el margen; flores en fascículos axilares; cáliz corto pentadentado; corola blanca con tubo de 6-7 mm.",
+    "Sur del Brasil y nordeste de la Argentina, hasta las barrancas del Paraná: San Nicolás, San Pedro, etc."
+  ),
+  cestrum_parqui: species(
+    "cestrum_parqui",
+    "Cestrum parqui",
+    "116. Solanaceae",
+    "Arbusto de 1-3 m de alto, ramoso, glabro y fétido.",
+    "Arbusto sin espinas; cáliz tubuloso, atenuado en la base, 5-dentado, de 5-6 mm; hojas cortamente pecioladas, lanceoladas y agudas; flores en racimos; corola amarilla de unos 2 cm; bayas casi negras de 4-5 mm.",
+    "América cálida. Frecuente en bosques de la ribera y suelos modificados. Tóxica para el ganado. Nombre vulgar: duraznillo negro."
+  ),
+  cestrum_sellowianum: species(
+    "cestrum_sellowianum",
+    "Cestrum sellowianum",
+    "116. Solanaceae",
+    "Arbusto de 1-2 m de alto, ramoso, glabro y fétido.",
+    "Arbusto sin espinas; cáliz acampanado, contraído en la base, 5-dentado, de 3-4 mm; hojas lanceoladas; corola amarilla de 16-20 mm.",
+    "Región platense. Común en bosques del Delta y de la ribera platense."
+  ),
+  sclerophylax_spinescens: species(
+    "sclerophylax_spinescens",
+    "Sclerophylax spinescens",
+    "116. Solanaceae",
+    "Hierba perenne difusa, con tallos rastreros o ascendentes.",
+    "Fruto cápsula con 1-2 semillas; cáliz con segmentos acrescentes frecuentemente espinosos; hojas alternas, espatuladas y carnosas; flores axilares; cáliz acrescente con 2-3 lóbulos transformados en espinas después de la antesis.",
+    "Suelos salobres del centro de la Argentina. Rara en la región, más común en Pergamino."
+  ),
+  datura_ferox: species(
+    "datura_ferox",
+    "Datura ferox",
+    "116. Solanaceae",
+    "Hierba anual, glabra, de unos 50 cm de alto.",
+    "Fruto cápsula espinosa, 4-valva; flores blancas solitarias; hojas alternas, pecioladas, anchamente ovado-elípticas y groseramente dentadas; cáliz tubuloso, anguloso; corola blanca infundibuliforme de 5-6 cm; cápsulas ovoideas cubiertas de largas espinas.",
+    "Asia; adventicia en América. Semillas venenosas. Nombre vulgar: chamico."
+  ),
+  petunia_axillaris: species(
+    "petunia_axillaris",
+    "Petunia axillaris",
+    "116. Solanaceae",
+    "Hierba perenne de alrededor de 0,5 m de alto, glanduloso-pubescente.",
+    "Cápsula sin espinas; estambres fértiles 5; flores solitarias o en cimas paucifloras; corola con tubo cilíndrico ensanchado gradualmente hacia el limbo; flores blancas con corola de 5-7 cm; hojas alternas, sésiles, oblanceolado-espatuladas, enteras y viscoso-pubescentes.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Común en barrancas del Paraná, terraplenes ferroviarios y suelos calcáreos."
+  ),
+  petunia_parviflora: species(
+    "petunia_parviflora",
+    "Petunia parviflora",
+    "116. Solanaceae",
+    "Hierba anual o perenne, con tallos rastreros, glanduloso-pubescentes.",
+    "Flores violáceas; hojas lineal-espatuladas, carnosas, pequeñas; flores solitarias; cáliz 5-secto; corola de 6-9 mm.",
+    "América templado-cálida. Muy frecuente en suelos bajos y arcillosos."
+  ),
+  petunia_violacea: species(
+    "petunia_violacea",
+    "Petunia violacea",
+    "116. Solanaceae",
+    "Hierba perenne, anual en cultivo, de unos 60 cm de alto, glanduloso-pubescente.",
+    "Flores violáceas; hojas opuestas, ovado-romboideas, agudas, atenuadas en corto pecíolo y glabriúsculas; flores axilares, pedunculadas; cáliz glanduloso-hirsuto; corola hirsuta de 2,5-4 cm; cápsulas ovoideas.",
+    "Brasil, Uruguay y nordeste de la Argentina. Cultivada como ornamental y rara en rastrojos, baldíos, etc."
+  ),
+  nierembergia_repens: species(
+    "nierembergia_repens",
+    "Nierembergia repens",
+    "116. Solanaceae",
+    "Hierba perenne, rastrera, radicante, glabra o pubescente.",
+    "Cápsula sin espinas; corola con tubo largo y muy estrecho, dilatado bruscamente en limbo campanado o cupuliforme; hojas ovadas o espatuladas, enteras, atenuadas en largo pecíolo; flores solitarias; corola blanca con tubo de 3-6 cm.",
+    "Oeste y sur de la América austral. Frecuente en céspedes del Delta y de la ribera platense."
+  ),
+  nierembergia_hippomanica: species(
+    "nierembergia_hippomanica",
+    "Nierembergia hippomanica",
+    "116. Solanaceae",
+    "Hierba perenne multicaule, con numerosos tallos que forman matas hemisféricas.",
+    "Hojas lanceoladas o lineales y estigma semilunar; hojas densas, espatulado-lineales, pubescentes, de 4-8 mm; flores en cimas terminales; cáliz de 7-8 mm; corola blanca o rosada.",
+    "Argentina central. Rara en la región. Tóxica para el ganado. Nombre vulgar: chuscho."
+  ),
+  nierembergia_aristata: species(
+    "nierembergia_aristata",
+    "Nierembergia aristata",
+    "116. Solanaceae",
+    "Hierba perenne con rizomas delgados.",
+    "Hojas lanceoladas o lineales y estigma capitado; tallos erectos, ondulados, glabros o apenas pubescentes; hojas estrechamente lineales; flores solitarias o en cimas paucifloras; cáliz cilíndrico con lóbulos lineales largos; corola blanca.",
+    "Centro de la Argentina. Rara en la región, más frecuente en el oeste de la provincia de Buenos Aires."
+  ),
+  nierembergia_stricta: species(
+    "nierembergia_stricta",
+    "Nierembergia stricta",
+    "116. Solanaceae",
+    "Hierba perenne, rizomatosa, de 10-40 cm de alto, con tallos erectos, sencillos y laxamente hojosos.",
+    "Hojas lanceoladas o lineales y estigma capitado; tallos rectos; tubo corolino de unos 25 mm y limbo de unos 20 mm; hojas lanceoladas; flores azuladas, solitarias o laxamente cimosas.",
+    "Norte y centro de la Argentina. Frecuente en la región platense: Delta, San Pedro, Magdalena, etc."
+  ),
+  nierembergia_prostrata: species(
+    "nierembergia_prostrata",
+    "Nierembergia prostrata",
+    "116. Solanaceae",
+    "Hierba con tallos rastreros delgados, glabros.",
+    "Hojas lanceoladas o lineales y estigma capitado; tallos rectos; tubo corolino de 8-12 mm y limbo de 10 mm; hojas algo carnosas, lanceolado-lineales; flores solitarias; cáliz de 18 mm; corola violácea.",
+    "Endémica de la región platense: Ramos Mejía."
+  ),
+  nicotiana_glauca: species(
+    "nicotiana_glauca",
+    "Nicotiana glauca",
+    "116. Solanaceae",
+    "Arbusto de 3-4 m de alto, glauco y glabro.",
+    "Cápsula sin espinas; flores en racimos o panojas definidas; hojas pecioladas, ovadas, enteras o sinuadas, grandes; flores numerosas en racimos definidos; cáliz acampanado, 5-dentado; corola tubulosa, amarilla, de 3-4 cm.",
+    "Sur de Bolivia y norte de la Argentina. Adventicia y cultivada en muchas regiones cálidas del globo. Nombre vulgar: palán-palán."
+  ),
+  nicotiana_longiflora: species(
+    "nicotiana_longiflora",
+    "Nicotiana longiflora",
+    "116. Solanaceae",
+    "Hierba perenne de alrededor de medio metro de alto, escabrosa.",
+    "Hierba de flores blancas; corola de 6-13 cm, con tubo angosto y limbo abierto; hojas radicales ovado-lanceoladas, onduladas y atenuadas en corto pecíolo; hojas caulinares escasas, lanceoladas y abrazadoras; flores en racimos definidos laxos.",
+    "América cálida. Frecuente en suelos húmedos. Nombre vulgar: flor de sapo."
+  ),
+  nicotiana_bonariensis: species(
+    "nicotiana_bonariensis",
+    "Nicotiana bonariensis",
+    "116. Solanaceae",
+    "Hierba perenne con tallos erectos, ramosos y pubescentes, de 25-60 cm de alto.",
+    "Hierba de flores blancas o violáceo-verdosas; corola de 2,5-3 cm; hojas basales en roseta, obovadas, obtusas, atenuadas en la base, irregularmente crenadas y pubescentes; hojas caulinares lineal-lanceoladas y abrazadoras; flores en racimos o panojas laxas.",
+    "Uruguay y nordeste de la Argentina. Rara cerca de Buenos Aires: Dock Sur."
+  ),
+  bouchetia_anomala: species(
+    "bouchetia_anomala",
+    "Bouchetia anomala",
+    "116. Solanaceae",
+    "Hierba perenne, erecta, corta y densamente pubescente, de 20-50 cm de alto.",
+    "Cápsula sin espinas; estambres fértiles 4; corola corta; hojas alternas, oblanceoladas y enteras; flores blancas, largamente pedunculadas, en racimo definido muy laxo; cáliz algo acrescente; corola de cerca de 10 mm.",
+    "Norte y centro de la Argentina y Uruguay. Bastante escasa en la estepa clímax: Elizalde."
+  ),
   aristolochiaceae: family(
     "aristolochiaceae",
     "42. Aristolochiaceae",
@@ -15945,6 +16129,374 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "stachys_arvensis",
     },
   },
+  solanaceae_a: {
+    id: "solanaceae_a",
+    milestone: "Solanaceae",
+    manualPage: 406,
+    descripcion: "Solanaceae - A: tipo de fruto",
+    opcionA: {
+      label: "Fruto baya o drupa",
+      keyStep: "A",
+      nextNodeId: "solanaceae_b",
+    },
+    opcionA_prima: {
+      label: "Fruto cápsula",
+      keyStep: "A'",
+      nextNodeId: "solanaceae_h",
+    },
+  },
+  solanaceae_b: {
+    id: "solanaceae_b",
+    milestone: "Solanaceae",
+    manualPage: 407,
+    descripcion: "Solanaceae - B: cáliz acrescente en frutos carnosos",
+    opcionA: {
+      label: "Cáliz muy acrescente, envolviendo el fruto maduro en una vejiga membranosa",
+      keyStep: "B",
+      especieId: "physalis_viscosa",
+    },
+    opcionA_prima: {
+      label: "Cáliz no acrescente",
+      keyStep: "B'",
+      nextNodeId: "solanaceae_c",
+    },
+  },
+  solanaceae_c: {
+    id: "solanaceae_c",
+    milestone: "Solanaceae",
+    manualPage: 407,
+    descripcion: "Solanaceae - C: tipo de corola en cáliz no acrescente",
+    opcionA: {
+      label: "Corola rotácea; anteras conniventes, formando un tubo alrededor del estilo",
+      keyStep: "C",
+      especieId: "solanaceae",
+    },
+    opcionA_prima: {
+      label: "Corola acampanada, infundibuliforme o tubulosa",
+      keyStep: "C'",
+      nextNodeId: "solanaceae_d",
+    },
+  },
+  solanaceae_d: {
+    id: "solanaceae_d",
+    milestone: "Solanaceae",
+    manualPage: 407,
+    descripcion: "Solanaceae - D: presencia de tallo aéreo",
+    opcionA: {
+      label: "Plantas acaules: las flores nacen directamente de una roseta de hojas o de un rizoma",
+      keyStep: "D",
+      nextNodeId: "jaborosa_a",
+    },
+    opcionA_prima: {
+      label: "Plantas con tallo aéreo desarrollado",
+      keyStep: "D'",
+      nextNodeId: "solanaceae_e",
+    },
+  },
+  jaborosa_a: {
+    id: "jaborosa_a",
+    milestone: "Jaborosa",
+    manualPage: 414,
+    descripcion: "Jaborosa - A: rizomas y forma foliar",
+    opcionA: {
+      label: "Hierba acaule, glabra, con rizomas horizontales; hojas elípticas, enteras o dentadas; corola hipocraterimorfa",
+      keyStep: "A",
+      especieId: "jaborosa_integrifolia",
+    },
+    opcionA_prima: {
+      label: "Hierba rizomatosa con hojas en roseta basal, obovadas y sinuado-runcinadas; corola acampanada",
+      keyStep: "A'",
+      especieId: "jaborosa_runcinata",
+    },
+  },
+  solanaceae_e: {
+    id: "solanaceae_e",
+    milestone: "Solanaceae",
+    manualPage: 407,
+    descripcion: "Solanaceae - E: forma de la corola en plantas con tallo",
+    opcionA: {
+      label: "Corola urceolada; hierbas",
+      keyStep: "E",
+      especieId: "salpichroa_origanifolia",
+    },
+    opcionA_prima: {
+      label: "Corola tubulosa o infundibuliforme; arbustos",
+      keyStep: "E'",
+      nextNodeId: "solanaceae_f",
+    },
+  },
+  solanaceae_f: {
+    id: "solanaceae_f",
+    milestone: "Solanaceae",
+    manualPage: 407,
+    descripcion: "Solanaceae - F: presencia de espinas",
+    opcionA: {
+      label: "Plantas espinosas",
+      keyStep: "F",
+      nextNodeId: "solanaceae_g",
+    },
+    opcionA_prima: {
+      label: "Plantas sin espinas",
+      keyStep: "F'",
+      nextNodeId: "cestrum_a",
+    },
+  },
+  solanaceae_g: {
+    id: "solanaceae_g",
+    milestone: "Solanaceae",
+    manualPage: 407,
+    descripcion: "Solanaceae - G: baya o drupa en arbustos espinosos",
+    opcionA: {
+      label: "Fruto baya, por lo común con numerosas semillas",
+      keyStep: "G",
+      nextNodeId: "lycium_a",
+    },
+    opcionA_prima: {
+      label: "Fruto drupa, con dos carozos biloculares y una o dos semillas en cada lóculo",
+      keyStep: "G'",
+      especieId: "grabowskia_duplicata",
+    },
+  },
+  lycium_a: {
+    id: "lycium_a",
+    milestone: "Lycium",
+    manualPage: 414,
+    descripcion: "Lycium - A: forma y color de la corola",
+    opcionA: {
+      label: "Corola tubulosa, violácea, con lóbulos muy cortos; hojas ovado-lanceoladas",
+      keyStep: "A",
+      especieId: "lycium_cestroides",
+    },
+    opcionA_prima: {
+      label: "Corola infundibuliforme, blanco-verdosa, con lóbulos abiertos casi tan largos como el tubo; hojas oblanceoladas u obovadas",
+      keyStep: "A'",
+      especieId: "lycium_chilense",
+    },
+  },
+  cestrum_a: {
+    id: "cestrum_a",
+    milestone: "Cestrum",
+    manualPage: 416,
+    descripcion: "Cestrum - A: forma y tamaño del cáliz",
+    opcionA: {
+      label: "Cáliz tubuloso, atenuado en la base, de 5-6 mm; hojas lanceoladas de 5-13 cm; flores en racimos",
+      keyStep: "A",
+      especieId: "cestrum_parqui",
+    },
+    opcionA_prima: {
+      label: "Cáliz acampanado, contraído en la base, de 3-4 mm; hojas lanceoladas de 2,5-6 cm",
+      keyStep: "A'",
+      especieId: "cestrum_sellowianum",
+    },
+  },
+  solanaceae_h: {
+    id: "solanaceae_h",
+    milestone: "Solanaceae",
+    manualPage: 407,
+    descripcion: "Solanaceae - H: número de semillas del fruto",
+    opcionA: {
+      label: "Fruto con 1-2 semillas; cáliz con segmentos acrescentes, frecuentemente espinosos",
+      keyStep: "H",
+      especieId: "sclerophylax_spinescens",
+    },
+    opcionA_prima: {
+      label: "Frutos con numerosas semillas",
+      keyStep: "H'",
+      nextNodeId: "solanaceae_i",
+    },
+  },
+  solanaceae_i: {
+    id: "solanaceae_i",
+    milestone: "Solanaceae",
+    manualPage: 407,
+    descripcion: "Solanaceae - I: presencia de espinas en la cápsula",
+    opcionA: {
+      label: "Cápsula espinosa, 4-valva; flores blancas, solitarias",
+      keyStep: "I",
+      especieId: "datura_ferox",
+    },
+    opcionA_prima: {
+      label: "Cápsulas sin espinas",
+      keyStep: "I'",
+      nextNodeId: "solanaceae_j",
+    },
+  },
+  solanaceae_j: {
+    id: "solanaceae_j",
+    milestone: "Solanaceae",
+    manualPage: 407,
+    descripcion: "Solanaceae - J: número de estambres fértiles",
+    opcionA: {
+      label: "Estambres fértiles 5",
+      keyStep: "J",
+      nextNodeId: "solanaceae_k",
+    },
+    opcionA_prima: {
+      label: "Estambres fértiles 4; corola corta",
+      keyStep: "J'",
+      especieId: "bouchetia_anomala",
+    },
+  },
+  solanaceae_k: {
+    id: "solanaceae_k",
+    milestone: "Solanaceae",
+    manualPage: 407,
+    descripcion: "Solanaceae - K: disposición de las flores",
+    opcionA: {
+      label: "Flores solitarias o en cimas paucifloras hojosas",
+      keyStep: "K",
+      nextNodeId: "solanaceae_l",
+    },
+    opcionA_prima: {
+      label: "Flores en racimos o corimbos definidos",
+      keyStep: "K'",
+      nextNodeId: "nicotiana_a",
+    },
+  },
+  solanaceae_l: {
+    id: "solanaceae_l",
+    milestone: "Solanaceae",
+    manualPage: 407,
+    descripcion: "Solanaceae - L: forma del tubo de la corola",
+    opcionA: {
+      label: "Corola con tubo cilíndrico, ensanchado gradualmente hacia el limbo; estambres insertos en la parte inferior del tubo",
+      keyStep: "L",
+      nextNodeId: "petunia_a",
+    },
+    opcionA_prima: {
+      label: "Corola con tubo largo y muy estrecho, dilatado bruscamente en un limbo en forma de campana o copa",
+      keyStep: "L'",
+      nextNodeId: "nierembergia_a",
+    },
+  },
+  petunia_a: {
+    id: "petunia_a",
+    milestone: "Petunia",
+    manualPage: 417,
+    descripcion: "Petunia - A: color de flores",
+    opcionA: {
+      label: "Flores blancas, con corola de 5-7 cm; hojas alternas, sésiles, oblanceolado-espatuladas",
+      keyStep: "A",
+      especieId: "petunia_axillaris",
+    },
+    opcionA_prima: {
+      label: "Flores violáceas",
+      keyStep: "A'",
+      nextNodeId: "petunia_b",
+    },
+  },
+  petunia_b: {
+    id: "petunia_b",
+    milestone: "Petunia",
+    manualPage: 417,
+    descripcion: "Petunia - B: forma de hojas y tamaño de corola",
+    opcionA: {
+      label: "Hojas lineal-espatuladas, carnosas, muy pequeñas; corola de 6-9 mm",
+      keyStep: "B",
+      especieId: "petunia_parviflora",
+    },
+    opcionA_prima: {
+      label: "Hojas opuestas, ovado-romboideas; corola hirsuta de 2,5-4 cm",
+      keyStep: "B'",
+      especieId: "petunia_violacea",
+    },
+  },
+  nierembergia_a: {
+    id: "nierembergia_a",
+    milestone: "Nierembergia",
+    manualPage: 418,
+    descripcion: "Nierembergia - A: forma y ancho de las hojas",
+    opcionA: {
+      label: "Hojas ovadas o espatuladas, enteras, atenuadas en largo pecíolo",
+      keyStep: "A",
+      especieId: "nierembergia_repens",
+    },
+    opcionA_prima: {
+      label: "Hojas lanceoladas o lineales, de 0,5-6 mm de ancho",
+      keyStep: "A'",
+      nextNodeId: "nierembergia_b",
+    },
+  },
+  nierembergia_b: {
+    id: "nierembergia_b",
+    milestone: "Nierembergia",
+    manualPage: 418,
+    descripcion: "Nierembergia - B: forma del estigma",
+    opcionA: {
+      label: "Estigma semilunar; hierba perenne multicaule, formando matas hemisféricas",
+      keyStep: "B",
+      especieId: "nierembergia_hippomanica",
+    },
+    opcionA_prima: {
+      label: "Estigma capitado",
+      keyStep: "B'",
+      nextNodeId: "nierembergia_c",
+    },
+  },
+  nierembergia_c: {
+    id: "nierembergia_c",
+    milestone: "Nierembergia",
+    manualPage: 418,
+    descripcion: "Nierembergia - C: forma de los tallos",
+    opcionA: {
+      label: "Tallos erectos, ondulados, glabros o apenas pubescentes; hojas estrechamente lineales",
+      keyStep: "C",
+      especieId: "nierembergia_aristata",
+    },
+    opcionA_prima: {
+      label: "Tallos rectos",
+      keyStep: "C'",
+      nextNodeId: "nierembergia_d",
+    },
+  },
+  nierembergia_d: {
+    id: "nierembergia_d",
+    milestone: "Nierembergia",
+    manualPage: 418,
+    descripcion: "Nierembergia - D: longitud del tubo corolino",
+    opcionA: {
+      label: "Tubo corolino de unos 25 mm; limbo de unos 20 mm; flores azuladas",
+      keyStep: "D",
+      especieId: "nierembergia_stricta",
+    },
+    opcionA_prima: {
+      label: "Tubo corolino de 8-12 mm; limbo de 10 mm; hojas algo carnosas; corola violácea",
+      keyStep: "D'",
+      especieId: "nierembergia_prostrata",
+    },
+  },
+  nicotiana_a: {
+    id: "nicotiana_a",
+    milestone: "Nicotiana",
+    manualPage: 419,
+    descripcion: "Nicotiana - A: hábito y color de flores",
+    opcionA: {
+      label: "Arbusto de 3-4 m, glauco, glabro; flores amarillas en racimos definidos",
+      keyStep: "A",
+      especieId: "nicotiana_glauca",
+    },
+    opcionA_prima: {
+      label: "Hierbas; flores blancas",
+      keyStep: "A'",
+      nextNodeId: "nicotiana_b",
+    },
+  },
+  nicotiana_b: {
+    id: "nicotiana_b",
+    milestone: "Nicotiana",
+    manualPage: 419,
+    descripcion: "Nicotiana - B: longitud de la corola",
+    opcionA: {
+      label: "Corola de 6-13 cm, con tubo angosto y limbo abierto; hierba perenne de medio metro",
+      keyStep: "B",
+      especieId: "nicotiana_longiflora",
+    },
+    opcionA_prima: {
+      label: "Corola de 2,5-3 cm, con limbo abierto; hojas basales en roseta; tallos erectos y ramosos",
+      keyStep: "B'",
+      especieId: "nicotiana_bonariensis",
+    },
+  },
   dicot_group_e_a_lowercase: {
     id: "dicot_group_e_a_lowercase",
     milestone: "Grupo E",
@@ -15957,7 +16509,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Óvulos generalmente más de dos en cada carpelo, sobre placentas axilares",
       keyStep: "a'",
-      especieId: "solanaceae",
+      nextNodeId: "solanaceae_a",
     },
   },
   convolvulaceae_a: {
