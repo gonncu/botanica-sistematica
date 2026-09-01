@@ -4559,6 +4559,214 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Ovario 4-lobulado y estilo ginobásico; corola notablemente bilabiada."
   ),
+  salvia_procurrens: species(
+    "salvia_procurrens",
+    "Salvia procurrens",
+    "115. Labiatae",
+    "Hierba perenne con tallos rastreros y radicantes, glabros o glanduloso-velludos.",
+    "Estambres fértiles 2; corola notablemente bilabiada, con labio superior en forma de capuchón; anteras con una sola teca fértil; hojas largamente pecioladas, ovado-circulares, cordadas y crenadas; verticilastros distantes en seudo-espigas muy laxas; cáliz glanduloso y corolas azules de unos 12 mm.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Común en bosques del Delta y de la ribera del Plata."
+  ),
+  salvia_verbenaca: species(
+    "salvia_verbenaca",
+    "Salvia verbenaca",
+    "115. Labiatae",
+    "Hierba perenne, erecta, pubescente, de 30-60 cm de alto.",
+    "Estambres fértiles 2; tallos erectos; hojas superiores sésiles, anchamente ovadas y crenado-lobuladas; hojas inferiores pecioladas, ovadas y lobuladas; verticilastros en espiga laxa; cáliz velludo y corola azul de unos 8 mm.",
+    "Europa. Cultivada y con frecuencia subespontánea."
+  ),
+  salvia_uliginosa: species(
+    "salvia_uliginosa",
+    "Salvia uliginosa",
+    "115. Labiatae",
+    "Hierba perenne de cerca de 2 m de alto, con rizoma horizontal y tallos ramosos tenuemente pubescentes.",
+    "Hojas superiores pecioladas; hojas lanceoladas, agudas, atenuadas y cortamente pecioladas en la base, aserradas, glabras o algo pubescentes; flores azules en espigas densas de verticilastros; corola azul de 10 mm.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Común en pajonales del Delta y de la ribera del Plata."
+  ),
+  salvia_pallida: species(
+    "salvia_pallida",
+    "Salvia pallida",
+    "115. Labiatae",
+    "Hierba perenne de cerca de 1 m de alto, con tallos puberulentos.",
+    "Hojas superiores pecioladas; hojas deltoideo-ovadas, cortamente pecioladas, redondeadas en la base, profundamente aserradas, glabras o pubérulas; flores azuladas en una espiga densa de verticilastros; corola de 10-12 mm.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Rara en la región: Delta y Punta Lara."
+  ),
+  hedeoma_medium: species(
+    "hedeoma_medium",
+    "Hedeoma medium",
+    "115. Labiatae",
+    "Sufrútice con tallos ascendentes, numerosos y pubescentes, de 10-15 cm de alto.",
+    "Estambres fértiles 2; corola poco bilabiada, con labio superior casi plano; anteras con dos tecas fértiles; hojas elípticas, enteras e hispídulas; flores pequeñas pediceladas en las axilas de las hojas superiores; cáliz giboso, bilabiado, de 3 mm; corola liliácea.",
+    "Uruguay y provincia de Buenos Aires. En la estepa clímax. Nombres vulgares: menta del campo, tomillo."
+  ),
+  teucrium_cubense_laevigatum: species(
+    "teucrium_cubense_laevigatum",
+    "Teucrium cubense subsp. laevigatum",
+    "115. Labiatae",
+    "Hierba perenne con tallos ascendentes, glabros, de 30-50 cm de alto.",
+    "Ovario apenas hendido, con estilo imperfectamente ginobásico; corola casi unilabiada; hojas inferiores bipinatisectas con lacinias obtusas y hojas superiores divididas en tres lacinias lineales; flores solitarias axilares; cáliz pentasecto y corola blanca.",
+    "Sur del Brasil, Uruguay y norte de la Argentina. En la estepa clímax y en praderas del Delta y de la ribera del Plata."
+  ),
+  teucrium_vesicarium: species(
+    "teucrium_vesicarium",
+    "Teucrium vesicarium",
+    "115. Labiatae",
+    "Hierba erecta, rizomatosa, de alrededor de 1 m de alto, blandamente pubescente.",
+    "Ovario apenas hendido, con estilo imperfectamente ginobásico; hojas pecioladas, ovadas, aserradas, de 4-12 cm; flores en largas espigas cilíndricas; corola rosada y cáliz globoso, acrescente.",
+    "América cálida. Común en pajonales y praderas del Delta y de la ribera del Plata."
+  ),
+  mentha_pulegium: species(
+    "mentha_pulegium",
+    "Mentha pulegium",
+    "115. Labiatae",
+    "Hierba perenne con tallos ascendentes, pubescentes, de 20-30 cm de alto.",
+    "Corola 4-lobada, casi actinomorfa; flores en verticilastros globosos en las axilas de las hojas superiores, formando falsa espiga muy laxa; corola rosada de 4 mm; estambres exertos; hojas ovadas, aserradas, pequeñas.",
+    "Europa; adventicia en América. Común en campos húmedos."
+  ),
+  mentha_rotundifolia: species(
+    "mentha_rotundifolia",
+    "Mentha rotundifolia",
+    "115. Labiatae",
+    "Hierba perenne, estolonífera, canescente-tomentosa, con tallos ascendentes o erectos.",
+    "Corola casi actinomorfa; flores en verticilastros agrupados en espigas densas; hojas sésiles, ovado-elípticas, obtusas, algo acorazonadas en la base, crenado-aserradas y canescente-tomentosas; corolas pequeñas, rosadas o blancas.",
+    "Europa; adventicia en América. En suelos modificados húmedos. Nombre vulgar: menta."
+  ),
+  mentha_aquatica: species(
+    "mentha_aquatica",
+    "Mentha aquatica",
+    "115. Labiatae",
+    "Hierba perenne, pubescente o casi glabra, con tallos erectos de 40-70 cm.",
+    "Hojas pecioladas, glabras o casi glabras, ovadas, agudas u obtusas, redondeadas en la base y aserradas; verticilastros en espigas cilíndricas densas y cortas; cáliz hirsuto y corola pubescente.",
+    "Europa; adventicia en América. En lugares muy húmedos."
+  ),
+  mentha_piperita: species(
+    "mentha_piperita",
+    "Mentha piperita",
+    "115. Labiatae",
+    "Hierba perenne, glabra, con tallos erectos de 30-90 cm de alto.",
+    "Hojas pecioladas, glabras o casi glabras, elípticas, agudas, redondeadas o atenuadas en la base y agudamente aserradas; verticilastros en espigas atenuadas en la parte superior; cáliz glabro y corola rosada, glabra.",
+    "Europa; adventicia en América. Común en suelos muy húmedos y zanjas. Nombre vulgar: menta."
+  ),
+  scutellaria_racemosa: species(
+    "scutellaria_racemosa",
+    "Scutellaria racemosa",
+    "115. Labiatae",
+    "Hierba perenne, glabra y ramosa, de 15-30 cm de alto.",
+    "Cáliz bilabiado con labios enteros; hojas hastadas, con un lóbulo a cada lado en la base; flores solitarias en las axilas de las hojas superiores; corola rosada de 6-8 mm.",
+    "América del Sur cálida y templada. Común en campos fértiles."
+  ),
+  scutellaria_platensis: species(
+    "scutellaria_platensis",
+    "Scutellaria platensis",
+    "115. Labiatae",
+    "Hierba perenne, glabérrima, de 15-30 cm de alto.",
+    "Cáliz bilabiado con labios enteros; hojas ovado-deltoideas, pecioladas, semicordadas en la base y dentado-crenadas; flores rosadas solitarias en las axilas de las hojas.",
+    "Endémica de la región platense: Delta, Punta Lara, Isla Santiago, etc."
+  ),
+  prunella_vulgaris: species(
+    "prunella_vulgaris",
+    "Prunella vulgaris",
+    "115. Labiatae",
+    "Hierba perenne, ascendente, de 15-30 cm de alto.",
+    "Cáliz bilabiado con labio superior 3-dentado e inferior bífido; corola con labio superior en forma de capuchón; hojas elíptico-lanceoladas, glabras o ligeramente híspidas; flores liliáceas en espigas cilíndricas gruesas; corola de 9-15 mm.",
+    "Europa; adventicia en América. Común en el Delta y en la ribera platense, también en jardines y suelos modificados."
+  ),
+  melissa_officinalis: species(
+    "melissa_officinalis",
+    "Melissa officinalis",
+    "115. Labiatae",
+    "Hierba perenne, pubescente, con tallos erectos o ascendentes de 30-70 cm de alto.",
+    "Cáliz bilabiado con labio superior 3-dentado e inferior bífido; corola con labio superior casi plano; hojas pecioladas, ovadas, obtusas, redondeadas o acorazonadas en la base, crenado-dentadas; flores en verticilastros axilares; corola blanca de 10-15 mm.",
+    "Europa; adventicia en América. Cultivada como planta medicinal. Nombre vulgar: toronjil."
+  ),
+  marrubium_vulgare: species(
+    "marrubium_vulgare",
+    "Marrubium vulgare",
+    "115. Labiatae",
+    "Hierba perenne ramosa, albo-tomentosa, de 60-90 cm de alto.",
+    "Cáliz tubuloso con 10 dientes iguales, subulados; flores blancas; hojas pecioladas, ovado-circulares, obtusas y crenadas; corolas blancas de 7-9 mm.",
+    "Europa; adventicia en casi todo el globo. Medicinal y común en rastrojos y suelos modificados. Nombre vulgar: malvarrubia."
+  ),
+  leonotis_nepetaefolia: species(
+    "leonotis_nepetaefolia",
+    "Leonotis nepetaefolia",
+    "115. Labiatae",
+    "Hierba anual, erecta, de 1-2 m de alto, levemente pubescente.",
+    "Cáliz tubuloso con dientes desiguales; flores sésiles, anaranjadas, en grandes seudoverticilos globosos; hojas pecioladas, ovadas u ovado-redondeadas, obtusas, inciso-crenadas, tenuemente tomentulosas o casi glabras; cáliz pubescente de 12 mm y corola de 20-25 mm.",
+    "Asia y África tropicales; adventicia en América. En suelos modificados."
+  ),
+  hyptis_floribunda: species(
+    "hyptis_floribunda",
+    "Hyptis floribunda",
+    "115. Labiatae",
+    "Arbusto de 1-2 m de alto, cortamente pubescente.",
+    "Cáliz con 5 dientes triangulares y anchos; corola con labio superior casi plano y labio inferior con segmento medio en forma de saco; flores largamente pediceladas en amplias panojas difusas; hojas estrechamente ovadas, redondeadas en la base y aserradas; corola liliácea.",
+    "Paraguay, Uruguay y nordeste de la Argentina. En bosques del Delta y de la ribera platense."
+  ),
+  hyptis_fasciculata_fastigiata: species(
+    "hyptis_fasciculata_fastigiata",
+    "Hyptis fasciculata var. fastigiata",
+    "115. Labiatae",
+    "Sufrútice de 1-2 m de alto, con tallos ásperos.",
+    "Cáliz con 5 dientes triangulares y anchos; flores cortamente pediceladas en verticilastros dispuestos en espigas densas reunidas en panojas; hojas ovado-lanceoladas, agudas, redondeadas en la base y aserradas; corola liliácea.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Común en matorrales del Delta y de la ribera."
+  ),
+  hyptis_lappacea: species(
+    "hyptis_lappacea",
+    "Hyptis lappacea",
+    "115. Labiatae",
+    "Hierba perenne de 1 m de alto, con tallos pubescentes o glabrescentes.",
+    "Cáliz con dientes subulados; flores en capítulos globosos, pedunculados, axilares, de 14-16 mm de diámetro; hojas ovado-lanceoladas, agudas, cuneiformes en la base, aserradas y algo pubescentes; corolas de 5-6 mm.",
+    "Selvas del sur del Brasil, Paraguay, Uruguay y norte de la Argentina. Frecuente en bosques del Delta y de la ribera."
+  ),
+  hyptis_mutabilis: species(
+    "hyptis_mutabilis",
+    "Hyptis mutabilis",
+    "115. Labiatae",
+    "Hierba perenne, erecta, de 1,5 m de alto, con tallos ásperos.",
+    "Cáliz con dientes subulados; flores en verticilastros agrupados en espigas interrumpidas; hojas anchamente ovadas, redondeadas en la base, crenado-aserradas, ásperas en el haz y densamente pubescentes en el envés; corola liliácea de 3-4 mm.",
+    "América cálida. Frecuente en bosques y matorrales del Delta y de la ribera platense."
+  ),
+  leonurus_cardiaca: species(
+    "leonurus_cardiaca",
+    "Leonurus cardiaca",
+    "115. Labiatae",
+    "Hierba perenne, pubescente y ramosa, de unos 50 cm de alto.",
+    "Cáliz con 5 dientes; corola con labio superior en forma de capuchón; hojas pinatisectas, 3-5-palmatilobadas, con segmentos agudos y dentados; flores rosadas; dientes del cáliz subulados, abiertos.",
+    "Asia; adventicia en Europa y América. Rara en la región: San Nicolás."
+  ),
+  leonurus_sibiricus: species(
+    "leonurus_sibiricus",
+    "Leonurus sibiricus",
+    "115. Labiatae",
+    "Hierba bienal, puberulenta o glabra, con tallos ramosos de alrededor de 1 m.",
+    "Cáliz con 5 dientes; corola con labio superior en forma de capuchón; hojas 3-5-palmatisectas, con segmentos divididos irregularmente; flores rosadas.",
+    "Asia; adventicia en América. Rara en la región y común en el norte de la Argentina."
+  ),
+  stachys_micheliana: species(
+    "stachys_micheliana",
+    "Stachys micheliana",
+    "115. Labiatae",
+    "Hierba anual, erecta o ascendente, híspida, de 30-60 cm de alto.",
+    "Cáliz con 5 dientes mucronados; nuececitas redondeadas en el ápice; dientes del cáliz maduro de 1,5 mm; corola rosada con tubo de 2,5-3 mm; hojas cortamente pecioladas, ovadas, obtusas, acorazonadas en la base, aserradas e híspidas.",
+    "Paraguay, Uruguay y norte de la Argentina. Común en bosques de la ribera y en talares."
+  ),
+  stachys_arvensis: species(
+    "stachys_arvensis",
+    "Stachys arvensis",
+    "115. Labiatae",
+    "Hierba anual, híspida, con tallos ascendentes de 15-30 cm de alto.",
+    "Cáliz con 5 dientes mucronados; nuececitas redondeadas en el ápice; dientes del cáliz maduro de 2-3 mm; corola rosada con tubo de 3,5-5 mm; hojas ovadas, redondeadas en el ápice y acorazonadas en la base, aserradas y cortamente pecioladas.",
+    "Europa; adventicia en América. Común en suelos húmedos."
+  ),
+  lamium_amplexicaule: species(
+    "lamium_amplexicaule",
+    "Lamium amplexicaule",
+    "115. Labiatae",
+    "Hierba anual, con tallos ascendentes, glabros, de 10-30 cm de alto.",
+    "Cáliz con dientes agudos, no mucronados; nuececitas truncadas en el ápice; hojas inferiores largamente pecioladas, ovado-circulares y lobuladas; hojas superiores sésiles, lobuladas o partidas; cáliz híspido de 5-6 mm y corolas purpúreas de 15 mm.",
+    "Europa; adventicia en América. Común en suelos modificados, especialmente jardines y parques."
+  ),
   verbenaceae: family(
     "verbenaceae",
     "114. Verbenaceae",
@@ -13978,7 +14186,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Ovario 4-lobulado; estilo naciendo entre los cuatro lóbulos; corola notablemente bilabiada",
       keyStep: "J",
-      especieId: "labiatae",
+      nextNodeId: "labiatae_a",
     },
     opcionA_prima: {
       label: "Ovario no 4-lobulado, con estilo terminal; flores apenas bilabiadas",
@@ -15335,6 +15543,406 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hojas de 0,5-1 cm, de contorno ovado, profundamente pinatisectas, con segmentos lineales, agudos y bifurcados",
       keyStep: "E'",
       especieId: "glandularia_tenera",
+    },
+  },
+  labiatae_a: {
+    id: "labiatae_a",
+    milestone: "Labiatae",
+    manualPage: 398,
+    descripcion: "Labiatae - A: número de estambres fértiles",
+    opcionA: {
+      label: "Estambres fértiles 2",
+      keyStep: "A",
+      nextNodeId: "labiatae_b",
+    },
+    opcionA_prima: {
+      label: "Estambres fértiles 4",
+      keyStep: "A'",
+      nextNodeId: "labiatae_c",
+    },
+  },
+  labiatae_b: {
+    id: "labiatae_b",
+    milestone: "Labiatae",
+    manualPage: 398,
+    descripcion: "Labiatae - B: forma de la corola y tecas de las anteras",
+    opcionA: {
+      label: "Corola notablemente bilabiada, con labio superior en forma de capuchón; anteras con una sola teca fértil",
+      keyStep: "B",
+      nextNodeId: "salvia_a",
+    },
+    opcionA_prima: {
+      label: "Corola poco bilabiada, con labio superior casi plano; anteras con dos tecas fértiles; flores muy pequeñas",
+      keyStep: "B'",
+      especieId: "hedeoma_medium",
+    },
+  },
+  salvia_a: {
+    id: "salvia_a",
+    milestone: "Salvia",
+    manualPage: 399,
+    descripcion: "Salvia - A: hábito de los tallos y largo del pecíolo",
+    opcionA: {
+      label: "Tallos rastreros, radicantes; hojas largamente pecioladas, ovado-circulares y cordadas",
+      keyStep: "A",
+      especieId: "salvia_procurrens",
+    },
+    opcionA_prima: {
+      label: "Tallos erectos; hojas sésiles o cortamente pecioladas, con pecíolo siempre más corto que la lámina",
+      keyStep: "A'",
+      nextNodeId: "salvia_b",
+    },
+  },
+  salvia_b: {
+    id: "salvia_b",
+    milestone: "Salvia",
+    manualPage: 399,
+    descripcion: "Salvia - B: hojas superiores y densidad de seudo-espigas",
+    opcionA: {
+      label: "Hojas superiores sésiles, anchamente ovadas y crenado-lobuladas; verticilastros en espiga laxa",
+      keyStep: "B",
+      especieId: "salvia_verbenaca",
+    },
+    opcionA_prima: {
+      label: "Hojas superiores pecioladas; seudo-espigas densas",
+      keyStep: "B'",
+      nextNodeId: "salvia_c",
+    },
+  },
+  salvia_c: {
+    id: "salvia_c",
+    milestone: "Salvia",
+    manualPage: 399,
+    descripcion: "Salvia - C: forma de las hojas",
+    opcionA: {
+      label: "Hojas lanceoladas, agudas, atenuadas y cortamente pecioladas en la base",
+      keyStep: "C",
+      especieId: "salvia_uliginosa",
+    },
+    opcionA_prima: {
+      label: "Hojas deltoideo-ovadas, cortamente pecioladas, redondeadas en la base y profundamente aserradas",
+      keyStep: "C'",
+      especieId: "salvia_pallida",
+    },
+  },
+  labiatae_c: {
+    id: "labiatae_c",
+    milestone: "Labiatae",
+    manualPage: 398,
+    descripcion: "Labiatae - C: hendidura del ovario y cicatriz de las nuececitas",
+    opcionA: {
+      label: "Ovario apenas hendido, con estilo imperfectamente ginobásico; nuececitas con cicatriz lateral; corola casi unilabiada",
+      keyStep: "C",
+      nextNodeId: "teucrium_a",
+    },
+    opcionA_prima: {
+      label: "Ovario profundamente hendido, con estilo ginobásico; nuececitas con cicatriz basal; corolas bilabiadas o casi actinomorfas",
+      keyStep: "C'",
+      nextNodeId: "labiatae_d",
+    },
+  },
+  teucrium_a: {
+    id: "teucrium_a",
+    milestone: "Teucrium",
+    manualPage: 402,
+    descripcion: "Teucrium - A: división foliar e inflorescencia",
+    opcionA: {
+      label: "Hojas inferiores bipinatisectas y superiores divididas en 3 lacinias lineales; flores solitarias axilares; corola blanca",
+      keyStep: "A",
+      especieId: "teucrium_cubense_laevigatum",
+    },
+    opcionA_prima: {
+      label: "Hojas pecioladas, ovadas y aserradas; flores en largas espigas cilíndricas; corola rosada; cáliz globoso acrescente",
+      keyStep: "A'",
+      especieId: "teucrium_vesicarium",
+    },
+  },
+  labiatae_d: {
+    id: "labiatae_d",
+    milestone: "Labiatae",
+    manualPage: 399,
+    descripcion: "Labiatae - D: simetría de la corola",
+    opcionA: {
+      label: "Corola 4-lobada, casi actinomorfa",
+      keyStep: "D",
+      nextNodeId: "mentha_a",
+    },
+    opcionA_prima: {
+      label: "Corola bilabiada",
+      keyStep: "D'",
+      nextNodeId: "labiatae_e",
+    },
+  },
+  mentha_a: {
+    id: "mentha_a",
+    milestone: "Mentha",
+    manualPage: 402,
+    descripcion: "Mentha - A: disposición de los verticilastros",
+    opcionA: {
+      label: "Flores en verticilastros globosos axilares, formando falsa espiga muy laxa; hojas pequeñas",
+      keyStep: "A",
+      especieId: "mentha_pulegium",
+    },
+    opcionA_prima: {
+      label: "Flores en verticilastros agrupados en espigas más densas; hojas de 2-5 cm",
+      keyStep: "A'",
+      nextNodeId: "mentha_b",
+    },
+  },
+  mentha_b: {
+    id: "mentha_b",
+    milestone: "Mentha",
+    manualPage: 402,
+    descripcion: "Mentha - B: pecíolo y tomento foliar",
+    opcionA: {
+      label: "Hojas sésiles, ovado-elípticas, algo acorazonadas en la base y canescente-tomentosas",
+      keyStep: "B",
+      especieId: "mentha_rotundifolia",
+    },
+    opcionA_prima: {
+      label: "Hojas pecioladas, glabras o casi glabras",
+      keyStep: "B'",
+      nextNodeId: "mentha_c",
+    },
+  },
+  mentha_c: {
+    id: "mentha_c",
+    milestone: "Mentha",
+    manualPage: 402,
+    descripcion: "Mentha - C: forma foliar, cáliz y corola",
+    opcionA: {
+      label: "Hojas ovadas, redondeadas en la base; espigas cilíndricas densas y cortas; cáliz hirsuto; corola pubescente",
+      keyStep: "C",
+      especieId: "mentha_aquatica",
+    },
+    opcionA_prima: {
+      label: "Hojas elípticas, redondeadas o atenuadas en la base; espigas atenuadas arriba; cáliz glabro; corola rosada glabra",
+      keyStep: "C'",
+      especieId: "mentha_piperita",
+    },
+  },
+  labiatae_e: {
+    id: "labiatae_e",
+    milestone: "Labiatae",
+    manualPage: 399,
+    descripcion: "Labiatae - E: forma del cáliz",
+    opcionA: {
+      label: "Cáliz bilabiado",
+      keyStep: "E",
+      nextNodeId: "labiatae_f",
+    },
+    opcionA_prima: {
+      label: "Cáliz tubuloso",
+      keyStep: "E'",
+      nextNodeId: "labiatae_h",
+    },
+  },
+  labiatae_f: {
+    id: "labiatae_f",
+    milestone: "Labiatae",
+    manualPage: 399,
+    descripcion: "Labiatae - F: labios del cáliz",
+    opcionA: {
+      label: "Labios del cáliz enteros",
+      keyStep: "F",
+      nextNodeId: "scutellaria_a",
+    },
+    opcionA_prima: {
+      label: "Labio superior del cáliz 3-dentado; labio inferior bífido",
+      keyStep: "F'",
+      nextNodeId: "labiatae_g",
+    },
+  },
+  scutellaria_a: {
+    id: "scutellaria_a",
+    milestone: "Scutellaria",
+    manualPage: 403,
+    descripcion: "Scutellaria - A: forma de las hojas",
+    opcionA: {
+      label: "Hojas hastadas, con un lóbulo a cada lado en la base; flores solitarias axilares",
+      keyStep: "A",
+      especieId: "scutellaria_racemosa",
+    },
+    opcionA_prima: {
+      label: "Hojas ovado-deltoideas, pecioladas, semicordadas en la base y dentado-crenadas",
+      keyStep: "A'",
+      especieId: "scutellaria_platensis",
+    },
+  },
+  labiatae_g: {
+    id: "labiatae_g",
+    milestone: "Labiatae",
+    manualPage: 399,
+    descripcion: "Labiatae - G: labio superior de la corola e inflorescencia",
+    opcionA: {
+      label: "Corola con labio superior en forma de capuchón; flores en espigas terminales",
+      keyStep: "G",
+      especieId: "prunella_vulgaris",
+    },
+    opcionA_prima: {
+      label: "Corola con labio superior casi plano; flores en verticilos axilares",
+      keyStep: "G'",
+      especieId: "melissa_officinalis",
+    },
+  },
+  labiatae_h: {
+    id: "labiatae_h",
+    milestone: "Labiatae",
+    manualPage: 399,
+    descripcion: "Labiatae - H: número de dientes del cáliz",
+    opcionA: {
+      label: "Cáliz con 10 dientes",
+      keyStep: "H",
+      nextNodeId: "labiatae_i",
+    },
+    opcionA_prima: {
+      label: "Cáliz con 5 dientes",
+      keyStep: "H'",
+      nextNodeId: "labiatae_j",
+    },
+  },
+  labiatae_i: {
+    id: "labiatae_i",
+    milestone: "Labiatae",
+    manualPage: 399,
+    descripcion: "Labiatae - I: igualdad de dientes del cáliz y color floral",
+    opcionA: {
+      label: "Dientes del cáliz iguales, subulados; flores blancas",
+      keyStep: "I",
+      especieId: "marrubium_vulgare",
+    },
+    opcionA_prima: {
+      label: "Dientes del cáliz desiguales; flores anaranjadas",
+      keyStep: "I'",
+      especieId: "leonotis_nepetaefolia",
+    },
+  },
+  labiatae_j: {
+    id: "labiatae_j",
+    milestone: "Labiatae",
+    manualPage: 399,
+    descripcion: "Labiatae - J: forma de la corola y posición de estambres",
+    opcionA: {
+      label: "Corola con labio superior casi plano y labio inferior con segmento medio en forma de saco; estambres apoyados sobre el labio inferior",
+      keyStep: "J",
+      nextNodeId: "hyptis_a",
+    },
+    opcionA_prima: {
+      label: "Corola con labio superior en forma de capuchón y labio inferior casi plano; estambres ascendentes hacia el labio superior",
+      keyStep: "J'",
+      nextNodeId: "labiatae_k",
+    },
+  },
+  hyptis_a: {
+    id: "hyptis_a",
+    milestone: "Hyptis",
+    manualPage: 405,
+    descripcion: "Hyptis - A: forma de los dientes del cáliz",
+    opcionA: {
+      label: "Dientes del cáliz triangulares, anchos",
+      keyStep: "A",
+      nextNodeId: "hyptis_b",
+    },
+    opcionA_prima: {
+      label: "Dientes del cáliz subulados",
+      keyStep: "A'",
+      nextNodeId: "hyptis_c",
+    },
+  },
+  hyptis_b: {
+    id: "hyptis_b",
+    milestone: "Hyptis",
+    manualPage: 405,
+    descripcion: "Hyptis - B: pedicelo y disposición floral",
+    opcionA: {
+      label: "Flores largamente pediceladas, en amplias panojas difusas; hojas estrechamente ovadas",
+      keyStep: "B",
+      especieId: "hyptis_floribunda",
+    },
+    opcionA_prima: {
+      label: "Flores cortamente pediceladas, en verticilastros dispuestos en espigas densas reunidas en panojas; hojas ovado-lanceoladas",
+      keyStep: "B'",
+      especieId: "hyptis_fasciculata_fastigiata",
+    },
+  },
+  hyptis_c: {
+    id: "hyptis_c",
+    milestone: "Hyptis",
+    manualPage: 405,
+    descripcion: "Hyptis - C: capítulos o verticilastros",
+    opcionA: {
+      label: "Flores en capítulos globosos, pedunculados, axilares; hojas ovado-lanceoladas y algo pubescentes",
+      keyStep: "C",
+      especieId: "hyptis_lappacea",
+    },
+    opcionA_prima: {
+      label: "Flores en verticilastros agrupados en espigas interrumpidas; hojas anchamente ovadas, ásperas en el haz y pubescentes en el envés",
+      keyStep: "C'",
+      especieId: "hyptis_mutabilis",
+    },
+  },
+  labiatae_k: {
+    id: "labiatae_k",
+    milestone: "Labiatae",
+    manualPage: 399,
+    descripcion: "Labiatae - K: división de las hojas",
+    opcionA: {
+      label: "Hojas pinatisectas",
+      keyStep: "K",
+      nextNodeId: "leonurus_a",
+    },
+    opcionA_prima: {
+      label: "Hojas crenadas, aserradas o a lo más lobadas",
+      keyStep: "K'",
+      nextNodeId: "labiatae_l",
+    },
+  },
+  leonurus_a: {
+    id: "leonurus_a",
+    milestone: "Leonurus",
+    manualPage: 405,
+    descripcion: "Leonurus - A: división de las hojas",
+    opcionA: {
+      label: "Hojas 3-5-palmatilobadas, con segmentos agudos y dentados; dientes del cáliz subulados, abiertos",
+      keyStep: "A",
+      especieId: "leonurus_cardiaca",
+    },
+    opcionA_prima: {
+      label: "Hojas 3-5-palmatisectas, con segmentos divididos irregularmente",
+      keyStep: "A'",
+      especieId: "leonurus_sibiricus",
+    },
+  },
+  labiatae_l: {
+    id: "labiatae_l",
+    milestone: "Labiatae",
+    manualPage: 399,
+    descripcion: "Labiatae - L: dientes del cáliz y ápice de las nuececitas",
+    opcionA: {
+      label: "Dientes del cáliz mucronados en el ápice; nuececitas redondeadas en el ápice",
+      keyStep: "L",
+      nextNodeId: "stachys_a",
+    },
+    opcionA_prima: {
+      label: "Dientes del cáliz agudos, pero no mucronados; nuececitas truncadas en el ápice",
+      keyStep: "L'",
+      especieId: "lamium_amplexicaule",
+    },
+  },
+  stachys_a: {
+    id: "stachys_a",
+    milestone: "Stachys",
+    manualPage: 406,
+    descripcion: "Stachys - A: largo de dientes del cáliz maduro",
+    opcionA: {
+      label: "Dientes del cáliz maduro de 1,5 mm; hojas de 2-5 cm; corola rosada con tubo de 2,5-3 mm",
+      keyStep: "A",
+      especieId: "stachys_micheliana",
+    },
+    opcionA_prima: {
+      label: "Dientes del cáliz maduro de 2-3 mm; hojas de 2-3 cm; corola rosada con tubo de 3,5-5 mm",
+      keyStep: "A'",
+      especieId: "stachys_arvensis",
     },
   },
   dicot_group_e_a_lowercase: {
