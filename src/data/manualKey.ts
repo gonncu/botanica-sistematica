@@ -6629,6 +6629,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Corola cigomorfa grande o, con corola actinomorfa, hojas pinaticompuestas."
   ),
+  sambucus_australis: species(
+    "sambucus_australis",
+    "Sambucus australis",
+    "124. Caprifoliaceae",
+    "Arbolito de 3-5 m de alto, con hojas opuestas imparipinadas.",
+    "Hojas estipuladas, con 11-13 folíolos ovado-lanceolados, aserrados, glabros, de 3,5-6 cm; estípulas sésiles, redondeadas y dentadas; flores blancas muy numerosas en cimas terminales umbeliformes densas; fruto globoso negro.",
+    "Sur del Brasil, Paraguay, Uruguay y norte de la Argentina. Común en bosques de talas y selvas marginales subclimácicas. Nombre vulgar: sauco."
+  ),
+  lonicera_japonica: species(
+    "lonicera_japonica",
+    "Lonicera japonica",
+    "124. Caprifoliaceae",
+    "Enredadera con hojas persistentes, ovadas, cortamente pecioladas y glabras.",
+    "Hojas de 5-8 x 2-3,5 cm; brácteas ovadas; flores blancas o amarillentas, fragantes, geminadas en las axilas; tubo de la corola pubescente, de unos 2 cm, con limbo bilabiado; estambres exertos; ovario pubescente.",
+    "China y Japón. Cultivada como ornamental y espontánea en el Delta y en la ribera platense. Nombre vulgar: madreselva."
+  ),
 };
 
 export const manualKeyData: Record<string, CladoNode> = {
@@ -19414,7 +19430,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Corola cigomorfa, grande",
       keyStep: "k",
-      especieId: "caprifoliaceae",
+      nextNodeId: "caprifoliaceae_a",
     },
     opcionA_prima: {
       label: "Corola actinomorfa",
@@ -19429,12 +19445,28 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Hojas pinaticompuestas",
       keyStep: "l",
-      especieId: "caprifoliaceae",
+      nextNodeId: "caprifoliaceae_a",
     },
     opcionA_prima: {
       label: "Hojas simples",
       keyStep: "l'",
       nextNodeId: "rubiaceae_a",
+    },
+  },
+  caprifoliaceae_a: {
+    id: "caprifoliaceae_a",
+    milestone: "Caprifoliaceae",
+    manualPage: 447,
+    descripcion: "Caprifoliaceae - A: tipo de hojas y simetría floral",
+    opcionA: {
+      label: "Hojas compuestas; flores actinomorfas",
+      keyStep: "A",
+      especieId: "sambucus_australis",
+    },
+    opcionA_prima: {
+      label: "Hojas simples; flores cigomorfas",
+      keyStep: "A'",
+      especieId: "lonicera_japonica",
     },
   },
 };
