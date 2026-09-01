@@ -4541,6 +4541,214 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Fruto cápsula multiseminada o lóculos con muchos óvulos."
   ),
+  verbascum_virgatum: species(
+    "verbascum_virgatum",
+    "Verbascum virgatum",
+    "117. Scrophulariaceae",
+    "Hierba bienal de 0,5-1 m de alto.",
+    "Corola casi actinomorfa, rotada; estambres 5 y hojas alternas; tallos, pedicelos y cáliz con pelos glandulosos simples; hojas casi glabras; cápsulas subglobosas; hojas inferiores pecioladas, dentadas o sinuado-pinatífidas, y superiores sésiles, cordado-amplexicaules.",
+    "Europa. Adventicia en la región platense."
+  ),
+  verbascum_thapsus: species(
+    "verbascum_thapsus",
+    "Verbascum thapsus",
+    "117. Scrophulariaceae",
+    "Hierba bienal de 1-2 m de alto.",
+    "Corola casi actinomorfa, rotada; estambres 5 y hojas alternas; tallos, pedicelos y cáliz muy pubescentes, con pelos estrellados y ramificados; hojas aterciopeladas; hojas radicales en roseta, elípticas, dentadas y grandes; flores amarillentas en espigas densas.",
+    "Europa; adventicia y cultivada en América. Rara en la región: Tigre."
+  ),
+  linaria_texana: species(
+    "linaria_texana",
+    "Linaria texana",
+    "117. Scrophulariaceae",
+    "Hierba anual o bienal, erecta, glabra, de 20-50 cm de alto.",
+    "Corola personada, con espolón en la base; flores en espigas terminales; hojas lineal-oblongas, pinatinervadas, lineales, enteras y sésiles; corola azul violácea de 10 mm, con espolón delgado de 5-9 mm; semillas tuberculadas.",
+    "América. En la región platense se halla en cultivos y suelos arenosos."
+  ),
+  cymbalaria_muralis: species(
+    "cymbalaria_muralis",
+    "Cymbalaria muralis",
+    "117. Scrophulariaceae",
+    "Hierba perenne, glabra, decumbente, a menudo radicante en los nudos.",
+    "Corola personada, con espolón corto; flores axilares solitarias; plantas tendidas; hojas largamente pecioladas, palmatinervadas, reniforme-orbiculares, 3-5-lobadas; flores azules; corola de 8 mm, con espolón de 2 mm.",
+    "Europa; adventicia en América. Muy común sobre muros viejos."
+  ),
+  castilleja_communis: species(
+    "castilleja_communis",
+    "Castilleja communis",
+    "117. Scrophulariaceae",
+    "Hierba anual, densamente pubescente, con tallos erectos de alrededor de medio metro.",
+    "Corola bilabiada sin espolón, con labio superior erguido y cóncavo; cáliz tubuloso, comprimido; brácteas florales rojas; planta parásita de raíces; hojas alternas, sésiles, lineal-lanceoladas, agudas y dentadas; flores en espigas densas; corola amarillento-rosada.",
+    "América cálida. Se halla en pajonales de Eryngium, cuyas raíces parasita."
+  ),
+  bellardia_trixago: species(
+    "bellardia_trixago",
+    "Bellardia trixago",
+    "117. Scrophulariaceae",
+    "Hierba anual con tallos erectos de 15-60 cm, tetragonales e híspidos.",
+    "Corola bilabiada sin espolón; cáliz inflado-campanulado; brácteas no coloreadas; hojas opuestas, sésiles, lineales, profundamente dentadas y semiamplexicaules; flores blanco-crema en espigas densas.",
+    "Hemisferio oriental; adventicia en América del Sur. A veces en la estepa clímax."
+  ),
+  veronica_persica: species(
+    "veronica_persica",
+    "Veronica persica",
+    "117. Scrophulariaceae",
+    "Hierba anual con tallos ascendentes, delgados y pubescentes.",
+    "Estambres 2; cáliz generalmente 4-secto y tubo de la corola muy corto; cápsula comprimida y reticulada, más ancha que larga, con lóbulos agudos divergentes; hojas pecioladas, anchamente ovadas, crenado-aserradas y pubescentes; flores axilares largamente pedunculadas; corola azul.",
+    "Europa y Asia; adventicia en América. Muy común en jardines, parques, etc."
+  ),
+  veronica_didyma: species(
+    "veronica_didyma",
+    "Veronica didyma",
+    "117. Scrophulariaceae",
+    "Hierba anual, pubescente, de 5-15 cm de alto.",
+    "Flores solitarias axilares; cápsula no reticulada, hinchada, con lóbulos redondeados no divergentes y pilosa; hojas cortamente pecioladas, ovoideo-circulares y crenadas; flores axilares largamente pedunculadas; corola celeste.",
+    "Eurasia; adventicia en América. Frecuente en jardines y parques."
+  ),
+  veronica_anagallis_aquatica: species(
+    "veronica_anagallis_aquatica",
+    "Veronica anagallis-aquatica",
+    "117. Scrophulariaceae",
+    "Hierba semiacuática, erecta, glabra o casi glabra.",
+    "Flores en racimos axilares; hojas sésiles, casi amplexicaules, lanceoladas u ovado-lanceoladas; corola celeste; cápsulas elípticas.",
+    "Hemisferio Norte; adventicia en América del Sur. Rara en la región: San Isidro, en zanjas."
+  ),
+  veronica_serpyllifolia: species(
+    "veronica_serpyllifolia",
+    "Veronica serpyllifolia",
+    "117. Scrophulariaceae",
+    "Hierba perenne subglabra, con tallos ascendentes, radicantes, de unos 10 cm.",
+    "Flores en racimos terminales; hojas opuestas, pecioladas o casi sésiles, ovado-elípticas, crenadas o enteras; corolas blanco-azuladas; cápsulas obcordadas, más anchas que largas, pubescentes.",
+    "Eurasia; adventicia en América. Rara en la región."
+  ),
+  veronica_peregrina_xalapensis: species(
+    "veronica_peregrina_xalapensis",
+    "Veronica peregrina subsp. xalapensis",
+    "117. Scrophulariaceae",
+    "Hierba anual con tallos erectos, cubiertos de pelos glandulares, de 10-30 cm de alto.",
+    "Flores en racimos terminales; hojas enteras o denticuladas, oblongas, atenuadas en la base; flores blancas pequeñas; cápsula orbicular, no emarginada.",
+    "América. Muy común en la región."
+  ),
+  veronica_arvensis: species(
+    "veronica_arvensis",
+    "Veronica arvensis",
+    "117. Scrophulariaceae",
+    "Hierba anual, pubescente, de 5-25 cm de alto.",
+    "Flores en racimos terminales; hojas crenado-dentadas, pubescentes, ovadas, hemicordadas en la base; flores casi sésiles, azules; cápsula emarginada y ciliada.",
+    "Eurasia; adventicia en América. Muy común en suelos modificados."
+  ),
+  micranthemum_umbrosum: species(
+    "micranthemum_umbrosum",
+    "Micranthemum umbrosum",
+    "117. Scrophulariaceae",
+    "Hierba pigmea, repente y glabra, con tallos filiformes.",
+    "Estambres 2; cáliz generalmente 4-partido y tubo corolino corto; cápsula globosa; labio superior de la corola menor que el inferior o nulo; hojas opuestas, sésiles, ovado-oblongas, obtusas y enteras; flores axilares, pequeñas, con corola blanca.",
+    "América cálida. Muy frecuente en céspedes del Delta y de la ribera del Plata."
+  ),
+  gratiola_peruviana: species(
+    "gratiola_peruviana",
+    "Gratiola peruviana",
+    "117. Scrophulariaceae",
+    "Hierba perenne, rastrera o ascendente, de 5-25 cm de alto.",
+    "Estambres 2; cáliz 5-secto y tubo de la corola alargado; flores casi sésiles, con pedicelos muy cortos y bibracteolados; hojas glabras o glanduloso-pubescentes, lanceoladas, aserradas y 3-5-nervadas; flores blancas axilares; corola con labio superior bífido.",
+    "América cálida. Común en suelos pantanosos."
+  ),
+  lindernia_dubia: species(
+    "lindernia_dubia",
+    "Lindernia dubia",
+    "117. Scrophulariaceae",
+    "Hierba baja, decumbente o ascendente, de 5-25 cm de alto.",
+    "Estambres 2; cáliz 5-partido y tubo de la corola alargado; flores con pedúnculos no bracteolados, más largos que las hojas; hojas inferiores obovadas o elípticas y superiores menores, ovadas, abrazadoras en la base; corola liliácea; cápsula ovoidea.",
+    "Norteamérica cálida. Accidental en la región platense: Puerto de la Capital Federal."
+  ),
+  limosella_lineata: species(
+    "limosella_lineata",
+    "Limosella lineata",
+    "117. Scrophulariaceae",
+    "Hierba anual, acaule, de 0,5-7 cm de alto.",
+    "Estambres 4; plantas diminutas, acaules, con hojas radicales subuladas, arrosetadas; pedúnculos más cortos que las hojas; flores blancas o violáceas, pequeñas.",
+    "Rara en céspedes inundables de la ribera."
+  ),
+  gerardia_communis: species(
+    "gerardia_communis",
+    "Gerardia communis",
+    "117. Scrophulariaceae",
+    "Hierba anual, erecta, ramosa y glabra, de 20-45 cm de alto.",
+    "Estambres 4; cáliz 5-dentado o 5-lobado y corola infundibuliforme; hojas sésiles, lineal-lanceoladas y crenuladas; flores solitarias en axilas de las hojas superiores, casi sésiles; corola liliácea de 12-14 mm.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Muy común en campos fértiles y húmedos."
+  ),
+  gerardia_genistifolia: species(
+    "gerardia_genistifolia",
+    "Gerardia genistifolia",
+    "117. Scrophulariaceae",
+    "Hierba perenne, erecta, ramosa y glabra, de cerca de 1 m de alto.",
+    "Estambres 4; cáliz 5-dentado o 5-lobado; hojas lanceoladas; flores axilares en la parte superior del tallo; corola rosado-liliácea, pubescente, de 3-4 cm.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Hallada en el Delta."
+  ),
+  scoparia_aemilii: species(
+    "scoparia_aemilii",
+    "Scoparia aemilii",
+    "117. Scrophulariaceae",
+    "Hierba anual, rastrera.",
+    "Estambres 4; cáliz profundamente 5-partido y corola rotada; hojas algo carnosas, espatuladas y obtusas; flores axilares; segmentos del cáliz obtusos; corola blanca.",
+    "Paraguay y nordeste de la Argentina. Hallada en el puerto de Buenos Aires y en Palermo."
+  ),
+  scoparia_montevidensis: species(
+    "scoparia_montevidensis",
+    "Scoparia montevidensis",
+    "117. Scrophulariaceae",
+    "Hierba perenne, erecta o ascendente, ramosa, glabra o glanduloso-pubescente, de 20-40 cm de alto.",
+    "Estambres 4; cáliz profundamente 5-partido y corola rotada; hojas lineal-lanceoladas, enteras, dentadas o pinatisectas; flores amarillas, largamente pedunculadas; segmentos del cáliz ovado-lanceolados.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. En suelos pantanosos y campos húmedos."
+  ),
+  bacopa_monnieri: species(
+    "bacopa_monnieri",
+    "Bacopa monnieri",
+    "117. Scrophulariaceae",
+    "Hierba pigmea, perenne y glabra, con tallos rastreros radicantes.",
+    "Estambres 4; cáliz con segmentos muy desiguales; plantas glabras; hojas espatuladas, sésiles, enteras o subdenticuladas; pedúnculos axilares bibracteolados en el ápice; flores blancas o azuladas; corola apenas bilabiada.",
+    "Cosmopolita. Frecuente en lugares muy húmedos: bañados, praderas ribereñas, etc."
+  ),
+  bacopa_tweedii: species(
+    "bacopa_tweedii",
+    "Bacopa tweedii",
+    "117. Scrophulariaceae",
+    "Hierba acuática anual, rastrera o semiflotante, con tallo pubescente.",
+    "Estambres 4; cáliz con segmentos muy desiguales; hojas obovado-orbiculares y enteras; flores solitarias, blancas; corola acampanada, apenas bilabiada.",
+    "Acuática, común en el centro y norte de la Argentina. Rara en la región: Pergamino."
+  ),
+  mecardonia_montevidensis: species(
+    "mecardonia_montevidensis",
+    "Mecardonia montevidensis",
+    "117. Scrophulariaceae",
+    "Hierba rastrera, con tallos flexuosos.",
+    "Estambres 4; cáliz con segmentos casi iguales; plantas decumbentes con flores amarillas largamente pecioladas y pecíolo con bractéolas en su base; hojas cortamente pecioladas, ovado-lanceoladas, casi enteras; segmentos del cáliz lanceolados, acuminados.",
+    "Región platense: común en prados húmedos y campos bajos."
+  ),
+  stemodia_humilis: species(
+    "stemodia_humilis",
+    "Stemodia humilis",
+    "117. Scrophulariaceae",
+    "Hierba pequeña, decumbente, con tallos ramosos y pubescentes.",
+    "Estambres 4; cáliz con segmentos casi iguales; hojas casi glabras, ovado-lanceoladas, atenuadas en pecíolo y dentadas; flores solitarias axilares; pedúnculo de 2 mm; corola blanca de 4-5 mm.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Citada para Isla Martín García."
+  ),
+  stemodia_tetragona: species(
+    "stemodia_tetragona",
+    "Stemodia tetragona",
+    "117. Scrophulariaceae",
+    "Hierba glabra, perenne, de 20-100 cm de alto, con tallo cuadrangular.",
+    "Planta robusta y erecta; hojas sésiles, lanceoladas, agudas, profundamente aserradas, auriculadas en la base; flores en espigas; cáliz con una bráctea subulada a cada lado; corola azul-violácea.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Frecuente en el Delta y en la ribera del Plata."
+  ),
+  stemodia_hyptioides: species(
+    "stemodia_hyptioides",
+    "Stemodia hyptioides",
+    "117. Scrophulariaceae",
+    "Hierba pubescente, robusta y erecta.",
+    "Hojas basales opuestas y superiores a veces verticiladas, ovado-oblongas u ovado-lanceoladas, agudas, atenuadas en la base y luego ensanchadas, dentadas; flores en espigas; cáliz 5-partido con segmentos pubescentes; corola azul pálido.",
+    "Sur del Brasil, Uruguay y norte de la Argentina, hasta el Río de la Plata."
+  ),
   martyniaceae: family(
     "martyniaceae",
     "119. Martyniaceae",
@@ -14507,7 +14715,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Fruto cápsula multiseminada",
       keyStep: "F'",
-      especieId: "scrophulariaceae",
+      nextNodeId: "scrophulariaceae_a",
     },
   },
   dicot_group_e_g: {
@@ -14547,7 +14755,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Lóculos del ovario con muchos óvulos",
       keyStep: "I",
-      especieId: "scrophulariaceae",
+      nextNodeId: "scrophulariaceae_a",
     },
     opcionA_prima: {
       label: "Lóculos del ovario con dos óvulos, raramente más",
@@ -16751,6 +16959,406 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Arbustos de 1 m, glabros o con pelos estrellados esparcidos",
       keyStep: "X'",
       especieId: "solanum_bonariense",
+    },
+  },
+  scrophulariaceae_a: {
+    id: "scrophulariaceae_a",
+    milestone: "Scrophulariaceae",
+    manualPage: 419,
+    descripcion: "Scrophulariaceae - A: simetría de corola y número de estambres",
+    opcionA: {
+      label: "Corola casi actinomorfa, rotada; estambres 5; hojas alternas",
+      keyStep: "A",
+      nextNodeId: "verbascum_a",
+    },
+    opcionA_prima: {
+      label: "Corola cigomorfa; estambres fértiles 2-4; hojas al menos inferiores opuestas",
+      keyStep: "A'",
+      nextNodeId: "scrophulariaceae_b",
+    },
+  },
+  verbascum_a: {
+    id: "verbascum_a",
+    milestone: "Verbascum",
+    manualPage: 421,
+    descripcion: "Verbascum - A: tipo de pubescencia",
+    opcionA: {
+      label: "Tallos, pedicelos y cáliz con pelos glandulosos simples; hojas casi glabras; cápsulas subglobosas",
+      keyStep: "A",
+      especieId: "verbascum_virgatum",
+    },
+    opcionA_prima: {
+      label: "Tallos, pedicelos y cáliz muy pubescentes, con pelos estrellados y ramificados; hojas aterciopeladas",
+      keyStep: "A'",
+      especieId: "verbascum_thapsus",
+    },
+  },
+  scrophulariaceae_b: {
+    id: "scrophulariaceae_b",
+    milestone: "Scrophulariaceae",
+    manualPage: 420,
+    descripcion: "Scrophulariaceae - B: presencia de espolón",
+    opcionA: {
+      label: "Corola personada, con un espolón en su base",
+      keyStep: "B",
+      nextNodeId: "scrophulariaceae_c",
+    },
+    opcionA_prima: {
+      label: "Corola sin espolón",
+      keyStep: "B'",
+      nextNodeId: "scrophulariaceae_d",
+    },
+  },
+  scrophulariaceae_c: {
+    id: "scrophulariaceae_c",
+    milestone: "Scrophulariaceae",
+    manualPage: 420,
+    descripcion: "Scrophulariaceae - C: disposición floral en corolas con espolón",
+    opcionA: {
+      label: "Flores en espigas terminales; plantas erectas o ascendentes; hojas lineal-oblongas, pinatinervadas",
+      keyStep: "C",
+      especieId: "linaria_texana",
+    },
+    opcionA_prima: {
+      label: "Flores axilares, solitarias; plantas tendidas; hojas pecioladas, palmatinervadas",
+      keyStep: "C'",
+      especieId: "cymbalaria_muralis",
+    },
+  },
+  scrophulariaceae_d: {
+    id: "scrophulariaceae_d",
+    milestone: "Scrophulariaceae",
+    manualPage: 420,
+    descripcion: "Scrophulariaceae - D: forma de la corola sin espolón",
+    opcionA: {
+      label: "Corola bilabiada, con el labio superior erguido y cóncavo",
+      keyStep: "D",
+      nextNodeId: "scrophulariaceae_e",
+    },
+    opcionA_prima: {
+      label: "Corola subrotácea, con tubo muy corto, infundibuliforme, o apenas bilabiada, con labio superior nunca cóncavo",
+      keyStep: "D'",
+      nextNodeId: "scrophulariaceae_f",
+    },
+  },
+  scrophulariaceae_e: {
+    id: "scrophulariaceae_e",
+    milestone: "Scrophulariaceae",
+    manualPage: 420,
+    descripcion: "Scrophulariaceae - E: cáliz, brácteas y parasitismo",
+    opcionA: {
+      label: "Cáliz tubuloso, comprimido; brácteas coloreadas; plantas parásitas de raíces",
+      keyStep: "E",
+      especieId: "castilleja_communis",
+    },
+    opcionA_prima: {
+      label: "Cáliz inflado-campanulado; brácteas no coloreadas; plantas no parásitas",
+      keyStep: "E'",
+      especieId: "bellardia_trixago",
+    },
+  },
+  scrophulariaceae_f: {
+    id: "scrophulariaceae_f",
+    milestone: "Scrophulariaceae",
+    manualPage: 420,
+    descripcion: "Scrophulariaceae - F: número de estambres",
+    opcionA: {
+      label: "Estambres 2",
+      keyStep: "F",
+      nextNodeId: "scrophulariaceae_g",
+    },
+    opcionA_prima: {
+      label: "Flores con 4 estambres",
+      keyStep: "F'",
+      nextNodeId: "scrophulariaceae_j",
+    },
+  },
+  scrophulariaceae_g: {
+    id: "scrophulariaceae_g",
+    milestone: "Scrophulariaceae",
+    manualPage: 420,
+    descripcion: "Scrophulariaceae - G: cáliz y tubo de la corola",
+    opcionA: {
+      label: "Cáliz generalmente 4-secto; tubo de la corola muy corto",
+      keyStep: "G",
+      nextNodeId: "scrophulariaceae_h",
+    },
+    opcionA_prima: {
+      label: "Cáliz 5-secto; tubo de la corola alargado",
+      keyStep: "G'",
+      nextNodeId: "scrophulariaceae_i",
+    },
+  },
+  scrophulariaceae_h: {
+    id: "scrophulariaceae_h",
+    milestone: "Scrophulariaceae",
+    manualPage: 420,
+    descripcion: "Scrophulariaceae - H: cápsula y labios de la corola",
+    opcionA: {
+      label: "Cápsula comprimida; labio superior de la corola mayor que el inferior",
+      keyStep: "H",
+      nextNodeId: "veronica_a",
+    },
+    opcionA_prima: {
+      label: "Cápsula globosa; labio superior de la corola menor que el inferior",
+      keyStep: "H'",
+      especieId: "micranthemum_umbrosum",
+    },
+  },
+  veronica_a: {
+    id: "veronica_a",
+    milestone: "Veronica",
+    manualPage: 422,
+    descripcion: "Veronica - A: disposición de las flores",
+    opcionA: {
+      label: "Flores solitarias, axilares",
+      keyStep: "A",
+      nextNodeId: "veronica_b",
+    },
+    opcionA_prima: {
+      label: "Flores en racimos axilares o terminales",
+      keyStep: "A'",
+      nextNodeId: "veronica_c",
+    },
+  },
+  veronica_b: {
+    id: "veronica_b",
+    milestone: "Veronica",
+    manualPage: 422,
+    descripcion: "Veronica - B: forma de la cápsula en flores axilares",
+    opcionA: {
+      label: "Cápsula reticulada, comprimida, más ancha que larga, con lóbulos agudos divergentes",
+      keyStep: "B",
+      especieId: "veronica_persica",
+    },
+    opcionA_prima: {
+      label: "Cápsula no reticulada, hinchada, con lóbulos redondeados no divergentes, pilosa",
+      keyStep: "B'",
+      especieId: "veronica_didyma",
+    },
+  },
+  veronica_c: {
+    id: "veronica_c",
+    milestone: "Veronica",
+    manualPage: 422,
+    descripcion: "Veronica - C: racimos axilares o terminales",
+    opcionA: {
+      label: "Flores en racimos axilares; hojas sésiles casi amplexicaules; cápsulas elípticas",
+      keyStep: "C",
+      especieId: "veronica_anagallis_aquatica",
+    },
+    opcionA_prima: {
+      label: "Flores en racimos terminales",
+      keyStep: "C'",
+      nextNodeId: "veronica_d",
+    },
+  },
+  veronica_d: {
+    id: "veronica_d",
+    milestone: "Veronica",
+    manualPage: 422,
+    descripcion: "Veronica - D: ciclo y tallos",
+    opcionA: {
+      label: "Perenne, subglabra; tallos ascendentes, radicantes; cápsulas obcordadas",
+      keyStep: "D",
+      especieId: "veronica_serpyllifolia",
+    },
+    opcionA_prima: {
+      label: "Plantas anuales; tallos no radicantes",
+      keyStep: "D'",
+      nextNodeId: "veronica_e",
+    },
+  },
+  veronica_e: {
+    id: "veronica_e",
+    milestone: "Veronica",
+    manualPage: 422,
+    descripcion: "Veronica - E: hoja y cápsula en plantas anuales",
+    opcionA: {
+      label: "Hojas enteras o denticuladas, oblongas, atenuadas en la base; flores blancas; cápsula orbicular, no emarginada",
+      keyStep: "E",
+      especieId: "veronica_peregrina_xalapensis",
+    },
+    opcionA_prima: {
+      label: "Hojas crenado-dentadas, pubescentes, ovadas, hemicordadas; flores casi sésiles azules; cápsula emarginada",
+      keyStep: "E'",
+      especieId: "veronica_arvensis",
+    },
+  },
+  scrophulariaceae_i: {
+    id: "scrophulariaceae_i",
+    milestone: "Scrophulariaceae",
+    manualPage: 420,
+    descripcion: "Scrophulariaceae - I: bractéolas y pedicelos",
+    opcionA: {
+      label: "Flores casi sésiles, con pedicelos muy cortos, bibracteolados; hojas dentadas",
+      keyStep: "I",
+      especieId: "gratiola_peruviana",
+    },
+    opcionA_prima: {
+      label: "Flores con pedicelos no bracteolados, más largos que las hojas; hojas casi enteras",
+      keyStep: "I'",
+      especieId: "lindernia_dubia",
+    },
+  },
+  scrophulariaceae_j: {
+    id: "scrophulariaceae_j",
+    milestone: "Scrophulariaceae",
+    manualPage: 420,
+    descripcion: "Scrophulariaceae - J: porte con cuatro estambres",
+    opcionA: {
+      label: "Plantas diminutas, acaules; hojas radicales, subuladas",
+      keyStep: "J",
+      especieId: "limosella_lineata",
+    },
+    opcionA_prima: {
+      label: "Plantas con tallo aéreo; hojas caulinares con lámina",
+      keyStep: "J'",
+      nextNodeId: "scrophulariaceae_k",
+    },
+  },
+  scrophulariaceae_k: {
+    id: "scrophulariaceae_k",
+    milestone: "Scrophulariaceae",
+    manualPage: 420,
+    descripcion: "Scrophulariaceae - K: cáliz y corola",
+    opcionA: {
+      label: "Cáliz 5-dentado o 5-lobado; corola infundibuliforme",
+      keyStep: "K",
+      nextNodeId: "gerardia_a",
+    },
+    opcionA_prima: {
+      label: "Cáliz profundamente 5-partido; corola rotada o tubular",
+      keyStep: "K'",
+      nextNodeId: "scrophulariaceae_l",
+    },
+  },
+  gerardia_a: {
+    id: "gerardia_a",
+    milestone: "Gerardia",
+    manualPage: 425,
+    descripcion: "Gerardia - A: ciclo, porte y hojas",
+    opcionA: {
+      label: "Hierba anual, glabra, erecta, ramosa; hojas lineal-lanceoladas; corola liliácea de 12-14 mm",
+      keyStep: "A",
+      especieId: "gerardia_communis",
+    },
+    opcionA_prima: {
+      label: "Hierba perenne, erecta, ramosa, glabra; hojas lanceoladas; corola rosado-liliácea de 3-4 cm",
+      keyStep: "A'",
+      especieId: "gerardia_genistifolia",
+    },
+  },
+  scrophulariaceae_l: {
+    id: "scrophulariaceae_l",
+    milestone: "Scrophulariaceae",
+    manualPage: 420,
+    descripcion: "Scrophulariaceae - L: forma de la corola",
+    opcionA: {
+      label: "Corola rotada",
+      keyStep: "L",
+      nextNodeId: "scoparia_a",
+    },
+    opcionA_prima: {
+      label: "Corola tubulosa",
+      keyStep: "L'",
+      nextNodeId: "scrophulariaceae_m",
+    },
+  },
+  scoparia_a: {
+    id: "scoparia_a",
+    milestone: "Scoparia",
+    manualPage: 425,
+    descripcion: "Scoparia - A: hábito y hojas",
+    opcionA: {
+      label: "Hierba anual, rastrera; hojas algo carnosas, espatuladas y obtusas; corola blanca",
+      keyStep: "A",
+      especieId: "scoparia_aemilii",
+    },
+    opcionA_prima: {
+      label: "Hierba perenne, erecta o ascendente; hojas lineal-lanceoladas; flores amarillas largamente pedunculadas",
+      keyStep: "A'",
+      especieId: "scoparia_montevidensis",
+    },
+  },
+  scrophulariaceae_m: {
+    id: "scrophulariaceae_m",
+    milestone: "Scrophulariaceae",
+    manualPage: 420,
+    descripcion: "Scrophulariaceae - M: ancho relativo de segmentos del cáliz",
+    opcionA: {
+      label: "Cáliz con segmentos muy desiguales en anchura",
+      keyStep: "M",
+      nextNodeId: "bacopa_a",
+    },
+    opcionA_prima: {
+      label: "Cáliz con segmentos casi iguales",
+      keyStep: "M'",
+      nextNodeId: "scrophulariaceae_n",
+    },
+  },
+  bacopa_a: {
+    id: "bacopa_a",
+    milestone: "Bacopa",
+    manualPage: 427,
+    descripcion: "Bacopa - A: pubescencia y forma foliar",
+    opcionA: {
+      label: "Plantas glabras; hojas espatuladas, sésiles, enteras o subdenticuladas; flores blancas o azuladas",
+      keyStep: "A",
+      especieId: "bacopa_monnieri",
+    },
+    opcionA_prima: {
+      label: "Planta con tallo pubescente, rastrera o semiflotante; hojas obovado-orbiculares; flores blancas",
+      keyStep: "A'",
+      especieId: "bacopa_tweedii",
+    },
+  },
+  scrophulariaceae_n: {
+    id: "scrophulariaceae_n",
+    milestone: "Scrophulariaceae",
+    manualPage: 420,
+    descripcion: "Scrophulariaceae - N: hábito y color floral",
+    opcionA: {
+      label: "Plantas decumbentes; flores amarillas, largamente pecioladas; pecíolo con bractéolas en su base",
+      keyStep: "N",
+      especieId: "mecardonia_montevidensis",
+    },
+    opcionA_prima: {
+      label: "Plantas erectas; flores violáceas o blancas, sésiles o apenas pediceladas, con bractéolas en la base del cáliz",
+      keyStep: "N'",
+      nextNodeId: "stemodia_a",
+    },
+  },
+  stemodia_a: {
+    id: "stemodia_a",
+    milestone: "Stemodia",
+    manualPage: 427,
+    descripcion: "Stemodia - A: porte",
+    opcionA: {
+      label: "Hierba pequeña, decumbente; tallos ramosos, pubescentes; flores solitarias axilares",
+      keyStep: "A",
+      especieId: "stemodia_humilis",
+    },
+    opcionA_prima: {
+      label: "Plantas más robustas, erectas; hojas sésiles; flores en espigas",
+      keyStep: "A'",
+      nextNodeId: "stemodia_b",
+    },
+  },
+  stemodia_b: {
+    id: "stemodia_b",
+    milestone: "Stemodia",
+    manualPage: 427,
+    descripcion: "Stemodia - B: pubescencia y hojas",
+    opcionA: {
+      label: "Hierba glabra, perenne; tallo cuadrangular; hojas lanceoladas, profundamente aserradas, auriculadas",
+      keyStep: "B",
+      especieId: "stemodia_tetragona",
+    },
+    opcionA_prima: {
+      label: "Hierba pubescente; hojas basales opuestas y superiores a veces verticiladas; corola azul pálido",
+      keyStep: "B'",
+      especieId: "stemodia_hyptioides",
     },
   },
   solanaceae_d: {
