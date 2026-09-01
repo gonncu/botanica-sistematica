@@ -4771,6 +4771,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Ovario unilocular, fruto cápsula drupácea y placentación parietal."
   ),
+  ibicella_lutea: species(
+    "ibicella_lutea",
+    "Ibicella lutea",
+    "119. Martyniaceae",
+    "Hierba glanduloso-pubescente, de tallos ascendentes, muy glandulosos, de 30-40 cm de alto.",
+    "Hojas opuestas, largamente pecioladas, orbiculares o acorazonadas y dentadas; flores amarillas en racimos erectos, con corola de 3-3,5 cm, glanduloso-pubescente; cápsulas grandes con endocarpo provisto de dos largos cuernos curvos.",
+    "Sur del Brasil, Paraguay, Uruguay y norte y centro de la Argentina. Común en campos secos; florece en verano. Nombre vulgar: cuerno del diablo."
+  ),
   acanthaceae: family(
     "acanthaceae",
     "121. Acanthaceae",
@@ -14756,7 +14764,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Ovario unilocular; fruto cápsula drupácea; placentación parietal",
       keyStep: "H",
-      especieId: "martyniaceae",
+      nextNodeId: "martyniaceae_terminal",
     },
     opcionA_prima: {
       label: "Ovario bilocular; placentación axilar",
@@ -17391,6 +17399,22 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Zarcillos 3-garfiados",
       keyStep: "A'",
       especieId: "bignonia_unguis_cati",
+    },
+  },
+  martyniaceae_terminal: {
+    id: "martyniaceae_terminal",
+    milestone: "Martyniaceae",
+    manualPage: 430,
+    descripcion: "Martyniaceae: único género y especie citados para la zona",
+    opcionA: {
+      label: "Hierba glanduloso-pubescente; hojas opuestas, orbiculares o acorazonadas; flores amarillas",
+      keyStep: "1",
+      especieId: "ibicella_lutea",
+    },
+    opcionA_prima: {
+      label: "Fruto grande con endocarpo leñoso y dos largos cuernos curvos",
+      keyStep: "1",
+      especieId: "ibicella_lutea",
     },
   },
   solanaceae_d: {
