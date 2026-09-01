@@ -6619,6 +6619,70 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Ovario ínfero; flores no en capítulos; plantas dioicas."
   ),
+  wilbrandia_sagittifolia_var_villosa: species(
+    "wilbrandia_sagittifolia_var_villosa",
+    "Wilbrandia sagittifolia var. villosa",
+    "127. Cucurbitaceae",
+    "Hierba perenne monoica, con raíz gruesa y tallos rastreros o trepadores, hirsutos, de 4-5 m.",
+    "Hojas pecioladas, trilobado-sagitadas, enteras o algo dentadas, escabroso-hirsutas; zarcillos simples; flores masculinas racimosas, con lacinias corolinas de 4-5 mm; fruto ovoide-oblongo, verde con estrías más claras.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Escasa en los alrededores de Buenos Aires."
+  ),
+  wilbrandia_sagittifolia_var_disecta: species(
+    "wilbrandia_sagittifolia_var_disecta",
+    "Wilbrandia sagittifolia var. disecta",
+    "127. Cucurbitaceae",
+    "Variedad de Wilbrandia sagittifolia con hojas profundamente divididas.",
+    "Se diferencia de la var. villosa por las hojas profundamente divididas en segmentos angostos; mantiene el hábito perenne voluble y los zarcillos simples.",
+    "Centro de la Argentina. Rara en la región, citada para Zelaya."
+  ),
+  cucurbitella_asperata: species(
+    "cucurbitella_asperata",
+    "Cucurbitella asperata",
+    "127. Cucurbitaceae",
+    "Hierba perenne dioica, con raíz gruesa y tallos rastreros glabros, de 2-3 m.",
+    "Pecíolos híspidos; hojas suborbiculares, 5-palmado-partidas, con segmentos pinatífidos, escabrosos e híspidos en el envés; flores masculinas amarillas en racimos 3-5-floros; frutos subglobosos, verdosos, de 2,5 cm.",
+    "Argentina central. Rara en la región, en la estepa clímax; florece en verano."
+  ),
+  citrullus_colocynthis: species(
+    "citrullus_colocynthis",
+    "Citrullus colocynthis",
+    "127. Cucurbitaceae",
+    "Planta monoica perenne, con raíz gruesa y tallos rastreros de 2-3 m, de ramas hirsutas.",
+    "Hojas rígidas, profundamente palmadas, 3-5-lobadas, con lóbulos sinuado-pinatífidos, por lo general vellosas en la cara inferior; zarcillos bífidos; flores masculinas amarillas, solitarias; fruto del tamaño de una naranja, glabro, verdoso y muy amargo.",
+    "Viejo Mundo. Rara en la región como planta adventicia."
+  ),
+  cucurbita_andreana: species(
+    "cucurbita_andreana",
+    "Cucurbita andreana",
+    "127. Cucurbitaceae",
+    "Planta anual, con tallos rastreros hirsutos.",
+    "Hojas grandes, trilobadas, con gruesas nervaduras hirsutas; flores masculinas de 7-9 cm; fruto globoso u obovado, de 8-12 cm, verde con estrías claras y muy amargo.",
+    "Uruguay y nordeste de la Argentina. Rara en suelos modificados. Nombre vulgar: zapallito amargo."
+  ),
+  cayaponia_podantha: species(
+    "cayaponia_podantha",
+    "Cayaponia podantha",
+    "127. Cucurbitaceae",
+    "Planta dioica perenne, con tallos trepadores pubescentes.",
+    "Flor masculina con receptáculo atenuado en la base en forma de tubo; sépalos de 6-8 mm; anteras en cabezuela de 6-9 mm; fruto oblongo, rojizo, de 3-4 cm, con 6-12 semillas; hojas 3-5-lobadas, tomentosas en el envés; zarcillos simples.",
+    "Norte de la Argentina. Se halla en los bosques de la ribera platense."
+  ),
+  cayaponia_ficifolia: species(
+    "cayaponia_ficifolia",
+    "Cayaponia ficifolia",
+    "127. Cucurbitaceae",
+    "Planta dioica perenne, ramosa, trepadora e hirsuta.",
+    "Flor masculina con receptáculo redondeado o cortamente atenuado en la base; sépalos pequeños; anteras en cabezuela de 5-6 mm; fruto de unos 10 mm, 3-seminado; hojas variables, por lo común 5-lobadas o partidas; zarcillos 1-3-fidos.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Común en bosques del Delta y de la ribera, también en cercos y alambrados. Nombre vulgar: tayuyá."
+  ),
+  cyclanthera_hystrix: species(
+    "cyclanthera_hystrix",
+    "Cyclanthera hystrix",
+    "127. Cucurbitaceae",
+    "Planta monoica trepadora, con tallos gráciles y glabros.",
+    "Hojas polimorfas, más o menos profundamente 3-5-lobadas o subíntegras, truncadas o emarginadas en la base, crenado-dentadas; zarcillos simples o bífidos; flores masculinas en racimos paucifloros; fruto rostrado, cubierto de púas, de unos 2 cm, con dehiscencia elástica.",
+    "Uruguay y norte de la Argentina. Muy común en los bosques del Delta y de la ribera platense."
+  ),
   valerianaceae: family(
     "valerianaceae",
     "125. Valerianaceae",
@@ -19402,7 +19466,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Plantas dioicas",
       keyStep: "g",
-      especieId: "cucurbitaceae",
+      nextNodeId: "cucurbitaceae_a",
     },
     opcionA_prima: {
       label: "Plantas monoicas; flores por lo común hermafroditas",
@@ -19547,6 +19611,118 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Capítulo fructífero ovoideo con páleas espiniformes ganchudas",
       keyStep: "1",
       especieId: "dipsacus_fullonum",
+    },
+  },
+  cucurbitaceae_a: {
+    id: "cucurbitaceae_a",
+    milestone: "Cucurbitaceae",
+    manualPage: 451,
+    descripcion: "Cucurbitaceae - A: disposición de las anteras",
+    opcionA: {
+      label: "Estambres con anteras verticales, longitudinalmente dehiscentes; fruto liso",
+      keyStep: "A",
+      nextNodeId: "cucurbitaceae_b",
+    },
+    opcionA_prima: {
+      label: "Estambres formando una columna, con una sola antera horizontal; fruto cubierto de púas",
+      keyStep: "A'",
+      especieId: "cyclanthera_hystrix",
+    },
+  },
+  cucurbitaceae_b: {
+    id: "cucurbitaceae_b",
+    milestone: "Cucurbitaceae",
+    manualPage: 451,
+    descripcion: "Cucurbitaceae - B: fijación y forma de las anteras",
+    opcionA: {
+      label: "Anteras dorsifijas, con lóculos rectos o ligeramente curvos",
+      keyStep: "B",
+      nextNodeId: "cucurbitaceae_c",
+    },
+    opcionA_prima: {
+      label: "Anteras basifijas, con lóculos flexuosos, 2-3-plegados",
+      keyStep: "B'",
+      nextNodeId: "cucurbitaceae_d",
+    },
+  },
+  cucurbitaceae_c: {
+    id: "cucurbitaceae_c",
+    milestone: "Cucurbitaceae",
+    manualPage: 451,
+    descripcion: "Cucurbitaceae - C: receptáculo masculino y estigmas",
+    opcionA: {
+      label: "Flor masculina con receptáculo de 3-4 mm; flor femenina con dos estigmas bífidos",
+      keyStep: "C",
+      nextNodeId: "wilbrandia_a",
+    },
+    opcionA_prima: {
+      label: "Flor masculina con receptáculo de 6-7 mm; flor femenina con cinco estigmas bífidos",
+      keyStep: "C'",
+      especieId: "cucurbitella_asperata",
+    },
+  },
+  cucurbitaceae_d: {
+    id: "cucurbitaceae_d",
+    milestone: "Cucurbitaceae",
+    manualPage: 451,
+    descripcion: "Cucurbitaceae - D: anteras libres o conniventes",
+    opcionA: {
+      label: "Anteras libres o algo coherentes",
+      keyStep: "D",
+      especieId: "citrullus_colocynthis",
+    },
+    opcionA_prima: {
+      label: "Anteras conniventes, formando una cabezuela más o menos cilíndrica",
+      keyStep: "D'",
+      nextNodeId: "cucurbitaceae_e",
+    },
+  },
+  cucurbitaceae_e: {
+    id: "cucurbitaceae_e",
+    milestone: "Cucurbitaceae",
+    manualPage: 451,
+    descripcion: "Cucurbitaceae - E: flor femenina y posición de semillas",
+    opcionA: {
+      label: "Flor femenina sin estaminodios; estigmas bifurcados; semillas horizontales; plantas anuales",
+      keyStep: "E",
+      especieId: "cucurbita_andreana",
+    },
+    opcionA_prima: {
+      label: "Flor femenina con tres estaminodios; estigmas apenas bilobados; semillas verticales; plantas perennes",
+      keyStep: "E'",
+      nextNodeId: "cayaponia_a",
+    },
+  },
+  wilbrandia_a: {
+    id: "wilbrandia_a",
+    milestone: "Wilbrandia",
+    manualPage: 452,
+    descripcion: "Wilbrandia sagittifolia: variedades citadas",
+    opcionA: {
+      label: "Hojas trilobado-sagitadas, enteras o algo dentadas, escabroso-hirsutas",
+      keyStep: "1",
+      especieId: "wilbrandia_sagittifolia_var_villosa",
+    },
+    opcionA_prima: {
+      label: "Hojas profundamente divididas en segmentos angostos",
+      keyStep: "1a",
+      especieId: "wilbrandia_sagittifolia_var_disecta",
+    },
+  },
+  cayaponia_a: {
+    id: "cayaponia_a",
+    milestone: "Cayaponia",
+    manualPage: 454,
+    descripcion: "Cayaponia - A: receptáculo, fruto y zarcillos",
+    opcionA: {
+      label: "Receptáculo masculino atenuado en tubo; fruto oblongo rojizo de 3-4 cm; zarcillos simples",
+      keyStep: "A",
+      especieId: "cayaponia_podantha",
+    },
+    opcionA_prima: {
+      label: "Receptáculo masculino redondeado o cortamente atenuado; fruto de unos 10 mm; zarcillos 1-3-fidos",
+      keyStep: "A'",
+      especieId: "cayaponia_ficifolia",
     },
   },
 };
