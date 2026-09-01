@@ -4793,6 +4793,110 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Ovario bilocular con placentación axilar; lóculos con dos óvulos, raramente más."
   ),
+  stenandrium_breviflorum: species(
+    "stenandrium_breviflorum",
+    "Stenandrium breviflorum",
+    "121. Acanthaceae",
+    "Hierba perenne pigmea, acaule, con hojas en roseta.",
+    "Tubo de la corola de unos 5 mm; hojas pecioladas, ovadas o elípticas, obtusas, con seis pares de nervaduras secundarias, laxamente velludas en el haz y densamente en el envés; espiga con hasta 40 flores rosadas; cápsula ovoidea con cuatro semillas.",
+    "Centro de la Argentina. Rara cerca de Buenos Aires."
+  ),
+  stenandrium_parodii: species(
+    "stenandrium_parodii",
+    "Stenandrium parodii",
+    "121. Acanthaceae",
+    "Hierba perenne pigmea, acaule, con raíces engrosadas y carnosas.",
+    "Hojas en roseta, ovadas, obtusas, pubescentes, de unos 2 cm; flores pocas en espigas cortas casi sésiles; brácteas lanceoladas, trinervadas; corola rosada; cápsula ovoidea; polen espinuloso.",
+    "Uruguay y provincia de Buenos Aires; en campos secos próximos a Eva Perón. Florece en verano."
+  ),
+  stenandrium_trinerve: species(
+    "stenandrium_trinerve",
+    "Stenandrium trinerve",
+    "121. Acanthaceae",
+    "Hierba perenne, acaule y pigmea, con raíces no engrosadas.",
+    "Hojas en roseta, pecioladas, ovadas, enteras, obtusas, glabrescentes en el haz y algo velludas en el envés, de 2-3 cm; espigas pedunculadas, paucifloras, con brácteas lanceoladas y ciliadas; corola violácea; cápsula ovoidea.",
+    "Sur del Brasil, Uruguay y centro de la Argentina. Común en la estepa clímax; florece en verano."
+  ),
+  hygrophila_pubescens: species(
+    "hygrophila_pubescens",
+    "Hygrophila pubescens",
+    "121. Acanthaceae",
+    "Hierba perenne, estolonífera, erecta o apoyante y pubescente.",
+    "Hojas opuestas, sésiles o cortamente pecioladas, oblongo-lanceoladas, enteras, de 6-15 cm; flores axilares azules o blancas; corola de 10-12 mm; cápsulas fusiformes de 10-15 mm; semillas 16-20, cubiertas de pelos glutinosos.",
+    "Nordeste de la Argentina. Común en los bosques del Delta y de la ribera platense; florece al finalizar el verano."
+  ),
+  hygrophila_atricheta: species(
+    "hygrophila_atricheta",
+    "Hygrophila atricheta",
+    "121. Acanthaceae",
+    "Hierba perenne semejante a Hygrophila pubescens.",
+    "Hojas opuestas, enteras; flores axilares azules o blancas; cápsulas fusiformes; se distingue de H. pubescens por las semillas glabras.",
+    "Endémica del Delta del Paraná."
+  ),
+  dicliptera_lutea: species(
+    "dicliptera_lutea",
+    "Dicliptera lutea",
+    "121. Acanthaceae",
+    "Hierba perenne, erecta, glabra, de un metro o más de alto.",
+    "Flores amarillas; hojas pecioladas, elíptico-oblongas, ligeramente pubescentes en el margen y la nervadura, de unos 7 x 2 cm; glomérulos axilares paucifloros; corola de 2 cm; cápsulas con cuatro semillas.",
+    "Endémica del Delta del Paraná."
+  ),
+  dicliptera_deltica: species(
+    "dicliptera_deltica",
+    "Dicliptera deltica",
+    "121. Acanthaceae",
+    "Hierba perenne, erecta o apoyante, glabra, de cerca de 1 m de alto.",
+    "Flores rojas; corola de 30-35 mm; nervadura central del labio inferior con 7-8 nervaduras secundarias; hojas ovado-lanceoladas, pecioladas, glabras, de hasta 12 x 3 cm; glomérulos sésiles o cortamente pedunculados; cápsulas ovoideas.",
+    "Endémica de la región: Delta y ribera platense."
+  ),
+  dicliptera_tweediana: species(
+    "dicliptera_tweediana",
+    "Dicliptera tweediana",
+    "121. Acanthaceae",
+    "Hierba perenne, glabra, de 30-60 cm de alto.",
+    "Flores rojas; corola de 20-25 mm; nervadura central del labio inferior con 10-11 nervaduras secundarias; hojas pecioladas, ovadas u oblongas, semiobtusas; flores en cimas capituliformes pedunculadas, axilares y terminales; cápsulas obovoideas.",
+    "Norte y centro de la Argentina y Uruguay. Se halla a veces a lo largo de vías férreas y en bosques de la ribera."
+  ),
+  poikilacanthus_tweedianus: species(
+    "poikilacanthus_tweedianus",
+    "Poikilacanthus tweedianus",
+    "121. Acanthaceae",
+    "Hierba o sufrútice de altura variable, con tallos apoyantes algo pubescentes.",
+    "Hojas ovado-lanceoladas, pecioladas, agudas, enteras, laxamente pubescentes, de 4-10 x 2-4 cm; espigas axilares paucifloras; brácteas espatuladas y ciliadas; corola blanca de 25 mm.",
+    "Norte y centro de la Argentina, hasta el Delta y la ribera del Plata. Florece en verano."
+  ),
+  justicia_campestris: species(
+    "justicia_campestris",
+    "Justicia campestris",
+    "121. Acanthaceae",
+    "Arbusto glabro, de 1-2 m de alto.",
+    "Hojas lanceoladas, cortamente pecioladas, enteras, de 2-5 cm, con abundantes cistolitos; flores axilares, solitarias, subsésiles; brácteas lanceoladas; cáliz de 7 mm; corola azul bilabiada, de 2 cm; cápsulas estipitadas de 14-16 mm.",
+    "Centro de la Argentina. Cerca de Buenos Aires se halla en barrancas del Paraná; florece en primavera."
+  ),
+  justicia_obtusifolia: species(
+    "justicia_obtusifolia",
+    "Justicia obtusifolia",
+    "121. Acanthaceae",
+    "Hierba perenne con tallos erectos o ascendentes, de 30-40 cm de alto.",
+    "Tallos y hojas sin cistolitos; hojas lanceoladas o elípticas, obtusas, sésiles, enteras, glabras, de hasta 10 cm; flores en cimas espiciformes paucifloras; cáliz casi tan largo como la corola, de 8 mm; corola violácea de 9 mm.",
+    "Uruguay y nordeste de la Argentina. Frecuente en el Delta."
+  ),
+  justicia_laevilinguis: species(
+    "justicia_laevilinguis",
+    "Justicia laevilinguis",
+    "121. Acanthaceae",
+    "Hierba rizomatosa, erecta, glabra, de cerca de 1 m de alto.",
+    "Tallos y hojas con cistolitos; hojas lanceoladas, obtusas, sésiles, enteras, de hasta 9 cm; flores en cimas espiciformes; cáliz de 8-9 mm; corola violácea de unos 15 mm; tecas de las anteras ligeramente divergentes.",
+    "Uruguay y nordeste de la Argentina. Hallada en la ribera del Plata, como Punta Lara y Palo Blanco."
+  ),
+  justicia_ascendens: species(
+    "justicia_ascendens",
+    "Justicia ascendens",
+    "121. Acanthaceae",
+    "Hierba perenne, glabra, con tallos ascendentes de 30-40 cm de alto.",
+    "Tallos y hojas con cistolitos; hojas lanceoladas, sésiles o casi, agudas, enteras, de hasta 8 cm; flores en cimas espiciformes; cáliz de 9-10 mm; corola violácea de unos 25 mm; tecas de las anteras en ángulo recto.",
+    "Endémica de la región platense. Común en el Delta y en la ribera del Plata."
+  ),
   labiatae: family(
     "labiatae",
     "115. Labiatae",
@@ -14792,7 +14896,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Lóculos del ovario con dos óvulos, raramente más",
       keyStep: "I'",
-      especieId: "acanthaceae",
+      nextNodeId: "acanthaceae_a",
     },
   },
   dicot_group_e_j: {
@@ -17439,6 +17543,198 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Escapos erectos de 10-20 cm, con 1-3 flores amarillas",
       keyStep: "1",
       especieId: "utricularia_platensis",
+    },
+  },
+  acanthaceae_a: {
+    id: "acanthaceae_a",
+    milestone: "Acanthaceae",
+    manualPage: 432,
+    descripcion: "Acanthaceae - A: cantidad de estambres",
+    opcionA: {
+      label: "Estambres 4",
+      keyStep: "A",
+      nextNodeId: "acanthaceae_b",
+    },
+    opcionA_prima: {
+      label: "Estambres 2",
+      keyStep: "A'",
+      nextNodeId: "acanthaceae_c",
+    },
+  },
+  acanthaceae_b: {
+    id: "acanthaceae_b",
+    milestone: "Acanthaceae",
+    manualPage: 432,
+    descripcion: "Acanthaceae - B: hábito en plantas con cuatro estambres",
+    opcionA: {
+      label: "Plantas pigmeas, acaules, con hojas en roseta",
+      keyStep: "B",
+      nextNodeId: "stenandrium_a",
+    },
+    opcionA_prima: {
+      label: "Plantas caulescentes, con hojas opuestas",
+      keyStep: "B'",
+      nextNodeId: "hygrophila_a",
+    },
+  },
+  acanthaceae_c: {
+    id: "acanthaceae_c",
+    milestone: "Acanthaceae",
+    manualPage: 432,
+    descripcion: "Acanthaceae - C: inserción de los estambres",
+    opcionA: {
+      label: "Estambres insertos en el tubo corolino",
+      keyStep: "C",
+      nextNodeId: "dicliptera_a",
+    },
+    opcionA_prima: {
+      label: "Estambres insertos en la garganta de la corola",
+      keyStep: "C'",
+      nextNodeId: "acanthaceae_d",
+    },
+  },
+  acanthaceae_d: {
+    id: "acanthaceae_d",
+    milestone: "Acanthaceae",
+    manualPage: 432,
+    descripcion: "Acanthaceae - D: forma del tubo corolino",
+    opcionA: {
+      label: "Tubo corolino estrangulado debajo de la garganta",
+      keyStep: "D",
+      especieId: "poikilacanthus_tweedianus",
+    },
+    opcionA_prima: {
+      label: "Tubo corolino no estrangulado",
+      keyStep: "D'",
+      nextNodeId: "justicia_a",
+    },
+  },
+  stenandrium_a: {
+    id: "stenandrium_a",
+    milestone: "Stenandrium",
+    manualPage: 432,
+    descripcion: "Stenandrium - A: longitud del tubo corolino y rasgos del polen",
+    opcionA: {
+      label: "Tubo de la corola de unos 5 mm; hojas con seis pares de nervaduras secundarias; polen marginado",
+      keyStep: "A",
+      especieId: "stenandrium_breviflorum",
+    },
+    opcionA_prima: {
+      label: "Tubo de la corola de unos 9 mm; hojas con 3-4 pares de nervaduras secundarias; polen espinoso",
+      keyStep: "A'",
+      nextNodeId: "stenandrium_b",
+    },
+  },
+  stenandrium_b: {
+    id: "stenandrium_b",
+    milestone: "Stenandrium",
+    manualPage: 433,
+    descripcion: "Stenandrium - B: raíces",
+    opcionA: {
+      label: "Raíces engrosadas, carnosas; hojas pubescentes; flores pocas en espigas cortas casi sésiles",
+      keyStep: "B",
+      especieId: "stenandrium_parodii",
+    },
+    opcionA_prima: {
+      label: "Raíces no engrosadas; hojas glabrescentes en el haz y algo velludas en el envés; espigas pedunculadas",
+      keyStep: "B'",
+      especieId: "stenandrium_trinerve",
+    },
+  },
+  hygrophila_a: {
+    id: "hygrophila_a",
+    milestone: "Hygrophila",
+    manualPage: 433,
+    descripcion: "Hygrophila - A: indumento de las semillas",
+    opcionA: {
+      label: "Semillas 16-20, cubiertas de pelos glutinosos",
+      keyStep: "A",
+      especieId: "hygrophila_pubescens",
+    },
+    opcionA_prima: {
+      label: "Semillas glabras",
+      keyStep: "A'",
+      especieId: "hygrophila_atricheta",
+    },
+  },
+  dicliptera_a: {
+    id: "dicliptera_a",
+    milestone: "Dicliptera",
+    manualPage: 434,
+    descripcion: "Dicliptera - A: color de las flores",
+    opcionA: {
+      label: "Flores amarillas",
+      keyStep: "A",
+      especieId: "dicliptera_lutea",
+    },
+    opcionA_prima: {
+      label: "Flores rojas",
+      keyStep: "A'",
+      nextNodeId: "dicliptera_b",
+    },
+  },
+  dicliptera_b: {
+    id: "dicliptera_b",
+    milestone: "Dicliptera",
+    manualPage: 434,
+    descripcion: "Dicliptera - B: corola y nervaduras del labio inferior",
+    opcionA: {
+      label: "Corola de 30-35 mm; nervadura central del labio inferior con 7-8 nervaduras secundarias",
+      keyStep: "B",
+      especieId: "dicliptera_deltica",
+    },
+    opcionA_prima: {
+      label: "Corola de 20-25 mm; nervadura central del labio inferior con 10-11 nervaduras secundarias",
+      keyStep: "B'",
+      especieId: "dicliptera_tweediana",
+    },
+  },
+  justicia_a: {
+    id: "justicia_a",
+    milestone: "Justicia",
+    manualPage: 435,
+    descripcion: "Justicia - A: hábito",
+    opcionA: {
+      label: "Arbusto glabro de 1-2 m; flores axilares solitarias",
+      keyStep: "A",
+      especieId: "justicia_campestris",
+    },
+    opcionA_prima: {
+      label: "Hierbas; flores dispuestas en falsas espigas",
+      keyStep: "A'",
+      nextNodeId: "justicia_b",
+    },
+  },
+  justicia_b: {
+    id: "justicia_b",
+    milestone: "Justicia",
+    manualPage: 435,
+    descripcion: "Justicia - B: presencia de cistolitos",
+    opcionA: {
+      label: "Tallos y hojas sin cistolitos; cáliz casi tan largo como la corola",
+      keyStep: "B",
+      especieId: "justicia_obtusifolia",
+    },
+    opcionA_prima: {
+      label: "Tallos y hojas con cistolitos; cáliz mucho más corto que la corola",
+      keyStep: "B'",
+      nextNodeId: "justicia_c",
+    },
+  },
+  justicia_c: {
+    id: "justicia_c",
+    milestone: "Justicia",
+    manualPage: 435,
+    descripcion: "Justicia - C: disposición de las tecas",
+    opcionA: {
+      label: "Tecas de las anteras ligeramente divergentes; corola de unos 15 mm",
+      keyStep: "C",
+      especieId: "justicia_laevilinguis",
+    },
+    opcionA_prima: {
+      label: "Tecas de las anteras en ángulo recto; corola de unos 25 mm",
+      keyStep: "C'",
+      especieId: "justicia_ascendens",
     },
   },
   solanaceae_d: {
