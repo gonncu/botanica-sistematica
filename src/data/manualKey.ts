@@ -4443,6 +4443,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Plantas acuáticas con hojas sumergidas provistas de ascidias o trampas."
   ),
+  utricularia_platensis: species(
+    "utricularia_platensis",
+    "Utricularia platensis",
+    "120. Lentibulariaceae",
+    "Hierba perenne acuática, parcialmente sumergida, con tallos horizontales verdes y muy delgados.",
+    "Hojas dimorfas: las superiores verticiladas, con pecíolo y nervadura central hinchados, fusiformes y flotantes; hojas normales sumergidas, bipartidas casi desde la base, con ramificaciones dicotómicas y vesículas-trampa; escapos erectos de 10-20 cm con 1-3 flores amarillas.",
+    "Especie endémica de la región platense, hallada en charcas cerca de Eva Perón."
+  ),
   bignoniaceae: family(
     "bignoniaceae",
     "118. Bignoniaceae",
@@ -14689,7 +14697,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Plantas acuáticas; hojas sumergidas provistas de ascidias o trampas",
       keyStep: "C",
-      especieId: "lentibulariaceae",
+      nextNodeId: "lentibulariaceae_terminal",
     },
     opcionA_prima: {
       label: "Plantas terrestres; hojas sin ascidias ni trampas",
@@ -17415,6 +17423,22 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Fruto grande con endocarpo leñoso y dos largos cuernos curvos",
       keyStep: "1",
       especieId: "ibicella_lutea",
+    },
+  },
+  lentibulariaceae_terminal: {
+    id: "lentibulariaceae_terminal",
+    milestone: "Lentibulariaceae",
+    manualPage: 431,
+    descripcion: "Lentibulariaceae: único género y especie citados para la zona",
+    opcionA: {
+      label: "Hierba acuática parcialmente sumergida; hojas finamente divididas con vesículas-trampa",
+      keyStep: "1",
+      especieId: "utricularia_platensis",
+    },
+    opcionA_prima: {
+      label: "Escapos erectos de 10-20 cm, con 1-3 flores amarillas",
+      keyStep: "1",
+      especieId: "utricularia_platensis",
     },
   },
   solanaceae_d: {
