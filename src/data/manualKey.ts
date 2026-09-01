@@ -6605,6 +6605,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Flores en capítulos; ovario unilocular y flores cigomorfas."
   ),
+  dipsacus_fullonum: species(
+    "dipsacus_fullonum",
+    "Dipsacus fullonum",
+    "126. Dipsacaceae",
+    "Hierba bienal de 1-1,5 m de alto, con aguijones cortos.",
+    "Hojas inferiores en roseta; hojas superiores opuestas y connatas en la base, oblongo-oblanceoladas, obtusas, enteras o crenadas, glabras; capítulos terminales hemisféricos de unos 3 cm de diámetro, con flores liliáceas; capítulo fructífero ovoideo, con páleas espiniformes ganchudas.",
+    "Europa, adventicia en América. Rara en la región, junto a vías férreas. Sus capítulos fructificados se utilizan para cardar lana. Nombre vulgar: cardo de cardar."
+  ),
   cucurbitaceae: family(
     "cucurbitaceae",
     "127. Cucurbitaceae",
@@ -19384,7 +19392,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Flores cigomorfas",
       keyStep: "f'",
-      especieId: "dipsacaceae",
+      nextNodeId: "dipsacaceae_terminal",
     },
   },
   dicot_group_e_g_lower: {
@@ -19523,6 +19531,22 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hojas, al menos las superiores, profundamente pinatisectas; flores amarillentas en panojas densas",
       keyStep: "B'",
       especieId: "valeriana_polystachya",
+    },
+  },
+  dipsacaceae_terminal: {
+    id: "dipsacaceae_terminal",
+    milestone: "Dipsacaceae",
+    manualPage: 450,
+    descripcion: "Dipsacaceae: único género y especie citados para la zona",
+    opcionA: {
+      label: "Hierba bienal con aguijones cortos; capítulos terminales hemisféricos",
+      keyStep: "1",
+      especieId: "dipsacus_fullonum",
+    },
+    opcionA_prima: {
+      label: "Capítulo fructífero ovoideo con páleas espiniformes ganchudas",
+      keyStep: "1",
+      especieId: "dipsacus_fullonum",
     },
   },
 };
