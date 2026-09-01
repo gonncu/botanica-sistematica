@@ -696,8 +696,168 @@ export const manualFamilyData: Record<string, Especie> = {
   rubiaceae: family(
     "rubiaceae",
     "123. Rubiaceae",
-    "Dicotiledóneas del Grupo B.",
-    "Flores con cáliz/perigonio calicoide; en esta rama aparece por hojas verticiladas y ovario ínfero o semiínfero."
+    "Dicotiledóneas gamopétalas, alcanzables desde más de una rama de la clave.",
+    "Flores generalmente actinomorfas, corola epígina, ovario ínfero y hojas simples opuestas o verticiladas, por lo común con estípulas."
+  ),
+  cephalanthus_glabratus: species(
+    "cephalanthus_glabratus",
+    "Cephalanthus glabratus",
+    "123. Rubiaceae",
+    "Arbusto o arbolito glabro, de 3-5 m de alto.",
+    "Hojas en verticilos de 3, lanceoladas, enteras, de 5-8 x 1,5-2 cm; cabezuelas globosas dispuestas en cimas terminales y axilares; cáliz de 1 mm; corola blanca de 4 mm.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Común en matorrales del Delta y de la ribera del Plata. Nombres vulgares: sarandí, sarandí colorado."
+  ),
+  guettarda_uruguensis: species(
+    "guettarda_uruguensis",
+    "Guettarda uruguensis",
+    "123. Rubiaceae",
+    "Arbusto o arbolito ramoso, de 2-5 m de alto.",
+    "Hojas opuestas, cortamente pecioladas, ovadas, agudas, enteras, glabras en el haz y tomentosas en el envés, de 5-8 x 2-5 cm; cimas 7-15-floras; cáliz amarillento tomentuloso; corola blanco-rosada; frutos elipsoideos de casi 1 cm.",
+    "Brasil, Uruguay y nordeste de la Argentina, hasta el Delta y la Isla Martín García."
+  ),
+  oldenlandia_thesiifolia: species(
+    "oldenlandia_thesiifolia",
+    "Oldenlandia thesiifolia",
+    "123. Rubiaceae",
+    "Hierba anual pigmea, glabra o algo pubescente, con tallos tendidos y filiformes.",
+    "Hojas ovado-oblongas de 3-5 mm; flores terminales, solitarias o geminadas, largamente pedunculadas; cáliz de 1,5 mm, hirsuto en la base; corola acampanada, 4-lobada, de 2 mm; cápsulas de 1-1,5 mm.",
+    "América austral. Común en la orilla de los arroyos."
+  ),
+  richardia_stellaris: species(
+    "richardia_stellaris",
+    "Richardia stellaris",
+    "123. Rubiaceae",
+    "Hierba perenne con tallos cortos, tendidos e híspidos.",
+    "Hojas lanceoladas o lanceolado-lineales, rígidas, enteras y peludas; estípulas largamente ciliadas; flores en capítulos rodeados por algunas hojas.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. En la estepa clímax."
+  ),
+  richardia_rosea: species(
+    "richardia_rosea",
+    "Richardia rosea",
+    "123. Rubiaceae",
+    "Hierba perenne con tallos tendidos e híspidos.",
+    "Hojas anchamente ovado-elípticas, tiernas, agudas en el ápice y atenuadas en la base en cortísimo pecíolo, enteras, pubescentes, de 3-5 x 1,5-2 cm; estípulas membranosas y ciliadas; flores rosadas o blancas en capítulos involucrados por hojas.",
+    "Brasil, Uruguay y nordeste de la Argentina. Se halla en suelos arenosos de la ribera platense."
+  ),
+  diodia_brasiliensis: species(
+    "diodia_brasiliensis",
+    "Diodia brasiliensis",
+    "123. Rubiaceae",
+    "Sufrútice de 0,5-1 m de alto, con tallos tetragonales glabros.",
+    "Hojas oblanceoladas, agudas, glabras, enteras, de 10-20 x 2-10 mm; flores diminutas, blancas, sésiles en las axilas de las hojas superiores, formando seudoverticilos; fruto disgregándose en dos cocos indehiscentes.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Común en los bosques del Delta y de la ribera del Plata."
+  ),
+  diodia_dasycephala: species(
+    "diodia_dasycephala",
+    "Diodia dasycephala",
+    "123. Rubiaceae",
+    "Hierba perenne, decumbente o ascendente, glabra.",
+    "Hojas opuestas o seudoverticiladas, oblanceoladas, enteras, atenuadas en la base, de 2-3 cm x 5-10 mm; flores blancas en cabezuelas terminales rodeadas por algunas hojas.",
+    "Brasil, Uruguay y nordeste de la Argentina. Común en la estepa clímax y en suelos modificados."
+  ),
+  mitracarpus_megapotamicus: species(
+    "mitracarpus_megapotamicus",
+    "Mitracarpus megapotamicus",
+    "123. Rubiaceae",
+    "Hierba perenne, ascendente y velluda.",
+    "Hojas lanceoladas, enteras, agudas, de 2-4 cm x 2,5-6 mm; flores blancas en capítulos terminales densos; fruto cápsula de dehiscencia transversal.",
+    "América austral templado-cálida. Se halla en la estepa clímax."
+  ),
+  spermacoce_glabra: species(
+    "spermacoce_glabra",
+    "Spermacoce glabra",
+    "123. Rubiaceae",
+    "Hierba perenne, rastrera o ascendente, glabra.",
+    "Hojas lanceoladas, atenuadas en la base en seudopecíolo, enteras, de 3-7 cm; corola pubescente en la garganta, de 2-3 mm; flores en verticilastros axilares; cápsulas de 3 mm, con una valva indehiscente.",
+    "América cálida. Se halla en la ribera del Plata."
+  ),
+  borreria_laxa: species(
+    "borreria_laxa",
+    "Borreria laxa",
+    "123. Rubiaceae",
+    "Hierba perenne de 0,5-1 m de alto, con tallos erectos tetrágonos y glabros.",
+    "Flores pequeñas en cimas laxas plurifloras; cápsulas de 3 mm coronadas por cuatro sépalos; hojas opuestas o verticiladas, ovado-lanceoladas, agudas, glabras, con nervaduras muy marcadas, de 5-6 cm.",
+    "Uruguay y nordeste de la Argentina. Hallada en el Delta y en la Isla Martín García."
+  ),
+  borreria_eryngioides: species(
+    "borreria_eryngioides",
+    "Borreria eryngioides",
+    "123. Rubiaceae",
+    "Hierba perenne glabra, con tallos cuadrangulares de 20-40 cm de alto.",
+    "Hojas lineal-lanceoladas, agudas, enteras, de 2-3 cm; flores en capítulos y verticilos a lo largo del tallo; estambres con filamentos cortos y anteras inclusas; cápsula de 2,5 mm.",
+    "América subtropical, hasta los alrededores de Buenos Aires."
+  ),
+  borreria_verticillata: species(
+    "borreria_verticillata",
+    "Borreria verticillata",
+    "123. Rubiaceae",
+    "Sufrútice erecto, glabro o algo velludo, de 20-60 cm de alto.",
+    "Hojas opuestas con ramitas axilares cortas y hojosas que simulan hojas verticiladas, lanceoladas, agudas, enteras, glabras, de 1,5-3 cm; flores en verticilos densos y cabezuelas terminales; corola blanca de 2,5 mm; estambres largamente exertos.",
+    "América cálida. Común en los bosques del Delta y de la Isla Martín García; más rara en el interior."
+  ),
+  relbunium_chaetophorum: species(
+    "relbunium_chaetophorum",
+    "Relbunium chaetophorum",
+    "123. Rubiaceae",
+    "Hierba perenne rastrera, con tallos muy delgados.",
+    "Hojas lineal-lanceoladas, agudas, glabras o con algún pelo en el margen, de 3-5 x 0,5-1 mm; flores diminutas, amarillentas, axilares e involucradas.",
+    "Centro de la Argentina. Frecuente en la estepa clímax; florece en primavera."
+  ),
+  relbunium_vile: species(
+    "relbunium_vile",
+    "Relbunium vile",
+    "123. Rubiaceae",
+    "Hierba perenne generalmente apoyante, con tallos retrorso-ásperos en los ángulos.",
+    "Hojas muy cortamente pecioladas, oblongas o elípticas, obtusas, enteras, glabras, de 10-15 x 3-5 mm; flores axilares, solitarias o ternadas; brácteas del involucro del mismo tamaño; corola de 1 mm de diámetro; frutos glabros.",
+    "Sur del Brasil, Bolivia, Uruguay y norte de la Argentina. Muy frecuente en los matorrales del Delta y de la ribera del Plata; florece en primavera."
+  ),
+  relbunium_hypocarpium_indecorum: species(
+    "relbunium_hypocarpium_indecorum",
+    "Relbunium hypocarpium var. indecorum",
+    "123. Rubiaceae",
+    "Hierba perenne generalmente apoyante, con tallos pubescentes.",
+    "Hojas oblongas, anchamente elípticas o semiespatuladas, obtusas, contraídas en la base, pubescentes y pestañosas, de 8-12 x 4-6 mm; flores axilares amarillentas, con corola de 1,5 mm de diámetro; frutos generalmente pubescentes, rojos.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Común en los bosques del Delta y de la ribera; florece en primavera."
+  ),
+  galium_tetragonum: species(
+    "galium_tetragonum",
+    "Galium tetragonum",
+    "123. Rubiaceae",
+    "Hierba perenne apoyante, con frutos lisos.",
+    "Tallos con ángulos muy salientes, ásperos o lisos; hojas lineal-lanceoladas, agudas, enteras, de 2-9 x 0,5-1 mm; flores amarillentas, dioicas, en cimas paucifloras con pedicelos divaricados; frutos amarillos.",
+    "Centro de la Argentina y Uruguay. Rara en la región: Ensenada."
+  ),
+  galium_palustre: species(
+    "galium_palustre",
+    "Galium palustre",
+    "123. Rubiaceae",
+    "Hierba perenne apoyante, con frutos lisos.",
+    "Tallos con ángulos no salientes, flexuosos; hojas lineal-lanceoladas, de 10-15 x 1-3 mm; flores blancas diminutas en cimas multifloras terminales y axilares.",
+    "Europa y América del Norte. Hallada en los pajonales de Punta Lara; florece en primavera."
+  ),
+  galium_aparine: species(
+    "galium_aparine",
+    "Galium aparine",
+    "123. Rubiaceae",
+    "Hierba anual débil y apoyante.",
+    "Tallos retrorso-híspidos en los ángulos; hojas en seudoverticilos de 6-8, oblanceolado-lineales, enteras y ásperas; flores pequeñas, 1-3, en cimas; frutos cubiertos de cerdas ganchudas.",
+    "Europa, adventicia en casi todo el globo. Frecuente en cercos y terraplenes."
+  ),
+  sherardia_arvensis: species(
+    "sherardia_arvensis",
+    "Sherardia arvensis",
+    "123. Rubiaceae",
+    "Hierba anual débil, con tallos tendidos o ascendentes.",
+    "Hojas verticiladas, lineal-lanceoladas, agudas y punzantes en el ápice, enteras, de 6-12 x 2-4 mm; flores en cabezuelas involucradas; cáliz persistente.",
+    "Europa, adventicia en América. Rara en suelos modificados y cultivos."
+  ),
+  psychotria_carthaginensis: species(
+    "psychotria_carthaginensis",
+    "Psychotria carthaginensis",
+    "123. Rubiaceae",
+    "Arbusto casi glabro, de 1-3 m de alto.",
+    "Hojas cortamente pecioladas, elípticas u obovadas, agudas, puberulentas por debajo; inflorescencia paniculada, pluriflora; corola blanca de 4 mm; frutos rojos.",
+    "América cálida, hasta el Delta del Paraná."
   ),
   rosaceae: family(
     "rosaceae",
@@ -7381,7 +7541,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Hojas verticiladas",
       keyStep: "D",
-      especieId: "rubiaceae",
+      nextNodeId: "rubiaceae_a",
     },
     opcionA_prima: {
       label: "Hojas opuestas o alternas",
@@ -17961,6 +18121,310 @@ export const manualKeyData: Record<string, CladoNode> = {
       especieId: "plantago_berroi",
     },
   },
+  rubiaceae_a: {
+    id: "rubiaceae_a",
+    milestone: "Rubiaceae",
+    manualPage: 439,
+    descripcion: "Rubiaceae - A: hábito",
+    opcionA: {
+      label: "Árboles o arbustos de más de un metro de altura",
+      keyStep: "A",
+      nextNodeId: "rubiaceae_b",
+    },
+    opcionA_prima: {
+      label: "Arbustos enanos o hierbas",
+      keyStep: "A'",
+      nextNodeId: "rubiaceae_c",
+    },
+  },
+  rubiaceae_b: {
+    id: "rubiaceae_b",
+    milestone: "Rubiaceae",
+    manualPage: 439,
+    descripcion: "Rubiaceae - B: disposición floral en árboles o arbustos altos",
+    opcionA: {
+      label: "Flores dispuestas en cabezuelas esféricas",
+      keyStep: "B",
+      especieId: "cephalanthus_glabratus",
+    },
+    opcionA_prima: {
+      label: "Flores en cimas o panojas",
+      keyStep: "B'",
+      nextNodeId: "rubiaceae_b_c",
+    },
+  },
+  rubiaceae_b_c: {
+    id: "rubiaceae_b_c",
+    milestone: "Rubiaceae",
+    manualPage: 439,
+    descripcion: "Rubiaceae - C: posición de los óvulos en árboles o arbustos",
+    opcionA: {
+      label: "Óvulos péndulos",
+      keyStep: "C",
+      especieId: "guettarda_uruguensis",
+    },
+    opcionA_prima: {
+      label: "Óvulos erectos o ascendentes",
+      keyStep: "C'",
+      especieId: "psychotria_carthaginensis",
+    },
+  },
+  rubiaceae_c: {
+    id: "rubiaceae_c",
+    milestone: "Rubiaceae",
+    manualPage: 439,
+    descripcion: "Rubiaceae - C: ovario y hábito en arbustos enanos o hierbas",
+    opcionA: {
+      label: "Ovario bilocular, con lóculos multiovulados; hierbas rastreras pigmeas con flores solitarias",
+      keyStep: "C",
+      especieId: "oldenlandia_thesiifolia",
+    },
+    opcionA_prima: {
+      label: "Ovario 2-3-locular, con lóculos uniovulados; hierbas robustas, sufrútices o arbustitos bajos",
+      keyStep: "C'",
+      nextNodeId: "rubiaceae_d",
+    },
+  },
+  rubiaceae_d: {
+    id: "rubiaceae_d",
+    milestone: "Rubiaceae",
+    manualPage: 439,
+    descripcion: "Rubiaceae - D: tipo de estípulas",
+    opcionA: {
+      label: "Estípulas membranosas, más o menos pestañosas",
+      keyStep: "D",
+      nextNodeId: "rubiaceae_e",
+    },
+    opcionA_prima: {
+      label: "Estípulas foliáceas, de modo que las hojas parecen verticiladas",
+      keyStep: "D'",
+      nextNodeId: "rubiaceae_j",
+    },
+  },
+  rubiaceae_e: {
+    id: "rubiaceae_e",
+    milestone: "Rubiaceae",
+    manualPage: 439,
+    descripcion: "Rubiaceae - E: número de lóculos del ovario",
+    opcionA: {
+      label: "Ovario trilocular",
+      keyStep: "E",
+      nextNodeId: "richardia_a",
+    },
+    opcionA_prima: {
+      label: "Ovario bilocular",
+      keyStep: "E'",
+      nextNodeId: "rubiaceae_f",
+    },
+  },
+  rubiaceae_f: {
+    id: "rubiaceae_f",
+    milestone: "Rubiaceae",
+    manualPage: 439,
+    descripcion: "Rubiaceae - F: tipo de fruto en ovario bilocular",
+    opcionA: {
+      label: "El fruto se disgrega en dos cocos indehiscentes",
+      keyStep: "F",
+      nextNodeId: "diodia_a",
+    },
+    opcionA_prima: {
+      label: "Fruto capsular",
+      keyStep: "F'",
+      nextNodeId: "rubiaceae_g",
+    },
+  },
+  rubiaceae_g: {
+    id: "rubiaceae_g",
+    milestone: "Rubiaceae",
+    manualPage: 439,
+    descripcion: "Rubiaceae - G: dehiscencia de la cápsula",
+    opcionA: {
+      label: "Cápsula de dehiscencia transversal",
+      keyStep: "G",
+      especieId: "mitracarpus_megapotamicus",
+    },
+    opcionA_prima: {
+      label: "Cápsula de dehiscencia septicida",
+      keyStep: "G'",
+      nextNodeId: "rubiaceae_h",
+    },
+  },
+  rubiaceae_h: {
+    id: "rubiaceae_h",
+    milestone: "Rubiaceae",
+    manualPage: 439,
+    descripcion: "Rubiaceae - H: apertura de las valvas",
+    opcionA: {
+      label: "Una valva de la cápsula permanece cerrada",
+      keyStep: "H",
+      especieId: "spermacoce_glabra",
+    },
+    opcionA_prima: {
+      label: "Las dos valvas de la cápsula se abren",
+      keyStep: "H'",
+      nextNodeId: "borreria_a",
+    },
+  },
+  rubiaceae_j: {
+    id: "rubiaceae_j",
+    milestone: "Rubiaceae",
+    manualPage: 439,
+    descripcion: "Rubiaceae - J: cáliz y disposición floral con estípulas foliáceas",
+    opcionA: {
+      label: "Flores sin cáliz, dispuestas en cimas o solitarias",
+      keyStep: "J",
+      nextNodeId: "rubiaceae_k",
+    },
+    opcionA_prima: {
+      label: "Flores con cáliz, dispuestas en capítulos involucrados",
+      keyStep: "J'",
+      especieId: "sherardia_arvensis",
+    },
+  },
+  rubiaceae_k: {
+    id: "rubiaceae_k",
+    milestone: "Rubiaceae",
+    manualPage: 439,
+    descripcion: "Rubiaceae - K: presencia de involucro",
+    opcionA: {
+      label: "Flores involucradas",
+      keyStep: "K",
+      nextNodeId: "relbunium_a",
+    },
+    opcionA_prima: {
+      label: "Flores sin involucro",
+      keyStep: "K'",
+      nextNodeId: "galium_a",
+    },
+  },
+  richardia_a: {
+    id: "richardia_a",
+    milestone: "Richardia",
+    manualPage: 441,
+    descripcion: "Richardia - A: forma de las hojas",
+    opcionA: {
+      label: "Hojas lanceoladas o lanceolado-lineales, rígidas, enteras y peludas",
+      keyStep: "A",
+      especieId: "richardia_stellaris",
+    },
+    opcionA_prima: {
+      label: "Hojas anchamente ovado-elípticas, tiernas, pubescentes, de 3-5 x 1,5-2 cm",
+      keyStep: "A'",
+      especieId: "richardia_rosea",
+    },
+  },
+  diodia_a: {
+    id: "diodia_a",
+    milestone: "Diodia",
+    manualPage: 442,
+    descripcion: "Diodia - A: hábito y disposición floral",
+    opcionA: {
+      label: "Sufrútice de 0,5-1 m; flores diminutas sésiles en axilas superiores, formando seudoverticilos",
+      keyStep: "A",
+      especieId: "diodia_brasiliensis",
+    },
+    opcionA_prima: {
+      label: "Hierba perenne decumbente o ascendente; flores en cabezuelas terminales rodeadas por hojas",
+      keyStep: "A'",
+      especieId: "diodia_dasycephala",
+    },
+  },
+  borreria_a: {
+    id: "borreria_a",
+    milestone: "Borreria",
+    manualPage: 443,
+    descripcion: "Borreria - A: disposición de las flores",
+    opcionA: {
+      label: "Flores en cimas laxas plurifloras, pequeñas",
+      keyStep: "A",
+      especieId: "borreria_laxa",
+    },
+    opcionA_prima: {
+      label: "Flores en capítulos o verticilos densos",
+      keyStep: "A'",
+      nextNodeId: "borreria_b",
+    },
+  },
+  borreria_b: {
+    id: "borreria_b",
+    milestone: "Borreria",
+    manualPage: 444,
+    descripcion: "Borreria - B: estambres",
+    opcionA: {
+      label: "Filamentos cortos y anteras inclusas en la corola",
+      keyStep: "B",
+      especieId: "borreria_eryngioides",
+    },
+    opcionA_prima: {
+      label: "Filamentos largos y anteras largamente exertas",
+      keyStep: "B'",
+      especieId: "borreria_verticillata",
+    },
+  },
+  relbunium_a: {
+    id: "relbunium_a",
+    milestone: "Relbunium",
+    manualPage: 444,
+    descripcion: "Relbunium - A: hábito y ancho de hojas",
+    opcionA: {
+      label: "Hierba perenne rastrera; hojas lineal-lanceoladas de 3-5 mm por 0,5-1 mm",
+      keyStep: "A",
+      especieId: "relbunium_chaetophorum",
+    },
+    opcionA_prima: {
+      label: "Hierbas generalmente apoyantes, perennes; hojas oblongas o elípticas, de más de 2 mm de ancho",
+      keyStep: "A'",
+      nextNodeId: "relbunium_b",
+    },
+  },
+  relbunium_b: {
+    id: "relbunium_b",
+    milestone: "Relbunium",
+    manualPage: 444,
+    descripcion: "Relbunium - B: indumento del fruto y tallo",
+    opcionA: {
+      label: "Frutos glabros; tallos retrorso-ásperos en los ángulos",
+      keyStep: "B",
+      especieId: "relbunium_vile",
+    },
+    opcionA_prima: {
+      label: "Frutos generalmente pubescentes, rojos; tallos pubescentes",
+      keyStep: "B'",
+      especieId: "relbunium_hypocarpium_indecorum",
+    },
+  },
+  galium_a: {
+    id: "galium_a",
+    milestone: "Galium",
+    manualPage: 445,
+    descripcion: "Galium - A: superficie de los frutos",
+    opcionA: {
+      label: "Frutos lisos; hierbas perennes apoyantes",
+      keyStep: "A",
+      nextNodeId: "galium_b",
+    },
+    opcionA_prima: {
+      label: "Frutos cubiertos de cerdas ganchudas; hierba anual débil, apoyante",
+      keyStep: "A'",
+      especieId: "galium_aparine",
+    },
+  },
+  galium_b: {
+    id: "galium_b",
+    milestone: "Galium",
+    manualPage: 445,
+    descripcion: "Galium - B: ángulos del tallo y flores",
+    opcionA: {
+      label: "Tallos con ángulos muy salientes, ásperos o lisos; flores amarillentas en cimas paucifloras",
+      keyStep: "B",
+      especieId: "galium_tetragonum",
+    },
+    opcionA_prima: {
+      label: "Tallos con ángulos no salientes, flexuosos; flores blancas en cimas multifloras",
+      keyStep: "B'",
+      especieId: "galium_palustre",
+    },
+  },
   solanaceae_d: {
     id: "solanaceae_d",
     milestone: "Solanaceae",
@@ -18865,7 +19329,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Ovario 2 a muchos locular",
       keyStep: "e'",
-      especieId: "rubiaceae",
+      nextNodeId: "rubiaceae_a",
     },
   },
   dicot_group_e_f_lower: {
@@ -18970,7 +19434,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Hojas simples",
       keyStep: "l'",
-      especieId: "rubiaceae",
+      nextNodeId: "rubiaceae_a",
     },
   },
 };
