@@ -4565,6 +4565,158 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Ovario no 4-lobulado, estilo terminal y flores apenas bilabiadas."
   ),
+  citharexylum_montevidense: species(
+    "citharexylum_montevidense",
+    "Citharexylum montevidense",
+    "114. Verbenaceae",
+    "Árbol de 12-15 m de alto, con corteza gris blanquecina agrietada longitudinalmente.",
+    "Fruto drupáceo con dos pirenas biloculares; flores casi actinomorfas, amarillentas, en racimos terminales; ramas jóvenes glabras, verde claras, apenas cuadrangulares; hojas oblanceoladas u obovadas, enteras o aserradas en la parte superior, con braquiblastos espiniformes axilares.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina hasta el Río de la Plata. Cultivado como ornamental y común en selvas marginales del Delta y de la ribera platense. Nombre vulgar: espina de bañado, turumá."
+  ),
+  lantana_glutinosa: species(
+    "lantana_glutinosa",
+    "Lantana glutinosa",
+    "114. Verbenaceae",
+    "Arbusto elevado de 2-3 m de alto, con ramas cuadrangulares, pubescentes y con aguijones.",
+    "Fruto drupáceo con una sola pirena; hojas pecioladas, ovadas, redondeadas o acorazonadas en la base, aserradas y blandamente pubescentes; flores en capítulos axilares largamente pedunculados, con corola amarilla, anaranjada o roja.",
+    "América cálida. Común en bosques de talas, en el Delta y en la ribera platense. Nombre vulgar: camará."
+  ),
+  lantana_balansae: species(
+    "lantana_balansae",
+    "Lantana balansae",
+    "114. Verbenaceae",
+    "Arbustito achaparrado, de alrededor de medio metro de altura.",
+    "Fruto drupáceo con una sola pirena; hojas ovadas, pequeñas, crenado-aserradas; flores rosadas o violáceas en capítulos axilares; frutos oscuros.",
+    "América del Sur cálida. Cerca de Buenos Aires se halla en las barrancas del Paraná y en la Isla Martín García."
+  ),
+  aloysia_lycioides: species(
+    "aloysia_lycioides",
+    "Aloysia lycioides",
+    "114. Verbenaceae",
+    "Arbusto aromático de 1-3 m de alto.",
+    "Fruto seco formado por 2 nuececitas; flores en largas espigas axilares muy flojas; hojas oblanceolado-espatuladas, obtusas, enteras, casi glabras en el haz e incano-pubescentes en el envés; corolas blancas, de cerca de 5 mm.",
+    "Sur de los Estados Unidos y México, Bolivia, Paraguay y norte y centro de la Argentina. En barrancas del Paraná: San Nicolás, San Pedro, Campana, etc. Nombres vulgares: cedrón del monte, azahar del campo."
+  ),
+  lippia_alba: species(
+    "lippia_alba",
+    "Lippia alba",
+    "114. Verbenaceae",
+    "Arbusto aromático de 1-1,5 m de alto, pubescente.",
+    "Fruto seco formado por 2 nuececitas; flores en inflorescencias capituliformes; hojas opuestas, ovadas, cortamente pecioladas y aserradas; capítulos axilares pedunculados; corola blanca o liliácea, de 7-8 mm.",
+    "América cálida. Frecuente en los bosques del Delta."
+  ),
+  phyla_nodiflora_canescens: species(
+    "phyla_nodiflora_canescens",
+    "Phyla nodiflora var. canescens",
+    "114. Verbenaceae",
+    "Hierba perenne rastrera, con tallos radicantes, laxamente seríceo-pubescentes.",
+    "Fruto seco formado por 2 nuececillas; hierba rastrera con flores en capítulos axilares largamente pedunculados; hojas oblanceoladas u obovadas, obtusas, atenuadas en corto pecíolo, aserradas en la parte superior y laxamente seríceas; corola blanca, de 2,5-3,5 mm.",
+    "América del Sur cálida. Común en campos bajos, jardines, etc."
+  ),
+  verbena_gracilescens: species(
+    "verbena_gracilescens",
+    "Verbena gracilescens",
+    "114. Verbenaceae",
+    "Hemicriptófita de 40-80 cm de alto, con tallos ascendentes o erectos, tetrágonos.",
+    "Fruto seco formado por 4 nuececillas; inflorescencia en panoja de numerosas espigas; hojas inferiores profundamente partidas o lobadas, de contorno obovado, agudas y atenuadas en corto pecíolo; espigas filiformes muy largas; cáliz de 1,5 mm y corola azulada de 2-2,5 mm.",
+    "América del Sur. Común en campos bajos y húmedos."
+  ),
+  verbena_intermedia: species(
+    "verbena_intermedia",
+    "Verbena intermedia",
+    "114. Verbenaceae",
+    "Hierba perenne, erecta, de 60-120 cm de alto, con tallos glabros o casi glabros y poco ramificados.",
+    "Flores de más de 6 mm, con cáliz glanduloso; brácteas florales de la misma longitud o apenas más largas que el cáliz; hojas oblanceoladas, agudas, atenuadas en la base y aserradas en la mitad superior; espigas alargadas; corola violácea de unos 7 mm.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Vive en la estepa clímax. Nombre vulgar: verbena."
+  ),
+  verbena_rigida: species(
+    "verbena_rigida",
+    "Verbena rigida",
+    "114. Verbenaceae",
+    "Hierba perenne de 20-60 cm de alto.",
+    "Flores de más de 6 mm, con cáliz glanduloso; bráctea floral mucho más larga que el cáliz; tallos cuadrangulares, escabroso-pubescentes; hojas oblongo-lanceoladas, sésiles y semiamplexicaules, agudamente aserradas, escabrosas o híspidas; corolas purpúreas o violáceas.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Rara en el norte de la provincia de Buenos Aires: Pergamino."
+  ),
+  verbena_bonariensis: species(
+    "verbena_bonariensis",
+    "Verbena bonariensis",
+    "114. Verbenaceae",
+    "Hemicriptófita de un metro o más de alto, con tallos cuadrangulares muy híspidos.",
+    "Flores de menos de 6 mm, con limbo corolino poco desarrollado y cáliz sin pelos glandulares; hojas sésiles y semiabrazadoras, oblanceoladas, agudas, aserradas en todo el margen y estrigoso-pubescentes; espigas cortas y gruesas, muy amontonadas; corola violácea.",
+    "Sur del Brasil, Paraguay y nordeste de la Argentina, hasta Río Negro. Muy común en lugares húmedos, terraplenes y baldíos. Nombre vulgar: verbena."
+  ),
+  verbena_brasiliensis: species(
+    "verbena_brasiliensis",
+    "Verbena brasiliensis",
+    "114. Verbenaceae",
+    "Hierba perenne de hasta 1,5 m de alto.",
+    "Flores de unos 4,5 mm; tallos erectos, cuadrangulares y glabros; hojas lanceoladas, agudas, profundamente aserradas y laxamente pubescentes; espigas densas; cáliz pubescente de unos 3,5 mm; corola violácea con limbo reducido.",
+    "América cálida. Común en lugares húmedos, especialmente en el Delta y en la ribera platense."
+  ),
+  verbena_montevidensis: species(
+    "verbena_montevidensis",
+    "Verbena montevidensis",
+    "114. Verbenaceae",
+    "Hemicriptófita muy ramosa, de 40-80 cm de alto.",
+    "Flores de 3-3,5 mm; bráctea floral bastante más corta que el cáliz; cáliz apenas estrigoso, de 2-2,2 mm; corola liliácea con limbo muy reducido; tallos glabros; hojas oblanceoladas u obovadas, aserradas, de 1-3 cm; espigas cortas.",
+    "Región platense, en campos bajos."
+  ),
+  verbena_litoralis: species(
+    "verbena_litoralis",
+    "Verbena litoralis",
+    "114. Verbenaceae",
+    "Hemicriptófita de 60-90 cm de alto, con tallos erectos, delgados y cuadrangulares.",
+    "Flores de 3-3,5 mm; bráctea floral tan larga como el cáliz; cáliz estrigoso, de 2-2,5 mm; corola liliácea con limbo reducido; tallos glabros y ásperos en los ángulos; hojas lanceoladas, agudas y aserradas; espigas largas, laxas.",
+    "América. Común en suelos húmedos y orillas de arroyos."
+  ),
+  glandularia_peruviana: species(
+    "glandularia_peruviana",
+    "Glandularia peruviana",
+    "114. Verbenaceae",
+    "Hemicriptófita rastrera, radicante y pubescente.",
+    "Fruto seco formado por 4 nuececillas; inflorescencia con 1-3 espigas y corola hipocraterimorfa; hojas aserrado-crenadas o lobadas; flores rojas en espiga terminal solitaria y corta; hojas ovadas o lanceoladas, cortamente pecioladas; cáliz pubescente de 8-10 mm; corola de 12-16 mm.",
+    "América cálida. Cultivada como ornamental y frecuente en la estepa clímax. Nombre vulgar: margarita punzó."
+  ),
+  glandularia_platensis: species(
+    "glandularia_platensis",
+    "Glandularia platensis",
+    "114. Verbenaceae",
+    "Hemicriptófita con tallos rastreros o ascendentes, pubescentes.",
+    "Hojas aserrado-crenadas o lobadas; plantas rastreras con flores blancas; hojas oblanceoladas, profundamente crenadas o lobadas, áspero-pubescentes; flores en espigas terminales largas; cáliz cilíndrico, hirsuto; corola de 25-30 mm.",
+    "Paraguay, Uruguay y norte y centro de la Argentina. Común en las sierras de Buenos Aires; rara cerca de Buenos Aires: San Isidro. Nombre vulgar: margarita blanca."
+  ),
+  glandularia_megapotamica: species(
+    "glandularia_megapotamica",
+    "Glandularia megapotamica",
+    "114. Verbenaceae",
+    "Hierba perenne, erecta, áspero-pubescente, de hasta 1 m de alto.",
+    "Hojas aserrado-crenadas o lobadas; plantas erectas con flores azules o violáceas; hojas pecioladas, ovado-lanceoladas, agudas, atenuadas en la base y profundamente aserrado-crenadas; flores en 1-3 espigas capituliformes; cáliz de 10 mm; corolas de 15 mm.",
+    "Sur del Brasil, Uruguay, Paraguay y nordeste de la Argentina. Frecuente en matorrales del Delta y de la ribera."
+  ),
+  glandularia_dissecta: species(
+    "glandularia_dissecta",
+    "Glandularia dissecta",
+    "114. Verbenaceae",
+    "Hemicriptófita con tallos rastreros, radicantes e hirsutos, que emiten vástagos erguidos de 15-30 cm.",
+    "Hojas profundamente pinatisectas; espigas densas, capituliformes, no alargadas a la madurez y agrupadas en cimas terminales; cáliz hirsuto de 7-8 mm; corola violácea con tubo de 10-11 mm; segmentos foliares de 1-3 mm, lobados o partidos e hirsutos.",
+    "América austral. Rara en la región: Campana, San Fernando y Los Talas. Nombre vulgar: margarita morada."
+  ),
+  glandularia_tenuisecta: species(
+    "glandularia_tenuisecta",
+    "Glandularia tenuisecta",
+    "114. Verbenaceae",
+    "Hierba perenne pubescente, con tallos rastreros y ramosos.",
+    "Hojas profundamente pinatisectas, de 1-3 cm, de contorno ovado; segmentos bifurcados, estrechamente lineales, de 0,5-1 mm; flores en espigas terminales solitarias; cáliz pubescente de 5-6 mm; corolas azules o violáceas con tubo de unos 10 mm.",
+    "América austral. Cultivada como ornamental y escasa en la estepa clímax. Nombre vulgar: margarita morada."
+  ),
+  glandularia_tenera: species(
+    "glandularia_tenera",
+    "Glandularia tenera",
+    "114. Verbenaceae",
+    "Hierba perenne pubescente, con tallos ramosos y rastreros.",
+    "Hojas profundamente pinatisectas, de 0,5-1 cm, de contorno ovado, con segmentos lineales, agudos y bifurcados; espigas terminales solitarias, contraídas durante la floración y luego alargadas; cáliz pubescente de 5-6 mm; corolas azules o violáceas de 8-10 mm.",
+    "Uruguay y norte y centro de la Argentina. Nombre vulgar: margarita morada."
+  ),
   asclepiadaceae: family(
     "asclepiadaceae",
     "110. Asclepiadaceae",
@@ -13831,7 +13983,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Ovario no 4-lobulado, con estilo terminal; flores apenas bilabiadas",
       keyStep: "J'",
-      especieId: "verbenaceae",
+      nextNodeId: "verbenaceae_a",
     },
   },
   dicot_group_e_k: {
@@ -14895,6 +15047,294 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Plantas con pelos tendidos; garganta de la corola sin escamitas",
       keyStep: "G'",
       especieId: "lithospermum_arvense",
+    },
+  },
+  verbenaceae_a: {
+    id: "verbenaceae_a",
+    milestone: "Verbenaceae",
+    manualPage: 389,
+    descripcion: "Verbenaceae - A: tipo de fruto y hábito",
+    opcionA: {
+      label: "Fruto drupáceo; árboles o arbustos",
+      keyStep: "A",
+      nextNodeId: "verbenaceae_b",
+    },
+    opcionA_prima: {
+      label: "Fruto seco, formado por 2-4 nuececillas monospermas; arbustos o hierbas",
+      keyStep: "A'",
+      nextNodeId: "verbenaceae_c",
+    },
+  },
+  verbenaceae_b: {
+    id: "verbenaceae_b",
+    milestone: "Verbenaceae",
+    manualPage: 391,
+    descripcion: "Verbenaceae - B: pirenas de la drupa y simetría floral",
+    opcionA: {
+      label: "Drupas con dos pirenas, cada una con dos lóculos; flores casi actinomorfas, amarillentas o blancas; árboles elevados",
+      keyStep: "B",
+      especieId: "citharexylum_montevidense",
+    },
+    opcionA_prima: {
+      label: "Drupas con una sola pirena bilocular, biseminada; flores cigomorfas, anaranjadas, rojas o violáceas; arbustos, a veces rastreros",
+      keyStep: "B'",
+      nextNodeId: "lantana_a",
+    },
+  },
+  lantana_a: {
+    id: "lantana_a",
+    milestone: "Lantana",
+    manualPage: 392,
+    descripcion: "Lantana - A: porte, aguijones y color de flores",
+    opcionA: {
+      label: "Arbustos elevados de 2-3 m, con ramas cuadrangulares pubescentes y con aguijones; flores amarillas, anaranjadas o rojas",
+      keyStep: "A",
+      especieId: "lantana_glutinosa",
+    },
+    opcionA_prima: {
+      label: "Arbustito achaparrado, de medio metro; hojas pequeñas crenado-aserradas; flores rosadas o violáceas",
+      keyStep: "A'",
+      especieId: "lantana_balansae",
+    },
+  },
+  verbenaceae_c: {
+    id: "verbenaceae_c",
+    milestone: "Verbenaceae",
+    manualPage: 391,
+    descripcion: "Verbenaceae - C: número de nuececillas",
+    opcionA: {
+      label: "Frutos formados por 2 nuececillas",
+      keyStep: "C",
+      nextNodeId: "verbenaceae_d",
+    },
+    opcionA_prima: {
+      label: "Frutos formados por 4 nuececillas; tallos cuadrangulares",
+      keyStep: "C'",
+      nextNodeId: "verbenaceae_f",
+    },
+  },
+  verbenaceae_d: {
+    id: "verbenaceae_d",
+    milestone: "Verbenaceae",
+    manualPage: 391,
+    descripcion: "Verbenaceae - D: forma de la inflorescencia en frutos de 2 nuececillas",
+    opcionA: {
+      label: "Flores dispuestas en largas seudo-espigas; arbustos",
+      keyStep: "D",
+      especieId: "aloysia_lycioides",
+    },
+    opcionA_prima: {
+      label: "Flores dispuestas en inflorescencias muy contraídas, capituliformes",
+      keyStep: "D'",
+      nextNodeId: "verbenaceae_e",
+    },
+  },
+  verbenaceae_e: {
+    id: "verbenaceae_e",
+    milestone: "Verbenaceae",
+    manualPage: 391,
+    descripcion: "Verbenaceae - E: hábito en inflorescencias capituliformes",
+    opcionA: {
+      label: "Arbustos más o menos erectos",
+      keyStep: "E",
+      especieId: "lippia_alba",
+    },
+    opcionA_prima: {
+      label: "Hierbas rastreras",
+      keyStep: "E'",
+      especieId: "phyla_nodiflora_canescens",
+    },
+  },
+  verbenaceae_f: {
+    id: "verbenaceae_f",
+    milestone: "Verbenaceae",
+    manualPage: 391,
+    descripcion: "Verbenaceae - F: tipo de inflorescencia y forma de la corola",
+    opcionA: {
+      label: "Inflorescencia formada por una panoja de numerosas espigas; corola infundibuliforme; estilo hasta tres veces más largo que el ovario",
+      keyStep: "F",
+      nextNodeId: "verbena_a",
+    },
+    opcionA_prima: {
+      label: "Inflorescencia formada por sólo 1-3 espigas; corola hipocraterimorfa; estilo varias veces más largo que el ovario",
+      keyStep: "F'",
+      nextNodeId: "glandularia_a",
+    },
+  },
+  verbena_a: {
+    id: "verbena_a",
+    milestone: "Verbena",
+    manualPage: 394,
+    descripcion: "Verbena - A: división de hojas inferiores y grosor de espigas",
+    opcionA: {
+      label: "Hojas inferiores profundamente partidas o lobadas; espigas filiformes muy largas; cáliz de 1,5 mm; corola azulada de 2-2,5 mm",
+      keyStep: "A",
+      especieId: "verbena_gracilescens",
+    },
+    opcionA_prima: {
+      label: "Hojas dentadas o aserradas; espigas más gruesas; flores de 3 mm o más",
+      keyStep: "A'",
+      nextNodeId: "verbena_b",
+    },
+  },
+  verbena_b: {
+    id: "verbena_b",
+    milestone: "Verbena",
+    manualPage: 394,
+    descripcion: "Verbena - B: longitud de flores y pelos glandulares del cáliz",
+    opcionA: {
+      label: "Flores de más de 6 mm; corola con tubo bien desarrollado; cáliz con pelos glandulares",
+      keyStep: "B",
+      nextNodeId: "verbena_c",
+    },
+    opcionA_prima: {
+      label: "Flores de menos de 6 mm, con limbo de la corola poco desarrollado; cáliz sin pelos glandulares",
+      keyStep: "B'",
+      nextNodeId: "verbena_d",
+    },
+  },
+  verbena_c: {
+    id: "verbena_c",
+    milestone: "Verbena",
+    manualPage: 394,
+    descripcion: "Verbena - C: longitud de la bráctea floral",
+    opcionA: {
+      label: "Brácteas florales de la misma longitud o apenas más largas que el cáliz; tallos glabrescentes, poco ramificados",
+      keyStep: "C",
+      especieId: "verbena_intermedia",
+    },
+    opcionA_prima: {
+      label: "Bráctea floral mucho más larga que el cáliz; tallos cuadrangulares, escabroso-pubescentes",
+      keyStep: "C'",
+      especieId: "verbena_rigida",
+    },
+  },
+  verbena_d: {
+    id: "verbena_d",
+    milestone: "Verbena",
+    manualPage: 395,
+    descripcion: "Verbena - D: base foliar y hábito de las espigas",
+    opcionA: {
+      label: "Hojas sésiles y semiabrazadoras en la base, oblanceoladas, agudas, aserradas en todo el margen; espigas cortas y gruesas",
+      keyStep: "D",
+      especieId: "verbena_bonariensis",
+    },
+    opcionA_prima: {
+      label: "Hojas atenuadas en la base en seudopecíolo; tallos glabros o casi glabros; espigas alargadas",
+      keyStep: "D'",
+      nextNodeId: "verbena_e",
+    },
+  },
+  verbena_e: {
+    id: "verbena_e",
+    milestone: "Verbena",
+    manualPage: 395,
+    descripcion: "Verbena - E: longitud floral",
+    opcionA: {
+      label: "Flores de unos 4,5 mm; tallos erectos, cuadrangulares y glabros; hojas lanceoladas profundamente aserradas",
+      keyStep: "E",
+      especieId: "verbena_brasiliensis",
+    },
+    opcionA_prima: {
+      label: "Flores de 3-3,5 mm",
+      keyStep: "E'",
+      nextNodeId: "verbena_f",
+    },
+  },
+  verbena_f: {
+    id: "verbena_f",
+    milestone: "Verbena",
+    manualPage: 395,
+    descripcion: "Verbena - F: largo de bráctea floral y aspereza de tallos",
+    opcionA: {
+      label: "Bráctea floral bastante más corta que el cáliz; cáliz apenas estrigoso; tallos glabros; hojas oblanceoladas u obovadas; espigas cortas",
+      keyStep: "F",
+      especieId: "verbena_montevidensis",
+    },
+    opcionA_prima: {
+      label: "Bráctea floral tan larga como el cáliz; cáliz estrigoso; tallos glabros, ásperos en los ángulos; hojas lanceoladas; espigas largas",
+      keyStep: "F'",
+      especieId: "verbena_litoralis",
+    },
+  },
+  glandularia_a: {
+    id: "glandularia_a",
+    milestone: "Glandularia",
+    manualPage: 397,
+    descripcion: "Glandularia - A: forma de las hojas",
+    opcionA: {
+      label: "Hojas aserrado-crenadas o lobadas",
+      keyStep: "A",
+      nextNodeId: "glandularia_b",
+    },
+    opcionA_prima: {
+      label: "Hojas profundamente pinatisectas o bipinatisectas; flores azules o violáceas",
+      keyStep: "A'",
+      nextNodeId: "glandularia_d",
+    },
+  },
+  glandularia_b: {
+    id: "glandularia_b",
+    milestone: "Glandularia",
+    manualPage: 397,
+    descripcion: "Glandularia - B: porte y color de flores",
+    opcionA: {
+      label: "Plantas rastreras; flores rojas o blancas",
+      keyStep: "B",
+      nextNodeId: "glandularia_c",
+    },
+    opcionA_prima: {
+      label: "Plantas erectas; flores azules o violáceas; hojas pecioladas, ovado-lanceoladas, profundamente aserrado-crenadas",
+      keyStep: "B'",
+      especieId: "glandularia_megapotamica",
+    },
+  },
+  glandularia_c: {
+    id: "glandularia_c",
+    milestone: "Glandularia",
+    manualPage: 397,
+    descripcion: "Glandularia - C: color de flores en plantas rastreras",
+    opcionA: {
+      label: "Flores rojas; hojas ovadas o lanceoladas, cortamente pecioladas; espiga terminal solitaria y corta",
+      keyStep: "C",
+      especieId: "glandularia_peruviana",
+    },
+    opcionA_prima: {
+      label: "Flores blancas; hojas oblanceoladas, profundamente crenadas o lobadas; espigas terminales largas",
+      keyStep: "C'",
+      especieId: "glandularia_platensis",
+    },
+  },
+  glandularia_d: {
+    id: "glandularia_d",
+    milestone: "Glandularia",
+    manualPage: 397,
+    descripcion: "Glandularia - D: comportamiento de las espigas",
+    opcionA: {
+      label: "Espigas densas, capituliformes, no alargándose a la madurez, agrupadas en cimas terminales; segmentos foliares de 1-3 mm",
+      keyStep: "D",
+      especieId: "glandularia_dissecta",
+    },
+    opcionA_prima: {
+      label: "Espigas alargadas, al menos a la madurez, generalmente solitarias en el extremo de las ramas; segmentos foliares de 0,5-1 mm",
+      keyStep: "D'",
+      nextNodeId: "glandularia_e",
+    },
+  },
+  glandularia_e: {
+    id: "glandularia_e",
+    milestone: "Glandularia",
+    manualPage: 397,
+    descripcion: "Glandularia - E: tamaño y contorno de las hojas pinatisectas",
+    opcionA: {
+      label: "Hojas de 1-3 cm, de contorno ovado, profundamente pinatisectas; segmentos bifurcados, estrechamente lineales",
+      keyStep: "E",
+      especieId: "glandularia_tenuisecta",
+    },
+    opcionA_prima: {
+      label: "Hojas de 0,5-1 cm, de contorno ovado, profundamente pinatisectas, con segmentos lineales, agudos y bifurcados",
+      keyStep: "E'",
+      especieId: "glandularia_tenera",
     },
   },
   dicot_group_e_a_lowercase: {
