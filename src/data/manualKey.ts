@@ -5773,6 +5773,198 @@ export const manualFamilyData: Record<string, Especie> = {
     "Cápsula sin espinas; estambres fértiles 4; corola corta; hojas alternas, oblanceoladas y enteras; flores blancas, largamente pedunculadas, en racimo definido muy laxo; cáliz algo acrescente; corola de cerca de 10 mm.",
     "Norte y centro de la Argentina y Uruguay. Bastante escasa en la estepa clímax: Elizalde."
   ),
+  solanum_chacoense: species(
+    "solanum_chacoense",
+    "Solanum chacoense",
+    "116. Solanaceae",
+    "Hierba con tubérculos, con tallos de 20-40 cm de alto.",
+    "Plantas con tubérculos subterráneos; hojas de 10-20 cm, laxamente pilosas, imparipinaticompuestas, con 3-5 pares de segmentos ovados grandes alternando con segmentos diminutos; flores blancas o azuladas en cimas corimbiformes terminales; bayas de cerca de 1 cm.",
+    "Paraguay, Uruguay y norte de la Argentina. Frecuente en suelos calcáreos y terraplenes ferroviarios."
+  ),
+  solanum_commersonii: species(
+    "solanum_commersonii",
+    "Solanum commersonii",
+    "116. Solanaceae",
+    "Hierba perenne con tubérculos, con tallos ascendentes de 10-20 cm de alto.",
+    "Plantas con tubérculos subterráneos; hojas de 8-12 cm, profundamente imparipinatisectas, con lóbulo terminal muy grande y 2-3 pares de segmentos elípticos menores hacia la base; flores azules en cimas terminales.",
+    "Uruguay y norte de la provincia de Buenos Aires, en suelos arenosos."
+  ),
+  solanum_bonariense: species(
+    "solanum_bonariense",
+    "Solanum bonariense",
+    "116. Solanaceae",
+    "Arbusto de alrededor de 1,5 m de alto, con pubescencia estrellada muy laxa.",
+    "Planta sin tubérculos, con aguijones en ramas jóvenes o sin ellos; hojas pecioladas, anchamente elípticas, enteras, sinuadas o cortamente lobuladas; flores blancas en cimas corimbiformes terminales.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Muy frecuente en el Delta y en los bosques de la ribera del Plata."
+  ),
+  solanum_sisymbriifolium: species(
+    "solanum_sisymbriifolium",
+    "Solanum sisymbriifolium",
+    "116. Solanaceae",
+    "Sufrútice de 50-80 cm de alto, densamente glanduloso-pubescente, con largos aguijones amarillos.",
+    "Planta sin tubérculos, con aguijones; hojas profundamente pinatisectas, con segmentos lobados y largos aguijones amarillos sobre las nervaduras; flores azules o blancas en cimas; bayas de 10-12 mm.",
+    "América del Sur templado-cálida. Frecuente en ambientes antropógenos. Nombre vulgar: revienta-caballos."
+  ),
+  solanum_platense: species(
+    "solanum_platense",
+    "Solanum platense",
+    "116. Solanaceae",
+    "Sufrútice apoyante de cerca de 1 m de alto.",
+    "Tallos cubiertos de aguijones rectos densos; hojas pecioladas, ovadas, redondeadas o acorazonadas en la base, sinuado-dentadas, con pelos estrellados ralos y aguijones cortos en ambas caras; flores extraaxilares, geminadas, con corola blanca o celeste; bayas semidehiscentes.",
+    "Región del Plata. Rara en los bosques del Delta y de la ribera del Plata."
+  ),
+  solanum_eleagnifolium: species(
+    "solanum_eleagnifolium",
+    "Solanum eleagnifolium",
+    "116. Solanaceae",
+    "Sufrútice rizomatoso, erecto, de 30-50 cm de alto, cubierto de pelos estrellados.",
+    "Planta con aguijones amarillos cortos en tallos y hojas; hojas oblongo-lanceoladas, sinuadas; flores azules, solitarias, axilares y terminales; bayas de 1 cm.",
+    "América templado-cálida. Frecuente en suelos fértiles."
+  ),
+  solanum_meloncillo: species(
+    "solanum_meloncillo",
+    "Solanum meloncillo",
+    "116. Solanaceae",
+    "Hierba perenne con raíces gemíferas, de 15-25 cm de alto, cubierta de pelos estrellados.",
+    "Planta con aguijones amarillos largos sobre tallos y hojas; hojas pecioladas, anchamente ovado-elípticas y lobadas; flores azuladas, solitarias o en cimas apicales paucifloras; bayas de 1,5-2 cm.",
+    "Centro y este de la Argentina. Común en suelos removidos. Nombre vulgar: meloncillo de olor."
+  ),
+  solanum_pyrethrifolium: species(
+    "solanum_pyrethrifolium",
+    "Solanum pyrethrifolium",
+    "116. Solanaceae",
+    "Hierba anual, ramosa, con tallos tendidos cubiertos de pelos rígidos.",
+    "Planta sin aguijones, de hojas profundamente partidas; flores en cimas laterales pedunculadas; hojas profundamente pinatisectas, con raquis lineal y 3-5 pares de segmentos lineales muy agudos; bayas de 10 mm.",
+    "Norte y centro de la Argentina. Rara cerca de la Capital Federal, en vías férreas."
+  ),
+  solanum_radicans: species(
+    "solanum_radicans",
+    "Solanum radicans",
+    "116. Solanaceae",
+    "Hierba perenne, ramosa y laxamente pubescente, con tallos tendidos o ascendentes, angulosos y radicantes.",
+    "Planta sin aguijones, con hojas profundamente partidas; hojas trisectas, con segmentos ovado-lanceolados y el central mayor; flores en racimos o corimbos opuestos a las hojas; bayas de 3-4 mm.",
+    "Perú, Bolivia, norte de Chile y norte de la Argentina. Muy rara en la región: Capital Federal e Isla Martín García."
+  ),
+  solanum_angustifidum: species(
+    "solanum_angustifidum",
+    "Solanum angustifidum",
+    "116. Solanaceae",
+    "Arbusto de 1-2 m de alto, glabérrimo.",
+    "Planta sin aguijones, erecta o enredadera, con flores en cimas corimbiformes terminales plurifloras; hojas profundamente pinatisectas con segmento terminal lineal-lanceolado y segmentos laterales angostos; flores azules o violáceas; bayas glabras.",
+    "Norte y centro de la Argentina. Raro en la región: Rojas, San Pedro, etc., en cercos. Nombre vulgar: jazmín."
+  ),
+  solanum_jasminoides: species(
+    "solanum_jasminoides",
+    "Solanum jasminoides",
+    "116. Solanaceae",
+    "Sufrútice voluble, glabro, con tallos angulosos.",
+    "Planta sin aguijones, con hojas profundamente partidas y polimorfas: algunas enteras, otras trífidas y otras pinatisectas; flores azul-violáceas; bayas globosas, negras.",
+    "Brasil; cultivada como ornamental. Rara en la región: Delta y Cruz Colorada."
+  ),
+  solanum_pygmaeum: species(
+    "solanum_pygmaeum",
+    "Solanum pygmaeum",
+    "116. Solanaceae",
+    "Planta decumbente o ascendente, de 10-20 cm de alto.",
+    "Planta sin aguijones; hojas enteras, dentadas o lobadas, cortamente pecioladas, ovadas, con 1-2 lóbulos cortos a cada lado en la parte inferior; flores blancas en cimas extraaxilares o terminales largamente pedunculadas; bayas negras de 5 mm.",
+    "Endémica de la región, en campos de vegetación prístina."
+  ),
+  solanum_amygdalifolium: species(
+    "solanum_amygdalifolium",
+    "Solanum amygdalifolium",
+    "116. Solanaceae",
+    "Enredadera arbustiva, con tallos apoyantes muy angulosos y glabros.",
+    "Planta voluble sin aguijones; hojas pecioladas, lanceoladas, agudas, enteras y glabras; flores azules en cimas corimbiformes laxas.",
+    "Sur del Brasil, Uruguay y norte de la Argentina. Frecuente en cercos y pajonales. Nombre vulgar: jazmín de Córdoba."
+  ),
+  solanum_boerhaviaefolium: species(
+    "solanum_boerhaviaefolium",
+    "Solanum boerhaviaefolium",
+    "116. Solanaceae",
+    "Enredadera leñosa de varios metros de altura.",
+    "Planta voluble sin aguijones; tallos cilíndricos, pubescentes o glabros; hojas largamente pecioladas, ovadas y enteras; flores azules en cimas laxas.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Común en bosques del Delta y de la ribera platense."
+  ),
+  solanum_basilobum: species(
+    "solanum_basilobum",
+    "Solanum basilobum",
+    "116. Solanaceae",
+    "Hierba perenne, erecta, de 1 m de alto.",
+    "Planta sin aguijones; cimas corimbiformes 5-15-floras, largamente pedunculadas; hojas largamente pecioladas, ovadas, enteras o con 1-2 lóbulos basales; corola blanca con lóbulos lanceolados angostos; bayas de 4 mm.",
+    "Nordeste de la Argentina. Frecuente en el Delta."
+  ),
+  solanum_pulchrilobum: species(
+    "solanum_pulchrilobum",
+    "Solanum pulchrilobum",
+    "116. Solanaceae",
+    "Hierba perenne de 60-80 cm de alto.",
+    "Planta sin aguijones; cimas corimbiformes 5-15-floras, largamente pedunculadas; hojas pecioladas, ovadas, con 1-5 lóbulos a cada lado; corolas blanco-violáceas; bayas de 6-7 mm.",
+    "Paraguay y nordeste de la Argentina, hasta el Delta y la ribera del Plata."
+  ),
+  solanum_adventitium: species(
+    "solanum_adventitium",
+    "Solanum adventitium",
+    "116. Solanaceae",
+    "Hierba anual de cerca de 1 m de alto.",
+    "Planta sin aguijones; cimas generalmente umbeliformes, 2-5-floras; tallos glabros con dilataciones aliformes angostas; hojas ovado-triangulares con 2-3 lóbulos agudos a cada lado de la base; flores blancas; bayas con corpúsculos pétreos.",
+    "Frecuente en el Delta y en la ribera: Campana, Delta, Los Talas, etc."
+  ),
+  solanum_sarachoides: species(
+    "solanum_sarachoides",
+    "Solanum sarachoides",
+    "116. Solanaceae",
+    "Hierba anual, divaricado-ramosa.",
+    "Planta sin aguijones; tallos pubescentes y angulosos; tallos y hojas con pubescencia glandulosa; hojas ovadas, pecioladas e irregularmente dentadas; cimas 2-5-floras; cáliz acrescente; bayas con corpúsculos pétreos.",
+    "Uruguay y nordeste de la Argentina. Hallada en el Delta y en Pergamino."
+  ),
+  solanum_gracile: species(
+    "solanum_gracile",
+    "Solanum gracile",
+    "116. Solanaceae",
+    "Sufrútice de algo más de 0,5 m de alto, densamente pubescente.",
+    "Planta sin aguijones; tallos y hojas con pubescencia no glandulosa; cáliz no acrescente y bayas sin corpúsculos pétreos; hojas ovado-lanceoladas, enteras o apenas sinuadas; flores blancas en cimas 3-4-floras largamente pedunculadas; bayas oscuras.",
+    "América templado-cálida. Frecuente en el Delta y en bosquecillos de la ribera."
+  ),
+  solanum_sublobatum: species(
+    "solanum_sublobatum",
+    "Solanum sublobatum",
+    "116. Solanaceae",
+    "Sufrútice de 0,5-1 m de alto, ramoso y laxamente pubescente.",
+    "Planta sin aguijones; hojas ovadas, con 1-3 lóbulos obtusos a cada lado cerca de la base; cimas 2-5-floras, largamente pedunculadas; corolas blancas; bayas casi negras.",
+    "Región platense, especialmente en suelos algo húmedos. Nombre vulgar: yerba mora."
+  ),
+  solanum_pseudocapsicum: species(
+    "solanum_pseudocapsicum",
+    "Solanum pseudocapsicum",
+    "116. Solanaceae",
+    "Sufrútice de cerca de 0,5 m de alto, glabérrimo.",
+    "Planta sin aguijones; cimas sésiles o subsésiles o flores solitarias; hojas lanceoladas, enteras; flores blancas, solitarias o en cimas extraaxilares sésiles, paucifloras; bayas grandes, anaranjadas o rojas.",
+    "Isla Madeira. Frecuente en América cálida; se halla en el Delta y en la ribera del Plata."
+  ),
+  solanum_diflorum: species(
+    "solanum_diflorum",
+    "Solanum diflorum",
+    "116. Solanaceae",
+    "Sufrútice de cerca de medio metro de alto, con pelos estrellados esparcidos.",
+    "Planta sin aguijones; hojas ovado-lanceoladas, enteras; cimas 2-4-floras, sésiles; corolas blancas; bayas rojas.",
+    "América cálida. Muy común en la región."
+  ),
+  solanum_glaucum: species(
+    "solanum_glaucum",
+    "Solanum glaucum",
+    "116. Solanaceae",
+    "Arbusto rizomatoso, glauco, de 1-1,5 m de alto.",
+    "Planta sin aguijones; flores en cimas seudoterminales plurifloras; hojas lanceoladas, cortamente pecioladas, enteras, glaucas; flores azules; bayas negro-azuladas, grandes.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Muy frecuente en suelos bajos muy húmedos, formando duraznillales o varillales. Nombre vulgar: duraznillo blanco."
+  ),
+  solanum_verbascifolium: species(
+    "solanum_verbascifolium",
+    "Solanum verbascifolium",
+    "116. Solanaceae",
+    "Arbolito de 4-6 m de alto, con ramitas y hojas densamente tomentosas.",
+    "Planta sin aguijones; hojas ovadas o elípticas, pecioladas, elíptico-lanceoladas, con pecíolo auriculado y lámina entera; cimas seudoterminales plurifloras; corolas azuladas.",
+    "Regiones cálidas. Muy común en el norte de la Argentina; cerca de Buenos Aires crece espontáneamente en Palermo y en el Bosque de Eva Perón. Nombre vulgar: fumo bravo."
+  ),
   aristolochiaceae: family(
     "aristolochiaceae",
     "42. Aristolochiaceae",
@@ -16169,12 +16361,396 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Corola rotácea; anteras conniventes, formando un tubo alrededor del estilo",
       keyStep: "C",
-      especieId: "solanaceae",
+      nextNodeId: "solanum_a",
     },
     opcionA_prima: {
       label: "Corola acampanada, infundibuliforme o tubulosa",
       keyStep: "C'",
       nextNodeId: "solanaceae_d",
+    },
+  },
+  solanum_a: {
+    id: "solanum_a",
+    milestone: "Solanum",
+    manualPage: 408,
+    descripcion: "Solanum - A: presencia de tubérculos subterráneos",
+    opcionA: {
+      label: "Plantas con tubérculos subterráneos; hojas pinaticompuestas",
+      keyStep: "A",
+      nextNodeId: "solanum_b",
+    },
+    opcionA_prima: {
+      label: "Plantas sin tubérculos; hojas enteras, dentadas, lobadas o pinatisectas",
+      keyStep: "A'",
+      nextNodeId: "solanum_c",
+    },
+  },
+  solanum_b: {
+    id: "solanum_b",
+    milestone: "Solanum",
+    manualPage: 408,
+    descripcion: "Solanum - B: hojas en plantas tuberosas",
+    opcionA: {
+      label: "Hojas laxamente pilosas, imparipinaticompuestas, con 3-5 pares de segmentos ovados grandes alternando con segmentos diminutos",
+      keyStep: "B",
+      especieId: "solanum_chacoense",
+    },
+    opcionA_prima: {
+      label: "Hojas profundamente imparipinatisectas, con lóbulo terminal muy grande y 2-3 pares de segmentos elípticos menores",
+      keyStep: "B'",
+      especieId: "solanum_commersonii",
+    },
+  },
+  solanum_c: {
+    id: "solanum_c",
+    milestone: "Solanum",
+    manualPage: 408,
+    descripcion: "Solanum - C: presencia de aguijones",
+    opcionA: {
+      label: "Plantas con aguijones en tallos y hojas",
+      keyStep: "C",
+      nextNodeId: "solanum_d",
+    },
+    opcionA_prima: {
+      label: "Plantas sin aguijones",
+      keyStep: "C'",
+      nextNodeId: "solanum_h",
+    },
+  },
+  solanum_d: {
+    id: "solanum_d",
+    milestone: "Solanum",
+    manualPage: 408,
+    descripcion: "Solanum - D: hábito en plantas con aguijones",
+    opcionA: {
+      label: "Arbustos de 1,5 m, con aguijones en ramas jóvenes o sin ellos; pubescencia estrellada muy laxa; flores blancas terminales",
+      keyStep: "D",
+      especieId: "solanum_bonariense",
+    },
+    opcionA_prima: {
+      label: "Hierbas o sufrútices; hojas y tallos adultos con aguijones; flores azules o blancas",
+      keyStep: "D'",
+      nextNodeId: "solanum_e",
+    },
+  },
+  solanum_e: {
+    id: "solanum_e",
+    milestone: "Solanum",
+    manualPage: 408,
+    descripcion: "Solanum - E: división de las hojas en plantas aculeadas",
+    opcionA: {
+      label: "Hojas profundamente pinatisectas, con segmentos lobados y largos aguijones amarillos sobre las nervaduras",
+      keyStep: "E",
+      especieId: "solanum_sisymbriifolium",
+    },
+    opcionA_prima: {
+      label: "Hojas enteras, sinuadas o sublobadas; flores pocas",
+      keyStep: "E'",
+      nextNodeId: "solanum_f",
+    },
+  },
+  solanum_f: {
+    id: "solanum_f",
+    milestone: "Solanum",
+    manualPage: 408,
+    descripcion: "Solanum - F: porte en plantas aculeadas de hojas no partidas",
+    opcionA: {
+      label: "Sufrútice apoyante, con tallos cubiertos de aguijones rectos densos",
+      keyStep: "F",
+      especieId: "solanum_platense",
+    },
+    opcionA_prima: {
+      label: "Hierbas o sufrútices erectos, menores",
+      keyStep: "F'",
+      nextNodeId: "solanum_g",
+    },
+  },
+  solanum_g: {
+    id: "solanum_g",
+    milestone: "Solanum",
+    manualPage: 408,
+    descripcion: "Solanum - G: rizoma y largo de aguijones",
+    opcionA: {
+      label: "Sufrútice rizomatoso, erecto, cubierto de pelos estrellados, con aguijones amarillos cortos",
+      keyStep: "G",
+      especieId: "solanum_eleagnifolium",
+    },
+    opcionA_prima: {
+      label: "Hierba perenne con raíces gemíferas, pelos estrellados y aguijones amarillos largos",
+      keyStep: "G'",
+      especieId: "solanum_meloncillo",
+    },
+  },
+  solanum_h: {
+    id: "solanum_h",
+    milestone: "Solanum",
+    manualPage: 409,
+    descripcion: "Solanum - H: división de las hojas en plantas sin aguijones",
+    opcionA: {
+      label: "Hojas profundamente partidas",
+      keyStep: "H",
+      nextNodeId: "solanum_i",
+    },
+    opcionA_prima: {
+      label: "Hojas enteras, dentadas o lobadas",
+      keyStep: "H'",
+      nextNodeId: "solanum_l",
+    },
+  },
+  solanum_i: {
+    id: "solanum_i",
+    milestone: "Solanum",
+    manualPage: 409,
+    descripcion: "Solanum - I: tipo de inflorescencia en hojas partidas",
+    opcionA: {
+      label: "Flores en cimas o racimos extraaxilares paucifloros; plantas decumbentes",
+      keyStep: "I",
+      nextNodeId: "solanum_j",
+    },
+    opcionA_prima: {
+      label: "Flores en cimas corimbiformes terminales plurifloras; plantas erectas o enredaderas",
+      keyStep: "I'",
+      nextNodeId: "solanum_k",
+    },
+  },
+  solanum_j: {
+    id: "solanum_j",
+    milestone: "Solanum",
+    manualPage: 409,
+    descripcion: "Solanum - J: tipo de hojas partidas en plantas decumbentes",
+    opcionA: {
+      label: "Hojas profundamente pinatisectas, con raquis lineal y segmentos lineales dispuestos en ángulo recto",
+      keyStep: "J",
+      especieId: "solanum_pyrethrifolium",
+    },
+    opcionA_prima: {
+      label: "Hojas trisectas, con segmentos ovado-lanceolados y el central mayor",
+      keyStep: "J'",
+      especieId: "solanum_radicans",
+    },
+  },
+  solanum_k: {
+    id: "solanum_k",
+    milestone: "Solanum",
+    manualPage: 409,
+    descripcion: "Solanum - K: hojas partidas en plantas erectas o enredaderas",
+    opcionA: {
+      label: "Hojas profundamente pinatisectas, con segmento terminal lineal-lanceolado y segmentos laterales angostos",
+      keyStep: "K",
+      especieId: "solanum_angustifidum",
+    },
+    opcionA_prima: {
+      label: "Hojas polimorfas: enteras, trífidas o pinatisectas; flores azul-violáceas; bayas negras",
+      keyStep: "K'",
+      especieId: "solanum_jasminoides",
+    },
+  },
+  solanum_l: {
+    id: "solanum_l",
+    milestone: "Solanum",
+    manualPage: 409,
+    descripcion: "Solanum - L: porte y tamaño en hojas no profundamente partidas",
+    opcionA: {
+      label: "Plantas decumbentes o ascendentes, de 10-20 cm; hojas pequeñas, ovadas, con 1-2 lóbulos cortos basales",
+      keyStep: "L",
+      especieId: "solanum_pygmaeum",
+    },
+    opcionA_prima: {
+      label: "Plantas generalmente erectas o volubles, con hojas normalmente mayores",
+      keyStep: "L'",
+      nextNodeId: "solanum_m",
+    },
+  },
+  solanum_m: {
+    id: "solanum_m",
+    milestone: "Solanum",
+    manualPage: 409,
+    descripcion: "Solanum - M: hábito voluble o erecto",
+    opcionA: {
+      label: "Plantas volubles",
+      keyStep: "M",
+      nextNodeId: "solanum_n",
+    },
+    opcionA_prima: {
+      label: "Plantas ascendentes o erectas",
+      keyStep: "M'",
+      nextNodeId: "solanum_o",
+    },
+  },
+  solanum_n: {
+    id: "solanum_n",
+    milestone: "Solanum",
+    manualPage: 409,
+    descripcion: "Solanum - N: tallos y hojas en plantas volubles",
+    opcionA: {
+      label: "Tallos apoyantes, muy angulosos, glabros; hojas lanceoladas, agudas, enteras y glabras",
+      keyStep: "N",
+      especieId: "solanum_amygdalifolium",
+    },
+    opcionA_prima: {
+      label: "Tallos cilíndricos, pubescentes o glabros; hojas largamente pecioladas, ovadas y enteras",
+      keyStep: "N'",
+      especieId: "solanum_boerhaviaefolium",
+    },
+  },
+  solanum_o: {
+    id: "solanum_o",
+    milestone: "Solanum",
+    manualPage: 409,
+    descripcion: "Solanum - O: tipo de cima floral",
+    opcionA: {
+      label: "Flores solitarias o en cimas extraaxilares umbeliformes o corimbiformes paucifloras",
+      keyStep: "O",
+      nextNodeId: "solanum_p",
+    },
+    opcionA_prima: {
+      label: "Flores en cimas seudoterminales plurifloras",
+      keyStep: "O'",
+      nextNodeId: "solanum_w",
+    },
+  },
+  solanum_p: {
+    id: "solanum_p",
+    milestone: "Solanum",
+    manualPage: 409,
+    descripcion: "Solanum - P: pedúnculo de las cimas y forma foliar",
+    opcionA: {
+      label: "Cimas largamente pedunculadas; hojas ovadas",
+      keyStep: "P",
+      nextNodeId: "solanum_q",
+    },
+    opcionA_prima: {
+      label: "Cimas sésiles o subsésiles o flores solitarias; hojas lanceoladas o elíptico-lanceoladas",
+      keyStep: "P'",
+      nextNodeId: "solanum_v",
+    },
+  },
+  solanum_q: {
+    id: "solanum_q",
+    milestone: "Solanum",
+    manualPage: 409,
+    descripcion: "Solanum - Q: número y forma de flores en cimas",
+    opcionA: {
+      label: "Cimas corimbiformes 5-15-floras",
+      keyStep: "Q",
+      nextNodeId: "solanum_r",
+    },
+    opcionA_prima: {
+      label: "Cimas generalmente umbeliformes, 2-5-floras",
+      keyStep: "Q'",
+      nextNodeId: "solanum_s",
+    },
+  },
+  solanum_r: {
+    id: "solanum_r",
+    milestone: "Solanum",
+    manualPage: 409,
+    descripcion: "Solanum - R: pecíolo y lóbulos foliares en cimas corimbiformes",
+    opcionA: {
+      label: "Hojas largamente pecioladas, ovadas, enteras o con 1-2 lóbulos basales; corola blanca",
+      keyStep: "R",
+      especieId: "solanum_basilobum",
+    },
+    opcionA_prima: {
+      label: "Hojas pecioladas, ovadas, con 1-5 lóbulos a cada lado; corolas blanco-violáceas",
+      keyStep: "R'",
+      especieId: "solanum_pulchrilobum",
+    },
+  },
+  solanum_s: {
+    id: "solanum_s",
+    milestone: "Solanum",
+    manualPage: 409,
+    descripcion: "Solanum - S: tallos glabros o pubescentes",
+    opcionA: {
+      label: "Tallos glabros, con dilataciones aliformes angostas; flores blancas; bayas con corpúsculos pétreos",
+      keyStep: "S",
+      especieId: "solanum_adventitium",
+    },
+    opcionA_prima: {
+      label: "Tallos pubescentes, angulosos",
+      keyStep: "S'",
+      nextNodeId: "solanum_t",
+    },
+  },
+  solanum_t: {
+    id: "solanum_t",
+    milestone: "Solanum",
+    manualPage: 410,
+    descripcion: "Solanum - T: tipo de pubescencia",
+    opcionA: {
+      label: "Tallos y hojas con pubescencia glandulosa; cáliz acrescente; bayas con corpúsculos pétreos",
+      keyStep: "T",
+      especieId: "solanum_sarachoides",
+    },
+    opcionA_prima: {
+      label: "Tallos y hojas con pubescencia no glandulosa; cáliz no acrescente; bayas sin corpúsculos pétreos",
+      keyStep: "T'",
+      nextNodeId: "solanum_u",
+    },
+  },
+  solanum_u: {
+    id: "solanum_u",
+    milestone: "Solanum",
+    manualPage: 410,
+    descripcion: "Solanum - U: forma de hojas en pubescencia no glandulosa",
+    opcionA: {
+      label: "Hojas ovado-lanceoladas, enteras o apenas sinuadas, densamente pubescentes",
+      keyStep: "U",
+      especieId: "solanum_gracile",
+    },
+    opcionA_prima: {
+      label: "Hojas ovadas, con 1-3 lóbulos obtusos a cada lado cerca de la base",
+      keyStep: "U'",
+      especieId: "solanum_sublobatum",
+    },
+  },
+  solanum_v: {
+    id: "solanum_v",
+    milestone: "Solanum",
+    manualPage: 410,
+    descripcion: "Solanum - V: pubescencia en ramas con flores sésiles o solitarias",
+    opcionA: {
+      label: "Plantas glabras; hojas lanceoladas, enteras; bayas grandes anaranjadas o rojas",
+      keyStep: "V",
+      especieId: "solanum_pseudocapsicum",
+    },
+    opcionA_prima: {
+      label: "Plantas con pelos estrellados esparcidos en tallos y nervaduras; hojas ovado-lanceoladas; bayas rojas",
+      keyStep: "V'",
+      especieId: "solanum_diflorum",
+    },
+  },
+  solanum_w: {
+    id: "solanum_w",
+    milestone: "Solanum",
+    manualPage: 410,
+    descripcion: "Solanum - W: forma foliar en cimas seudoterminales",
+    opcionA: {
+      label: "Hojas lanceoladas, cortamente pecioladas, enteras, glaucas; flores azules; bayas negro-azuladas",
+      keyStep: "W",
+      especieId: "solanum_glaucum",
+    },
+    opcionA_prima: {
+      label: "Hojas ovadas o elípticas",
+      keyStep: "W'",
+      nextNodeId: "solanum_x",
+    },
+  },
+  solanum_x: {
+    id: "solanum_x",
+    milestone: "Solanum",
+    manualPage: 410,
+    descripcion: "Solanum - X: porte y tomento",
+    opcionA: {
+      label: "Arbolitos de 4-6 m; ramitas y hojas densamente tomentosas; hojas grandes con pecíolo auriculado",
+      keyStep: "X",
+      especieId: "solanum_verbascifolium",
+    },
+    opcionA_prima: {
+      label: "Arbustos de 1 m, glabros o con pelos estrellados esparcidos",
+      keyStep: "X'",
+      especieId: "solanum_bonariense",
     },
   },
   solanaceae_d: {
