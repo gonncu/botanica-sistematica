@@ -4449,6 +4449,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Lianas con hojas compuestas."
   ),
+  clytostoma_callistegioides: species(
+    "clytostoma_callistegioides",
+    "Clytostoma callistegioides",
+    "118. Bignoniaceae",
+    "Liana robusta, de hojas persistentes, bifolioladas.",
+    "Zarcillos simples; folíolos elípticos, enteros, acuminados en el ápice; flores en fascículos terminales 2-floros; corola lila claro, de 8 cm; cápsula elíptica, equinada, de 10 cm.",
+    "América subtropical. Frecuente en el Delta y en bosques de la ribera platense, hasta Punta Lara. Nombre vulgar: dama del monte."
+  ),
+  bignonia_unguis_cati: species(
+    "bignonia_unguis_cati",
+    "Bignonia unguis-cati",
+    "118. Bignoniaceae",
+    "Liana leñosa, con hojas bifolioladas.",
+    "Zarcillos 3-garfiados; folíolos ovado-lanceolados, acuminados, enteros o dentados; flores grandes, axilares, solitarias o en fascículos 2-3-floros, amarillas, de 8-10 cm; cápsula lisa de 35-40 cm.",
+    "América cálida. Cultivada como ornamental y frecuente en selvas marginales del Delta y de la ribera del Plata. Nombre vulgar: uña de gato."
+  ),
   borraginaceae: family(
     "borraginaceae",
     "113. Borraginaceae",
@@ -14680,7 +14696,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Lianas con hojas compuestas",
       keyStep: "D",
-      especieId: "bignoniaceae",
+      nextNodeId: "bignoniaceae_a",
     },
     opcionA_prima: {
       label: "Hierbas, arbustos o árboles, generalmente con hojas simples",
@@ -17359,6 +17375,22 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hierba pubescente; hojas basales opuestas y superiores a veces verticiladas; corola azul pálido",
       keyStep: "B'",
       especieId: "stemodia_hyptioides",
+    },
+  },
+  bignoniaceae_a: {
+    id: "bignoniaceae_a",
+    milestone: "Bignoniaceae",
+    manualPage: 428,
+    descripcion: "Bignoniaceae - A: tipo de zarcillos",
+    opcionA: {
+      label: "Zarcillos simples",
+      keyStep: "A",
+      especieId: "clytostoma_callistegioides",
+    },
+    opcionA_prima: {
+      label: "Zarcillos 3-garfiados",
+      keyStep: "A'",
+      especieId: "bignonia_unguis_cati",
     },
   },
   solanaceae_d: {
