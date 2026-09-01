@@ -6617,6 +6617,30 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Cáliz en forma de papus plumoso; estambres 3."
   ),
+  valeriana_scandens: species(
+    "valeriana_scandens",
+    "Valeriana scandens",
+    "125. Valerianaceae",
+    "Hierba anual, voluble y glabra.",
+    "Hojas pecioladas: las inferiores trifolioladas, con folíolos ovados y trinervados; las superiores enteras, acorazonadas, 5-7-nervadas y acuminadas; flores pequeñas, polígamo-dioicas, en cimas dicotómicas multifloras; corola blanca de unos 3 mm; frutos con vilano de 9-12 cerdas plumosas.",
+    "América cálida. Frecuente en bosques del Delta y de las riberas del Paraná y del Plata; florece en primavera."
+  ),
+  valeriana_salicariaefolia: species(
+    "valeriana_salicariaefolia",
+    "Valeriana salicariaefolia",
+    "125. Valerianaceae",
+    "Hierba perenne, rizomatosa y glabra, con rizoma grueso y tallos de cerca de 1 m de alto.",
+    "Hojas enteras, oblongo-lanceoladas, sésiles o cortísimamente pecioladas, agudas, ensanchadas y redondeadas en la base, enteras y revolutas, de 10-18 x 1-1,8 cm; flores verdosas unisexuadas de 2-2,5 mm en panojas terminales densas; frutos elípticos, glabros, sin vilano.",
+    "Sur del Brasil, Uruguay y región platense. Común en bosques higrófilos."
+  ),
+  valeriana_polystachya: species(
+    "valeriana_polystachya",
+    "Valeriana polystachya",
+    "125. Valerianaceae",
+    "Hierba perenne, rizomatosa, glabra, de 1-1,5 m de alto.",
+    "Hojas, al menos las superiores, profundamente pinatisectas, con 3-8 pares de segmentos lanceolados, enteros, muy inclinados hacia el ápice; flores amarillentas, polígamo-dioicas, de 2-3,5 mm, en densas panojas de espigas de glomérulos; frutos oblongos, triquetros, sin vilano.",
+    "Uruguay y nordeste de la Argentina. Común en pajonales del Delta y de la ribera del Plata."
+  ),
   campanulaceae: family(
     "campanulaceae",
     "128. Campanulaceae",
@@ -19400,7 +19424,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Cáliz en forma de papus plumoso; estambres 3",
       keyStep: "i",
-      especieId: "valerianaceae",
+      nextNodeId: "valeriana_a",
     },
     opcionA_prima: {
       label: "Cáliz herbáceo, a veces muy reducido; estambres 4-5",
@@ -19467,6 +19491,38 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hojas simples; flores cigomorfas",
       keyStep: "A'",
       especieId: "lonicera_japonica",
+    },
+  },
+  valeriana_a: {
+    id: "valeriana_a",
+    milestone: "Valerianaceae",
+    manualPage: 448,
+    descripcion: "Valeriana - A: hábito y tipo de hojas",
+    opcionA: {
+      label: "Hierba anual, voluble, glabra; hojas inferiores trifolioladas y superiores acorazonadas",
+      keyStep: "A",
+      especieId: "valeriana_scandens",
+    },
+    opcionA_prima: {
+      label: "Hierbas perennes, erectas; hojas no acorazonadas ni trifolioladas; cáliz nulo o casi nulo",
+      keyStep: "A'",
+      nextNodeId: "valeriana_b",
+    },
+  },
+  valeriana_b: {
+    id: "valeriana_b",
+    milestone: "Valeriana",
+    manualPage: 450,
+    descripcion: "Valeriana - B: división de las hojas",
+    opcionA: {
+      label: "Hojas enteras, oblongo-lanceoladas; flores verdosas en panojas terminales densas",
+      keyStep: "B",
+      especieId: "valeriana_salicariaefolia",
+    },
+    opcionA_prima: {
+      label: "Hojas, al menos las superiores, profundamente pinatisectas; flores amarillentas en panojas densas",
+      keyStep: "B'",
+      especieId: "valeriana_polystachya",
     },
   },
 };
