@@ -5667,6 +5667,86 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Flores tetrámeras, corola membranosa poco llamativa, hojas en roseta y flores en espigas."
   ),
+  plantago_major: species(
+    "plantago_major",
+    "Plantago major",
+    "122. Plantaginaceae",
+    "Hierba perenne, cortamente rizomatosa, glabra o laxamente pubescente.",
+    "Hojas arrosetadas, largamente pecioladas, con lámina ovada, sinuada o dentada, de 6-15 x 4-12 cm; escapos de 15-40 cm; flores en espigas densas; semillas 6-30.",
+    "Europa, adventicia en América. Frecuente en suelos modificados."
+  ),
+  plantago_heterophylla: species(
+    "plantago_heterophylla",
+    "Plantago heterophylla",
+    "122. Plantaginaceae",
+    "Hierba pigmea anual, con raíces tenues.",
+    "Hojas arrosetadas, glabras, lineales, enteras o con algún diente, de 3-10 cm x 1-2,5 mm; escapos decumbentes o ascendentes, de 5-10 cm; espigas laxas; semillas alrededor de 25.",
+    "Estados Unidos. Hallada en campos húmedos próximos a Eva Perón."
+  ),
+  plantago_lanceolata: species(
+    "plantago_lanceolata",
+    "Plantago lanceolata",
+    "122. Plantaginaceae",
+    "Hierba perenne, cortamente rizomatosa, glabra o apenas pubescente.",
+    "Hojas en roseta, lanceoladas, generalmente con cinco nervaduras principales, enteras, de 15-30 x 1-2,5 cm; escapos de 30-60 cm, terminados en espigas cortas y densas; semillas 2.",
+    "Europa, adventicia en América. Común en suelos modificados. Nombre vulgar: llantén."
+  ),
+  plantago_patagonica: species(
+    "plantago_patagonica",
+    "Plantago patagonica",
+    "122. Plantaginaceae",
+    "Hierba anual, densamente seríceo-pubescente, con raíz delgada.",
+    "Hojas arrosetadas, lineales; flores en espigas densas; semillas 2.",
+    "Centro y sur de la Argentina, en suelos arenosos. Rara en la región, pero frecuente en las dunas de Junín y Monte Veloz."
+  ),
+  plantago_macrostachys: species(
+    "plantago_macrostachys",
+    "Plantago macrostachys",
+    "122. Plantaginaceae",
+    "Hierba perenne, cortamente rizomatosa, glabra.",
+    "Hojas glabras o a lo más ciliadas, arrosetadas, largamente pecioladas, elíptico-lanceoladas, 5-nervadas, sinuado-dentadas, con lámina de 12-20 x 3-6 cm; escapos más largos que las hojas, terminados en espigas largas y densas; semillas 3.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Común en suelos húmedos."
+  ),
+  plantago_macrostachys_var_platensis: species(
+    "plantago_macrostachys_var_platensis",
+    "Plantago macrostachys var. platensis",
+    "122. Plantaginaceae",
+    "Variedad de Plantago macrostachys de tamaño más reducido.",
+    "Mantiene los rasgos principales de la especie: hojas arrosetadas, elíptico-lanceoladas, glabras o ciliadas, y espigas densas sobre escapos más largos que las hojas.",
+    "Endémica de la región. Común en el césped de la ribera platense."
+  ),
+  plantago_taraxacoides: species(
+    "plantago_taraxacoides",
+    "Plantago taraxacoides",
+    "122. Plantaginaceae",
+    "Hierba perenne baja.",
+    "Hojas glabras o a lo más ciliadas, arrosetadas, lineal-lanceoladas, dentadas o lobuladas, ciliadas en el margen, de 4-10 cm; espigas apenas superando a las hojas; escapo pubescente; semillas 3.",
+    "Centro y sur de la Argentina. Se halla en campos bajos y salobres, como Bavio, Tolosa y Ensenada."
+  ),
+  plantago_myosurus: species(
+    "plantago_myosurus",
+    "Plantago myosurus",
+    "122. Plantaginaceae",
+    "Hierba anual pequeña, con hojas densamente pubescentes.",
+    "Hojas arrosetadas, lanceoladas, atenuadas en corto pecíolo, sinuado-dentadas, de 4-11 x 0,5-2 cm; escapos de doble longitud que las hojas, velludos, con espigas largas y densas; semillas 3, punteadas.",
+    "América austral. Muy frecuente en la estepa clímax; florece en primavera."
+  ),
+  plantago_paralias: species(
+    "plantago_paralias",
+    "Plantago paralias",
+    "122. Plantaginaceae",
+    "Hierba perenne robusta, con hojas densamente pubescentes.",
+    "Raíz fusiforme, poco engrosada; hojas elíptico-lanceoladas o elípticas, velludas, enteras o denticuladas, de 8-20 x 2-6 cm; espigas largas, densas o laxas, sobresaliendo mucho de las hojas; semillas rugosas.",
+    "América austral. Común en campos fértiles; florece en primavera."
+  ),
+  plantago_berroi: species(
+    "plantago_berroi",
+    "Plantago berroi",
+    "122. Plantaginaceae",
+    "Hemicriptófita perenne robusta, con hojas densamente pubescentes.",
+    "Raíz napiforme, muy engrosada; hojas arrosetadas, elípticas o elíptico-ovadas, estrechadas en la base en corto pecíolo, enteras o con dientes obtusos, hirsuto-velludas; flores en espigas densas y gruesas de 7-14 cm; semillas punteadas.",
+    "Uruguay y provincia de Buenos Aires. No parece hallarse en las inmediaciones de la Capital Federal, pero sí en campos con estepa clímax de Pergamino y Azul."
+  ),
   hydrophyllaceae: family(
     "hydrophyllaceae",
     "112. Hydrophyllaceae",
@@ -15778,7 +15858,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Flores tetrámeras; corola membranosa, poco llamativa; hojas en roseta; flores en espigas",
       keyStep: "X",
-      especieId: "plantaginaceae",
+      nextNodeId: "plantago_a",
     },
     opcionA_prima: {
       label: "Flores pentámeras; corola llamativa; hojas generalmente alternas",
@@ -17735,6 +17815,150 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Tecas de las anteras en ángulo recto; corola de unos 25 mm",
       keyStep: "C'",
       especieId: "justicia_ascendens",
+    },
+  },
+  plantago_a: {
+    id: "plantago_a",
+    milestone: "Plantaginaceae",
+    manualPage: 436,
+    descripcion: "Plantago - A: cantidad de semillas",
+    opcionA: {
+      label: "Semillas 5 o más",
+      keyStep: "A",
+      nextNodeId: "plantago_b",
+    },
+    opcionA_prima: {
+      label: "Semillas 2-3",
+      keyStep: "A'",
+      nextNodeId: "plantago_c",
+    },
+  },
+  plantago_b: {
+    id: "plantago_b",
+    milestone: "Plantago",
+    manualPage: 436,
+    descripcion: "Plantago - B: forma de las hojas en especies con muchas semillas",
+    opcionA: {
+      label: "Hojas ovadas, sinuadas o dentadas, de 6-15 x 4-12 cm; escapos de 15-40 cm; semillas 6-30",
+      keyStep: "B",
+      especieId: "plantago_major",
+    },
+    opcionA_prima: {
+      label: "Hojas lineales, glabras, de 3-10 cm por 1-2,5 mm; escapos de 5-10 cm; semillas alrededor de 25",
+      keyStep: "B'",
+      especieId: "plantago_heterophylla",
+    },
+  },
+  plantago_c: {
+    id: "plantago_c",
+    milestone: "Plantago",
+    manualPage: 436,
+    descripcion: "Plantago - C: semillas 2 o 3",
+    opcionA: {
+      label: "Semillas 2",
+      keyStep: "C",
+      nextNodeId: "plantago_d",
+    },
+    opcionA_prima: {
+      label: "Semillas 3",
+      keyStep: "C'",
+      nextNodeId: "plantago_e",
+    },
+  },
+  plantago_d: {
+    id: "plantago_d",
+    milestone: "Plantago",
+    manualPage: 436,
+    descripcion: "Plantago - D: hábito e indumento en especies con dos semillas",
+    opcionA: {
+      label: "Hierba perenne, cortamente rizomatosa, glabra o apenas pubescente; hojas lanceoladas, 5-nervadas",
+      keyStep: "D",
+      especieId: "plantago_lanceolata",
+    },
+    opcionA_prima: {
+      label: "Hierba anual, densamente seríceo-pubescente, con raíz delgada; hojas lineales",
+      keyStep: "D'",
+      especieId: "plantago_patagonica",
+    },
+  },
+  plantago_e: {
+    id: "plantago_e",
+    milestone: "Plantago",
+    manualPage: 437,
+    descripcion: "Plantago - E: indumento de las hojas en especies con tres semillas",
+    opcionA: {
+      label: "Hojas glabras o a lo más ciliadas",
+      keyStep: "E",
+      nextNodeId: "plantago_f",
+    },
+    opcionA_prima: {
+      label: "Hojas densamente pubescentes",
+      keyStep: "E'",
+      nextNodeId: "plantago_g",
+    },
+  },
+  plantago_f: {
+    id: "plantago_f",
+    milestone: "Plantago",
+    manualPage: 437,
+    descripcion: "Plantago - F: forma foliar en especies glabras o ciliadas",
+    opcionA: {
+      label: "Hojas elíptico-lanceoladas, 5-nervadas, sinuado-dentadas; escapos más largos que las hojas",
+      keyStep: "F",
+      nextNodeId: "plantago_macrostachys_a",
+    },
+    opcionA_prima: {
+      label: "Hojas lineal-lanceoladas, dentadas o lobuladas; espigas apenas superando a las hojas",
+      keyStep: "F'",
+      especieId: "plantago_taraxacoides",
+    },
+  },
+  plantago_macrostachys_a: {
+    id: "plantago_macrostachys_a",
+    milestone: "Plantago macrostachys",
+    manualPage: 437,
+    descripcion: "Plantago macrostachys: especie típica y variedad citada",
+    opcionA: {
+      label: "Planta con los rasgos típicos de la especie",
+      keyStep: "5",
+      especieId: "plantago_macrostachys",
+    },
+    opcionA_prima: {
+      label: "Variedad de tamaño más reducido, común en el césped de la ribera platense",
+      keyStep: "5a",
+      especieId: "plantago_macrostachys_var_platensis",
+    },
+  },
+  plantago_g: {
+    id: "plantago_g",
+    milestone: "Plantago",
+    manualPage: 437,
+    descripcion: "Plantago - G: hábito en especies densamente pubescentes",
+    opcionA: {
+      label: "Hierba anual pequeña; hojas lanceoladas; escapos de doble longitud que las hojas; semillas punteadas",
+      keyStep: "G",
+      especieId: "plantago_myosurus",
+    },
+    opcionA_prima: {
+      label: "Plantas perennes robustas; hojas elípticas o elíptico-lanceoladas",
+      keyStep: "G'",
+      nextNodeId: "plantago_h",
+    },
+  },
+  plantago_h: {
+    id: "plantago_h",
+    milestone: "Plantago",
+    manualPage: 437,
+    descripcion: "Plantago - H: semillas y raíz en plantas perennes robustas",
+    opcionA: {
+      label: "Semillas rugosas; raíz fusiforme, poco engrosada; espigas largas, densas o laxas",
+      keyStep: "H",
+      especieId: "plantago_paralias",
+    },
+    opcionA_prima: {
+      label: "Semillas punteadas; raíz napiforme muy engrosada; espigas densas y gruesas",
+      keyStep: "H'",
+      especieId: "plantago_berroi",
     },
   },
   solanaceae_d: {
