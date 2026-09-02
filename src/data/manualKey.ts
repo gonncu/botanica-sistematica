@@ -6657,6 +6657,54 @@ export const manualFamilyData: Record<string, Especie> = {
     "Tallos hojosos hasta el ápice; hojas albo-tomentosas en la cara inferior, lanceoladas u oblongas, enteras, de 7-14 cm; capítulos pocos, largamente pedunculados, en corimbos definidos; involucro hemisférico de 8-10 mm, con brácteas lanceoladas tomentosas en el dorso.",
     "Sur del Brasil y norte de la Argentina hasta Córdoba y Buenos Aires. Rara en campos altos y secos."
   ),
+  adenostemma_brasilianum: species(
+    "adenostemma_brasilianum",
+    "Adenostemma brasilianum",
+    "130. Compositae - Eupatorieae",
+    "Hierba anual erecta, de 50-80 cm de alto, con tallos sencillos y glabros.",
+    "Hojas pecioladas, triangular-hastadas, dentadas, de 10-16 x 6-14 cm; capítulos apanojado-corimbosos; involucro hemisférico de 2-3 mm; flores blancas; papus formado por 3-5 pelos glandulosos cortos y rígidos.",
+    "América tropical y subtropical. Común durante el otoño en bosques y pajonales del Delta y de la ribera platense."
+  ),
+  gymnocoronis_spilanthoides: species(
+    "gymnocoronis_spilanthoides",
+    "Gymnocoronis spilanthoides",
+    "130. Compositae - Eupatorieae",
+    "Hierba perenne, con tallos erectos glabros, de 1-1,5 m de alto.",
+    "Hojas pecioladas, lanceoladas, aserradas, glabras, de 8-12 cm; capítulos corimbosos; involucro hemisférico de 4 mm; flores blancas; aquenios pentacostados, truncados en el ápice, sin papus.",
+    "Sur del Brasil, Paraguay, Uruguay y norte de la Argentina. Común en la ribera platense; palustre. Nombre vulgar: jazmín del bañado."
+  ),
+  gymnocoronis_spilanthoides_var_subcordata: species(
+    "gymnocoronis_spilanthoides_var_subcordata",
+    "Gymnocoronis spilanthoides var. subcordata",
+    "130. Compositae - Eupatorieae",
+    "Variedad de Gymnocoronis spilanthoides con hojas mayores.",
+    "Hojas mayores, ovadas y algo acorazonadas en la base; mantiene los capítulos corimbosos, flores blancas e involucro hemisférico del tipo.",
+    "Vive junto con la variedad típica."
+  ),
+  stevia_multiaristata: species(
+    "stevia_multiaristata",
+    "Stevia multiaristata",
+    "130. Compositae - Eupatorieae",
+    "Sufrútice erecto de 40-60 cm de alto.",
+    "Capítulos pocos, laxamente corimbosos, con pedicelos de 6-20 mm, más largos que el involucro; hojas densas, lineales o lineal-lanceoladas, ligeramente aserradas, pubescentes, de 3-5 cm x 2-6 mm; involucro de 8-9 mm; papus con 18-25 cerdas amarillentas.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Rara en campos secos."
+  ),
+  stevia_aristata: species(
+    "stevia_aristata",
+    "Stevia aristata",
+    "130. Compositae - Eupatorieae",
+    "Hierba perenne, brevemente pubescente, de 50-70 cm de alto.",
+    "Capítulos numerosos, densamente corimbosos, con pedicelos de 0-4 mm; hojas ovado-rómbicas, aserradas, de 4-7 x 1,3-3 cm; involucro de 7-8 mm, con brácteas pubescentes; papus con 15-20 cerdas.",
+    "Paraguay, Uruguay y nordeste de la Argentina. Se halla en los albardones del Delta."
+  ),
+  stevia_satureiaefolia: species(
+    "stevia_satureiaefolia",
+    "Stevia satureiaefolia",
+    "130. Compositae - Eupatorieae",
+    "Sufrútice erecto, ramoso en la base y densamente hojoso, de 20-50 cm de alto.",
+    "Capítulos numerosos, densamente corimbosos, con pedicelos cortos; hojas lineales, enteras, obtusas, pubescentes, de 2-2,5 cm x 1-3 mm; involucro de 8 mm, con brácteas pubescentes; papus con 14-19 cerdas rojizas.",
+    "Sur del Brasil, Uruguay y norte y centro de la Argentina. Común en barrancas del Paraná y terrenos calcáreos."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -19914,7 +19962,119 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Otras tribus de Compositae",
       keyStep: "Tribus 2-13",
+      nextNodeId: "compositae_b",
+    },
+  },
+  compositae_b: {
+    id: "compositae_b",
+    milestone: "Compositae",
+    manualPage: 462,
+    descripcion: "Compositae: tribus restantes, avance parcial",
+    opcionA: {
+      label: "Eupatorieae: anteras obtusas en la base; estilo con ramas lineales largas o claviformes, densamente papilosas",
+      keyStep: "Tribu 2",
+      nextNodeId: "eupatorieae_a",
+    },
+    opcionA_prima: {
+      label: "Otras tribus de Compositae",
+      keyStep: "Tribus 3-13",
       especieId: "compositae",
+    },
+  },
+  eupatorieae_a: {
+    id: "eupatorieae_a",
+    milestone: "Eupatorieae",
+    manualPage: 462,
+    descripcion: "Eupatorieae - A: apéndice conectival de las anteras y desarrollo del papus",
+    opcionA: {
+      label: "Anteras con apéndice conectival nulo o casi nulo; papus ausente o muy corto",
+      keyStep: "A",
+      nextNodeId: "eupatorieae_b",
+    },
+    opcionA_prima: {
+      label: "Anteras con apéndices conectivales largos; papus bien desarrollado",
+      keyStep: "A'",
+      nextNodeId: "eupatorieae_c",
+    },
+  },
+  eupatorieae_b: {
+    id: "eupatorieae_b",
+    milestone: "Eupatorieae",
+    manualPage: 462,
+    descripcion: "Eupatorieae - B: papus ausente o con pelos glandulosos",
+    opcionA: {
+      label: "Papus formado por 3-5 pelitos glandulosos",
+      keyStep: "B",
+      especieId: "adenostemma_brasilianum",
+    },
+    opcionA_prima: {
+      label: "Papus ausente",
+      keyStep: "B'",
+      nextNodeId: "gymnocoronis_a",
+    },
+  },
+  eupatorieae_c: {
+    id: "eupatorieae_c",
+    milestone: "Eupatorieae",
+    manualPage: 462,
+    descripcion: "Eupatorieae - C: tipo de papus desarrollado",
+    opcionA: {
+      label: "Papus formado por pajitas cortas o por cerdas gruesas, membranosas en la base",
+      keyStep: "C",
+      nextNodeId: "stevia_a",
+    },
+    opcionA_prima: {
+      label: "Papus formado por muchos pelos delgados",
+      keyStep: "C'",
+      especieId: "compositae",
+    },
+  },
+  gymnocoronis_a: {
+    id: "gymnocoronis_a",
+    milestone: "Gymnocoronis",
+    manualPage: 468,
+    descripcion: "Gymnocoronis spilanthoides: variedad típica y variedad citada",
+    opcionA: {
+      label: "Hojas lanceoladas, aserradas, glabras, de 8-12 cm",
+      keyStep: "1",
+      especieId: "gymnocoronis_spilanthoides",
+    },
+    opcionA_prima: {
+      label: "Hojas mayores, ovadas, algo acorazonadas en la base",
+      keyStep: "1a",
+      especieId: "gymnocoronis_spilanthoides_var_subcordata",
+    },
+  },
+  stevia_a: {
+    id: "stevia_a",
+    milestone: "Stevia",
+    manualPage: 470,
+    descripcion: "Stevia - A: cantidad de capítulos y longitud de pedicelos",
+    opcionA: {
+      label: "Capítulos pocos, laxamente corimbosos, con pedicelos más largos que el involucro",
+      keyStep: "A",
+      especieId: "stevia_multiaristata",
+    },
+    opcionA_prima: {
+      label: "Capítulos numerosos, densamente corimbosos, con pedicelos más cortos que el involucro",
+      keyStep: "A'",
+      nextNodeId: "stevia_b",
+    },
+  },
+  stevia_b: {
+    id: "stevia_b",
+    milestone: "Stevia",
+    manualPage: 470,
+    descripcion: "Stevia - B: forma de las hojas",
+    opcionA: {
+      label: "Hojas ovado-rómbicas, aserradas, de 4-7 x 1,3-3 cm",
+      keyStep: "B",
+      especieId: "stevia_aristata",
+    },
+    opcionA_prima: {
+      label: "Hojas lineales, enteras, obtusas, de 2-2,5 cm x 1-3 mm",
+      keyStep: "B'",
+      especieId: "stevia_satureiaefolia",
     },
   },
   vernonia_a: {
