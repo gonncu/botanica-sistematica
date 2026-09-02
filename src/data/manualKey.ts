@@ -7249,6 +7249,62 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas frecuentemente enteras, de 0,5-1,5 mm de ancho.",
     "América austral. En campos bajos y salinos."
   ),
+  pluchea_sagittalis: species(
+    "pluchea_sagittalis",
+    "Pluchea sagittalis",
+    "130. Compositae - Inuleae",
+    "Hierba perenne de 0,5-2 m de alto, con tallos erectos, alados, glabros o algo pubescentes.",
+    "Hojas alternas, anchamente lanceoladas, brevemente aserradas, glanduloso-pubescentes en ambas caras, de 8-14 cm por 2-4 cm; capítulos corimbosos; involucro hemisférico, de 5-6 mm por 10-12 mm, con brácteas ovadas, agudas y pubescentes.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Frecuente en suelos húmedos y pajonales. Medicinal y aromática. Nombres vulgares: lucera, yerba del lucero, quitoco."
+  ),
+  tessaria_integrifolia: species(
+    "tessaria_integrifolia",
+    "Tessaria integrifolia",
+    "130. Compositae - Inuleae",
+    "Árbol de 3-8 m de alto, con raíces gemíferas.",
+    "Hojas lanceoladas, agudas, enteras o dentadas, densa y cortamente canescentes, de 6-8 cm; capítulos subsésiles en densos corimbos; involucro turbinado, de 5-6 mm, con brácteas interiores radiantes; flor masculina solitaria; papus blanco.",
+    "América del Sur cálida, hasta el Delta del Paraná. Forma bosquecillos muy densos. Nombres vulgares: aliso, pájaro bobo."
+  ),
+  tessaria_absinthioides: species(
+    "tessaria_absinthioides",
+    "Tessaria absinthioides",
+    "130. Compositae - Inuleae",
+    "Sufrútice de 1-1,5 m de alto, densamente cano-tomentoso, con raíces gemíferas.",
+    "Hojas oblanceoladas, agudas o semiobtusas, aserradas, de 5-8 cm; capítulos densamente corimbosos; involucro acampanado, de 7-8 mm de alto; flores masculinas 6-24; papus blanco.",
+    "América austral, en suelos arenosos algo húmedos. Rara en la Isla Maciel y abundante en dunas del litoral atlántico. Nombres vulgares: brea, pájaro bobo, suncho negro."
+  ),
+  pterocaulon_interruptum: species(
+    "pterocaulon_interruptum",
+    "Pterocaulon interruptum",
+    "130. Compositae - Inuleae",
+    "Hierba perenne de 1-1,5 m de alto, con tallos erectos, sencillos, 5-alados y hojosos.",
+    "Hojas obovado-lanceoladas o lanceoladas, dentadas, lanuginosas en el haz y densamente tomentosas en el envés, de 8-15 cm por 1,5-4 cm; capítulos muy numerosos, en amplia panoja de espigas; involucro de 5 mm, con brácteas exteriores lanosas; flores masculinas 3-5; aquenios pubescente-glandulosos.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. En bosques del Delta y de la ribera platense."
+  ),
+  pterocaulon_lorentzii: species(
+    "pterocaulon_lorentzii",
+    "Pterocaulon lorentzii",
+    "130. Compositae - Inuleae",
+    "Sufrútice de 40-80 cm de alto, con tallos ascendentes o erectos, simples, 5-alados, lanosos y laxamente hojosos.",
+    "Espigas simples, muy compactas en la parte superior, de unos 10 cm; hojas superiores lineal-lanceoladas, agudas, dentadas, glabras en el haz y densamente albo-tomentosas en el envés, de 5-8 cm por 0,4-1 cm; involucro de 5-6 mm, con brácteas lanosas; flores hermafroditas 3; aquenios glanduloso-pubescentes; papus blanco.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina, hasta la Isla Martín García."
+  ),
+  pterocaulon_cordobense: species(
+    "pterocaulon_cordobense",
+    "Pterocaulon cordobense",
+    "130. Compositae - Inuleae",
+    "Sufrútice de 40-80 cm de alto, con tallos 5-alados, tomentosos y muy hojosos.",
+    "Hojas oblanceoladas, aserradas, glabras en el haz y tomentosas en el envés, de 7-9 cm por 2-3 cm, las superiores lanceoladas; capítulos en espigas ramosas y laxas; involucro de 5 mm, con brácteas lanosas; flores hermafroditas 2-3; papus blanco.",
+    "Uruguay y centro de la Argentina. En la estepa clímax."
+  ),
+  pterocaulon_subvirgatum: species(
+    "pterocaulon_subvirgatum",
+    "Pterocaulon subvirgatum",
+    "130. Compositae - Inuleae",
+    "Sufrútice de unos 50 cm de alto, con tallos erectos, poco ramosos, 5-alados y lanosos.",
+    "Hojas lineal-lanceoladas, enteras, glabras en el haz y tomentosas en el envés, de 7-12 cm por 4-12 mm; capítulos en largas espigas laxas, ramificadas en la base; involucro de 6 mm, con brácteas lanosas; flores hermafroditas 2-3; papus blanco.",
+    "Nordeste de la Argentina, hasta el norte de Buenos Aires, como Pergamino y San Nicolás."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -20538,7 +20594,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Otras tribus de Compositae",
       keyStep: "Tribus 4-13",
-      especieId: "compositae",
+      nextNodeId: "inuleae_a",
     },
   },
   astereae_a: {
@@ -21275,6 +21331,166 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hojas lineal-filiformes, frecuentemente enteras, de 0,5-1,5 mm de ancho",
       keyStep: "21a",
       especieId: "baccharis_pingraea_f_angustissima",
+    },
+  },
+  inuleae_a: {
+    id: "inuleae_a",
+    milestone: "Inuleae",
+    manualPage: 462,
+    descripcion: "Inuleae - A: páleas en el receptáculo",
+    opcionA: {
+      label: "Receptáculo provisto de páleas que envuelven más o menos a las flores",
+      keyStep: "A",
+      especieId: "compositae",
+    },
+    opcionA_prima: {
+      label: "Receptáculo desprovisto de páleas",
+      keyStep: "A'",
+      nextNodeId: "inuleae_b",
+    },
+  },
+  inuleae_b: {
+    id: "inuleae_b",
+    milestone: "Inuleae",
+    manualPage: 462,
+    descripcion: "Inuleae - B: pelos del papus",
+    opcionA: {
+      label: "Pelos del papus plumosos",
+      keyStep: "B",
+      especieId: "compositae",
+    },
+    opcionA_prima: {
+      label: "Pelos del papus simples, no plumosos",
+      keyStep: "B'",
+      nextNodeId: "inuleae_d",
+    },
+  },
+  inuleae_d: {
+    id: "inuleae_d",
+    milestone: "Inuleae",
+    manualPage: 462,
+    descripcion: "Inuleae - D: rostro de los aquenios",
+    opcionA: {
+      label: "Aquenios largamente rostrados",
+      keyStep: "D",
+      especieId: "compositae",
+    },
+    opcionA_prima: {
+      label: "Aquenios sin rostro",
+      keyStep: "D'",
+      nextNodeId: "inuleae_e",
+    },
+  },
+  inuleae_e: {
+    id: "inuleae_e",
+    milestone: "Inuleae",
+    manualPage: 462,
+    descripcion: "Inuleae - E: división e indumento del estilo",
+    opcionA: {
+      label: "Estilo pubescente en la parte superior, apenas dividido en el ápice",
+      keyStep: "E",
+      nextNodeId: "inuleae_f",
+    },
+    opcionA_prima: {
+      label: "Estilo profundamente dividido en la parte superior, con ramitas truncadas en el ápice",
+      keyStep: "E'",
+      especieId: "compositae",
+    },
+  },
+  inuleae_f: {
+    id: "inuleae_f",
+    milestone: "Inuleae",
+    manualPage: 462,
+    descripcion: "Inuleae - F: disposición de los capítulos",
+    opcionA: {
+      label: "Capítulos sésiles, en glomérulos agrupados en espigas o panojas de espigas",
+      keyStep: "F",
+      nextNodeId: "pterocaulon_a",
+    },
+    opcionA_prima: {
+      label: "Capítulos pedicelados, dispuestos en corimbos",
+      keyStep: "F'",
+      nextNodeId: "inuleae_g",
+    },
+  },
+  inuleae_g: {
+    id: "inuleae_g",
+    milestone: "Inuleae",
+    manualPage: 462,
+    descripcion: "Inuleae - G: número de flores hermafroditas y hábito",
+    opcionA: {
+      label: "Flores hermafroditas numerosas; hierbas",
+      keyStep: "G",
+      especieId: "pluchea_sagittalis",
+    },
+    opcionA_prima: {
+      label: "Flores hermafroditas 1-15; arbustos o árboles",
+      keyStep: "G'",
+      nextNodeId: "tessaria_a",
+    },
+  },
+  tessaria_a: {
+    id: "tessaria_a",
+    milestone: "Tessaria",
+    manualPage: 489,
+    descripcion: "Tessaria - A: porte y forma del involucro",
+    opcionA: {
+      label: "Árbol de 3-8 m; hojas lanceoladas; involucro turbinado de 5-6 mm",
+      keyStep: "A",
+      especieId: "tessaria_integrifolia",
+    },
+    opcionA_prima: {
+      label: "Sufrútice de 1-1,5 m, cano-tomentoso; hojas oblanceoladas; involucro acampanado de 7-8 mm",
+      keyStep: "A'",
+      especieId: "tessaria_absinthioides",
+    },
+  },
+  pterocaulon_a: {
+    id: "pterocaulon_a",
+    milestone: "Pterocaulon",
+    manualPage: 491,
+    descripcion: "Pterocaulon - A: hierba alta o sufrútices bajos",
+    opcionA: {
+      label: "Hierba perenne de 1-1,5 m; tallos erectos, sencillos, 5-alados y hojosos",
+      keyStep: "A",
+      especieId: "pterocaulon_interruptum",
+    },
+    opcionA_prima: {
+      label: "Sufrútices de 50-80 cm; capítulos en espigas simples o ramificadas en la base",
+      keyStep: "A'",
+      nextNodeId: "pterocaulon_b",
+    },
+  },
+  pterocaulon_b: {
+    id: "pterocaulon_b",
+    milestone: "Pterocaulon",
+    manualPage: 491,
+    descripcion: "Pterocaulon - B: compacidad de las espigas",
+    opcionA: {
+      label: "Espigas simples, muy compactas en la parte superior, de unos 10 cm",
+      keyStep: "B",
+      especieId: "pterocaulon_lorentzii",
+    },
+    opcionA_prima: {
+      label: "Espigas simples o ramificadas, laxas; tallos con muchas hojas",
+      keyStep: "B'",
+      nextNodeId: "pterocaulon_c",
+    },
+  },
+  pterocaulon_c: {
+    id: "pterocaulon_c",
+    milestone: "Pterocaulon",
+    manualPage: 491,
+    descripcion: "Pterocaulon - C: forma de las hojas",
+    opcionA: {
+      label: "Hojas oblanceoladas, aserradas, de 7-9 cm por 2-3 cm",
+      keyStep: "C",
+      especieId: "pterocaulon_cordobense",
+    },
+    opcionA_prima: {
+      label: "Hojas lineal-lanceoladas, enteras, de 7-12 cm por 4-12 mm",
+      keyStep: "C'",
+      especieId: "pterocaulon_subvirgatum",
     },
   },
   grindelia_a: {
