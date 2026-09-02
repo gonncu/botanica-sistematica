@@ -6719,6 +6719,30 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Anteras más o menos unidas formando un tubo."
   ),
+  pratia_hederacea: species(
+    "pratia_hederacea",
+    "Pratia hederacea",
+    "128. Campanulaceae",
+    "Hierba pigmea, perenne y rastrera.",
+    "Hojas alternas, ovado-elípticas, sinuado-dentadas, glabras, de 5-10 mm; flores largamente pedunculadas; corola blanca de unos 9 mm, cigomorfa, hendida en el dorso; fruto baya.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Común en el césped de la ribera platense."
+  ),
+  specularia_biflora: species(
+    "specularia_biflora",
+    "Specularia biflora",
+    "128. Campanulaceae",
+    "Hierba anual erecta.",
+    "Hojas sésiles, ovadas, crenadas, laxamente pubescentes, de 1-2 cm; flores solitarias en las axilas, de unos 10 mm; las primeras generalmente cleistógamas y las tardías casmógamas; corola rotácea, azulado-violácea, de unos 4 mm; cápsulas cilíndricas de unos 8 mm.",
+    "América. Frecuente en campos fértiles, jardines, etc."
+  ),
+  wahlenbergia_linarioides: species(
+    "wahlenbergia_linarioides",
+    "Wahlenbergia linarioides",
+    "128. Campanulaceae",
+    "Hierba perenne glabra, con tallos erectos, sencillos, de 30-50 cm de alto.",
+    "Hojas alternas, lineales y enteras; flores blancas o azuladas, largamente pedunculadas, en amplia cima corimbiforme; corola acampanada o infundibuliforme; cápsulas cilíndricas.",
+    "América austral. Común en la estepa clímax."
+  ),
   caprifoliaceae: family(
     "caprifoliaceae",
     "124. Caprifoliaceae",
@@ -19511,7 +19535,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Anteras más o menos unidas formando un tubo",
       keyStep: "j",
-      especieId: "campanulaceae",
+      nextNodeId: "campanulaceae_a",
     },
     opcionA_prima: {
       label: "Anteras separadas",
@@ -19723,6 +19747,38 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Receptáculo masculino redondeado o cortamente atenuado; fruto de unos 10 mm; zarcillos 1-3-fidos",
       keyStep: "A'",
       especieId: "cayaponia_ficifolia",
+    },
+  },
+  campanulaceae_a: {
+    id: "campanulaceae_a",
+    milestone: "Campanulaceae",
+    manualPage: 455,
+    descripcion: "Campanulaceae - A: simetría floral y anteras",
+    opcionA: {
+      label: "Flores cigomorfas; anteras soldadas formando un tubo alrededor del estilo",
+      keyStep: "A",
+      especieId: "pratia_hederacea",
+    },
+    opcionA_prima: {
+      label: "Flores actinomorfas; anteras libres",
+      keyStep: "A'",
+      nextNodeId: "campanulaceae_b",
+    },
+  },
+  campanulaceae_b: {
+    id: "campanulaceae_b",
+    milestone: "Campanulaceae",
+    manualPage: 455,
+    descripcion: "Campanulaceae - B: pedúnculo e inflorescencia",
+    opcionA: {
+      label: "Flores sésiles o muy cortamente pedunculadas en las axilas de las hojas; plantas anuales",
+      keyStep: "B",
+      especieId: "specularia_biflora",
+    },
+    opcionA_prima: {
+      label: "Flores largamente pedunculadas, en cimas corimbiformes terminales; plantas perennes",
+      keyStep: "B'",
+      especieId: "wahlenbergia_linarioides",
     },
   },
 };
