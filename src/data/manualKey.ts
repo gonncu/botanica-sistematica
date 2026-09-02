@@ -6599,6 +6599,30 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Flores en capítulos; ovario unilocular y flores pentámeras actinomorfas."
   ),
+  acicarpha_procumbens: species(
+    "acicarpha_procumbens",
+    "Acicarpha procumbens",
+    "129. Calyceraceae",
+    "Hierba perenne, glabra y decumbente.",
+    "Hojas enteras, oblanceolado-espatuladas, obtusas, largamente atenuadas en seudopecíolo; cabezuelas globosas, largamente pedunculadas, terminales o seudolaterales, de 1 cm de diámetro; involucro de 5-6 brácteas; aquenios con cinco aristas o alas prolongadas en puntas agudas.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. En suelos salobres; florece en primavera."
+  ),
+  acicarpha_tribuloides: species(
+    "acicarpha_tribuloides",
+    "Acicarpha tribuloides",
+    "129. Calyceraceae",
+    "Hierba anual, erecta y glabra, de 20-50 cm de alto.",
+    "Hojas basales arrosetadas, espatuladas y lobadas; hojas caulinares ensanchadas en la base, dentadas o lobadas; capítulos opuestos a las hojas, largamente pedunculados, de 1 cm de diámetro; brácteas involucrales cinco; aquenios fértiles coronados por largas espinas.",
+    "Sur del Brasil, Uruguay, Paraguay y norte de la Argentina. Común en los prados del Delta y de la ribera del Plata."
+  ),
+  boopis_anthemoides: species(
+    "boopis_anthemoides",
+    "Boopis anthemoides",
+    "129. Calyceraceae",
+    "Sufrútice glabro de 20-50 cm de alto, con tallos ramosos.",
+    "Hojas profundamente pinatisectas, con raquis y segmentos lineales, agudos; capítulos terminales pedunculados; flores isomorfas, normalmente fértiles, con tubo muy estrecho y limbo amplio, 5-lobado; cáliz no espinoso.",
+    "Norte y centro de la Argentina. Rara cerca de Buenos Aires, en suelos secos y barrancas."
+  ),
   dipsacaceae: family(
     "dipsacaceae",
     "126. Dipsacaceae",
@@ -19475,7 +19499,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Flores actinomorfas",
       keyStep: "f",
-      especieId: "calyceraceae",
+      nextNodeId: "calyceraceae_a",
     },
     opcionA_prima: {
       label: "Flores cigomorfas",
@@ -19779,6 +19803,38 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Flores largamente pedunculadas, en cimas corimbiformes terminales; plantas perennes",
       keyStep: "B'",
       especieId: "wahlenbergia_linarioides",
+    },
+  },
+  calyceraceae_a: {
+    id: "calyceraceae_a",
+    milestone: "Calyceraceae",
+    manualPage: 457,
+    descripcion: "Calyceraceae - A: dimorfismo floral en el capítulo",
+    opcionA: {
+      label: "Flores dimorfas: marginales fértiles y centrales estériles; cáliz espinoso en el fruto",
+      keyStep: "A",
+      nextNodeId: "acicarpha_a",
+    },
+    opcionA_prima: {
+      label: "Flores isomorfas, normalmente todas fértiles; cáliz no espinoso",
+      keyStep: "A'",
+      especieId: "boopis_anthemoides",
+    },
+  },
+  acicarpha_a: {
+    id: "acicarpha_a",
+    milestone: "Acicarpha",
+    manualPage: 457,
+    descripcion: "Acicarpha - A: hábito y hojas",
+    opcionA: {
+      label: "Hierba perenne, glabra, decumbente; hojas enteras oblanceolado-espatuladas",
+      keyStep: "A",
+      especieId: "acicarpha_procumbens",
+    },
+    opcionA_prima: {
+      label: "Hierba anual, erecta, glabra; hojas basales arrosetadas y lobadas",
+      keyStep: "A'",
+      especieId: "acicarpha_tribuloides",
     },
   },
 };
