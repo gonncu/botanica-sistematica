@@ -6865,6 +6865,46 @@ export const manualFamilyData: Record<string, Especie> = {
     "Involucro de 4,5 mm, con brácteas agudas y bractéola exterior corta; hojas ovadas, acorazonadas o sagitadas en la base, semienteras o dentadas, de 3-13 cm; capítulos en corimbos densos.",
     "América cálida. Frecuente en bosques del Delta y de la ribera; florece en otoño. Nombres vulgares: charrúa, bejuco."
   ),
+  grindelia_discoidea: species(
+    "grindelia_discoidea",
+    "Grindelia discoidea",
+    "130. Compositae - Astereae",
+    "Sufrútice de unos 30 cm de alto, con tallos ascendentes, glabros, glutinosos y hojosos.",
+    "Capítulos discoideos, con todas las flores tubulosas; hojas lanceoladas, aserradas, de 2-4,5 cm; capítulos solitarios; involucro de 7-8 mm por 8-12 mm, con brácteas lineales glabras; papus de 2-5 cerdas.",
+    "Uruguay y centro de la Argentina. En campos gredosos."
+  ),
+  grindelia_tehuelches: species(
+    "grindelia_tehuelches",
+    "Grindelia tehuelches",
+    "130. Compositae - Astereae",
+    "Sufrútice de 25-40 cm de alto, con tallos ascendentes o erectos, densamente pubescentes.",
+    "Capítulos radiados; brácteas involucrales lanceoladas, corta y densamente pubescentes; hojas lanceoladas u oblanceoladas, aserradas o pinatífidas, semiabrazadoras en la base, pubescentes, de 3-5 cm; involucro de 8-10 mm por 10-15 mm; papus de 6-10 aristas.",
+    "Centro y sur de la Argentina. Rara en la región."
+  ),
+  grindelia_scorzonerifolia: species(
+    "grindelia_scorzonerifolia",
+    "Grindelia scorzonerifolia",
+    "130. Compositae - Astereae",
+    "Sufrútice con tallos ascendentes o erectos, glabros o ligeramente pubescentes.",
+    "Capítulos radiados; brácteas involucrales glabras; hojas lineales, enteras o con algún diente, más o menos glabras, de 2-8 cm; involucro de 6-8 mm por 10-12 mm, con brácteas exteriores lineales e interiores oblongas; papus de 2-4 cerdas.",
+    "Paraguay, sur del Brasil y nordeste de la Argentina. En terrenos arcillosos húmedos."
+  ),
+  grindelia_pulchella: species(
+    "grindelia_pulchella",
+    "Grindelia pulchella",
+    "130. Compositae - Astereae",
+    "Arbustito glabro, glutinoso y hojoso, de 25-70 cm de alto.",
+    "Capítulos radiados; brácteas involucrales glabras; hojas lanceoladas u oblongas, glabras, de 1,5-5,5 cm; involucro hemisférico de 7 mm por 10-12 mm; papus de 3-6 cerdas.",
+    "Norte y centro de la Argentina. Rara en la región."
+  ),
+  solidago_chilensis: species(
+    "solidago_chilensis",
+    "Solidago chilensis",
+    "130. Compositae - Astereae",
+    "Hierba perenne, rizomatosa y glabra, con tallos delgados, simples, de cerca de 1 m de alto.",
+    "Hojas lineal-lanceoladas, enteras, trinervadas, glabras, con pelitos curvos en el margen, de 4-8 cm por 5-8 mm; capítulos radiados, numerosos, en panojas contraídas; involucro de 4-5 mm; flores amarillas; aquenios con 8-12 costillas y papus de numerosos pelos.",
+    "América austral. Muy frecuente en lugares húmedos; florece en otoño. Nombre vulgar: romerillo dorado."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -20138,7 +20178,135 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Otras tribus de Compositae",
       keyStep: "Tribus 3-13",
+      nextNodeId: "compositae_c",
+    },
+  },
+  compositae_c: {
+    id: "compositae_c",
+    milestone: "Compositae",
+    manualPage: 462,
+    descripcion: "Compositae: tribus desde Astereae, avance parcial",
+    opcionA: {
+      label: "Astereae: papus formado por pelos numerosos o pocas cerdas caducas; flores marginales generalmente blancas o amarillas",
+      keyStep: "Tribu 3",
+      nextNodeId: "astereae_a",
+    },
+    opcionA_prima: {
+      label: "Otras tribus de Compositae",
+      keyStep: "Tribus 4-13",
       especieId: "compositae",
+    },
+  },
+  astereae_a: {
+    id: "astereae_a",
+    milestone: "Astereae",
+    manualPage: 462,
+    descripcion: "Astereae - A: fertilidad de las flores hermafroditas",
+    opcionA: {
+      label: "Flores hermafroditas fértiles",
+      keyStep: "A",
+      nextNodeId: "astereae_b",
+    },
+    opcionA_prima: {
+      label: "Flores hermafroditas con gineceo estéril, sin ovario",
+      keyStep: "A'",
+      especieId: "compositae",
+    },
+  },
+  astereae_b: {
+    id: "astereae_b",
+    milestone: "Astereae",
+    manualPage: 462,
+    descripcion: "Astereae - B: tipo de papus",
+    opcionA: {
+      label: "Papus formado por pocas cerdas caducas",
+      keyStep: "B",
+      nextNodeId: "grindelia_a",
+    },
+    opcionA_prima: {
+      label: "Papus formado por pelos numerosos",
+      keyStep: "B'",
+      nextNodeId: "astereae_c",
+    },
+  },
+  astereae_c: {
+    id: "astereae_c",
+    milestone: "Astereae",
+    manualPage: 462,
+    descripcion: "Astereae - C: rostro del aquenio",
+    opcionA: {
+      label: "Aquenios con un largo pico en su ápice",
+      keyStep: "C",
+      especieId: "compositae",
+    },
+    opcionA_prima: {
+      label: "Aquenios sin pico",
+      keyStep: "C'",
+      nextNodeId: "astereae_d",
+    },
+  },
+  astereae_d: {
+    id: "astereae_d",
+    milestone: "Astereae",
+    manualPage: 462,
+    descripcion: "Astereae - D: forma de los aquenios e inflorescencia",
+    opcionA: {
+      label: "Aquenios cilíndricos o angulosos, con 8-12 costillas; capítulos pequeños en amplias panojas",
+      keyStep: "D",
+      especieId: "solidago_chilensis",
+    },
+    opcionA_prima: {
+      label: "Aquenios comprimidos, sin costillas",
+      keyStep: "D'",
+      especieId: "compositae",
+    },
+  },
+  grindelia_a: {
+    id: "grindelia_a",
+    milestone: "Grindelia",
+    manualPage: 476,
+    descripcion: "Grindelia - A: capítulos discoideos o radiados",
+    opcionA: {
+      label: "Capítulos discoideos: todas las flores tubulosas",
+      keyStep: "A",
+      especieId: "grindelia_discoidea",
+    },
+    opcionA_prima: {
+      label: "Capítulos radiados: flores marginales liguladas",
+      keyStep: "A'",
+      nextNodeId: "grindelia_b",
+    },
+  },
+  grindelia_b: {
+    id: "grindelia_b",
+    milestone: "Grindelia",
+    manualPage: 476,
+    descripcion: "Grindelia - B: indumento de las brácteas",
+    opcionA: {
+      label: "Brácteas involucrales corta y densamente pubescentes",
+      keyStep: "B",
+      especieId: "grindelia_tehuelches",
+    },
+    opcionA_prima: {
+      label: "Brácteas involucrales glabras",
+      keyStep: "B'",
+      nextNodeId: "grindelia_c",
+    },
+  },
+  grindelia_c: {
+    id: "grindelia_c",
+    milestone: "Grindelia",
+    manualPage: 477,
+    descripcion: "Grindelia - C: forma de las hojas",
+    opcionA: {
+      label: "Hojas lineales, enteras o con algún diente, de 2-8 cm",
+      keyStep: "C",
+      especieId: "grindelia_scorzonerifolia",
+    },
+    opcionA_prima: {
+      label: "Hojas lanceoladas u oblongas, glabras, de 1,5-5,5 cm",
+      keyStep: "C'",
+      especieId: "grindelia_pulchella",
     },
   },
   eupatorieae_a: {
