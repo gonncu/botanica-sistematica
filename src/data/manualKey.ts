@@ -7153,6 +7153,102 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas alternas, lanceoladas, cortamente aserradas o enteras, trinervadas, de 7-10 cm por 1,2-2 cm; capítulos aglomerados en espigas terminales casi desprovistas de hojas; involucro femenino de 4-5 mm por 4 mm, con brácteas lanceoladas y glabras; flores numerosas; aquenios costados y glabros; papus blanco.",
     "Endémico del Delta del Paraná."
   ),
+  baccharis_spicata: species(
+    "baccharis_spicata",
+    "Baccharis spicata",
+    "130. Compositae - Astereae",
+    "Sufrútice ramoso, glabro o laxamente lanuginoso y glanduloso, de 1-1,5 m de alto.",
+    "Hojas opuestas, lineal-lanceoladas, con algunos dientes distantes, de 4-8 cm por 2-7 mm; capítulos aglomerados en espigas terminales casi desprovistas de hojas; involucro femenino de 7 mm por 6 mm, y masculino de 5-6 mm por 5 mm, con brácteas oblongo-lineales y glabras; flores numerosas; aquenios 10-costados, glabros; papus blanco.",
+    "Sur del Brasil, Paraguay, Uruguay y centro de la Argentina. En campos altos y secos y en pajonales del Delta."
+  ),
+  baccharis_recurvata: species(
+    "baccharis_recurvata",
+    "Baccharis recurvata",
+    "130. Compositae - Astereae",
+    "Arbusto ramoso y densamente hojoso, de 1,5-2 m de alto.",
+    "Hojas alternas, sésiles, oblanceolado-oblongas, obtusas, aserradas superiormente, laxamente velludas, de 1,5-3 cm por 4-7 mm; capítulos sésiles, solitarios en las axilas de las hojas superiores, formando una falsa espiga; involucro de 5-7 mm por 4,5-5 mm, con brácteas obtusas y pubescentes; flores numerosas; aquenios con 10 costillas, glabros; papus rosado o blanco.",
+    "Sur del Brasil, Paraguay y nordeste de la Argentina. En islas del Delta."
+  ),
+  baccharis_notosergila: species(
+    "baccharis_notosergila",
+    "Baccharis notosergila",
+    "130. Compositae - Astereae",
+    "Arbusto ramoso y glanduloso-resinoso, de 1-1,5 m de alto, con ramas costadas y áfilas.",
+    "Plantas adultas áfilas o con alguna hoja reducida lineal; capítulos solitarios en el extremo de ramitas cortas, formando una seudopanoja muy amplia; involucro de 4-5 mm por 3,5-4 mm, con brácteas lineal-lanceoladas, agudas y glabras; flores numerosas; aquenios costados y glabros; papus blanco, muy acrescente.",
+    "Uruguay y nordeste de la Argentina. En campos altos; gregaria."
+  ),
+  baccharis_juncea: species(
+    "baccharis_juncea",
+    "Baccharis juncea",
+    "130. Compositae - Astereae",
+    "Hierba perenne, rizomatosa y glauca, con tallos glabros de 1-1,5 m de alto.",
+    "Hojas lineales, agudas, enteras o finamente aserradas, de 1,5-5 cm por 1-2 mm; capítulos solitarios o en corimbos paucicéfalos; involucro femenino hemisférico, de 7 mm por 10 mm, con brácteas lineal-lanceoladas, glabras y rojizas en 3-4 series; flores muy numerosas; aquenios glabros, rojizos, con costillas blancas; papus blanco, acrescente.",
+    "América austral. En campos húmedos y salobres."
+  ),
+  baccharis_coridifolia: species(
+    "baccharis_coridifolia",
+    "Baccharis coridifolia",
+    "130. Compositae - Astereae",
+    "Sufrútice ramoso, glabro y densamente hojoso, de 50-80 cm de alto.",
+    "Hojas lineales, enteras, de 15-25 mm por 1-2,5 mm; capítulos pequeños, muy numerosos, en racimos densos; involucro femenino de 4 mm por 3 mm, con brácteas ovadas, obtusas y glabras; flores 8-10; aquenios densamente pubescentes; papus blanco o rojizo, acrescente; capítulos masculinos con involucro de 2 mm por 3 mm y 12-15 flores.",
+    "Sur del Brasil, Paraguay, Uruguay y norte y centro de la Argentina. Frecuente en relictos de estepa clímax; tóxica para el ganado. Nombres vulgares: mio-mio, romerillo."
+  ),
+  baccharis_artemisioides: species(
+    "baccharis_artemisioides",
+    "Baccharis artemisioides",
+    "130. Compositae - Astereae",
+    "Sufrútice ramoso, densamente hojoso y blanco-tomentoso, de 0,5-1 m de alto.",
+    "Hojas lineales, enteras, de 8-25 mm por 0,5-1 mm; capítulos en amplia panoja; involucro femenino de 5 mm por 4 mm, con brácteas ovadas, obtusas y tomentosas; flores 10, exertas; aquenios lanuginosos; papus rojizo; involucro masculino de 3 mm por 4 mm, con papus crespo y blanco.",
+    "Uruguay y Argentina. Rara en la región."
+  ),
+  baccharis_subopposita: species(
+    "baccharis_subopposita",
+    "Baccharis subopposita",
+    "130. Compositae - Astereae",
+    "Arbusto erecto, ramoso y glabro, de 0,5-1 m de alto.",
+    "Hojas semiopuestas, coriáceas, obovadas, obtusas, sinuado-dentadas, trinervadas, glabras, cortamente pecioladas, de 2-5 cm por 0,8-3 cm; capítulos muy numerosos, apanojados; involucro femenino de 5 mm por 4 mm, con brácteas pajizas, lanceoladas, glabras y ciliadas en el margen; flores numerosas; aquenios pluricostados; papus blanco.",
+    "Centro y sur del Brasil, Paraguay, Uruguay y norte de la Argentina. Rara en la región."
+  ),
+  baccharis_melastomaefolia: species(
+    "baccharis_melastomaefolia",
+    "Baccharis melastomaefolia",
+    "130. Compositae - Astereae",
+    "Arbusto ramoso y glabro, de 1,5-2 m de alto.",
+    "Hojas alternas, herbáceas, ovado-lanceoladas o lanceoladas, acuminadas, aserradas, trinervadas, glabras, pálidas en el envés y con puntos glandulosos, de 4-9 cm por 0,5-2,5 cm; capítulos numerosos, en amplias panojas; involucro acampanado, de 4-5 mm, con brácteas lineal-oblongas y glabras; flores numerosas; papus blanco.",
+    "Sur del Brasil, Paraguay, Uruguay y norte de la Argentina. Frecuente en el Delta y en la ribera del Plata."
+  ),
+  baccharis_salicifolia: species(
+    "baccharis_salicifolia",
+    "Baccharis salicifolia",
+    "130. Compositae - Astereae",
+    "Arbusto ramoso, glanduloso y densamente hojoso, de 1-2 m de alto.",
+    "Hojas lanceoladas, cortamente pecioladas, aserradas en la mitad superior del margen, trinervadas, de 4-9 cm por 7-15 mm; capítulos corimbosos; involucro femenino de 3-4 mm de alto, acampanado, con brácteas pajizas, lanceoladas y glabras; flores numerosas; aquenios con 5 costillas; papus blanco.",
+    "América del Sur. En barrancas del Paraná y suelos arenosos de la ribera del Plata."
+  ),
+  baccharis_medullosa: species(
+    "baccharis_medullosa",
+    "Baccharis medullosa",
+    "130. Compositae - Astereae",
+    "Hierba perenne y glabra, con raíces horizontales gemíferas y tallos erectos, estriados, de 50-100 cm de alto.",
+    "Hojas ovado-lanceoladas, pecioladas, acuminadas, uniformemente aserradas, trinervadas, de 3-9 cm por 1-3 cm; capítulos corimbosos; involucro femenino de 3-4 mm de alto, con brácteas lineales y glabras; flores muy numerosas; aquenios con 5 costillas; papus blanco.",
+    "América austral. Frecuente en el Delta y en suelos modificados."
+  ),
+  baccharis_pingraea: species(
+    "baccharis_pingraea",
+    "Baccharis pingraea",
+    "130. Compositae - Astereae",
+    "Hierba perenne con raíces horizontales gemíferas y tallos ascendentes o erectos, glabros, algo glandulosos, de 20-100 cm de alto.",
+    "Hojas lineales o lineal-lanceoladas, aserradas, trinervadas, glabras, de 3,5-9 cm por 2-9 mm; capítulos corimbosos; involucro hemisférico, de 3-4 mm, con brácteas lineal-lanceoladas y glabras; flores muy numerosas; aquenios glabros; papus blanco.",
+    "América austral. Ubicua."
+  ),
+  baccharis_pingraea_f_angustissima: species(
+    "baccharis_pingraea_f_angustissima",
+    "Baccharis pingraea f. angustissima",
+    "130. Compositae - Astereae",
+    "Forma de Baccharis pingraea con hojas lineal-filiformes.",
+    "Hojas frecuentemente enteras, de 0,5-1,5 mm de ancho.",
+    "América austral. En campos bajos y salinos."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -20938,7 +21034,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Capítulos pedicelados, solitarios o dispuestos en corimbos o panojas",
       keyStep: "G'",
-      especieId: "compositae",
+      nextNodeId: "baccharis_m",
     },
   },
   baccharis_h: {
@@ -21002,7 +21098,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Capítulos sésiles, solitarios en las axilas de las hojas superiores, formando una falsa espiga",
       keyStep: "K'",
-      especieId: "compositae",
+      especieId: "baccharis_recurvata",
     },
   },
   baccharis_l: {
@@ -21018,7 +21114,167 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Hojas opuestas, lineal-lanceoladas, con dientes distantes, de 4-8 cm por 2-7 mm",
       keyStep: "L'",
-      especieId: "compositae",
+      especieId: "baccharis_spicata",
+    },
+  },
+  baccharis_m: {
+    id: "baccharis_m",
+    milestone: "Baccharis",
+    manualPage: 484,
+    descripcion: "Baccharis - M: plantas áfilas o con hojas normales",
+    opcionA: {
+      label: "Plantas adultas áfilas o con alguna hojita reducida lineal; capítulos solitarios en seudopanoja amplia",
+      keyStep: "M",
+      especieId: "baccharis_notosergila",
+    },
+    opcionA_prima: {
+      label: "Plantas adultas con hojas normales",
+      keyStep: "M'",
+      nextNodeId: "baccharis_n",
+    },
+  },
+  baccharis_n: {
+    id: "baccharis_n",
+    milestone: "Baccharis",
+    manualPage: 484,
+    descripcion: "Baccharis - N: capítulos solitarios/paucicéfalos o pluricéfalos",
+    opcionA: {
+      label: "Capítulos solitarios o en corimbos paucicéfalos; hierba rizomatosa de 1-1,5 m",
+      keyStep: "N",
+      especieId: "baccharis_juncea",
+    },
+    opcionA_prima: {
+      label: "Capítulos en corimbos o panojas pluricéfalas",
+      keyStep: "N'",
+      nextNodeId: "baccharis_o",
+    },
+  },
+  baccharis_o: {
+    id: "baccharis_o",
+    milestone: "Baccharis",
+    manualPage: 485,
+    descripcion: "Baccharis - O: anchura y forma general de las hojas",
+    opcionA: {
+      label: "Hojas lineales, enteras, de 1-3 mm de ancho",
+      keyStep: "O",
+      nextNodeId: "baccharis_p",
+    },
+    opcionA_prima: {
+      label: "Hojas lanceoladas, ovadas u obovadas, aserradas o dentadas, de 2-30 mm de ancho",
+      keyStep: "O'",
+      nextNodeId: "baccharis_r",
+    },
+  },
+  baccharis_p: {
+    id: "baccharis_p",
+    milestone: "Baccharis",
+    manualPage: 485,
+    descripcion: "Baccharis - P: capítulos corimbosos o racimosos/apanojados",
+    opcionA: {
+      label: "Capítulos corimbosos",
+      keyStep: "P",
+      nextNodeId: "baccharis_pingraea_a",
+    },
+    opcionA_prima: {
+      label: "Capítulos racimosos o apanojados",
+      keyStep: "P'",
+      nextNodeId: "baccharis_q",
+    },
+  },
+  baccharis_q: {
+    id: "baccharis_q",
+    milestone: "Baccharis",
+    manualPage: 485,
+    descripcion: "Baccharis - Q: indumento en hojas lineales",
+    opcionA: {
+      label: "Plantas glabras; hojas lineales de 15-25 mm por 1-2,5 mm",
+      keyStep: "Q",
+      especieId: "baccharis_coridifolia",
+    },
+    opcionA_prima: {
+      label: "Plantas blanco-tomentosas; hojas lineales de 8-25 mm por 0,5-1 mm",
+      keyStep: "Q'",
+      especieId: "baccharis_artemisioides",
+    },
+  },
+  baccharis_r: {
+    id: "baccharis_r",
+    milestone: "Baccharis",
+    manualPage: 485,
+    descripcion: "Baccharis - R: disposición y textura de las hojas anchas",
+    opcionA: {
+      label: "Hojas semiopuestas, coriáceas, obovadas, obtusas, sinuado-dentadas",
+      keyStep: "R",
+      especieId: "baccharis_subopposita",
+    },
+    opcionA_prima: {
+      label: "Hojas alternas, herbáceas, lanceoladas u ovado-lanceoladas, aserradas",
+      keyStep: "R'",
+      nextNodeId: "baccharis_s",
+    },
+  },
+  baccharis_s: {
+    id: "baccharis_s",
+    milestone: "Baccharis",
+    manualPage: 485,
+    descripcion: "Baccharis - S: coloración y glándulas foliares",
+    opcionA: {
+      label: "Hojas glabras, pálidas en el envés, con puntos glandulosos",
+      keyStep: "S",
+      especieId: "baccharis_melastomaefolia",
+    },
+    opcionA_prima: {
+      label: "Hojas concolores; capítulos corimbosos; involucro femenino de 3-4 mm de alto",
+      keyStep: "S'",
+      nextNodeId: "baccharis_t",
+    },
+  },
+  baccharis_t: {
+    id: "baccharis_t",
+    milestone: "Baccharis",
+    manualPage: 485,
+    descripcion: "Baccharis - T: arbustos u hierbas gemíferas",
+    opcionA: {
+      label: "Arbustos glandulosos de 1-2 m; hojas aserradas en la mitad superior",
+      keyStep: "T",
+      especieId: "baccharis_salicifolia",
+    },
+    opcionA_prima: {
+      label: "Hierbas con raíces gemíferas, de 0,5-1 m; hojas uniformemente aserradas desde cerca de la base",
+      keyStep: "T'",
+      nextNodeId: "baccharis_u",
+    },
+  },
+  baccharis_u: {
+    id: "baccharis_u",
+    milestone: "Baccharis",
+    manualPage: 485,
+    descripcion: "Baccharis - U: forma de hojas en hierbas gemíferas",
+    opcionA: {
+      label: "Hojas ovado-lanceoladas, pecioladas, de 3-9 cm por 1-3 cm",
+      keyStep: "U",
+      especieId: "baccharis_medullosa",
+    },
+    opcionA_prima: {
+      label: "Hojas lineal-lanceoladas, de 3,5-9 cm por 2-9 mm",
+      keyStep: "U'",
+      nextNodeId: "baccharis_pingraea_a",
+    },
+  },
+  baccharis_pingraea_a: {
+    id: "baccharis_pingraea_a",
+    milestone: "Baccharis pingraea",
+    manualPage: 488,
+    descripcion: "Baccharis pingraea - forma",
+    opcionA: {
+      label: "Hojas lineales o lineal-lanceoladas, de 2-9 mm de ancho",
+      keyStep: "21",
+      especieId: "baccharis_pingraea",
+    },
+    opcionA_prima: {
+      label: "Hojas lineal-filiformes, frecuentemente enteras, de 0,5-1,5 mm de ancho",
+      keyStep: "21a",
+      especieId: "baccharis_pingraea_f_angustissima",
     },
   },
   grindelia_a: {
