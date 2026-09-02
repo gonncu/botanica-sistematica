@@ -7057,6 +7057,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas inferiores ovadas, agudas, atenuadas en seudopecíolo semiabrazador, con grandes dientes triangulares, de 10-18 cm por 4-7 cm; hojas superiores distantes, oblongo-lanceoladas, agudas, dilatadas y semiabrazadoras en la base, dentadas; capítulos pocos, laxamente corimbosos; involucro acampanado, de 7 mm, con brácteas lineales, agudas y pilosas; flores marginales blancas; aquenios lanceolados, pubescentes, largamente rostrados; papus blanco.",
     "Sur del Brasil, Uruguay y nordeste de la Argentina. En bosques del Delta y de la ribera del Plata."
   ),
+  baccharidastrum_triplinervium: species(
+    "baccharidastrum_triplinervium",
+    "Baccharidastrum triplinervium",
+    "130. Compositae - Astereae",
+    "Sufrútice erecto, ramoso y glanduloso, de 1,5-2 m de alto.",
+    "Hojas ovado-lanceoladas, acuminadas, atenuadas en la base, aserradas, de 5,5-11 cm por 1,3-4 cm, con pecíolo de 0,5-1,5 cm; capítulos pequeños, muy numerosos, en corimbos compuestos; involucro de 4 mm, con brácteas glabras; flores masculinas 2-6; aquenios cortamente pubérulos; papus blanco.",
+    "Sur del Brasil, Uruguay, Paraguay y nordeste de la Argentina. Común en bosques del Delta y de la ribera del Plata."
+  ),
+  baccharidastrum_argutum: species(
+    "baccharidastrum_argutum",
+    "Baccharidastrum argutum",
+    "130. Compositae - Astereae",
+    "Sufrútice erecto, glabro y ramoso, de 1-1,5 m de alto.",
+    "Hojas lineales o lineal-lanceoladas, aserradas, glabras, de 6-13 cm por 2-18 mm; capítulos pequeños, muy numerosos, en corimbos compuestos; involucro de 5 mm, con brácteas glabras; flores masculinas muy pocas; aquenios laxamente papilosos; papus blanco.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. En bosques del Delta y de la ribera platense."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -20362,6 +20378,22 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Flores hermafroditas con gineceo estéril, sin ovario",
       keyStep: "A'",
+      nextNodeId: "astereae_g",
+    },
+  },
+  astereae_g: {
+    id: "astereae_g",
+    milestone: "Astereae",
+    manualPage: 462,
+    descripcion: "Astereae - G: distribución de flores masculinas y femeninas",
+    opcionA: {
+      label: "Plantas monoicas; flores masculinas y femeninas en el mismo capítulo",
+      keyStep: "G",
+      nextNodeId: "baccharidastrum_a",
+    },
+    opcionA_prima: {
+      label: "Plantas dioicas; flores masculinas y femeninas en plantas distintas",
+      keyStep: "G'",
       especieId: "compositae",
     },
   },
@@ -20699,6 +20731,22 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Capítulos con involucro de sólo 4-5 mm de diámetro",
       keyStep: "6b",
       especieId: "conyza_bonariensis_var_microcephala",
+    },
+  },
+  baccharidastrum_a: {
+    id: "baccharidastrum_a",
+    milestone: "Baccharidastrum",
+    manualPage: 482,
+    descripcion: "Baccharidastrum - A: forma de las hojas",
+    opcionA: {
+      label: "Hojas ovado-lanceoladas, acuminadas, atenuadas en la base, de 5,5-11 cm por 1,3-4 cm",
+      keyStep: "A",
+      especieId: "baccharidastrum_triplinervium",
+    },
+    opcionA_prima: {
+      label: "Hojas lineales o lineal-lanceoladas, glabras, de 6-13 cm por 2-18 mm",
+      keyStep: "A'",
+      especieId: "baccharidastrum_argutum",
     },
   },
   grindelia_a: {
