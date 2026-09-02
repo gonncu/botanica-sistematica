@@ -6593,6 +6593,70 @@ export const manualFamilyData: Record<string, Especie> = {
     "Dicotiledóneas del Grupo E.",
     "Flores en capítulos; ovario unilocular uniovulado; anteras unidas en tubo y estilo bífido."
   ),
+  vernonia_rubricaulis_var_australis: species(
+    "vernonia_rubricaulis_var_australis",
+    "Vernonia rubricaulis var. australis",
+    "130. Compositae - Vernonieae",
+    "Sufrútice de 40-100 cm de alto, con grueso xilopodio y tallos rojizos ramosos.",
+    "Capítulos en panojas de cincinios, con brácteas casi iguales a las hojas; hojas lineales, dentadas, casi glabras en el haz y densamente tomentosas en el envés; involucro hemisférico con brácteas lanceoladas tomentulosas.",
+    "Especie ampliamente distribuida por América cálida; la variedad se halla en Uruguay y norte y centro de la Argentina. Poco frecuente en la estepa clímax. Nombre vulgar: quiebra-arado."
+  ),
+  vernonia_echioides: species(
+    "vernonia_echioides",
+    "Vernonia echioides",
+    "130. Compositae - Vernonieae",
+    "Hierba perenne, rizomatosa, con tallo erecto simple, de cerca de 1 m de alto.",
+    "Tallo densamente hojoso inferiormente y casi desnudo hacia arriba; capítulos en panojas o umbelas de cincinios; brácteas involucrales obtusas, con margen membranoso coloreado; hojas lanceoladas o lineales, enteras o crenadas, estrigilloso-pubescentes, de 10-25 cm.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Común en bosques del Delta y de la ribera del Plata."
+  ),
+  vernonia_scorpioides_var_sororia: species(
+    "vernonia_scorpioides_var_sororia",
+    "Vernonia scorpioides var. sororia",
+    "130. Compositae - Vernonieae",
+    "Arbusto semitrepador de 2-3 m de alto.",
+    "Hojas ovadas, acuminadas, aserradas, glabras en el haz y densamente pubescentes en el envés, de 6-9 cm; capítulos sésiles, en panojas de cincinios; involucro hemisférico de 5-6 mm, con brácteas agudas sin margen membranoso.",
+    "América cálida. Común en selvas marginales del Delta y de la Isla Martín García."
+  ),
+  vernonia_flexuosa: species(
+    "vernonia_flexuosa",
+    "Vernonia flexuosa",
+    "130. Compositae - Vernonieae",
+    "Hemicriptófita con tubérculos o xilopodio leñosos y tallos erectos simples, laxamente pubescentes, de 40-80 cm.",
+    "Hojas casi glabras, amontonadas en la parte inferior del tallo, enteras, de 5-14 cm; capítulos sésiles o casi, en cincinios apicales; involucro hemisférico de 10 mm.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Se halla en la estepa clímax. Nombre vulgar: quiebra-arados."
+  ),
+  vernonia_platensis: species(
+    "vernonia_platensis",
+    "Vernonia platensis",
+    "130. Compositae - Vernonieae",
+    "Hierba perenne, con tubérculos leñosos y tallos erectos simples, de 80-150 cm.",
+    "Hojas densamente cubiertas de pubescencia gris, uniformemente distribuidas por todo el tallo, enteras o sinuadas, de 5-15 cm; capítulos en densas panojas de cincinios; involucro acampanado, seríceo-pubescente, de 6-7 mm.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Común en bosques del Delta y de la ribera platense."
+  ),
+  vernonia_nitidula: species(
+    "vernonia_nitidula",
+    "Vernonia nitidula",
+    "130. Compositae - Vernonieae",
+    "Arbusto glabro de 1-2 m de alto.",
+    "Hojas glabras, obtusas, oblanceoladas, enteras o dentadas, de 1,5-4 cm; capítulos muy numerosos en amplias panojas de cimas corimbiformes; involucro turbinado de 5-6 mm, con brácteas pluriseriadas ovadas, obtusas y glabras.",
+    "Suelos arenosos del sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Rara en el Delta y en Martín García. Nombre vulgar: chilca."
+  ),
+  vernonia_incana: species(
+    "vernonia_incana",
+    "Vernonia incana",
+    "130. Compositae - Vernonieae",
+    "Hemicriptófita con rizomas largos y tallos erectos simples, tomentulosos, de 30-60 cm.",
+    "Hojas albo-tomentosas en la cara inferior, lanceoladas, enteras o aserradas, de 6-15 cm; capítulos en corimbos definidos de cimas, muy numerosos; involucro acampanado de 4-5 mm, más corto que las flores.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Crece en campos bajos y húmedos."
+  ),
+  vernonia_mollissima: species(
+    "vernonia_mollissima",
+    "Vernonia mollissima",
+    "130. Compositae - Vernonieae",
+    "Sufrútice de 40-60 cm de alto, con xilopodio fuerte y tallos erectos, ramosos, albo-tomentosos.",
+    "Tallos hojosos hasta el ápice; hojas albo-tomentosas en la cara inferior, lanceoladas u oblongas, enteras, de 7-14 cm; capítulos pocos, largamente pedunculados, en corimbos definidos; involucro hemisférico de 8-10 mm, con brácteas lanceoladas tomentosas en el dorso.",
+    "Sur del Brasil y norte de la Argentina hasta Córdoba y Buenos Aires. Rara en campos altos y secos."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -19469,7 +19533,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Ovario unilocular, uniovulado; anteras unidas en tubo y filamentos libres; estilo bífido",
       keyStep: "d",
-      especieId: "compositae",
+      nextNodeId: "compositae_a",
     },
     opcionA_prima: {
       label: "Ovario 1 a muchos locular; anteras generalmente libres",
@@ -19835,6 +19899,134 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hierba anual, erecta, glabra; hojas basales arrosetadas y lobadas",
       keyStep: "A'",
       especieId: "acicarpha_tribuloides",
+    },
+  },
+  compositae_a: {
+    id: "compositae_a",
+    milestone: "Compositae",
+    manualPage: 460,
+    descripcion: "Compositae: avance parcial por tribus",
+    opcionA: {
+      label: "Plantas sin látex; capítulos con flores isomorfas hermafroditas, nunca amarillas; estilo con ramas lineales pilosas desde más abajo de la bifurcación",
+      keyStep: "Tribu 1",
+      nextNodeId: "vernonia_a",
+    },
+    opcionA_prima: {
+      label: "Otras tribus de Compositae",
+      keyStep: "Tribus 2-13",
+      especieId: "compositae",
+    },
+  },
+  vernonia_a: {
+    id: "vernonia_a",
+    milestone: "Vernonieae",
+    manualPage: 466,
+    descripcion: "Vernonia - A: brácteas foliáceas en las panojas de cincinios",
+    opcionA: {
+      label: "Capítulos en panojas de cincinios, con brácteas casi iguales a las hojas; hojas lineales",
+      keyStep: "A",
+      especieId: "vernonia_rubricaulis_var_australis",
+    },
+    opcionA_prima: {
+      label: "Capítulos en inflorescencias diversas, pero sin brácteas foliáceas",
+      keyStep: "A'",
+      nextNodeId: "vernonia_b",
+    },
+  },
+  vernonia_b: {
+    id: "vernonia_b",
+    milestone: "Vernonia",
+    manualPage: 466,
+    descripcion: "Vernonia - B: tipo de inflorescencia",
+    opcionA: {
+      label: "Capítulos en panojas de cincinios",
+      keyStep: "B",
+      nextNodeId: "vernonia_c",
+    },
+    opcionA_prima: {
+      label: "Capítulos en cimas paniciformes o corimbiformes, pero no en cincinios",
+      keyStep: "B'",
+      nextNodeId: "vernonia_f",
+    },
+  },
+  vernonia_c: {
+    id: "vernonia_c",
+    milestone: "Vernonia",
+    manualPage: 466,
+    descripcion: "Vernonia - C: brácteas involucrales",
+    opcionA: {
+      label: "Brácteas involucrales obtusas, con margen membranoso coloreado",
+      keyStep: "C",
+      especieId: "vernonia_echioides",
+    },
+    opcionA_prima: {
+      label: "Brácteas involucrales agudas, sin margen membranoso",
+      keyStep: "C'",
+      nextNodeId: "vernonia_d",
+    },
+  },
+  vernonia_d: {
+    id: "vernonia_d",
+    milestone: "Vernonia",
+    manualPage: 466,
+    descripcion: "Vernonia - D: hábito",
+    opcionA: {
+      label: "Arbustos semitrepadores de 2-3 m; hojas ovadas, acuminadas, aserradas",
+      keyStep: "D",
+      especieId: "vernonia_scorpioides_var_sororia",
+    },
+    opcionA_prima: {
+      label: "Sufrútices o hierbas con hojas lanceoladas",
+      keyStep: "D'",
+      nextNodeId: "vernonia_e",
+    },
+  },
+  vernonia_e: {
+    id: "vernonia_e",
+    milestone: "Vernonia",
+    manualPage: 466,
+    descripcion: "Vernonia - E: distribución de hojas e indumento",
+    opcionA: {
+      label: "Hojas casi glabras, amontonadas en la parte inferior del tallo",
+      keyStep: "E",
+      especieId: "vernonia_flexuosa",
+    },
+    opcionA_prima: {
+      label: "Hojas densamente cubiertas de pubescencia gris, distribuidas por todo el tallo",
+      keyStep: "E'",
+      especieId: "vernonia_platensis",
+    },
+  },
+  vernonia_f: {
+    id: "vernonia_f",
+    milestone: "Vernonia",
+    manualPage: 466,
+    descripcion: "Vernonia - F: indumento de las hojas",
+    opcionA: {
+      label: "Hojas glabras, obtusas, oblanceoladas, enteras o dentadas",
+      keyStep: "F",
+      especieId: "vernonia_nitidula",
+    },
+    opcionA_prima: {
+      label: "Hojas albo-tomentosas en la cara inferior",
+      keyStep: "F'",
+      nextNodeId: "vernonia_g",
+    },
+  },
+  vernonia_g: {
+    id: "vernonia_g",
+    milestone: "Vernonia",
+    manualPage: 466,
+    descripcion: "Vernonia - G: involucro y cantidad de capítulos",
+    opcionA: {
+      label: "Involucro acampanado de 4-5 mm, más corto que las flores; capítulos muy numerosos",
+      keyStep: "G",
+      especieId: "vernonia_incana",
+    },
+    opcionA_prima: {
+      label: "Involucro hemisférico de 8-10 mm; capítulos pocos, largamente pedunculados",
+      keyStep: "G'",
+      especieId: "vernonia_mollissima",
     },
   },
 };
