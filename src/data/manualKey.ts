@@ -6905,6 +6905,62 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas lineal-lanceoladas, enteras, trinervadas, glabras, con pelitos curvos en el margen, de 4-8 cm por 5-8 mm; capítulos radiados, numerosos, en panojas contraídas; involucro de 4-5 mm; flores amarillas; aquenios con 8-12 costillas y papus de numerosos pelos.",
     "América austral. Muy frecuente en lugares húmedos; florece en otoño. Nombre vulgar: romerillo dorado."
   ),
+  aster_squamatus: species(
+    "aster_squamatus",
+    "Aster squamatus",
+    "130. Compositae - Astereae",
+    "Hierba perenne, erecta, glabra y ramosa, de 15-150 cm de alto.",
+    "Hojas lanceolado-lineales, agudas, enteras, de 3-14 cm por 3-20 mm; capítulos numerosos, pedicelados, en panojas amplias; involucro de 5-9 mm; flores marginales blancas; aquenios lineal-lanceolados, cortamente pubescentes, con papus blanco-rosado.",
+    "América del Sur. Especie ubicua."
+  ),
+  aster_squamatus_var_graminifolius: species(
+    "aster_squamatus_var_graminifolius",
+    "Aster squamatus var. graminifolius",
+    "130. Compositae - Astereae",
+    "Variedad robusta de Aster squamatus, de hojas más angostas y graminiformes.",
+    "Capítulos mayores que en la forma típica, con involucro de 8-9 mm de alto.",
+    "América austral. Vive en pajonales."
+  ),
+  aster_calendulaceus: species(
+    "aster_calendulaceus",
+    "Aster calendulaceus",
+    "130. Compositae - Astereae",
+    "Hierba perenne de tallos rastreros, densamente tomentosa.",
+    "Capítulos solitarios; involucro hemisférico, de 12-18 mm por 18-25 mm, con brácteas lineales, lanosas en el dorso; flores marginales amarillas, con lígulas de 7-14 mm; hojas oblongo-lanceoladas, enteras, de 1,5-2,5 cm; aquenios lanceolados, seríceo-pubescentes, con papus leonado.",
+    "Uruguay y nordeste de la Argentina. En arenales de la Isla Martín García."
+  ),
+  aster_decumbens: species(
+    "aster_decumbens",
+    "Aster decumbens",
+    "130. Compositae - Astereae",
+    "Hierba perenne con hojas basales arrosetadas y tallos decumbentes, laxamente híspidos.",
+    "Capítulos solitarios y apicales; involucro hemisférico, de cerca de 1 cm por 1,5 cm, con brácteas lineal-oblongas, obtusas, ciliadas en el margen y glabras; flores marginales blancas o rosadas; hojas inferiores espatuladas, obtusas, enteras, con pelos largos esparcidos, de 3-4 cm; aquenios lanceolados y pubescentes; papus rojizo.",
+    "Este de la provincia de Buenos Aires."
+  ),
+  aster_argentinensis: species(
+    "aster_argentinensis",
+    "Aster argentinensis",
+    "130. Compositae - Astereae",
+    "Hemicriptófita con hojas inferiores arrosetadas y tallos ascendentes o erectos, de 20-50 cm de alto, lanosos hacia el ápice y glabrescentes hacia la base.",
+    "Capítulos solitarios; involucro campanulado, de 12 mm por 8 mm, con brácteas lineales, agudas, rojizas y lanuginosas; lígulas blancas, de 3-4 mm, apenas más largas que el involucro; hojas basales espatuladas, obtusas, enteras, cortamente híspidas, de 3-7 cm; hojas caulinares oblanceolado-espatuladas, agudas, de 1,5-2,5 cm; aquenios comprimidos, lanceolados, con pelos largos laxos y pelos glandulosos cortos; papus amarillento.",
+    "Nordeste de la Argentina y Uruguay. En estepa clímax."
+  ),
+  aster_montevidensis: species(
+    "aster_montevidensis",
+    "Aster montevidensis",
+    "130. Compositae - Astereae",
+    "Hemicriptófita de tallos rastreros o rara vez ascendentes, laxamente vellosa, de tono verde-grisáceo.",
+    "Capítulos solitarios en el extremo de las ramas; involucro campanulado, de 10 mm por 8 mm, con brácteas lineales, lanuginosas, en 3-4 series; hojas basales espatuladas y enteras; hojas caulinares lanceoladas, agudas, enteras, con margen crespo, de 2-4 cm; flores marginales blancas o violáceas; aquenios lanceolados, densamente pubescentes; papus purpúreo.",
+    "Sur del Brasil, Uruguay y norte y centro de la Argentina. Común en campos fértiles."
+  ),
+  aster_haplopappus: species(
+    "aster_haplopappus",
+    "Aster haplopappus",
+    "130. Compositae - Astereae",
+    "Hierba perenne, densamente albo-lanosa, con tallos rastreros.",
+    "Capítulos solitarios; involucro campanulado, de 12-15 mm por 8-14 mm, con brácteas lineales, lanosas, en 4-5 series; hojas inferiores oblanceolado-espatuladas, agudas, de 5-7 cm; hojas superiores lanceoladas, enteras, de 2-3 cm; flores marginales blancas o violáceas; aquenios comprimidos, laxamente vellosos; papus amarillento o rojizo.",
+    "Uruguay, Argentina y Chile. En campos altos y secos."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -20258,7 +20314,135 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Aquenios comprimidos, sin costillas",
       keyStep: "D'",
+      nextNodeId: "astereae_e",
+    },
+  },
+  astereae_e: {
+    id: "astereae_e",
+    milestone: "Astereae",
+    manualPage: 477,
+    descripcion: "Astereae - E: ramas del estilo y forma de las hojas",
+    opcionA: {
+      label: "Ramas del estilo lineales; hojas trifurcadas",
+      keyStep: "E",
       especieId: "compositae",
+    },
+    opcionA_prima: {
+      label: "Ramas del estilo lanceoladas o triangulares; hojas no trifurcadas",
+      keyStep: "E'",
+      nextNodeId: "astereae_f",
+    },
+  },
+  astereae_f: {
+    id: "astereae_f",
+    milestone: "Astereae",
+    manualPage: 477,
+    descripcion: "Astereae - F: flores marginales e involucro",
+    opcionA: {
+      label: "Flores marginales en 1-2 series; involucro con 3 o más series de brácteas; ramas del estilo lanceoladas",
+      keyStep: "F",
+      nextNodeId: "aster_a",
+    },
+    opcionA_prima: {
+      label: "Flores marginales en muchas series; involucro con 2 series de brácteas; ramas del estilo triangulares",
+      keyStep: "F'",
+      especieId: "compositae",
+    },
+  },
+  aster_a: {
+    id: "aster_a",
+    milestone: "Aster",
+    manualPage: 478,
+    descripcion: "Aster - A: porte, pubescencia y disposición de los capítulos",
+    opcionA: {
+      label: "Hierbas perennes erectas, ramosas, glabras y hojosas; capítulos numerosos en panojas amplias",
+      keyStep: "A",
+      nextNodeId: "aster_squamatus_a",
+    },
+    opcionA_prima: {
+      label: "Plantas decumbentes, ascendentes o rara vez erectas, pilosas; capítulos grandes, solitarios o escasos",
+      keyStep: "A'",
+      nextNodeId: "aster_b",
+    },
+  },
+  aster_squamatus_a: {
+    id: "aster_squamatus_a",
+    milestone: "Aster squamatus",
+    manualPage: 478,
+    descripcion: "Aster squamatus - variedad",
+    opcionA: {
+      label: "Hojas lanceolado-lineales; capítulos de tamaño típico",
+      keyStep: "1",
+      especieId: "aster_squamatus",
+    },
+    opcionA_prima: {
+      label: "Planta robusta, con hojas graminiformes y capítulos mayores; involucro de 8-9 mm",
+      keyStep: "1a",
+      especieId: "aster_squamatus_var_graminifolius",
+    },
+  },
+  aster_b: {
+    id: "aster_b",
+    milestone: "Aster",
+    manualPage: 478,
+    descripcion: "Aster - B: forma del involucro y largo de las lígulas",
+    opcionA: {
+      label: "Involucro hemisférico; lígulas de 7-14 mm, mucho más largas que el involucro",
+      keyStep: "B",
+      nextNodeId: "aster_c",
+    },
+    opcionA_prima: {
+      label: "Involucro campanulado; lígulas de 3-4 mm, apenas más largas que el involucro",
+      keyStep: "B'",
+      nextNodeId: "aster_d",
+    },
+  },
+  aster_c: {
+    id: "aster_c",
+    milestone: "Aster",
+    manualPage: 478,
+    descripcion: "Aster - C: color de las flores marginales e indumento",
+    opcionA: {
+      label: "Flores marginales amarillas; plantas albo-tomentosas; hojas oblongo-lanceoladas de 1,5-2,5 cm",
+      keyStep: "C",
+      especieId: "aster_calendulaceus",
+    },
+    opcionA_prima: {
+      label: "Flores marginales blancas o rosadas; plantas laxamente híspidas; hojas inferiores espatuladas de 3-4 cm",
+      keyStep: "C'",
+      especieId: "aster_decumbens",
+    },
+  },
+  aster_d: {
+    id: "aster_d",
+    milestone: "Aster",
+    manualPage: 478,
+    descripcion: "Aster - D: posición e indumento de los tallos",
+    opcionA: {
+      label: "Tallos erectos o ascendentes, lanosos en la parte superior y glabrescentes abajo",
+      keyStep: "D",
+      especieId: "aster_argentinensis",
+    },
+    opcionA_prima: {
+      label: "Tallos decumbentes o rara vez ascendentes",
+      keyStep: "D'",
+      nextNodeId: "aster_e",
+    },
+  },
+  aster_e: {
+    id: "aster_e",
+    milestone: "Aster",
+    manualPage: 478,
+    descripcion: "Aster - E: coloración e indumento general",
+    opcionA: {
+      label: "Plantas verde-grisáceas, laxamente vellosas; hojas caulinares lanceoladas con margen crespo",
+      keyStep: "E",
+      especieId: "aster_montevidensis",
+    },
+    opcionA_prima: {
+      label: "Plantas albo-lanosas; hojas inferiores oblanceolado-espatuladas de 5-7 cm",
+      keyStep: "E'",
+      especieId: "aster_haplopappus",
     },
   },
   grindelia_a: {
