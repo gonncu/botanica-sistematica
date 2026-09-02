@@ -7305,6 +7305,94 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas lineal-lanceoladas, enteras, glabras en el haz y tomentosas en el envés, de 7-12 cm por 4-12 mm; capítulos en largas espigas laxas, ramificadas en la base; involucro de 6 mm, con brácteas lanosas; flores hermafroditas 2-3; papus blanco.",
     "Nordeste de la Argentina, hasta el norte de Buenos Aires, como Pergamino y San Nicolás."
   ),
+  micropsis_ostenii: species(
+    "micropsis_ostenii",
+    "Micropsis ostenii",
+    "130. Compositae - Inuleae",
+    "Hierba anual pigmea, decumbente y argénteo-tomentosa, con tallos rastreros de 5-12 cm.",
+    "Hojas densas, alternas, espatuladas, enteras, sésiles, de 8-12 mm; capítulos solitarios en las axilas de las hojas, formando una larga seudoespiga; involucro de 5-7 mm, con 5 brácteas ovado-lanceoladas; flores femeninas 2-4, sin papus; flores hermafroditas 2-6, con papus coroniforme cortísimo.",
+    "Uruguay y nordeste de la Argentina. En suelos húmedos y algo salinos."
+  ),
+  micropsis_dasycarpa: species(
+    "micropsis_dasycarpa",
+    "Micropsis dasycarpa",
+    "130. Compositae - Inuleae",
+    "Hierba pigmea, decumbente y argénteo-tomentosa, con tallos rastreros de 5-8 cm.",
+    "Hojas densas, alternas, espatuladas, enteras, sésiles, de unos 7 mm; capítulos sésiles en las axilas de las hojas superiores, formando una seudocabezuela; flores femeninas 15-30, con aquenios seríceo-pubescentes y sin papus; flores hermafroditas 4-5, con aquenios laxamente pubescentes y sin papus; involucro piriforme de 4-5 mm.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina, hasta el Delta del Paraná."
+  ),
+  micropsis_spathulata: species(
+    "micropsis_spathulata",
+    "Micropsis spathulata",
+    "130. Compositae - Inuleae",
+    "Hierba anual pigmea, decumbente y argénteo-tomentosa, con tallos rastreros de 5-8 cm.",
+    "Hojas densas, alternas, espatuladas, enteras, sésiles, de 5-12 mm; capítulos sésiles en las axilas de las hojas superiores, formando una seudocabezuela; flores femeninas 6-8, sin papus; flores hermafroditas 4, con papus coroniforme cortísimo; involucro piriforme de 4-5 mm.",
+    "Uruguay y nordeste de la Argentina. Muy común en la estepa clímax; florece en primavera."
+  ),
+  chevreulia_sarmentosa: species(
+    "chevreulia_sarmentosa",
+    "Chevreulia sarmentosa",
+    "130. Compositae - Inuleae",
+    "Hierba perenne pigmea y estolonífera.",
+    "Hojas arrosetadas, espatuladas, enteras, obtusas y brevemente mucronadas, lanuginosas en el haz y densamente albo-tomentosas en el envés, de 1,5-2 cm; involucro de 1 cm; aquenios lineal-lanceolados, ásperos, largamente rostrados; papus blanco.",
+    "América austral. Común en la estepa clímax; florece en primavera."
+  ),
+  chevreulia_acuminata: species(
+    "chevreulia_acuminata",
+    "Chevreulia acuminata",
+    "130. Compositae - Inuleae",
+    "Hierba perenne, con tallos filiformes, rastreros y laxamente lanuginosos.",
+    "Hojas opuestas, distribuidas a lo largo del tallo, oblongo-lanceoladas, acuminadas, enteras, lanuginosas en el haz y densamente lanosas en el envés, de 0,8-1,2 cm; involucro de 0,8-1 cm; aquenios fusiformes, ásperos y largamente rostrados; papus blanco sucio.",
+    "América del Sur cálida. Rara en la región, citada para Pergamino."
+  ),
+  facelis_retusa: species(
+    "facelis_retusa",
+    "Facelis retusa",
+    "130. Compositae - Inuleae",
+    "Hierba anual pequeña, de 5-30 cm de alto, con tallos erectos o ascendentes, lanosos y hojosos.",
+    "Hojas alternas, enteras, espatuladas, truncadas y semimucronadas en el ápice, lanosas en el envés, de 1-2 cm; capítulos sésiles en las axilas de las hojas superiores; involucro piriforme de 1 cm; aquenios obovoideos, densamente pubescentes; papus de pelos plumosos unidos en la base.",
+    "América austral. Común en suelos fértiles."
+  ),
+  achyrocline_satureioides: species(
+    "achyrocline_satureioides",
+    "Achyrocline satureioides",
+    "130. Compositae - Inuleae",
+    "Sufrútice ramosísimo y albo-tomentoso, de 30-50 cm de alto.",
+    "Tallos sin alas; hojas lineal-lanceoladas, enteras, blanco-tomentosas, de 3-5 cm; involucro cilíndrico de 5 mm, con brácteas amarillentas o rojizas; flores femeninas 4-5 y hermafroditas 1-2; aquenios glabros; papus blanco.",
+    "América austral oriental. En suelos secos o arenosos de la Isla Martín García y alrededores de Eva Perón. Medicinal. Nombre vulgar: marcela."
+  ),
+  achyrocline_alata_var_vauthieriana: species(
+    "achyrocline_alata_var_vauthieriana",
+    "Achyrocline alata var. vauthieriana",
+    "130. Compositae - Inuleae",
+    "Sufrútice erecto, de 50-80 cm de alto.",
+    "Tallos alados y lanuginosos; hojas lineal-lanceoladas, enteras, lanuginosas y levemente glandulosas, de 5-8 cm; involucro cilíndrico de 5 mm, con brácteas pajizas; flores marginales 3-5 y centrales 1-3; aquenios glabros; papus blanco.",
+    "América del Sur cálida. Rara en el Delta."
+  ),
+  lucilia_acutifolia: species(
+    "lucilia_acutifolia",
+    "Lucilia acutifolia",
+    "130. Compositae - Inuleae",
+    "Hierba perenne con tallos ascendentes de 20-40 cm de alto, densamente albo-tomentosos.",
+    "Hojas densas, alternas, lanceoladas, enteras, tomentosas, recurvadas o apretadas contra el tallo, de 8-18 mm; capítulos sésiles; involucro piriforme, de 12-15 mm; flores centrales 4-5; aquenios obovoideos o turbinados, seríceo-velludos; papus de numerosos pelos simples.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Común en serranías bonaerenses; rara cerca de Buenos Aires, citada para San Fernando."
+  ),
+  berroa_gnaphalioides: species(
+    "berroa_gnaphalioides",
+    "Berroa gnaphalioides",
+    "130. Compositae - Inuleae",
+    "Hierba perenne rastrera, tomentosa o serícea.",
+    "Hojas alternas, enteras, espatuladas, de 1,5-2 cm; capítulos sésiles; involucro ovoideo-cónico de 1,5 cm; aquenios obovoideos, densamente seríceos, con 8-12 pelos largos superiores cirrosos; papus de dos series de pelos plumosos soldados en la base.",
+    "Sur del Brasil, Uruguay y centro y este de la Argentina. Común en la estepa clímax."
+  ),
+  stuckertiella_peregrina: species(
+    "stuckertiella_peregrina",
+    "Stuckertiella peregrina",
+    "130. Compositae - Inuleae",
+    "Hierba anual pigmea, decumbente, difusa y lanosa.",
+    "Hojas alternas, enteras, oblanceolado-espatuladas, de 3-10 mm; capítulos pequeños, sésiles, amontonados en el extremo de las ramitas; involucro acampanado de 4 mm; flores centrales masculinas tetradentadas; aquenios papilosos; papus de pelos delgados unidos en la base.",
+    "Suelos arenosos del centro de la Argentina. Rara cerca de Buenos Aires, en Isla Martín García y Facultad de Agronomía."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -21341,7 +21429,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Receptáculo provisto de páleas que envuelven más o menos a las flores",
       keyStep: "A",
-      especieId: "compositae",
+      nextNodeId: "micropsis_a",
     },
     opcionA_prima: {
       label: "Receptáculo desprovisto de páleas",
@@ -21357,7 +21445,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Pelos del papus plumosos",
       keyStep: "B",
-      especieId: "compositae",
+      nextNodeId: "inuleae_c",
     },
     opcionA_prima: {
       label: "Pelos del papus simples, no plumosos",
@@ -21373,7 +21461,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Aquenios largamente rostrados",
       keyStep: "D",
-      especieId: "compositae",
+      nextNodeId: "chevreulia_a",
     },
     opcionA_prima: {
       label: "Aquenios sin rostro",
@@ -21394,7 +21482,23 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Estilo profundamente dividido en la parte superior, con ramitas truncadas en el ápice",
       keyStep: "E'",
-      especieId: "compositae",
+      nextNodeId: "inuleae_h",
+    },
+  },
+  inuleae_c: {
+    id: "inuleae_c",
+    milestone: "Inuleae",
+    manualPage: 462,
+    descripcion: "Inuleae - C: pubescencia de aquenios y tipo de papus plumoso",
+    opcionA: {
+      label: "Aquenios densamente seríceo-pubescentes, con 8-12 pelos simples rizados en la punta",
+      keyStep: "C",
+      especieId: "berroa_gnaphalioides",
+    },
+    opcionA_prima: {
+      label: "Aquenios con pubescencia corta únicamente",
+      keyStep: "C'",
+      especieId: "facelis_retusa",
     },
   },
   inuleae_f: {
@@ -21491,6 +21595,118 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hojas lineal-lanceoladas, enteras, de 7-12 cm por 4-12 mm",
       keyStep: "C'",
       especieId: "pterocaulon_subvirgatum",
+    },
+  },
+  micropsis_a: {
+    id: "micropsis_a",
+    milestone: "Micropsis",
+    manualPage: 492,
+    descripcion: "Micropsis - A: disposición de capítulos",
+    opcionA: {
+      label: "Capítulos solitarios en las axilas de las hojas, formando una larga seudoespiga",
+      keyStep: "A",
+      especieId: "micropsis_ostenii",
+    },
+    opcionA_prima: {
+      label: "Capítulos sésiles en las axilas de las hojas superiores, formando una seudocabezuela",
+      keyStep: "A'",
+      nextNodeId: "micropsis_b",
+    },
+  },
+  micropsis_b: {
+    id: "micropsis_b",
+    milestone: "Micropsis",
+    manualPage: 493,
+    descripcion: "Micropsis - B: número de flores femeninas",
+    opcionA: {
+      label: "Flores femeninas 15-30; flores hermafroditas 4-5, sin papus",
+      keyStep: "B",
+      especieId: "micropsis_dasycarpa",
+    },
+    opcionA_prima: {
+      label: "Flores femeninas 6-8; flores hermafroditas 4, con papus coroniforme cortísimo",
+      keyStep: "B'",
+      especieId: "micropsis_spathulata",
+    },
+  },
+  chevreulia_a: {
+    id: "chevreulia_a",
+    milestone: "Chevreulia",
+    manualPage: 493,
+    descripcion: "Chevreulia - A: disposición de las hojas",
+    opcionA: {
+      label: "Hojas arrosetadas, espatuladas, enteras, obtusas y brevemente mucronadas",
+      keyStep: "A",
+      especieId: "chevreulia_sarmentosa",
+    },
+    opcionA_prima: {
+      label: "Hojas opuestas, distribuidas a lo largo del tallo, oblongo-lanceoladas y acuminadas",
+      keyStep: "A'",
+      especieId: "chevreulia_acuminata",
+    },
+  },
+  achyrocline_a: {
+    id: "achyrocline_a",
+    milestone: "Achyrocline",
+    manualPage: 494,
+    descripcion: "Achyrocline - A: tallos alados",
+    opcionA: {
+      label: "Tallos sin alas; hojas lineal-lanceoladas, blanco-tomentosas, de 3-5 cm",
+      keyStep: "A",
+      especieId: "achyrocline_satureioides",
+    },
+    opcionA_prima: {
+      label: "Tallos alados, lanuginosos; hojas lineal-lanceoladas de 5-8 cm",
+      keyStep: "A'",
+      especieId: "achyrocline_alata_var_vauthieriana",
+    },
+  },
+  inuleae_h: {
+    id: "inuleae_h",
+    milestone: "Inuleae",
+    manualPage: 462,
+    descripcion: "Inuleae - H: merosidad de las flores hermafroditas",
+    opcionA: {
+      label: "Flores hermafroditas 4-meras",
+      keyStep: "H",
+      especieId: "stuckertiella_peregrina",
+    },
+    opcionA_prima: {
+      label: "Flores hermafroditas 5-meras",
+      keyStep: "H'",
+      nextNodeId: "inuleae_i",
+    },
+  },
+  inuleae_i: {
+    id: "inuleae_i",
+    milestone: "Inuleae",
+    manualPage: 463,
+    descripcion: "Inuleae - I: capítulos paucifloros o plurifloros",
+    opcionA: {
+      label: "Capítulos paucifloros: flores marginales 3-6 y flores del disco 1-3",
+      keyStep: "I",
+      nextNodeId: "achyrocline_a",
+    },
+    opcionA_prima: {
+      label: "Capítulos plurifloros",
+      keyStep: "I'",
+      nextNodeId: "inuleae_j",
+    },
+  },
+  inuleae_j: {
+    id: "inuleae_j",
+    milestone: "Inuleae",
+    manualPage: 463,
+    descripcion: "Inuleae - J: forma de capítulos y aquenios",
+    opcionA: {
+      label: "Capítulos cilíndricos; aquenios pilosos",
+      keyStep: "J",
+      especieId: "lucilia_acutifolia",
+    },
+    opcionA_prima: {
+      label: "Capítulos acampanados; aquenios glabros o granulosos",
+      keyStep: "J'",
+      especieId: "compositae",
     },
   },
   grindelia_a: {
