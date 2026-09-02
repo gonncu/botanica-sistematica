@@ -6833,6 +6833,38 @@ export const manualFamilyData: Record<string, Especie> = {
     "Tallos densamente hojosos en la parte inferior y casi desnudos en la superior; hojas opuestas, subsésiles, ovadas o lanceoladas, agudas, crenado-aserradas, estrigiloso-pilosas; capítulos pocos en corimbos laxos, con 40-120 flores; involucro hemisférico de 10-13 mm.",
     "América cálida. Suelos húmedos del norte de Buenos Aires y del Delta."
   ),
+  mikania_cordifolia: species(
+    "mikania_cordifolia",
+    "Mikania cordifolia",
+    "130. Compositae - Eupatorieae",
+    "Enredadera herbácea, con tallos hexagonales, tomentulosos y flexuosos.",
+    "Involucro de 6-8 mm, con brácteas agudas y pubescentes; flores blancas; aquenios glabros; papus amarillento; hojas ovadas, acorazonadas, pubescentes, de 3-10 cm; capítulos corimbosos.",
+    "América cálida. Frecuente en el Delta y en Martín García."
+  ),
+  mikania_parodii: species(
+    "mikania_parodii",
+    "Mikania parodii",
+    "130. Compositae - Eupatorieae",
+    "Enredadera herbácea, con tallos cilíndricos laxamente pubescentes.",
+    "Involucro de 2-5 mm; brácteas involucrales largamente acuminadas, algo pubescentes, de 3-3,2 mm, con bráctea exterior algo más corta y ovada; hojas ovadas, sagitadas en la base, con pocos dientes, pubescentes, de 2-2,5 cm; capítulos en corimbos muy densos.",
+    "Pajonales del este de la provincia de Buenos Aires."
+  ),
+  mikania_periplocifolia: species(
+    "mikania_periplocifolia",
+    "Mikania periplocifolia",
+    "130. Compositae - Eupatorieae",
+    "Enredadera herbácea, glabra o casi glabra, con tallos cilíndricos.",
+    "Involucro de 2-2,5 mm; brácteas ovado-elípticas, agudas; bractéola tan larga como las brácteas o mayor; hojas ovado-acorazonadas u ovado-hastadas, enteras o algo dentadas, de 2-10 cm; capítulos densamente corimbosos.",
+    "Sur del Brasil, Paraguay, Uruguay y norte y centro de la Argentina. Común en bosques del Delta y de la ribera platense; florece en otoño."
+  ),
+  mikania_micrantha: species(
+    "mikania_micrantha",
+    "Mikania micrantha",
+    "130. Compositae - Eupatorieae",
+    "Enredadera herbácea, glabra o casi glabra, con tallos cilíndricos.",
+    "Involucro de 4,5 mm, con brácteas agudas y bractéola exterior corta; hojas ovadas, acorazonadas o sagitadas en la base, semienteras o dentadas, de 3-13 cm; capítulos en corimbos densos.",
+    "América cálida. Frecuente en bosques del Delta y de la ribera; florece en otoño. Nombres vulgares: charrúa, bejuco."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -20170,7 +20202,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Brácteas involucrales 4, con una bráctea exterior generalmente más corta",
       keyStep: "D'",
-      especieId: "compositae",
+      nextNodeId: "mikania_a",
     },
   },
   gymnocoronis_a: {
@@ -20459,6 +20491,54 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Corolas de 3,5 mm; aquenios de 3-3,5 mm",
       keyStep: "P'",
       especieId: "eupatorium_cabrerae",
+    },
+  },
+  mikania_a: {
+    id: "mikania_a",
+    milestone: "Mikania",
+    manualPage: 475,
+    descripcion: "Mikania - A: altura del involucro",
+    opcionA: {
+      label: "Involucro de 6-8 mm; brácteas agudas, pubescentes; hojas ovadas acorazonadas",
+      keyStep: "A",
+      especieId: "mikania_cordifolia",
+    },
+    opcionA_prima: {
+      label: "Involucro de 2-5 mm",
+      keyStep: "A'",
+      nextNodeId: "mikania_b",
+    },
+  },
+  mikania_b: {
+    id: "mikania_b",
+    milestone: "Mikania",
+    manualPage: 475,
+    descripcion: "Mikania - B: forma de las brácteas y pubescencia",
+    opcionA: {
+      label: "Brácteas involucrales largamente acuminadas, algo pubescentes; hojas ovadas sagitadas",
+      keyStep: "B",
+      especieId: "mikania_parodii",
+    },
+    opcionA_prima: {
+      label: "Brácteas involucrales agudas; hojas glabras o casi glabras",
+      keyStep: "B'",
+      nextNodeId: "mikania_c",
+    },
+  },
+  mikania_c: {
+    id: "mikania_c",
+    milestone: "Mikania",
+    manualPage: 475,
+    descripcion: "Mikania - C: involucro y bractéola exterior",
+    opcionA: {
+      label: "Involucro de 2-2,5 mm; bractéola tan larga como las brácteas o mayor",
+      keyStep: "C",
+      especieId: "mikania_periplocifolia",
+    },
+    opcionA_prima: {
+      label: "Involucro de 4,5 mm; bractéola exterior corta",
+      keyStep: "C'",
+      especieId: "mikania_micrantha",
     },
   },
   vernonia_a: {
