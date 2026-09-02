@@ -6961,6 +6961,86 @@ export const manualFamilyData: Record<string, Especie> = {
     "Capítulos solitarios; involucro campanulado, de 12-15 mm por 8-14 mm, con brácteas lineales, lanosas, en 4-5 series; hojas inferiores oblanceolado-espatuladas, agudas, de 5-7 cm; hojas superiores lanceoladas, enteras, de 2-3 cm; flores marginales blancas o violáceas; aquenios comprimidos, laxamente vellosos; papus amarillento o rojizo.",
     "Uruguay, Argentina y Chile. En campos altos y secos."
   ),
+  conyza_rivularis: species(
+    "conyza_rivularis",
+    "Conyza rivularis",
+    "130. Compositae - Astereae",
+    "Hierba perenne, glabra, de 20-50 cm de alto, con hojas en roseta y tallos paucifoliados.",
+    "Hojas caulinares oblanceolado-oblongas, aserradas, dilatadas y semiabrazadoras en la base; hojas basales oblanceoladas u obovadas, largamente atenuadas en seudopecíolo, aserradas, de 4-12 cm por 1-3,5 cm; capítulos pocos, en corimbos paucicéfalos; involucro acampanado, de 6 mm, con brácteas agudas y glabras; flores blancas; aquenios velludos; papus blanco.",
+    "Sudeste del Brasil, Uruguay y nordeste de la Argentina. En bosques del Delta y de la ribera platense."
+  ),
+  conyza_monorchis: species(
+    "conyza_monorchis",
+    "Conyza monorchis",
+    "130. Compositae - Astereae",
+    "Hierba perenne velluda, con raíz tuberiforme y tallo erecto, simple, de 20-50 cm de alto.",
+    "Hojas inferiores obovadas u oblanceoladas, obtusas, atenuadas en la base, crenadas, de 3-5 cm; hojas superiores pocas, lineales y enteras; capítulos pocos, en corimbos laxos; involucro hemisférico, de 6-7 mm por 6-8 mm, con brácteas lineales, acuminadas e hirsutas; flores blancas o violáceas; aquenios pubescentes.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. En la estepa clímax."
+  ),
+  conyza_chilensis: species(
+    "conyza_chilensis",
+    "Conyza chilensis",
+    "130. Compositae - Astereae",
+    "Hierba perenne velluda, con raíz no engrosada y tallos erectos, sencillos, de 30-80 cm de alto.",
+    "Hojas basales oblanceoladas, obtusas, atenuadas en la base, crenadas, de 5-13 cm; hojas superiores lineales, agudas y enteras; capítulos pocos, densamente corimbosos; involucro hemisférico, de 5-7 mm por 10-12 mm, con brácteas lineales, acuminadas e híspidas; flores blancas muy numerosas; aquenios casi glabros.",
+    "América del Sur. En suelos fértiles."
+  ),
+  conyza_pampeana: species(
+    "conyza_pampeana",
+    "Conyza pampeana",
+    "130. Compositae - Astereae",
+    "Hierba anual completamente glabra, con tallos sencillos y hojosos, de 10-30 cm de alto.",
+    "Hojas lineales, obtusas, semienvainadoras en la base, enteras, de 1,5-10 cm; capítulos laxamente corimbosos; involucro de 4 mm, con brácteas lineales y acuminadas; flores blancas, las marginales pluriseriadas, filiformes y semiliguladas en el ápice; aquenios pubescentes; papus blanco.",
+    "Uruguay y nordeste de la Argentina. En campos húmedos."
+  ),
+  conyza_lorentzii: species(
+    "conyza_lorentzii",
+    "Conyza lorentzii",
+    "130. Compositae - Astereae",
+    "Hierba anual de 30-50 cm de alto, con tallos erectos, poco ramificados y laxamente pubescentes.",
+    "Hojas lanceoladas, agudas, algo dilatadas en la base, enteras o dentadas, glabras salvo en bordes y nervadura, de 2,5-7 cm por 3-10 mm; capítulos pocos, solitarios en el ápice de las ramas o en corimbos muy laxos; involucro hemisférico, de 4 mm por 7 mm, con brácteas lineales e hirsutas; flores blancas; aquenios algo pilosos.",
+    "Nordeste de la Argentina, hasta las barrancas del Paraná en San Pedro."
+  ),
+  conyza_bonariensis: species(
+    "conyza_bonariensis",
+    "Conyza bonariensis",
+    "130. Compositae - Astereae",
+    "Hierba anual verde-grisácea, de 40-100 cm de alto, con tallos de ramificación simpodial, densamente velludos.",
+    "Hojas densamente pubescentes; las inferiores oblanceoladas, lobadas o enteras, y las superiores lineales, agudas y enteras, de 3-6 cm por 3-7 mm; capítulos en panojas o corimbos; involucro hemisférico, de 4 mm por 5-6 mm, con brácteas lineales densamente pubescentes; flores blancas; aquenios pubescentes; papus blanco o rosado.",
+    "América; adventicia en Europa. En suelos fértiles. Nombre vulgar: rama negra."
+  ),
+  conyza_bonariensis_var_angustifolia: species(
+    "conyza_bonariensis_var_angustifolia",
+    "Conyza bonariensis var. angustifolia",
+    "130. Compositae - Astereae",
+    "Variedad de Conyza bonariensis con hojas estrechamente lineales.",
+    "Hojas de sólo 1-2 mm de ancho.",
+    "Rara en la región."
+  ),
+  conyza_bonariensis_var_microcephala: species(
+    "conyza_bonariensis_var_microcephala",
+    "Conyza bonariensis var. microcephala",
+    "130. Compositae - Astereae",
+    "Variedad de Conyza bonariensis caracterizada por capítulos pequeños.",
+    "Capítulos con involucro de sólo 4-5 mm de diámetro.",
+    "América austral. Ubicua."
+  ),
+  conyza_blakei: species(
+    "conyza_blakei",
+    "Conyza blakei",
+    "130. Compositae - Astereae",
+    "Hierba anual, con tallos sencillos, erectos, estriados, con pelos rígidos y tiesos esparcidos.",
+    "Hojas estrechamente lineales, de 1-1,5 mm de ancho; las inferiores generalmente pinatisectas, glabras salvo en nervadura y bordes, donde llevan pelos rígidos; capítulos muy numerosos, en panojas densas, largas y angostas; involucro acampanado, de 3,5-4,5 mm, con brácteas lineales, semiobtusas y glabras; aquenios laxamente pubescentes; papus blanco o amarillento.",
+    "América austral. Común en la estepa clímax."
+  ),
+  conyza_sordescens: species(
+    "conyza_sordescens",
+    "Conyza sordescens",
+    "130. Compositae - Astereae",
+    "Hierba anual erecta, con tallos híspidos, de 50-150 cm de alto.",
+    "Hojas lanceoladas, de más de 2 mm de ancho, laxamente híspidas; las inferiores aserradas o lobuladas y las superiores enteras; capítulos pequeños, numerosísimos, en amplia panoja; involucro acampanado, de 3-4 mm, con pocas brácteas lineales, agudas, glabras o con pelos esparcidos; aquenios ligeramente velludos; papus blanco o amarillento.",
+    "América austral. En suelos húmedos."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -20346,7 +20426,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Flores marginales en muchas series; involucro con 2 series de brácteas; ramas del estilo triangulares",
       keyStep: "F'",
-      especieId: "compositae",
+      nextNodeId: "conyza_a",
     },
   },
   aster_a: {
@@ -20443,6 +20523,166 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Plantas albo-lanosas; hojas inferiores oblanceolado-espatuladas de 5-7 cm",
       keyStep: "E'",
       especieId: "aster_haplopappus",
+    },
+  },
+  conyza_a: {
+    id: "conyza_a",
+    milestone: "Conyza",
+    manualPage: 479,
+    descripcion: "Conyza - A: duración y disposición de hojas/capítulos",
+    opcionA: {
+      label: "Hierbas perennes, con hojas en roseta y tallos paucifoliados; capítulos en corimbos paucicéfalos",
+      keyStep: "A",
+      nextNodeId: "conyza_b",
+    },
+    opcionA_prima: {
+      label: "Hierbas anuales, con tallos densamente hojosos",
+      keyStep: "A'",
+      nextNodeId: "conyza_d",
+    },
+  },
+  conyza_b: {
+    id: "conyza_b",
+    milestone: "Conyza",
+    manualPage: 479,
+    descripcion: "Conyza - B: indumento de plantas perennes",
+    opcionA: {
+      label: "Plantas glabras; hojas caulinares dilatadas y semiabrazadoras en la base",
+      keyStep: "B",
+      especieId: "conyza_rivularis",
+    },
+    opcionA_prima: {
+      label: "Plantas velludas",
+      keyStep: "B'",
+      nextNodeId: "conyza_c",
+    },
+  },
+  conyza_c: {
+    id: "conyza_c",
+    milestone: "Conyza",
+    manualPage: 479,
+    descripcion: "Conyza - C: raíz de plantas perennes velludas",
+    opcionA: {
+      label: "Raíz tuberiforme; tallo erecto simple de 20-50 cm",
+      keyStep: "C",
+      especieId: "conyza_monorchis",
+    },
+    opcionA_prima: {
+      label: "Raíz no engrosada; tallos erectos sencillos de 30-80 cm",
+      keyStep: "C'",
+      especieId: "conyza_chilensis",
+    },
+  },
+  conyza_d: {
+    id: "conyza_d",
+    milestone: "Conyza",
+    manualPage: 480,
+    descripcion: "Conyza - D: indumento de hierbas anuales",
+    opcionA: {
+      label: "Plantas completamente glabras; hojas lineales, obtusas y semienvainadoras",
+      keyStep: "D",
+      especieId: "conyza_pampeana",
+    },
+    opcionA_prima: {
+      label: "Plantas más o menos velludas, por lo menos en bordes y nervaduras de las hojas",
+      keyStep: "D'",
+      nextNodeId: "conyza_e",
+    },
+  },
+  conyza_e: {
+    id: "conyza_e",
+    milestone: "Conyza",
+    manualPage: 480,
+    descripcion: "Conyza - E: cantidad y disposición de capítulos",
+    opcionA: {
+      label: "Capítulos solitarios en el ápice de las ramas o formando un corimbo paucicéfalo muy laxo",
+      keyStep: "E",
+      nextNodeId: "conyza_f",
+    },
+    opcionA_prima: {
+      label: "Capítulos muy numerosos, corimbosos o apanojados",
+      keyStep: "E'",
+      nextNodeId: "conyza_g",
+    },
+  },
+  conyza_f: {
+    id: "conyza_f",
+    milestone: "Conyza",
+    manualPage: 480,
+    descripcion: "Conyza - F: pubescencia de las hojas",
+    opcionA: {
+      label: "Hojas glabras salvo en bordes y nervadura, lanceoladas, agudas, enteras o dentadas",
+      keyStep: "F",
+      especieId: "conyza_lorentzii",
+    },
+    opcionA_prima: {
+      label: "Hojas densamente pubescentes; inferiores oblanceoladas, lobadas o enteras",
+      keyStep: "F'",
+      nextNodeId: "conyza_bonariensis_a",
+    },
+  },
+  conyza_g: {
+    id: "conyza_g",
+    milestone: "Conyza",
+    manualPage: 480,
+    descripcion: "Conyza - G: indumento del involucro",
+    opcionA: {
+      label: "Involucro densamente velludo",
+      keyStep: "G",
+      nextNodeId: "conyza_bonariensis_a",
+    },
+    opcionA_prima: {
+      label: "Involucro glabro o con algunos pelos dispersos",
+      keyStep: "G'",
+      nextNodeId: "conyza_h",
+    },
+  },
+  conyza_h: {
+    id: "conyza_h",
+    milestone: "Conyza",
+    manualPage: 480,
+    descripcion: "Conyza - H: anchura y forma de las hojas",
+    opcionA: {
+      label: "Hojas estrechamente lineales, de 1-1,5 mm de ancho; inferiores generalmente pinatisectas",
+      keyStep: "H",
+      especieId: "conyza_blakei",
+    },
+    opcionA_prima: {
+      label: "Hojas lanceoladas, de más de 2 mm de ancho; inferiores aserradas o lobuladas",
+      keyStep: "H'",
+      especieId: "conyza_sordescens",
+    },
+  },
+  conyza_bonariensis_a: {
+    id: "conyza_bonariensis_a",
+    milestone: "Conyza bonariensis",
+    manualPage: 481,
+    descripcion: "Conyza bonariensis - variedades citadas",
+    opcionA: {
+      label: "Hojas no estrechamente lineales y capítulos sin reducción marcada del involucro",
+      keyStep: "6",
+      especieId: "conyza_bonariensis",
+    },
+    opcionA_prima: {
+      label: "Variedades con hojas muy angostas o capítulos de involucro pequeño",
+      keyStep: "6a-6b",
+      nextNodeId: "conyza_bonariensis_b",
+    },
+  },
+  conyza_bonariensis_b: {
+    id: "conyza_bonariensis_b",
+    milestone: "Conyza bonariensis",
+    manualPage: 481,
+    descripcion: "Conyza bonariensis - separación de variedades",
+    opcionA: {
+      label: "Hojas estrechamente lineales, de sólo 1-2 mm de ancho",
+      keyStep: "6a",
+      especieId: "conyza_bonariensis_var_angustifolia",
+    },
+    opcionA_prima: {
+      label: "Capítulos con involucro de sólo 4-5 mm de diámetro",
+      keyStep: "6b",
+      especieId: "conyza_bonariensis_var_microcephala",
     },
   },
   grindelia_a: {
