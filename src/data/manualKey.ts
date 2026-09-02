@@ -7049,6 +7049,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas lineales, trifurcadas, con raquis y lóbulos angostos, agudos y enteros; hojas superiores enteras y lineales; capítulos radiados, solitarios en el ápice del tallo; involucro acampanado, de 5-6,5 mm, con brácteas lineales, agudas y pubescentes en 2-3 series; flores marginales blancas, cortamente liguladas; aquenios seríceo-pubescentes; papus amarillento o rojizo.",
     "Sur del Brasil, Uruguay y nordeste de la Argentina. Común en la estepa clímax."
   ),
+  podocoma_hirsuta: species(
+    "podocoma_hirsuta",
+    "Podocoma hirsuta",
+    "130. Compositae - Astereae",
+    "Hierba perenne, erecta, densamente hirsuta, de 50-100 cm de alto, con tallos estriados, simples o poco ramificados.",
+    "Hojas inferiores ovadas, agudas, atenuadas en seudopecíolo semiabrazador, con grandes dientes triangulares, de 10-18 cm por 4-7 cm; hojas superiores distantes, oblongo-lanceoladas, agudas, dilatadas y semiabrazadoras en la base, dentadas; capítulos pocos, laxamente corimbosos; involucro acampanado, de 7 mm, con brácteas lineales, agudas y pilosas; flores marginales blancas; aquenios lanceolados, pubescentes, largamente rostrados; papus blanco.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. En bosques del Delta y de la ribera del Plata."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -20381,7 +20389,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Aquenios con un largo pico en su ápice",
       keyStep: "C",
-      especieId: "compositae",
+      especieId: "podocoma_hirsuta",
     },
     opcionA_prima: {
       label: "Aquenios sin pico",
