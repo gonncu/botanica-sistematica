@@ -6705,6 +6705,134 @@ export const manualFamilyData: Record<string, Especie> = {
     "Capítulos numerosos, densamente corimbosos, con pedicelos cortos; hojas lineales, enteras, obtusas, pubescentes, de 2-2,5 cm x 1-3 mm; involucro de 8 mm, con brácteas pubescentes; papus con 14-19 cerdas rojizas.",
     "Sur del Brasil, Uruguay y norte y centro de la Argentina. Común en barrancas del Paraná y terrenos calcáreos."
   ),
+  eupatorium_hecatanthum: species(
+    "eupatorium_hecatanthum",
+    "Eupatorium hecatanthum",
+    "130. Compositae - Eupatorieae",
+    "Hierba anual erecta, de 60-90 cm de alto, con tallos pubescente-glandulosos.",
+    "Receptáculo peludo, hemisférico; hojas opuestas, pecioladas, acorazonadas, aserradas, de 6-15 cm; capítulos en corimbos densos; involucro acampanado de 5-6 mm; flores 50-80, de color lila.",
+    "Bolivia, sur del Brasil, Paraguay, Uruguay y norte de la Argentina. Común en suelos pantanosos del Delta y de la ribera platense; florece en otoño."
+  ),
+  eupatorium_laevigatum: species(
+    "eupatorium_laevigatum",
+    "Eupatorium laevigatum",
+    "130. Compositae - Eupatorieae",
+    "Arbusto glabérrimo, de 1-3 m de alto.",
+    "Hojas lustrosas, opuestas, ovadas, cortamente pecioladas, aserradas, trinervadas, de 5-12 cm; capítulos corimbosos; involucro cilíndrico de 10 mm, 3-5 veces tan alto como grueso, con brácteas en 5-6 series; flores numerosas violetas.",
+    "América cálida. Escaso en el Delta y en la ribera del Plata."
+  ),
+  eupatorium_hirsutum: species(
+    "eupatorium_hirsutum",
+    "Eupatorium hirsutum",
+    "130. Compositae - Eupatorieae",
+    "Sufrútice de 40-60 cm de alto, con tallos erectos densamente híspidos y hojosos hasta el ápice.",
+    "Hojas generalmente alternas, casi sésiles, ovado-triangulares, truncadas en la base, crenadas, trinervadas, hirsutas; capítulos en corimbos densos; involucro cilíndrico de 5-6 mm con brácteas 4-seriadas; flores violáceas.",
+    "Sur del Brasil, Paraguay, Uruguay y norte de la Argentina. Se halla en la estepa clímax."
+  ),
+  eupatorium_ivaefolium: species(
+    "eupatorium_ivaefolium",
+    "Eupatorium ivaefolium",
+    "130. Compositae - Eupatorieae",
+    "Sufrútice erecto, de 40-120 cm de alto, cubierto de pelos cortos y curvos densos.",
+    "Hojas opuestas, pecioladas, lanceolado-lineales, atenuadas en la base, aserradas, trinervadas, de 3-7 cm; capítulos en corimbos amplios; involucro cilíndrico de 7-8 mm, con brácteas pluriseriadas semiglabras; flores purpúreas.",
+    "América cálida. Rara en el Delta."
+  ),
+  eupatorium_buniifolium: species(
+    "eupatorium_buniifolium",
+    "Eupatorium buniifolium",
+    "130. Compositae - Eupatorieae",
+    "Arbusto densamente ramoso, de 1-2 m de alto.",
+    "Hojas dimorfas, unas simples lineales y otras pinatisectas, con raquis y segmentos lineales; capítulos de 5-6 flores en panojas amplias cabizbajas; involucro cilíndrico de 6 mm, con brácteas morenas en 2-3 series; flores violáceas.",
+    "Sur de Bolivia, Brasil, Paraguay, Uruguay y norte y centro de la Argentina. Gregario en campos altos y secos con vegetación prístina."
+  ),
+  eupatorium_tremulum: species(
+    "eupatorium_tremulum",
+    "Eupatorium tremulum",
+    "130. Compositae - Eupatorieae",
+    "Arbusto glabro, densamente ramoso, de 2-3 m de alto, con ramas jóvenes péndulas.",
+    "Hojas pecioladas, opuestas, lineal-lanceoladas, uniformemente aserradas, trinervadas, de 6-14 cm; capítulos muy numerosos en panojas amplias péndulas; involucro cilíndrico de 5-6 mm; flores violáceas.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Común en márgenes de arroyos del Delta y de la ribera del Plata; florece en otoño. Fragante. Nombre vulgar: chilca."
+  ),
+  eupatorium_bupleurifolium: species(
+    "eupatorium_bupleurifolium",
+    "Eupatorium bupleurifolium",
+    "130. Compositae - Eupatorieae",
+    "Arbusto ramoso y pubescente, de 1-1,5 m de alto.",
+    "Hojas sésiles, opuestas o alternas, oblongo-lanceoladas, enteras o subdentadas, puberulentas o glabras, glandulosas, de 5-12 cm; capítulos densamente corimbosos, con 5-6 flores; involucro cilíndrico de 7-8 mm; flores violáceas.",
+    "Sur de Bolivia y Brasil, Paraguay, Uruguay y norte y centro de la Argentina. En pajonales del Delta; florece en primavera."
+  ),
+  eupatorium_commersonii: species(
+    "eupatorium_commersonii",
+    "Eupatorium commersonii",
+    "130. Compositae - Eupatorieae",
+    "Hemicriptófita con tallos erectos, sencillos o bifurcados, áspero-pubescentes, de 40-60 cm de alto.",
+    "Tallos hojosos en la parte inferior y casi desnudos en la superior; hojas obovadas, lobuladas o pinatífidas, áspero-pubescentes en ambas caras; capítulos pocos, densamente corimbosos, con 15-25 flores; involucro acampanado de 5-6 mm.",
+    "Uruguay y nordeste de la Argentina, hasta las sierras de Buenos Aires. Raro en campos secos."
+  ),
+  eupatorium_tanacetifolium: species(
+    "eupatorium_tanacetifolium",
+    "Eupatorium tanacetifolium",
+    "130. Compositae - Eupatorieae",
+    "Hemicriptófita con tallos erectos, sencillos o bifurcados, densamente pubescentes.",
+    "Tallos densamente hojosos en la parte inferior y casi desnudos en la superior; hojas profundamente bipinatisectas, con segmentos lanceolados o lineales, densamente pubescentes; capítulos numerosos, densamente corimbosos, con 25-35 flores rosadas o violáceas.",
+    "Sur del Brasil, Uruguay y nordeste y centro de la Argentina, hasta las sierras de Buenos Aires."
+  ),
+  eupatorium_tweedianum: species(
+    "eupatorium_tweedianum",
+    "Eupatorium tweedianum",
+    "130. Compositae - Eupatorieae",
+    "Sufrútice de 30-50 cm de alto, con tallos erectos poco ramificados, densa y cortamente pubescentes.",
+    "Hojas lanceoladas o lineal-lanceoladas, opuestas, pecioladas, enteras o aserradas, densamente pubescentes, de 1,8-3,5 cm; capítulos numerosos corimbosos, con 18-24 flores violáceas o blancas; involucro acampanado de 4-5 mm.",
+    "Sur del Brasil, Paraguay, Uruguay y norte de la Argentina. Rara en barrancas del Paraná; más común en las sierras de Tandil."
+  ),
+  eupatorium_inulaefolium_f_suaveolens: species(
+    "eupatorium_inulaefolium_f_suaveolens",
+    "Eupatorium inulaefolium f. suaveolens",
+    "130. Compositae - Eupatorieae",
+    "Arbusto rizomatoso, densa y cortamente pubescente, de 1-2 m de alto.",
+    "Hojas opuestas, pecioladas, ovado-lanceoladas, aserradas, trinervadas, estrigilloso-pubescentes en el haz y lanuginosas en el envés, de 7-10 x 2-4 cm; capítulos numerosos en corimbos compuestos densos; involucro acampanado de 6 mm; flores blancas.",
+    "América cálida. Muy común en lugares húmedos y sombreados; florece en otoño."
+  ),
+  eupatorium_lanigerum: species(
+    "eupatorium_lanigerum",
+    "Eupatorium lanigerum",
+    "130. Compositae - Eupatorieae",
+    "Hemicriptófita con tallos erectos o ascendentes, de 30-60 cm de alto, densamente pubérulos.",
+    "Hojas alternas, raramente opuestas, lanceolado-rómbicas, cortamente pecioladas, aserradas, pubescentes en ambas caras, de 4-8 x 1,5-6 cm; capítulos numerosos en corimbos densos; involucro acampanado de 4-5 mm; flores blancas o rosadas.",
+    "Sur de Bolivia y Brasil, Paraguay, Uruguay y norte de la Argentina. Rara cerca de Buenos Aires."
+  ),
+  eupatorium_betonicaeforme: species(
+    "eupatorium_betonicaeforme",
+    "Eupatorium betonicaeforme",
+    "130. Compositae - Eupatorieae",
+    "Hierba perenne de 60-90 cm de alto, con tallos erectos pubescentes.",
+    "Receptáculo notablemente convexo; hojas ovadas u ovado-deltoideas, cordadas o hastadas en la base, crenadas, pubescentes, trinervadas, pecioladas, opuestas; capítulos en densos corimbos, con cerca de 35 flores purpúreas; involucro acampanado de 4-5 mm.",
+    "Sur del Brasil, Uruguay y norte de la Argentina. Dudosa cerca de Buenos Aires."
+  ),
+  eupatorium_candolleanum: species(
+    "eupatorium_candolleanum",
+    "Eupatorium candolleanum",
+    "130. Compositae - Eupatorieae",
+    "Hierba perenne de 50-150 cm de alto, con tallos erectos corta y densamente pubescentes.",
+    "Hojas ovado-lanceoladas o lanceoladas, aserradas, trinervadas, pubescentes, las inferiores opuestas y las superiores alternas; capítulos densamente corimbosos; corolas de 2,5 mm; aquenios de 1,3-1,5 mm; involucro de 3-3,5 mm.",
+    "Sur del Brasil, Paraguay y nordeste de la Argentina. En pajonales del Delta."
+  ),
+  eupatorium_cabrerae: species(
+    "eupatorium_cabrerae",
+    "Eupatorium cabrerae",
+    "130. Compositae - Eupatorieae",
+    "Hierba perenne, con tallos erectos pubescentes.",
+    "Hojas inferiores opuestas y superiores alternas, pecioladas, lanceoladas, aserradas, trinervadas, cortamente pubescentes o glabras; capítulos densamente corimbosos, con 50-60 flores purpúreas; corolas de 3,5 mm; aquenios de 3-3,5 mm.",
+    "Delta y ribera del Plata. Florece en otoño."
+  ),
+  eupatorium_macrocephalum: species(
+    "eupatorium_macrocephalum",
+    "Eupatorium macrocephalum",
+    "130. Compositae - Eupatorieae",
+    "Hierba perenne, con tallos ascendentes o erectos, híspido-escabrosos, de 0,5-1 m de alto.",
+    "Tallos densamente hojosos en la parte inferior y casi desnudos en la superior; hojas opuestas, subsésiles, ovadas o lanceoladas, agudas, crenado-aserradas, estrigiloso-pilosas; capítulos pocos en corimbos laxos, con 40-120 flores; involucro hemisférico de 10-13 mm.",
+    "América cálida. Suelos húmedos del norte de Buenos Aires y del Delta."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -20026,6 +20154,22 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Papus formado por muchos pelos delgados",
       keyStep: "C'",
+      nextNodeId: "eupatorieae_d",
+    },
+  },
+  eupatorieae_d: {
+    id: "eupatorieae_d",
+    milestone: "Eupatorieae",
+    manualPage: 462,
+    descripcion: "Eupatorieae - D: cantidad de brácteas involucrales",
+    opcionA: {
+      label: "Brácteas involucrales más de 6",
+      keyStep: "D",
+      nextNodeId: "eupatorium_a",
+    },
+    opcionA_prima: {
+      label: "Brácteas involucrales 4, con una bráctea exterior generalmente más corta",
+      keyStep: "D'",
       especieId: "compositae",
     },
   },
@@ -20075,6 +20219,246 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hojas lineales, enteras, obtusas, de 2-2,5 cm x 1-3 mm",
       keyStep: "B'",
       especieId: "stevia_satureiaefolia",
+    },
+  },
+  eupatorium_a: {
+    id: "eupatorium_a",
+    milestone: "Eupatorium",
+    manualPage: 470,
+    descripcion: "Eupatorium - A: receptáculo",
+    opcionA: {
+      label: "Receptáculo peludo, hemisférico; hojas acorazonadas; flores lila",
+      keyStep: "A",
+      especieId: "eupatorium_hecatanthum",
+    },
+    opcionA_prima: {
+      label: "Receptáculo glabro",
+      keyStep: "A'",
+      nextNodeId: "eupatorium_b",
+    },
+  },
+  eupatorium_b: {
+    id: "eupatorium_b",
+    milestone: "Eupatorium",
+    manualPage: 471,
+    descripcion: "Eupatorium - B: forma del receptáculo glabro",
+    opcionA: {
+      label: "Receptáculo plano o casi plano",
+      keyStep: "B",
+      nextNodeId: "eupatorium_c",
+    },
+    opcionA_prima: {
+      label: "Receptáculo notablemente convexo",
+      keyStep: "B'",
+      nextNodeId: "eupatorium_n",
+    },
+  },
+  eupatorium_c: {
+    id: "eupatorium_c",
+    milestone: "Eupatorium",
+    manualPage: 471,
+    descripcion: "Eupatorium - C: forma del involucro",
+    opcionA: {
+      label: "Involucro cilíndrico, 3 a 5 veces tan alto como grueso; brácteas muy imbricadas",
+      keyStep: "C",
+      nextNodeId: "eupatorium_d",
+    },
+    opcionA_prima: {
+      label: "Involucro acampanado o turbinado, a lo más dos veces tan largo como grueso",
+      keyStep: "C'",
+      nextNodeId: "eupatorium_f",
+    },
+  },
+  eupatorium_d: {
+    id: "eupatorium_d",
+    milestone: "Eupatorium",
+    manualPage: 471,
+    descripcion: "Eupatorium - D: indumento del arbusto",
+    opcionA: {
+      label: "Arbustos glabros de 1-3 m; hojas lustrosas, ovadas",
+      keyStep: "D",
+      especieId: "eupatorium_laevigatum",
+    },
+    opcionA_prima: {
+      label: "Arbustos o sufrútices pubescentes",
+      keyStep: "D'",
+      nextNodeId: "eupatorium_e",
+    },
+  },
+  eupatorium_e: {
+    id: "eupatorium_e",
+    milestone: "Eupatorium",
+    manualPage: 471,
+    descripcion: "Eupatorium - E: disposición y forma foliar",
+    opcionA: {
+      label: "Hojas generalmente alternas, ovado-triangulares, hirsutas",
+      keyStep: "E",
+      especieId: "eupatorium_hirsutum",
+    },
+    opcionA_prima: {
+      label: "Hojas opuestas, pecioladas, lanceolado-lineales",
+      keyStep: "E'",
+      especieId: "eupatorium_ivaefolium",
+    },
+  },
+  eupatorium_f: {
+    id: "eupatorium_f",
+    milestone: "Eupatorium",
+    manualPage: 471,
+    descripcion: "Eupatorium - F: cantidad de flores por capítulo",
+    opcionA: {
+      label: "Capítulos con 5-6 flores",
+      keyStep: "F",
+      nextNodeId: "eupatorium_g",
+    },
+    opcionA_prima: {
+      label: "Capítulos con 8-40 flores",
+      keyStep: "F'",
+      nextNodeId: "eupatorium_j",
+    },
+  },
+  eupatorium_g: {
+    id: "eupatorium_g",
+    milestone: "Eupatorium",
+    manualPage: 471,
+    descripcion: "Eupatorium - G: hojas dimorfas o simples",
+    opcionA: {
+      label: "Hojas dimorfas, simples lineales o pinatisectas",
+      keyStep: "G",
+      especieId: "eupatorium_buniifolium",
+    },
+    opcionA_prima: {
+      label: "Hojas simples, enteras o aserradas, de más de 3 mm de ancho",
+      keyStep: "G'",
+      nextNodeId: "eupatorium_h",
+    },
+  },
+  eupatorium_h: {
+    id: "eupatorium_h",
+    milestone: "Eupatorium",
+    manualPage: 471,
+    descripcion: "Eupatorium - H: pecíolo y margen foliar",
+    opcionA: {
+      label: "Hojas pecioladas, opuestas, lineal-lanceoladas, uniformemente aserradas",
+      keyStep: "H",
+      especieId: "eupatorium_tremulum",
+    },
+    opcionA_prima: {
+      label: "Hojas sésiles, opuestas o alternas, oblongo-lanceoladas, enteras o subdentadas",
+      keyStep: "H'",
+      especieId: "eupatorium_bupleurifolium",
+    },
+  },
+  eupatorium_j: {
+    id: "eupatorium_j",
+    milestone: "Eupatorium",
+    manualPage: 471,
+    descripcion: "Eupatorium - J: división de hojas y hojas superiores",
+    opcionA: {
+      label: "Hojas lobadas o pinatisectas; tallos casi desprovistos de hojas en la parte superior",
+      keyStep: "J",
+      nextNodeId: "eupatorium_k",
+    },
+    opcionA_prima: {
+      label: "Hojas enteras o aserradas; tallos hojosos en la parte superior",
+      keyStep: "J'",
+      nextNodeId: "eupatorium_l",
+    },
+  },
+  eupatorium_k: {
+    id: "eupatorium_k",
+    milestone: "Eupatorium",
+    manualPage: 471,
+    descripcion: "Eupatorium - K: tipo de división foliar",
+    opcionA: {
+      label: "Hojas obovadas, lobuladas o pinatífidas, áspero-pubescentes",
+      keyStep: "K",
+      especieId: "eupatorium_commersonii",
+    },
+    opcionA_prima: {
+      label: "Hojas profundamente bipinatisectas, con segmentos lanceolados o lineales",
+      keyStep: "K'",
+      especieId: "eupatorium_tanacetifolium",
+    },
+  },
+  eupatorium_l: {
+    id: "eupatorium_l",
+    milestone: "Eupatorium",
+    manualPage: 472,
+    descripcion: "Eupatorium - L: ancho de hojas",
+    opcionA: {
+      label: "Hojas lanceoladas o lineal-lanceoladas, de 2-5 mm de ancho",
+      keyStep: "L",
+      especieId: "eupatorium_tweedianum",
+    },
+    opcionA_prima: {
+      label: "Hojas lanceoladas o rómbico-ovadas, de más de 1 cm de ancho",
+      keyStep: "L'",
+      nextNodeId: "eupatorium_m",
+    },
+  },
+  eupatorium_m: {
+    id: "eupatorium_m",
+    milestone: "Eupatorium",
+    manualPage: 472,
+    descripcion: "Eupatorium - M: involucro y tipo de hoja",
+    opcionA: {
+      label: "Involucro de 6 mm; hojas opuestas ovado-lanceoladas; flores blancas",
+      keyStep: "M",
+      especieId: "eupatorium_inulaefolium_f_suaveolens",
+    },
+    opcionA_prima: {
+      label: "Involucro de 4-5 mm; hojas alternas lanceolado-rómbicas; flores blancas o rosadas",
+      keyStep: "M'",
+      especieId: "eupatorium_lanigerum",
+    },
+  },
+  eupatorium_n: {
+    id: "eupatorium_n",
+    milestone: "Eupatorium",
+    manualPage: 472,
+    descripcion: "Eupatorium - N: tamaño de los capítulos",
+    opcionA: {
+      label: "Capítulos pequeños, con 15-60 flores; involucro de 4-7 mm",
+      keyStep: "N",
+      nextNodeId: "eupatorium_o",
+    },
+    opcionA_prima: {
+      label: "Capítulos grandes, con 40-120 flores; involucro hemisférico de 10-13 mm",
+      keyStep: "N'",
+      especieId: "eupatorium_macrocephalum",
+    },
+  },
+  eupatorium_o: {
+    id: "eupatorium_o",
+    milestone: "Eupatorium",
+    manualPage: 472,
+    descripcion: "Eupatorium - O: base y forma foliar",
+    opcionA: {
+      label: "Hojas ovadas u ovado-deltoideas, cordadas o hastadas en la base",
+      keyStep: "O",
+      especieId: "eupatorium_betonicaeforme",
+    },
+    opcionA_prima: {
+      label: "Hojas lanceoladas u ovado-lanceoladas, atenuadas en la base",
+      keyStep: "O'",
+      nextNodeId: "eupatorium_p",
+    },
+  },
+  eupatorium_p: {
+    id: "eupatorium_p",
+    milestone: "Eupatorium",
+    manualPage: 472,
+    descripcion: "Eupatorium - P: corola y aquenios",
+    opcionA: {
+      label: "Corolas de 2,5 mm; aquenios de 1,3-1,5 mm",
+      keyStep: "P",
+      especieId: "eupatorium_candolleanum",
+    },
+    opcionA_prima: {
+      label: "Corolas de 3,5 mm; aquenios de 3-3,5 mm",
+      keyStep: "P'",
+      especieId: "eupatorium_cabrerae",
     },
   },
   vernonia_a: {
