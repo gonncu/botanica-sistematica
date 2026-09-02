@@ -7041,6 +7041,14 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas lanceoladas, de más de 2 mm de ancho, laxamente híspidas; las inferiores aserradas o lobuladas y las superiores enteras; capítulos pequeños, numerosísimos, en amplia panoja; involucro acampanado, de 3-4 mm, con pocas brácteas lineales, agudas, glabras o con pelos esparcidos; aquenios ligeramente velludos; papus blanco o amarillento.",
     "América austral. En suelos húmedos."
   ),
+  vittadinia_trifurcata: species(
+    "vittadinia_trifurcata",
+    "Vittadinia trifurcata",
+    "130. Compositae - Astereae",
+    "Hierba perenne, ramosa y estrigiloso-pubescente, con tallos erectos, densamente hojosos hasta la mitad y casi desnudos arriba, de 10-20 cm de alto.",
+    "Hojas lineales, trifurcadas, con raquis y lóbulos angostos, agudos y enteros; hojas superiores enteras y lineales; capítulos radiados, solitarios en el ápice del tallo; involucro acampanado, de 5-6,5 mm, con brácteas lineales, agudas y pubescentes en 2-3 series; flores marginales blancas, cortamente liguladas; aquenios seríceo-pubescentes; papus amarillento o rojizo.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Común en la estepa clímax."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -20405,7 +20413,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Ramas del estilo lineales; hojas trifurcadas",
       keyStep: "E",
-      especieId: "compositae",
+      especieId: "vittadinia_trifurcata",
     },
     opcionA_prima: {
       label: "Ramas del estilo lanceoladas o triangulares; hojas no trifurcadas",
