@@ -7729,6 +7729,110 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas pecioladas, ovadas y crenado-aserradas; capítulos numerosos, largamente pedunculados, cimosos; involucro de 2,5-3 mm por 4-5 mm, con brácteas ovadas, obtusas y glabras; páleas lanceoladas con un lóbulo a cada lado; flores marginales 4-5, blancas y cortamente liguladas; aquenios obovado-turbinados, pubescentes; papus con 15-20 pajitas laciniadas casi tan largas como la corola, ausente en las flores femeninas.",
     "Perú. Ruderal en América y Europa. Común en los bosques de la ribera del Plata, jardines y rastrojos."
   ),
+  jaumea_linearifolia: species(
+    "jaumea_linearifolia",
+    "Jaumea linearifolia",
+    "130. Compositae - Helenieae",
+    "Hierba perenne, rizomatosa, con tallos ascendentes o erectos, glabros, de 20-40 cm de alto.",
+    "Hojas lineal-subuladas y carnosas; capítulos discoideos, solitarios y largamente pedunculados; involucro de 10-12 mm por 6-8 mm; aquenios oblongos, multicostados y glabros; papus formado por muchas pajitas estrechas barbeladas.",
+    "Uruguay y provincia de Buenos Aires. En juncales inundables próximos al mar."
+  ),
+  flaveria_bidentis: species(
+    "flaveria_bidentis",
+    "Flaveria bidentis",
+    "130. Compositae - Helenieae",
+    "Hierba anual, erecta, glabra, ramificada dicotómicamente, de 40-90 cm de alto.",
+    "Hojas opuestas, lanceoladas o elípticas, trinervadas y aserradas; capítulos sésiles en cimas muy compactas; involucro cilíndrico de 4 mm por 1 mm, con 3 brácteas y una bráctea exterior más corta; flores amarillas, dimorfas, con una femenina y 1-5 hermafroditas; aquenios oblongos, negros y sin papus.",
+    "América cálida. Común en suelos sueltos, escombros y rastrojos; florece en otoño. Nombre vulgar: fique."
+  ),
+  schkuhria_pinnata: species(
+    "schkuhria_pinnata",
+    "Schkuhria pinnata",
+    "130. Compositae - Helenieae",
+    "Hierba anual, erecta, difuso-ramosa, con tallos ásperos y hojosos hasta el ápice, de 20-40 cm de alto.",
+    "Hojas pinatisectas o bipinatisectas, con raquis y segmentos filiformes; capítulos numerosos, cimoso-corimbosos; involucro de 5-6 mm, con 5 brácteas de borde membranáceo; flores 5-8, una femenina y las demás hermafroditas; aquenios cuadrangulares, obpiramidales; papus formado por 8 pajitas múticas.",
+    "América del Sur cálida. Planta insecticida. Nombres vulgares: matapulgas, canchalagua."
+  ),
+  schkuhria_pinnata_var_abrotanoides: species(
+    "schkuhria_pinnata_var_abrotanoides",
+    "Schkuhria pinnata var. abrotanoides",
+    "130. Compositae - Helenieae",
+    "Variedad de Schkuhria pinnata con papus mixto.",
+    "Papus formado por 4 pajitas aristadas y 4 múticas.",
+    "América cálida. Común en suelos secos de San Nicolás, Pergamino y Eva Perón."
+  ),
+  hymenoxys_anthemoides: species(
+    "hymenoxys_anthemoides",
+    "Hymenoxys anthemoides",
+    "130. Compositae - Helenieae",
+    "Hierba anual, glabra, con tallos ascendentes, ramosos, de 10-20 cm de alto.",
+    "Hojas pinatisectas, con raquis y segmentos lineales, de 15-30 mm de longitud total; capítulos solitarios y pedunculados; involucro globoso, de 6 mm, con brácteas ovadas y obtusas; flores amarillas, todas tubulosas; aquenios turbinados, densamente velludos; papus con pajitas membranáceas aristadas.",
+    "América cálida. Común en suelos húmedos. Nombre vulgar: topasaire."
+  ),
+  hymenoxys_haenkeana: species(
+    "hymenoxys_haenkeana",
+    "Hymenoxys haenkeana",
+    "130. Compositae - Helenieae",
+    "Hierba anual, glabra, con tallos erectos, de 20-30 cm de alto.",
+    "Hojas pinatisectas, de 25-80 mm de longitud total; capítulos solitarios, largamente pedunculados; involucro de 6-7 mm por 8-10 mm, con brácteas ovadas; flores amarillas, todas tubulosas; aquenios pilosos con papus pajizo.",
+    "Suelos salados del Perú, Bolivia y Argentina. Rara en la región: Bañado de Flores y Escobar."
+  ),
+  helenium_alternifolium: species(
+    "helenium_alternifolium",
+    "Helenium alternifolium",
+    "130. Compositae - Helenieae",
+    "Sufrútice erecto, densamente pubérulo, de 30-50 cm de alto.",
+    "Hojas alternas, lineales, enteras, lobuladas o pinatisectas; capítulos globosos, radiados, solitarios en el extremo desnudo de los tallos; involucro hemisférico, de 4 mm por 7-8 mm, con brácteas lineal-lanceoladas, velludas y reflejas a la madurez; flores liguladas citrinas; aquenios turbinados, densamente velludos; papus con 8-10 pajitas aristadas.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Rara en campos secos."
+  ),
+  gaillardia_megapotamica: species(
+    "gaillardia_megapotamica",
+    "Gaillardia megapotamica",
+    "130. Compositae - Helenieae",
+    "Sufrútice ramoso en la base, laxa y cortamente pubescente, de 40-60 cm de alto.",
+    "Hojas lanceoladas, enteras o con algún diente; capítulos globosos, discoideos, solitarios en el extremo desnudo de los tallos; involucro de 8-9 mm por 12-15 mm, con brácteas lineal-lanceoladas y velludas; flores amarillo-ocre; receptáculo con cerdas fuertes; aquenios densamente velludos; papus con páleas largas, trífidas en el ápice.",
+    "Uruguay y este y centro de la Argentina. En relictos de la estepa clímax."
+  ),
+  gaillardia_megapotamica_var_scabiosoides: species(
+    "gaillardia_megapotamica_var_scabiosoides",
+    "Gaillardia megapotamica var. scabiosoides",
+    "130. Compositae - Helenieae",
+    "Variedad de Gaillardia megapotamica con hojas profundamente divididas.",
+    "Hojas profundamente pinatisectas, con segmentos lineales; capítulos discoideos.",
+    "En campos fértiles, citada para Pergamino y Santa Catalina."
+  ),
+  gaillardia_megapotamica_var_radiata: species(
+    "gaillardia_megapotamica_var_radiata",
+    "Gaillardia megapotamica var. radiata",
+    "130. Compositae - Helenieae",
+    "Variedad de Gaillardia megapotamica con capítulos radiados.",
+    "Capítulos radiados, a diferencia de las formas discoideas de la especie típica y de la variedad scabiosoides.",
+    "Centro de la Argentina. Rara en la región."
+  ),
+  gaillardia_aristata: species(
+    "gaillardia_aristata",
+    "Gaillardia aristata",
+    "130. Compositae - Helenieae",
+    "Hierba perenne, erecta e híspida.",
+    "Hojas oblongo-lanceoladas, enteras o sinuadas; capítulos solitarios, radiados; flores amarillas o rojizas; papus con páleas cortas, enteras en el ápice.",
+    "América del Norte. Cultivada como ornamental y a veces espontánea en calles y rastrojos."
+  ),
+  tagetes_minuta: species(
+    "tagetes_minuta",
+    "Tagetes minuta",
+    "130. Compositae - Helenieae",
+    "Hierba anual, erecta y glabra, de 50-100 cm de alto.",
+    "Hojas opuestas, pinatisectas, con 4-8 pares de segmentos lanceolados, aserrados, y segmento terminal algo mayor; capítulos en cimas corimbiformes compactas; involucro cilíndrico, de 10-12 mm, con 4 brácteas involucrales provistas de bolsas oleíferas; flores liguladas 2-3 y tubulosas 3-4; aquenios fusiformes, negros y pubescentes; papus con 3-4 pajitas cortas y 1-2 largas.",
+    "Regiones cálidas de América del Sur; adventicia en Europa y Australia. Común en suelos modificados; florece en otoño. Nombre vulgar: chinchilla."
+  ),
+  porophyllum_obscurum: species(
+    "porophyllum_obscurum",
+    "Porophyllum obscurum",
+    "130. Compositae - Helenieae",
+    "Hierba perenne, glabra, de 50-100 cm de alto.",
+    "Hojas opuestas, lineales, enteras y glaucas, con bolsas oleíferas; capítulos largamente pedunculados, solitarios en el extremo de las ramitas; involucro cilíndrico, de 10-12 mm, con 5 brácteas; flores blancas o amarillentas, todas hermafroditas y tubulosas; aquenios lineales, pluriestriados; papus formado por muchas cerdas.",
+    "Brasil y norte de la Argentina. Muy rara en los alrededores de Buenos Aires."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -21034,7 +21138,23 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Otras tribus de Compositae",
       keyStep: "Tribus 5-13",
+      nextNodeId: "compositae_e",
+    },
+  },
+  compositae_e: {
+    id: "compositae_e",
+    milestone: "Compositae",
+    manualPage: 463,
+    descripcion: "Compositae: tribus desde Heliantheae, avance parcial",
+    opcionA: {
+      label: "Heliantheae: flores generalmente amarillas; receptáculo paleáceo; papus de escamas, aristas o ausente",
+      keyStep: "Tribu 5",
       nextNodeId: "heliantheae_a",
+    },
+    opcionA_prima: {
+      label: "Otras tribus de Compositae",
+      keyStep: "Tribus 6-13",
+      nextNodeId: "helenieae_a",
     },
   },
   astereae_a: {
@@ -22699,6 +22819,198 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hojas más disectas, con segmentos lineales o lineal-lanceolados",
       keyStep: "3a",
       especieId: "bidens_subalternans_var_simulans",
+    },
+  },
+  helenieae_a: {
+    id: "helenieae_a",
+    milestone: "Helenieae",
+    manualPage: 464,
+    descripcion: "Helenieae - A: glándulas oleíferas en brácteas involucrales",
+    opcionA: {
+      label: "Brácteas involucrales con glándulas oleíferas",
+      keyStep: "A",
+      nextNodeId: "helenieae_b",
+    },
+    opcionA_prima: {
+      label: "Brácteas involucrales sin glándulas oleíferas",
+      keyStep: "A'",
+      nextNodeId: "helenieae_c",
+    },
+  },
+  helenieae_b: {
+    id: "helenieae_b",
+    milestone: "Helenieae",
+    manualPage: 464,
+    descripcion: "Helenieae - B: tipo de papus",
+    opcionA: {
+      label: "Papus formado por muchas cerdas",
+      keyStep: "B",
+      especieId: "porophyllum_obscurum",
+    },
+    opcionA_prima: {
+      label: "Papus formado por pajitas",
+      keyStep: "B'",
+      especieId: "tagetes_minuta",
+    },
+  },
+  helenieae_c: {
+    id: "helenieae_c",
+    milestone: "Helenieae",
+    manualPage: 464,
+    descripcion: "Helenieae - C: presencia de papus",
+    opcionA: {
+      label: "Aquenios sin papus",
+      keyStep: "C",
+      especieId: "flaveria_bidentis",
+    },
+    opcionA_prima: {
+      label: "Aquenios con papus pajizo",
+      keyStep: "C'",
+      nextNodeId: "helenieae_d",
+    },
+  },
+  helenieae_d: {
+    id: "helenieae_d",
+    milestone: "Helenieae",
+    manualPage: 464,
+    descripcion: "Helenieae - D: número y borde de brácteas involucrales",
+    opcionA: {
+      label: "Brácteas involucrales menos de 6, con borde seco pergamináceo",
+      keyStep: "D",
+      nextNodeId: "schkuhria_a",
+    },
+    opcionA_prima: {
+      label: "Brácteas involucrales más de 6, sin borde seco",
+      keyStep: "D'",
+      nextNodeId: "helenieae_e",
+    },
+  },
+  helenieae_e: {
+    id: "helenieae_e",
+    milestone: "Helenieae",
+    manualPage: 464,
+    descripcion: "Helenieae - E: indumento del aquenio y anchura del papus",
+    opcionA: {
+      label: "Aquenios glabros y estriados; papus formado por pajitas muy estrechas",
+      keyStep: "E",
+      especieId: "jaumea_linearifolia",
+    },
+    opcionA_prima: {
+      label: "Aquenios pilosos; papus formado por pajitas anchas",
+      keyStep: "E'",
+      nextNodeId: "helenieae_f",
+    },
+  },
+  helenieae_f: {
+    id: "helenieae_f",
+    milestone: "Helenieae",
+    manualPage: 464,
+    descripcion: "Helenieae - F: cerdas en el receptáculo",
+    opcionA: {
+      label: "Receptáculo cubierto por cerdas fuertes",
+      keyStep: "F",
+      nextNodeId: "gaillardia_a",
+    },
+    opcionA_prima: {
+      label: "Receptáculo desprovisto de cerdas",
+      keyStep: "F'",
+      nextNodeId: "helenieae_g",
+    },
+  },
+  helenieae_g: {
+    id: "helenieae_g",
+    milestone: "Helenieae",
+    manualPage: 464,
+    descripcion: "Helenieae - G: forma del receptáculo y división foliar",
+    opcionA: {
+      label: "Receptáculo hemisférico; hojas enteras o lobuladas",
+      keyStep: "G",
+      especieId: "helenium_alternifolium",
+    },
+    opcionA_prima: {
+      label: "Receptáculo plano; hojas profundamente pinatisectas",
+      keyStep: "G'",
+      nextNodeId: "hymenoxys_a",
+    },
+  },
+  schkuhria_a: {
+    id: "schkuhria_a",
+    milestone: "Schkuhria pinnata",
+    manualPage: 510,
+    descripcion: "Schkuhria pinnata - forma típica o variedad abrotanoides",
+    opcionA: {
+      label: "Papus formado por 8 pajitas múticas",
+      keyStep: "1",
+      especieId: "schkuhria_pinnata",
+    },
+    opcionA_prima: {
+      label: "Papus formado por 4 pajitas aristadas y 4 múticas",
+      keyStep: "1a",
+      especieId: "schkuhria_pinnata_var_abrotanoides",
+    },
+  },
+  hymenoxys_a: {
+    id: "hymenoxys_a",
+    milestone: "Hymenoxys",
+    manualPage: 510,
+    descripcion: "Hymenoxys - A: porte y tamaño foliar",
+    opcionA: {
+      label: "Tallos ascendentes, ramosos, de 10-20 cm; hojas de 15-30 mm",
+      keyStep: "A",
+      especieId: "hymenoxys_anthemoides",
+    },
+    opcionA_prima: {
+      label: "Tallos erectos, de 20-30 cm; hojas de 25-80 mm",
+      keyStep: "A'",
+      especieId: "hymenoxys_haenkeana",
+    },
+  },
+  gaillardia_a: {
+    id: "gaillardia_a",
+    milestone: "Gaillardia",
+    manualPage: 512,
+    descripcion: "Gaillardia - A: longitud y ápice de las páleas del papus",
+    opcionA: {
+      label: "Páleas del papus largas, trífidas en el ápice; sufrútices de 40-60 cm",
+      keyStep: "A",
+      nextNodeId: "gaillardia_megapotamica_a",
+    },
+    opcionA_prima: {
+      label: "Páleas del papus cortas, enteras en el ápice; hierba perenne erecta e híspida",
+      keyStep: "A'",
+      especieId: "gaillardia_aristata",
+    },
+  },
+  gaillardia_megapotamica_a: {
+    id: "gaillardia_megapotamica_a",
+    milestone: "Gaillardia megapotamica",
+    manualPage: 513,
+    descripcion: "Gaillardia megapotamica - forma típica o variedades",
+    opcionA: {
+      label: "Hojas enteras o con algún diente; capítulos discoideos",
+      keyStep: "1",
+      especieId: "gaillardia_megapotamica",
+    },
+    opcionA_prima: {
+      label: "Hojas profundamente pinatisectas o capítulos radiados",
+      keyStep: "1a-1b",
+      nextNodeId: "gaillardia_megapotamica_b",
+    },
+  },
+  gaillardia_megapotamica_b: {
+    id: "gaillardia_megapotamica_b",
+    milestone: "Gaillardia megapotamica",
+    manualPage: 513,
+    descripcion: "Gaillardia megapotamica - variedades scabiosoides y radiata",
+    opcionA: {
+      label: "Hojas profundamente pinatisectas, con segmentos lineales; capítulos discoideos",
+      keyStep: "1a",
+      especieId: "gaillardia_megapotamica_var_scabiosoides",
+    },
+    opcionA_prima: {
+      label: "Capítulos radiados",
+      keyStep: "1b",
+      especieId: "gaillardia_megapotamica_var_radiata",
     },
   },
   grindelia_a: {
