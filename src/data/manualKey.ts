@@ -7465,6 +7465,78 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas concolores, oblanceolado-lineales, falcadas, agudas, incano-tomentosas en ambas caras, de 1-3 cm; capítulos en espigas hojosas compactas; involucro de 4-4,5 mm, con brácteas rojizas; aquenios levemente granulosos.",
     "América austral, en dunas y suelos arenosos."
   ),
+  polymnia_connata: species(
+    "polymnia_connata",
+    "Polymnia connata",
+    "130. Compositae - Heliantheae",
+    "Hierba de 1-3 m de alto, con tallos erectos, poco ramosos y pubescente-glandulosos.",
+    "Hojas opuestas, ovado-triangulares, contraídas en largo pecíolo alado, auriculado y connato con el pecíolo opuesto, irregularmente dentadas, glanduloso-pubescentes, de 10-40 cm por 6-20 cm; capítulos pocos, cimosos; involucro de 8 mm por 12 mm; aquenios oscuros y glabros.",
+    "Sur del Brasil, Paraguay, Uruguay y norte de la Argentina, hasta el Delta y la ribera del Plata."
+  ),
+  acanthospermum_australe: species(
+    "acanthospermum_australe",
+    "Acanthospermum australe",
+    "130. Compositae - Heliantheae",
+    "Hierba anual, decumbente y pubescente.",
+    "Frutos fusiformes, gruesos, cubiertos de cerdas ganchudas rígidas, de 7-9 mm; hojas rómbico-ovadas, dentadas, laxamente pubescentes, de 1,3-4 cm; capítulos pedicelados, solitarios en las axilas; involucro de 4 mm; flores amarillentas, con 5-8 marginales y unas 12 del disco.",
+    "América cálida y templada, adventicia en otros continentes. En suelos arenosos húmedos."
+  ),
+  acanthospermum_hispidum: species(
+    "acanthospermum_hispidum",
+    "Acanthospermum hispidum",
+    "130. Compositae - Heliantheae",
+    "Hierba anual, erecta, híspida, de 20-60 cm de alto, ramificada dicotómicamente.",
+    "Frutos cuneiformes, comprimidos, de 4-5 mm, cubiertos de espinas ganchudas y con dos largas espinas divergentes superiores; hojas ovadas, aserradas, pubescentes, de 2-12 cm; capítulos axilares, cortamente pedunculados; involucro de 4-5 mm; flores amarillas.",
+    "América cálida. Rara cerca de Buenos Aires."
+  ),
+  ambrosia_tenuifolia: species(
+    "ambrosia_tenuifolia",
+    "Ambrosia tenuifolia",
+    "130. Compositae - Heliantheae",
+    "Hierba perenne con raíces gemíferas y tallos erectos, hirsutos, de 20-100 cm de alto.",
+    "Fruto con 4-5 puntas alrededor del rostro, de 3 mm; hojas bipinatisectas, de 2-8 cm, con segmentos lineales, agudos, pubescentes, de 0,5-2 mm de ancho; capítulos masculinos en racimos terminales largos; involucro masculino de 1,5 mm por 2,5 mm.",
+    "América del Sur. Muy frecuente en suelos húmedos. Nombre vulgar: altamisa."
+  ),
+  ambrosia_elatior: species(
+    "ambrosia_elatior",
+    "Ambrosia elatior",
+    "130. Compositae - Heliantheae",
+    "Hierba anual, erecta, ramosa y pubescente, de 50-100 cm de alto.",
+    "Fruto con 4-5 puntas alrededor del rostro, de 3 mm; hojas pinatisectas, de 2-8 cm, con segmentos lanceolados, paucilobados, pubescentes, de 2-5 mm de ancho; capítulos masculinos en racimos terminales cortos; involucro masculino de 2 mm por 3 mm.",
+    "América cálida. Rara en el Delta y en la ribera."
+  ),
+  ambrosia_scabra: species(
+    "ambrosia_scabra",
+    "Ambrosia scabra",
+    "130. Compositae - Heliantheae",
+    "Hierba perenne, erecta y áspero-pubescente, de 50-150 cm de alto.",
+    "Frutos rugosos, sin puntas, de 3 mm; hojas de 7-20 cm, de contorno ovado, pinatisectas, con segmentos de 5-18 mm de ancho, aserrados o lobados, áspero-tuberculosos en el haz e híspidos en el envés; capítulos masculinos en largos racimos; involucro de 3 mm por 4 mm.",
+    "Uruguay y nordeste de la Argentina. En bosques del Delta y de la ribera."
+  ),
+  xanthium_cavanillesii: species(
+    "xanthium_cavanillesii",
+    "Xanthium cavanillesii",
+    "130. Compositae - Heliantheae",
+    "Hierba anual, erecta, ramosa y áspera, de 1-2 m de alto, sin espinas.",
+    "Hojas ásperas en ambas caras, pecioladas, con lámina ovado-triangular, acorazonada en la base, crenada, de 10-14 cm; capítulos masculinos globosos, racimosos; involucro fructífero de 1,5-2,5 cm; rostros del fruto bastante más largos que los garfios.",
+    "América del Sur. Invasora común en suelos modificados. Nombre vulgar: abrojo."
+  ),
+  xanthium_saccharatum: species(
+    "xanthium_saccharatum",
+    "Xanthium saccharatum",
+    "130. Compositae - Heliantheae",
+    "Hierba anual, erecta, ramosa y áspera, de 1-2 m de alto, sin espinas.",
+    "Hojas ásperas en ambas caras, largamente pecioladas, con lámina ovada u ovado-triangular, dentada y no acorazonada; involucro fructífero de 1,5-2,5 cm; rostros del fruto de la misma longitud que las espinas.",
+    "América del Norte. Muy rara en la región, citada para Dock Sur."
+  ),
+  xanthium_spinosum: species(
+    "xanthium_spinosum",
+    "Xanthium spinosum",
+    "130. Compositae - Heliantheae",
+    "Hierba anual, erecta, ramosa y lanuginosa, de 1 m de alto, con largas espinas trífidas amarillas, raramente sin espinas.",
+    "Hojas lanceoladas, enteras o con un lóbulo agudo por lado, laxamente pubescentes en el haz e incano-tomentosas en el envés, de 3-4 cm; capítulos masculinos en espigas terminales laxas, globosos, de 4 mm; frutos oblongos, cubiertos de espinas ganchudas, de 8-10 mm.",
+    "Cosmopolita. Frecuente en suelos modificados. Nombre vulgar: cepa-caballo."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -20754,7 +20826,23 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Otras tribus de Compositae",
       keyStep: "Tribus 4-13",
+      nextNodeId: "compositae_d",
+    },
+  },
+  compositae_d: {
+    id: "compositae_d",
+    milestone: "Compositae",
+    manualPage: 462,
+    descripcion: "Compositae: tribus desde Inuleae, avance parcial",
+    opcionA: {
+      label: "Inuleae: anteras sagitadas en la base; papus de pelos simples o plumosos; capítulos no unisexuales",
+      keyStep: "Tribu 4",
       nextNodeId: "inuleae_a",
+    },
+    opcionA_prima: {
+      label: "Otras tribus de Compositae",
+      keyStep: "Tribus 5-13",
+      nextNodeId: "heliantheae_a",
     },
   },
   astereae_a: {
@@ -21907,6 +21995,150 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Capítulos en espigas hojosas compactas",
       keyStep: "H'",
       especieId: "gnaphalium_falcatum",
+    },
+  },
+  heliantheae_a: {
+    id: "heliantheae_a",
+    milestone: "Heliantheae",
+    manualPage: 463,
+    descripcion: "Heliantheae - A: capítulos unisexuales o bisexuales",
+    opcionA: {
+      label: "Capítulos unisexuales; flores femeninas sin corola, encerradas en un involucro gamófilo persistente",
+      keyStep: "A",
+      nextNodeId: "heliantheae_b",
+    },
+    opcionA_prima: {
+      label: "Capítulos bisexuales; flores femeninas con corola",
+      keyStep: "A'",
+      nextNodeId: "heliantheae_c",
+    },
+  },
+  heliantheae_b: {
+    id: "heliantheae_b",
+    milestone: "Heliantheae",
+    manualPage: 463,
+    descripcion: "Heliantheae - B: brácteas involucrales de capítulos masculinos",
+    opcionA: {
+      label: "Brácteas involucrales de los capítulos masculinos soldadas; involucros femeninos rugosos o tuberculosos",
+      keyStep: "B",
+      nextNodeId: "ambrosia_a",
+    },
+    opcionA_prima: {
+      label: "Brácteas involucrales de los capítulos masculinos libres; involucros femeninos cubiertos de espinas ganchudas",
+      keyStep: "B'",
+      nextNodeId: "xanthium_a",
+    },
+  },
+  heliantheae_c: {
+    id: "heliantheae_c",
+    milestone: "Heliantheae",
+    manualPage: 463,
+    descripcion: "Heliantheae - C: fertilidad de las flores del disco",
+    opcionA: {
+      label: "Flores del disco masculinas por esterilidad del gineceo",
+      keyStep: "C",
+      nextNodeId: "heliantheae_d",
+    },
+    opcionA_prima: {
+      label: "Flores del disco hermafroditas, fértiles",
+      keyStep: "C'",
+      especieId: "compositae",
+    },
+  },
+  heliantheae_d: {
+    id: "heliantheae_d",
+    milestone: "Heliantheae",
+    manualPage: 463,
+    descripcion: "Heliantheae - D: seudofrutos espinosos o capítulos grandes",
+    opcionA: {
+      label: "Aquenios totalmente envueltos por brácteas persistentes, formando seudofrutos con espinas ganchudas",
+      keyStep: "D",
+      nextNodeId: "acanthospermum_a",
+    },
+    opcionA_prima: {
+      label: "Aquenios no cubiertos por brácteas persistentes ni con cerdas ganchudas; capítulos grandes",
+      keyStep: "D'",
+      especieId: "polymnia_connata",
+    },
+  },
+  acanthospermum_a: {
+    id: "acanthospermum_a",
+    milestone: "Acanthospermum",
+    manualPage: 498,
+    descripcion: "Acanthospermum - A: forma y armadura de los frutos",
+    opcionA: {
+      label: "Frutos fusiformes, gruesos, cubiertos de cerdas ganchudas rígidas, de 7-9 mm",
+      keyStep: "A",
+      especieId: "acanthospermum_australe",
+    },
+    opcionA_prima: {
+      label: "Frutos cuneiformes, comprimidos, de 4-5 mm, con espinas ganchudas y dos espinas superiores divergentes",
+      keyStep: "A'",
+      especieId: "acanthospermum_hispidum",
+    },
+  },
+  ambrosia_a: {
+    id: "ambrosia_a",
+    milestone: "Ambrosia",
+    manualPage: 498,
+    descripcion: "Ambrosia - A: fruto con puntas o rugoso",
+    opcionA: {
+      label: "Fruto con 4-5 puntas alrededor del rostro; hojas de 2-8 cm",
+      keyStep: "A",
+      nextNodeId: "ambrosia_b",
+    },
+    opcionA_prima: {
+      label: "Frutos rugosos, sin puntas; hojas de 7-20 cm",
+      keyStep: "A'",
+      especieId: "ambrosia_scabra",
+    },
+  },
+  ambrosia_b: {
+    id: "ambrosia_b",
+    milestone: "Ambrosia",
+    manualPage: 498,
+    descripcion: "Ambrosia - B: división de las hojas",
+    opcionA: {
+      label: "Hojas bipinatisectas, con segmentos lineales de 0,5-2 mm de ancho",
+      keyStep: "B",
+      especieId: "ambrosia_tenuifolia",
+    },
+    opcionA_prima: {
+      label: "Hojas pinatisectas, con segmentos lanceolados de 2-5 mm de ancho",
+      keyStep: "B'",
+      especieId: "ambrosia_elatior",
+    },
+  },
+  xanthium_a: {
+    id: "xanthium_a",
+    milestone: "Xanthium",
+    manualPage: 499,
+    descripcion: "Xanthium - A: presencia de espinas en la planta",
+    opcionA: {
+      label: "Plantas sin espinas; hojas ásperas en ambas caras; involucro fructífero de 1,5-2,5 cm",
+      keyStep: "A",
+      nextNodeId: "xanthium_b",
+    },
+    opcionA_prima: {
+      label: "Plantas con largas espinas trífidas amarillas, raramente sin espinas",
+      keyStep: "A'",
+      especieId: "xanthium_spinosum",
+    },
+  },
+  xanthium_b: {
+    id: "xanthium_b",
+    milestone: "Xanthium",
+    manualPage: 499,
+    descripcion: "Xanthium - B: longitud relativa de rostros y garfios del fruto",
+    opcionA: {
+      label: "Rostros del fruto bastante más largos que los garfios; hojas acorazonadas en la base",
+      keyStep: "B",
+      especieId: "xanthium_cavanillesii",
+    },
+    opcionA_prima: {
+      label: "Rostros del fruto de la misma longitud que las espinas; hojas no acorazonadas",
+      keyStep: "B'",
+      especieId: "xanthium_saccharatum",
     },
   },
   grindelia_a: {
