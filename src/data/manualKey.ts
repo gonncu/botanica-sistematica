@@ -8137,6 +8137,142 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas lirado-pinatisectas, con segmentos ovados, dentados, glanduloso-pubescentes en el haz y tomentosas en el envés; capítulos grandes, solitarios en el ápice de largos pedúnculos; involucro hemisférico, de 6-7 mm por 10-12 mm, con brácteas ovadas laciniadas en el ápice; flores amarillentas; aquenios ovoideos, densamente lanosos; papus con 1-2 series de pajitas cortas.",
     "África austral. Adventicia en la Isla Maciel, junto a la Capital Federal."
   ),
+  arctium_minus: species(
+    "arctium_minus",
+    "Arctium minus",
+    "130. Compositae - Cynareae",
+    "Hierba bienal, erecta y lanuginosa, de 1-1,5 m de alto.",
+    "Hojas alternas, grandes, ovado-oblongas, cordadas, ondulado-dentadas, largamente pecioladas, verdes en el haz y lanuginosas en el envés; capítulos casi sésiles en cimas racemiformes, los superiores amontonados; involucro globoso, de 12-15 mm por 15-20 mm, con brácteas lineales, subuladas y ganchudas; flores purpúreas; aquenios oblongos, glabros y lustrosos; papus formado por numerosas cerdas anchas.",
+    "Europa y Asia occidental; adventicia en América. En suelos modificados. Medicinal. Nombres vulgares: lampazo, bardana."
+  ),
+  carduus_nutans_var_macrocephalus: species(
+    "carduus_nutans_var_macrocephalus",
+    "Carduus nutans var. macrocephalus",
+    "130. Compositae - Cynareae",
+    "Hierba anual, erecta y glabra, de 1-2 m de alto, con ramas casi desnudas en la parte superior.",
+    "Capítulos globosos, muy grandes, solitarios y más o menos nutantes; involucro de cerca de 3 cm por 6 cm, con brácteas lanceoladas, glabras, espinescentes en el ápice y recurvadas; flores purpúreas, bilabiado-tubulosas; aquenios estriados y glabros; hojas lanceoladas, sinuadas, con dientes largamente espinosos.",
+    "Europa; adventicia en el centro de la Argentina. Común en campos con hacienda. Nombre vulgar: cardo."
+  ),
+  carduus_acanthoides: species(
+    "carduus_acanthoides",
+    "Carduus acanthoides",
+    "130. Compositae - Cynareae",
+    "Hierba anual, erecta, ramosa, glabra o casi glabra, de 1,5-2 m de alto, con ramas aladas y espinosas.",
+    "Capítulos globosos, pequeños, agrupados en corto número en el ápice de las ramitas; involucro de 1,5 cm por 1,2-1,5 cm, con brácteas lineal-subuladas y espinosas; flores purpúreas, bilabiado-tubulosas; aquenios glabros, amarillentos y estriados; hojas pinatífidas, espinosas.",
+    "Europa. Maleza invasora en las regiones agrícolas de la Argentina. Nombre vulgar: cardo."
+  ),
+  carduus_tenuiflorus: species(
+    "carduus_tenuiflorus",
+    "Carduus tenuiflorus",
+    "130. Compositae - Cynareae",
+    "Hierba anual o bienal, lanuginosa, de 50-120 cm de alto, con tallos ramosos provistos de alas recortadas espinosas.",
+    "Capítulos ovoideos o cilíndricos, amontonados en número de 3-20 y sésiles en el ápice de las ramas; involucro cilíndrico, de 17-20 mm por 10-14 mm, con brácteas lanceoladas, espinosas en el ápice, glabras o casi en el dorso; flores tubulosas, pentasectas; aquenios oblongos, con 5-6 estrías a cada lado; hojas lanceoladas, decurrentes, lobulado-espinosas y lanosas.",
+    "Europa; adventicia en la Argentina. Nombre vulgar: cardo."
+  ),
+  carduus_pycnocephalus: species(
+    "carduus_pycnocephalus",
+    "Carduus pycnocephalus",
+    "130. Compositae - Cynareae",
+    "Hierba anual o bienal, erecta, ramosa y lanosa, de 30-120 cm de alto, con tallos provistos de alas recortadas espinosas.",
+    "Capítulos ovoideos, aglomerados en número de 2-3 en el ápice de las ramas; involucro de unos 20 mm por 8-10 mm, con brácteas lanceoladas, espinosas en el ápice y lanosas en el dorso; flores tubulosas, pentasectas; aquenios oblongos y glabros; hojas lanceoladas, lobado-espinosas y lanosas.",
+    "Sur de Europa. Rara en los alrededores de Buenos Aires."
+  ),
+  cirsium_vulgare: species(
+    "cirsium_vulgare",
+    "Cirsium vulgare",
+    "130. Compositae - Cynareae",
+    "Hierba anual, espinosa, con tallos erectos alados y pubescentes, de 80-140 cm de alto.",
+    "Alas dentado-espinosas; hojas lanceoladas, lobadas, espinosas y pubescentes; capítulos grandes, subsésiles en el extremo de ramitas cortas; involucro ovoide, de 3 cm, con brácteas lanceolado-lineales terminadas en una larga espina algo curva; flores purpúreas o amarillentas; aquenios oblongos y glabros; papus formado por numerosos pelos plumosos.",
+    "Europa; adventicia en las regiones templadas. Común en campos de pastoreo y suelos modificados. Nombre vulgar: cardo negro."
+  ),
+  cynara_cardunculus: species(
+    "cynara_cardunculus",
+    "Cynara cardunculus",
+    "130. Compositae - Cynareae",
+    "Hierba perenne, erecta y elevada, de 1-1,5 m de alto.",
+    "Hojas muy grandes, pinatisectas, con segmentos lanceolados y espinosos, verdes en el haz y gríseo-lanosas en el envés; capítulos muy grandes, solitarios o en falsas cimas; involucro semigloboso, de 5 cm por 5-6 cm, con brácteas lanceoladas, agudas, espinosas en el ápice y glabras; flores azules o violáceas; aquenios glabros, obovoideos, gruesos y levemente comprimidos; papus con numerosos pelos plumosos soldados en la base.",
+    "España y norte de África. Adventicia en la Argentina desde el siglo XVIII. Muy frecuente en campos de pastoreo; comestible y coagulante de la leche. Nombres vulgares: cardo de Castilla, cardo, cardón."
+  ),
+  silybum_marianum: species(
+    "silybum_marianum",
+    "Silybum marianum",
+    "130. Compositae - Cynareae",
+    "Hierba anual, erecta, de 1-2 m de alto.",
+    "Hojas profundamente lobadas, espinosas, con manchas blancas en la cara superior; capítulos grandes, solitarios en el extremo de las ramas; involucro semigloboso a globoso, de 3-4 cm por 3-4 cm, con brácteas multiseriadas terminadas en larga espina y dentado-espinosas en el margen; flores purpúreas o violáceas; aquenios obovados y glabros; papus con numerosas cerdas simples rígidas.",
+    "Europa; adventicia en América del Sur. Frecuente en campos con hacienda y suelos modificados. Nombre vulgar: cardo asnal."
+  ),
+  onopordon_acanthium: species(
+    "onopordon_acanthium",
+    "Onopordon acanthium",
+    "130. Compositae - Cynareae",
+    "Hierba bienal, erecta, albo-tomentosa, de 1-1,5 m de alto.",
+    "Tallos con alas espinosas; hojas ovado-oblongas, dentadas o lobadas, espinosas en el margen; capítulos grandes, solitarios; involucro globoso, de 1,5-2,5 cm por 2-3 cm, con brácteas subuladas; flores violáceas; aquenios glabros, gruesos, con arrugas transversales oscuras y surcos claros; papus formado por cerdas amarillentas desiguales.",
+    "Europa; adventicia en la Argentina. En terraplenes del ferrocarril y bordes de caminos. Nombre vulgar: cardo."
+  ),
+  centaurea_calcitrapa: species(
+    "centaurea_calcitrapa",
+    "Centaurea calcitrapa",
+    "130. Compositae - Cynareae",
+    "Hierba anual o bienal, difuso-ramosa, de 30-50 cm de alto.",
+    "Hojas superiores e inferiores profundamente pinatisectas, con segmentos lanceolados, mucronados y pubescentes; capítulos sésiles en las bifurcaciones del tallo y ápice de las ramitas; involucro ovoide, de 12 mm, con brácteas ovaladas prolongadas en larguísima espina con dos espinitas basales a cada lado; flores violáceas, isomorfas, todas hermafroditas; aquenios glabros; papus nulo.",
+    "Europa; adventicia en América. Común en suelos modificados. Nombre vulgar: abre puño."
+  ),
+  centaurea_melitensis: species(
+    "centaurea_melitensis",
+    "Centaurea melitensis",
+    "130. Compositae - Cynareae",
+    "Hierba anual, erecta y áspero-pilosa, de 40-80 cm de alto.",
+    "Hojas inferiores lirado-pinatífidas; hojas superiores enteras, lineal-lanceoladas, decurrentes y áspero-pubescentes; capítulos 1-3 en el extremo de ramitas cortas; involucro ovoide, de 12 mm, con espinas de 4-5 mm y 2-3 dientes espinosos basales a cada lado; flores amarillas; aquenios glabros; papus con muchas pajitas lineales cortas.",
+    "Sur de Europa y norte de África; adventicia en América. Común en suelos modificados."
+  ),
+  centaurea_solstitialis: species(
+    "centaurea_solstitialis",
+    "Centaurea solstitialis",
+    "130. Compositae - Cynareae",
+    "Hierba anual o bienal, de 50 cm de alto, con tallos lanosos y alados.",
+    "Hojas inferiores pinatífidas; hojas superiores enteras, lineales y lanosas; capítulos solitarios; involucro ovoideo, de 10 mm, con brácteas provistas de espinas de 14-22 mm y algunas espinitas basales; flores amarillas, isomorfas; aquenios glabros; papus formado por numerosas cerdas blancas.",
+    "Europa; adventicia en América. Rara en la región; frecuente en suelos arenosos del oeste de Buenos Aires. Nombre vulgar: abre puño amarillo."
+  ),
+  centaurea_dubia_subsp_vochinensis: species(
+    "centaurea_dubia_subsp_vochinensis",
+    "Centaurea dubia subsp. vochinensis",
+    "130. Compositae - Cynareae",
+    "Hierba perenne, ramosa, erecta, de 50 cm de alto.",
+    "Hojas lanceoladas, agudas, enteras o dentadas en la base, estrigoso-pubescentes; capítulos solitarios; involucro globoso, de 13-14 mm, con brácteas lanceoladas, lanuginosas, provistas de apéndice ovado-rómbico, castaño y cortamente laciniado; flores dimorfas, las marginales asexuadas y radiantes; papus ausente o formado por pajitas muy cortas.",
+    "Europa; adventicia en la Argentina. Rara en Eva Perón."
+  ),
+  centaurea_jacea: species(
+    "centaurea_jacea",
+    "Centaurea jacea",
+    "130. Compositae - Cynareae",
+    "Hierba perenne, ramosa, erecta y pubescente.",
+    "Hojas inferiores lanceoladas, agudas, con 1-2 lóbulos a cada lado; hojas superiores lanceoladas; capítulos solitarios; involucro globoso, de cerca de 2 cm de diámetro, con brácteas de apéndice anchamente flabelado, laciniado casi hasta la base, castaño claro; flores violáceas, las marginales asexuadas y radiantes; aquenios pubescentes; papus cortísimo.",
+    "Norte de Europa. Adventicia en el sur de la Argentina y cerca de Abasto, alrededores de Eva Perón."
+  ),
+  centaurea_cyanus: species(
+    "centaurea_cyanus",
+    "Centaurea cyanus",
+    "130. Compositae - Cynareae",
+    "Hierba anual, erecta, ramosa, algo tomentosa, de 30-60 cm de alto.",
+    "Hojas inferiores pinatífidas y superiores lineales, enteras; capítulos solitarios, pequeños; involucro ovoideo, de 10-12 mm, con brácteas lanceoladas, glabras, ciliado-espinosas en el borde y sin espina coriácea apical; flores azules, las marginales asexuadas y casi liguliformes; aquenios pubescentes; papus formado por pajitas desiguales.",
+    "Sur de Europa. Cultivada como ornamental y subespontánea. Nombre vulgar: azulejo."
+  ),
+  centaurea_tweediei: species(
+    "centaurea_tweediei",
+    "Centaurea tweediei",
+    "130. Compositae - Cynareae",
+    "Hierba anual, erecta, glabra o áspera, de 50-100 cm de alto.",
+    "Hojas lineal-lanceoladas, enteras y ásperas; capítulos solitarios, grandes; involucro globoso, de 2-2,5 cm, con brácteas oblongo-lanceoladas, glabras, provistas de un apéndice lineal laciniado en el ápice; flores purpúreas, isomorfas; aquenios negros; papus cerdoso.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina, hasta el Delta del Paraná."
+  ),
+  carthamus_lanatus: species(
+    "carthamus_lanatus",
+    "Carthamus lanatus",
+    "130. Compositae - Cynareae",
+    "Hierba anual, erecta y laxamente pubescente, de unos 50 cm de alto.",
+    "Hojas coriáceas, sésiles, semiamplexicaules, lanceoladas, pinatisectas, con lóbulos y ápice largamente espinosos, glabras o pubescentes; capítulos grandes, cimosos, en las bifurcaciones del tallo y extremo de las ramitas; involucro de 3-4 cm por 2 cm, con brácteas coriáceas, lanceoladas, dentado-espinosas y abiertas; flores amarillas; aquenios glabros, obovoideos, tetragonales; papus formado por muchas pajitas desiguales.",
+    "Europa; adventicia en América. Frecuente en campos de pastoreo."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -21513,16 +21649,48 @@ export const manualKeyData: Record<string, CladoNode> = {
     id: "compositae_i",
     milestone: "Compositae",
     manualPage: 464,
-    descripcion: "Compositae: tribus Calenduleae y Arctotideae, avance parcial",
+    descripcion: "Compositae: tribus desde Calenduleae, avance parcial",
     opcionA: {
       label: "Calenduleae: aquenios curvados, con puntas en el dorso, sin papus",
       keyStep: "Tribu 9",
       especieId: "calendula_arvensis",
     },
     opcionA_prima: {
-      label: "Arctotideae: aquenios densamente lanosos, con papus de pajitas cortas",
+      label: "Otras tribus de Compositae",
+      keyStep: "Tribus 10-13",
+      nextNodeId: "compositae_j",
+    },
+  },
+  compositae_j: {
+    id: "compositae_j",
+    milestone: "Compositae",
+    manualPage: 460,
+    descripcion: "Compositae: Arctotideae o tribus con estilos no contraídos",
+    opcionA: {
+      label: "Arctotideae: estilos gruesos, apenas divididos en el ápice y contraídos bruscamente hacia la mitad",
       keyStep: "Tribu 10",
       especieId: "cryptostemma_calendulaceum",
+    },
+    opcionA_prima: {
+      label: "Estilos no contraídos hacia su mitad; parte indivisa de grosor uniforme",
+      keyStep: "Tribus 11-13",
+      nextNodeId: "compositae_k",
+    },
+  },
+  compositae_k: {
+    id: "compositae_k",
+    milestone: "Compositae",
+    manualPage: 461,
+    descripcion: "Compositae: tribus con anteras sagitadas, avance parcial",
+    opcionA: {
+      label: "Cynareae: anteras notablemente sagitadas; estilo con coronita de pelos debajo de la bifurcación; plantas generalmente espinosas",
+      keyStep: "Tribu 11",
+      nextNodeId: "cynareae_a",
+    },
+    opcionA_prima: {
+      label: "Otras tribus de Compositae",
+      keyStep: "Tribus 12-13",
+      especieId: "compositae",
     },
   },
   astereae_a: {
@@ -23955,6 +24123,262 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hojas provistas de estrechas aurículas lineales",
       keyStep: "13c",
       especieId: "senecio_grisebachii_var_leptotus",
+    },
+  },
+  cynareae_a: {
+    id: "cynareae_a",
+    milestone: "Cynareae",
+    manualPage: 464,
+    descripcion: "Cynareae - A: articulación basal del aquenio",
+    opcionA: {
+      label: "Aquenios fijos al receptáculo por una articulación basal",
+      keyStep: "A",
+      nextNodeId: "cynareae_b",
+    },
+    opcionA_prima: {
+      label: "Aquenios no fijos por articulación basal",
+      keyStep: "A'",
+      nextNodeId: "cynareae_g",
+    },
+  },
+  cynareae_b: {
+    id: "cynareae_b",
+    milestone: "Cynareae",
+    manualPage: 464,
+    descripcion: "Cynareae - B: brácteas involucrales",
+    opcionA: {
+      label: "Brácteas involucrales subuladas, ganchudas en el ápice",
+      keyStep: "B",
+      especieId: "arctium_minus",
+    },
+    opcionA_prima: {
+      label: "Brácteas involucrales espinosas, pero no ganchudas",
+      keyStep: "B'",
+      nextNodeId: "cynareae_c",
+    },
+  },
+  cynareae_c: {
+    id: "cynareae_c",
+    milestone: "Cynareae",
+    manualPage: 464,
+    descripcion: "Cynareae - C: receptáculo con pelos o alveolado",
+    opcionA: {
+      label: "Receptáculo cubierto de largos pelos, no alveolado",
+      keyStep: "C",
+      nextNodeId: "cynareae_d",
+    },
+    opcionA_prima: {
+      label: "Receptáculo alveolado o con otro tipo de indumento",
+      keyStep: "C'",
+      especieId: "onopordon_acanthium",
+    },
+  },
+  cynareae_d: {
+    id: "cynareae_d",
+    milestone: "Cynareae",
+    manualPage: 464,
+    descripcion: "Cynareae - D: filamentos de anteras y espinas laterales",
+    opcionA: {
+      label: "Filamentos de las anteras libres entre sí; brácteas involucrales sin espinas laterales",
+      keyStep: "D",
+      nextNodeId: "cynareae_e",
+    },
+    opcionA_prima: {
+      label: "Filamentos soldados o brácteas con espinas laterales",
+      keyStep: "D'",
+      especieId: "silybum_marianum",
+    },
+  },
+  cynareae_e: {
+    id: "cynareae_e",
+    milestone: "Cynareae",
+    manualPage: 464,
+    descripcion: "Cynareae - E: pelos del papus",
+    opcionA: {
+      label: "Pelos del papus simples",
+      keyStep: "E",
+      nextNodeId: "carduus_a",
+    },
+    opcionA_prima: {
+      label: "Pelos del papus plumosos",
+      keyStep: "E'",
+      nextNodeId: "cynareae_f",
+    },
+  },
+  cynareae_f: {
+    id: "cynareae_f",
+    milestone: "Cynareae",
+    manualPage: 527,
+    descripcion: "Cynareae - F: capítulos y receptáculo",
+    opcionA: {
+      label: "Capítulos muy grandes, solitarios o en falsas cimas; receptáculo craso con largas cerdas",
+      keyStep: "F",
+      especieId: "cynara_cardunculus",
+    },
+    opcionA_prima: {
+      label: "Capítulos grandes, subsésiles en ramitas cortas; receptáculo pestañoso",
+      keyStep: "F'",
+      especieId: "cirsium_vulgare",
+    },
+  },
+  carduus_a: {
+    id: "carduus_a",
+    milestone: "Carduus",
+    manualPage: 526,
+    descripcion: "Carduus - A: capítulos globosos u ovoideos",
+    opcionA: {
+      label: "Capítulos globosos; flores bilabiado-tubulosas; plantas glabras o casi glabras",
+      keyStep: "A",
+      nextNodeId: "carduus_b",
+    },
+    opcionA_prima: {
+      label: "Capítulos ovoideos o cilíndricos; flores tubulosas pentasectas; plantas lanuginosas",
+      keyStep: "A'",
+      nextNodeId: "carduus_c",
+    },
+  },
+  carduus_b: {
+    id: "carduus_b",
+    milestone: "Carduus",
+    manualPage: 526,
+    descripcion: "Carduus - B: tamaño y disposición de capítulos globosos",
+    opcionA: {
+      label: "Capítulos muy grandes, solitarios y más o menos nutantes",
+      keyStep: "B",
+      especieId: "carduus_nutans_var_macrocephalus",
+    },
+    opcionA_prima: {
+      label: "Capítulos pequeños agrupados en corto número en el ápice de las ramitas",
+      keyStep: "B'",
+      especieId: "carduus_acanthoides",
+    },
+  },
+  carduus_c: {
+    id: "carduus_c",
+    milestone: "Carduus",
+    manualPage: 526,
+    descripcion: "Carduus - C: número de capítulos aglomerados",
+    opcionA: {
+      label: "Capítulos amontonados en número de 3-20, sésiles en el ápice de las ramas",
+      keyStep: "C",
+      especieId: "carduus_tenuiflorus",
+    },
+    opcionA_prima: {
+      label: "Capítulos aglomerados en número de 2-3 en el ápice de las ramas",
+      keyStep: "C'",
+      especieId: "carduus_pycnocephalus",
+    },
+  },
+  cynareae_g: {
+    id: "cynareae_g",
+    milestone: "Cynareae",
+    manualPage: 465,
+    descripcion: "Cynareae - G: brácteas del involucro semejantes a las hojas",
+    opcionA: {
+      label: "Brácteas del involucro de forma y consistencia análoga a la de las hojas",
+      keyStep: "G",
+      especieId: "carthamus_lanatus",
+    },
+    opcionA_prima: {
+      label: "Brácteas involucrales de forma distinta a las hojas",
+      keyStep: "G'",
+      nextNodeId: "centaurea_a",
+    },
+  },
+  centaurea_a: {
+    id: "centaurea_a",
+    milestone: "Centaurea",
+    manualPage: 529,
+    descripcion: "Centaurea - A: espina coriácea apical",
+    opcionA: {
+      label: "Brácteas involucrales terminadas en una larga espina coriácea",
+      keyStep: "A",
+      nextNodeId: "centaurea_b",
+    },
+    opcionA_prima: {
+      label: "Brácteas involucrales sin espina coriácea en el ápice",
+      keyStep: "A'",
+      nextNodeId: "centaurea_d",
+    },
+  },
+  centaurea_b: {
+    id: "centaurea_b",
+    milestone: "Centaurea",
+    manualPage: 529,
+    descripcion: "Centaurea - B: color de flores",
+    opcionA: {
+      label: "Flores violáceas; hojas superiores e inferiores profundamente pinatisectas",
+      keyStep: "B",
+      especieId: "centaurea_calcitrapa",
+    },
+    opcionA_prima: {
+      label: "Flores amarillas; hojas superiores enteras",
+      keyStep: "B'",
+      nextNodeId: "centaurea_c",
+    },
+  },
+  centaurea_c: {
+    id: "centaurea_c",
+    milestone: "Centaurea",
+    manualPage: 529,
+    descripcion: "Centaurea - C: longitud de espinas del involucro",
+    opcionA: {
+      label: "Espinas del involucro de 4-5 mm, con 2-3 dientes espinosos basales a cada lado",
+      keyStep: "C",
+      especieId: "centaurea_melitensis",
+    },
+    opcionA_prima: {
+      label: "Espinas del involucro de 14-22 mm, con algunas espinitas en la base",
+      keyStep: "C'",
+      especieId: "centaurea_solstitialis",
+    },
+  },
+  centaurea_d: {
+    id: "centaurea_d",
+    milestone: "Centaurea",
+    manualPage: 529,
+    descripcion: "Centaurea - D: apéndice membranáceo circular",
+    opcionA: {
+      label: "Brácteas con apéndice membranáceo circular más o menos laciniado",
+      keyStep: "D",
+      nextNodeId: "centaurea_e",
+    },
+    opcionA_prima: {
+      label: "Brácteas sin apéndice membranáceo circular",
+      keyStep: "D'",
+      nextNodeId: "centaurea_f",
+    },
+  },
+  centaurea_e: {
+    id: "centaurea_e",
+    milestone: "Centaurea",
+    manualPage: 529,
+    descripcion: "Centaurea - E: forma del apéndice de las brácteas",
+    opcionA: {
+      label: "Apéndice ovado-rómbico, castaño, cortamente laciniado",
+      keyStep: "E",
+      especieId: "centaurea_dubia_subsp_vochinensis",
+    },
+    opcionA_prima: {
+      label: "Apéndice anchamente flabelado, laciniado casi hasta la base",
+      keyStep: "E'",
+      especieId: "centaurea_jacea",
+    },
+  },
+  centaurea_f: {
+    id: "centaurea_f",
+    milestone: "Centaurea",
+    manualPage: 529,
+    descripcion: "Centaurea - F: tamaño y color de capítulos",
+    opcionA: {
+      label: "Capítulos solitarios, pequeños; flores azules; hojas superiores lineales",
+      keyStep: "F",
+      especieId: "centaurea_cyanus",
+    },
+    opcionA_prima: {
+      label: "Capítulos solitarios, grandes; flores purpúreas; hojas lineal-lanceoladas",
+      keyStep: "F'",
+      especieId: "centaurea_tweediei",
     },
   },
   grindelia_a: {
