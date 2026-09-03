@@ -7593,6 +7593,38 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas opuestas, lanceoladas, enteras o con algún diente grueso, trinervadas, pubescentes, de 6-15 cm; capítulos largamente pedunculados, solitarios en el extremo de las ramas; involucro hemisférico, de 8 mm por 15 mm; flores amarillas; aquenios marginales triquetros y los del disco tetragonales, gruesos, glabros; papus con coronita de escamas cortas y dos aristas muy breves.",
     "América austral cálida. Muy frecuente en suelos modificados; invasora y tóxica. Nombre vulgar: sunchillo."
   ),
+  aspilia_pascalioides: species(
+    "aspilia_pascalioides",
+    "Aspilia pascalioides",
+    "130. Compositae - Heliantheae",
+    "Hierba perenne, erecta, de 1-1,5 m de alto.",
+    "Hojas opuestas, sésiles, lanceoladas, enteras o paucidentadas, estrigiloso-pubescentes, de 7-18 cm por 8-16 mm; capítulos solitarios, grandes, largamente pedunculados; involucro de 1-1,5 cm por 1,5-2 cm; flores doradas; aquenios algo pubescentes; papus con 2-4 aristas cortas y escamitas soldadas en copa.",
+    "Hallada en Entre Ríos y Buenos Aires, en selvas marginales del Uruguay y del Plata."
+  ),
+  aspilia_silphioides: species(
+    "aspilia_silphioides",
+    "Aspilia silphioides",
+    "130. Compositae - Heliantheae",
+    "Sufrútice ramoso e híspido, de 1,5-2 m de alto.",
+    "Hojas opuestas, pecioladas, ovadas, acuminadas y redondeadas en la base, aserradas, estrigoso-pubescentes, de 5-13 cm por 2-7 cm; capítulos 1-2 en el extremo de las ramas, largamente pedunculados; involucro hemisférico, de 8-10 mm por 12-20 mm; flores doradas, con lígulas de 15-20 mm; aquenios rugosos.",
+    "Sur del Brasil, Paraguay, Uruguay y norte de la Argentina hasta el Río de la Plata. Frecuente en selvas marginales del Delta y de la ribera."
+  ),
+  viguiera_anchusaefolia: species(
+    "viguiera_anchusaefolia",
+    "Viguiera anchusaefolia",
+    "130. Compositae - Heliantheae",
+    "Sufrútice de cerca de 1 m de alto, estrigoso-pubescente.",
+    "Hojas alternas, oblongas, agudas, cortamente pecioladas, enteras o semiaserradas, de 2,5-9 cm por 5-13 mm; capítulos solitarios, largamente pedunculados; involucro de 7-10 mm, con brácteas en 3-4 series; flores amarillas; aquenios densamente pubescentes; papus con dos aristas y escamitas cortas.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. En suelos secos; rara en San Isidro y Eva Perón."
+  ),
+  viguiera_anchusaefolia_var_immarginata: species(
+    "viguiera_anchusaefolia_var_immarginata",
+    "Viguiera anchusaefolia var. immarginata",
+    "130. Compositae - Heliantheae",
+    "Variedad de Viguiera anchusaefolia con hojas más angostas.",
+    "Hojas lineal-oblongas, de 2,5-8 cm por 2-8 mm.",
+    "Rara en San Nicolás, Olivos y Eva Perón."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -22317,7 +22349,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Flores marginales asexuadas",
       keyStep: "K",
-      especieId: "compositae",
+      nextNodeId: "heliantheae_l",
     },
     opcionA_prima: {
       label: "Flores marginales femeninas, rara vez ausentes",
@@ -22355,6 +22387,70 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Papus formado por una coronita de escamas muy cortas, a veces con 1-2 aristas caducas; brácteas numerosas",
       keyStep: "O'",
       especieId: "wedelia_glauca",
+    },
+  },
+  heliantheae_l: {
+    id: "heliantheae_l",
+    milestone: "Heliantheae",
+    manualPage: 463,
+    descripcion: "Heliantheae - L: persistencia y tipo de papus en flores marginales asexuadas",
+    opcionA: {
+      label: "Papus formado por dos pajitas caducas",
+      keyStep: "L",
+      especieId: "compositae",
+    },
+    opcionA_prima: {
+      label: "Papus formado por pajitas persistentes, a veces acompañado por dos aristas",
+      keyStep: "L'",
+      nextNodeId: "heliantheae_m",
+    },
+  },
+  heliantheae_m: {
+    id: "heliantheae_m",
+    milestone: "Heliantheae",
+    manualPage: 463,
+    descripcion: "Heliantheae - M: escamitas del papus",
+    opcionA: {
+      label: "Escamitas del papus soldadas en la base y contraídas en forma de copa",
+      keyStep: "M",
+      nextNodeId: "aspilia_a",
+    },
+    opcionA_prima: {
+      label: "Escamitas del papus generalmente libres y no contraídas en la base",
+      keyStep: "M'",
+      nextNodeId: "viguiera_a",
+    },
+  },
+  aspilia_a: {
+    id: "aspilia_a",
+    milestone: "Aspilia",
+    manualPage: 504,
+    descripcion: "Aspilia - A: hojas sésiles o pecioladas",
+    opcionA: {
+      label: "Hojas sésiles, lanceoladas, enteras o paucidentadas, de 7-18 cm por 8-16 mm",
+      keyStep: "A",
+      especieId: "aspilia_pascalioides",
+    },
+    opcionA_prima: {
+      label: "Hojas pecioladas, ovadas, acuminadas y redondeadas en la base, de 5-13 cm por 2-7 cm",
+      keyStep: "A'",
+      especieId: "aspilia_silphioides",
+    },
+  },
+  viguiera_a: {
+    id: "viguiera_a",
+    milestone: "Viguiera",
+    manualPage: 504,
+    descripcion: "Viguiera anchusaefolia - variedad",
+    opcionA: {
+      label: "Hojas oblongas, de 2,5-9 cm por 5-13 mm",
+      keyStep: "1",
+      especieId: "viguiera_anchusaefolia",
+    },
+    opcionA_prima: {
+      label: "Hojas lineal-oblongas, de 2,5-8 cm por 2-8 mm",
+      keyStep: "1a",
+      especieId: "viguiera_anchusaefolia_var_immarginata",
     },
   },
   grindelia_a: {
