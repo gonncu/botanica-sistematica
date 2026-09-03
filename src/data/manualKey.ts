@@ -7977,6 +7977,150 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas pinatisectas, con segmentos lanceolados, enteros o con algún lóbulo, glabras en el haz y densamente albo-tomentosas en el envés; capítulos pequeños en amplias panojas; involucro de 4 mm por 2,5 mm; aquenios glabros, sin papus.",
     "Asia; adventicia en Europa y en la Argentina. Maleza invasora. Nombre vulgar: yuyo de San Vicente."
   ),
+  erechthites_hieracifolia: species(
+    "erechthites_hieracifolia",
+    "Erechthites hieracifolia",
+    "130. Compositae - Senecioneae",
+    "Hierba anual, erecta y pubescente, de 40-100 cm de alto.",
+    "Hojas alternas, sésiles; las inferiores obovadas y sinuado-dentadas, las superiores lanceoladas, lobadas o pinatisectas; capítulos en cimas corimbiformes oligocéfalas; involucro cilíndrico, de 1 cm, con 15-20 brácteas glabras; flores marginales femeninas con corola filiforme y flores del disco hermafroditas; aquenios cilíndricos, glabros, con 5-10 costillas; papus con numerosos pelos simples.",
+    "América templado-cálida. En suelos húmedos."
+  ),
+  senecio_mikanioides: species(
+    "senecio_mikanioides",
+    "Senecio mikanioides",
+    "130. Compositae - Senecioneae",
+    "Enredadera glabra.",
+    "Hojas pecioladas, carnosas, orbicular-acorazonadas, con 7-9 lóbulos triangulares anchos; capítulos discoideos en cimas corimbiformes compactas; involucro de 4 mm, con 8-9 brácteas; flores amarillas, 8-12, todas tubulosas y hermafroditas; aquenios cilíndricos, glabros, con papus de pelos simples.",
+    "Sudáfrica. Cultivada como ornamental y subespontánea en cercos; florece en invierno."
+  ),
+  senecio_vulgaris: species(
+    "senecio_vulgaris",
+    "Senecio vulgaris",
+    "130. Compositae - Senecioneae",
+    "Hierba anual, glabra o lanuginosa, de 10-40 cm de alto.",
+    "Hojas lirado-pinatisectas o lobadas, las superiores sésiles y semiabrazadoras; capítulos en corimbos densos; involucro cilíndrico, caliculado, de 6 mm, con 20 brácteas involucrales; flores amarillas, todas tubulosas; aquenios pubescentes.",
+    "Europa; adventicia en todo el mundo. Florece en primavera."
+  ),
+  senecio_argentinus: species(
+    "senecio_argentinus",
+    "Senecio argentinus",
+    "130. Compositae - Senecioneae",
+    "Sufrútice ramoso, densamente albo-tomentoso, de 30-50 cm de alto.",
+    "Tallos ascendentes; hojas profundamente pinatisectas o bipinatisectas, con segmentos lineales; capítulos pocos, en cimas laxas; involucro acampanado, de 5-8 mm, con 14-24 brácteas densamente tomentosas; flores blanquecinas, todas tubulosas; aquenios pubescentes.",
+    "Uruguay y centro de la Argentina. En suelos secos, citado para barrancas de San Pedro; cultivado como ornamental."
+  ),
+  senecio_selloi: species(
+    "senecio_selloi",
+    "Senecio selloi",
+    "130. Compositae - Senecioneae",
+    "Sufrútice de cerca de 1 m de alto, glanduloso-pubescente.",
+    "Hojas oblanceolado-espatuladas, obtusas, sésiles y auriculadas en la base, aserrado-crenadas, de 4-12 cm; capítulos pocos, en cimas laxas; involucro acampanado, caliculado, de 14-15 mm por 15-18 mm, con 20 brácteas glanduloso-pubescentes; flores amarillas, las marginales largamente liguladas; aquenios glabros.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina, en suelos rocosos o arenosos. Raro en la región: Punta Lara y Los Talas."
+  ),
+  senecio_heterotrichius: species(
+    "senecio_heterotrichius",
+    "Senecio heterotrichius",
+    "130. Compositae - Senecioneae",
+    "Sufrútice de 30-50 cm de alto, glanduloso-pubescente.",
+    "Hojas inferiores oblanceoladas, agudas, atenuadas en la base, dentadas y densamente albo-tomentosas, de 3-10 cm; hojas superiores lineal-lanceoladas, agudas, sésiles y auriculadas en la base, enteras o subdentadas, glanduloso-pubescentes en ambas caras; capítulos numerosos en cimas corimbiformes densas; involucro de 7 mm por 6-8 mm; flores amarillas; aquenios densamente seríceo-pubescentes.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. En suelos secos o arenosos; rara en la región: Martín García y Los Talas."
+  ),
+  senecio_brasiliensis_var_tripartitus: species(
+    "senecio_brasiliensis_var_tripartitus",
+    "Senecio brasiliensis var. tripartitus",
+    "130. Compositae - Senecioneae",
+    "Hierba perenne, con tallos erectos, ramosos y glabros, de hasta 1,5 m de alto.",
+    "Hojas profundamente pinatisectas, con 1-4 pares de segmentos lineal-lanceolados, aserrados, glabros en ambas caras o tomentosos en la inferior; capítulos muy numerosos en corimbos amplios; involucro acampanado, caliculado, de 6-7 mm por 5-6 mm, con 16-20 brácteas glabras; flores amarillas; papus blanco; aquenios pubescentes.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Muy común en el Delta y en la ribera del Plata. Venenoso."
+  ),
+  senecio_pinnatus: species(
+    "senecio_pinnatus",
+    "Senecio pinnatus",
+    "130. Compositae - Senecioneae",
+    "Sufrútice glabro, densamente hojoso, de 20-50 cm de alto.",
+    "Hojas profundamente pinatisectas, con segmentos 3-6-yugos, estrechamente lineales, enteros o bifurcados desde la base, de 0,5-2 mm de ancho; también puede presentar hojas lineales enteras en arbustitos o sufrútices; capítulos escasos en cima muy laxa; involucro acampanado, caliculado, de 8-9 mm por 8 mm, con 20 brácteas glabras; flores amarillas; aquenios densamente pubescentes.",
+    "Sur del Brasil, Paraguay, Uruguay y norte y centro de la Argentina. En suelos gredosos."
+  ),
+  senecio_pinnatus_var_simplicifolius: species(
+    "senecio_pinnatus_var_simplicifolius",
+    "Senecio pinnatus var. simplicifolius",
+    "130. Compositae - Senecioneae",
+    "Variedad de Senecio pinnatus con hojas simples.",
+    "Hojas simples, estrechamente lineales.",
+    "Campos bajos y salobres de Santa Fe y Buenos Aires."
+  ),
+  senecio_bonariensis: species(
+    "senecio_bonariensis",
+    "Senecio bonariensis",
+    "130. Compositae - Senecioneae",
+    "Hierba erecta, lanuginosa o glabra, de 1-2 m de alto.",
+    "Hojas inferiores largamente pecioladas, con lámina ovado-deltoidea, aguda en el ápice y acorazonada o sagitada en la base, dentada, de 10-35 cm por 4-20 cm; hojas superiores ovado-lanceoladas, sésiles y auriculadas; capítulos muy numerosos en cimas corimbiformes compuestas; involucro acampanado, de 5-7 mm por 10 mm, con 20 brácteas; flores liguladas blancas y flores del disco amarillas; aquenios glabros.",
+    "Uruguay y nordeste y centro de la Argentina. En lugares húmedos, orillas de ríos y pajonales; florece en primavera."
+  ),
+  senecio_tweediei: species(
+    "senecio_tweediei",
+    "Senecio tweediei",
+    "130. Compositae - Senecioneae",
+    "Hierba anual, glabra, de 0,5-1,5 m de alto.",
+    "Hojas inferiores oblanceoladas; hojas superiores lineal-lanceoladas, enteras o con 2-5 dientes largos a cada lado en la parte inferior, de 6-12 cm por 0,2-1 cm; capítulos en cimas corimbiformes; involucro acampanado, caliculado, de 8-12 mm por 8-10 mm, con 12-20 brácteas; flores marginales blanco-amarillentas y las del disco amarillas; aquenios glabros.",
+    "Uruguay y nordeste de la Argentina. Muy rara en la región; común en pajonales de General Madariaga y Chascomús."
+  ),
+  senecio_crassiflorus: species(
+    "senecio_crassiflorus",
+    "Senecio crassiflorus",
+    "130. Compositae - Senecioneae",
+    "Sufrútice tendido o ascendente, densamente tomentoso.",
+    "Hojas oblanceolado-espatuladas, semienteras, aserradas en la parte superior o tridentadas, de 3,5-8 cm por 0,7-2 cm; capítulos grandes en cimas corimbiformes paucicéfalas, rara vez solitarios; involucro acampanado, de 15-17 mm por 15-17 mm, con 20-25 brácteas densamente tomentosas; flores amarillas, las marginales largamente liguladas; aquenios seríceo-pubescentes.",
+    "Dunas del sur del Brasil, Uruguay y nordeste de la Argentina. Común en la isla Martín García y en el litoral atlántico."
+  ),
+  senecio_montevidensis: species(
+    "senecio_montevidensis",
+    "Senecio montevidensis",
+    "130. Compositae - Senecioneae",
+    "Hemicriptófita decumbente, laxamente tomentosa.",
+    "Hojas lineales, enteras, de 2-3 cm por 1-3 mm; capítulos solitarios; involucro acampanado, de 9-10 mm por 8-10 mm, con 16-20 brácteas tomentosas en el dorso; flores amarillas; aquenios velludos.",
+    "Sur del Brasil, Uruguay y nordeste y centro de la Argentina, en suelos arenosos. Rara en la región: Ingeniero Maschwitz."
+  ),
+  senecio_ceratophylloides: species(
+    "senecio_ceratophylloides",
+    "Senecio ceratophylloides",
+    "130. Compositae - Senecioneae",
+    "Hemicriptófita ascendente, laxamente lanosa.",
+    "Hojas oblanceoladas, enteras, trífidas o con 2-4 dientes gruesos a cada lado, laxamente lanosas, de 3-5 cm por 3-8 mm; capítulos solitarios; involucro acampanado, de 12-15 mm por 12-16 mm, con 20-24 brácteas lanosas; flores amarillas; aquenios pubescentes.",
+    "Centro de la Argentina. No hallada cerca de Buenos Aires, pero sí en suelos arenosos de Junín."
+  ),
+  senecio_grisebachii: species(
+    "senecio_grisebachii",
+    "Senecio grisebachii",
+    "130. Compositae - Senecioneae",
+    "Hierba perenne, erecta, lanuginosa, de cerca de 1 m de alto.",
+    "Hojas lineal-lanceoladas, aserradas, de 7-14 cm; capítulos numerosos, amarillos, en cimas corimbiformes densas; involucro acampanado, caliculado, de 7-10 mm por 9-10 mm, con 20 brácteas lanuginosas; aquenios pubescentes. En la clave también incluye formas con hojas profundamente pinatisectas y brácteas lanosas.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina."
+  ),
+  senecio_grisebachii_var_anomalus: species(
+    "senecio_grisebachii_var_anomalus",
+    "Senecio grisebachii var. anomalus",
+    "130. Compositae - Senecioneae",
+    "Variedad de Senecio grisebachii con hojas más o menos profundamente pinatisectas.",
+    "Se separa de la forma típica por el mayor grado de división de las hojas.",
+    "Barrancas de Baradero y Campana."
+  ),
+  senecio_grisebachii_var_schyzotus: species(
+    "senecio_grisebachii_var_schyzotus",
+    "Senecio grisebachii var. schyzotus",
+    "130. Compositae - Senecioneae",
+    "Variedad de Senecio grisebachii con aurículas laciniadas.",
+    "Hojas provistas de aurículas laciniadas en la base.",
+    "Bosques húmedos del Uruguay y del nordeste de la Argentina; adventicia en Suecia. Hallada en San Nicolás y Eva Perón."
+  ),
+  senecio_grisebachii_var_leptotus: species(
+    "senecio_grisebachii_var_leptotus",
+    "Senecio grisebachii var. leptotus",
+    "130. Compositae - Senecioneae",
+    "Variedad de Senecio grisebachii con aurículas estrechas.",
+    "Hojas provistas de estrechas aurículas lineales.",
+    "Brasil, Uruguay y nordeste de la Argentina, hasta el Delta del Paraná."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -21314,7 +21458,23 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Otras tribus de Compositae",
       keyStep: "Tribus 7-13",
+      nextNodeId: "compositae_g",
+    },
+  },
+  compositae_g: {
+    id: "compositae_g",
+    milestone: "Compositae",
+    manualPage: 464,
+    descripcion: "Compositae: tribus desde Anthemideae, avance parcial",
+    opcionA: {
+      label: "Anthemideae: receptáculo con o sin páleas; aquenios sin papus o con papus muy corto; plantas generalmente aromáticas",
+      keyStep: "Tribu 7",
       nextNodeId: "anthemideae_a",
+    },
+    opcionA_prima: {
+      label: "Otras tribus de Compositae",
+      keyStep: "Tribus 8-13",
+      nextNodeId: "senecioneae_a",
     },
   },
   astereae_a: {
@@ -23443,6 +23603,310 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hierbas perennes, rizomatosas; hojas albo-tomentosas en el envés",
       keyStep: "A'",
       especieId: "artemisia_verlotorum",
+    },
+  },
+  senecioneae_a: {
+    id: "senecioneae_a",
+    milestone: "Senecioneae",
+    manualPage: 464,
+    descripcion: "Senecioneae - A: corola de las flores marginales",
+    opcionA: {
+      label: "Flores marginales femeninas, con corola filiforme casi tan larga como el estilo",
+      keyStep: "A",
+      especieId: "erechthites_hieracifolia",
+    },
+    opcionA_prima: {
+      label: "Flores marginales liguladas o ausentes",
+      keyStep: "A'",
+      nextNodeId: "senecio_a",
+    },
+  },
+  senecio_a: {
+    id: "senecio_a",
+    milestone: "Senecio",
+    manualPage: 519,
+    descripcion: "Senecio - A: flores isomorfas o dimorfas",
+    opcionA: {
+      label: "Flores isomorfas: todas tubulosas, hermafroditas",
+      keyStep: "A",
+      nextNodeId: "senecio_b",
+    },
+    opcionA_prima: {
+      label: "Flores dimorfas: marginales femeninas liguladas y disco hermafrodita tubuloso",
+      keyStep: "A'",
+      nextNodeId: "senecio_d",
+    },
+  },
+  senecio_b: {
+    id: "senecio_b",
+    milestone: "Senecio",
+    manualPage: 519,
+    descripcion: "Senecio - B: hábito voluble",
+    opcionA: {
+      label: "Enredadera glabra, con hojas carnosas orbicular-acorazonadas",
+      keyStep: "B",
+      especieId: "senecio_mikanioides",
+    },
+    opcionA_prima: {
+      label: "Hierbas o sufrútices no volubles",
+      keyStep: "B'",
+      nextNodeId: "senecio_c",
+    },
+  },
+  senecio_c: {
+    id: "senecio_c",
+    milestone: "Senecio",
+    manualPage: 520,
+    descripcion: "Senecio - C: hierba anual o sufrútice tomentoso",
+    opcionA: {
+      label: "Hierba anual, glabra o lanuginosa; capítulos en corimbos densos",
+      keyStep: "C",
+      especieId: "senecio_vulgaris",
+    },
+    opcionA_prima: {
+      label: "Sufrútice ramoso, densamente albo-tomentoso; capítulos pocos en cimas laxas",
+      keyStep: "C'",
+      especieId: "senecio_argentinus",
+    },
+  },
+  senecio_d: {
+    id: "senecio_d",
+    milestone: "Senecio",
+    manualPage: 520,
+    descripcion: "Senecio - D: pubescencia glandulosa",
+    opcionA: {
+      label: "Plantas densamente glanduloso-pubescentes",
+      keyStep: "D",
+      nextNodeId: "senecio_e",
+    },
+    opcionA_prima: {
+      label: "Plantas glabras o tomentosas, sin pelos glandulosos",
+      keyStep: "D'",
+      nextNodeId: "senecio_f",
+    },
+  },
+  senecio_e: {
+    id: "senecio_e",
+    milestone: "Senecio",
+    manualPage: 520,
+    descripcion: "Senecio - E: tamaño del involucro y hojas",
+    opcionA: {
+      label: "Involucro de 14-15 mm por 15-18 mm; hojas oblanceolado-espatuladas",
+      keyStep: "E",
+      especieId: "senecio_selloi",
+    },
+    opcionA_prima: {
+      label: "Involucro de 7 mm por 6-8 mm; hojas inferiores albo-tomentosas y superiores glandulosas",
+      keyStep: "E'",
+      especieId: "senecio_heterotrichius",
+    },
+  },
+  senecio_f: {
+    id: "senecio_f",
+    milestone: "Senecio",
+    manualPage: 520,
+    descripcion: "Senecio - F: hojas profundamente pinatisectas",
+    opcionA: {
+      label: "Hojas profundamente pinatisectas",
+      keyStep: "F",
+      nextNodeId: "senecio_g",
+    },
+    opcionA_prima: {
+      label: "Hojas enteras o dentadas",
+      keyStep: "F'",
+      nextNodeId: "senecio_i",
+    },
+  },
+  senecio_g: {
+    id: "senecio_g",
+    milestone: "Senecio",
+    manualPage: 520,
+    descripcion: "Senecio - G: anchura y margen de segmentos foliares",
+    opcionA: {
+      label: "Segmentos lineal-lanceolados, de 2,5-6 mm de ancho, aserrados",
+      keyStep: "G",
+      nextNodeId: "senecio_h",
+    },
+    opcionA_prima: {
+      label: "Segmentos estrechamente lineales, enteros o bifurcados, de 0,5-2 mm",
+      keyStep: "G'",
+      nextNodeId: "senecio_pinnatus_a",
+    },
+  },
+  senecio_h: {
+    id: "senecio_h",
+    milestone: "Senecio",
+    manualPage: 520,
+    descripcion: "Senecio - H: indumento de brácteas involucrales",
+    opcionA: {
+      label: "Brácteas involucrales glabras",
+      keyStep: "H",
+      especieId: "senecio_brasiliensis_var_tripartitus",
+    },
+    opcionA_prima: {
+      label: "Brácteas involucrales lanosas",
+      keyStep: "H'",
+      nextNodeId: "senecio_grisebachii_a",
+    },
+  },
+  senecio_i: {
+    id: "senecio_i",
+    milestone: "Senecio",
+    manualPage: 520,
+    descripcion: "Senecio - I: pecíolo verdadero en hojas",
+    opcionA: {
+      label: "Hierbas erectas de 1-2 m, con hojas inferiores largamente pecioladas",
+      keyStep: "I",
+      especieId: "senecio_bonariensis",
+    },
+    opcionA_prima: {
+      label: "Hierbas o sufrútices con hojas sin verdadero pecíolo, de menos de 6 cm de ancho",
+      keyStep: "I'",
+      nextNodeId: "senecio_j",
+    },
+  },
+  senecio_j: {
+    id: "senecio_j",
+    milestone: "Senecio",
+    manualPage: 520,
+    descripcion: "Senecio - J: plantas glabras o lanuginosas",
+    opcionA: {
+      label: "Plantas completamente glabras; lígulas blancas o amarillas",
+      keyStep: "J",
+      nextNodeId: "senecio_k",
+    },
+    opcionA_prima: {
+      label: "Plantas lanuginosas o tomentosas",
+      keyStep: "J'",
+      nextNodeId: "senecio_l",
+    },
+  },
+  senecio_k: {
+    id: "senecio_k",
+    milestone: "Senecio",
+    manualPage: 520,
+    descripcion: "Senecio - K: hierba anual o sufrútice de hojas lineales",
+    opcionA: {
+      label: "Hierba anual glabra; hojas superiores lineal-lanceoladas con dientes largos",
+      keyStep: "K",
+      especieId: "senecio_tweediei",
+    },
+    opcionA_prima: {
+      label: "Arbustitos o sufrútices; hojas estrechamente lineales de 0,5-1 mm",
+      keyStep: "K'",
+      nextNodeId: "senecio_pinnatus_a",
+    },
+  },
+  senecio_l: {
+    id: "senecio_l",
+    milestone: "Senecio",
+    manualPage: 521,
+    descripcion: "Senecio - L: plantas tomentosas o lanuginosas",
+    opcionA: {
+      label: "Plantas densamente tomentosas",
+      keyStep: "L",
+      nextNodeId: "senecio_m",
+    },
+    opcionA_prima: {
+      label: "Plantas lanuginosas, erectas; hojas lanceoladas u oblanceoladas",
+      keyStep: "L'",
+      nextNodeId: "senecio_grisebachii_a",
+    },
+  },
+  senecio_m: {
+    id: "senecio_m",
+    milestone: "Senecio",
+    manualPage: 521,
+    descripcion: "Senecio - M: capítulos grandes o solitarios",
+    opcionA: {
+      label: "Capítulos grandes en cimas corimbiformes paucicéfalas",
+      keyStep: "M",
+      especieId: "senecio_crassiflorus",
+    },
+    opcionA_prima: {
+      label: "Capítulos solitarios; hojas lineales de 1-8 mm de ancho",
+      keyStep: "M'",
+      nextNodeId: "senecio_n",
+    },
+  },
+  senecio_n: {
+    id: "senecio_n",
+    milestone: "Senecio",
+    manualPage: 521,
+    descripcion: "Senecio - N: hemicriptófita decumbente o ascendente",
+    opcionA: {
+      label: "Hemicriptófita decumbente, laxamente tomentosa; hojas lineales enteras",
+      keyStep: "N",
+      especieId: "senecio_montevidensis",
+    },
+    opcionA_prima: {
+      label: "Hemicriptófita ascendente, laxamente lanosa; hojas oblanceoladas dentadas o trífidas",
+      keyStep: "N'",
+      especieId: "senecio_ceratophylloides",
+    },
+  },
+  senecio_pinnatus_a: {
+    id: "senecio_pinnatus_a",
+    milestone: "Senecio pinnatus",
+    manualPage: 522,
+    descripcion: "Senecio pinnatus - forma típica o variedad simplicifolius",
+    opcionA: {
+      label: "Hojas profundamente pinatisectas, con segmentos estrechamente lineales",
+      keyStep: "7",
+      especieId: "senecio_pinnatus",
+    },
+    opcionA_prima: {
+      label: "Hojas simples, estrechamente lineales",
+      keyStep: "7a",
+      especieId: "senecio_pinnatus_var_simplicifolius",
+    },
+  },
+  senecio_grisebachii_a: {
+    id: "senecio_grisebachii_a",
+    milestone: "Senecio grisebachii",
+    manualPage: 523,
+    descripcion: "Senecio grisebachii - forma típica y variedades",
+    opcionA: {
+      label: "Hojas lineal-lanceoladas, aserradas, sin aurículas laciniadas o lineales",
+      keyStep: "13",
+      especieId: "senecio_grisebachii",
+    },
+    opcionA_prima: {
+      label: "Hojas pinatisectas o con aurículas basales diferenciadas",
+      keyStep: "13a-13c",
+      nextNodeId: "senecio_grisebachii_b",
+    },
+  },
+  senecio_grisebachii_b: {
+    id: "senecio_grisebachii_b",
+    milestone: "Senecio grisebachii",
+    manualPage: 523,
+    descripcion: "Senecio grisebachii - variedades anomalus, schyzotus y leptotus",
+    opcionA: {
+      label: "Hojas más o menos profundamente pinatisectas",
+      keyStep: "13a",
+      especieId: "senecio_grisebachii_var_anomalus",
+    },
+    opcionA_prima: {
+      label: "Hojas con aurículas basales laciniadas o lineales",
+      keyStep: "13b-13c",
+      nextNodeId: "senecio_grisebachii_c",
+    },
+  },
+  senecio_grisebachii_c: {
+    id: "senecio_grisebachii_c",
+    milestone: "Senecio grisebachii",
+    manualPage: 523,
+    descripcion: "Senecio grisebachii - aurículas basales",
+    opcionA: {
+      label: "Hojas provistas de aurículas laciniadas en su base",
+      keyStep: "13b",
+      especieId: "senecio_grisebachii_var_schyzotus",
+    },
+    opcionA_prima: {
+      label: "Hojas provistas de estrechas aurículas lineales",
+      keyStep: "13c",
+      especieId: "senecio_grisebachii_var_leptotus",
     },
   },
   grindelia_a: {
