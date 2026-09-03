@@ -7393,6 +7393,78 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas alternas, enteras, oblanceolado-espatuladas, de 3-10 mm; capítulos pequeños, sésiles, amontonados en el extremo de las ramitas; involucro acampanado de 4 mm; flores centrales masculinas tetradentadas; aquenios papilosos; papus de pelos delgados unidos en la base.",
     "Suelos arenosos del centro de la Argentina. Rara cerca de Buenos Aires, en Isla Martín García y Facultad de Agronomía."
   ),
+  gnaphalium_cheiranthifolium: species(
+    "gnaphalium_cheiranthifolium",
+    "Gnaphalium cheiranthifolium",
+    "130. Compositae - Inuleae",
+    "Hierba anual erecta, de 40-80 cm de alto, densamente blanco-tomentosa.",
+    "Pelos del papus no soldados en la base; hojas densamente tomentosas en ambas caras, oblanceolado-lineales, agudas, decurrentes en la base, de 4-12 cm; capítulos subsésiles, aglomerados en el ápice de las ramas; involucro acampanado, de 5-6 mm, con brácteas escariosas amarillentas; aquenios glabros.",
+    "América austral, en suelos arenosos. Rara cerca de Buenos Aires y muy frecuente en dunas atlánticas. Nombres vulgares: vira-vira, marcela."
+  ),
+  gnaphalium_gaudichaudianum: species(
+    "gnaphalium_gaudichaudianum",
+    "Gnaphalium gaudichaudianum",
+    "130. Compositae - Inuleae",
+    "Hierba anual erecta, de 40-60 cm de alto.",
+    "Pelos del papus no soldados en la base; hojas lineales, agudas, cortamente decurrentes, glanduloso-pubescentes en el haz y densamente tomentosas en el envés, de 3,5-8 cm; capítulos numerosos, subsésiles, en corimbos de glomérulos; involucro acampanado, de 4-4,5 mm, con brácteas pajizas; aquenios glabros.",
+    "América austral. En suelos húmedos y modificados."
+  ),
+  gnaphalium_platense: species(
+    "gnaphalium_platense",
+    "Gnaphalium platense",
+    "130. Compositae - Inuleae",
+    "Hierba perenne, con tallos ascendentes, glanduloso-pubescentes y lanosos, de 30-60 cm de alto.",
+    "Pelos del papus soldados en la base; hojas con pubescencia glandulosa y lanosa mezcladas en el haz, lanosas en el envés, espatuladas, obtusas, brevemente decurrentes, de 4-12 cm; capítulos en espigas hojosas de glomérulos; involucro acampanado, de 4-4,5 mm, con brácteas escariosas, ovadas y acuminadas; aquenios ligeramente granulosos.",
+    "Nordeste de la Argentina, en suelos húmedos y fértiles."
+  ),
+  gnaphalium_spicatum: species(
+    "gnaphalium_spicatum",
+    "Gnaphalium spicatum",
+    "130. Compositae - Inuleae",
+    "Hierba perenne, con hojas basales en roseta y tallos ascendentes o erectos, simples, tomentosos, de 10-50 cm de alto.",
+    "Hojas discolores, glabras o casi glabras en el haz e incano-tomentosas en el envés, espatuladas, obtusas, enteras y algo crespas en el margen, de 3-12 cm; capítulos en densas espigas; involucro piriforme, de 3-4 mm, con brácteas interiores obtusas; aquenios granulosos.",
+    "América del Sur. Común en suelos fértiles."
+  ),
+  gnaphalium_calviceps: species(
+    "gnaphalium_calviceps",
+    "Gnaphalium calviceps",
+    "130. Compositae - Inuleae",
+    "Hierba bienal o perenne, con tallos ascendentes, laxamente lanosos y hojosos, de 20-50 cm de alto.",
+    "Hojas concolores, más o menos densamente lanosas en ambas caras, espatuladas, obtusas, de 2-8 cm; espigas laxas, interrumpidas, simples o compuestas; hojas de la inflorescencia de 4-6 mm de ancho; involucro de 3 mm, con brácteas interiores obtusas; aquenios cortamente granulosos.",
+    "América. Común en suelos modificados."
+  ),
+  gnaphalium_subfalcatum: species(
+    "gnaphalium_subfalcatum",
+    "Gnaphalium subfalcatum",
+    "130. Compositae - Inuleae",
+    "Hierba perenne, con tallos ascendentes densamente hojosos, de 15-40 cm de alto.",
+    "Hojas concolores, laxamente lanuginosas en ambas caras, anchamente espatuladas, obtusas, de 1,5-5 cm; hojas superiores oblanceoladas, más o menos falcadas, de 1-4 mm de ancho; espigas densas y continuas; involucro de 3-3,5 mm, con brácteas interiores obtusas; aquenios tenuemente granulosos.",
+    "Argentina. Común en suelos secos y arenosos."
+  ),
+  gnaphalium_purpureum: species(
+    "gnaphalium_purpureum",
+    "Gnaphalium purpureum",
+    "130. Compositae - Inuleae",
+    "Hierba perenne, con tallos erectos o ascendentes, sencillos o ramosos, cano-tomentosos y hojosos, de 30-80 cm de alto.",
+    "Brácteas interiores del involucro agudas o acuminadas; hojas discolores, glabras o casi glabras en el haz y densamente cano-tomentosas en el envés, espatuladas, obtusas o semiagudas, de 2,5-8 cm; capítulos en espigas hojosas interrumpidas; involucro de 4,5 mm; aquenios cortamente granulosos.",
+    "América. Rara en el Delta y en Puerto Nuevo."
+  ),
+  gnaphalium_filagineum: species(
+    "gnaphalium_filagineum",
+    "Gnaphalium filagineum",
+    "130. Compositae - Inuleae",
+    "Hierba anual, con tallos erectos, simples o poco ramosos, lanosos y hojosos, de 10-20 cm de alto.",
+    "Hojas concolores, espatuladas, obtusas, lanosas en ambas caras, de 1,5-2,5 cm; capítulos en glomérulos seudoinvolucrados y pedicelados; involucro de 3-3,5 mm; aquenios levemente granulosos.",
+    "América austral. Frecuente en la estepa clímax."
+  ),
+  gnaphalium_falcatum: species(
+    "gnaphalium_falcatum",
+    "Gnaphalium falcatum",
+    "130. Compositae - Inuleae",
+    "Hierba anual, con tallos decumbentes o ascendentes, sencillos o ramosos en la base, densamente tomentosos, de 10-30 cm de alto.",
+    "Hojas concolores, oblanceolado-lineales, falcadas, agudas, incano-tomentosas en ambas caras, de 1-3 cm; capítulos en espigas hojosas compactas; involucro de 4-4,5 mm, con brácteas rojizas; aquenios levemente granulosos.",
+    "América austral, en dunas y suelos arenosos."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -21706,7 +21778,135 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Capítulos acampanados; aquenios glabros o granulosos",
       keyStep: "J'",
-      especieId: "compositae",
+      nextNodeId: "gnaphalium_a",
+    },
+  },
+  gnaphalium_a: {
+    id: "gnaphalium_a",
+    milestone: "Gnaphalium",
+    manualPage: 496,
+    descripcion: "Gnaphalium - A: pelos del papus soldados o libres",
+    opcionA: {
+      label: "Pelos del papus no soldados en la base, desprendidos independientemente",
+      keyStep: "A",
+      nextNodeId: "gnaphalium_b",
+    },
+    opcionA_prima: {
+      label: "Pelos del papus soldados entre sí en la base, desprendidos en conjunto",
+      keyStep: "A'",
+      nextNodeId: "gnaphalium_c",
+    },
+  },
+  gnaphalium_b: {
+    id: "gnaphalium_b",
+    milestone: "Gnaphalium",
+    manualPage: 496,
+    descripcion: "Gnaphalium - B: indumento foliar en subgénero Gnaphalium",
+    opcionA: {
+      label: "Hojas densamente tomentosas en ambas caras, oblanceolado-lineales, de 4-12 cm",
+      keyStep: "B",
+      especieId: "gnaphalium_cheiranthifolium",
+    },
+    opcionA_prima: {
+      label: "Hojas glanduloso-pubescentes en el haz y densamente tomentosas en el envés, lineales, de 3,5-8 cm",
+      keyStep: "B'",
+      especieId: "gnaphalium_gaudichaudianum",
+    },
+  },
+  gnaphalium_c: {
+    id: "gnaphalium_c",
+    milestone: "Gnaphalium",
+    manualPage: 496,
+    descripcion: "Gnaphalium - C: pubescencia glandulosa o lanosa",
+    opcionA: {
+      label: "Hojas con pubescencia glandulosa y lanosa mezcladas en el haz",
+      keyStep: "C",
+      especieId: "gnaphalium_platense",
+    },
+    opcionA_prima: {
+      label: "Hojas con pubescencia lanosa únicamente",
+      keyStep: "C'",
+      nextNodeId: "gnaphalium_d",
+    },
+  },
+  gnaphalium_d: {
+    id: "gnaphalium_d",
+    milestone: "Gnaphalium",
+    manualPage: 496,
+    descripcion: "Gnaphalium - D: ápice de las brácteas interiores",
+    opcionA: {
+      label: "Brácteas interiores del involucro obtusas",
+      keyStep: "D",
+      nextNodeId: "gnaphalium_e",
+    },
+    opcionA_prima: {
+      label: "Brácteas interiores del involucro agudas o acuminadas",
+      keyStep: "D'",
+      nextNodeId: "gnaphalium_g",
+    },
+  },
+  gnaphalium_e: {
+    id: "gnaphalium_e",
+    milestone: "Gnaphalium",
+    manualPage: 496,
+    descripcion: "Gnaphalium - E: hojas discolores o concolores",
+    opcionA: {
+      label: "Hojas discolores, glabras o casi glabras en el haz e incano-tomentosas en el envés",
+      keyStep: "E",
+      especieId: "gnaphalium_spicatum",
+    },
+    opcionA_prima: {
+      label: "Hojas concolores, más o menos densamente lanosas en ambas caras",
+      keyStep: "E'",
+      nextNodeId: "gnaphalium_f",
+    },
+  },
+  gnaphalium_f: {
+    id: "gnaphalium_f",
+    milestone: "Gnaphalium",
+    manualPage: 496,
+    descripcion: "Gnaphalium - F: compacidad de las espigas",
+    opcionA: {
+      label: "Espigas laxas, interrumpidas, simples o compuestas; hojas espatuladas de 2-8 cm",
+      keyStep: "F",
+      especieId: "gnaphalium_calviceps",
+    },
+    opcionA_prima: {
+      label: "Espigas densas, continuas; hojas anchamente espatuladas de 1,5-5 cm",
+      keyStep: "F'",
+      especieId: "gnaphalium_subfalcatum",
+    },
+  },
+  gnaphalium_g: {
+    id: "gnaphalium_g",
+    milestone: "Gnaphalium",
+    manualPage: 496,
+    descripcion: "Gnaphalium - G: hojas discolores o concolores",
+    opcionA: {
+      label: "Hojas discolores, glabras o casi glabras en el haz y densamente cano-tomentosas en el envés",
+      keyStep: "G",
+      especieId: "gnaphalium_purpureum",
+    },
+    opcionA_prima: {
+      label: "Hojas concolores, tomentosas o lanosas en ambas caras",
+      keyStep: "G'",
+      nextNodeId: "gnaphalium_h",
+    },
+  },
+  gnaphalium_h: {
+    id: "gnaphalium_h",
+    milestone: "Gnaphalium",
+    manualPage: 496,
+    descripcion: "Gnaphalium - H: disposición de los capítulos",
+    opcionA: {
+      label: "Capítulos en glomérulos seudoinvolucrados y pedicelados",
+      keyStep: "H",
+      especieId: "gnaphalium_filagineum",
+    },
+    opcionA_prima: {
+      label: "Capítulos en espigas hojosas compactas",
+      keyStep: "H'",
+      especieId: "gnaphalium_falcatum",
     },
   },
   grindelia_a: {
