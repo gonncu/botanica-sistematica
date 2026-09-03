@@ -7625,6 +7625,38 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas lineal-oblongas, de 2,5-8 cm por 2-8 mm.",
     "Rara en San Nicolás, Olivos y Eva Perón."
   ),
+  helianthus_annuus: species(
+    "helianthus_annuus",
+    "Helianthus annuus",
+    "130. Compositae - Heliantheae",
+    "Hierba anual de 1-3 m de alto, con tallos sencillos y pubescentes.",
+    "Hojas alternas, pecioladas, ovadas y grandes; capítulos muy grandes, radiados, corimbosos o solitarios, generalmente amarillos; aquenios oblongos u obovados, gruesos o algo comprimidos; papus formado por dos aristas o dos pajitas caducas.",
+    "Originaria de América del Norte, cultivada en regiones templado-cálidas por sus frutos oleaginosos; a veces espontánea en rastrojos. Nombres vulgares: girasol, mirasol."
+  ),
+  spilanthes_stolonifera: species(
+    "spilanthes_stolonifera",
+    "Spilanthes stolonifera",
+    "130. Compositae - Heliantheae",
+    "Hierba con tallos decumbentes, radicantes en los nudos, glabros y hojosos, de 15-30 cm de largo.",
+    "Hojas opuestas, oblanceoladas, enteras, trinervadas y glabras; capítulos radiados, solitarios sobre largos pedúnculos erectos de 4-10 cm; involucro hemisférico, de 3,5 mm por 6 mm, con brácteas ovadas; flores amarillas, las marginales liguladas; aquenios del disco muy comprimidos lateralmente, ciliados en el margen.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Común en suelos húmedos del Delta y de la ribera del Plata."
+  ),
+  spilanthes_stolonifera_var_pusilla: species(
+    "spilanthes_stolonifera_var_pusilla",
+    "Spilanthes stolonifera var. pusilla",
+    "130. Compositae - Heliantheae",
+    "Variedad de Spilanthes stolonifera con capítulos discoideos.",
+    "Se diferencia de la forma típica por la ausencia de lígulas en los capítulos.",
+    "Citada para la región dentro del área de la especie."
+  ),
+  spilanthes_decumbens: species(
+    "spilanthes_decumbens",
+    "Spilanthes decumbens",
+    "130. Compositae - Heliantheae",
+    "Hierba con tallos ascendentes, ramosos en la base y laxamente pubescentes.",
+    "Hojas opuestas, lanceoladas o lineal-lanceoladas, enteras, trinervadas, glabras o pubescentes en el margen; capítulos solitarios sobre pedúnculos de 10-30 cm; involucro de 3-5 mm por 8 mm, con brácteas ovadas; flores amarillas, dimorfas.",
+    "América austral. Muy frecuente en campos húmedos. Nombre vulgar: nim-nim."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -22370,7 +22402,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Aquenios de las flores hermafroditas muy comprimidos",
       keyStep: "N'",
-      especieId: "compositae",
+      nextNodeId: "heliantheae_p",
     },
   },
   heliantheae_o: {
@@ -22397,7 +22429,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Papus formado por dos pajitas caducas",
       keyStep: "L",
-      especieId: "compositae",
+      especieId: "helianthus_annuus",
     },
     opcionA_prima: {
       label: "Papus formado por pajitas persistentes, a veces acompañado por dos aristas",
@@ -22451,6 +22483,54 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Hojas lineal-oblongas, de 2,5-8 cm por 2-8 mm",
       keyStep: "1a",
       especieId: "viguiera_anchusaefolia_var_immarginata",
+    },
+  },
+  heliantheae_p: {
+    id: "heliantheae_p",
+    milestone: "Heliantheae",
+    manualPage: 463,
+    descripcion: "Heliantheae - P: alas marginales de los aquenios",
+    opcionA: {
+      label: "Aquenios alados en el margen",
+      keyStep: "P",
+      especieId: "compositae",
+    },
+    opcionA_prima: {
+      label: "Aquenios sin alas marginales",
+      keyStep: "P'",
+      nextNodeId: "spilanthes_a",
+    },
+  },
+  spilanthes_a: {
+    id: "spilanthes_a",
+    milestone: "Spilanthes",
+    manualPage: 505,
+    descripcion: "Spilanthes - A: porte de los tallos",
+    opcionA: {
+      label: "Tallos decumbentes, radicantes en los nudos, glabros y hojosos, de 15-30 cm",
+      keyStep: "A",
+      nextNodeId: "spilanthes_stolonifera_a",
+    },
+    opcionA_prima: {
+      label: "Tallos ascendentes, ramosos en la base, laxamente pubescentes",
+      keyStep: "A'",
+      especieId: "spilanthes_decumbens",
+    },
+  },
+  spilanthes_stolonifera_a: {
+    id: "spilanthes_stolonifera_a",
+    milestone: "Spilanthes stolonifera",
+    manualPage: 505,
+    descripcion: "Spilanthes stolonifera - variedad",
+    opcionA: {
+      label: "Capítulos radiados, con flores marginales liguladas",
+      keyStep: "1",
+      especieId: "spilanthes_stolonifera",
+    },
+    opcionA_prima: {
+      label: "Capítulos discoideos, sin lígulas",
+      keyStep: "1a",
+      especieId: "spilanthes_stolonifera_var_pusilla",
     },
   },
   grindelia_a: {
