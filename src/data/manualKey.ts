@@ -7577,6 +7577,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas opuestas, lanceolado-elípticas, semiobtusas, enteras, de 1,5-5 cm; capítulos solitarios, largamente pedunculados; involucro de 5-6 mm, con brácteas ovadas; flores amarillentas, las marginales cortamente liguladas; aquenios del disco muy comprimidos, obovados y rugosos; papus con dos aristas cortas y una corona de cerditas.",
     "Sur del Brasil, Uruguay y nordeste de la Argentina. Común en suelos húmedos."
   ),
+  blainvillea_biaristata: species(
+    "blainvillea_biaristata",
+    "Blainvillea biaristata",
+    "130. Compositae - Heliantheae",
+    "Hierba anual, con tallos erectos, laxamente pilosos, de 40-80 cm de alto.",
+    "Hojas opuestas, distantes, pecioladas, ovadas, aserradas, de 3-8 cm; capítulos cimosos, agrupados en corto número; involucro acampanado de 6 mm, con 4-5 brácteas foliáceas y pubescentes; flores amarillas; aquenios comprimidos, oblanceolados, glabros o cortamente pilosos, coronados por dos aristas gruesas y cortas.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Común en bosques del Delta y de la ribera platense; florece en otoño."
+  ),
+  wedelia_glauca: species(
+    "wedelia_glauca",
+    "Wedelia glauca",
+    "130. Compositae - Heliantheae",
+    "Hierba perenne, rizomatosa, con tallos erectos, pubescentes, de 50-100 cm de alto.",
+    "Hojas opuestas, lanceoladas, enteras o con algún diente grueso, trinervadas, pubescentes, de 6-15 cm; capítulos largamente pedunculados, solitarios en el extremo de las ramas; involucro hemisférico, de 8 mm por 15 mm; flores amarillas; aquenios marginales triquetros y los del disco tetragonales, gruesos, glabros; papus con coronita de escamas cortas y dos aristas muy breves.",
+    "América austral cálida. Muy frecuente en suelos modificados; invasora y tóxica. Nombre vulgar: sunchillo."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -22258,7 +22274,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Páleas del receptáculo lanceoladas, aquilladas",
       keyStep: "J'",
-      especieId: "compositae",
+      nextNodeId: "heliantheae_k",
     },
   },
   eclipta_a: {
@@ -22291,6 +22307,54 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Plantas decumbentes de 20-30 cm; capítulos solitarios largamente pedunculados; involucro de 5-6 mm",
       keyStep: "B'",
       especieId: "eclipta_bellidioides",
+    },
+  },
+  heliantheae_k: {
+    id: "heliantheae_k",
+    milestone: "Heliantheae",
+    manualPage: 463,
+    descripcion: "Heliantheae - K: sexo de las flores marginales",
+    opcionA: {
+      label: "Flores marginales asexuadas",
+      keyStep: "K",
+      especieId: "compositae",
+    },
+    opcionA_prima: {
+      label: "Flores marginales femeninas, rara vez ausentes",
+      keyStep: "K'",
+      nextNodeId: "heliantheae_n",
+    },
+  },
+  heliantheae_n: {
+    id: "heliantheae_n",
+    milestone: "Heliantheae",
+    manualPage: 463,
+    descripcion: "Heliantheae - N: compresión de los aquenios de flores hermafroditas",
+    opcionA: {
+      label: "Aquenios de las flores hermafroditas gruesos o levemente comprimidos",
+      keyStep: "N",
+      nextNodeId: "heliantheae_o",
+    },
+    opcionA_prima: {
+      label: "Aquenios de las flores hermafroditas muy comprimidos",
+      keyStep: "N'",
+      especieId: "compositae",
+    },
+  },
+  heliantheae_o: {
+    id: "heliantheae_o",
+    milestone: "Heliantheae",
+    manualPage: 463,
+    descripcion: "Heliantheae - O: tipo de papus y número de brácteas",
+    opcionA: {
+      label: "Papus formado por 2-5 aristas; brácteas involucrales muy pocas",
+      keyStep: "O",
+      especieId: "blainvillea_biaristata",
+    },
+    opcionA_prima: {
+      label: "Papus formado por una coronita de escamas muy cortas, a veces con 1-2 aristas caducas; brácteas numerosas",
+      keyStep: "O'",
+      especieId: "wedelia_glauca",
     },
   },
   grindelia_a: {
