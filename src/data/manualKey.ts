@@ -8273,6 +8273,118 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas coriáceas, sésiles, semiamplexicaules, lanceoladas, pinatisectas, con lóbulos y ápice largamente espinosos, glabras o pubescentes; capítulos grandes, cimosos, en las bifurcaciones del tallo y extremo de las ramitas; involucro de 3-4 cm por 2 cm, con brácteas coriáceas, lanceoladas, dentado-espinosas y abiertas; flores amarillas; aquenios glabros, obovoideos, tetragonales; papus formado por muchas pajitas desiguales.",
     "Europa; adventicia en América. Frecuente en campos de pastoreo."
   ),
+  mutisia_coccinea: species(
+    "mutisia_coccinea",
+    "Mutisia coccinea",
+    "130. Compositae - Mutisieae",
+    "Enredadera herbácea perenne, con tallos flexibles de 4-5 ángulos muy marcados, laxamente tomentosa.",
+    "Hojas pinaticompuestas, con raquis terminado en zarcillo ramificado y 4-6 pares de folíolos elíptico-lanceolados, obtusos, enteros, casi glabros en el haz y albo-tomentosos en el envés; capítulos grandes, solitarios y largamente pedunculados; involucro de 2,5-3,5 cm, con brácteas ovado-lanceoladas de margen albo-lanoso ancho; flores rojas; aquenios turbinados u oblongos, glabros; papus de pelos plumosos.",
+    "Sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina. Muy rara en el Delta del Paraná: arroyo Carapachay."
+  ),
+  trichocline_sinuata: species(
+    "trichocline_sinuata",
+    "Trichocline sinuata",
+    "130. Compositae - Mutisieae",
+    "Hierba perenne, generalmente acaule, con rizoma grueso y hojas en roseta.",
+    "Hojas oblanceoladas, profundamente lobadas, glabrescentes en el haz y densamente tomentosas en el envés; escapos erectos, tomentosos, sin brácteas, de 4-30 cm; capítulos solitarios; involucro hemisférico, de 15 mm por 20-30 mm, con brácteas lineal-lanceoladas y tomentosas; flores doradas, las marginales largamente liguladas; aquenios papiloso-pubescentes; papus con muchos pelos simples.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Rara en la región: Santa Catalina."
+  ),
+  chaptalia_exscapa: species(
+    "chaptalia_exscapa",
+    "Chaptalia exscapa",
+    "130. Compositae - Mutisieae",
+    "Hierba perenne, acaule.",
+    "Hojas obovadas o elípticas, sinuado-dentadas, de 4-7 cm por 2-4 cm; capítulo sésil antes de la fructificación y luego cortamente pedunculado, con escapo de 2-3 cm; involucro de 15-20 mm; flores blancas, las marginales liguladas con lígula más corta que el involucro; aquenios sin rostro, obovados, comprimidos, costados, papiloso-pubescentes, de 5 mm; papus con numerosos pelos.",
+    "Sur del Brasil, Uruguay y centro de la Argentina. Común en la estepa clímax."
+  ),
+  chaptalia_nutans: species(
+    "chaptalia_nutans",
+    "Chaptalia nutans",
+    "130. Compositae - Mutisieae",
+    "Hierba perenne, acaule.",
+    "Hojas lirado-pinatífidas, con lóbulo terminal grande, ovado y sinuado-dentado; escapos de 10-40 cm, tomentosos, sin brácteas; capítulos nutantes sobre largos escapos; involucro de 15 mm; flores rosadas, las marginales con lígula apenas sobresaliente; aquenios fusiformes, 5-6-costados, de 4 mm, terminados en rostro delgado de 13-15 mm; papus blanco.",
+    "América tropical. Citada para la isla Martín García."
+  ),
+  chaptalia_piloselloides: species(
+    "chaptalia_piloselloides",
+    "Chaptalia piloselloides",
+    "130. Compositae - Mutisieae",
+    "Hierba perenne, acaule.",
+    "Hojas enteras, oblanceoladas, de menos de 15 mm de ancho, retrorso-dentadas en el borde, agudas, de 3,5-9 cm; escapos de 2-17 cm, lanosos, con muchas brácteas lineales; capítulos erectos, con 20-60 flores; involucro de 14-25 mm; flores blancas o rosadas, las marginales cortamente liguladas; aquenios fusiformes, con 7-8 costillas, papilosos en la base, de 6-7 mm, con rostro de 7-8 mm; papus rojizo.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. En estepa clímax."
+  ),
+  chaptalia_runcinata: species(
+    "chaptalia_runcinata",
+    "Chaptalia runcinata",
+    "130. Compositae - Mutisieae",
+    "Hierba perenne, acaule.",
+    "Hojas enteras o dentadas, agudas o casi obtusas, retrorso-aserradas, de 6-12 cm; escapos de 10-35 cm, bracteolados superiormente y lanosos; capítulos erectos, con 20-60 flores; involucro de 10 mm; flores blancas o rosadas, las marginales apenas exsertas; aquenios fusiforme-lineales, glabros, con 4-6 costillas, de 5-6 mm, terminados en rostro de 5-7 mm; papus blanco o rosado.",
+    "América del Sur, hasta el norte de la Argentina. Rara en la estepa clímax."
+  ),
+  chaptalia_arechavaletai: species(
+    "chaptalia_arechavaletai",
+    "Chaptalia arechavaletai",
+    "130. Compositae - Mutisieae",
+    "Hierba perenne, acaule, con hojas en roseta.",
+    "Hojas obovadas, obtusas, crenadas, de 6-13 cm por 3-5 cm; escapos de 10-30 cm, tomentosos, con numerosas brácteas lineales; capítulos plurifloros, nutantes antes de la fructificación; involucro de 18-22 mm; flores blancas o rosadas, las marginales cortamente liguladas; aquenios lanceolados, comprimidos, con 3 costillas a cada lado, de 5-6 mm, con rostro de 7-8 mm.",
+    "Endémica del Uruguay y del nordeste de la Argentina. Frecuente en la estepa clímax."
+  ),
+  chaptalia_ignota: species(
+    "chaptalia_ignota",
+    "Chaptalia ignota",
+    "130. Compositae - Mutisieae",
+    "Hierba perenne, acaule.",
+    "Hojas oblongo-lanceoladas, obtusas, crenado-dentadas, de 9-18 cm por 1,5-2,8 cm; escapos de 15-40 cm, tomentosos, con 3-5 brácteas superiores; capítulos plurifloros, nutantes antes de la fructificación, con 100-150 flores blancas, las marginales cortamente liguladas; involucro de 15 mm; aquenios fusiformes, densamente papilosos, con 6-8 costillas, de 7-8 mm, con rostro de 15 mm.",
+    "Provincia de Entre Ríos, norte de Buenos Aires y oeste del Uruguay. Hallada en San Isidro."
+  ),
+  chaptalia_sinuata: species(
+    "chaptalia_sinuata",
+    "Chaptalia sinuata",
+    "130. Compositae - Mutisieae",
+    "Hierba perenne, acaule.",
+    "Hojas obovadas, obtusas, retrorso-dentadas, de 6-12 cm por 3-4 cm; escapos de 7-30 cm, tomentosos, sin brácteas o con 1-3 cerca del capítulo; capítulos plurifloros, nutantes antes de la fructificación; involucro de 14-24 mm; flores blancas o rosadas, las marginales con lígula algo excedente; aquenios oblanceolados, gruesos, 5-costados, papilosos, de 4-5 mm, con rostro de 9-11 mm.",
+    "Uruguay y norte y centro de la Argentina. Norte y oeste de Buenos Aires: Zelaya, Junín, etc."
+  ),
+  trixis_verbasciformis: species(
+    "trixis_verbasciformis",
+    "Trixis verbasciformis",
+    "130. Compositae - Mutisieae",
+    "Sufrútice rizomatoso, erecto, con tallos alados y amarillento-tomentosos.",
+    "Hojas coriáceas, lanceolado-oblongas, crenadas, decurrentes, pubescentes en el haz y amarillento-tomentosas en el envés, de 7-20 cm; capítulos numerosos, cortamente pedicelados, en panojas densas; involucro de 6-8 mm, con 10-15 brácteas lanceoladas y tomentosas; flores amarillas o anaranjadas, 10-15; aquenios cilíndricos y pilosos; papus rojizo.",
+    "Sudeste del Brasil, Uruguay, Paraguay y nordeste de la Argentina, hasta el Delta del Paraná y los alrededores de Buenos Aires."
+  ),
+  trixis_praestans: species(
+    "trixis_praestans",
+    "Trixis praestans",
+    "130. Compositae - Mutisieae",
+    "Arbusto ramoso, de 1,5-2,5 m de alto, con tallos sin alas y densamente pubescentes.",
+    "Hojas pecioladas, membranosas, ovado-elípticas, enteras o aserradas, pubescentes, de 10-20 cm por 3-7 cm; capítulos numerosos, en cimas corimbiformes densas; involucro de 1 cm, con brácteas en 2-3 series, lanceoladas y agudas; flores cerca de 30, amarillas o anaranjadas; aquenios cilíndricos y pilosos; papus blanco o amarillento.",
+    "Suelos secos del sur del Brasil, Paraguay, Uruguay y nordeste de la Argentina, hasta la isla Martín García. Florece en invierno."
+  ),
+  cleanthes_brasiliensis: species(
+    "cleanthes_brasiliensis",
+    "Cleanthes brasiliensis",
+    "130. Compositae - Mutisieae",
+    "Hierba perenne, erecta, hirsuta, de 20-80 cm de alto, con tallos simples abajo y ramificados arriba.",
+    "Hojas basales oblongo-espatuladas o casi orbiculares, obtusas, dentadas o crenadas, de 6-16 cm; hojas caulinares pocas, ovadas o lanceoladas, semiabrazadoras y dentadas; capítulos 3-10, largamente pedicelados, cimoso-corimbosos; involucro de unos 10 mm, con 10-15 brácteas 2-seriadas, lanceoladas y pilosas; flores blancas, hermafroditas y bilabiadas; aquenios cilíndrico-fusiformes, pubescentes; papus de pelos denticulados.",
+    "Sudeste del Brasil, Uruguay y nordeste de la Argentina, hasta la Sierra de la Ventana. No parece hallarse cerca de Capital Federal, pero sí en Pergamino y Junín."
+  ),
+  cleanthes_hieracioides: species(
+    "cleanthes_hieracioides",
+    "Cleanthes hieracioides",
+    "130. Compositae - Mutisieae",
+    "Hierba perenne, erecta, glabra o apenas pilosa, de 10-60 cm de alto, con raíces gemíferas.",
+    "Tallos simples en la base y algo ramificados arriba; hojas basales oblanceoladas, agudas, dentadas o runcinadas, ciliadas en el borde, de 3-14 cm; hojas caulinares sésiles, lanceoladas y semiabrazadoras; capítulos 3-10 en cimas corimbiformes laxas; involucro de 4-6 mm, con 8-10 brácteas oblongas, algo pubescentes en el dorso; flores blancas; aquenios pubescentes; papus de pelos denticulados.",
+    "Paraguay, Uruguay y norte y centro de la Argentina. Frecuente en campos húmedos."
+  ),
+  pamphalea_bupleurifolia: species(
+    "pamphalea_bupleurifolia",
+    "Pamphalea bupleurifolia",
+    "130. Compositae - Mutisieae",
+    "Hierba perenne, con tallos erectos, ramosos, glabros, densamente hojosos abajo y laxamente en la parte superior, de 15-60 cm de alto.",
+    "Hojas lineal-lanceoladas, enteras, las inferiores largamente atenuadas en pecíolo envainador y las superiores sésiles y auriculadas; capítulos pequeños, numerosos, en cimas corimbiformes laxas; involucro acampanado, de 4 mm, con brácteas sub-biseriadas de margen escarioso; flores blancas, isomorfas, hermafroditas y bilabiadas; aquenios turbinados, papilosos, sin papus.",
+    "Campos húmedos y salobres del Uruguay y del norte de Buenos Aires."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -21690,6 +21802,22 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Otras tribus de Compositae",
       keyStep: "Tribus 12-13",
+      nextNodeId: "compositae_l",
+    },
+  },
+  compositae_l: {
+    id: "compositae_l",
+    milestone: "Compositae",
+    manualPage: 461,
+    descripcion: "Compositae: tribus finales",
+    opcionA: {
+      label: "Mutisieae: anteras sagitadas; flores hermafroditas bilabiadas; plantas sin látex",
+      keyStep: "Tribu 12",
+      nextNodeId: "mutisieae_a",
+    },
+    opcionA_prima: {
+      label: "Cichorieae: plantas con látex; todas las flores liguladas",
+      keyStep: "Tribu 13",
       especieId: "compositae",
     },
   },
@@ -24379,6 +24507,214 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Capítulos solitarios, grandes; flores purpúreas; hojas lineal-lanceoladas",
       keyStep: "F'",
       especieId: "centaurea_tweediei",
+    },
+  },
+  mutisieae_a: {
+    id: "mutisieae_a",
+    milestone: "Mutisieae",
+    manualPage: 465,
+    descripcion: "Mutisieae - A: presencia de papus",
+    opcionA: {
+      label: "Aquenios sin papus",
+      keyStep: "A",
+      especieId: "pamphalea_bupleurifolia",
+    },
+    opcionA_prima: {
+      label: "Aquenios con papus",
+      keyStep: "A'",
+      nextNodeId: "mutisieae_b",
+    },
+  },
+  mutisieae_b: {
+    id: "mutisieae_b",
+    milestone: "Mutisieae",
+    manualPage: 465,
+    descripcion: "Mutisieae - B: pelos del papus",
+    opcionA: {
+      label: "Pelos del papus plumosos",
+      keyStep: "B",
+      especieId: "mutisia_coccinea",
+    },
+    opcionA_prima: {
+      label: "Pelos del papus simples",
+      keyStep: "B'",
+      nextNodeId: "mutisieae_c",
+    },
+  },
+  mutisieae_c: {
+    id: "mutisieae_c",
+    milestone: "Mutisieae",
+    manualPage: 465,
+    descripcion: "Mutisieae - C: forma de las ramas del estilo",
+    opcionA: {
+      label: "Ramas del estilo truncadas en el ápice, con coronita de pelos",
+      keyStep: "C",
+      nextNodeId: "mutisieae_d",
+    },
+    opcionA_prima: {
+      label: "Ramas del estilo cortas y redondeadas en el ápice",
+      keyStep: "C'",
+      nextNodeId: "mutisieae_e",
+    },
+  },
+  mutisieae_d: {
+    id: "mutisieae_d",
+    milestone: "Mutisieae",
+    manualPage: 465,
+    descripcion: "Mutisieae - D: receptáculo y color de flores",
+    opcionA: {
+      label: "Receptáculo piloso; flores amarillas o anaranjadas",
+      keyStep: "D",
+      nextNodeId: "trixis_a",
+    },
+    opcionA_prima: {
+      label: "Receptáculo glabro; flores blancas",
+      keyStep: "D'",
+      nextNodeId: "cleanthes_a",
+    },
+  },
+  mutisieae_e: {
+    id: "mutisieae_e",
+    milestone: "Mutisieae",
+    manualPage: 465,
+    descripcion: "Mutisieae - E: color y forma de flores marginales",
+    opcionA: {
+      label: "Flores amarillas; flores marginales bilabiadas",
+      keyStep: "E",
+      especieId: "trichocline_sinuata",
+    },
+    opcionA_prima: {
+      label: "Flores blancas o rosadas; flores marginales liguladas, sin labio interno",
+      keyStep: "E'",
+      nextNodeId: "chaptalia_a",
+    },
+  },
+  chaptalia_a: {
+    id: "chaptalia_a",
+    milestone: "Chaptalia",
+    manualPage: 531,
+    descripcion: "Chaptalia - A: aquenios rostrados",
+    opcionA: {
+      label: "Aquenios sin rostro; capítulo sésil antes de la fructificación",
+      keyStep: "A",
+      especieId: "chaptalia_exscapa",
+    },
+    opcionA_prima: {
+      label: "Aquenios rostrados; capítulos sobre largos escapos",
+      keyStep: "A'",
+      nextNodeId: "chaptalia_b",
+    },
+  },
+  chaptalia_b: {
+    id: "chaptalia_b",
+    milestone: "Chaptalia",
+    manualPage: 531,
+    descripcion: "Chaptalia - B: división de hojas",
+    opcionA: {
+      label: "Hojas lirado-pinatífidas, con lóbulo terminal grande, ovado",
+      keyStep: "B",
+      especieId: "chaptalia_nutans",
+    },
+    opcionA_prima: {
+      label: "Hojas enteras, sinuadas o dentadas",
+      keyStep: "B'",
+      nextNodeId: "chaptalia_c",
+    },
+  },
+  chaptalia_c: {
+    id: "chaptalia_c",
+    milestone: "Chaptalia",
+    manualPage: 532,
+    descripcion: "Chaptalia - C: número de flores y porte del capítulo",
+    opcionA: {
+      label: "Capítulos con 20-60 flores, siempre erectos; hojas oblanceoladas de menos de 15 mm de ancho",
+      keyStep: "C",
+      nextNodeId: "chaptalia_d",
+    },
+    opcionA_prima: {
+      label: "Capítulos plurifloros, nutantes antes de la fructificación; hojas de más de 20 mm de ancho",
+      keyStep: "C'",
+      nextNodeId: "chaptalia_e",
+    },
+  },
+  chaptalia_d: {
+    id: "chaptalia_d",
+    milestone: "Chaptalia",
+    manualPage: 532,
+    descripcion: "Chaptalia - D: costillas del aquenio",
+    opcionA: {
+      label: "Aquenios con 7-8 costillas, papilosos en la base, con papus rojizo",
+      keyStep: "D",
+      especieId: "chaptalia_piloselloides",
+    },
+    opcionA_prima: {
+      label: "Aquenios con 4-6 costillas, glabros, con papus blanco o rosado",
+      keyStep: "D'",
+      especieId: "chaptalia_runcinata",
+    },
+  },
+  chaptalia_e: {
+    id: "chaptalia_e",
+    milestone: "Chaptalia",
+    manualPage: 532,
+    descripcion: "Chaptalia - E: brácteas de los escapos",
+    opcionA: {
+      label: "Escapos con numerosas brácteas lineales; hojas obovadas crenadas",
+      keyStep: "E",
+      especieId: "chaptalia_arechavaletai",
+    },
+    opcionA_prima: {
+      label: "Escapos con 1-5 brácteas o sin ellas; aquenios densamente papilosos",
+      keyStep: "E'",
+      nextNodeId: "chaptalia_f",
+    },
+  },
+  chaptalia_f: {
+    id: "chaptalia_f",
+    milestone: "Chaptalia",
+    manualPage: 532,
+    descripcion: "Chaptalia - F: forma de hojas y brácteas superiores",
+    opcionA: {
+      label: "Hojas oblongo-lanceoladas; escapos con 3-5 brácteas superiores",
+      keyStep: "F",
+      especieId: "chaptalia_ignota",
+    },
+    opcionA_prima: {
+      label: "Hojas obovadas; escapos sin brácteas o con 1-3 cerca del capítulo",
+      keyStep: "F'",
+      especieId: "chaptalia_sinuata",
+    },
+  },
+  trixis_a: {
+    id: "trixis_a",
+    milestone: "Trixis",
+    manualPage: 534,
+    descripcion: "Trixis - A: tallos alados",
+    opcionA: {
+      label: "Tallos alados, amarillento-tomentosos; hojas decurrentes",
+      keyStep: "A",
+      especieId: "trixis_verbasciformis",
+    },
+    opcionA_prima: {
+      label: "Tallos sin alas, densamente pubescentes; hojas pecioladas",
+      keyStep: "A'",
+      especieId: "trixis_praestans",
+    },
+  },
+  cleanthes_a: {
+    id: "cleanthes_a",
+    milestone: "Cleanthes",
+    manualPage: 534,
+    descripcion: "Cleanthes - A: indumento de la planta",
+    opcionA: {
+      label: "Plantas hirsutas; involucro de unos 10 mm",
+      keyStep: "A",
+      especieId: "cleanthes_brasiliensis",
+    },
+    opcionA_prima: {
+      label: "Plantas glabras o apenas pilosas; involucro de 4-6 mm",
+      keyStep: "A'",
+      especieId: "cleanthes_hieracioides",
     },
   },
   grindelia_a: {
