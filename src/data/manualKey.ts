@@ -7833,6 +7833,150 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas opuestas, lineales, enteras y glaucas, con bolsas oleíferas; capítulos largamente pedunculados, solitarios en el extremo de las ramitas; involucro cilíndrico, de 10-12 mm, con 5 brácteas; flores blancas o amarillentas, todas hermafroditas y tubulosas; aquenios lineales, pluriestriados; papus formado por muchas cerdas.",
     "Brasil y norte de la Argentina. Muy rara en los alrededores de Buenos Aires."
   ),
+  anthemis_cotula: species(
+    "anthemis_cotula",
+    "Anthemis cotula",
+    "130. Compositae - Anthemideae",
+    "Hierba anual, ramosa, casi glabra, de unos 50 cm de alto.",
+    "Hojas bipinatisectas, con segmentos lineales agudos; capítulos solitarios en el extremo de las ramas; involucro de 2 mm por 7 mm, con brácteas lanceoladas; receptáculo cónico y cubierto de páleas; flores marginales liguladas, neutras, blancas; aquenios obcónicos, granulados, sin papus.",
+    "Europa; adventicia en las regiones templadas de América. Común en suelos modificados; florece en primavera. Nombre vulgar: manzanilla cimarrona."
+  ),
+  anthemis_mixta: species(
+    "anthemis_mixta",
+    "Anthemis mixta",
+    "130. Compositae - Anthemideae",
+    "Hierba anual, laxamente pubescente, con tallos ascendentes de 10-40 cm.",
+    "Hojas profundamente bipinatisectas, con raquis ancho y segmentos lineales agudos; capítulos solitarios; involucro de 5 mm por 8-10 mm, con brácteas espatuladas y recortadas en el borde; flores marginales femeninas, liguladas, blancas; aquenios lisos, sin papus.",
+    "Europa; adventicia en Uruguay. Hallada en la Isla Maciel."
+  ),
+  achillea_millefolium: species(
+    "achillea_millefolium",
+    "Achillea millefolium",
+    "130. Compositae - Anthemideae",
+    "Hierba perenne, rizomatosa y estolonífera, glabra o algo lanuginosa, erecta, de 20-80 cm de alto.",
+    "Hojas alternas, oblongas, bi- o tripinatisectas, con segmentos lineales mucronulados; capítulos pequeños, densamente corimbosos; involucro de 5 mm por 3 mm, con brácteas lanceoladas y pubescentes; flores liguladas blancas; aquenios oblongos u obovoideos, algo comprimidos, glabros y sin papus.",
+    "Europa; adventicia en las regiones templadas. En jardines y suelos modificados; florece en otoño."
+  ),
+  matricaria_chamomilla: species(
+    "matricaria_chamomilla",
+    "Matricaria chamomilla",
+    "130. Compositae - Anthemideae",
+    "Hierba anual, glabra y fragante.",
+    "Hojas bi- o tripinatisectas, con segmentos lineales agudos; capítulos solitarios o en cimas laxas; involucro hemisférico, de 2 mm por 5-6 mm, con brácteas 2-seriadas, lanceoladas y escariosas en el margen; receptáculo cónico, hueco y desnudo; flores marginales blancas; aquenios oblongos, truncados, con 3-5 costillas en un lado, sin papus o con coronita breve.",
+    "Europa; adventicia en América. Medicinal. Nombre vulgar: manzanilla."
+  ),
+  chrysanthemum_vulgare: species(
+    "chrysanthemum_vulgare",
+    "Chrysanthemum vulgare",
+    "130. Compositae - Anthemideae",
+    "Hierba perenne, rizomatosa, de 80-130 cm de alto.",
+    "Hojas elípticas, profundamente pinatisectas, con segmentos lanceolados lobulados; capítulos discoideos en cimas corimbiformes densas; involucro de 4 mm por 7 mm, con brácteas oblongas; flores amarillas, las marginales femeninas tubulosas y tridentadas, las del disco hermafroditas; aquenios cilíndricos, glabros, 5-costados, coronados por un reborde membranoso denticulado.",
+    "Europa. Cultivada y subespontánea en suelos modificados."
+  ),
+  chrysanthemum_parthenium: species(
+    "chrysanthemum_parthenium",
+    "Chrysanthemum parthenium",
+    "130. Compositae - Anthemideae",
+    "Hierba perenne, erecta, de 30-80 cm de alto.",
+    "Hojas elípticas, profundamente pinatisectas, con segmentos lobados anchos; capítulos radiados en cimas corimbiformes laxas; involucro de 3 mm por 8 mm, con brácteas lanceoladas; flores marginales blancas; aquenios cilíndricos, sin papus.",
+    "Europa. Cultivada como ornamental y subespontánea."
+  ),
+  chrysanthemum_anethifolium: species(
+    "chrysanthemum_anethifolium",
+    "Chrysanthemum anethifolium",
+    "130. Compositae - Anthemideae",
+    "Sufrútice perenne, glabro, de 30-50 cm de alto.",
+    "Hojas bipinatisectas, con raquis y segmentos lineales; capítulos radiados, solitarios en el extremo de las ramas; involucro hemisférico, de 4-5 mm por 6-7 mm, con brácteas ovadas de borde membranáceo recortado; flores liguladas blancas o amarillentas; aquenios marginales trialados y los del disco gruesos, todos coronados por reborde membranoso coroniforme.",
+    "Islas Canarias. Cultivado como ornamental y subespontáneo en suelos modificados."
+  ),
+  chrysanthemum_balsamita_var_tanacetoides: species(
+    "chrysanthemum_balsamita_var_tanacetoides",
+    "Chrysanthemum balsamita var. tanacetoides",
+    "130. Compositae - Anthemideae",
+    "Hierba perenne.",
+    "Hojas ovadas u oblongas, dentadas, las inferiores pecioladas y las superiores sésiles; capítulos discoideos y corimbosos; aquenios con una coronita membranosa.",
+    "Asia. Cultivada como ornamental y aromática; subespontánea en rastrojos."
+  ),
+  chrysanthemum_leucanthemum: species(
+    "chrysanthemum_leucanthemum",
+    "Chrysanthemum leucanthemum",
+    "130. Compositae - Anthemideae",
+    "Hierba perenne, glabra o pubescente, erecta, de 10-100 cm de alto.",
+    "Hojas espatuladas, crenadas, las inferiores pecioladas y las superiores sésiles; capítulos radiados, grandes, solitarios en el extremo del tallo; involucro de 6-7 mm por 12-20 mm, con brácteas lanceoladas; flores marginales blancas, largamente liguladas; aquenios oblongos, con 10 costillas blancas, los de flores hermafroditas sin papus y los marginales con dilatación membranácea superior.",
+    "Europa. Cultivada como ornamental y adventicia en suelos modificados húmedos."
+  ),
+  plagiocheilus_tanacetoides: species(
+    "plagiocheilus_tanacetoides",
+    "Plagiocheilus tanacetoides",
+    "130. Compositae - Anthemideae",
+    "Hierba anual, erecta, algo pubescente, de 15-40 cm de alto.",
+    "Hojas elípticas, pinatisectas, auriculadas en la base, con segmentos lanceolados aserrados o lobulados; capítulos pequeños, cimoso-corimbosos; involucro hemisférico, de 2 mm por 5 mm, con brácteas 2-seriadas; flores marginales en varias series, femeninas y bilabiadas; flores del disco masculinas; aquenios algo comprimidos, sin papus.",
+    "Nordeste de la Argentina. Rara cerca de Buenos Aires."
+  ),
+  cotula_australis: species(
+    "cotula_australis",
+    "Cotula australis",
+    "130. Compositae - Anthemideae",
+    "Hierba anual, decumbente, pubescente, de 5-20 cm de alto.",
+    "Hojas alternas, pinatisectas o bipinatisectas; capítulos pequeños, pedunculados; involucro de 2 mm por 4-5 mm; flores blanquecinas, las marginales multiseriadas, femeninas y sin corola; aquenios de las flores femeninas comprimidos dorsalmente, los de las flores hermafroditas gruesos, sin papus.",
+    "Nueva Zelandia; adventicia en muchas regiones del globo. Frecuente en suelos modificados húmedos; florece a fines del invierno."
+  ),
+  cotula_coronopifolia: species(
+    "cotula_coronopifolia",
+    "Cotula coronopifolia",
+    "130. Compositae - Anthemideae",
+    "Hierba perenne, glabra, ascendente o rastrera, de 8-15 cm de alto.",
+    "Hojas algo carnosas, lobadas o pinatisectas; capítulos pequeños, pedunculados; involucro de 2-3 mm por 9-10 mm; flores amarillas, las marginales uniseriadas y sin corola; aquenios marginales comprimidos dorsalmente, los del disco gruesos, sin papus.",
+    "África; adventicia en todo el mundo. Común en suelos pantanosos."
+  ),
+  soliva_pterosperma: species(
+    "soliva_pterosperma",
+    "Soliva pterosperma",
+    "130. Compositae - Anthemideae",
+    "Hierba anual, pigmea, rastrera y divaricado-ramosa.",
+    "Hojas pecioladas, 2-3-pinatisectas y pubescentes; capítulos sésiles en las bifurcaciones del tallo; involucro de 3 mm por 4-5 mm; flores marginales femeninas, apétalas; flores del disco masculinas; aquenios obovados, comprimidos dorsalmente, con dos alas anchas, bilobadas y prolongadas en punta, de 3-4 mm por 4-5 mm.",
+    "América austral; adventicia en Estados Unidos, Nueva Zelandia y Australia. Común en suelos fértiles; florece en primavera."
+  ),
+  soliva_stolonifera: species(
+    "soliva_stolonifera",
+    "Soliva stolonifera",
+    "130. Compositae - Anthemideae",
+    "Hierba pigmea, rastrera, estolonífera y glabra.",
+    "Hojas arrosetadas, largamente pecioladas, pinatisectas, con 3-5 pares de segmentos lanceolados; capítulos solitarios; involucro de 2,5 mm por 4 mm; aquenios de 2,5 mm, oblongos o cuneiformes, con alas estrechas, rugosas transversalmente, terminadas en dos puntas divergentes y con pelos largos en la parte superior.",
+    "América austral; adventicia en otras regiones del globo. En suelos modificados."
+  ),
+  soliva_anthemifolia: species(
+    "soliva_anthemifolia",
+    "Soliva anthemifolia",
+    "130. Compositae - Anthemideae",
+    "Hierba tendida, ramosa y estolonífera.",
+    "Hojas pubescentes, tripinatisectas, con segmentos de segundo orden numerosos, cortos, dentados o partidos; capítulos solitarios; involucro de 4 mm por 8-10 mm; aquenios cuneiformes, con alas muy onduladas, redondeadas o truncadas arriba, recortadas en la parte inferior y sin puntas divergentes.",
+    "Sur del Brasil, Paraguay y nordeste de la Argentina; adventicia en otras regiones del globo."
+  ),
+  soliva_macrocephala: species(
+    "soliva_macrocephala",
+    "Soliva macrocephala",
+    "130. Compositae - Anthemideae",
+    "Hierba acaule, estolonífera, casi glabra.",
+    "Hojas laxamente pubescentes o casi glabras, bipinatisectas, con segmentos de segundo orden lineales, enteros o raramente bifurcados; capítulos solitarios pero amontonados por lo corto de los estolones; involucro de 10-15 mm de diámetro; aquenios oblongos, truncados en el ápice, con alas gruesas ligeramente onduladas, enteras y sin puntas divergentes.",
+    "Uruguay y provincia de Buenos Aires. En campos húmedos; florece en primavera."
+  ),
+  artemisia_annua: species(
+    "artemisia_annua",
+    "Artemisia annua",
+    "130. Compositae - Anthemideae",
+    "Planta anual, erecta y glabra.",
+    "Hojas bi- o tripinatisectas, con segmentos lineales estrechos; capítulos pequeños en amplias panojas; involucro de 1 mm por 2 mm; flores amarillas; aquenios glabros, sin papus.",
+    "Asia. Adventicia en Europa y América. Esporádica en la región."
+  ),
+  artemisia_verlotorum: species(
+    "artemisia_verlotorum",
+    "Artemisia verlotorum",
+    "130. Compositae - Anthemideae",
+    "Hierba perenne, rizomatosa.",
+    "Hojas pinatisectas, con segmentos lanceolados, enteros o con algún lóbulo, glabras en el haz y densamente albo-tomentosas en el envés; capítulos pequeños en amplias panojas; involucro de 4 mm por 2,5 mm; aquenios glabros, sin papus.",
+    "Asia; adventicia en Europa y en la Argentina. Maleza invasora. Nombre vulgar: yuyo de San Vicente."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -21154,7 +21298,23 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Otras tribus de Compositae",
       keyStep: "Tribus 6-13",
+      nextNodeId: "compositae_f",
+    },
+  },
+  compositae_f: {
+    id: "compositae_f",
+    milestone: "Compositae",
+    manualPage: 464,
+    descripcion: "Compositae: tribus desde Helenieae, avance parcial",
+    opcionA: {
+      label: "Helenieae: brácteas involucrales con glándulas oleíferas, o aquenios con papus pajizo; receptáculo desnudo o con cerdas",
+      keyStep: "Tribu 6",
       nextNodeId: "helenieae_a",
+    },
+    opcionA_prima: {
+      label: "Otras tribus de Compositae",
+      keyStep: "Tribus 7-13",
+      nextNodeId: "anthemideae_a",
     },
   },
   astereae_a: {
@@ -23011,6 +23171,278 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Capítulos radiados",
       keyStep: "1b",
       especieId: "gaillardia_megapotamica_var_radiata",
+    },
+  },
+  anthemideae_a: {
+    id: "anthemideae_a",
+    milestone: "Anthemideae",
+    manualPage: 464,
+    descripcion: "Anthemideae - A: receptáculo con páleas",
+    opcionA: {
+      label: "Receptáculo cubierto de páleas",
+      keyStep: "A",
+      nextNodeId: "anthemideae_b",
+    },
+    opcionA_prima: {
+      label: "Receptáculo sin páleas",
+      keyStep: "A'",
+      nextNodeId: "anthemideae_c",
+    },
+  },
+  anthemideae_b: {
+    id: "anthemideae_b",
+    milestone: "Anthemideae",
+    manualPage: 464,
+    descripcion: "Anthemideae - B: forma de aquenios y disposición de capítulos",
+    opcionA: {
+      label: "Aquenios comprimidos; capítulos en corimbos definidos densos",
+      keyStep: "B",
+      especieId: "achillea_millefolium",
+    },
+    opcionA_prima: {
+      label: "Aquenios gruesos; capítulos solitarios o en corimbos flojos",
+      keyStep: "B'",
+      nextNodeId: "anthemis_a",
+    },
+  },
+  anthemideae_c: {
+    id: "anthemideae_c",
+    milestone: "Anthemideae",
+    manualPage: 464,
+    descripcion: "Anthemideae - C: número de piezas en flores hermafroditas",
+    opcionA: {
+      label: "Flores hermafroditas tetrámeras",
+      keyStep: "C",
+      nextNodeId: "anthemideae_d",
+    },
+    opcionA_prima: {
+      label: "Flores hermafroditas pentámeras",
+      keyStep: "C'",
+      nextNodeId: "anthemideae_e",
+    },
+  },
+  anthemideae_d: {
+    id: "anthemideae_d",
+    milestone: "Anthemideae",
+    manualPage: 464,
+    descripcion: "Anthemideae - D: capítulos pedunculados o sésiles",
+    opcionA: {
+      label: "Capítulos largamente pedunculados",
+      keyStep: "D",
+      nextNodeId: "cotula_a",
+    },
+    opcionA_prima: {
+      label: "Capítulos sésiles",
+      keyStep: "D'",
+      nextNodeId: "soliva_a",
+    },
+  },
+  anthemideae_e: {
+    id: "anthemideae_e",
+    milestone: "Anthemideae",
+    manualPage: 464,
+    descripcion: "Anthemideae - E: forma de flores marginales",
+    opcionA: {
+      label: "Flores marginales bilabiadas",
+      keyStep: "E",
+      especieId: "plagiocheilus_tanacetoides",
+    },
+    opcionA_prima: {
+      label: "Flores marginales liguladas o filiformes, no bilabiadas",
+      keyStep: "E'",
+      nextNodeId: "anthemideae_f",
+    },
+  },
+  anthemideae_f: {
+    id: "anthemideae_f",
+    milestone: "Anthemideae",
+    manualPage: 464,
+    descripcion: "Anthemideae - F: disposición de capítulos",
+    opcionA: {
+      label: "Capítulos solitarios o corimbosos",
+      keyStep: "F",
+      nextNodeId: "anthemideae_g",
+    },
+    opcionA_prima: {
+      label: "Capítulos muy pequeños, agrupados en racimos o panojas",
+      keyStep: "F'",
+      nextNodeId: "artemisia_a",
+    },
+  },
+  anthemideae_g: {
+    id: "anthemideae_g",
+    milestone: "Anthemideae",
+    manualPage: 464,
+    descripcion: "Anthemideae - G: series de brácteas involucrales",
+    opcionA: {
+      label: "Brácteas involucrales pluriseriadas, las exteriores gradualmente menores",
+      keyStep: "G",
+      nextNodeId: "chrysanthemum_a",
+    },
+    opcionA_prima: {
+      label: "Brácteas involucrales en 2-3 series, todas más o menos del mismo largo",
+      keyStep: "G'",
+      especieId: "matricaria_chamomilla",
+    },
+  },
+  anthemis_a: {
+    id: "anthemis_a",
+    milestone: "Anthemis",
+    manualPage: 514,
+    descripcion: "Anthemis - A: superficie de aquenios",
+    opcionA: {
+      label: "Aquenios obcónicos, cubiertos de gránulos",
+      keyStep: "A",
+      especieId: "anthemis_cotula",
+    },
+    opcionA_prima: {
+      label: "Aquenios lisos",
+      keyStep: "A'",
+      especieId: "anthemis_mixta",
+    },
+  },
+  chrysanthemum_a: {
+    id: "chrysanthemum_a",
+    milestone: "Chrysanthemum",
+    manualPage: 515,
+    descripcion: "Chrysanthemum - A: hojas profundamente divididas",
+    opcionA: {
+      label: "Hojas profundamente pinatisectas",
+      keyStep: "A",
+      nextNodeId: "chrysanthemum_b",
+    },
+    opcionA_prima: {
+      label: "Hojas enteras o dentadas",
+      keyStep: "A'",
+      nextNodeId: "chrysanthemum_d",
+    },
+  },
+  chrysanthemum_b: {
+    id: "chrysanthemum_b",
+    milestone: "Chrysanthemum",
+    manualPage: 515,
+    descripcion: "Chrysanthemum - B: capítulos discoideos o radiados",
+    opcionA: {
+      label: "Capítulos discoideos en cimas corimbiformes densas",
+      keyStep: "B",
+      especieId: "chrysanthemum_vulgare",
+    },
+    opcionA_prima: {
+      label: "Capítulos radiados, con flores marginales liguladas",
+      keyStep: "B'",
+      nextNodeId: "chrysanthemum_c",
+    },
+  },
+  chrysanthemum_c: {
+    id: "chrysanthemum_c",
+    milestone: "Chrysanthemum",
+    manualPage: 515,
+    descripcion: "Chrysanthemum - C: capítulos corimbosos o solitarios",
+    opcionA: {
+      label: "Capítulos en cimas corimbiformes laxas",
+      keyStep: "C",
+      especieId: "chrysanthemum_parthenium",
+    },
+    opcionA_prima: {
+      label: "Capítulos solitarios en el extremo de las ramas",
+      keyStep: "C'",
+      especieId: "chrysanthemum_anethifolium",
+    },
+  },
+  chrysanthemum_d: {
+    id: "chrysanthemum_d",
+    milestone: "Chrysanthemum",
+    manualPage: 516,
+    descripcion: "Chrysanthemum - D: capítulos discoideos o radiados",
+    opcionA: {
+      label: "Capítulos discoideos, corimbosos; aquenios con coronita membranosa",
+      keyStep: "D",
+      especieId: "chrysanthemum_balsamita_var_tanacetoides",
+    },
+    opcionA_prima: {
+      label: "Capítulos radiados, grandes, solitarios en el extremo del tallo",
+      keyStep: "D'",
+      especieId: "chrysanthemum_leucanthemum",
+    },
+  },
+  cotula_a: {
+    id: "cotula_a",
+    milestone: "Cotula",
+    manualPage: 517,
+    descripcion: "Cotula - A: color de flores y hábito",
+    opcionA: {
+      label: "Flores blanquecinas; hierba anual, decumbente y pubescente",
+      keyStep: "A",
+      especieId: "cotula_australis",
+    },
+    opcionA_prima: {
+      label: "Flores amarillas; hierba perenne, glabra, ascendente o rastrera",
+      keyStep: "A'",
+      especieId: "cotula_coronopifolia",
+    },
+  },
+  soliva_a: {
+    id: "soliva_a",
+    milestone: "Soliva",
+    manualPage: 517,
+    descripcion: "Soliva - A: forma y alas de los aquenios",
+    opcionA: {
+      label: "Aquenios obovados, con dos alas anchas bilobadas y prolongadas en punta",
+      keyStep: "A",
+      especieId: "soliva_pterosperma",
+    },
+    opcionA_prima: {
+      label: "Aquenios oblongos o cuneiformes, con alas gruesas y pelos largos superiores",
+      keyStep: "A'",
+      nextNodeId: "soliva_b",
+    },
+  },
+  soliva_b: {
+    id: "soliva_b",
+    milestone: "Soliva",
+    manualPage: 517,
+    descripcion: "Soliva - B: puntas divergentes en las alas del aquenio",
+    opcionA: {
+      label: "Alas estrechas terminadas en dos puntas divergentes",
+      keyStep: "B",
+      especieId: "soliva_stolonifera",
+    },
+    opcionA_prima: {
+      label: "Alas redondeadas o truncadas en la parte superior, sin puntas divergentes",
+      keyStep: "B'",
+      nextNodeId: "soliva_c",
+    },
+  },
+  soliva_c: {
+    id: "soliva_c",
+    milestone: "Soliva",
+    manualPage: 517,
+    descripcion: "Soliva - C: pubescencia y división foliar",
+    opcionA: {
+      label: "Hojas pubescentes, tripinatisectas, con segmentos numerosos cortos",
+      keyStep: "C",
+      especieId: "soliva_anthemifolia",
+    },
+    opcionA_prima: {
+      label: "Hojas laxamente pubescentes o casi glabras, bipinatisectas, con segmentos lineales",
+      keyStep: "C'",
+      especieId: "soliva_macrocephala",
+    },
+  },
+  artemisia_a: {
+    id: "artemisia_a",
+    milestone: "Artemisia",
+    manualPage: 519,
+    descripcion: "Artemisia - A: duración e indumento foliar",
+    opcionA: {
+      label: "Plantas anuales, erectas y glabras; hojas bi- o tripinatisectas",
+      keyStep: "A",
+      especieId: "artemisia_annua",
+    },
+    opcionA_prima: {
+      label: "Hierbas perennes, rizomatosas; hojas albo-tomentosas en el envés",
+      keyStep: "A'",
+      especieId: "artemisia_verlotorum",
     },
   },
   grindelia_a: {
