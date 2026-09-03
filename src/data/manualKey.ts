@@ -7657,6 +7657,78 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas opuestas, lanceoladas o lineal-lanceoladas, enteras, trinervadas, glabras o pubescentes en el margen; capítulos solitarios sobre pedúnculos de 10-30 cm; involucro de 3-5 mm por 8 mm, con brácteas ovadas; flores amarillas, dimorfas.",
     "América austral. Muy frecuente en campos húmedos. Nombre vulgar: nim-nim."
   ),
+  verbesina_encelioides: species(
+    "verbesina_encelioides",
+    "Verbesina encelioides",
+    "130. Compositae - Heliantheae",
+    "Hierba anual, erecta, de 20-60 cm de alto.",
+    "Hojas alternas, pecioladas, ovado-triangulares, agudas en el ápice y contraídas en la base, dentadas, pubescentes en el haz y densamente seríceo-pubescentes en el envés, de 5-6 cm por 2-7 cm; pecíolo alado, con o sin aurículas basales; capítulos pocos, largamente pedunculados; involucro de 1 cm por 1,2-1,8 cm; flores amarillas, las marginales largamente liguladas; aquenios laxamente pubescentes.",
+    "América cálida. Frecuente en suelos modificados."
+  ),
+  verbesina_subcordata: species(
+    "verbesina_subcordata",
+    "Verbesina subcordata",
+    "130. Compositae - Heliantheae",
+    "Arbusto tomentuloso, de 1-2 m de alto.",
+    "Hojas alternas, lanceoladas, semiauriculadas en la base, aserradas, pubescentes en el haz y tomentulosas en el envés, de 10-18 cm por 2-5 cm; capítulos pocos, corimbosos; involucro de 5-7 mm por 7-10 mm; brácteas en 2-3 series, lineales y seríceo-pubescentes; flores amarillas, dimorfas, con las marginales liguladas; aquenios glabros.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Frecuente en la ribera platense y en la isla Martín García."
+  ),
+  thelesperma_megapotamicum: species(
+    "thelesperma_megapotamicum",
+    "Thelesperma megapotamicum",
+    "130. Compositae - Heliantheae",
+    "Sufrútice erecto, glabro y ramoso, de 40-60 cm de alto.",
+    "Tallos hojosos inferiormente y casi desnudos en la parte superior; hojas profundamente pinatisectas o bipinatisectas, con raquis y segmentos filiformes; capítulos solitarios, muy largamente pedunculados; involucro de 7-8 mm; flores amarillas, isomorfas, todas tubulosas; aquenios oblongos, de 6 mm; papus con dos pajitas lanceoladas, cóncavas, de 1,5-2 mm, cubiertas de pelos retrorsos.",
+    "Sur de los Estados Unidos, centro de la Argentina y Uruguay. Rara cerca de la Capital Federal. Nombre vulgar: té indio."
+  ),
+  bidens_laevis: species(
+    "bidens_laevis",
+    "Bidens laevis",
+    "130. Compositae - Heliantheae",
+    "Hierba anual o perenne, erecta y glabra, de 30-100 cm de alto.",
+    "Hojas simples, sésiles, lanceoladas, aserradas, glabras, de 5-15 cm por 1,5-3 cm; capítulos radiados, grandes, cimoso-corimbosos y largamente pedunculados; involucro de 1 cm por 2 cm; flores amarillas, las marginales largamente liguladas y neutras; aquenios deprimidos, cuneiformes, de 6-9 mm; papus con 2-4 aristas.",
+    "América templado-cálida. Común en los pajonales del Delta y de la ribera platense; florece en otoño."
+  ),
+  bidens_pilosa: species(
+    "bidens_pilosa",
+    "Bidens pilosa",
+    "130. Compositae - Heliantheae",
+    "Hierba anual, erecta, ramosa, glabra o algo pubescente, de 30-150 cm de alto.",
+    "Hojas opuestas, pecioladas, profundamente pinatisectas, con segmento terminal ovado, agudo y acuminado, aserrado, y 1-2 pares de segmentos menores; capítulos cimosos, largamente pedunculados, discoideos; involucro de 5 mm por 6-7 mm; aquenios lineales; papus con 2-3 aristas cubiertas de pelos retrorsos.",
+    "Regiones tropicales y subtropicales de todo el globo. En rastrojos y suelos modificados. Nombre vulgar: amor seco."
+  ),
+  bidens_pilosa_var_minor: species(
+    "bidens_pilosa_var_minor",
+    "Bidens pilosa var. minor",
+    "130. Compositae - Heliantheae",
+    "Variedad de Bidens pilosa con capítulos radiados.",
+    "Se diferencia de la forma típica por presentar flores marginales blancas o amarillentas.",
+    "Muy común en suelos modificados."
+  ),
+  bidens_subalternans: species(
+    "bidens_subalternans",
+    "Bidens subalternans",
+    "130. Compositae - Heliantheae",
+    "Hierba anual, erecta y ramosa, de 40-100 cm de alto.",
+    "Hojas opuestas, pecioladas, pinatisectas o bipinatisectas, con segmentos lanceolados, agudos y cortamente híspidos; capítulos radiados o discoideos, cimosos y largamente pedunculados; involucro de 6 mm por 6-8 mm; flores marginales blancas o amarillentas, a veces ausentes; aquenios lineales, tetragonales; papus con 4 aristas.",
+    "América austral templado-cálida. Común en suelos modificados y en los matorrales de la ribera. Nombre vulgar: amor seco."
+  ),
+  bidens_subalternans_var_simulans: species(
+    "bidens_subalternans_var_simulans",
+    "Bidens subalternans var. simulans",
+    "130. Compositae - Heliantheae",
+    "Variedad de Bidens subalternans con hojas más disectas.",
+    "Hojas con segmentos lineales o lineal-lanceolados.",
+    "Frecuente en la ribera platense y en suelos modificados."
+  ),
+  galinsoga_parviflora: species(
+    "galinsoga_parviflora",
+    "Galinsoga parviflora",
+    "130. Compositae - Heliantheae",
+    "Hierba anual, erecta, glabra o algo pubescente, de 40-80 cm de alto.",
+    "Hojas pecioladas, ovadas y crenado-aserradas; capítulos numerosos, largamente pedunculados, cimosos; involucro de 2,5-3 mm por 4-5 mm, con brácteas ovadas, obtusas y glabras; páleas lanceoladas con un lóbulo a cada lado; flores marginales 4-5, blancas y cortamente liguladas; aquenios obovado-turbinados, pubescentes; papus con 15-20 pajitas laciniadas casi tan largas como la corola, ausente en las flores femeninas.",
+    "Perú. Ruderal en América y Europa. Común en los bosques de la ribera del Plata, jardines y rastrojos."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -22269,7 +22341,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Flores del disco con papus muy desarrollado, paleáceo, casi tan largo como la corola",
       keyStep: "E",
-      especieId: "compositae",
+      especieId: "galinsoga_parviflora",
     },
     opcionA_prima: {
       label: "Flores del disco con papus formado por aristas, escamas cortas o nulo",
@@ -22285,7 +22357,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Aquenios comprimidos dorsalmente; papus de 2-4 aristas rígidas con pelos retrorsos",
       keyStep: "F",
-      especieId: "compositae",
+      nextNodeId: "heliantheae_g",
     },
     opcionA_prima: {
       label: "Aquenios apenas comprimidos o comprimidos lateralmente; papus de escamitas, aristas sin pelos retrorsos o ausente",
@@ -22493,7 +22565,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Aquenios alados en el margen",
       keyStep: "P",
-      especieId: "compositae",
+      nextNodeId: "verbesina_a",
     },
     opcionA_prima: {
       label: "Aquenios sin alas marginales",
@@ -22531,6 +22603,102 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Capítulos discoideos, sin lígulas",
       keyStep: "1a",
       especieId: "spilanthes_stolonifera_var_pusilla",
+    },
+  },
+  heliantheae_g: {
+    id: "heliantheae_g",
+    milestone: "Heliantheae",
+    manualPage: 463,
+    descripcion: "Heliantheae - G: brácteas involucrales internas",
+    opcionA: {
+      label: "Brácteas involucrales internas soldadas hasta más arriba de su mitad",
+      keyStep: "G",
+      especieId: "thelesperma_megapotamicum",
+    },
+    opcionA_prima: {
+      label: "Brácteas involucrales libres",
+      keyStep: "G'",
+      nextNodeId: "bidens_a",
+    },
+  },
+  verbesina_a: {
+    id: "verbesina_a",
+    milestone: "Verbesina",
+    manualPage: 506,
+    descripcion: "Verbesina - A: hierba anual o arbusto",
+    opcionA: {
+      label: "Hierba anual erecta de 20-60 cm; hojas ovado-triangulares de 5-6 cm",
+      keyStep: "A",
+      especieId: "verbesina_encelioides",
+    },
+    opcionA_prima: {
+      label: "Arbusto tomentuloso de 1-2 m; hojas lanceoladas de 10-18 cm",
+      keyStep: "A'",
+      especieId: "verbesina_subcordata",
+    },
+  },
+  bidens_a: {
+    id: "bidens_a",
+    milestone: "Bidens",
+    manualPage: 507,
+    descripcion: "Bidens - A: hojas simples o pinatisectas",
+    opcionA: {
+      label: "Hojas simples, sésiles, lanceoladas, aserradas y glabras",
+      keyStep: "A",
+      especieId: "bidens_laevis",
+    },
+    opcionA_prima: {
+      label: "Hojas profundamente pinatisectas; capítulos pequeños, cortamente ligulados o discoideos",
+      keyStep: "A'",
+      nextNodeId: "bidens_b",
+    },
+  },
+  bidens_b: {
+    id: "bidens_b",
+    milestone: "Bidens",
+    manualPage: 508,
+    descripcion: "Bidens - B: forma de los segmentos foliares",
+    opcionA: {
+      label: "Segmento terminal ovado, agudo y acuminado, con 1-2 pares de segmentos menores",
+      keyStep: "B",
+      nextNodeId: "bidens_pilosa_a",
+    },
+    opcionA_prima: {
+      label: "Segmentos lanceolados, agudos y cortamente híspidos",
+      keyStep: "B'",
+      nextNodeId: "bidens_subalternans_a",
+    },
+  },
+  bidens_pilosa_a: {
+    id: "bidens_pilosa_a",
+    milestone: "Bidens pilosa",
+    manualPage: 508,
+    descripcion: "Bidens pilosa - forma típica o variedad minor",
+    opcionA: {
+      label: "Capítulos discoideos",
+      keyStep: "2",
+      especieId: "bidens_pilosa",
+    },
+    opcionA_prima: {
+      label: "Capítulos radiados, con flores marginales blancas o amarillentas",
+      keyStep: "2a",
+      especieId: "bidens_pilosa_var_minor",
+    },
+  },
+  bidens_subalternans_a: {
+    id: "bidens_subalternans_a",
+    milestone: "Bidens subalternans",
+    manualPage: 508,
+    descripcion: "Bidens subalternans - forma típica o variedad simulans",
+    opcionA: {
+      label: "Hojas con segmentos lanceolados",
+      keyStep: "3",
+      especieId: "bidens_subalternans",
+    },
+    opcionA_prima: {
+      label: "Hojas más disectas, con segmentos lineales o lineal-lanceolados",
+      keyStep: "3a",
+      especieId: "bidens_subalternans_var_simulans",
     },
   },
   grindelia_a: {
