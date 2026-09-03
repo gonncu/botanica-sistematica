@@ -7537,6 +7537,46 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas lanceoladas, enteras o con un lóbulo agudo por lado, laxamente pubescentes en el haz e incano-tomentosas en el envés, de 3-4 cm; capítulos masculinos en espigas terminales laxas, globosos, de 4 mm; frutos oblongos, cubiertos de espinas ganchudas, de 8-10 mm.",
     "Cosmopolita. Frecuente en suelos modificados. Nombre vulgar: cepa-caballo."
   ),
+  jaegeria_hirta: species(
+    "jaegeria_hirta",
+    "Jaegeria hirta",
+    "130. Compositae - Heliantheae",
+    "Hierba anual erecta, ramosa y laxamente híspida, de 30-100 cm de alto.",
+    "Hojas opuestas, cortamente pecioladas, ovado-elípticas, enteras o subdentadas, trinervadas, levemente pilosas, de 3-10 cm; capítulos pequeños, cimosos, pedicelados; involucro de 2 mm, con brácteas uniseriadas, densamente hirto-glandulosas en el dorso; aquenios oscuros, glabros, sin papus.",
+    "América cálida. En bosques del Delta y de la ribera del Plata; florece en otoño."
+  ),
+  enhydra_anagallis: species(
+    "enhydra_anagallis",
+    "Enhydra anagallis",
+    "130. Compositae - Heliantheae",
+    "Hierba perenne acuática o palustre, tendida, crasa, glabra o laxamente pubescente, de 30-100 cm de largo.",
+    "Hojas opuestas, oblanceolado-espatuladas, sésiles, auriculadas en la base, aserrado-dentadas superiormente, glabras, de 4-6 cm; capítulos sésiles o subsésiles, solitarios en las axilas; involucro hemisférico de 10-13 mm; flores envueltas por sus páleas; aquenios lanceolado-fusiformes, glabros, sin papus.",
+    "Centro y sur del Brasil, Paraguay y nordeste de la Argentina, hasta el Delta y la ribera platense."
+  ),
+  eclipta_alba: species(
+    "eclipta_alba",
+    "Eclipta alba",
+    "130. Compositae - Heliantheae",
+    "Hierba anual, ascendente o erecta, laxamente pubescente.",
+    "Hojas opuestas, sésiles, lanceoladas, enteras o aserradas, de 2,5-10 cm; capítulos numerosos, cimosos, largamente pedunculados; involucro de 3 mm; páleas ciliadas; flores blancas; aquenios trígonos o tetrágonos, rugosos; papus formado por una coronita de cerdas cortas.",
+    "Regiones cálidas. Común en suelos húmedos."
+  ),
+  eclipta_megapotamica: species(
+    "eclipta_megapotamica",
+    "Eclipta megapotamica",
+    "130. Compositae - Heliantheae",
+    "Hierba perenne erecta, con pelos tendidos esparcidos, de cerca de 50 cm de alto.",
+    "Hojas opuestas, cortamente pecioladas, lanceoladas, enteras, trinervadas, de 5-10 cm; capítulos solitarios; involucro de 10 mm, con brácteas lanceoladas tan largas como las lígulas; flores amarillas, las marginales con lígula lineal; aquenios del disco muy comprimidos, estrechamente alados; papus formado por dos aristas cortas.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Común en bosques de la ribera y del Delta; florece en primavera."
+  ),
+  eclipta_bellidioides: species(
+    "eclipta_bellidioides",
+    "Eclipta bellidioides",
+    "130. Compositae - Heliantheae",
+    "Hierba perenne decumbente, laxamente pubescente, de 20-30 cm de largo.",
+    "Hojas opuestas, lanceolado-elípticas, semiobtusas, enteras, de 1,5-5 cm; capítulos solitarios, largamente pedunculados; involucro de 5-6 mm, con brácteas ovadas; flores amarillentas, las marginales cortamente liguladas; aquenios del disco muy comprimidos, obovados y rugosos; papus con dos aristas cortas y una corona de cerditas.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Común en suelos húmedos."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -22042,7 +22082,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Flores del disco hermafroditas, fértiles",
       keyStep: "C'",
-      especieId: "compositae",
+      nextNodeId: "heliantheae_e",
     },
   },
   heliantheae_d: {
@@ -22139,6 +22179,118 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Rostros del fruto de la misma longitud que las espinas; hojas no acorazonadas",
       keyStep: "B'",
       especieId: "xanthium_saccharatum",
+    },
+  },
+  heliantheae_e: {
+    id: "heliantheae_e",
+    milestone: "Heliantheae",
+    manualPage: 463,
+    descripcion: "Heliantheae - E: desarrollo del papus en flores del disco",
+    opcionA: {
+      label: "Flores del disco con papus muy desarrollado, paleáceo, casi tan largo como la corola",
+      keyStep: "E",
+      especieId: "compositae",
+    },
+    opcionA_prima: {
+      label: "Flores del disco con papus formado por aristas, escamas cortas o nulo",
+      keyStep: "E'",
+      nextNodeId: "heliantheae_f",
+    },
+  },
+  heliantheae_f: {
+    id: "heliantheae_f",
+    milestone: "Heliantheae",
+    manualPage: 463,
+    descripcion: "Heliantheae - F: compresión de aquenios y tipo de papus",
+    opcionA: {
+      label: "Aquenios comprimidos dorsalmente; papus de 2-4 aristas rígidas con pelos retrorsos",
+      keyStep: "F",
+      especieId: "compositae",
+    },
+    opcionA_prima: {
+      label: "Aquenios apenas comprimidos o comprimidos lateralmente; papus de escamitas, aristas sin pelos retrorsos o ausente",
+      keyStep: "F'",
+      nextNodeId: "heliantheae_h",
+    },
+  },
+  heliantheae_h: {
+    id: "heliantheae_h",
+    milestone: "Heliantheae",
+    manualPage: 463,
+    descripcion: "Heliantheae - H: brácteas interiores del involucro",
+    opcionA: {
+      label: "Brácteas interiores envolviendo a las flores marginales",
+      keyStep: "H",
+      nextNodeId: "heliantheae_i",
+    },
+    opcionA_prima: {
+      label: "Brácteas interiores planas, no envolviendo a las flores marginales",
+      keyStep: "H'",
+      nextNodeId: "heliantheae_j",
+    },
+  },
+  heliantheae_i: {
+    id: "heliantheae_i",
+    milestone: "Heliantheae",
+    manualPage: 463,
+    descripcion: "Heliantheae - I: capítulos pedicelados o sésiles",
+    opcionA: {
+      label: "Capítulos pedicelados; flores marginales uniseriadas; plantas terrestres",
+      keyStep: "I",
+      especieId: "jaegeria_hirta",
+    },
+    opcionA_prima: {
+      label: "Capítulos sésiles; flores marginales pluriseriadas; plantas acuáticas",
+      keyStep: "I'",
+      especieId: "enhydra_anagallis",
+    },
+  },
+  heliantheae_j: {
+    id: "heliantheae_j",
+    milestone: "Heliantheae",
+    manualPage: 463,
+    descripcion: "Heliantheae - J: forma de las páleas del receptáculo",
+    opcionA: {
+      label: "Páleas del receptáculo lineales",
+      keyStep: "J",
+      nextNodeId: "eclipta_a",
+    },
+    opcionA_prima: {
+      label: "Páleas del receptáculo lanceoladas, aquilladas",
+      keyStep: "J'",
+      especieId: "compositae",
+    },
+  },
+  eclipta_a: {
+    id: "eclipta_a",
+    milestone: "Eclipta",
+    manualPage: 501,
+    descripcion: "Eclipta - A: duración de la planta",
+    opcionA: {
+      label: "Hierbas anuales, ascendentes o erectas, laxamente pubescentes; involucro de 3 mm",
+      keyStep: "A",
+      especieId: "eclipta_alba",
+    },
+    opcionA_prima: {
+      label: "Hierbas perennes; involucro de 5-10 mm; aquenios del disco muy comprimidos",
+      keyStep: "A'",
+      nextNodeId: "eclipta_b",
+    },
+  },
+  eclipta_b: {
+    id: "eclipta_b",
+    milestone: "Eclipta",
+    manualPage: 501,
+    descripcion: "Eclipta - B: porte y capítulos",
+    opcionA: {
+      label: "Plantas erectas de 50 cm; capítulos solitarios; involucro de 10 mm; flores amarillas",
+      keyStep: "B",
+      especieId: "eclipta_megapotamica",
+    },
+    opcionA_prima: {
+      label: "Plantas decumbentes de 20-30 cm; capítulos solitarios largamente pedunculados; involucro de 5-6 mm",
+      keyStep: "B'",
+      especieId: "eclipta_bellidioides",
     },
   },
   grindelia_a: {
