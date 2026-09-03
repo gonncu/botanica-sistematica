@@ -8121,6 +8121,22 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas provistas de estrechas aurículas lineales.",
     "Brasil, Uruguay y nordeste de la Argentina, hasta el Delta del Paraná."
   ),
+  calendula_arvensis: species(
+    "calendula_arvensis",
+    "Calendula arvensis",
+    "130. Compositae - Calenduleae",
+    "Hierba anual, tendida o ascendente, pubescente-glandulosa, de 8-30 cm de alto.",
+    "Hojas alternas, oblanceoladas, aserradas, las superiores semiamplexicaules; capítulos solitarios; involucro hemisférico, de 7 mm por 10-12 mm; flores marginales femeninas liguladas y flores del disco masculinas tubulosas; aquenios curvados, con puntas en el dorso, sin papus.",
+    "Viejo Mundo; adventicia en la provincia de Buenos Aires."
+  ),
+  cryptostemma_calendulaceum: species(
+    "cryptostemma_calendulaceum",
+    "Cryptostemma calendulaceum",
+    "130. Compositae - Arctotideae",
+    "Hierba anual, semiacaule.",
+    "Hojas lirado-pinatisectas, con segmentos ovados, dentados, glanduloso-pubescentes en el haz y tomentosas en el envés; capítulos grandes, solitarios en el ápice de largos pedúnculos; involucro hemisférico, de 6-7 mm por 10-12 mm, con brácteas ovadas laciniadas en el ápice; flores amarillentas; aquenios ovoideos, densamente lanosos; papus con 1-2 series de pajitas cortas.",
+    "África austral. Adventicia en la Isla Maciel, junto a la Capital Federal."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -21474,7 +21490,39 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Otras tribus de Compositae",
       keyStep: "Tribus 8-13",
+      nextNodeId: "compositae_h",
+    },
+  },
+  compositae_h: {
+    id: "compositae_h",
+    milestone: "Compositae",
+    manualPage: 464,
+    descripcion: "Compositae: tribus desde Senecioneae, avance parcial",
+    opcionA: {
+      label: "Senecioneae: papus formado por numerosos pelos simples; flores marginales filiformes, liguladas o ausentes",
+      keyStep: "Tribu 8",
       nextNodeId: "senecioneae_a",
+    },
+    opcionA_prima: {
+      label: "Otras tribus de Compositae",
+      keyStep: "Tribus 9-13",
+      nextNodeId: "compositae_i",
+    },
+  },
+  compositae_i: {
+    id: "compositae_i",
+    milestone: "Compositae",
+    manualPage: 464,
+    descripcion: "Compositae: tribus Calenduleae y Arctotideae, avance parcial",
+    opcionA: {
+      label: "Calenduleae: aquenios curvados, con puntas en el dorso, sin papus",
+      keyStep: "Tribu 9",
+      especieId: "calendula_arvensis",
+    },
+    opcionA_prima: {
+      label: "Arctotideae: aquenios densamente lanosos, con papus de pajitas cortas",
+      keyStep: "Tribu 10",
+      especieId: "cryptostemma_calendulaceum",
     },
   },
   astereae_a: {
