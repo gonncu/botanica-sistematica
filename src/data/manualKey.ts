@@ -15379,12 +15379,27 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA: {
       label: "Hojas alternas; filamentos libres o unidos en la base",
       keyStep: "ñ",
-      especieId: "resedaceae",
+      nextNodeId: "dicot_group_c_ene_lower_alt",
     },
     opcionA_prima: {
       label: "Hojas opuestas; estambres en tres o más manojos",
       keyStep: "ñ'",
       especieId: "hypericum_brasiliense",
+    },
+  },
+  dicot_group_c_ene_lower_alt: {
+    id: "dicot_group_c_ene_lower_alt",
+    milestone: "Grupo C",
+    descripcion: "Grupo C - ñ: familias con hojas alternas y estambres numerosos",
+    opcionA: {
+      label: "Flores pequeñas en racimos o espigas; pétalos dentados o laciniados; cápsula lobada, con cuernitos",
+      keyStep: "ñ.1",
+      especieId: "reseda_luteola",
+    },
+    opcionA_prima: {
+      label: "Flores grandes, solitarias o en cincinios laxos; pétalos enteros, amarillos, caducos; cápsula ovoide, glabra",
+      keyStep: "ñ.1'",
+      especieId: "halimium_brasiliense",
     },
   },
   dicot_group_c_o_lower: {
