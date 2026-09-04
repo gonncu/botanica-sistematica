@@ -8385,6 +8385,118 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas lineal-lanceoladas, enteras, las inferiores largamente atenuadas en pecíolo envainador y las superiores sésiles y auriculadas; capítulos pequeños, numerosos, en cimas corimbiformes laxas; involucro acampanado, de 4 mm, con brácteas sub-biseriadas de margen escarioso; flores blancas, isomorfas, hermafroditas y bilabiadas; aquenios turbinados, papilosos, sin papus.",
     "Campos húmedos y salobres del Uruguay y del norte de Buenos Aires."
   ),
+  scolymus_hispanicus: species(
+    "scolymus_hispanicus",
+    "Scolymus hispanicus",
+    "130. Compositae - Cichorieae",
+    "Hierba perenne, laxamente pubescente, ramosa, de 20-80 cm de alto, con látex.",
+    "Hojas sésiles, ovado-lanceoladas, decurrentes, lobadas o pinatisectas, con ápice y lóbulos fuertemente espinosos y nervaduras muy prominentes en el envés, de 7-8 cm; capítulos sésiles formando una seudoespiga foliosa; involucro de 15 mm; flores amarillas, todas liguladas; aquenios comprimidos dorsalmente, rodeados por páleas del receptáculo; papus formado por dos largas aristas.",
+    "Sur de Europa y norte de África. Adventicia cerca de Buenos Aires."
+  ),
+  cichorium_intybus: species(
+    "cichorium_intybus",
+    "Cichorium intybus",
+    "130. Compositae - Cichorieae",
+    "Hierba anual o bienal, erecta, ramosa, glabra o setulosa, de 20-130 cm de alto, con látex.",
+    "Hojas radicales crenadas o runcinadas; hojas superiores lanceoladas y abrazadoras en la base; capítulos sésiles, laxamente espigados a lo largo de las ramas; involucro turbinado, de 10 mm por 6-8 mm, con brácteas 2-seriadas; flores azules; aquenios pentagonales o pluricostados, truncados; papus de pajitas escamiformes pequeñas y numerosas.",
+    "Europa; adventicia en América. Cultivada como planta comestible. Nombres vulgares: achicoria, radicheta."
+  ),
+  lapsana_communis: species(
+    "lapsana_communis",
+    "Lapsana communis",
+    "130. Compositae - Cichorieae",
+    "Hierba anual, erecta, ramosa, glabra, de 40-100 cm de alto, con látex.",
+    "Hojas inferiores liradas y pecioladas; hojas superiores anchamente lanceoladas y sésiles; capítulos pequeños, numerosos, paniculado-corimbosos; involucro acampanado, de 6 mm, con brácteas interiores herbáceas y exteriores muy pequeñas; flores amarillas, todas liguladas; aquenios oblongos, multicostados, gruesos y glabros; papus ausente.",
+    "Europa y Asia; adventicia en América. Rara en la región."
+  ),
+  hedypnois_cretica: species(
+    "hedypnois_cretica",
+    "Hedypnois cretica",
+    "130. Compositae - Cichorieae",
+    "Hierba anual con tallos decumbentes o ascendentes, poco ramosos, laxamente híspidos, de 10-40 cm.",
+    "Hojas radicales oblanceoladas, semienteras, dentadas o lobadas; hojas caulinares lanceoladas, abrazadoras y dentadas; capítulos solitarios sobre pedúnculos engrosados en el ápice; involucro globoso, de 7 mm, con brácteas lineales e hirsutas; flores amarillas; aquenios cilíndricos, curvados, pluricostados y papilosos; papus con coronita membranácea corta y una pajita lineal caduca.",
+    "Sur de Europa; adventicia en América. Común en suelos modificados."
+  ),
+  hypochoeris_glabra: species(
+    "hypochoeris_glabra",
+    "Hypochoeris glabra",
+    "130. Compositae - Cichorieae",
+    "Hierba anual, con tallos escapiformes sencillos.",
+    "Hojas obovadas, obtusas, sinuado-dentadas, hirtas o glabras; capítulos solitarios en tallos escapiformes de 20-30 cm; involucro de 7-8 mm durante la floración; flores amarillas, cortamente liguladas; aquenios marginales truncados en el ápice y los interiores rostrados; papus en dos series, con pelos interiores largos y plumosos y exteriores más cortos y sencillos.",
+    "Europa; adventicia en América. Rara en la región: dunas de Monte Veloz."
+  ),
+  hypochoeris_radicata: species(
+    "hypochoeris_radicata",
+    "Hypochoeris radicata",
+    "130. Compositae - Cichorieae",
+    "Hierba perenne, con hojas en roseta y tallos escapiformes simples o ramificados.",
+    "Hojas oblanceoladas u oboblongas, obtusas, runcinadas e hirtas; escapos ramificados, glabros, de 10-50 cm; capítulos solitarios en el extremo de las ramificaciones; involucro de 10 mm durante la floración, con brácteas lineales y obtusas; flores amarillas; todos los aquenios largamente rostrados; papus en dos series.",
+    "Europa; adventicia en América. Muy común en la estepa clímax y en suelos modificados."
+  ),
+  hypochoeris_pampasica: species(
+    "hypochoeris_pampasica",
+    "Hypochoeris pampasica",
+    "130. Compositae - Cichorieae",
+    "Hemicriptófita con raíz gruesa, hojas arrosetadas y tallos simples o bifurcados, de 20-50 cm, desnudos o con alguna hoja inferior.",
+    "Hojas oblanceoladas, pinatisectas, hirsutas, de 10-20 cm; capítulos solitarios; involucro florífero de 15-18 mm, luego hasta 26 mm, con brácteas lineal-lanceoladas e híspidas afuera; flores amarillas, más cortas que las brácteas interiores; aquenios fusiformes, de 7-9 mm, con rostro corto de 2-4 mm; papus uniseriado, con pelos plumosos.",
+    "Suelos arenosos del sur y oeste de Buenos Aires. Rara cerca de Capital Federal: isla Martín García."
+  ),
+  hypochoeris_tweediei: species(
+    "hypochoeris_tweediei",
+    "Hypochoeris tweediei",
+    "130. Compositae - Cichorieae",
+    "Hierba perenne, con raíz gruesa; tallos erectos, ramosos, hojosos, glabros, de 50-80 cm.",
+    "Hojas inferiores oblanceoladas, irregularmente lobadas o dentadas, de 10-30 cm; hojas caulinares lanceoladas y semiabrazadoras; capítulos numerosos en cimas corimbiformes laxas; involucro florífero de 12-15 mm, con brácteas lineales híspidas; flores amarillas; aquenios de 6 mm con rostro de 7 mm; papus uniseriado de pelos plumosos.",
+    "Uruguay y nordeste de la Argentina. Común en bosques del Delta y ribera platense; también en jardines y terrenos húmedos."
+  ),
+  hypochoeris_microcephala: species(
+    "hypochoeris_microcephala",
+    "Hypochoeris microcephala",
+    "130. Compositae - Cichorieae",
+    "Hierba perenne, con tallos erectos, ramosos, glabros o laxamente hirsutos, de 20-40 cm.",
+    "Hojas inferiores oblanceoladas, dentadas o runcinadas, glabras, de 6-10 cm; hojas caulinares lineales, sésiles, enteras o partidas; capítulos en cimas corimbiformes laxas; involucros floríferos cilíndricos, de 10-11 mm, con brácteas lineales y obtusas, lanuginosas o glabras; flores amarillas; aquenios de 4-5 mm con rostro de 4 mm.",
+    "Sur del Brasil, Uruguay y nordeste de la Argentina. Común en suelos húmedos y fértiles."
+  ),
+  hypochoeris_microcephala_var_albiflora: species(
+    "hypochoeris_microcephala_var_albiflora",
+    "Hypochoeris microcephala var. albiflora",
+    "130. Compositae - Cichorieae",
+    "Variedad de Hypochoeris microcephala con flores blancas.",
+    "Mantiene el porte de la especie típica, diferenciándose por las flores blancas.",
+    "Común en los bosques del Delta y de la ribera platense; también en campos húmedos."
+  ),
+  hypochoeris_brasiliensis: species(
+    "hypochoeris_brasiliensis",
+    "Hypochoeris brasiliensis",
+    "130. Compositae - Cichorieae",
+    "Hierba perenne, con tallos erectos, glabros o híspidos, ramosos y hojosos, de 30-60 cm.",
+    "Hojas inferiores arrosetadas, oblanceoladas, dentadas o lobuladas, de 5-20 cm; hojas superiores lanceoladas o lineales, semiabrazadoras, dentadas o lobadas; capítulos en cimas corimbiformes laxas; involucros floríferos acampanados, de 12-18 mm, con brácteas lineales casi obtusas; flores amarillas numerosas; aquenios de 5 mm con rostro de 5 mm.",
+    "Sur del Brasil, Paraguay, Uruguay y centro de la Argentina."
+  ),
+  hypochoeris_grisebachii: species(
+    "hypochoeris_grisebachii",
+    "Hypochoeris grisebachii",
+    "130. Compositae - Cichorieae",
+    "Hemicriptófita con hojas en roseta y tallos escapiformes de 20-30 cm.",
+    "Hojas oblanceoladas, sinuado-dentadas o lobadas, hirtas, de 6-10 cm; tallos simples, escapiformes, raramente bifurcados; capítulos grandes, solitarios; involucro acampanado, de 13-18 mm por 11-14 mm, con brácteas lineal-oblongas, obtusas, hirtas, con mancha oscura apical; flores amarillas, algo más largas que las brácteas interiores; aquenios de 4 mm con rostro de 8 mm.",
+    "Uruguay y nordeste de la Argentina. En la estepa clímax."
+  ),
+  hypochoeris_megapotamica: species(
+    "hypochoeris_megapotamica",
+    "Hypochoeris megapotamica",
+    "130. Compositae - Cichorieae",
+    "Hemicriptófita con hojas en roseta y tallos sencillos o bifurcados, laxamente híspidos, con alguna hoja inferior, de 10-35 cm.",
+    "Hojas oblanceoladas, dentadas o lobuladas, híspidas, de 6-20 cm; capítulos solitarios; involucro de 20-30 mm, con brácteas lineal-lanceoladas glabras; flores amarillas, más cortas que las brácteas interiores; aquenios de 6 mm con rostro de 9 mm.",
+    "Uruguay y nordeste de la Argentina. En campos altos y fértiles."
+  ),
+  hypochoeris_petiolaris: species(
+    "hypochoeris_petiolaris",
+    "Hypochoeris petiolaris",
+    "130. Compositae - Cichorieae",
+    "Hierba perenne, con hojas arrosetadas y tallos escapiformes simples o bifurcados, glabros o algo híspidos, de 12-25 cm.",
+    "Hojas oblanceolado-lineales, agudas, sinuado-dentadas o pinatisectas, generalmente glabras, de 5-14 cm; involucro de 10-15 mm, con brácteas lineales, glabras y semiagudas; flores amarillas, más cortas que las brácteas interiores; aquenios de 4-5 mm con rostro delgado de 4-5 mm.",
+    "Campos bajos algo salobres del Uruguay y de la provincia de Buenos Aires."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -24715,6 +24827,246 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Plantas glabras o apenas pilosas; involucro de 4-6 mm",
       keyStep: "A'",
       especieId: "cleanthes_hieracioides",
+    },
+  },
+  cichorieae_a: {
+    id: "cichorieae_a",
+    milestone: "Cichorieae",
+    manualPage: 465,
+    descripcion: "Cichorieae - A: hojas espinosas",
+    opcionA: {
+      label: "Plantas con hojas espinosas, rígidas; aspecto de cardos",
+      keyStep: "A",
+      especieId: "scolymus_hispanicus",
+    },
+    opcionA_prima: {
+      label: "Plantas con hojas inermes o híspidas, no espinosas",
+      keyStep: "A'",
+      nextNodeId: "cichorieae_b",
+    },
+  },
+  cichorieae_b: {
+    id: "cichorieae_b",
+    milestone: "Cichorieae",
+    manualPage: 465,
+    descripcion: "Cichorieae - B: tipo de papus",
+    opcionA: {
+      label: "Papus ausente o formado por pajitas cortas",
+      keyStep: "B",
+      nextNodeId: "cichorieae_c",
+    },
+    opcionA_prima: {
+      label: "Papus formado por pelos",
+      keyStep: "B'",
+      nextNodeId: "cichorieae_e",
+    },
+  },
+  cichorieae_c: {
+    id: "cichorieae_c",
+    milestone: "Cichorieae",
+    manualPage: 465,
+    descripcion: "Cichorieae - C: color de flores",
+    opcionA: {
+      label: "Flores azules",
+      keyStep: "C",
+      especieId: "cichorium_intybus",
+    },
+    opcionA_prima: {
+      label: "Flores amarillas",
+      keyStep: "C'",
+      nextNodeId: "cichorieae_d",
+    },
+  },
+  cichorieae_d: {
+    id: "cichorieae_d",
+    milestone: "Cichorieae",
+    manualPage: 465,
+    descripcion: "Cichorieae - D: papus y disposición de capítulos",
+    opcionA: {
+      label: "Papus ausente; capítulos cimosos",
+      keyStep: "D",
+      especieId: "lapsana_communis",
+    },
+    opcionA_prima: {
+      label: "Papus escamoso; capítulos solitarios",
+      keyStep: "D'",
+      especieId: "hedypnois_cretica",
+    },
+  },
+  cichorieae_e: {
+    id: "cichorieae_e",
+    milestone: "Cichorieae",
+    manualPage: 465,
+    descripcion: "Cichorieae - E: pelos del papus",
+    opcionA: {
+      label: "Pelos del papus plumosos",
+      keyStep: "E",
+      nextNodeId: "cichorieae_f",
+    },
+    opcionA_prima: {
+      label: "Pelos del papus simples",
+      keyStep: "E'",
+      especieId: "compositae",
+    },
+  },
+  cichorieae_f: {
+    id: "cichorieae_f",
+    milestone: "Cichorieae",
+    manualPage: 465,
+    descripcion: "Cichorieae - F: receptáculo con páleas",
+    opcionA: {
+      label: "Receptáculo provisto de páleas",
+      keyStep: "F",
+      nextNodeId: "hypochoeris_a",
+    },
+    opcionA_prima: {
+      label: "Receptáculo sin páleas",
+      keyStep: "F'",
+      especieId: "compositae",
+    },
+  },
+  hypochoeris_a: {
+    id: "hypochoeris_a",
+    milestone: "Hypochoeris",
+    manualPage: 537,
+    descripcion: "Hypochoeris - A: series del papus",
+    opcionA: {
+      label: "Pelos del papus en dos series: interiores largos y plumosos, exteriores más cortos y sencillos",
+      keyStep: "A",
+      nextNodeId: "hypochoeris_b",
+    },
+    opcionA_prima: {
+      label: "Pelos del papus en una sola serie, todos plumosos",
+      keyStep: "A'",
+      nextNodeId: "hypochoeris_c",
+    },
+  },
+  hypochoeris_b: {
+    id: "hypochoeris_b",
+    milestone: "Hypochoeris",
+    manualPage: 537,
+    descripcion: "Hypochoeris - B: aquenios marginales e interiores",
+    opcionA: {
+      label: "Aquenios marginales truncados y los interiores rostrados; hierbas anuales",
+      keyStep: "B",
+      especieId: "hypochoeris_glabra",
+    },
+    opcionA_prima: {
+      label: "Todos los aquenios largamente rostrados; hierbas perennes",
+      keyStep: "B'",
+      especieId: "hypochoeris_radicata",
+    },
+  },
+  hypochoeris_c: {
+    id: "hypochoeris_c",
+    milestone: "Hypochoeris",
+    manualPage: 538,
+    descripcion: "Hypochoeris - C: longitud relativa del rostro",
+    opcionA: {
+      label: "Aquenios fusiformes de 7-9 mm con rostro corto de 2-4 mm",
+      keyStep: "C",
+      especieId: "hypochoeris_pampasica",
+    },
+    opcionA_prima: {
+      label: "Aquenios largamente rostrados, con rostro tan largo o más largo que la parte seminífera",
+      keyStep: "C'",
+      nextNodeId: "hypochoeris_d",
+    },
+  },
+  hypochoeris_d: {
+    id: "hypochoeris_d",
+    milestone: "Hypochoeris",
+    manualPage: 538,
+    descripcion: "Hypochoeris - D: tallos ramosos o escapiformes",
+    opcionA: {
+      label: "Tallos ramosos, hojosos",
+      keyStep: "D",
+      nextNodeId: "hypochoeris_e",
+    },
+    opcionA_prima: {
+      label: "Tallos simples, escapiformes, raramente bifurcados",
+      keyStep: "D'",
+      nextNodeId: "hypochoeris_g",
+    },
+  },
+  hypochoeris_e: {
+    id: "hypochoeris_e",
+    milestone: "Hypochoeris",
+    manualPage: 538,
+    descripcion: "Hypochoeris - E: indumento de brácteas involucrales",
+    opcionA: {
+      label: "Brácteas involucrales híspidas",
+      keyStep: "E",
+      especieId: "hypochoeris_tweediei",
+    },
+    opcionA_prima: {
+      label: "Brácteas involucrales lanuginosas o glabras",
+      keyStep: "E'",
+      nextNodeId: "hypochoeris_f",
+    },
+  },
+  hypochoeris_f: {
+    id: "hypochoeris_f",
+    milestone: "Hypochoeris",
+    manualPage: 538,
+    descripcion: "Hypochoeris - F: forma del involucro florífero",
+    opcionA: {
+      label: "Involucros floríferos cilíndricos, de 10-11 mm; flores amarillas o blancas",
+      keyStep: "F",
+      nextNodeId: "hypochoeris_microcephala_a",
+    },
+    opcionA_prima: {
+      label: "Involucros floríferos acampanados, de 12-18 mm; flores amarillas numerosas",
+      keyStep: "F'",
+      especieId: "hypochoeris_brasiliensis",
+    },
+  },
+  hypochoeris_g: {
+    id: "hypochoeris_g",
+    milestone: "Hypochoeris",
+    manualPage: 538,
+    descripcion: "Hypochoeris - G: longitud de flores respecto a brácteas interiores",
+    opcionA: {
+      label: "Flores algo más largas que las brácteas interiores del involucro",
+      keyStep: "G",
+      especieId: "hypochoeris_grisebachii",
+    },
+    opcionA_prima: {
+      label: "Flores más cortas que las brácteas interiores del involucro",
+      keyStep: "G'",
+      nextNodeId: "hypochoeris_h",
+    },
+  },
+  hypochoeris_h: {
+    id: "hypochoeris_h",
+    milestone: "Hypochoeris",
+    manualPage: 538,
+    descripcion: "Hypochoeris - H: altura del involucro",
+    opcionA: {
+      label: "Involucro de 20-30 mm; aquenios de 6 mm con rostro de 9 mm",
+      keyStep: "H",
+      especieId: "hypochoeris_megapotamica",
+    },
+    opcionA_prima: {
+      label: "Involucro de 10-15 mm; aquenios de 4-5 mm con rostro de 4-5 mm",
+      keyStep: "H'",
+      especieId: "hypochoeris_petiolaris",
+    },
+  },
+  hypochoeris_microcephala_a: {
+    id: "hypochoeris_microcephala_a",
+    milestone: "Hypochoeris microcephala",
+    manualPage: 540,
+    descripcion: "Hypochoeris microcephala - forma típica o variedad albiflora",
+    opcionA: {
+      label: "Flores amarillas",
+      keyStep: "5",
+      especieId: "hypochoeris_microcephala",
+    },
+    opcionA_prima: {
+      label: "Flores blancas",
+      keyStep: "5a",
+      especieId: "hypochoeris_microcephala_var_albiflora",
     },
   },
   grindelia_a: {
