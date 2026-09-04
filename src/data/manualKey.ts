@@ -8497,6 +8497,118 @@ export const manualFamilyData: Record<string, Especie> = {
     "Hojas oblanceolado-lineales, agudas, sinuado-dentadas o pinatisectas, generalmente glabras, de 5-14 cm; involucro de 10-15 mm, con brácteas lineales, glabras y semiagudas; flores amarillas, más cortas que las brácteas interiores; aquenios de 4-5 mm con rostro delgado de 4-5 mm.",
     "Campos bajos algo salobres del Uruguay y de la provincia de Buenos Aires."
   ),
+  leontodon_nudicaulis: species(
+    "leontodon_nudicaulis",
+    "Leontodon nudicaulis",
+    "130. Compositae - Cichorieae",
+    "Hierba anual o perenne, con látex y hojas en roseta.",
+    "Hojas oblanceoladas, agudas o semiobtusas, atenuadas en la base, dentadas o lobadas, hirsutas, de 7-15 cm; escapos ebracteados, híspidos, de 12-40 cm; involucro de 10 mm, con brácteas lanceoladas glabras; flores amarillas; aquenios cilíndrico-fusiformes, contraídos o rostrados; papus de las flores marginales con coronita de escamas muy cortas y el del disco con pelos plumosos 2-seriados.",
+    "Europa; adventicia en la Argentina. Común en campos bajos de Dolores y General Lavalle; rara cerca de Capital Federal."
+  ),
+  picris_echioides: species(
+    "picris_echioides",
+    "Picris echioides",
+    "130. Compositae - Cichorieae",
+    "Hierba anual, erecta, ramosa, densamente hojosa e hirsuta, de 0,5-1 m de alto, con látex.",
+    "Hojas radicales oblanceoladas, obtusas, sinuado-dentadas, laxamente hirsutas, de 6-14 cm; hojas caulinares oblanceoladas u obovadas, agudas, sésiles y semiabrazadoras, dentadas e hirsutas; capítulos en cimas laxas; involucro con brácteas exteriores foliáceas, ovadas, agudas, e interiores lineales con apéndice cirriforme hirsuto; flores amarillas; aquenios oblongos, castaños, de 2,5 mm, con rostro de 3 mm; papus plumoso.",
+    "Sur de Europa y norte de África; adventicia en América. Frecuente en suelos modificados."
+  ),
+  tragopogon_porrifolius: species(
+    "tragopogon_porrifolius",
+    "Tragopogon porrifolius",
+    "130. Compositae - Cichorieae",
+    "Hierba anual o bienal, con raíz gruesa y tallos erectos glabros, de 20-100 cm de alto.",
+    "Hojas lineal-lanceoladas, atenuadas en el ápice, enteras, glabras y amplexicaules; capítulos solitarios, muy largamente pedunculados, con pedúnculo muy engrosado en el ápice; involucro de 2,5-3 cm, con brácteas uniseriadas lineal-lanceoladas glabras; flores azules o violáceas; aquenios lineales, 5-10-costados y largamente rostrados; papus plumoso 1-seriado.",
+    "Sur de Europa. Cultivada y subespontánea en suelos modificados. Nombre vulgar: salsifí."
+  ),
+  tragopogon_pratensis: species(
+    "tragopogon_pratensis",
+    "Tragopogon pratensis",
+    "130. Compositae - Cichorieae",
+    "Hierba bienal o perenne, glabra, de 30-70 cm de alto.",
+    "Hojas lanceoladas, atenuadas en el ápice, dilatadas en la base, enteras y glabras; capítulos solitarios sobre largos pedúnculos apenas dilatados en el ápice; flores amarillas; aquenios rostrados; papus plumoso.",
+    "Europa; adventicia en América. Muy rara en la región."
+  ),
+  taraxacum_officinale: species(
+    "taraxacum_officinale",
+    "Taraxacum officinale",
+    "130. Compositae - Cichorieae",
+    "Hemicriptófita acaule, con látex, hojas en roseta y escapos áfilos monocéfalos.",
+    "Hojas oblongas u oblanceolado-oblongas, runcinadas y glabras; capítulos solitarios sobre escapos huecos; involucro acampanado, de 12-14 mm, con brácteas exteriores recurvadas; flores amarillas, todas liguladas; aquenios fusiformes u obovoideos, largamente rostrados, 10-costados, con protuberancias puntiagudas en la parte superior; papus de pelos simples numerosos.",
+    "Europa; adventicia en todo el mundo. Cultivada por sus hojas comestibles. Nombres vulgares: amargón, diente de león."
+  ),
+  sonchus_oleraceus: species(
+    "sonchus_oleraceus",
+    "Sonchus oleraceus",
+    "130. Compositae - Cichorieae",
+    "Hierba anual, erecta y glabra, de 0,5-1 m de alto, con látex.",
+    "Hojas no espinulosas, las inferiores runcinadas y las superiores lobadas o runcinadas, auriculadas en la base con aurículas agudas; capítulos en cimas corimbiformes; involucro de 10-12 mm, con brácteas lineales, semiobtusas, glabras o algo lanuginosas; flores amarillas; aquenios obovados o anchamente oblanceolados, transversalmente rugosos, sin rostro; papus de pelos simples.",
+    "Europa; adventicia en todo el mundo. Nombre vulgar: cerraja."
+  ),
+  sonchus_asper: species(
+    "sonchus_asper",
+    "Sonchus asper",
+    "130. Compositae - Cichorieae",
+    "Hierba anual, con tallos ramosos, glabros o pubescente-glandulosos arriba, de 40-100 cm de alto.",
+    "Hojas espinulosas en el margen, las inferiores lirado-pinatífidas y las superiores ovado-lanceoladas, con grandes aurículas redondeadas en la base; capítulos en cimas umbeliformes; involucro de 10 mm, con brácteas lineal-lanceoladas glabras; flores amarillas; aquenios obovados o anchamente oblanceolados, sin arrugas transversales y sin rostro; papus de pelos simples.",
+    "Europa; adventicia en todo el globo."
+  ),
+  sonchus_tenerrimus: species(
+    "sonchus_tenerrimus",
+    "Sonchus tenerrimus",
+    "130. Compositae - Cichorieae",
+    "Hierba anual, con tallos glabros o con algunos pelos glandulosos, laxamente hojosos, de 20-40 cm de alto.",
+    "Hojas profundamente pinatisectas, con raquis lineal y segmentos casi opuestos, ovados u oblongos, obtusos; capítulos en cimas corimbiformes paucifloras; involucro de 10 mm, con brácteas lanceoladas, semiobtusas y glabras; flores amarillas; aquenios lineales, casi cilíndricos, costados, con costillas arrugadas transversalmente y sin rostro; papus de pelos simples.",
+    "Sur de Europa y norte de África. Rara en la Capital Federal."
+  ),
+  lactuca_saligna: species(
+    "lactuca_saligna",
+    "Lactuca saligna",
+    "130. Compositae - Cichorieae",
+    "Hierba bienal, con tallos ascendentes o erectos, glabros, simples o poco ramosos, de 20-30 cm de alto.",
+    "Hojas inferiores oblanceoladas, runcinadas, con segmentos enteros o denticulados, de 3-8 cm; hojas superiores lineal-lanceoladas, sagitadas en la base, sésiles, enteras, de 15-40 mm por 2-3 mm; capítulos cortamente pedunculados en racimos espiciformes; involucro de 8-10 mm, con brácteas lineal-lanceoladas glabras; flores pocas, amarillentas; aquenios comprimidos, obovados, costados, con largo rostro filiforme.",
+    "Europa; adventicia en América. Rara en la región, en suelos modificados."
+  ),
+  lactuca_sativa: species(
+    "lactuca_sativa",
+    "Lactuca sativa",
+    "130. Compositae - Cichorieae",
+    "Hierba anual o bienal, erecta y glabra, de 60-100 cm de alto.",
+    "Hojas caulinares anchas, dentadas o crenadas, no espinulosas, las superiores sésiles y auriculadas en la base; capítulos numerosos en corimbos o panojas amplias; involucro de 7-8 mm, con brácteas lineal-lanceoladas, semiobtusas y glabras; flores amarillo crema; aquenios comprimidos y rostrados; papus de pelos simples.",
+    "Especie cultivada de origen desconocido, a veces subespontánea. Nombre vulgar: lechuga."
+  ),
+  lactuca_serriola: species(
+    "lactuca_serriola",
+    "Lactuca serriola",
+    "130. Compositae - Cichorieae",
+    "Hierba anual o bienal, erecta, ramosa y glabra salvo la parte inferior espinulosa, de 1-1,5 m de alto.",
+    "Hojas obovadas, agudas o semiobtusas, sésiles y auriculadas en la base, sinuadas o más comúnmente runcinadas, con margen y nervadura central espinulosos, de 7-15 cm por 2-6 cm; capítulos numerosos en amplia panoja; involucro de 10-12 mm, con brácteas lineales glabras; flores pocas, amarillentas; aquenios comprimidos y largamente rostrados.",
+    "Europa; adventicia en todo el globo. Frecuente en suelos modificados."
+  ),
+  picrosia_longifolia: species(
+    "picrosia_longifolia",
+    "Picrosia longifolia",
+    "130. Compositae - Cichorieae",
+    "Hierba perenne, glabra, con raíces gemíferas, de 15-80 cm de alto.",
+    "Tallos erectos, poco ramosos y laxamente hojosos; hojas basales oblanceoladas, agudas, atenuadas en largo pecíolo, enteras o con algún diente, glabras, de 6-50 cm; hojas caulinares lanceoladas, agudas, dilatadas y semiabrazadoras, enteras; capítulos solitarios, largamente pedunculados; involucro cilíndrico, de 14-20 mm, con 6-8 brácteas uniseriadas glabras; flores blancas; aquenios fusiformes, 8-10-costados y rostrados; papus de pelos simples.",
+    "Regiones cálidas y templadas de América del Sur. Común en suelos húmedos y pajonales."
+  ),
+  crepis_setosa: species(
+    "crepis_setosa",
+    "Crepis setosa",
+    "130. Compositae - Cichorieae",
+    "Hierba anual, erecta, hirsuta, de 30-60 cm de alto.",
+    "Hojas inferiores lirado-pinatífidas, de 7-10 cm; hojas superiores lanceoladas, agudas, sentadas y abrazadoras en la base, laciniadas en la parte inferior; capítulos cimoso-corimbosos; involucro de 7 mm, con brácteas lanceoladas e híspidas; flores amarillas; aquenios cortamente rostrados, fusiformes, costados, pilosos en la parte superior; papus de pelos simples.",
+    "Europa; adventicia en la Argentina. Común en suelos modificados."
+  ),
+  crepis_capillaris: species(
+    "crepis_capillaris",
+    "Crepis capillaris",
+    "130. Compositae - Cichorieae",
+    "Hierba anual, polimorfa, casi glabra.",
+    "Hojas radicales runcinadas y superiores lanceoladas, sagitadas en la base, dentadas; involucro de 7 mm, con brácteas lineales, lanuginosas y con alguna cerda en el dorso; flores amarillas; aquenios sin rostro, cilíndricos, costados y glabros; papus de pelos simples.",
+    "Europa; adventicia en casi toda América. Rara en la región."
+  ),
   calyceraceae: family(
     "calyceraceae",
     "129. Calyceraceae",
@@ -21930,7 +22042,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Cichorieae: plantas con látex; todas las flores liguladas",
       keyStep: "Tribu 13",
-      especieId: "compositae",
+      nextNodeId: "cichorieae_a",
     },
   },
   astereae_a: {
@@ -24906,7 +25018,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Pelos del papus simples",
       keyStep: "E'",
-      especieId: "compositae",
+      nextNodeId: "cichorieae_i",
     },
   },
   cichorieae_f: {
@@ -24922,7 +25034,7 @@ export const manualKeyData: Record<string, CladoNode> = {
     opcionA_prima: {
       label: "Receptáculo sin páleas",
       keyStep: "F'",
-      especieId: "compositae",
+      nextNodeId: "cichorieae_g",
     },
   },
   hypochoeris_a: {
@@ -25067,6 +25179,198 @@ export const manualKeyData: Record<string, CladoNode> = {
       label: "Flores blancas",
       keyStep: "5a",
       especieId: "hypochoeris_microcephala_var_albiflora",
+    },
+  },
+  cichorieae_g: {
+    id: "cichorieae_g",
+    milestone: "Cichorieae",
+    manualPage: 465,
+    descripcion: "Cichorieae - G: hojas radicales o tallos con hojas",
+    opcionA: {
+      label: "Todas las hojas radicales",
+      keyStep: "G",
+      especieId: "leontodon_nudicaulis",
+    },
+    opcionA_prima: {
+      label: "Tallos con hojas",
+      keyStep: "G'",
+      nextNodeId: "cichorieae_h",
+    },
+  },
+  cichorieae_h: {
+    id: "cichorieae_h",
+    milestone: "Cichorieae",
+    manualPage: 465,
+    descripcion: "Cichorieae - H: involucro biseriado o uniseriado",
+    opcionA: {
+      label: "Involucro biseriado",
+      keyStep: "H",
+      especieId: "picris_echioides",
+    },
+    opcionA_prima: {
+      label: "Involucro uniseriado",
+      keyStep: "H'",
+      nextNodeId: "tragopogon_a",
+    },
+  },
+  cichorieae_i: {
+    id: "cichorieae_i",
+    milestone: "Cichorieae",
+    manualPage: 465,
+    descripcion: "Cichorieae - I: tubérculos superiores en el aquenio",
+    opcionA: {
+      label: "Aquenios tuberculados en la parte superior",
+      keyStep: "I",
+      especieId: "taraxacum_officinale",
+    },
+    opcionA_prima: {
+      label: "Aquenios no tuberculados en la parte superior",
+      keyStep: "I'",
+      nextNodeId: "cichorieae_j",
+    },
+  },
+  cichorieae_j: {
+    id: "cichorieae_j",
+    milestone: "Cichorieae",
+    manualPage: 465,
+    descripcion: "Cichorieae - J: forma de los aquenios",
+    opcionA: {
+      label: "Aquenios notablemente comprimidos",
+      keyStep: "J",
+      nextNodeId: "cichorieae_k",
+    },
+    opcionA_prima: {
+      label: "Aquenios cilíndricos o prismáticos",
+      keyStep: "J'",
+      nextNodeId: "cichorieae_l",
+    },
+  },
+  cichorieae_k: {
+    id: "cichorieae_k",
+    milestone: "Cichorieae",
+    manualPage: 465,
+    descripcion: "Cichorieae - K: rostro en aquenios comprimidos",
+    opcionA: {
+      label: "Aquenios largamente rostrados",
+      keyStep: "K",
+      nextNodeId: "lactuca_a",
+    },
+    opcionA_prima: {
+      label: "Aquenios sin rostro",
+      keyStep: "K'",
+      nextNodeId: "sonchus_a",
+    },
+  },
+  cichorieae_l: {
+    id: "cichorieae_l",
+    milestone: "Cichorieae",
+    manualPage: 465,
+    descripcion: "Cichorieae - L: series de brácteas involucrales",
+    opcionA: {
+      label: "Brácteas involucrales uniseriadas",
+      keyStep: "L",
+      especieId: "picrosia_longifolia",
+    },
+    opcionA_prima: {
+      label: "Brácteas involucrales 2-multiseriadas",
+      keyStep: "L'",
+      nextNodeId: "crepis_a",
+    },
+  },
+  tragopogon_a: {
+    id: "tragopogon_a",
+    milestone: "Tragopogon",
+    manualPage: 541,
+    descripcion: "Tragopogon - A: color de flores",
+    opcionA: {
+      label: "Flores azules o violáceas; pedúnculo muy engrosado en el ápice",
+      keyStep: "A",
+      especieId: "tragopogon_porrifolius",
+    },
+    opcionA_prima: {
+      label: "Flores amarillas; pedúnculo apenas dilatado en el ápice",
+      keyStep: "A'",
+      especieId: "tragopogon_pratensis",
+    },
+  },
+  sonchus_a: {
+    id: "sonchus_a",
+    milestone: "Sonchus",
+    manualPage: 543,
+    descripcion: "Sonchus - A: forma de aquenios",
+    opcionA: {
+      label: "Aquenios obovados o anchamente oblanceolados",
+      keyStep: "A",
+      nextNodeId: "sonchus_b",
+    },
+    opcionA_prima: {
+      label: "Aquenios lineales, casi cilíndricos, costados, con costillas arrugadas",
+      keyStep: "A'",
+      especieId: "sonchus_tenerrimus",
+    },
+  },
+  sonchus_b: {
+    id: "sonchus_b",
+    milestone: "Sonchus",
+    manualPage: 543,
+    descripcion: "Sonchus - B: arrugas transversales en aquenios",
+    opcionA: {
+      label: "Aquenios transversalmente rugosos; hojas no espinulosas",
+      keyStep: "B",
+      especieId: "sonchus_oleraceus",
+    },
+    opcionA_prima: {
+      label: "Aquenios sin arrugas transversales; hojas espinulosas en el margen",
+      keyStep: "B'",
+      especieId: "sonchus_asper",
+    },
+  },
+  lactuca_a: {
+    id: "lactuca_a",
+    milestone: "Lactuca",
+    manualPage: 543,
+    descripcion: "Lactuca - A: hojas superiores lineales",
+    opcionA: {
+      label: "Hojas superiores lineal-lanceoladas, sagitadas en la base, sésiles y enteras",
+      keyStep: "A",
+      especieId: "lactuca_saligna",
+    },
+    opcionA_prima: {
+      label: "Hojas caulinares nunca lineales y enteras; flores en panojas",
+      keyStep: "A'",
+      nextNodeId: "lactuca_b",
+    },
+  },
+  lactuca_b: {
+    id: "lactuca_b",
+    milestone: "Lactuca",
+    manualPage: 543,
+    descripcion: "Lactuca - B: margen foliar espinuloso",
+    opcionA: {
+      label: "Hojas anchas, dentadas o crenadas, no espinulosas",
+      keyStep: "B",
+      especieId: "lactuca_sativa",
+    },
+    opcionA_prima: {
+      label: "Hojas obovadas, runcinadas, con margen y nervadura central espinulosos",
+      keyStep: "B'",
+      especieId: "lactuca_serriola",
+    },
+  },
+  crepis_a: {
+    id: "crepis_a",
+    milestone: "Crepis",
+    manualPage: 544,
+    descripcion: "Crepis - A: rostro e indumento de los aquenios",
+    opcionA: {
+      label: "Aquenios cortamente rostrados, fusiformes, costados, pilosos arriba; plantas hirsutas",
+      keyStep: "A",
+      especieId: "crepis_setosa",
+    },
+    opcionA_prima: {
+      label: "Aquenios sin rostro, cilíndricos, costados, glabros; plantas casi glabras",
+      keyStep: "A'",
+      especieId: "crepis_capillaris",
     },
   },
   grindelia_a: {
