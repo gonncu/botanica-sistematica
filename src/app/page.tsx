@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Session } from "@supabase/supabase-js";
 import AuthPanel from "@/components/AuthPanel";
+import FirstExamPractice from "@/components/FirstExamPractice";
 import Quiz from "@/components/Quiz";
 import RecordsList from "@/components/RecordsList";
 import SpeciesForm from "@/components/SpeciesForm";
@@ -15,11 +16,13 @@ import { supabase } from "@/lib/supabase";
 import { Especie, PhotoRecord, PlantFormData } from "@/types";
 
 type PageState = "quiz" | "form" | "complete";
+type WorkspaceTab = "identifier" | "first-exam";
 
 const ALLOWED_DOMAIN = "@agro.uba.ar";
 
 export default function Home() {
   const [pageState, setPageState] = useState<PageState>("quiz");
+  const [workspaceTab, setWorkspaceTab] = useState<WorkspaceTab>("identifier");
   const [selectedEspecie, setSelectedEspecie] = useState<Especie | null>(null);
   const [session, setSession] = useState<Session | null>(null);
   const [isAuthLoading, setIsAuthLoading] = useState(true);
@@ -157,6 +160,24 @@ export default function Home() {
               </button>
             </div>
 
+            <nav className="mb-7 flex border-b border-gray-300" aria-label="Secciones principales">
+              <button
+                onClick={() => setWorkspaceTab("identifier")}
+                className={`border-b-2 px-5 py-3 font-semibold ${workspaceTab === "identifier" ? "border-green-700 text-green-800" : "border-transparent text-gray-600 hover:text-gray-900"}`}
+              >
+                Identificador
+              </button>
+              <button
+                onClick={() => setWorkspaceTab("first-exam")}
+                className={`border-b-2 px-5 py-3 font-semibold ${workspaceTab === "first-exam" ? "border-green-700 text-green-800" : "border-transparent text-gray-600 hover:text-gray-900"}`}
+              >
+                Primer parcial
+              </button>
+            </nav>
+
+            {workspaceTab === "first-exam" ? (
+              <FirstExamPractice />
+            ) : (
             <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
               <div>
                 {pageState === "quiz" && (
@@ -211,6 +232,7 @@ export default function Home() {
 
               <RecordsList records={records} isLoading={isRecordsLoading} />
             </div>
+            )}
           </>
         )}
       </div>

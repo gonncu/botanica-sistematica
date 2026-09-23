@@ -104,6 +104,17 @@ NEXT_PUBLIC_SUPABASE_URL
 NEXT_PUBLIC_SUPABASE_ANON_KEY
 ```
 
+### Supabase keep-alive
+
+Netlify runs `netlify/functions/keep-supabase-alive.mjs` every day at 12:00 UTC. The
+function performs a small authenticated REST query using the same Supabase
+environment variables as the app. Its executions and errors are visible in
+Netlify under **Functions > keep-supabase-alive**.
+
+If the Supabase project is already paused, resume it first from the Supabase
+dashboard and then publish a new Netlify deploy. A scheduled job cannot revive a
+project that is already paused.
+
 For Next.js 13.5+ Netlify detects the framework and applies the Next.js adapter automatically.
 
 ## Deploy on Vercel

@@ -10886,7 +10886,7 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "papilionoideae_v",
     },
     opcionA_prima: {
-      label: "Fruto legumbre; rama pendiente desde Indigofera y géneros afines",
+      label: "Fruto legumbre; continúa por Indigofera y géneros afines",
       keyStep: "U'",
       nextNodeId: "papilionoideae_x",
     },
@@ -11526,7 +11526,7 @@ export const manualKeyData: Record<string, CladoNode> = {
       nextNodeId: "phyllanthus_a",
     },
     opcionA_prima: {
-      label: "Cada lóculo del ovario contiene un solo óvulo; rama pendiente desde Sebastiania",
+      label: "Cada lóculo del ovario contiene un solo óvulo; continúa por Sebastiania y géneros afines",
       keyStep: "D'",
       nextNodeId: "euphorbiaceae_e",
     },

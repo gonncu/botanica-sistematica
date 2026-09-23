@@ -1305,7 +1305,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Plantas perennes, con cañas leñosas elevadas, de floración espaciada por varios años",
       keyStep: "A",
-      especieId: "guadua"
+      especieId: "guadua_trinii"
     },
     opcionA_prima: {
       label: "Plantas anuales o perennes, con cañas herbáceas o sólo subleñosas, de floración anual",
@@ -1820,7 +1820,381 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Arista simple",
       keyStep: "C'",
-      especieId: "agrostideae_pendiente"
+      nextNodeId: "agrostideae_d"
+    }
+  },
+
+  agrostideae_d: {
+    id: "agrostideae_d",
+    milestone: "Agrostideae",
+    manualPage: 52,
+    descripcion: "Agrostideae - D: ¿la arista es recta o está retorcida en la base?",
+    opcionA: {
+      label: "Arista no retorcida en la base; plantas introducidas",
+      keyStep: "D",
+      especieId: "oryzopsis_miliacea"
+    },
+    opcionA_prima: {
+      label: "Arista retorcida en la base; plantas indígenas",
+      keyStep: "D'",
+      nextNodeId: "agrostideae_e"
+    }
+  },
+
+  agrostideae_e: {
+    id: "agrostideae_e",
+    milestone: "Agrostideae",
+    manualPage: 52,
+    descripcion: "Agrostideae - E: forma de la pálea y del callus",
+    opcionA: {
+      label: "Pálea bicarenada; callus agudo u obtuso",
+      keyStep: "E",
+      nextNodeId: "piptochaetium_a"
+    },
+    opcionA_prima: {
+      label: "Pálea plana, con frecuencia inconspicua; callus corto o largo y puntiagudo",
+      keyStep: "E'",
+      nextNodeId: "stipa_a"
+    }
+  },
+
+  piptochaetium_a: {
+    id: "piptochaetium_a",
+    milestone: "Piptochaetium",
+    manualPage: 76,
+    descripcion: "Piptochaetium - A: forma de los antecios fructíferos",
+    opcionA: {
+      label: "Antecios alargados, más o menos fusiformes, con pie agudo",
+      keyStep: "A",
+      nextNodeId: "piptochaetium_b"
+    },
+    opcionA_prima: {
+      label: "Antecios esféricos u obovoideos, con pie corto y obtuso",
+      keyStep: "A'",
+      nextNodeId: "piptochaetium_c"
+    }
+  },
+
+  piptochaetium_b: {
+    id: "piptochaetium_b",
+    milestone: "Piptochaetium",
+    manualPage: 76,
+    descripcion: "Piptochaetium - B: longitud de las glumas",
+    opcionA: {
+      label: "Glumas de 21-30 mm; antecio fusiforme de 10-12 mm; arista de 8-10 cm",
+      keyStep: "B",
+      especieId: "piptochaetium_hackelii"
+    },
+    opcionA_prima: {
+      label: "Glumas de 10-12 mm; antecio ovado-fusiforme de 3,5-7 mm; arista de unos 5 cm",
+      keyStep: "B'",
+      nextNodeId: "piptochaetium_bicolor_a"
+    }
+  },
+
+  piptochaetium_bicolor_a: {
+    id: "piptochaetium_bicolor_a",
+    milestone: "Piptochaetium bicolor",
+    manualPage: 77,
+    descripcion: "Piptochaetium bicolor: longitud del antecio",
+    opcionA: {
+      label: "Antecios de no más de 4,5 mm",
+      keyStep: "a",
+      especieId: "piptochaetium_bicolor_minor"
+    },
+    opcionA_prima: {
+      label: "Antecios de más de 4,5 mm",
+      keyStep: "a'",
+      especieId: "piptochaetium_bicolor"
+    }
+  },
+
+  piptochaetium_c: {
+    id: "piptochaetium_c",
+    milestone: "Piptochaetium",
+    manualPage: 77,
+    descripcion: "Piptochaetium - C: pubescencia del antecio",
+    opcionA: {
+      label: "Antecio obovado cubierto de largos pelos castaños que sobrepasan la corona",
+      keyStep: "C",
+      especieId: "piptochaetium_lasianthum"
+    },
+    opcionA_prima: {
+      label: "Antecio glabro",
+      keyStep: "C'",
+      nextNodeId: "piptochaetium_d"
+    }
+  },
+
+  piptochaetium_d: {
+    id: "piptochaetium_d",
+    milestone: "Piptochaetium",
+    manualPage: 77,
+    descripcion: "Piptochaetium - D: amplitud de la corona",
+    opcionA: {
+      label: "Corona amplia, de 0,8-1,5 mm de diámetro; antecios obovado-globosos",
+      keyStep: "D",
+      nextNodeId: "piptochaetium_stipoides_a"
+    },
+    opcionA_prima: {
+      label: "Corona muy estrecha o inconspicua",
+      keyStep: "D'",
+      nextNodeId: "piptochaetium_e"
+    }
+  },
+
+  piptochaetium_stipoides_a: {
+    id: "piptochaetium_stipoides_a",
+    milestone: "Piptochaetium stipoides",
+    manualPage: 77,
+    descripcion: "Piptochaetium stipoides - A: superficie de los frutos",
+    opcionA: {
+      label: "Frutos papilosos, por lo menos en la parte superior",
+      keyStep: "A",
+      nextNodeId: "piptochaetium_stipoides_b"
+    },
+    opcionA_prima: {
+      label: "Frutos lisos; corona generalmente menor de 1 mm",
+      keyStep: "A'",
+      especieId: "piptochaetium_stipoides_purpurascens"
+    }
+  },
+
+  piptochaetium_stipoides_b: {
+    id: "piptochaetium_stipoides_b",
+    milestone: "Piptochaetium stipoides",
+    manualPage: 77,
+    descripcion: "Piptochaetium stipoides - B: intensidad de las papilas",
+    opcionA: {
+      label: "Frutos apenas papilosos en la parte superior",
+      keyStep: "B",
+      nextNodeId: "piptochaetium_stipoides_c"
+    },
+    opcionA_prima: {
+      label: "Frutos densamente papilosos, al menos en la mitad superior",
+      keyStep: "B'",
+      especieId: "piptochaetium_stipoides_verruculosum"
+    }
+  },
+
+  piptochaetium_stipoides_c: {
+    id: "piptochaetium_stipoides_c",
+    milestone: "Piptochaetium stipoides",
+    manualPage: 77,
+    descripcion: "Piptochaetium stipoides - C: forma del fruto y diámetro de la corona",
+    opcionA: {
+      label: "Frutos ovoideos; corona de 0,8-1,1 mm; hojas generalmente glabras",
+      keyStep: "C",
+      especieId: "piptochaetium_stipoides"
+    },
+    opcionA_prima: {
+      label: "Frutos globosos; corona de 1,2-1,5 mm; hojas generalmente pilosas",
+      keyStep: "C'",
+      especieId: "piptochaetium_stipoides_chaetophorum"
+    }
+  },
+
+  piptochaetium_e: {
+    id: "piptochaetium_e",
+    milestone: "Piptochaetium",
+    manualPage: 77,
+    descripcion: "Piptochaetium - E: longitud y forma del antecio",
+    opcionA: {
+      label: "Antecio obovado de 3-4,5 mm, castaño y estriado; arista de 2 cm",
+      keyStep: "E",
+      especieId: "piptochaetium_grisebachii"
+    },
+    opcionA_prima: {
+      label: "Antecio de 1,5-2,5 mm",
+      keyStep: "E'",
+      nextNodeId: "piptochaetium_f"
+    }
+  },
+
+  piptochaetium_f: {
+    id: "piptochaetium_f",
+    milestone: "Piptochaetium",
+    manualPage: 77,
+    descripcion: "Piptochaetium - F: superficie y compresión del antecio",
+    opcionA: {
+      label: "Antecio verrugoso o papiloso, globoso; arista de 7-8 mm",
+      keyStep: "F",
+      especieId: "piptochaetium_montevidense"
+    },
+    opcionA_prima: {
+      label: "Antecio finamente estriado, lenticular y comprimido; arista de 10 mm",
+      keyStep: "F'",
+      especieId: "piptochaetium_panicoides"
+    }
+  },
+
+  stipa_a: {
+    id: "stipa_a",
+    milestone: "Stipa",
+    manualPage: 79,
+    descripcion: "Stipa - A: pelos largos en la parte superior de la lemma",
+    opcionA: {
+      label: "Lemma de 7-8 mm, sin corona, con largos pelos superiores que forman una especie de papus",
+      keyStep: "A",
+      especieId: "stipa_papposa"
+    },
+    opcionA_prima: {
+      label: "Lemma sin largos pelos superiores formando un papus",
+      keyStep: "A'",
+      nextNodeId: "stipa_b"
+    }
+  },
+
+  stipa_b: {
+    id: "stipa_b",
+    milestone: "Stipa",
+    manualPage: 79,
+    descripcion: "Stipa - B: forma y longitud de los antecios",
+    opcionA: {
+      label: "Antecios claviformes u obovoideos, gibosos, de 2-3 mm; arista excéntrica",
+      keyStep: "B",
+      especieId: "stipa_trichotoma"
+    },
+    opcionA_prima: {
+      label: "Antecios más o menos fusiformes, con arista central",
+      keyStep: "B'",
+      nextNodeId: "stipa_c"
+    }
+  },
+
+  stipa_c: {
+    id: "stipa_c",
+    milestone: "Stipa",
+    manualPage: 80,
+    descripcion: "Stipa - C: longitud del antecio sin la arista",
+    opcionA: {
+      label: "Antecios de 8-14 mm",
+      keyStep: "C",
+      nextNodeId: "stipa_d"
+    },
+    opcionA_prima: {
+      label: "Antecios de menos de 7 mm",
+      keyStep: "C'",
+      nextNodeId: "stipa_f"
+    }
+  },
+
+  stipa_d: {
+    id: "stipa_d",
+    milestone: "Stipa",
+    manualPage: 80,
+    descripcion: "Stipa - D: color del antecio y diferenciación de la corona",
+    opcionA: {
+      label: "Antecios rojo oscuro o casi negros, de unos 13 mm; corona apenas diferenciada",
+      keyStep: "D",
+      especieId: "stipa_bonariensis"
+    },
+    opcionA_prima: {
+      label: "Antecios claros, de color pajizo; corona diferenciada",
+      keyStep: "D'",
+      nextNodeId: "stipa_e"
+    }
+  },
+
+  stipa_e: {
+    id: "stipa_e",
+    milestone: "Stipa",
+    manualPage: 80,
+    descripcion: "Stipa - E: longitud del antecio y de las glumas",
+    opcionA: {
+      label: "Antecios de 11-14 mm; glumas de 27-40 mm; corona largamente ciliada",
+      keyStep: "E",
+      especieId: "stipa_clarazii"
+    },
+    opcionA_prima: {
+      label: "Antecios de 8-10 mm; glumas de 15-20 mm; corona laciniada",
+      keyStep: "E'",
+      especieId: "stipa_neesiana"
+    }
+  },
+
+  stipa_f: {
+    id: "stipa_f",
+    milestone: "Stipa",
+    manualPage: 80,
+    descripcion: "Stipa - F: presencia de una corona diferenciada",
+    opcionA: {
+      label: "Ápice de la lemma articulado directamente con la arista, sin corona diferenciada",
+      keyStep: "F",
+      especieId: "stipa_brachychaeta"
+    },
+    opcionA_prima: {
+      label: "Ápice de la lemma diferenciado en una corona cilíndrica o turbinada",
+      keyStep: "F'",
+      nextNodeId: "stipa_g"
+    }
+  },
+
+  stipa_g: {
+    id: "stipa_g",
+    milestone: "Stipa",
+    manualPage: 80,
+    descripcion: "Stipa - G: apéndice de la corona",
+    opcionA: {
+      label: "Corona prolongada en un apéndice membranoso acartuchado de unos 6 mm",
+      keyStep: "G",
+      especieId: "stipa_charruana"
+    },
+    opcionA_prima: {
+      label: "Corona sin apéndice y menor de 2 mm",
+      keyStep: "G'",
+      nextNodeId: "stipa_h"
+    }
+  },
+
+  stipa_h: {
+    id: "stipa_h",
+    milestone: "Stipa",
+    manualPage: 80,
+    descripcion: "Stipa - H: extensión de la pubescencia del antecio",
+    opcionA: {
+      label: "Pubescencia extendida, al menos en líneas, hasta cerca del ápice",
+      keyStep: "H",
+      nextNodeId: "stipa_i"
+    },
+    opcionA_prima: {
+      label: "Pubescencia confinada al callus y a la parte inferior de la lemma",
+      keyStep: "H'",
+      nextNodeId: "stipa_j"
+    }
+  },
+
+  stipa_i: {
+    id: "stipa_i",
+    milestone: "Stipa",
+    manualPage: 80,
+    descripcion: "Stipa - I: forma y cilias de la corona",
+    opcionA: {
+      label: "Corona cupuliforme, largamente ciliada; lemma uniformemente albo-velluda",
+      keyStep: "I",
+      especieId: "stipa_bavioensis"
+    },
+    opcionA_prima: {
+      label: "Corona anuliforme, cortísimamente ciliada; lemma pubescente en la base y líneas laterales",
+      keyStep: "I'",
+      especieId: "stipa_megapotamica"
+    }
+  },
+
+  stipa_j: {
+    id: "stipa_j",
+    milestone: "Stipa",
+    manualPage: 80,
+    descripcion: "Stipa - J: altura de la corona",
+    opcionA: {
+      label: "Corona de 0,2-0,5 mm; lemma de apenas 4 mm; arista de 4-5 cm",
+      keyStep: "J",
+      especieId: "stipa_hyalina"
+    },
+    opcionA_prima: {
+      label: "Corona de 0,6-1,5 mm; lemma de 5-6 mm; arista de 3-4 cm",
+      keyStep: "J'",
+      especieId: "stipa_formicarum"
     }
   },
 
@@ -4212,7 +4586,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Lemma velluda y raquilla glabra",
       keyStep: "D",
-      especieId: "arundo"
+      especieId: "arundo_donax"
     },
     opcionA_prima: {
       label: "Lemma glabra y raquilla velluda",
@@ -4229,7 +4603,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Glumas membranosas anchas, iguales o mayores que la espiguilla; espiguillas péndulas no verdes; lemma mútica",
       keyStep: "E",
-      especieId: "melica"
+      nextNodeId: "melica_a"
     },
     opcionA_prima: {
       label: "Glumas lanceoladas, menores que la espiguilla, generalmente verde",
@@ -4268,7 +4642,7 @@ export const monocotiledoneaeData = {
     opcionA_prima: {
       label: "Espiguillas femeninas con largos pelos lanosos",
       keyStep: "G'",
-      especieId: "poa"
+      nextNodeId: "poa_a"
     }
   },
 
@@ -4331,7 +4705,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Lemma trinervada",
       keyStep: "L",
-      especieId: "eragrostis"
+      nextNodeId: "eragrostis_a"
     },
     opcionA_prima: {
       label: "Lemma con 5 o más nervaduras",
@@ -4382,7 +4756,7 @@ export const monocotiledoneaeData = {
     opcionA: {
       label: "Lemmas múticas",
       keyStep: "O",
-      especieId: "poa"
+      nextNodeId: "poa_a"
     },
     opcionA_prima: {
       label: "Lemmas mucronadas o aristadas",
@@ -4405,6 +4779,397 @@ export const monocotiledoneaeData = {
       label: "Espiguillas con pedicelos filiformes; lemmas acuminadas o aristadas",
       keyStep: "P'",
       nextNodeId: "festuca_a"
+    }
+  },
+
+  melica_a: {
+    id: "melica_a",
+    milestone: "Melica",
+    manualPage: 62,
+    descripcion: "Melica - A: igualdad de las glumas y pubescencia de la lemma",
+    opcionA: {
+      label: "Glumas casi iguales y agudas; espiguillas fusiformes; lemma glabra",
+      keyStep: "A",
+      nextNodeId: "melica_b"
+    },
+    opcionA_prima: {
+      label: "Glumas muy desiguales, la inferior muy ancha y obtusa; lemma hirsuta",
+      keyStep: "A'",
+      nextNodeId: "melica_c"
+    }
+  },
+
+  melica_b: {
+    id: "melica_b",
+    milestone: "Melica",
+    manualPage: 62,
+    descripcion: "Melica - B: porte, hojas y tamaño de las espiguillas",
+    opcionA: {
+      label: "Tallos flojos y apoyantes de 1-3 m; hojas planas; espiguillas de 7-8 mm",
+      keyStep: "B",
+      especieId: "melica_sarmentosa"
+    },
+    opcionA_prima: {
+      label: "Plantas cespitosas de unos 50 cm; hojas rígidas, convolutas y punzantes; espiguillas de 12-15 mm",
+      keyStep: "B'",
+      especieId: "melica_macra"
+    }
+  },
+
+  melica_c: {
+    id: "melica_c",
+    milestone: "Melica",
+    manualPage: 62,
+    descripcion: "Melica - C: forma de la gluma inferior",
+    opcionA: {
+      label: "Gluma inferior anchamente obovada, hialina arriba, irregularmente recortada y algo plegada",
+      keyStep: "C",
+      especieId: "melica_argyrea"
+    },
+    opcionA_prima: {
+      label: "Gluma inferior obovada, entera o casi entera arriba, plana o enroscada, no plegada",
+      keyStep: "C'",
+      nextNodeId: "melica_d"
+    }
+  },
+
+  melica_d: {
+    id: "melica_d",
+    milestone: "Melica",
+    manualPage: 62,
+    descripcion: "Melica - D: tamaño de la gluma inferior y porte",
+    opcionA: {
+      label: "Gluma inferior de 8-10 mm; planta cespitosa de 50 cm; hojas cortas y convolutas",
+      keyStep: "D",
+      especieId: "melica_papilionacea"
+    },
+    opcionA_prima: {
+      label: "Gluma inferior de unos 15 mm; planta de 1 m o más; hojas lineales y planas",
+      keyStep: "D'",
+      especieId: "melica_aurantiaca"
+    }
+  },
+
+  poa_a: {
+    id: "poa_a",
+    milestone: "Poa",
+    manualPage: 64,
+    descripcion: "Poa - A: sexualidad de las flores y origen de las plantas",
+    opcionA: {
+      label: "Flores hermafroditas; plantas adventicias",
+      keyStep: "A",
+      nextNodeId: "poa_b"
+    },
+    opcionA_prima: {
+      label: "Flores dioicas; plantas indígenas",
+      keyStep: "A'",
+      nextNodeId: "poa_e"
+    }
+  },
+
+  poa_b: {
+    id: "poa_b",
+    milestone: "Poa",
+    manualPage: 64,
+    descripcion: "Poa - B: ciclo y porte de las plantas hermafroditas",
+    opcionA: {
+      label: "Plantas anuales de 5-20 cm; panojas abiertas y laxas; espiguillas de 4-6 mm",
+      keyStep: "B",
+      especieId: "poa_annua"
+    },
+    opcionA_prima: {
+      label: "Plantas perennes de 20-90 cm",
+      keyStep: "B'",
+      nextNodeId: "poa_c"
+    }
+  },
+
+  poa_c: {
+    id: "poa_c",
+    milestone: "Poa",
+    manualPage: 64,
+    descripcion: "Poa - C: presencia de rizomas horizontales",
+    opcionA: {
+      label: "Sin rizomas; plantas erectas o ascendentes; panoja amplia; espiguillas de unos 3 mm",
+      keyStep: "C",
+      especieId: "poa_trivialis"
+    },
+    opcionA_prima: {
+      label: "Con rizomas horizontales",
+      keyStep: "C'",
+      nextNodeId: "poa_d"
+    }
+  },
+
+  poa_d: {
+    id: "poa_d",
+    milestone: "Poa",
+    manualPage: 64,
+    descripcion: "Poa - D: forma de los tallos y de la panoja",
+    opcionA: {
+      label: "Tallos redondeados; panoja piramidal abierta; espiguillas de 3-6 mm",
+      keyStep: "D",
+      especieId: "poa_pratensis"
+    },
+    opcionA_prima: {
+      label: "Tallos muy comprimidos; panojas angostas; espiguillas amontonadas casi sésiles",
+      keyStep: "D'",
+      especieId: "poa_compressa"
+    }
+  },
+
+  poa_e: {
+    id: "poa_e",
+    milestone: "Poa",
+    manualPage: 64,
+    descripcion: "Poa - E: hábito de las plantas dioicas",
+    opcionA: {
+      label: "Plantas con rizomas horizontales",
+      keyStep: "E",
+      nextNodeId: "poa_f"
+    },
+    opcionA_prima: {
+      label: "Plantas cespitosas, sin rizomas; panojas contraídas y espiguillas femeninas lanosas",
+      keyStep: "E'",
+      especieId: "poa_lanigera"
+    }
+  },
+
+  poa_f: {
+    id: "poa_f",
+    milestone: "Poa",
+    manualPage: 64,
+    descripcion: "Poa - F: longitud de la lígula",
+    opcionA: {
+      label: "Lígula de 5-12 mm o más; hojas conduplicadas y rígidas",
+      keyStep: "F",
+      especieId: "poa_lanuginosa"
+    },
+    opcionA_prima: {
+      label: "Lígula de 1-2,5 mm; láminas plegadas o planas; panoja contraída y densa",
+      keyStep: "F'",
+      especieId: "poa_bonariensis"
+    }
+  },
+
+  eragrostis_a: {
+    id: "eragrostis_a",
+    milestone: "Eragrostis",
+    manualPage: 60,
+    descripcion: "Eragrostis - A: hábito rastrero o erecto",
+    opcionA: {
+      label: "Planta anual, rastrera, radicante en los nudos; panojas muy cortas y densas",
+      keyStep: "A",
+      especieId: "eragrostis_hypnoides"
+    },
+    opcionA_prima: {
+      label: "Plantas erectas o ascendentes",
+      keyStep: "A'",
+      nextNodeId: "eragrostis_b"
+    }
+  },
+
+  eragrostis_b: {
+    id: "eragrostis_b",
+    milestone: "Eragrostis",
+    manualPage: 60,
+    descripcion: "Eragrostis - B: duración de la planta",
+    opcionA: {
+      label: "Plantas perennes, rizomatosas o cespitosas",
+      keyStep: "B",
+      nextNodeId: "eragrostis_c"
+    },
+    opcionA_prima: {
+      label: "Plantas anuales",
+      keyStep: "B'",
+      nextNodeId: "eragrostis_g"
+    }
+  },
+
+  eragrostis_c: {
+    id: "eragrostis_c",
+    milestone: "Eragrostis",
+    manualPage: 60,
+    descripcion: "Eragrostis - C: rizomatosa o cespitosa",
+    opcionA: {
+      label: "Rizomatosa, glabra, de 40-90 cm; panojas laxas; espiguillas con 8-30 flores",
+      keyStep: "C",
+      especieId: "eragrostis_bahiensis"
+    },
+    opcionA_prima: {
+      label: "Cespitosa; espiguillas con 1-7 flores",
+      keyStep: "C'",
+      nextNodeId: "eragrostis_d"
+    }
+  },
+
+  eragrostis_d: {
+    id: "eragrostis_d",
+    milestone: "Eragrostis",
+    manualPage: 60,
+    descripcion: "Eragrostis - D: número de flores por espiguilla",
+    opcionA: {
+      label: "Espiguillas con 1-2 flores, raramente 3, de 1 mm; panojas tenues rojizas",
+      keyStep: "D",
+      especieId: "eragrostis_airoides"
+    },
+    opcionA_prima: {
+      label: "Espiguillas con 3-7 flores",
+      keyStep: "D'",
+      nextNodeId: "eragrostis_e"
+    }
+  },
+
+  eragrostis_e: {
+    id: "eragrostis_e",
+    milestone: "Eragrostis",
+    manualPage: 60,
+    descripcion: "Eragrostis - E: cilios en el margen de las páleas",
+    opcionA: {
+      label: "Páleas ciliadas en el margen; panoja laxa; espiguillas violáceas de 4-5 flores",
+      keyStep: "E",
+      nextNodeId: "eragrostis_retinens_a"
+    },
+    opcionA_prima: {
+      label: "Páleas no ciliadas",
+      keyStep: "E'",
+      nextNodeId: "eragrostis_f"
+    }
+  },
+
+  eragrostis_retinens_a: {
+    id: "eragrostis_retinens_a",
+    milestone: "Eragrostis retinens",
+    manualPage: 61,
+    descripcion: "Eragrostis retinens: número de flores por espiguilla",
+    opcionA: {
+      label: "Espiguillas con 4-5 flores",
+      keyStep: "a",
+      especieId: "eragrostis_retinens"
+    },
+    opcionA_prima: {
+      label: "Espiguillas menores, con sólo 2-3 flores",
+      keyStep: "a'",
+      especieId: "eragrostis_retinens_pergaminensis"
+    }
+  },
+
+  eragrostis_f: {
+    id: "eragrostis_f",
+    milestone: "Eragrostis",
+    manualPage: 60,
+    descripcion: "Eragrostis - F: porte de las panojas",
+    opcionA: {
+      label: "Panojas erectas, tenues y difusas; vainas peludas en la garganta",
+      keyStep: "F",
+      especieId: "eragrostis_lugens"
+    },
+    opcionA_prima: {
+      label: "Panojas débiles, generalmente nutantes",
+      keyStep: "F'",
+      especieId: "eragrostis_flaccida"
+    }
+  },
+
+  eragrostis_g: {
+    id: "eragrostis_g",
+    milestone: "Eragrostis",
+    manualPage: 60,
+    descripcion: "Eragrostis - G: densidad de las panojas",
+    opcionA: {
+      label: "Panojas contraídas, densas y angostas",
+      keyStep: "G",
+      nextNodeId: "eragrostis_h"
+    },
+    opcionA_prima: {
+      label: "Panojas laxas y amplias",
+      keyStep: "G'",
+      nextNodeId: "eragrostis_j"
+    }
+  },
+
+  eragrostis_h: {
+    id: "eragrostis_h",
+    milestone: "Eragrostis",
+    manualPage: 60,
+    descripcion: "Eragrostis - H: tamaño y forma de las espiguillas",
+    opcionA: {
+      label: "Espiguillas lanceoladas de 5-15 por 2-3 mm; tallos con depresiones glandulares",
+      keyStep: "H",
+      especieId: "eragrostis_cilianensis"
+    },
+    opcionA_prima: {
+      label: "Espiguillas de 4-8 por 1-1,5 mm; planta erecta y velluda de 20-30 cm",
+      keyStep: "H'",
+      especieId: "eragrostis_neesii"
+    }
+  },
+
+  eragrostis_j: {
+    id: "eragrostis_j",
+    milestone: "Eragrostis",
+    manualPage: 60,
+    descripcion: "Eragrostis - J: anchura de las espiguillas",
+    opcionA: {
+      label: "Espiguillas lanceoladas de 1,5-2 mm de ancho",
+      keyStep: "J",
+      nextNodeId: "eragrostis_k"
+    },
+    opcionA_prima: {
+      label: "Espiguillas lineales de 1 mm o menos de ancho",
+      keyStep: "J'",
+      nextNodeId: "eragrostis_m"
+    }
+  },
+
+  eragrostis_k: {
+    id: "eragrostis_k",
+    milestone: "Eragrostis",
+    manualPage: 60,
+    descripcion: "Eragrostis - K: longitud y número de flores de las espiguillas",
+    opcionA: {
+      label: "Espiguillas de 3-4 mm, con 4-8 flores; plantas de 5-20 cm",
+      keyStep: "K",
+      especieId: "eragrostis_multicaulis"
+    },
+    opcionA_prima: {
+      label: "Espiguillas de 6-10 mm",
+      keyStep: "K'",
+      nextNodeId: "eragrostis_l"
+    }
+  },
+
+  eragrostis_l: {
+    id: "eragrostis_l",
+    milestone: "Eragrostis",
+    manualPage: 60,
+    descripcion: "Eragrostis - L: orientación de las ramificaciones de la panoja",
+    opcionA: {
+      label: "Ramificaciones muy abiertas; espiguillas con 12-20 flores; plantas de 20-40 cm",
+      keyStep: "L",
+      especieId: "eragrostis_barrelieri"
+    },
+    opcionA_prima: {
+      label: "Ramificaciones oblicuas al raquis; espiguillas con 8-12 flores; planta de hasta 1 m",
+      keyStep: "L'",
+      especieId: "eragrostis_neomexicana"
+    }
+  },
+
+  eragrostis_m: {
+    id: "eragrostis_m",
+    milestone: "Eragrostis",
+    manualPage: 60,
+    descripcion: "Eragrostis - M: pelos en las axilas de las ramificaciones",
+    opcionA: {
+      label: "Eje con largos pelos blancos en las axilas; espiguillas oscuras de 3-5 mm",
+      keyStep: "M",
+      especieId: "eragrostis_pilosa"
+    },
+    opcionA_prima: {
+      label: "Eje sin largos pelos blancos en las axilas; espiguillas de 4-5 mm",
+      keyStep: "M'",
+      especieId: "eragrostis_virescens"
     }
   },
 
@@ -6218,14 +6983,14 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  guadua: {
-    id: "guadua",
-    nombreCientifico: "Guadua sp.",
-    nombreVulgar: "Tacuara",
+  guadua_trinii: {
+    id: "guadua_trinii",
+    nombreCientifico: "Guadua trinii",
+    nombreVulgar: "Tacuarazú; tacuara brava",
     familia: "17. Gramineae - Bambuseae",
-    descripcion: "Gramínea perenne con cañas leñosas elevadas.",
-    caracteristicas: "Cañas robustas y floración espaciada por varios años, carácter típico de Bambuseae en la clave.",
-    distribucion: "Ambientes ribereños y boscosos de la región.",
+    descripcion: "Bambú de rizomas gruesos y cañas leñosas de 6-10 m de alto.",
+    caracteristicas: "Cañas huecas y débiles, con espinas rígidas y curvas en los nudos; hojas lanceoladas de 10-15 cm; panojas laxas y espiguillas de 2,5-3 cm.",
+    distribucion: "Sur del Brasil y nordeste de la Argentina hasta el Río de la Plata; citada para Punta Lara.",
     imagen: ""
   },
 
@@ -7241,14 +8006,14 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  arundo: {
-    id: "arundo",
-    nombreCientifico: "Arundo sp.",
-    nombreVulgar: "Caña",
+  arundo_donax: {
+    id: "arundo_donax",
+    nombreCientifico: "Arundo donax",
+    nombreVulgar: "Caña de Castilla",
     familia: "17. Gramineae - Festuceae",
-    descripcion: "Gramínea robusta con hojas repartidas por el tallo y flores hermafroditas.",
-    caracteristicas: "En la clave se separa por lemma velluda y raquilla glabra.",
-    distribucion: "Grupo pendiente de carga a nivel de especies.",
+    descripcion: "Hierba perenne rizomatosa, con cañas huecas y gruesas de 2-6 m de alto.",
+    caracteristicas: "Hojas numerosas y planas; panojas densas de 30-60 cm; espiguillas de unos 12 mm; lemma velluda y raquilla glabra.",
+    distribucion: "Viejo Mundo; adventicia y cultivada en América, espontánea en el Delta y la ribera del Plata.",
     imagen: ""
   },
 
@@ -7263,14 +8028,58 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  melica: {
-    id: "melica",
-    nombreCientifico: "Melica sp.",
+  melica_sarmentosa: {
+    id: "melica_sarmentosa",
+    nombreCientifico: "Melica sarmentosa",
     nombreVulgar: "Melica",
     familia: "17. Gramineae - Festuceae",
-    descripcion: "Gramínea con glumas membranosas anchas y espiguillas péndulas.",
-    caracteristicas: "Espiguillas amarillentas, violáceas o plateadas, no verdes, y lemma mútica.",
-    distribucion: "Grupo pendiente de carga a nivel de especies.",
+    descripcion: "Hierba perenne de tallos flojos y apoyantes, de 1-3 m de alto.",
+    caracteristicas: "Vainas cerradas; láminas cortas y planas; panojas densas de 7-12 cm; espiguillas blanquecinas o violáceas de 7-8 mm.",
+    distribucion: "América austral cálida; común en los bosques del Delta y de la ribera del Plata.",
+    imagen: ""
+  },
+
+  melica_macra: {
+    id: "melica_macra",
+    nombreCientifico: "Melica macra",
+    nombreVulgar: "Paja brava",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne densamente cespitosa, de alrededor de 50 cm.",
+    caracteristicas: "Hojas rígidas, convolutas y punzantes; panojas largas y angostas; espiguillas fusiformes pajizas de 12-15 mm.",
+    distribucion: "Uruguay y centro de la Argentina; cerca de Buenos Aires, junto a vías férreas y barrancas del Paraná.",
+    imagen: ""
+  },
+
+  melica_argyrea: {
+    id: "melica_argyrea",
+    nombreCientifico: "Melica argyrea",
+    nombreVulgar: "Melica",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne cespitosa de 20-50 cm de alto.",
+    caracteristicas: "Hojas plegadas; panojas estrechas y densas; espiguillas blanquecinas de 5-6 mm; gluma inferior ancha, recortada y plegada.",
+    distribucion: "Uruguay y centro de la Argentina; rara en Campana, San Isidro e Isla Martín García.",
+    imagen: ""
+  },
+
+  melica_papilionacea: {
+    id: "melica_papilionacea",
+    nombreCientifico: "Melica papilionacea",
+    nombreVulgar: "Melica",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne cespitosa de unos 50 cm de alto.",
+    caracteristicas: "Hojas cortas y convolutas; panojas laxas; espiguillas nutantes de 8-10 mm; gluma inferior casi plana con margen membranáceo.",
+    distribucion: "Sur del Brasil, Uruguay y nordeste de la Argentina; común en la estepa clímax.",
+    imagen: ""
+  },
+
+  melica_aurantiaca: {
+    id: "melica_aurantiaca",
+    nombreCientifico: "Melica aurantiaca",
+    nombreVulgar: "Melica",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne de 1 m o más de alto.",
+    caracteristicas: "Hojas lineales y planas; panojas estrechas; espiguillas amarillentas de 12-16 mm; gluma inferior anchamente oblanceolada.",
+    distribucion: "Uruguay y nordeste de la Argentina; Punta del Indio y General Lavalle.",
     imagen: ""
   },
 
@@ -7285,14 +8094,80 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  poa: {
-    id: "poa",
-    nombreCientifico: "Poa sp.",
+  poa_annua: {
+    id: "poa_annua",
+    nombreCientifico: "Poa annua",
     nombreVulgar: "Poa",
     familia: "17. Gramineae - Festuceae",
-    descripcion: "Gramínea de Festuceae separada en esta clave por caracteres de espiguilla y lemma.",
-    caracteristicas: "Puede aparecer en ramas dioicas con pelos lanosos o en ramas de lemmas carenadas múticas.",
-    distribucion: "Grupo pendiente de carga a nivel de especies.",
+    descripcion: "Hierba anual de 5-20 cm de alto.",
+    caracteristicas: "Panojas abiertas y laxas; espiguillas lanceoladas de 4-6 mm, con 3-8 flores; lemmas con nervaduras pubescentes.",
+    distribucion: "Europa; adventicia en América y ubicua.",
+    imagen: ""
+  },
+
+  poa_trivialis: {
+    id: "poa_trivialis",
+    nombreCientifico: "Poa trivialis",
+    nombreVulgar: "Poa",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne sin rizomas, erecta o ascendente, de 30-90 cm.",
+    caracteristicas: "Hojas escabrosas; panoja amplia; espiguillas de unos 3 mm con 2-3 flores; lemma con pelos lanosos en la base.",
+    distribucion: "Europa; adventicia en América, en suelos arenosos de la ribera del Plata.",
+    imagen: ""
+  },
+
+  poa_pratensis: {
+    id: "poa_pratensis",
+    nombreCientifico: "Poa pratensis",
+    nombreVulgar: "Poa",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne rizomatosa, con tallos redondeados de 30-100 cm.",
+    caracteristicas: "Hojas planas; panoja piramidal abierta; espiguillas de 3-6 mm con 3-5 flores; lemmas lanosas en la base.",
+    distribucion: "Europa; adventicia en América, común en suelos modificados.",
+    imagen: ""
+  },
+
+  poa_compressa: {
+    id: "poa_compressa",
+    nombreCientifico: "Poa compressa",
+    nombreVulgar: "Poa",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne rizomatosa de tallos muy comprimidos y ascendentes, de 15-50 cm.",
+    caracteristicas: "Panojas angostas de 3-7 cm; espiguillas amontonadas, casi sésiles, de 4-6 mm y con 3-6 flores.",
+    distribucion: "Europa; adventicia en América, citada para los alrededores de Buenos Aires.",
+    imagen: ""
+  },
+
+  poa_lanuginosa: {
+    id: "poa_lanuginosa",
+    nombreCientifico: "Poa lanuginosa",
+    nombreVulgar: "Poa",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba dioica rizomatosa de 30-50 cm de alto.",
+    caracteristicas: "Hojas conduplicadas y rígidas, con lígula de 5-12 mm o más; espiguillas femeninas grandes y largamente lanosas.",
+    distribucion: "Sur del Brasil, Uruguay y nordeste de la Argentina; en suelos arenosos de Isla Martín García.",
+    imagen: ""
+  },
+
+  poa_bonariensis: {
+    id: "poa_bonariensis",
+    nombreCientifico: "Poa bonariensis",
+    nombreVulgar: "Poa",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba dioica rizomatosa de 30-70 cm de alto.",
+    caracteristicas: "Lígula de 1-2,5 mm; láminas plegadas o planas; panoja contraída y densa; espiguillas femeninas lanosas.",
+    distribucion: "Uruguay y nordeste de la Argentina; en campos fértiles.",
+    imagen: ""
+  },
+
+  poa_lanigera: {
+    id: "poa_lanigera",
+    nombreCientifico: "Poa lanigera",
+    nombreVulgar: "Poa",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba dioica cespitosa, sin rizomas, de 30-70 cm de alto.",
+    caracteristicas: "Lígula corta; láminas plegadas o planas; panojas contraídas y densas; espiguillas femeninas lanosas.",
+    distribucion: "Sur del Brasil, Uruguay y centro de la Argentina; en la estepa clímax.",
     imagen: ""
   },
 
@@ -7329,14 +8204,157 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  eragrostis: {
-    id: "eragrostis",
-    nombreCientifico: "Eragrostis sp.",
+  eragrostis_hypnoides: {
+    id: "eragrostis_hypnoides",
+    nombreCientifico: "Eragrostis hypnoides",
     nombreVulgar: "Eragrostis",
     familia: "17. Gramineae - Festuceae",
-    descripcion: "Gramínea de espiguillas lanceoladas o lineales con lemmas trinervadas.",
-    caracteristicas: "El manual separa varias especies por porte, tipo de panoja, pilosidad y tamaño de espiguilla.",
-    distribucion: "Grupo pendiente de carga a nivel de especies.",
+    descripcion: "Hierba anual rastrera, radicante en los nudos y glabra.",
+    caracteristicas: "Hojas cortas casi perpendiculares al tallo; panojas muy cortas y densas; espiguillas oblongas verdosas de 1 cm.",
+    distribucion: "América templado-cálida; Delta y San Isidro.",
+    imagen: ""
+  },
+
+  eragrostis_bahiensis: {
+    id: "eragrostis_bahiensis",
+    nombreCientifico: "Eragrostis bahiensis",
+    nombreVulgar: "Eragrostis",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne rizomatosa y glabra, de 40-90 cm.",
+    caracteristicas: "Panojas laxas; espiguillas lanceoladas verdosas o violáceas, de 4-10 mm y con 8-30 flores.",
+    distribucion: "América cálida; suelos arenosos de Palermo, Dock Sud y otros sitios.",
+    imagen: ""
+  },
+
+  eragrostis_airoides: {
+    id: "eragrostis_airoides",
+    nombreCientifico: "Eragrostis airoides",
+    nombreVulgar: "Eragrostis",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne cespitosa de 30-80 cm de alto.",
+    caracteristicas: "Vainas velludas; panojas tenues, multifloras y rojizas; espiguillas de 1 mm con 1-2 flores, raramente 3.",
+    distribucion: "América cálida; frecuente en el Delta y en Palermo.",
+    imagen: ""
+  },
+
+  eragrostis_retinens: {
+    id: "eragrostis_retinens",
+    nombreCientifico: "Eragrostis retinens",
+    nombreVulgar: "Eragrostis",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne cespitosa de unos 50 cm de alto.",
+    caracteristicas: "Páleas ciliadas en el margen; panoja laxa; espiguillas violáceas de unos 2 mm, con 4-5 flores.",
+    distribucion: "América austral; rara en la región, citada para Pipinas.",
+    imagen: ""
+  },
+
+  eragrostis_retinens_pergaminensis: {
+    id: "eragrostis_retinens_pergaminensis",
+    nombreCientifico: "Eragrostis retinens var. pergaminensis",
+    nombreVulgar: "Eragrostis",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Variedad de Eragrostis retinens con espiguillas menores.",
+    caracteristicas: "Espiguillas con sólo 2-3 flores; conserva los demás caracteres de la especie.",
+    distribucion: "Pergamino, provincia de Buenos Aires.",
+    imagen: ""
+  },
+
+  eragrostis_lugens: {
+    id: "eragrostis_lugens",
+    nombreCientifico: "Eragrostis lugens",
+    nombreVulgar: "Eragrostis",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne cespitosa de 20-40 cm de alto.",
+    caracteristicas: "Páleas no ciliadas; panojas erectas, tenues y difusas; espiguillas con 3-7 flores; vainas peludas en la garganta.",
+    distribucion: "América templado-cálida; común en la estepa clímax.",
+    imagen: ""
+  },
+
+  eragrostis_flaccida: {
+    id: "eragrostis_flaccida",
+    nombreCientifico: "Eragrostis flaccida",
+    nombreVulgar: "Eragrostis",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba perenne cespitosa de panojas débiles.",
+    caracteristicas: "Páleas no ciliadas; espiguillas con 3-7 flores; panojas generalmente nutantes.",
+    distribucion: "América austral cálida; citada para la Capital Federal.",
+    imagen: ""
+  },
+
+  eragrostis_cilianensis: {
+    id: "eragrostis_cilianensis",
+    nombreCientifico: "Eragrostis cilianensis",
+    nombreVulgar: "Eragrostis",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba anual de tallos tendidos o ascendentes.",
+    caracteristicas: "Panojas muy densas y angostas; espiguillas lanceoladas plurifloras de 5-15 por 2-3 mm; tallos a menudo glandulosos.",
+    distribucion: "Europa; adventicia en América, común en suelos modificados.",
+    imagen: ""
+  },
+
+  eragrostis_neesii: {
+    id: "eragrostis_neesii",
+    nombreCientifico: "Eragrostis neesii",
+    nombreVulgar: "Eragrostis",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba anual erecta y velluda, de 20-30 cm de alto.",
+    caracteristicas: "Panojas contraídas y densas; espiguillas de 4-8 por 1-1,5 mm.",
+    distribucion: "América del Sur cálida; rara en la región, citada para Dock Sur.",
+    imagen: ""
+  },
+
+  eragrostis_multicaulis: {
+    id: "eragrostis_multicaulis",
+    nombreCientifico: "Eragrostis multicaulis",
+    nombreVulgar: "Eragrostis",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba anual de 5-20 cm de alto.",
+    caracteristicas: "Panojas laxas de 4-10 cm; espiguillas lanceoladas de 3-4 mm, con 4-8 flores.",
+    distribucion: "Japón; adventicia en América, citada para el Delta y la Capital Federal.",
+    imagen: ""
+  },
+
+  eragrostis_barrelieri: {
+    id: "eragrostis_barrelieri",
+    nombreCientifico: "Eragrostis barrelieri",
+    nombreVulgar: "Eragrostis",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba anual de 20-40 cm de alto.",
+    caracteristicas: "Panojas laxas con ramificaciones muy abiertas; espiguillas de 6-10 mm, cortamente pediceladas y con 12-20 flores.",
+    distribucion: "Europa; adventicia en América, hallada en Eva Perón.",
+    imagen: ""
+  },
+
+  eragrostis_neomexicana: {
+    id: "eragrostis_neomexicana",
+    nombreCientifico: "Eragrostis neomexicana",
+    nombreVulgar: "Eragrostis",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba anual de hasta 1 m de alto.",
+    caracteristicas: "Panojas laxas con ramificaciones oblicuas al raquis; espiguillas ovadas de 5-8 mm, con 8-12 flores.",
+    distribucion: "América templado-cálida; Capital Federal, Villa Elisa y otros sitios.",
+    imagen: ""
+  },
+
+  eragrostis_pilosa: {
+    id: "eragrostis_pilosa",
+    nombreCientifico: "Eragrostis pilosa",
+    nombreVulgar: "Eragrostis",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba anual de panojas laxas y amplias.",
+    caracteristicas: "Eje con largos pelos blancos en las axilas; espiguillas oscuras y lineales de 3-5 mm por 1 mm, con 3-9 flores.",
+    distribucion: "Europa; adventicia en América, citada para el Delta y la Capital Federal.",
+    imagen: ""
+  },
+
+  eragrostis_virescens: {
+    id: "eragrostis_virescens",
+    nombreCientifico: "Eragrostis virescens",
+    nombreVulgar: "Eragrostis",
+    familia: "17. Gramineae - Festuceae",
+    descripcion: "Hierba anual de 50-60 cm de alto.",
+    caracteristicas: "Eje sin pelos blancos en las axilas; espiguillas lineales de 4-5 mm por 1 mm, con 7-9 flores.",
+    distribucion: "América cálida; muy común en la región platense.",
     imagen: ""
   },
 
@@ -7890,14 +8908,256 @@ export const monocotEspecies = {
     imagen: ""
   },
 
-  agrostideae_pendiente: {
-    id: "agrostideae_pendiente",
-    nombreCientifico: "Agrostideae",
-    nombreVulgar: "Rama pendiente de Agrostideae",
+  oryzopsis_miliacea: {
+    id: "oryzopsis_miliacea",
+    nombreCientifico: "Oryzopsis miliacea",
+    nombreVulgar: "Oryzopsis",
     familia: "17. Gramineae - Agrostideae",
-    descripcion: "Esta rama de la tribu Agrostideae todavía está pendiente de carga a nivel de género y especie.",
-    caracteristicas: "El recorrido llegó a una parte del manual que se cargará en una tanda siguiente.",
-    distribucion: "Pendiente de completar.",
+    descripcion: "Hierba perenne ascendente, de 60-150 cm de alto.",
+    caracteristicas: "Hojas planas; panojas laxas; glumas acuminadas de 3 mm; lemma anchamente fusiforme de 2 mm y arista débil de 4 mm, no retorcida.",
+    distribucion: "Europa; adventicia en América. Accidental en Dock Sur, según Parodi.",
+    imagen: ""
+  },
+
+  piptochaetium_hackelii: {
+    id: "piptochaetium_hackelii",
+    nombreCientifico: "Piptochaetium hackelii",
+    nombreVulgar: "Piptochaetium",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne de unos 50 cm de alto, con panojas laxas y paucispicadas.",
+    caracteristicas: "Glumas lanceolado-subuladas de 21-30 mm; antecio fusiforme de 10-12 mm, castaño oscuro; arista pubescente de 8-10 cm.",
+    distribucion: "Provincia de Buenos Aires y Uruguay; frecuente en las sierras bonaerenses y en Pergamino.",
+    imagen: ""
+  },
+
+  piptochaetium_bicolor: {
+    id: "piptochaetium_bicolor",
+    nombreCientifico: "Piptochaetium bicolor",
+    nombreVulgar: "Piptochaetium",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne cespitosa, de unos 50 cm de alto.",
+    caracteristicas: "Glumas lanceoladas de 10-12 mm; antecio ovado-fusiforme de más de 4,5 mm, con callus seríceo-pubescente y arista de unos 5 cm.",
+    distribucion: "Uruguay y centro y este de la Argentina; muy común en la estepa clímax.",
+    imagen: ""
+  },
+
+  piptochaetium_bicolor_minor: {
+    id: "piptochaetium_bicolor_minor",
+    nombreCientifico: "Piptochaetium bicolor var. minor",
+    nombreVulgar: "Piptochaetium",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Variedad de Piptochaetium bicolor con antecios pequeños.",
+    caracteristicas: "Antecios de no más de 4,5 mm; los demás caracteres corresponden a Piptochaetium bicolor.",
+    distribucion: "Con la variedad bicolor, en Uruguay y centro y este de la Argentina.",
+    imagen: ""
+  },
+
+  piptochaetium_lasianthum: {
+    id: "piptochaetium_lasianthum",
+    nombreCientifico: "Piptochaetium lasianthum",
+    nombreVulgar: "Piptochaetium",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba cespitosa de 30-70 cm de alto.",
+    caracteristicas: "Antecio obovado de unos 3 mm, cubierto de largos pelos castaños; arista débil de 1,5-2 cm; panoja laxa y nutante.",
+    distribucion: "Nordeste de la Argentina y Uruguay; rara en la región, citada para el Bañado de Flores.",
+    imagen: ""
+  },
+
+  piptochaetium_stipoides: {
+    id: "piptochaetium_stipoides",
+    nombreCientifico: "Piptochaetium stipoides var. stipoides",
+    nombreVulgar: "Piptochaetium",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne cespitosa de antecios obovado-globosos.",
+    caracteristicas: "Frutos ovoideos, apenas papilosos en la parte superior; corona de 0,8-1,1 mm; hojas generalmente glabras.",
+    distribucion: "Sur del Brasil, Uruguay y norte y centro de la Argentina; común en la estepa clímax.",
+    imagen: ""
+  },
+
+  piptochaetium_stipoides_chaetophorum: {
+    id: "piptochaetium_stipoides_chaetophorum",
+    nombreCientifico: "Piptochaetium stipoides var. chaetophorum",
+    nombreVulgar: "Piptochaetium",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Variedad de Piptochaetium stipoides de frutos globosos.",
+    caracteristicas: "Frutos apenas papilosos en la parte superior; corona de 1,2-1,5 mm; hojas generalmente pilosas.",
+    distribucion: "Argentina, Chile, Brasil y Uruguay; en la estepa clímax.",
+    imagen: ""
+  },
+
+  piptochaetium_stipoides_verruculosum: {
+    id: "piptochaetium_stipoides_verruculosum",
+    nombreCientifico: "Piptochaetium stipoides var. verruculosum",
+    nombreVulgar: "Piptochaetium",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Variedad de Piptochaetium stipoides con frutos marcadamente papilosos.",
+    caracteristicas: "Frutos densamente papilosos, al menos en la mitad superior; corona generalmente de 1 mm o más.",
+    distribucion: "Uruguay y Argentina; en la estepa clímax.",
+    imagen: ""
+  },
+
+  piptochaetium_stipoides_purpurascens: {
+    id: "piptochaetium_stipoides_purpurascens",
+    nombreCientifico: "Piptochaetium stipoides var. purpurascens",
+    nombreVulgar: "Piptochaetium",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Variedad de Piptochaetium stipoides con frutos lisos.",
+    caracteristicas: "Frutos lisos y corona generalmente de menos de 1 mm de diámetro.",
+    distribucion: "Sur del Brasil, Uruguay y nordeste de la Argentina; en la estepa clímax.",
+    imagen: ""
+  },
+
+  piptochaetium_grisebachii: {
+    id: "piptochaetium_grisebachii",
+    nombreCientifico: "Piptochaetium grisebachii",
+    nombreVulgar: "Piptochaetium",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba cespitosa de unos 50 cm de alto.",
+    caracteristicas: "Antecio obovado de 3-4,5 mm, castaño y estriado; corona reducida y pestañosa; arista excéntrica de 2 cm.",
+    distribucion: "Buenos Aires y Entre Ríos; rara en la región platense.",
+    imagen: ""
+  },
+
+  piptochaetium_montevidense: {
+    id: "piptochaetium_montevidense",
+    nombreCientifico: "Piptochaetium montevidense",
+    nombreVulgar: "Piptochaetium",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne baja y cespitosa, de 5-30 cm de alto.",
+    caracteristicas: "Hojas filiformes; antecio globoso, verrugoso o papiloso, de 1,5-2,5 mm; arista de 7-8 mm; panoja espiciforme.",
+    distribucion: "América del Sur; muy frecuente en la estepa clímax.",
+    imagen: ""
+  },
+
+  piptochaetium_panicoides: {
+    id: "piptochaetium_panicoides",
+    nombreCientifico: "Piptochaetium panicoides",
+    nombreVulgar: "Piptochaetium",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne cespitosa de 15-40 cm de alto.",
+    caracteristicas: "Hojas setáceas y plegadas; antecio lenticular comprimido de 1,5-2,5 mm, finamente estriado; arista de 10 mm.",
+    distribucion: "América austral; hallada una sola vez en Dock Sud.",
+    imagen: ""
+  },
+
+  stipa_papposa: {
+    id: "stipa_papposa",
+    nombreCientifico: "Stipa papposa",
+    nombreVulgar: "Flechilla",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne de 20-70 cm de alto, con hojas convolutas.",
+    caracteristicas: "Lemma lineal-fusiforme de 7-8 mm, sin corona, con pelos superiores en forma de papus; arista de 20-30 mm; panoja laxa.",
+    distribucion: "América austral; común en la estepa clímax y en las estepas de costa.",
+    imagen: ""
+  },
+
+  stipa_trichotoma: {
+    id: "stipa_trichotoma",
+    nombreCientifico: "Stipa trichotoma",
+    nombreVulgar: "Pasto puna",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba cespitosa de 30-50 cm de alto, con hojas filiformes y redondeadas.",
+    caracteristicas: "Antecios claviformes u obovoideos de 2-3 mm, rugosos arriba; arista excéntrica de 20-30 mm; panoja muy laxa.",
+    distribucion: "Uruguay y centro de la Argentina; rara en terraplenes del ferrocarril.",
+    imagen: ""
+  },
+
+  stipa_bonariensis: {
+    id: "stipa_bonariensis",
+    nombreCientifico: "Stipa bonariensis",
+    nombreVulgar: "Flechilla",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba cespitosa de 30-60 cm de alto.",
+    caracteristicas: "Antecios rojo oscuro o casi negros de unos 13 mm; corona apenas diferenciada; arista de unos 10 cm; glumas de 20-25 mm.",
+    distribucion: "Provincia de Buenos Aires; rara en la estepa clímax.",
+    imagen: ""
+  },
+
+  stipa_clarazii: {
+    id: "stipa_clarazii",
+    nombreCientifico: "Stipa clarazii",
+    nombreVulgar: "Flechilla",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba cespitosa de 30-70 cm de alto, con hojas convolutas y rígidas.",
+    caracteristicas: "Antecios pajizos de 11-14 mm; corona largamente ciliada; arista velluda de cerca de 10 cm; glumas de 27-40 mm.",
+    distribucion: "Centro de la Argentina y Uruguay; en campos altos y secos.",
+    imagen: ""
+  },
+
+  stipa_neesiana: {
+    id: "stipa_neesiana",
+    nombreCientifico: "Stipa neesiana",
+    nombreVulgar: "Flechilla",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne de 70-80 cm de alto, con hojas convolutas.",
+    caracteristicas: "Antecios pajizos de 8-10 mm; corona laciniada; arista de unos 7 cm; glumas violáceas de 15-20 mm.",
+    distribucion: "América austral templado-cálida; muy común en la estepa clímax.",
+    imagen: ""
+  },
+
+  stipa_brachychaeta: {
+    id: "stipa_brachychaeta",
+    nombreCientifico: "Stipa brachychaeta",
+    nombreVulgar: "Paja vizcachera",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba densamente cespitosa de alrededor de 1 m de alto.",
+    caracteristicas: "Lemma fusiforme de 3,5-6 mm, sin corona diferenciada; arista de 11-18 mm; panoja densa; hojas planas y rígidas.",
+    distribucion: "América austral; frecuente en las barrancas del Paraná y en las antiguas barrancas del Plata.",
+    imagen: ""
+  },
+
+  stipa_charruana: {
+    id: "stipa_charruana",
+    nombreCientifico: "Stipa charruana",
+    nombreVulgar: "Flechilla",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba cespitosa de 60-80 cm de alto, con hojas muy angostas y rígidas.",
+    caracteristicas: "Corona prolongada en un apéndice membranoso de unos 6 mm; lemma de 5-6 mm; arista de 6-8 cm; panoja laxa.",
+    distribucion: "Uruguay, Entre Ríos y nordeste de Buenos Aires; en la estepa clímax.",
+    imagen: ""
+  },
+
+  stipa_bavioensis: {
+    id: "stipa_bavioensis",
+    nombreCientifico: "Stipa bavioensis",
+    nombreVulgar: "Flechilla",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba densamente cespitosa de 50-80 cm de alto, con hojas convolutas.",
+    caracteristicas: "Corona cupuliforme largamente ciliada; lemma de 2,5-3,5 mm uniformemente albo-velluda; arista de unos 3 cm.",
+    distribucion: "Nordeste de Buenos Aires y Uruguay; en campos húmedos.",
+    imagen: ""
+  },
+
+  stipa_megapotamica: {
+    id: "stipa_megapotamica",
+    nombreCientifico: "Stipa megapotamica",
+    nombreVulgar: "Flechilla",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne de cerca de 1 m de alto, con hojas planas.",
+    caracteristicas: "Corona anuliforme cortamente ciliada; lemma de 5 mm pubescente en la base y en líneas laterales; arista de 3,5-4 cm.",
+    distribucion: "Uruguay y nordeste de la Argentina; bosques húmedos del Delta y de la ribera del Plata.",
+    imagen: ""
+  },
+
+  stipa_hyalina: {
+    id: "stipa_hyalina",
+    nombreCientifico: "Stipa hyalina",
+    nombreVulgar: "Flechilla mansa",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba perenne de 25-100 cm de alto, con hojas planas y glabras.",
+    caracteristicas: "Corona ciliada de 0,2-0,5 mm; lemma fusiforme de apenas 4 mm; arista de 4-5 cm; panoja densa.",
+    distribucion: "Uruguay y centro de la Argentina; frecuente en suelos húmedos.",
+    imagen: ""
+  },
+
+  stipa_formicarum: {
+    id: "stipa_formicarum",
+    nombreCientifico: "Stipa formicarum",
+    nombreVulgar: "Flechilla",
+    familia: "17. Gramineae - Agrostideae",
+    descripcion: "Hierba cespitosa de 40-60 cm de alto, con hojas estrechas y planas.",
+    caracteristicas: "Corona ciliada de 0,6-1,5 mm; lemma fusiforme de 5-6 mm; arista de 3-4 cm; panoja densa.",
+    distribucion: "Común en campos bajos de la provincia de Buenos Aires.",
     imagen: ""
   },
 
@@ -8140,17 +9400,6 @@ export const monocotEspecies = {
     descripcion: "Hierba perenne, de 50-150 cm de alto.",
     caracteristicas: "Panojas cilíndricas de 5-10 cm, glumas de 3-5 mm truncadas con arista gruesa y quilla largamente ciliada.",
     distribucion: "Europa; cultivada como forrajera y a veces espontánea en suelos modificados.",
-    imagen: ""
-  },
-
-  chloris_pendiente: {
-    id: "chloris_pendiente",
-    nombreCientifico: "Chloris",
-    nombreVulgar: "Rama pendiente de Chloris",
-    familia: "17. Gramineae - Chlorideae",
-    descripcion: "Esta rama de Chlorideae corresponde al género Chloris y queda pendiente para una tanda dedicada.",
-    caracteristicas: "El género tiene una clave larga de varias especies; se cargará completo por separado para evitar errores.",
-    distribucion: "Pendiente de completar.",
     imagen: ""
   },
 

@@ -25,7 +25,7 @@ npm run build
 
 - Pteridophyta: cargado previamente en `src/data/manualKey.ts`.
 - Gymnospermae: cargado previamente en `src/data/manualKey.ts`.
-- Monocotyledoneae: completa en `src/data/monocotyledoneae.ts`.
+- Monocotyledoneae: completa en `src/data/monocotyledoneae.ts`; se completaron los antiguos finales genéricos de Guadua, Arundo, Melica, Poa y Eragrostis (páginas 55 y 60-65), y la rama de Agrostideae para Oryzopsis, Piptochaetium y Stipa (páginas 76-82).
 - Dicotyledoneae: completa en `src/data/manualKey.ts`.
 
 Ultima familia cargada y validada:
