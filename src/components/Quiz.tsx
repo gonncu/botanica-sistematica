@@ -4,6 +4,7 @@ import { useState } from "react";
 import { cladosTree, especiesData } from "@/data/clados";
 import { CladoNode, Especie } from "@/types";
 import SpeciesReferenceLinks from "@/components/SpeciesReferenceLinks";
+import SpeciesRouteSearch from "@/components/SpeciesRouteSearch";
 
 interface QuizProps {
   onComplete: (especie: Especie) => void;
@@ -69,6 +70,7 @@ export default function Quiz({ onComplete }: QuizProps) {
     null
   );
   const [commonNameDraft, setCommonNameDraft] = useState<string | null>(null);
+  const [isRouteOpen, setIsRouteOpen] = useState(false);
 
   const currentNode: CladoNode | undefined = cladosTree[currentNodeId];
   const keyPath = buildKeyPath(history);
@@ -225,6 +227,10 @@ export default function Quiz({ onComplete }: QuizProps) {
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">
+      <SpeciesRouteSearch onRouteOpenChange={setIsRouteOpen} />
+
+      {!isRouteOpen && (
+        <>
       <div className="mb-4">
         <span className="text-sm text-gray-700">
           Paso {history.length} del quiz
@@ -273,6 +279,8 @@ export default function Quiz({ onComplete }: QuizProps) {
         >
           ← Volver atrás
         </button>
+      )}
+        </>
       )}
     </div>
   );

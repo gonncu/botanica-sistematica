@@ -6,7 +6,7 @@ import {
   GraduationCap,
   Library,
   LogOut,
-  Menu,
+  CircleUserRound,
   ScanSearch,
   X,
 } from "lucide-react";
@@ -383,8 +383,8 @@ export default function Home() {
                 aria-controls="mobile-account-menu"
                 className={`flex min-h-16 flex-col items-center justify-center gap-1 px-1 pb-[env(safe-area-inset-bottom)] text-xs font-medium ${isMobileMenuOpen ? "text-green-800" : "text-gray-600"}`}
               >
-                {isMobileMenuOpen ? <X aria-hidden="true" size={20} /> : <Menu aria-hidden="true" size={20} />}
-                Más
+                {isMobileMenuOpen ? <X aria-hidden="true" size={20} /> : <CircleUserRound aria-hidden="true" size={20} />}
+                Sesión
               </button>
             </nav>
 
