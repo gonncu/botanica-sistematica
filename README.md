@@ -79,6 +79,10 @@ Run the SQL in `supabase/setup-auth-records.sql` from the Supabase SQL editor to
 - restrict records to signed-in `@agro.uba.ar` users
 - allow photo uploads into each user's storage folder
 
+For a database that already ran the setup script before editable common names were
+added, run `supabase/add-record-common-name.sql` once before deploying the updated
+app.
+
 In Supabase Auth, enable email sign-in and add the production URL to the allowed redirect URLs:
 
 ```txt

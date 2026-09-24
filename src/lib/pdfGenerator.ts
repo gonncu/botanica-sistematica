@@ -9,8 +9,15 @@ export interface LabelRecord {
   commonName: string;
   date: string;
   place: string;
-  coordinates?: string;
   observation?: string | null;
+}
+
+export interface PhotoCatalogRecord {
+  plantNumber: number;
+  family: string;
+  scientificName: string;
+  commonName: string;
+  photoUrl: string;
 }
 
 function formatDateForLabel(date: string) {
@@ -24,12 +31,6 @@ function formatDateForLabel(date: string) {
 
 function cleanFamilyName(familia: string) {
   return familia.replace(/^\d+\.\s*/, "");
-}
-
-function formatCoordinates(coordinates: PhotoRecord["coordenadas"]) {
-  if (!coordinates) return "";
-
-  return `${coordinates.latitude}, ${coordinates.longitude}`;
 }
 
 function drawLabel(
@@ -90,12 +91,9 @@ function drawLabel(
   drawInlineField("Nombre Vulgar", label.commonName);
 
   yPosition += 1.2;
-  const place = label.coordinates
-    ? `${label.place}; ${label.coordinates}`
-    : label.place;
   drawInlineField(
     "Fecha y Lugar de Colección",
-    `${formatDateForLabel(label.date)}, ${place}`
+    `${formatDateForLabel(label.date)}, ${label.place}`
   );
 
   yPosition += 1.2;
@@ -151,10 +149,9 @@ export async function generatePDF(
       collector: formData.nombreUsuario,
       family: especie.familia,
       scientificName: especie.nombreCientifico,
-      commonName: especie.nombreVulgar,
+      commonName: formData.nombreVulgar,
       date: formData.fecha,
       place: formData.lugar,
-      coordinates: formData.coordenadas,
       observation: formData.observaciones,
     },
   ]);
@@ -169,16 +166,120 @@ export async function generateLabelsPDF(labels: LabelRecord[]) {
   doc.save(`etiquetas-plantas-${Date.now()}.pdf`);
 }
 
+async function loadCatalogImage(photoUrl: string) {
+  const response = await fetch(photoUrl);
+  if (!response.ok) throw new Error(`No se pudo descargar la foto (${response.status})`);
+
+  const source = await createImageBitmap(await response.blob());
+  const canvas = document.createElement("canvas");
+  canvas.width = 900;
+  canvas.height = 650;
+  const context = canvas.getContext("2d");
+  if (!context) throw new Error("No se pudo preparar la foto");
+
+  context.fillStyle = "#ffffff";
+  context.fillRect(0, 0, canvas.width, canvas.height);
+  const scale = Math.min(canvas.width / source.width, canvas.height / source.height);
+  const width = source.width * scale;
+  const height = source.height * scale;
+  context.drawImage(
+    source,
+    (canvas.width - width) / 2,
+    (canvas.height - height) / 2,
+    width,
+    height
+  );
+  source.close();
+
+  return canvas.toDataURL("image/jpeg", 0.78);
+}
+
+export async function generatePhotoCatalogPDF(records: PhotoCatalogRecord[]) {
+  if (records.length === 0) return { included: 0, failed: 0 };
+
+  const doc = createA4Document();
+  const pageWidth = doc.internal.pageSize.getWidth();
+  const pageHeight = doc.internal.pageSize.getHeight();
+  const margin = 8;
+  const gap = 4;
+  const columns = 2;
+  const rows = 3;
+  const itemsPerPage = columns * rows;
+  const cellWidth = (pageWidth - margin * 2 - gap) / columns;
+  const cellHeight = (pageHeight - margin * 2 - gap * (rows - 1)) / rows;
+  const imageHeight = 64;
+  let included = 0;
+  let failed = 0;
+
+  for (const record of records) {
+    let imageData: string;
+    try {
+      imageData = await loadCatalogImage(record.photoUrl);
+    } catch (error) {
+      console.error(`No se pudo incluir la planta N° ${record.plantNumber}:`, error);
+      failed += 1;
+      continue;
+    }
+
+    if (included > 0 && included % itemsPerPage === 0) doc.addPage();
+
+    const pageIndex = included % itemsPerPage;
+    const column = pageIndex % columns;
+    const row = Math.floor(pageIndex / columns);
+    const x = margin + column * (cellWidth + gap);
+    const y = margin + row * (cellHeight + gap);
+    const contentX = x + 2;
+    const contentWidth = cellWidth - 4;
+
+    doc.setDrawColor(180, 190, 185);
+    doc.setLineWidth(0.2);
+    doc.roundedRect(x, y, cellWidth, cellHeight, 1.5, 1.5);
+    doc.addImage(imageData, "JPEG", contentX, y + 2, contentWidth, imageHeight, undefined, "FAST");
+
+    let textY = y + imageHeight + 7;
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(9);
+    doc.text(`N° ${record.plantNumber} · ${cleanFamilyName(record.family)}`, contentX, textY, {
+      maxWidth: contentWidth,
+    });
+    textY += 4;
+    doc.setFont("helvetica", "italic");
+    doc.setFontSize(7.5);
+    doc.text(record.scientificName || "-", contentX, textY, { maxWidth: contentWidth });
+    textY += 3.7;
+    doc.setFont("helvetica", "normal");
+    doc.text(record.commonName || "-", contentX, textY, { maxWidth: contentWidth });
+    included += 1;
+  }
+
+  if (included > 0) doc.save(`catalogo-visual-plantas-${Date.now()}.pdf`);
+  return { included, failed };
+}
+
 export function recordToLabel(record: PhotoRecord, especie?: Especie): LabelRecord {
   return {
     plantNumber: record.plant_number,
     collector: record.nombre_usuario,
     family: especie?.familia || record.especie_id,
     scientificName: especie?.nombreCientifico || record.especie_id,
-    commonName: especie?.nombreVulgar || "-",
+    commonName: record.nombre_vulgar || especie?.nombreVulgar || "-",
     date: record.fecha,
     place: record.lugar,
-    coordinates: formatCoordinates(record.coordenadas),
     observation: record.observaciones,
+  };
+}
+
+export function recordToPhotoCatalog(
+  record: PhotoRecord,
+  especie?: Especie
+): PhotoCatalogRecord | null {
+  if (!record.photo_url) return null;
+
+  return {
+    plantNumber: record.plant_number,
+    family: especie?.familia || record.especie_id,
+    scientificName: especie?.nombreCientifico || record.especie_id,
+    commonName: record.nombre_vulgar || especie?.nombreVulgar || "-",
+    photoUrl: record.photo_url,
   };
 }

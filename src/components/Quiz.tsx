@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { cladosTree, especiesData } from "@/data/clados";
 import { CladoNode, Especie } from "@/types";
+import SpeciesReferenceLinks from "@/components/SpeciesReferenceLinks";
 
 interface QuizProps {
   onComplete: (especie: Especie) => void;
@@ -67,6 +68,7 @@ export default function Quiz({ onComplete }: QuizProps) {
   const [identifiedEspecie, setIdentifiedEspecie] = useState<Especie | null>(
     null
   );
+  const [commonNameDraft, setCommonNameDraft] = useState<string | null>(null);
 
   const currentNode: CladoNode | undefined = cladosTree[currentNodeId];
   const keyPath = buildKeyPath(history);
@@ -111,9 +113,18 @@ export default function Quiz({ onComplete }: QuizProps) {
           <p>
             <strong>Nombre Científico:</strong> {finalEspecie.nombreCientifico}
           </p>
-          <p>
-            <strong>Nombre Vulgar:</strong> {finalEspecie.nombreVulgar}
-          </p>
+          <label className="block">
+            <strong className="block text-sm text-gray-800">Nombre vulgar:</strong>
+            <input
+              type="text"
+              value={commonNameDraft ?? finalEspecie.nombreVulgar}
+              onChange={(event) => setCommonNameDraft(event.target.value)}
+              className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 focus:border-green-600 focus:outline-none focus:ring-2 focus:ring-green-200"
+            />
+            <span className="mt-1 block text-xs text-gray-500">
+              Puede corregirlo antes de crear el registro.
+            </span>
+          </label>
           <p>
             <strong>Familia:</strong> {finalEspecie.familia}
           </p>
@@ -128,9 +139,20 @@ export default function Quiz({ onComplete }: QuizProps) {
           </p>
         </div>
 
+        <div className="mt-6">
+          <SpeciesReferenceLinks especie={finalEspecie} />
+        </div>
+
         <div className="mt-6 space-x-3">
           <button
-            onClick={() => onComplete(finalEspecie)}
+            onClick={() =>
+              onComplete({
+                ...finalEspecie,
+                nombreVulgar:
+                  (commonNameDraft ?? finalEspecie.nombreVulgar).trim() ||
+                  finalEspecie.nombreVulgar,
+              })
+            }
             className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700"
           >
             Continuar a Formulario
@@ -140,6 +162,7 @@ export default function Quiz({ onComplete }: QuizProps) {
               setCurrentNodeId("root");
               setHistory([{ nodeId: "root" }]);
               setIdentifiedEspecie(null);
+              setCommonNameDraft(null);
             }}
             className="bg-gray-600 text-white px-6 py-2 rounded-lg hover:bg-gray-700"
           >
@@ -175,6 +198,7 @@ export default function Quiz({ onComplete }: QuizProps) {
           },
         ]);
         setIdentifiedEspecie(especie);
+        setCommonNameDraft(null);
         return;
       }
     }

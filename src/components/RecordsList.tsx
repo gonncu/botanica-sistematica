@@ -1,13 +1,29 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import {
+  ExternalLink,
+  Image as ImageIcon,
+  Images,
+  LoaderCircle,
+  Pencil,
+  Tags,
+  Trash2,
+} from "lucide-react";
 import { especiesData } from "@/data/clados";
-import { generateLabelsPDF, recordToLabel } from "@/lib/pdfGenerator";
+import {
+  generateLabelsPDF,
+  generatePhotoCatalogPDF,
+  recordToLabel,
+  recordToPhotoCatalog,
+} from "@/lib/pdfGenerator";
 import { PhotoRecord } from "@/types";
 
 interface RecordsListProps {
   records: PhotoRecord[];
   isLoading: boolean;
+  onEdit: (record: PhotoRecord) => void;
+  onDelete: (record: PhotoRecord) => Promise<void>;
 }
 
 type SearchMode = "all" | "number" | "name" | "family" | "place" | "date" | "notes";
@@ -19,7 +35,12 @@ function normalizeSearchText(value: string) {
     .toLowerCase();
 }
 
-export default function RecordsList({ records, isLoading }: RecordsListProps) {
+export default function RecordsList({
+  records,
+  isLoading,
+  onEdit,
+  onDelete,
+}: RecordsListProps) {
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [rangeStart, setRangeStart] = useState("");
   const [rangeEnd, setRangeEnd] = useState("");
@@ -29,6 +50,9 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
   } | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [searchMode, setSearchMode] = useState<SearchMode>("all");
+  const [deletingId, setDeletingId] = useState<string | null>(null);
+  const [actionError, setActionError] = useState("");
+  const [isGeneratingCatalog, setIsGeneratingCatalog] = useState(false);
   const filteredRecords = useMemo(() => {
     const normalizedSearch = normalizeSearchText(searchTerm.trim());
     return records.filter((record) => {
@@ -52,6 +76,7 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
           record.plant_number.toString(),
           record.especie_id,
           especie?.nombreCientifico || "",
+          record.nombre_vulgar || "",
           especie?.nombreVulgar || "",
           especie?.familia || "",
           record.nombre_usuario,
@@ -63,6 +88,7 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
         name: [
           record.especie_id,
           especie?.nombreCientifico || "",
+          record.nombre_vulgar || "",
           especie?.nombreVulgar || "",
         ],
         family: [especie?.familia || "", record.especie_id],
@@ -127,27 +153,79 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
     );
   };
 
+  const handleGeneratePhotoCatalog = async () => {
+    const catalogRecords = selectedRecords
+      .map((record) => recordToPhotoCatalog(record, especiesData[record.especie_id]))
+      .filter((record): record is NonNullable<typeof record> => record !== null);
+
+    if (catalogRecords.length === 0) {
+      setActionError("Las plantas seleccionadas no tienen fotos para incluir.");
+      return;
+    }
+
+    setActionError("");
+    setIsGeneratingCatalog(true);
+    try {
+      const result = await generatePhotoCatalogPDF(catalogRecords);
+      if (result.included === 0) {
+        setActionError("No se pudieron cargar las fotos para generar el catálogo.");
+      } else if (result.failed > 0) {
+        setActionError(
+          `El catálogo se generó, pero ${result.failed} foto${result.failed === 1 ? "" : "s"} no se pudo incluir.`
+        );
+      }
+    } catch (error) {
+      setActionError(error instanceof Error ? error.message : "No se pudo generar el catálogo visual");
+    } finally {
+      setIsGeneratingCatalog(false);
+    }
+  };
+
   const clearRange = () => {
     setActiveRange(null);
     setRangeStart("");
     setRangeEnd("");
   };
 
+  const handleDelete = async (record: PhotoRecord) => {
+    const confirmed = window.confirm(
+      `¿Eliminar definitivamente la planta N° ${record.plant_number}? Los otros registros conservarán su número.`
+    );
+    if (!confirmed) return;
+
+    setActionError("");
+    setDeletingId(record.id);
+    try {
+      await onDelete(record);
+      setSelectedIds((current) => current.filter((id) => id !== record.id));
+    } catch (error) {
+      setActionError(error instanceof Error ? error.message : "No se pudo eliminar el registro");
+    } finally {
+      setDeletingId(null);
+    }
+  };
+
   return (
-    <section className="bg-white rounded-lg shadow-lg p-6">
-      <div className="flex items-center justify-between gap-4 mb-4">
+    <section className="rounded-lg bg-white p-4 shadow-lg sm:p-5">
+      <div className="mb-3 flex items-center justify-between gap-4">
         <h2 className="text-xl font-bold text-gray-800">Mis plantas</h2>
         <span className="text-sm text-gray-700">{records.length} registros</span>
       </div>
 
       {isLoading && <p className="text-gray-700">Cargando registros...</p>}
 
+      {actionError && (
+        <p className="mb-3 rounded-md border border-red-200 bg-red-50 p-3 text-sm text-red-800" role="alert">
+          {actionError}
+        </p>
+      )}
+
       {!isLoading && records.length === 0 && (
         <p className="text-gray-700">Todavía no registraste plantas.</p>
       )}
 
       {!isLoading && records.length > 0 && (
-        <div className="space-y-3">
+        <div className="space-y-2">
           <div className="flex flex-col gap-2 border-b border-gray-200 pb-3">
             <div className="grid gap-2 sm:grid-cols-[120px_1fr]">
               <label className="text-sm font-medium text-gray-800">
@@ -246,54 +324,133 @@ export default function RecordsList({ records, isLoading }: RecordsListProps) {
                 </button>
               </div>
             )}
-            <button
-              type="button"
-              onClick={handleGenerateLabels}
-              disabled={selectedRecords.length === 0}
-              className="w-full rounded bg-green-700 px-4 py-2 text-sm font-medium text-white hover:bg-green-800 disabled:bg-gray-300"
-            >
-              Generar etiquetas seleccionadas
-            </button>
+            <div className="grid gap-2 sm:grid-cols-2">
+              <button
+                type="button"
+                onClick={handleGenerateLabels}
+                disabled={selectedRecords.length === 0}
+                className="inline-flex items-center justify-center gap-2 rounded-md bg-green-700 px-4 py-2 text-sm font-medium text-white hover:bg-green-800 disabled:bg-gray-300"
+              >
+                <Tags aria-hidden="true" size={16} />
+                Generar etiquetas
+              </button>
+              <button
+                type="button"
+                onClick={() => void handleGeneratePhotoCatalog()}
+                disabled={selectedRecords.length === 0 || isGeneratingCatalog}
+                className="inline-flex items-center justify-center gap-2 rounded-md border border-green-700 bg-white px-4 py-2 text-sm font-medium text-green-800 hover:bg-green-50 disabled:border-gray-300 disabled:text-gray-400"
+              >
+                {isGeneratingCatalog ? (
+                  <LoaderCircle aria-hidden="true" className="animate-spin" size={16} />
+                ) : (
+                  <Images aria-hidden="true" size={16} />
+                )}
+                {isGeneratingCatalog ? "Generando..." : "Catálogo visual"}
+              </button>
+            </div>
             <p className="text-xs text-gray-700">
               {selectedRecords.length} seleccionadas · {filteredRecords.length} visibles · Hoja A4 con 12 etiquetas
             </p>
           </div>
 
-          {filteredRecords.map((record) => (
-            <article
-              key={record.id}
-              className="border border-gray-200 rounded p-4 flex flex-col gap-2"
-            >
-              <div className="flex items-start justify-between gap-3">
-                <label className="flex items-start gap-2">
-                  <input
-                    type="checkbox"
-                    checked={selectedIds.includes(record.id)}
-                    onChange={() => toggleRecord(record.id)}
-                    className="mt-1 h-4 w-4 accent-green-700"
-                  />
-                  <span>
-                    <span className="block font-bold text-green-700">
-                      Planta N° {record.plant_number}
+          {filteredRecords.map((record) => {
+            const especie = especiesData[record.especie_id];
+            const isDeleting = deletingId === record.id;
+
+            return (
+              <article
+                key={record.id}
+                className={`grid grid-cols-[auto_3.5rem_minmax(0,1fr)] items-center gap-x-3 gap-y-1 rounded-md border p-3 sm:grid-cols-[auto_3.5rem_minmax(0,1fr)_auto] ${selectedIds.includes(record.id) ? "border-green-300 bg-green-50" : "border-gray-200"}`}
+              >
+                <input
+                  type="checkbox"
+                  checked={selectedIds.includes(record.id)}
+                  onChange={() => toggleRecord(record.id)}
+                  aria-label={`Seleccionar planta N° ${record.plant_number}`}
+                  className="h-4 w-4 accent-green-700"
+                />
+
+                {record.photo_url ? (
+                  <a
+                    href={record.photo_url}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`Ampliar foto de la planta N° ${record.plant_number}`}
+                    title="Ampliar foto"
+                    className="h-14 w-14 overflow-hidden rounded-md bg-gray-100"
+                  >
+                    {/* Arbitrary public Supabase URLs cannot be declared statically for next/image. */}
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={record.photo_url}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      className="h-full w-full object-cover"
+                    />
+                  </a>
+                ) : (
+                  <div className="flex h-14 w-14 items-center justify-center rounded-md bg-gray-100 text-gray-400" title="Sin foto">
+                    <ImageIcon aria-hidden="true" size={20} />
+                  </div>
+                )}
+
+                <div className="min-w-0">
+                  <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+                    <span className="font-bold text-green-800">N° {record.plant_number}</span>
+                    <span className="truncate text-sm italic text-gray-900">
+                      {especie?.nombreCientifico || record.especie_id}
                     </span>
-                    <span className="block text-gray-800">{record.especie_id}</span>
-                  </span>
-                </label>
-                <time className="text-sm text-gray-700">{record.fecha}</time>
-              </div>
-              <p className="text-sm text-gray-700">{record.lugar}</p>
-              {record.photo_url && (
-                <a
-                  href={record.photo_url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-sm text-blue-700 hover:underline"
-                >
-                  Ver foto
-                </a>
-              )}
-            </article>
-          ))}
+                  </div>
+                  <p className="truncate text-sm text-gray-700">
+                    {record.nombre_vulgar || especie?.nombreVulgar || "Sin nombre vulgar"}
+                  </p>
+                  <p className="truncate text-xs text-gray-500">
+                    {record.lugar} · <time>{record.fecha}</time>
+                  </p>
+                </div>
+
+                <div className="col-start-3 flex items-center justify-self-end gap-1 sm:col-start-4 sm:row-start-1">
+                  {record.photo_url && (
+                    <a
+                      href={record.photo_url}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`Ver foto de la planta N° ${record.plant_number}`}
+                      title="Ver foto"
+                      className="inline-flex h-8 w-8 items-center justify-center rounded-md text-blue-700 hover:bg-blue-50"
+                    >
+                      <ExternalLink aria-hidden="true" size={16} strokeWidth={2} />
+                    </a>
+                  )}
+                  <button
+                    type="button"
+                    onClick={() => onEdit(record)}
+                    disabled={isDeleting}
+                    aria-label={`Editar planta N° ${record.plant_number}`}
+                    title="Editar"
+                    className="inline-flex h-8 w-8 items-center justify-center rounded-md text-gray-700 hover:bg-gray-100 disabled:text-gray-300"
+                  >
+                    <Pencil aria-hidden="true" size={16} strokeWidth={2} />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => void handleDelete(record)}
+                    disabled={isDeleting}
+                    aria-label={`Eliminar planta N° ${record.plant_number}`}
+                    title="Eliminar"
+                    className="inline-flex h-8 w-8 items-center justify-center rounded-md text-red-700 hover:bg-red-50 disabled:text-gray-300"
+                  >
+                    {isDeleting ? (
+                      <LoaderCircle aria-hidden="true" className="animate-spin" size={16} strokeWidth={2} />
+                    ) : (
+                      <Trash2 aria-hidden="true" size={16} strokeWidth={2} />
+                    )}
+                  </button>
+                </div>
+              </article>
+            );
+          })}
 
           {filteredRecords.length === 0 && (
             <p className="text-sm text-gray-700">

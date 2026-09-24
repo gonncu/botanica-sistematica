@@ -30,11 +30,12 @@ export interface Especie {
 
 export interface PlantFormData {
   nombreUsuario: string;
+  nombreVulgar: string;
   fecha: string;
   lugar: string;
-  coordenadas?: string;
   observaciones?: string;
   foto?: File | null;
+  removeExistingPhoto?: boolean;
 }
 
 export interface PhotoRecord {
@@ -43,13 +44,10 @@ export interface PhotoRecord {
   plant_number: number;
   photo_url: string | null;
   especie_id: string;
+  nombre_vulgar?: string | null;
   nombre_usuario: string;
   fecha: string;
   lugar: string;
-  coordenadas?: {
-    latitude: number;
-    longitude: number;
-  } | null;
   observaciones?: string | null;
   created_at: string;
 }

@@ -12,7 +12,8 @@ on conflict (id) do update set public = true;
 
 alter table public.photo_records
   add column if not exists user_id uuid references auth.users(id) on delete cascade,
-  add column if not exists plant_number integer;
+  add column if not exists plant_number integer,
+  add column if not exists nombre_vulgar text;
 
 create unique index if not exists photo_records_user_plant_number_key
   on public.photo_records (user_id, plant_number)

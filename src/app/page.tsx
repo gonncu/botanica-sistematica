@@ -2,21 +2,32 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Session } from "@supabase/supabase-js";
+import {
+  GraduationCap,
+  Library,
+  LogOut,
+  Menu,
+  ScanSearch,
+  X,
+} from "lucide-react";
 import AuthPanel from "@/components/AuthPanel";
 import FirstExamPractice from "@/components/FirstExamPractice";
 import Quiz from "@/components/Quiz";
 import RecordsList from "@/components/RecordsList";
 import SpeciesForm from "@/components/SpeciesForm";
 import {
+  deletePhotoRecord,
   getPhotoRecords,
   savePhotoRecord,
   saveQuizSession,
+  updatePhotoRecord,
 } from "@/lib/supabaseOperations";
 import { supabase } from "@/lib/supabase";
 import { Especie, PhotoRecord, PlantFormData } from "@/types";
+import { especiesData } from "@/data/clados";
 
-type PageState = "quiz" | "form" | "complete";
-type WorkspaceTab = "identifier" | "first-exam";
+type PageState = "quiz" | "form" | "edit" | "complete";
+type WorkspaceTab = "identifier" | "records" | "first-exam";
 
 const ALLOWED_DOMAIN = "@agro.uba.ar";
 
@@ -29,6 +40,9 @@ export default function Home() {
   const [records, setRecords] = useState<PhotoRecord[]>([]);
   const [isRecordsLoading, setIsRecordsLoading] = useState(false);
   const [lastPlantNumber, setLastPlantNumber] = useState<number | null>(null);
+  const [editingRecord, setEditingRecord] = useState<PhotoRecord | null>(null);
+  const [recordNotice, setRecordNotice] = useState("");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const user = session?.user || null;
   const userEmail = user?.email || "";
@@ -60,7 +74,9 @@ export default function Home() {
     } = supabase.auth.onAuthStateChange((_event, currentSession) => {
       setSession(currentSession);
       setPageState("quiz");
+      setWorkspaceTab("identifier");
       setSelectedEspecie(null);
+      setEditingRecord(null);
     });
 
     return () => subscription.unsubscribe();
@@ -75,6 +91,7 @@ export default function Home() {
   }, [loadRecords]);
 
   const handleSignOut = async () => {
+    setIsMobileMenuOpen(false);
     await supabase.auth.signOut();
     setRecords([]);
     setLastPlantNumber(null);
@@ -106,6 +123,49 @@ export default function Home() {
     }
   };
 
+  const handleEditRecord = (record: PhotoRecord) => {
+    setRecordNotice("");
+    setEditingRecord(record);
+    setPageState("edit");
+    setWorkspaceTab("records");
+  };
+
+  const handleEditSubmit = async (formData: PlantFormData) => {
+    if (!editingRecord) return;
+
+    try {
+      await updatePhotoRecord(editingRecord, formData);
+      await loadRecords();
+      setRecordNotice(`Planta N° ${editingRecord.plant_number} actualizada.`);
+      setEditingRecord(null);
+      setPageState("quiz");
+    } catch (error) {
+      console.error("Error actualizando el registro:", error);
+      alert(`Error: ${error instanceof Error ? error.message : "Error desconocido"}`);
+    }
+  };
+
+  const handleDeleteRecord = async (record: PhotoRecord) => {
+    await deletePhotoRecord(record);
+    setRecordNotice(
+      `Planta N° ${record.plant_number} eliminada. Los demás números no cambiaron.`
+    );
+    if (editingRecord?.id === record.id) {
+      setEditingRecord(null);
+      setPageState("quiz");
+    }
+    await loadRecords();
+  };
+
+  const handleWorkspaceTabChange = (tab: WorkspaceTab) => {
+    if (tab !== "records" && pageState === "edit") {
+      setEditingRecord(null);
+      setPageState("quiz");
+    }
+    setIsMobileMenuOpen(false);
+    setWorkspaceTab(tab);
+  };
+
   if (isAuthLoading) {
     return (
       <main className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 py-8 px-4">
@@ -115,15 +175,34 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 py-8 px-4">
+    <main className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 px-4 pb-24 pt-8 lg:pb-8">
       <div className="max-w-5xl mx-auto">
-        <header className="text-center mb-10">
-          <h1 className="text-4xl font-bold text-green-800 mb-2">
-            🌿 Identificador de Plantas
-          </h1>
-          <p className="text-gray-700">
-            Facultad de Agronomía - UBA | Botánica Sistemática
-          </p>
+        <header className="mb-8 grid gap-4 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:items-start">
+          <div className="text-center lg:col-start-2">
+            <h1 className="text-4xl font-bold text-green-800 mb-2">
+              🌿 Identificador de Plantas
+            </h1>
+            <p className="text-gray-700">
+              Facultad de Agronomía - UBA | Botánica Sistemática
+            </p>
+          </div>
+
+          {user && isAllowedEmail && (
+            <div className="hidden w-fit items-center gap-2 rounded-md border border-gray-200 bg-white py-1.5 pl-3 pr-1.5 shadow-sm lg:col-start-3 lg:row-start-1 lg:flex lg:justify-self-end">
+              <span className="max-w-32 truncate text-sm font-medium text-gray-800" title={defaultUserName}>
+                {defaultUserName}
+              </span>
+              <button
+                onClick={handleSignOut}
+                type="button"
+                aria-label="Cerrar sesión"
+                title="Cerrar sesión"
+                className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-md text-gray-600 hover:bg-gray-100 hover:text-gray-900"
+              >
+                <LogOut aria-hidden="true" size={17} strokeWidth={2} />
+              </button>
+            </div>
+          )}
         </header>
 
         {!user && <AuthPanel />}
@@ -147,29 +226,22 @@ export default function Home() {
 
         {user && isAllowedEmail && (
           <>
-            <div className="bg-white rounded-lg shadow-lg p-4 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-              <div>
-                <p className="text-sm text-gray-700">Sesión iniciada</p>
-                <p className="font-medium text-gray-800">{userEmail}</p>
-              </div>
+            <nav className="mb-7 hidden border-b border-gray-300 lg:flex" aria-label="Secciones principales">
               <button
-                onClick={handleSignOut}
-                className="self-start sm:self-auto bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-800"
-              >
-                Cerrar sesión
-              </button>
-            </div>
-
-            <nav className="mb-7 flex border-b border-gray-300" aria-label="Secciones principales">
-              <button
-                onClick={() => setWorkspaceTab("identifier")}
-                className={`border-b-2 px-5 py-3 font-semibold ${workspaceTab === "identifier" ? "border-green-700 text-green-800" : "border-transparent text-gray-600 hover:text-gray-900"}`}
+                onClick={() => handleWorkspaceTabChange("identifier")}
+                className={`shrink-0 border-b-2 px-5 py-3 font-semibold ${workspaceTab === "identifier" ? "border-green-700 text-green-800" : "border-transparent text-gray-600 hover:text-gray-900"}`}
               >
                 Identificador
               </button>
               <button
-                onClick={() => setWorkspaceTab("first-exam")}
-                className={`border-b-2 px-5 py-3 font-semibold ${workspaceTab === "first-exam" ? "border-green-700 text-green-800" : "border-transparent text-gray-600 hover:text-gray-900"}`}
+                onClick={() => handleWorkspaceTabChange("records")}
+                className={`shrink-0 border-b-2 px-5 py-3 font-semibold ${workspaceTab === "records" ? "border-green-700 text-green-800" : "border-transparent text-gray-600 hover:text-gray-900"}`}
+              >
+                Mis plantas
+              </button>
+              <button
+                onClick={() => handleWorkspaceTabChange("first-exam")}
+                className={`shrink-0 border-b-2 px-5 py-3 font-semibold ${workspaceTab === "first-exam" ? "border-green-700 text-green-800" : "border-transparent text-gray-600 hover:text-gray-900"}`}
               >
                 Primer parcial
               </button>
@@ -177,8 +249,45 @@ export default function Home() {
 
             {workspaceTab === "first-exam" ? (
               <FirstExamPractice />
+            ) : workspaceTab === "records" ? (
+              <div className="mx-auto max-w-4xl">
+                {recordNotice && (
+                  <div className="mb-6 flex items-start justify-between gap-3 rounded-md border border-green-200 bg-green-50 p-4 text-sm text-green-900" role="status">
+                    <span>{recordNotice}</span>
+                    <button
+                      type="button"
+                      onClick={() => setRecordNotice("")}
+                      className="font-semibold text-green-800 hover:underline"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                )}
+
+                {pageState === "edit" && editingRecord ? (
+                  <div className="flex justify-center">
+                    <SpeciesForm
+                      key={editingRecord.id}
+                      especie={especiesData[editingRecord.especie_id]}
+                      defaultUserName={defaultUserName}
+                      record={editingRecord}
+                      onSubmit={handleEditSubmit}
+                      onCancel={() => {
+                        setEditingRecord(null);
+                        setPageState("quiz");
+                      }}
+                    />
+                  </div>
+                ) : (
+                  <RecordsList
+                    records={records}
+                    isLoading={isRecordsLoading}
+                    onEdit={handleEditRecord}
+                    onDelete={handleDeleteRecord}
+                  />
+                )}
+              </div>
             ) : (
-            <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
               <div>
                 {pageState === "quiz" && (
                   <div className="flex justify-center">
@@ -217,21 +326,83 @@ export default function Home() {
                       </p>
                       <p className="text-gray-700">{selectedEspecie.nombreVulgar}</p>
                     </div>
-                    <button
-                      onClick={() => {
-                        setPageState("quiz");
-                        setSelectedEspecie(null);
-                      }}
-                      className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 font-medium"
-                    >
-                      Identificar otra planta
-                    </button>
+                    <div className="flex flex-col justify-center gap-3 sm:flex-row">
+                      <button
+                        onClick={() => {
+                          setPageState("quiz");
+                          setSelectedEspecie(null);
+                        }}
+                        className="rounded-md bg-blue-600 px-6 py-3 font-medium text-white hover:bg-blue-700"
+                      >
+                        Identificar otra planta
+                      </button>
+                      <button
+                        onClick={() => setWorkspaceTab("records")}
+                        className="rounded-md border border-gray-300 bg-white px-6 py-3 font-medium text-gray-800 hover:bg-gray-50"
+                      >
+                        Ver mis plantas
+                      </button>
+                    </div>
                   </div>
                 )}
               </div>
+            )}
 
-              <RecordsList records={records} isLoading={isRecordsLoading} />
-            </div>
+            <nav
+              className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-4 border-t border-gray-200 bg-white shadow-[0_-4px_16px_rgba(0,0,0,0.08)] lg:hidden"
+              aria-label="Navegación principal"
+            >
+              <button
+                type="button"
+                onClick={() => handleWorkspaceTabChange("identifier")}
+                className={`flex min-h-16 flex-col items-center justify-center gap-1 px-1 pb-[env(safe-area-inset-bottom)] text-xs font-medium ${workspaceTab === "identifier" ? "text-green-800" : "text-gray-600"}`}
+              >
+                <ScanSearch aria-hidden="true" size={20} />
+                Identificar
+              </button>
+              <button
+                type="button"
+                onClick={() => handleWorkspaceTabChange("records")}
+                className={`flex min-h-16 flex-col items-center justify-center gap-1 px-1 pb-[env(safe-area-inset-bottom)] text-xs font-medium ${workspaceTab === "records" ? "text-green-800" : "text-gray-600"}`}
+              >
+                <Library aria-hidden="true" size={20} />
+                Mis plantas
+              </button>
+              <button
+                type="button"
+                onClick={() => handleWorkspaceTabChange("first-exam")}
+                className={`flex min-h-16 flex-col items-center justify-center gap-1 px-1 pb-[env(safe-area-inset-bottom)] text-xs font-medium ${workspaceTab === "first-exam" ? "text-green-800" : "text-gray-600"}`}
+              >
+                <GraduationCap aria-hidden="true" size={20} />
+                Parcial
+              </button>
+              <button
+                type="button"
+                onClick={() => setIsMobileMenuOpen((current) => !current)}
+                aria-expanded={isMobileMenuOpen}
+                aria-controls="mobile-account-menu"
+                className={`flex min-h-16 flex-col items-center justify-center gap-1 px-1 pb-[env(safe-area-inset-bottom)] text-xs font-medium ${isMobileMenuOpen ? "text-green-800" : "text-gray-600"}`}
+              >
+                {isMobileMenuOpen ? <X aria-hidden="true" size={20} /> : <Menu aria-hidden="true" size={20} />}
+                Más
+              </button>
+            </nav>
+
+            {isMobileMenuOpen && (
+              <div
+                id="mobile-account-menu"
+                className="fixed inset-x-3 bottom-20 z-50 rounded-lg border border-gray-200 bg-white p-3 shadow-xl lg:hidden"
+              >
+                <p className="px-2 pb-2 text-sm font-medium text-gray-800">{defaultUserName}</p>
+                <button
+                  type="button"
+                  onClick={handleSignOut}
+                  className="flex w-full items-center gap-3 rounded-md px-3 py-2.5 text-left text-sm font-medium text-red-700 hover:bg-red-50"
+                >
+                  <LogOut aria-hidden="true" size={18} />
+                  Cerrar sesión
+                </button>
+              </div>
             )}
           </>
         )}

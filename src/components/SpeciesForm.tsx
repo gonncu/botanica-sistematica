@@ -2,29 +2,37 @@
 
 import { useState, useRef } from "react";
 import Image from "next/image";
-import { Especie, PlantFormData } from "@/types";
+import SpeciesReferenceLinks from "@/components/SpeciesReferenceLinks";
+import { Especie, PhotoRecord, PlantFormData } from "@/types";
 
 interface FormProps {
   especie: Especie;
   defaultUserName: string;
-  onSubmit: (formData: PlantFormData) => void;
+  record?: PhotoRecord;
+  onSubmit: (formData: PlantFormData) => void | Promise<void>;
+  onCancel?: () => void;
 }
 
 export default function SpeciesForm({
   especie,
   defaultUserName,
+  record,
   onSubmit,
+  onCancel,
 }: FormProps) {
   const [formData, setFormData] = useState<PlantFormData>({
-    nombreUsuario: defaultUserName,
-    fecha: new Date().toISOString().split("T")[0],
-    lugar: "",
-    observaciones: "",
+    nombreUsuario: record?.nombre_usuario || defaultUserName,
+    nombreVulgar: record?.nombre_vulgar || especie.nombreVulgar,
+    fecha: record?.fecha || new Date().toISOString().split("T")[0],
+    lugar: record?.lugar || "",
+    observaciones: record?.observaciones || "",
     foto: null,
+    removeExistingPhoto: false,
   });
 
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [preview, setPreview] = useState<string>("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -42,6 +50,7 @@ export default function SpeciesForm({
       setFormData((prev) => ({
         ...prev,
         foto: file,
+        removeExistingPhoto: false,
       }));
 
       // Preview
@@ -53,19 +62,24 @@ export default function SpeciesForm({
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.nombreUsuario || !formData.lugar) {
-      alert("Por favor completa Nombre y Lugar");
+    if (!formData.nombreUsuario || !formData.nombreVulgar.trim() || !formData.lugar) {
+      alert("Por favor completa Nombre, Nombre vulgar y Lugar");
       return;
     }
-    onSubmit(formData);
+    setIsSubmitting(true);
+    try {
+      await onSubmit(formData);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-6 max-w-md">
       <h2 className="text-2xl font-bold text-gray-800 mb-4">
-        Registrar Especie
+        {record ? `Editar planta N° ${record.plant_number}` : "Registrar especie"}
       </h2>
 
       {/* Información de la especie identificada */}
@@ -74,10 +88,34 @@ export default function SpeciesForm({
         <p className="text-lg font-bold text-green-700">
           {especie.nombreCientifico}
         </p>
-        <p className="text-sm text-gray-700">{especie.nombreVulgar}</p>
+        <p className="text-sm text-gray-700">{formData.nombreVulgar}</p>
       </div>
 
+      {!record && (
+        <div className="mb-6">
+          <SpeciesReferenceLinks especie={especie} />
+        </div>
+      )}
+
       <form onSubmit={handleSubmit} className="space-y-4">
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            Nombre vulgar*
+          </label>
+          <input
+            type="text"
+            name="nombreVulgar"
+            value={formData.nombreVulgar}
+            onChange={handleInputChange}
+            placeholder="Nombre usado para este ejemplar"
+            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
+          />
+          <p className="mt-1 text-xs text-gray-500">
+            Esta correccion se guarda solo en este registro.
+          </p>
+        </div>
+
         {/* Nombre del usuario */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -125,21 +163,6 @@ export default function SpeciesForm({
           />
         </div>
 
-        {/* Coordenadas */}
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Coordenadas (opcional)
-          </label>
-          <input
-            type="text"
-            name="coordenadas"
-            value={formData.coordenadas || ""}
-            onChange={handleInputChange}
-            placeholder="ej: -34.6037, -58.3816"
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-        </div>
-
         {/* Foto */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -162,6 +185,32 @@ export default function SpeciesForm({
               className="mt-2 max-w-xs rounded max-h-48 object-contain"
             />
           )}
+          {record?.photo_url && !preview && (
+            <div className="mt-2 flex items-center justify-between gap-3 text-sm">
+              <a
+                href={record.photo_url}
+                target="_blank"
+                rel="noreferrer"
+                className="text-blue-700 hover:underline"
+              >
+                Ver foto actual
+              </a>
+              <label className="flex items-center gap-2 text-gray-700">
+                <input
+                  type="checkbox"
+                  checked={Boolean(formData.removeExistingPhoto)}
+                  onChange={(event) =>
+                    setFormData((current) => ({
+                      ...current,
+                      removeExistingPhoto: event.target.checked,
+                    }))
+                  }
+                  className="h-4 w-4 accent-red-700"
+                />
+                Eliminar foto
+              </label>
+            </div>
+          )}
         </div>
 
         {/* Observaciones */}
@@ -180,12 +229,25 @@ export default function SpeciesForm({
         </div>
 
         {/* Botones */}
-        <button
-          type="submit"
-          className="w-full bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 font-medium"
-        >
-          Guardar registro
-        </button>
+        <div className="flex flex-col-reverse gap-2 sm:flex-row">
+          {onCancel && (
+            <button
+              type="button"
+              onClick={onCancel}
+              disabled={isSubmitting}
+              className="w-full rounded-md border border-gray-300 px-5 py-2 font-medium text-gray-700 hover:bg-gray-50 disabled:text-gray-400"
+            >
+              Cancelar
+            </button>
+          )}
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="w-full rounded-md bg-green-700 px-5 py-2 font-medium text-white hover:bg-green-800 disabled:bg-gray-400"
+          >
+            {isSubmitting ? "Guardando..." : record ? "Guardar cambios" : "Guardar registro"}
+          </button>
+        </div>
       </form>
     </div>
   );
